@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkblog_kywk=self.webpackChunkblog_kywk||[]).push([[73958],{37666:e=>{e.exports=JSON.parse('{"label":"WSDL","permalink":"/moco/tags/wsdl","allTagsPath":"/moco/tags","count":1,"items":[{"id":"java/springboot/sb_web-service","title":"Web Service","description":"Spring Boot: Web Service","permalink":"/moco/java/springboot/sb_web-service"}]}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkblog_kywk=self.webpackChunkblog_kywk||[]).push([[36028],{43737:t=>{t.exports=JSON.parse('{"label":"util","permalink":"/moco/tags/util","allTagsPath":"/moco/tags","count":1,"items":[{"id":"utilities/terminal_warp","title":"Util: Warp","description":"Warp, The terminal built for the 21st century","permalink":"/moco/utilities/terminal_warp"}]}')}}]);

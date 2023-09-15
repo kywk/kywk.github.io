@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkblog_kywk=self.webpackChunkblog_kywk||[]).push([[28310],{97717:e=>{e.exports=JSON.parse('{"label":"k6","permalink":"/moco/tags/k-6","allTagsPath":"/moco/tags","count":1,"items":[{"id":"techstack/test/k6_awesome","title":"Awesome K6","description":"k6 Documentation","permalink":"/moco/techstack/test/k6_awesome"}]}')}}]);

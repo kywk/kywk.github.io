@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkblog_kywk=self.webpackChunkblog_kywk||[]).push([[44656],{19597:e=>{e.exports=JSON.parse('{"label":"Blockchain","permalink":"/moco/tags/blockchain","allTagsPath":"/moco/tags","count":1,"items":[{"id":"miscellaneous/blockchain/awesome","title":"Awesome Blockchain","description":"","permalink":"/moco/miscellaneous/blockchain/awesome"}]}')}}]);

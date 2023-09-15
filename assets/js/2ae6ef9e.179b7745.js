@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkblog_kywk=self.webpackChunkblog_kywk||[]).push([[15602],{54423:r=>{r.exports=JSON.parse('{"title":"Around World","description":"Around World","slug":"/category/around-world","permalink":"/backpacker/category/around-world","navigation":{"next":{"title":"\u725b\u5728\u56e7\u9014","permalink":"/backpacker/around_world/index_orz"}}}')}}]);

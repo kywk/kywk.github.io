@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkblog_kywk=self.webpackChunkblog_kywk||[]).push([[41743],{79075:a=>{a.exports=JSON.parse('{"label":"OData","permalink":"/moco/tags/o-data","allTagsPath":"/moco/tags","count":1,"items":[{"id":"techstack/odata","title":"OData Protocol","description":"Open Data Protoco","permalink":"/moco/techstack/odata"}]}')}}]);

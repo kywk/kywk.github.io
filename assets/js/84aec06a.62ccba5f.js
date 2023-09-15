@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkblog_kywk=self.webpackChunkblog_kywk||[]).push([[25699],{96594:s=>{s.exports=JSON.parse('{"label":"MSSQL","permalink":"/moco/tags/mssql","allTagsPath":"/moco/tags","count":1,"items":[{"id":"techstack/mssql/awesome","title":"Awesome MSSQL","description":"","permalink":"/moco/techstack/mssql/awesome"}]}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkblog_kywk=self.webpackChunkblog_kywk||[]).push([[32219],{62949:o=>{o.exports=JSON.parse('{"label":"JWT","permalink":"/moco/tags/jwt","allTagsPath":"/moco/tags","count":1,"items":[{"id":"java/springboot/sb_jwt","title":"JWT","description":"Spring Boot: JWT","permalink":"/moco/java/springboot/sb_jwt"}]}')}}]);

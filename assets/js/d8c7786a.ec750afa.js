@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkblog_kywk=self.webpackChunkblog_kywk||[]).push([[67748],{75834:e=>{e.exports=JSON.parse('{"title":"gRPC","description":"gRPC","slug":"/category/grpc","permalink":"/moco/category/grpc","navigation":{"previous":{"title":"Awesome Resources","permalink":"/moco/techstack/awesome"},"next":{"title":"grpc","permalink":"/moco/techstack/grpc/"}}}')}}]);
