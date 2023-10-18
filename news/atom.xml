@@ -2,11 +2,38 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kywk.github.io/news</id>
     <title>kywk.me Blog</title>
-    <updated>2023-09-15T00:00:00.000Z</updated>
+    <updated>2023-10-15T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kywk.github.io/news"/>
     <subtitle>kywk.me Blog</subtitle>
     <icon>https://kywk.github.io/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Surfing 10.01 ~ 10.15]]></title>
+        <id>https://kywk.github.io/news/2023/10/15/_Surfing</id>
+        <link href="https://kywk.github.io/news/2023/10/15/_Surfing"/>
+        <updated>2023-10-15T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Surffing quick note 10.01 ~ 10.15]]></summary>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="it-news">IT News<a href="#it-news" class="hash-link" aria-label="IT News的直接連結" title="IT News的直接連結">​</a></h3><ul><li><a href="https://blog.gslin.org/archives/2023/10/12/11392/" target="_blank" rel="noopener noreferrer">WordPress.com 支援 ActivityPub – Gea-Suan Lin's BLOG</a></li><li><a href="https://blog.gslin.org/archives/2023/09/28/11374/" target="_blank" rel="noopener noreferrer">ClickHouse 弄了一個 C++ 寫的 ZooKeeper drop-in replacement：ClickHouse Keeper – Gea-Suan Lin's BLOG</a></li><li><a href="https://blog.gslin.org/archives/2023/09/25/11371" target="_blank" rel="noopener noreferrer">Percona XtraDB Cluster (PXC) 的感想 – Gea-Suan Lin's BLOG</a></li></ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="tech">Tech<a href="#tech" class="hash-link" aria-label="Tech的直接連結" title="Tech的直接連結">​</a></h3><ul><li><a href="https://blog.gslin.org/archives/2023/10/08/11388/" target="_blank" rel="noopener noreferrer">gzip 的 –rsyncable (zstd 也有) – Gea-Suan Lin's BLOG</a></li><li><a href="https://blog.wu-boy.com/2023/10/git-commit-signature-verification/" target="_blank" rel="noopener noreferrer">快速設定 Git Commit Signature Verification - 小惡魔 - AppleBOY</a></li><li><a href="https://blog.wu-boy.com/2023/09/secure-encryption-tool-age" target="_blank" rel="noopener noreferrer">加密檔案的好工具 - age - 小惡魔 - AppleBOY</a></li><li><a href="https://www.maketecheasier.com/self-hosted-rss-reader-with-freshrss-docker/" target="_blank" rel="noopener noreferrer">Site Unreachable</a></li></ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="life">Life<a href="#life" class="hash-link" aria-label="Life的直接連結" title="Life的直接連結">​</a></h3><ul><li><a href="https://jdev.tw/blog/8218/easy-bake-compile-notes-into-a-new-note" target="_blank" rel="noopener noreferrer">Obs142｜輕鬆烘烤(彙編)出需要的筆記：Easy Bake – 簡睿隨筆</a></li><li><a href="https://jdev.tw/blog/8194/create-index-notes-by-dataview-and-tags" target="_blank" rel="noopener noreferrer">Obs138｜以標籤為基底，用Dataview形成索引筆記的嘗試 – 簡睿隨筆</a></li><li><a href="https://steachs.com/archives/63762" target="_blank" rel="noopener noreferrer">太少用到 VPN？偶而用可以試試 FlyVPN 推出的 24 小時使用方案 | 就是教不落 - 給你最豐富的 3C 資訊、教學網站</a></li></ul>]]></content>
+        <author>
+            <name>kywk</name>
+            <uri>https://github.io/kywk</uri>
+        </author>
+        <category label="surf" term="surf"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Surfing 09.16 ~ 09.30]]></title>
+        <id>https://kywk.github.io/news/2023/09/30/_Surfing</id>
+        <link href="https://kywk.github.io/news/2023/09/30/_Surfing"/>
+        <updated>2023-09-30T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Surffing quick note 09.16 ~ 09.30]]></summary>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="it-news">IT News<a href="#it-news" class="hash-link" aria-label="IT News的直接連結" title="IT News的直接連結">​</a></h3><ul><li><a href="https://steachs.com/archives/63759" target="_blank" rel="noopener noreferrer">四款雲端儲存服務價格比一比，pCloud／Google Drive／OneDrive／Dropbox | 就是教不落 - 給你最豐富的 3C 資訊、教學網站</a></li><li><a href="http://teddy-chen-tw.blogspot.com/2023/09/blog-post_23.html" target="_blank" rel="noopener noreferrer">搞笑談軟工: 練好基本功</a></li><li><a href="https://horstmann.com/unblog/2023-09-19/index.html" target="_blank" rel="noopener noreferrer"># Java 21: The Nice, The Meh, and the ... Momentous</a></li><li><a href="https://blog.gslin.org/archives/2023/09/22/11364/" target="_blank" rel="noopener noreferrer">Golang 將改變常見的 closure 地雷 – Gea-Suan Lin's BLOG</a></li></ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="tech">Tech<a href="#tech" class="hash-link" aria-label="Tech的直接連結" title="Tech的直接連結">​</a></h3><ul><li><a href="https://blog.gslin.org/archives/2023/09/25/11370/" target="_blank" rel="noopener noreferrer">scp -3：直接對兩個 remote host 複製檔案 – Gea-Suan Lin's BLOG</a></li><li><a href="https://blog.gslin.org/archives/2023/09/24/11368/" target="_blank" rel="noopener noreferrer">cURL 放入 ipfs:// 支援 – Gea-Suan Lin's BLOG</a></li><li><a href="https://blog.longwin.com.tw/2023/09/linux-acme-sh-https-ca-2023/" target="_blank" rel="noopener noreferrer">使用 acme.sh 來產生 HTTPS CA 憑證 – Tsung's Blog</a></li><li><a href="https://cnodejs.org/topic/650cfeac1a7c3db18b05e385" target="_blank" rel="noopener noreferrer">大家有没有学习用ts开发node.js的诉求？ - CNode技术社区</a></li><li><a href="https://www.rocksaying.tw/archives/2023/ES6_Async_Function_How_to.html" target="_blank" rel="noopener noreferrer">學習 ECMAScript/JavaScript 6 - Async Function 問答指引 - 石頭閒語</a></li></ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="life">Life<a href="#life" class="hash-link" aria-label="Life的直接連結" title="Life的直接連結">​</a></h3><ul><li><a href="https://www.mobile01.com/topicdetail.php?f=202&amp;t=6846772" target="_blank" rel="noopener noreferrer">金三益健康茶飲、溪仔香腸熟肉、神農街 — 被飲料耽誤的海鮮店 與 「老臺南味」，老街美麗夜景相隨 - Mobile01</a></li><li><a href="https://free.com.tw/planet-vpn/" target="_blank" rel="noopener noreferrer">Planet VPN 評測：無限流量免費 VPN 推薦，無需註冊即可使用</a></li><li><a href="https://www.mobile01.com/topicdetail.php?f=628&amp;t=6844792" target="_blank" rel="noopener noreferrer">無私奉獻最最快樂，觀音山揹水新嘗試 - Mobile01</a></li><li><a href="https://steachs.com/archives/63722" target="_blank" rel="noopener noreferrer">你都記得你有哪些保單嗎？透過壽險公會保險存褶就能查看各種保險記錄 | 就是教不落 - 給你最豐富的 3C 資訊、教學網站</a></li></ul>]]></content>
+        <author>
+            <name>kywk</name>
+            <uri>https://github.io/kywk</uri>
+        </author>
+        <category label="surf" term="surf"/>
+        <category label="2023/09" term="2023/09"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Surfing 09.01 ~ 09.15]]></title>
         <id>https://kywk.github.io/news/2023/09/15/_Surfing</id>
