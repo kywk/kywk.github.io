@@ -266,6 +266,7 @@ See Also
 
 ### Reference ###
 
+- [節省工具箱 Jason Tools: [套件分享] 在 macOS 工作所用的自由與開源軟體 (持續更新)](https://blog.jason.tools/2023/09/macos-opensource-apps.html?fbclid=IwAR1nRrdYDi3-Wpzia2qDm7gg-6y_F7CCMFCxPGqmJ8SJXfO0oC6co3pla0E)
 -   [10 BEST Mac Apps for Productivity (in 2022)!](https://www.youtube.com/watch?v=-xXc7qeiC8I)
 -   [5 款免费又好用的 Mac 菜单栏软件 - Mac云课堂](https://www.youtube.com/watch?v=OWdOq7E62Ws)
 -   [22 FREE Mac Apps I use to BOOST MY PRODUCTIVITY - YouTube](https://www.youtube.com/watch?v=w3Vue4bdPyM)
