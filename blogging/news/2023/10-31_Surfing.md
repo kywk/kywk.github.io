@@ -1,6 +1,6 @@
 ---
-"title:": Surf 10.16 ~ 10.30
-description: Surffing quick note 10.16 ~ 10.30
+title: Surf 10.16 ~ 10.31
+description: Surfing quick note 10.16 ~ 10.31
 authors: kywk
 tags:
   - surf
@@ -9,7 +9,7 @@ image: https://lh3.googleusercontent.com/pw/AM-JKLXZZHmidSgMMB2k8blkneclNRysPXLr
 hide_table_of_contents: true
 ---
 
-Surfing 10.16 ~ 10.30
+Surfing 10.16 ~ 10.31
 ==================
 
 ### IT News

@@ -1,6 +1,6 @@
 ---
-"title:": Surf 09.16 ~ 09.30
-description: Surffing quick note 09.16 ~ 09.30
+title: Surf 09.16 ~ 09.30
+description: Surfing quick note 09.16 ~ 09.30
 authors: kywk
 tags:
   - surf
