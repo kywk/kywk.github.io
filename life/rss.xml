@@ -4,10 +4,16 @@
         <title>kywk.me Blog</title>
         <link>https://kywk.github.io/life</link>
         <description>kywk.me Blog</description>
-        <lastBuildDate>Sat, 13 May 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 04 Dec 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-tw</language>
+        <item>
+            <title><![CDATA[loma-flmi-l1]]></title>
+            <link>https://kywk.github.io/life/2023/12/04/loma-flmi-l1</link>
+            <guid>https://kywk.github.io/life/2023/12/04/loma-flmi-l1</guid>
+            <pubDate>Mon, 04 Dec 2023 00:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[just-us]]></title>
             <link>https://kywk.github.io/life/2023/05/13/just-us</link>
