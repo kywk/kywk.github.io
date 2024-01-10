@@ -6,7 +6,8 @@
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
+
 
 # Thumbnails
 ._*
@@ -59,11 +60,8 @@ assets/
 _incoming/
 _journaling/
 _templates/
-com.lacewing/
 com.nanshan/
-lifehack/
 important/
-project/
 
 # syncthing
 .stfolder/

@@ -1,37 +1,40 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+//const lightCodeTheme = require("prism-react-renderer/themes/github");
+//const darkCodeTheme = require("prism-react-renderer/themes/dracula");
+const { themes } = require("prism-react-renderer");
+const lightTheme = themes.github;
+const darkTheme = themes.dracula;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'kywk.me',
-  tagline: 'All around kywk',
-  url: 'https://kywk.github.io',
-  baseUrl: '/',
-  onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  title: "kywk.me",
+  tagline: "All around kywk",
+  url: "https://kywk.github.io",
+  baseUrl: "/",
+  onBrokenLinks: "warn",
+  onBrokenMarkdownLinks: "warn",
+  favicon: "img/favicon.ico",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'kywk', // Usually your GitHub org/user name.
-  projectName: 'kywk.github.io', // Usually your repo name.
-  deploymentBranch: 'gh-pages',
+  organizationName: "kywk", // Usually your GitHub org/user name.
+  projectName: "kywk.github.io", // Usually your repo name.
+  deploymentBranch: "gh-pages",
   trailingSlash: true,
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'zh-tw',
-    locales: ['zh-tw'],
+    defaultLocale: "zh-tw",
+    locales: ["zh-tw"],
   },
 
   presets: [
     [
-      'classic',
+      "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         /*
@@ -53,7 +56,7 @@ const config = {
         },
         */
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       }),
     ],
@@ -61,47 +64,47 @@ const config = {
 
   plugins: [
     [
-      '@docusaurus/plugin-content-docs',
+      "@docusaurus/plugin-content-docs",
       {
-        id: 'backpacker',
-        path: 'blogging/backpacker',
-        routeBasePath: 'backpacker',
-        sidebarPath: require.resolve('./sidebars.js'),
+        id: "backpacker",
+        path: "backpacker",
+        routeBasePath: "backpacker",
+        sidebarPath: require.resolve("./sidebars.js"),
       },
     ],
     [
-      '@docusaurus/plugin-content-docs',
+      "@docusaurus/plugin-content-docs",
       {
-        id: 'lifehacker',
-        path: 'blogging/lifehacker',
-        routeBasePath: 'lifehacker',
-        sidebarPath: require.resolve('./sidebars.js'),
+        id: "lifehacker",
+        path: "lifehacker",
+        routeBasePath: "lifehacker",
+        sidebarPath: require.resolve("./sidebars.js"),
       },
     ],
     [
-      '@docusaurus/plugin-content-docs',
+      "@docusaurus/plugin-content-docs",
       {
-        id: 'moco',
-        path: 'blogging/moco',
-        routeBasePath: 'moco',
-        sidebarPath: require.resolve('./sidebars.js'),
+        id: "moco",
+        path: "moco",
+        routeBasePath: "moco",
+        sidebarPath: require.resolve("./sidebars.js"),
       },
     ],
     [
-      '@docusaurus/plugin-content-blog',
+      "@docusaurus/plugin-content-blog",
       {
-        id: 'news',
-        routeBasePath: 'news',
-        path: 'blogging/news',
+        id: "news",
+        routeBasePath: "news",
+        path: "blog.news",
         showReadingTime: true,
       },
     ],
     [
-      '@docusaurus/plugin-content-blog',
+      "@docusaurus/plugin-content-blog",
       {
-        id: 'life',
-        routeBasePath: 'life',
-        path: 'blogging/life',
+        id: "life",
+        routeBasePath: "life",
+        path: "blog.life",
         showReadingTime: true,
       },
     ],
@@ -111,78 +114,78 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'kywk.me',
+        title: "kywk.me",
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: "My Site Logo",
+          src: "img/logo.svg",
         },
         items: [
           {
-            to: '/backpacker/way-2-kywk',
-            label: 'lonely planet',
-            position: 'left',
+            to: "/backpacker/way-2-kywk",
+            label: "lonely planet",
+            position: "left",
             activeBaseRegex: `/backpacker/`,
           },
           {
-            to: '/lifehacker/way-2-kywk',
-            label: 'lifehacker',
-            position: 'left',
+            to: "/lifehacker/way-2-kywk",
+            label: "lifehacker",
+            position: "left",
             activeBaseRegex: `/lifehacker/`,
           },
           {
-            to: '/moco/kywk.moco',
-            label: 'moco',
-            position: 'left',
+            to: "/moco/kywk.moco",
+            label: "moco",
+            position: "left",
             activeBaseRegex: `/moco/`,
           },
-          { to: '/news', label: 'news', position: 'left' },
-          { to: '/life', label: 'life', position: 'left' },
+          { to: "/news", label: "news", position: "left" },
+          { to: "/life", label: "life", position: "left" },
           {
-            href: 'https://github.com/kywk/',
-            label: 'GitHub',
-            position: 'right',
+            href: "https://github.com/kywk/",
+            label: "GitHub",
+            position: "right",
           },
         ],
       },
       footer: {
-        style: 'dark',
+        style: "dark",
         links: [
           {
-            title: 'Docs',
+            title: "Docs",
             items: [
               {
-                label: 'Journal',
-                to: '/lifehacker/way-2-kywk',
+                label: "Journal",
+                to: "/lifehacker/way-2-kywk",
               },
             ],
           },
           {
-            title: 'Community',
+            title: "Community",
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: "Stack Overflow",
+                href: "https://stackoverflow.com/questions/tagged/docusaurus",
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: "Discord",
+                href: "https://discordapp.com/invite/docusaurus",
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: "Twitter",
+                href: "https://twitter.com/docusaurus",
               },
             ],
           },
           {
-            title: 'More',
+            title: "More",
             items: [
               {
-                label: 'Blog',
-                to: '/life',
+                label: "Blog",
+                to: "/life",
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: "GitHub",
+                href: "https://github.com/facebook/docusaurus",
               },
             ],
           },
@@ -190,8 +193,8 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       },
       prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        theme: lightTheme,
+        darkTheme: darkTheme,
       },
     }),
 };

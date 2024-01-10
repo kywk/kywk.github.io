@@ -1,0 +1,58 @@
+---
+sidebar_position: 10
+
+title: "隨車放風裝備組合, 2022 Aug"
+tags: ["Equipment", "Camping"]
+
+date: 2022-08-04T13:16:03+08:00
+image: "https://lh3.googleusercontent.com/pw/ACtC-3eG64ZtpHegixnPtyAFrxhYz5zUOC7bT5Jhh1caUMVE1qqEc3L_uGQYLCmxlBr-3gVRW0gUFHU9nh1PuRxR00cOahBUIJPxlupa0kkq1fNH5HAhNLa9aLSg-kjta9_QcgbPhfnpp_z_NRsj6PNOzIkeOg=w800-no?authuser=0"
+categories: ["equipment", "camping"]
+---
+
+_last updated: 2022-08-04_
+
+生活需要多些隨性, 多些當下.
+
+打包一組輕便隨車的裝備, 塞車時, 行程變更時, 心血來潮時,  
+隨時跳車, 一把椅子, 一杯咖啡, 一本書, 一段悠閒.
+
+![](https://lh3.googleusercontent.com/pw/AL9nZEWyBPQodPFssNbf2e_9yFRuFnPAn0E2ax0HRN63hSCiQYyurYHCHm5I16O_etqdn0apAL2WnpyxwvZgX1dhYqVLgDKvpZ03N_i0ObO-wLUdJIQv9bg627wZ1PBSM90kd1J3KWMcTwJ6d03RcErU1Aoxug=h800-no?authuser=0)
+
+<!-- more -->
+
+四秀單攻提前下山等候隊友時, 在武陵農場享受放空.
+
+![](https://lh3.googleusercontent.com/pw/AL9nZEX9bIaBEG5vwpUNgY88bU_Pg9qPXOFmxXPHci7urS-wmNDOxo2ezVmt8MXWGjgP0ogEbCiCm0rdjgOqM3Wj-vei-NNUp5XD0lTZ8seGIqI9qu77TFL2DyOsf10Zms5NWa8BSMTfvAPaTguPEE8AmucjKA=w800-no?authuser=0)
+
+決定準備適合隨時來個午茶咖啡簡易組合,
+輕巧隨車攜帶, 同時也當作露營標準備用裝備組.
+
+### 桌椅組合 ###
+
+-   SELPA 輕便折疊桌 / 月亮椅
+    ![](https://lh3.googleusercontent.com/3fBlDtx6PIAfmgja-Rmb7eUqCv2pHaAT8ZaC8xoVjtrQuZpLhOMAOqX0fcRz0YuOR8r_ZAoUk9BsjKml2rgQwaYy7t15_AqtV9PugyzBp5ZZUtzFPAInqGzD74qJ7czT1DRDUDJRIj9IJzfVeA4hC0WBj30Qyvyg0jBZAugwHbpJNX_ZzKdz7UEK8EsD7-B3dddy38Dc_D98jGmx5PvkXkcmZHKjjcDK5GovZlJ5XpLsBRCXHU9Ts0eA4UArpNHbOZudUOfF4jbXhW6QbLGd3XUgjitWMeGjhlrtemNqFldgeLgjkD-l3OKf1mUBMd4Sc3_xRFIDqL6uGXRHBFpvdUyLQp2F1VQmHkemPtBl_fh4nVDxlxlHU7aXRsG25-TUkVlZplP3YOyEC8279ngSoLwJeYsSPFuBC04JP8-PaRYhW9kfinF3PIf4lyw0qNZ611KwTac6zv7qmha78LEaXD7xC1--IauEBnFz_qnlZj6mbCuMIAX6wzPFhTzPI6gqbsPqWtQ4ET-NYgEKSmOF09WCLerNSqcLXy-tpxJem5eW7ek-PfNVv1_n82Zl8Kb6cIa35z2OeNXwojOKSJNJFcrwC6zqmoKkMw13cHf85wIa5Oc5MRI-CpYn7SihVa5aYkFDw46XtwEG9G11aqeUqFlBpMz4OO0j4YjJ02PxOGzWNzTXjRIDFRNBfAAwnHvt4CPfzBHcI9DzSX4VzSZ1QBq5hOrV0A1-3P-Bhmhz-KVtv0vlg9uyxEuauDJh_9s=s800-no?authuser=0)
+-   [Coleman 輕鬆躺椅 / CM-0499JM000](https://www.coleman.com.tw/products/coleman-%E8%BC%95%E9%AC%86%E8%BA%BA%E6%A4%85-cm-0499jm000)
+
+    隨車一桌兩椅的組合,  
+    不方便落地的時空, 拿把月亮椅樹蔭下呼吸, 悠活!  
+    可以放風的環境, 躺椅配上啤酒, 舒服!
+
+### 炊事組合 ###
+
+-   SOTO ST-310 / 折疊桌版
+    ![](https://lh3.googleusercontent.com/UYQ0HTCYhHMOdwEKwQG_cgEvzV67DPDbct3WAZlgVY4cSUBb147YT7AOqSSO6ASLl3N6fmLIr4wEST72lFaBXSQDhwQPiN8V0m-fRN66AUD3YQ3JB62IYZC5QasrqL1qRxEaiUrF6Ep5ohxibLltRW88IsHEBU9BT-WaXec68zxdDitqqhltZ0qk66eBI-fEEel4YQW0BiqTO6s3n4tgZo0jL5urSvjR2u3-_rdp7SY0juwafY7R8aIX39gXs28g6GTg_pND5Oqdxr9Oxl1ntKzDZiPNunjtDw_s4kbFbnVWJOaPjJJ6Ga-TMwNLQMmRA3l1kyTj4iiomGXjLf-AFMfde8FC0elL4h52NdWShPj-XBOBWkMg8-f-8Ub3YWKorBZlQr-S695NP7IG29C3uMM4AXmUS8DqIhEQTbROlO55KFxXt5XPWDbtlhW2QUP36-H10mvO5ZmxVEG2dAavBMTBkGmOVvhxGzk0IwnGD-SUyp7db9TLvzTDpyd24MeZbzRXSbLwfdhPhAKj84WSBD6UX7gtfhj6vNmE50I8F7Ztlh7xabohkE0Z8My05qCLi5o9B272H6oqQT_SYHKKm42JUDGfbE2jT1Bz8MBKY1SgBZ5NDoO3rywX5tt1_DE3IXpM8Izt_JCZ_T2plurdrsxSS7M4fpGkUGJW2DR8QBDnElRXuiKrEGz9YmTJqYQVe2vSPqBdX8fyTw1b-ntvkbBOPddZxBx1rxf9_euq9zKB-YDcZwCcIKXDDOBoTJE=s800-no?authuser=0)
+-   海尼根星銀潮流套鍋
+    ![](https://lh3.googleusercontent.com/dxV8BGAdsSlWTqMB7402kRKH1bRFLl6An3lP3ZH62eCl0iJW1xnw6Rah5Al-Jddn-Xe9cHmwS_78r0w2a_AV_3h0TgrVU7YnrZDIICDMhMZO95pntgyfYgxYonN5hHidDR1BY5CllnbR6Acqw12v5IIqRNBVpGZFVeor_34qUNO1Mq30Pd-sYERqoDOTBign0gaSBaF59Fa5RFKPWDVSFXE_TUYAiQtVsmrNsNwgGzGoGwktIP1qeArM-nMtJ3zZpoD_ehpM0L6QC4k8WBoBQlHTrmsF3qfPsuYpB3aao5MtpdYvTijBUa335yNzv3D9B-9kqMGL1cvs7HsLbcwoSN1l8-cHQdMSB8-3iFwboYKgdcjPRM0VD_KVKCyZC8uf_vdA5IRSMkZHj8AUd72DWKbWQax_Hm9o1m8Y-NKCsEDFyjZ-L5KVXAjIuY6PpgQig3euOkK5_U680NSLBOnTYwpgBJPazgEPEY56AWN6GDuMQqsdJFdrPlG0ocIu_fJTOQSp_T2qpXAfFQ8FBP0PGGD6e1T3X54zCF5FRDHlaZSoylDgtuKvJ8-lBCgmWKN5-Uf2RLRRPiu70LTjSjho7gaWKeq_uG7V2PSv9byNHWMhqjbFKj6Ztzs_qbUIZ9_F79ZuVKo4KIEAa3BI-Xkx-1M4vogIWGK04gYSm4Am25sFepeWQrriJY1rvFdLCZeqLz8yPeK-JQS5lzvui665Zo41f9pxlFzWNFlHzNiKfa0gjwOqogkfiOsCByd6Uy4=w800-no?authuser=0)
+
+### 收納系統 ###
+
+-   海尼根星銀潮流手提收納箱  
+    ![](https://lh3.googleusercontent.com/FV2Uhhzma3FAD_f8Ubt0RoNR3UGAwOt4KVZyKtoqUuNen5vfJie9vVna5egC9tJ-n0bPD02Rmuu5LvIrNQnOJHKZH0KeIFB6CjJ0TXOj97fJRSCLencJod8Eg3DlDi6j8zgHYGU8A_CylRzSJcTU4TzflEhiN17wtqeMVos6jUG7-Zfw7NxpKXeFMD3JcTTR1s3Xpn74zXngVVyT3usgs3UDuw_TWZJabc5Vpp5XWCe1J50zCC6bysL3f-5J5dkQ2eYuBidVh-P0q8Petw2kNTAL6oeFigq_9XLacU4kFVLwEUcSGqSEsgfmbpKSRREcglGLg9JjR88MejqwIwtQmawBA2Ecdcge4csyMcNkLSUPCNNH6IpkCYK4pH1uPxtr0Ndj61qSV24R_xGuf3yG1HGf_vQ8x4eadA6JQSgBTXYy1F4-yOFqtkTb8jrPsmfWsc2Q2NDQp__gpRJjlizAFQKc5O2AY0ePLdUs8BWdj0RO0CSSyTRTQaqhG34Jmq8LgEAy0hVB4wTD8Lp3I4KjY68vNMgrIJWh2qh8m0zs3n3hrOqGoDYu6kjRYG2_ikQwXjA93Xd_BetwpMUN8tiFKjKv6ulNN6dDu5CPrFVAcECmPOB0zPfxGWVT-GzXHFHVkS4jjb6fbozGH-4jphrr094rXM_z7xCU41TCJf-4zC8Af1VN1az82z1CD7AUGFgSZK571kOhL--eD885Jtz_NwWUasBWDvwKmQCXnwpwTeTRzWdVqzR_f7MYTyutNy4=w800-no?authuser=0)
+
+海尼根這組手提收納箱, 尺寸小巧卻恰好足以收納個人套鍋, 爐具和一些基本雜物.  
+打包後放於車上冰桶內, 不佔空間又能隨時取用.
+
+### 睡眠組合 ###
+
+常備抱枕, 內含睡袋, 床單, 充氣枕頭等.  
+臨時放空組合, 若有必要車宿為準.
