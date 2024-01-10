@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkblog_kywk=self.webpackChunkblog_kywk||[]).push([[20966],{69503:e=>{e.exports=JSON.parse('{"permalink":"/life/tags/km","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkblog_kywk=self.webpackChunkblog_kywk||[]).push([[22357],{91590:e=>{e.exports=JSON.parse('{"label":"acquire","permalink":"/news/tags/acquire","allTagsPath":"/news/tags","count":1}')}}]);

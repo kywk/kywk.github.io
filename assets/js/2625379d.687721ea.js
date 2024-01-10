@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkblog_kywk=self.webpackChunkblog_kywk||[]).push([[97744],{44760:e=>{e.exports=JSON.parse('{"title":"Web","description":"Web","slug":"/category/web","permalink":"/moco/category/web","navigation":{"previous":{"title":"Frontend","permalink":"/moco/category/frontend"},"next":{"title":"Awesome Web","permalink":"/moco/frontend/web/awesome"}}}')}}]);

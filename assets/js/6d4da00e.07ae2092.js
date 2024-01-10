@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkblog_kywk=self.webpackChunkblog_kywk||[]).push([[75070],{76989:s=>{s.exports=JSON.parse('{"label":"bash","permalink":"/moco/tags/bash","allTagsPath":"/moco/tags","count":1,"items":[{"id":"devsecops/bash_snippets","title":"Bash: snippets","description":"Notes of Moo Cow","permalink":"/moco/devsecops/bash_snippets"}]}')}}]);

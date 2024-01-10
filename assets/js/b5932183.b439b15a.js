@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkblog_kywk=self.webpackChunkblog_kywk||[]).push([[1323],{61029:e=>{e.exports=JSON.parse('{"label":"CodiMD","permalink":"/moco/tags/codi-md","allTagsPath":"/moco/tags","count":1,"items":[{"id":"52projects/codimd/DevEnv","title":"DevEnv Setup","description":"setup CodiMD dev environment","permalink":"/moco/52projects/codimd/DevEnv"}]}')}}]);

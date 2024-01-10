@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkblog_kywk=self.webpackChunkblog_kywk||[]).push([[825],{77661:o=>{o.exports=JSON.parse('{"label":"cache","permalink":"/moco/tags/cache","allTagsPath":"/moco/tags","count":1,"items":[{"id":"bootcamp/os_tilylfu","title":"[IEEE] TinyLFU","description":"[IEEE] TinyLFU","permalink":"/moco/bootcamp/os_tilylfu"}]}')}}]);

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkblog_kywk=self.webpackChunkblog_kywk||[]).push([[8289],{58463:s=>{s.exports=JSON.parse('{"label":"CORS","permalink":"/moco/tags/cors","allTagsPath":"/moco/tags","count":1,"items":[{"id":"node.js/express/express_cors","title":"Express CORS","description":"Express CORS","permalink":"/moco/node.js/express/express_cors"}]}')}}]);

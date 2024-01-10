@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkblog_kywk=self.webpackChunkblog_kywk||[]).push([[24121],{57105:e=>{e.exports=JSON.parse('{"label":"PKM","permalink":"/life/tags/pkm","allTagsPath":"/life/tags","count":1,"unlisted":false}')}}]);

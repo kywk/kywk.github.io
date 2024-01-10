@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkblog_kywk=self.webpackChunkblog_kywk||[]).push([[77327],{32735:s=>{s.exports=JSON.parse('{"label":"2023/11","permalink":"/news/tags/2023-11","allTagsPath":"/news/tags","count":2,"unlisted":false}')}}]);
