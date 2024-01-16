@@ -22,6 +22,7 @@ image: https://lh3.googleusercontent.com/pw/AL9nZEUA9Ifvd5Z8SXDWkeVB6AC4MPGwnXaL
 - [x] 機票刷卡survey 📅 2023-09-28 ✅ 2023-10-04
 - [x] 埃及電子簽證 🔺 📅 2023-12-28 ✅ 2024-01-04
 - [2023最新！埃及簽證申請攻略，不必出門就能網路申請電子簽證！](https://ninetyroadtravel.com/egypt/visa-2/)
+- [x] Schedule in Obsidian Kanban view 📅 2024-01-16 ✅ 2024-01-16
 
 ## 沙巴 神山
 
@@ -36,8 +37,41 @@ image: https://lh3.googleusercontent.com/pw/AL9nZEUA9Ifvd5Z8SXDWkeVB6AC4MPGwnXaL
 ## 胡志明市
 
 - [ ] 02.06 ~ 09 住宿 ⏫ 📅 2023-12-31
-- [ ] 行程 📅 2024-01-20 
+- [ ] 行程 📅 2024-01-22
 
 ### Ref
 
 - [越南除了咖啡、河粉還有什麼？──從 3 位越南女性的故事，一窺「生機勃勃」的越南印象｜春嘻／讀者投書｜換日線](https://crossing.cw.com.tw/article/18484)
+
+## Ready... Go
+
+### Documentation
+
+- [ ] ETA
+	- [ ] pdf file on mobile phone
+	- [ ] printed paper
+- [ ] Itinerary
+	- [ ] TPE > KUL > SGN > KHH
+		- [ ] pdf file on mobile phone
+		- [ ] printed paper
+	- [ ] KUL > CAI > KUL
+		- [ ] pdf file on mobile phone
+		- [ ] printed paper
+- [ ] Hotel booking receipt 
+
+### 3C 
+
+- [ ] Laptop MacBook Pro A1708(2)
+- [ ] GX-85
+- [ ] Charger PD-140W
+- [ ] 行動電源: 速移 20000 mAH
+
+### Stuff
+
+- [ ] 換洗衣物 x 5
+- [ ] 運動鞋
+- [ ] 淘汰內衣褲 / 襪子
+
+### Others
+
+- [ ] Remote desktop connection on NANSHAN MacBook
