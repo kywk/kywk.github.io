@@ -1,14 +1,14 @@
 ---
 title: TODO & checklist
-description: ""
 tags:
   - Backpacker
   - Egypt
+  - GTD/TODO
 draft: true
 sidebar_position: 97
 hide_table_of_contents: true
 created: 2023-08-30
-updated: 2023-09-01
+updated: 2024-01-23
 image: https://lh3.googleusercontent.com/pw/AL9nZEUA9Ifvd5Z8SXDWkeVB6AC4MPGwnXaL6kBXNPoXwOQQ2jOcZ1Jw_0p8TKK8C3ZX0e67_FOY15eDrm7aaXSQJcKtoUzC80SAQEHsaBy6qS2AqNNs5VUFNXBKm439y_1wkvmDl-PnL8ReojnIumNlEvOXBg=w800-no?authuser=0
 ---
 
@@ -36,8 +36,9 @@ image: https://lh3.googleusercontent.com/pw/AL9nZEUA9Ifvd5Z8SXDWkeVB6AC4MPGwnXaL
 
 ## 胡志明市
 
-- [ ] 02.06 ~ 09 住宿 ⏫ 📅 2023-12-31
-- [ ] 行程 📅 2024-01-22
+- [-] 02.06 ~ 09 住宿 ⏫ 📅 2023-12-31 ✅ 2024-02-06
+- [-] 行程 📅 2024-01-22
+- [x] ETA 簽證 📅 2024-01-19 ✅ 2024-01-23
 
 ### Ref
 
@@ -47,31 +48,33 @@ image: https://lh3.googleusercontent.com/pw/AL9nZEUA9Ifvd5Z8SXDWkeVB6AC4MPGwnXaL
 
 ### Documentation
 
-- [ ] ETA
-	- [ ] pdf file on mobile phone
-	- [ ] printed paper
-- [ ] Itinerary
-	- [ ] TPE > KUL > SGN > KHH
-		- [ ] pdf file on mobile phone
-		- [ ] printed paper
-	- [ ] KUL > CAI > KUL
-		- [ ] pdf file on mobile phone
-		- [ ] printed paper
-- [ ] Hotel booking receipt 
+- [x] ETA ✅ 2024-01-23
+	- [x] pdf file on mobile phone ✅ 2024-01-18
+	- [x] printed paper ✅ 2024-01-23
+- [x] Itinerary ✅ 2024-01-23
+	- [x] TPE > KUL > SGN > KHH ✅ 2024-01-23
+		- [x] pdf file on mobile phone ✅ 2024-01-18
+		- [x] printed paper ✅ 2024-01-23
+	- [x] KUL > CAI > KUL ✅ 2024-01-23
+		- [x] pdf file on mobile phone ✅ 2024-01-18
+		- [x] printed paper ✅ 2024-01-23
+- [x] Hotel booking receipt ✅ 2024-01-18
+- [x] 美金 1,000 📅 2024-01-22 ✅ 2024-01-22
 
-### 3C 
+### 3C
 
-- [ ] Laptop MacBook Pro A1708(2)
-- [ ] GX-85
-- [ ] Charger PD-140W
-- [ ] 行動電源: 速移 20000 mAH
+- [x] Laptop MacBook Pro A1708(2) ✅ 2024-01-23
+- [x] GX-85 ✅ 2024-01-23
+- [x] 行動電源: 速移 20000 mAH ✅ 2024-01-19
+- [x] Charger PD-140W ✅ 2024-01-17
 
 ### Stuff
 
-- [ ] 換洗衣物 x 5
-- [ ] 運動鞋
-- [ ] 淘汰內衣褲 / 襪子
+- [x] 換洗衣物: 長褲 / 長袖 x 2 / 短袖組 x 3 ✅ 2024-01-17
+- [x] 淘汰內衣褲 / 襪子 ✅ 2024-01-17
+- [x] 運動鞋 ✅ 2024-01-23
 
 ### Others
 
-- [ ] Remote desktop connection on NANSHAN MacBook
+- [x] Remote desktop connection on NANSHAN MacBook ✅ 2024-01-22
+- [x] Camping packing 📅 2024-01-18 ✅ 2024-01-18
