@@ -2,11 +2,39 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kywk.github.io/news</id>
     <title>kywk.me Blog</title>
-    <updated>2024-01-15T00:00:00.000Z</updated>
+    <updated>2024-01-31T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kywk.github.io/news"/>
     <subtitle>kywk.me Blog</subtitle>
     <icon>https://kywk.github.io/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Surf 01.16~ 01.31]]></title>
+        <id>https://kywk.github.io/news/2024/01/31/_Surfing</id>
+        <link href="https://kywk.github.io/news/2024/01/31/_Surfing"/>
+        <updated>2024-01-31T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Surfing quick note 01.16~ 01.31]]></summary>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="it-news">IT News<a href="https://kywk.github.io/news/2024/01/31/_Surfing#it-news" class="hash-link" aria-label="IT News的直接連結" title="IT News的直接連結">​</a></h3>
+<ul>
+<li><a href="https://www.ithome.com.tw/news/160848?utm_source=pocket_saves" target="_blank" rel="noopener noreferrer">Azure量子開發套件工具包1.0發布，在瀏覽器就可進行量子程式開發 | iThome</a></li>
+<li><a href="https://studyhost.blogspot.com/2024/01/devops.html" target="_blank" rel="noopener noreferrer">.NET Walker: DevOps導入前後，該如何評估成效?</a></li>
+<li></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tech">Tech<a href="https://kywk.github.io/news/2024/01/31/_Surfing#tech" class="hash-link" aria-label="Tech的直接連結" title="Tech的直接連結">​</a></h3>
+<ul>
+<li></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="life">Life<a href="https://kywk.github.io/news/2024/01/31/_Surfing#life" class="hash-link" aria-label="Life的直接連結" title="Life的直接��連結">​</a></h3>
+<ul>
+<li><a href="https://www.playpcesor.com/2024/01/2024-work-optimization-bulletproof-journal-system.html" target="_blank" rel="noopener noreferrer">2024 高效工作法：如何用防彈筆記打造提升生產力的支持系統（實戰案例總集）</a></li>
+<li></li>
+</ul>]]></content>
+        <author>
+            <name>kywk</name>
+            <uri>https://github.io/kywk</uri>
+        </author>
+        <category label="Surf" term="Surf"/>
+        <category label="2024/01" term="2024/01"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Surf 01.01~ 01.15]]></title>
         <id>https://kywk.github.io/news/2024/01/15/_Surfing</id>
@@ -548,9 +576,9 @@ Google / Apple / Here (MS) 以外的最大地圖服務</li>
         <summary type="html"><![CDATA[2022.10.13 Obsidian 1.0]]></summary>
         <content type="html"><![CDATA[<p>日常執行 <code>brew upgrade</code> 時順便滑 Hacker News 時看到 <a href="https://news.ycombinator.com/item?id=33190433" target="_blank" rel="noopener noreferrer">Obsidian 1.0 – Personal knowledge base app</a>.
 然後就注意到</p>
-<p><img loading="lazy" src="https://lh3.googleusercontent.com/pw/AL9nZEVUTboiyX9IPC_tRwXCbbKFcE26fbjWTqfbsR75fu9MYtp4WUZSatrzNa6QGjwr_vlrvfj9qmD8C7rKRt_FbUM_x-0-Kc-XtOtoDXnVGUOfnSV4p64QKTOOxxeMz37Fks95ueJUTDfWE1qEaIhAwPRSaA=w800-no?authuser=0" alt="" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" src="https://lh3.googleusercontent.com/pw/AL9nZEVUTboiyX9IPC_tRwXCbbKFcE26fbjWTqfbsR75fu9MYtp4WUZSatrzNa6QGjwr_vlrvfj9qmD8C7rKRt_FbUM_x-0-Kc-XtOtoDXnVGUOfnSV4p64QKTOOxxeMz37Fks95ueJUTDfWE1qEaIhAwPRSaA=w800-no?authuser=0" alt="" class="img_ev3q"></p>
 <p>恭喜 Obsidian, 1.0 正式 Release!</p>
-<p><img loading="lazy" src="https://lh3.googleusercontent.com/pw/AL9nZEV5EbhtxtHqXNv5ciw7UZDo1u4nrvN5kcrZ_-HpW79vwJtc4E7tV4LWYkRdzhUnb4AA-dEhwTjrCtoyaC65UlogGAW5lOyUheLJm2ANjYF5NB1R7ufek_3qi9AXxbKIJM76qNhAap_ZbUX3euM3wVVrxQ=w800-no?authuser=0" alt="" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" src="https://lh3.googleusercontent.com/pw/AL9nZEV5EbhtxtHqXNv5ciw7UZDo1u4nrvN5kcrZ_-HpW79vwJtc4E7tV4LWYkRdzhUnb4AA-dEhwTjrCtoyaC65UlogGAW5lOyUheLJm2ANjYF5NB1R7ufek_3qi9AXxbKIJM76qNhAap_ZbUX3euM3wVVrxQ=w800-no?authuser=0" alt="" class="img_ev3q"></p>
 <p>初步試了一下, 介面上更加洗煉外, 一般需求並沒有太多不同感受.</p>
 <p>也可能是我尚未深入使用 Obsidian 吧, 目前多數文章還是在部落格下,
 只是順便利用 Obsidian 來幫忙進行本地端關聯管理而已.
@@ -578,7 +606,7 @@ Google / Apple / Here (MS) 以外的最大地圖服務</li>
 </ul>
 <p>有趣的是 Hacker News 上另一則資訊 <a href="https://news.ycombinator.com/item?id=32851262" target="_blank" rel="noopener noreferrer">Penpot: Open-source design and prototyping platform | Hacker News</a>
 同時也上了 Daily Top 10, 看來大家對 Figma 之後的商業行為有許多疑慮.</p>
-<p><img loading="lazy" src="https://lh3.googleusercontent.com/pw/AL9nZEUvTgBADizLXgJKMSkQvOiiUB78oQJCHeCRJTRgowphImX6pwq4Abp47IXIMLyDxm2n-guhoy2hhnGqOYf0_z9iBqBhUpogFgjj4fQw57tazteFea13p7VT4gRToVPU2Kbo7K18bsm2FcXShXwG2-I9OQ=w479-no?authuser=0" alt="hacker news daily top 10" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" src="https://lh3.googleusercontent.com/pw/AL9nZEUvTgBADizLXgJKMSkQvOiiUB78oQJCHeCRJTRgowphImX6pwq4Abp47IXIMLyDxm2n-guhoy2hhnGqOYf0_z9iBqBhUpogFgjj4fQw57tazteFea13p7VT4gRToVPU2Kbo7K18bsm2FcXShXwG2-I9OQ=w479-no?authuser=0" alt="hacker news daily top 10" class="img_ev3q"></p>
 <blockquote>
 <p>Penpot is the first Open Source design and prototyping platform meant for cross-domain teams.
 Non dependent on operating systems, Penpot is web based and works with open web standards (SVG).
@@ -593,36 +621,5 @@ For all and empowered by the community.</p>
             <name>kywk</name>
             <uri>https://github.io/kywk</uri>
         </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Give up GitHub ?]]></title>
-        <id>https://kywk.github.io/news/2022/07/01/give-up-github</id>
-        <link href="https://kywk.github.io/news/2022/07/01/give-up-github"/>
-        <updated>2022-07-01T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[2022.07.01 Time to give up GitHub?]]></summary>
-        <content type="html"><![CDATA[<p><a href="https://sfconservancy.org/blog/2022/jun/30/give-up-github-launch/" target="_blank" rel="noopener noreferrer">Give Up GitHub: The Time Has Come! - Conservancy Blog - Software Freedom Conservancy</a>
-是今天上 <a href="https://news.ycombinator.com/item?id=31932250" target="_blank" rel="noopener noreferrer">Hacker News 的熱門討論</a>.
-通篇來說, 支持反對或中立幾方的討論, 好像還是回到 Vim V.S Emacs 之類的信仰之爭.</p>
-<p>前些日子, GitHub 毫不意外地<a href="https://github.blog/2022-06-08-sunsetting-atom/" target="_blank" rel="noopener noreferrer">公告了 Atom 退場</a>,
-近日 GitHub 又推出了可能有版權疑慮的收費服務 GitHub Copilot,
-相信這些舉動會踩到 FOSS 基礎教義派支持者.</p>
-<p>對許多開源開發者來說, MS 代表了原罪.
-即使 GitHub 打從一開始就聲明 GitHub 是商業公司, 不是非營利組織.
-當他獨立經營時, GitHub 對開發整合帶來的便利, 深受各方開發者喜好, 也包括 FOSS 專案與社群.
-而當 MS 買下 GitHub 後 GitHub 一舉一動都會被放大檢視與批評.</p>
-<p>個人暫時是中立偏向支持 GitHub 的立場.
-自由軟體若能適當結合商業行為, 才能走得更遠.</p>
-<p>ref: <a href="https://sfconservancy.org/GiveUpGitHub/" target="_blank" rel="noopener noreferrer">Give Up GitHub - Software Freedom Conservancy</a></p>
-<p><em>22.07.05 update</em></p>
-<p>相關後續報導:</p>
-<ul>
-<li><a href="https://buzzorange.com/techorange/2022/07/05/github-pilot-violate-open-source-non-profit/" target="_blank" rel="noopener noreferrer">開源社群發起抵制！工程師 AI 助手 Github Copilot 為何被 NGO 點名？ | TechOrange 科技報橘</a></li>
-<li><a href="https://www.techbang.com/posts/97658-abandoning-github-the-time-has-come-copilot-charges-a-fee" target="_blank" rel="noopener noreferrer">放棄 GitHub：時機已到？Copilot收費，惹怒軟體自由保護協會SFC | T客邦</a></li>
-</ul>]]></content>
-        <author>
-            <name>kywk</name>
-            <uri>https://github.io/kywk</uri>
-        </author>
-        <category label="GitHub" term="GitHub"/>
     </entry>
 </feed>
