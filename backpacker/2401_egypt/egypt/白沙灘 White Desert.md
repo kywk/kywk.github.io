@@ -5,11 +5,11 @@ tags:
   - Sahara
   - Backpacker
   - 2024/01
-location: 
+location:
   - 27.28309
   - 28.20137
-
 mapmarker: default
+hide_table_of_contents: true
 ---
 白沙灘 White Desert
 ==================
@@ -17,4 +17,3 @@ mapmarker: default
 
 See Also
 --------
-

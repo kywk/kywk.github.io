@@ -5,11 +5,11 @@ tags:
   - Cuisine
   - Backpacker
   - 2024/01
-location: 
+location:
   - 29.20251
   - 25.51961
-
 mapmarker: food
+hide_table_of_contents: true
 ---
 
 Muhra

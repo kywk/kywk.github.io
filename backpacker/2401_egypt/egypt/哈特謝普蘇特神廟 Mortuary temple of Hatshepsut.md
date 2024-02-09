@@ -7,9 +7,9 @@ tags:
 location:
   - 25.73839
   - 32.60679
-
 wiki: https://zh.wikipedia.org/zh-tw/哈特谢普苏特神庙
 mapmarker: default
+hide_table_of_contents: true
 ---
 
 哈特謝普蘇特神廟 Mortuary temple of Hatshepsut

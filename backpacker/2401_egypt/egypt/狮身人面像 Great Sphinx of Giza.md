@@ -1,7 +1,7 @@
 ---
 title: 人面獅身像 Great Sphinx of Giza
 tags:
-  - Egypt
+  - Egypt/Cairo
   - Backpacker
   - 2024/01
 location:
@@ -10,6 +10,7 @@ location:
 web: https://whc.unesco.org/en/list/86
 wili: https://zh.wikipedia.org/zh-tw/狮身人面像
 marker: default
+hide_table_of_contents: true
 ---
 
 人面獅身像 Great Sphinx of Giza

@@ -1,15 +1,15 @@
 ---
 title: 盧客索神廟 Luxor Temple
 tags:
-  - Egypt
+  - Egypt/Luxor
   - Backpacker
   - 2024/01
 location:
   - 25.69971
   - 32.63950
 wiki: https://zh.wikipedia.org/zh-tw/卢克索神庙
-
 mapmarker: default
+hide_table_of_contents: true
 ---
 
 盧客索神廟 Luxor Temple

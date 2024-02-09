@@ -1,14 +1,14 @@
 ---
 title: 洞穴教堂 Mokattam Cave Church
 tags:
-  - Egypt
+  - Egypt/Cairo
   - Backpacker
   - 2024/01
 location:
   - 30.03036
   - 31.27614
-
 mapmarker: default
+hide_table_of_contents: true
 ---
 洞穴教堂 Mokattam Cave Church
 ===========================

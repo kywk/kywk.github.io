@@ -1,15 +1,15 @@
 ---
 title: 哈布城 Medinet Habu
 tags:
-  - Egypt
+  - Egypt/Luxor
   - Backpacker
   - 2024/01
 location:
   - 25.71971
   - 32.60129
-
 wiki: https://en.wikipedia.org/wiki/Medinet_Habu
 mapmarker: default
+hide_table_of_contents: true
 ---
 
 哈布城 Medinet Habu

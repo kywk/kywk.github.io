@@ -1,15 +1,14 @@
 ---
 title: 錫瓦 Siwa
 tags:
-  - Egypt
-  - Sahara
+  - Egypt/Siwa
   - Backpacker
   - 2024/01
 location:
   - 29.20281
   - 25.51961
-
 mapmarker: default
+hide_table_of_contents: true
 ---
 
 錫瓦 Siwa

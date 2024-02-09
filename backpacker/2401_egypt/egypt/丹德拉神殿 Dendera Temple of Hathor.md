@@ -8,6 +8,7 @@ location:
   - 26.14314
   - 32.67222
 wiki: https://en.wikipedia.org/wiki/Dendera
+hide_table_of_contents: true
 mapmarker: default
 ---
 

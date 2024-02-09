@@ -1,15 +1,15 @@
 ---
 title: 卡納克神廟 Karnak Temple Complex
 tags:
-  - Egypt
+  - Egypt/Luxor
   - Backpacker
   - 2024/01
 location:
   - 25.71907
   - 32.65740
-
 wiki: https://zh.wikipedia.org/zh-tw/卡纳克神庙
 mapmarker: default
+hide_table_of_contents: true
 ---
 
 卡納克神廟 Karnak Temple Complex

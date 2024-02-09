@@ -1,15 +1,15 @@
 ---
 title: 帝王谷 Valley of the Kings
 tags:
-  - Egypt
+  - Egypt/Luxor
   - Backpacker
   - 2024/01
 location:
   - 25.74063
   - 32.60153
-
 wiki: https://zh.wikipedia.org/zh-tw/帝王谷
 mapmarker: default
+hide_table_of_contents: true
 ---
 
 帝王谷 Valley of the Kings

@@ -2,14 +2,13 @@
 title: 馬特魯 Matrouh
 tags:
   - Egypt
-  - Mediterranean
   - Backpacker
   - 2024/01
-location: 
+location:
   - 31.35463
   - 27.23752
-
 mapmarker: default
+hide_table_of_contents: true
 ---
 
 馬特魯 Matrouh
