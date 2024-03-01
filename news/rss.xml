@@ -4,10 +4,63 @@
         <title>kywk.me Blog</title>
         <link>https://kywk.github.io/news</link>
         <description>kywk.me Blog</description>
-        <lastBuildDate>Wed, 31 Jan 2024 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 29 Feb 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-tw</language>
+        <item>
+            <title><![CDATA[Surf 02.15~ 02.29]]></title>
+            <link>https://kywk.github.io/news/2024/02/29/_Surfing</link>
+            <guid>https://kywk.github.io/news/2024/02/29/_Surfing</guid>
+            <pubDate>Thu, 29 Feb 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[Surfing quick note 02.15~ 02.29]]></description>
+            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="it-news">IT News<a href="https://kywk.github.io/news/2024/02/29/_Surfing#it-news" class="hash-link" aria-label="IT News的直接連結" title="IT News的直接連結">​</a></h3>
+<ul>
+<li><a href="https://www.ithome.com.tw/news/161316" target="_blank" rel="noopener noreferrer">Google開源內部所使用的檔案辨識系統Magika | iThome</a>
+<ul>
+<li><a href="https://opensource.googleblog.com/2024/02/magika-ai-powered-fast-and-efficient-file-type-identification.html" target="_blank" rel="noopener noreferrer">Magika: AI powered fast and efficient file type identification | Google Open Source Blog</a></li>
+</ul>
+</li>
+<li><a href="https://blog.gslin.org/archives/2024/02/16/11667/" target="_blank" rel="noopener noreferrer">uv：用 Rust 寫的 Python Packaging 替代方案 – Gea-Suan Lin's BLOG</a></li>
+<li><a href="https://blog.gslin.org/archives/2024/02/16/11668/" target="_blank" rel="noopener noreferrer">Go 的 net/http 在 1.22 的 routing 新功能 – Gea-Suan Lin's BLOG</a></li>
+<li><a href="https://www.playpcesor.com/2024/02/excalidraw-animate.html" target="_blank" rel="noopener noreferrer">一鍵自動將手繪流程圖轉為動畫影片，免費工具製作生動解說影片</a></li>
+<li><a href="https://www.techbang.com/posts/113231-robotstxt-internet-ai-balance" target="_blank" rel="noopener noreferrer">一份君子協議的robots.txt維持了網際網路30年來的秩序，但AI的出現破壞了這種信任和平衡 | T客邦</a></li>
+<li><a href="https://www.ithome.com.tw/news/161407" target="_blank" rel="noopener noreferrer">Rust開發者擔心語言越變越難，甚至有20%受訪者希望放慢新功能開發速度 | iThome</a>
+<ul>
+<li>資訊圈少見的消息, 另一種反璞歸真?</li>
+</ul>
+</li>
+<li><a href="https://www.ithome.com.tw/review/161337" target="_blank" rel="noopener noreferrer">打造雲原生應用開發軍火庫，紅帽推出企業級內部開發平臺 | iThome</a></li>
+<li><a href="https://pagescms.org/" target="_blank" rel="noopener noreferrer">Pages CMS: The No-Hassle CMS for GitHub</a></li>
+<li></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tech">Tech<a href="https://kywk.github.io/news/2024/02/29/_Surfing#tech" class="hash-link" aria-label="Tech的直接連結" title="Tech的直接連結">​</a></h3>
+<ul>
+<li><a href="https://jvns.ca/blog/2024/02/16/popular-git-config-options/" target="_blank" rel="noopener noreferrer">Popular git config options</a></li>
+<li><a href="https://blog.gslin.org/archives/2024/02/19/11671/" target="_blank" rel="noopener noreferrer">關於 GitLab 的 SQL 設計 – Gea-Suan Lin's BLOG</a>
+<ul>
+<li><a href="https://shekhargulati.com/2022/07/08/my-notes-on-gitlabs-postgres-schema-design/" target="_blank" rel="noopener noreferrer">My Notes on GitLab Postgres Schema Design – Shekhar Gulati</a></li>
+</ul>
+</li>
+<li><a href="https://mary.codes/blog/programming/translating_openstreetmaps_to_HTML5_canvas_rust_wasm/" target="_blank" rel="noopener noreferrer">Translating OpenStreetMap data to HTML5 Canvas with Rust and WebAssembly | Programming | mary.codes</a></li>
+<li><a href="https://matklad.github.io/2021/02/06/ARCHITECTURE.md.html" target="_blank" rel="noopener noreferrer">ARCHITECTURE.md</a>
+<ul>
+<li><a href="https://github.com/rust-lang/rust-analyzer/blob/d7c99931d05e3723d878bea5dc26766791fa4e69/docs/dev/architecture.md" target="_blank" rel="noopener noreferrer">rust-analyzer/docs/dev/architecture.md at d7c99931d05e3723d878bea5dc26766791fa4e69 · rust-lang/rust-analyzer · GitHub</a></li>
+</ul>
+</li>
+<li></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="life">Life<a href="https://kywk.github.io/news/2024/02/29/_Surfing#life" class="hash-link" aria-label="Life的直接連結" title="Life的直接連結">​</a></h3>
+<ul>
+<li><a href="https://blog.richliu.com/2024/02/16/5780/" target="_blank" rel="noopener noreferrer">阿富汗文件讀書心得 - richliu's blog</a></li>
+<li><a href="https://blog.richliu.com/2024/02/18/5787/up%e5%ad%b8%ef%bc%9a%e6%89%80%e6%9c%89%e7%b6%93%e7%90%86%e4%ba%ba%e7%9b%b8%e8%a6%8b%e6%81%a8%e6%99%9a%e7%9a%84%e4%b8%80%e6%9c%ac%e6%9b%b8%e7%ad%86%e8%a8%98/" target="_blank" rel="noopener noreferrer">UP學：所有經理人相見恨晚的一本書筆記 - richliu's blog</a></li>
+<li><a href="https://www.adaymag.com/2024/02/21/small-habits-that-effectively-increase-life-quality.html" target="_blank" rel="noopener noreferrer">後悔沒有早點開始！去年我實行了這 6 個習慣，生活品質完全大改善 - A Day Magazine</a></li>
+<li><a href="https://free.com.tw/vchewing-macos/" target="_blank" rel="noopener noreferrer">威注音輸入法：Mac 上最值得使用的免費第三方輸入法 - 免費資源網路社群</a></li>
+<li></li>
+</ul>]]></content:encoded>
+            <category>Surf</category>
+            <category>2024/02</category>
+        </item>
         <item>
             <title><![CDATA[Surf 01.16~ 01.31]]></title>
             <link>https://kywk.github.io/news/2024/01/31/_Surfing</link>
@@ -24,7 +77,7 @@
 <ul>
 <li></li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="life">Life<a href="https://kywk.github.io/news/2024/01/31/_Surfing#life" class="hash-link" aria-label="Life的直接連結" title="Life的直接��連結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="life">Life<a href="https://kywk.github.io/news/2024/01/31/_Surfing#life" class="hash-link" aria-label="Life的直接連結" title="Life的直接連結">​</a></h3>
 <ul>
 <li><a href="https://www.playpcesor.com/2024/01/2024-work-optimization-bulletproof-journal-system.html" target="_blank" rel="noopener noreferrer">2024 高效工作法：如何用防彈筆記打造提升生產力的支持系統（實戰案例總集）</a></li>
 <li></li>
@@ -519,33 +572,6 @@ Google / Apple / Here (MS) 以外的最大地圖服務</li>
 <p>BTW, 編寫文章時同時注意到另一個可能值得關注的新筆記管理軟體 <a href="https://logseq.com/" target="_blank" rel="noopener noreferrer">Logseq: A privacy-first, open-source knowledge base</a>,
 許多特性和 Obsidian 挺像, 哪天好好試用再決定最終去處.</p>]]></content:encoded>
             <category>Obsidian</category>
-        </item>
-        <item>
-            <title><![CDATA[Next Figma?]]></title>
-            <link>https://kywk.github.io/news/2022/09/16/prototype-platform</link>
-            <guid>https://kywk.github.io/news/2022/09/16/prototype-platform</guid>
-            <pubDate>Fri, 16 Sep 2022 00:00:00 GMT</pubDate>
-            <description><![CDATA[2022.09.16 Next Figma?]]></description>
-            <content:encoded><![CDATA[<p>今天各大資訊 RSS 很熱門的新聞是 <a href="https://www.bloomberg.com/news/articles/2022-09-15/adobe-is-said-to-near-deal-to-buy-online-design-startup-figma" target="_blank" rel="noopener noreferrer">Adobe 宣佈要收購 Figma</a>:
-<a href="https://news.ycombinator.com/item?id=32850178" target="_blank" rel="noopener noreferrer">Adobe to acquire Figma for $20B | Hacker News</a>.</p>
-<ul>
-<li><a href="https://www.bnext.com.tw/article/71727/adobe-to-acquire-figma?" target="_blank" rel="noopener noreferrer">Adobe宣布以200億美元收購Figma！直接吃下最大競爭對手｜數位時代 BusinessNext</a></li>
-<li><a href="https://chinese.engadget.com/adobe-figma-acquisition-040022025.html" target="_blank" rel="noopener noreferrer">Adobe 200 億美元收購同業新秀 Figma - Engadget 中文版</a></li>
-<li><a href="https://www.inside.com.tw/article/28966-adobe-figma" target="_blank" rel="noopener noreferrer">【快訊】Adobe 要用 200 億美元買下 Figma 設計協作平台！ - INSIDE</a></li>
-</ul>
-<p>有趣的是 Hacker News 上另一則資訊 <a href="https://news.ycombinator.com/item?id=32851262" target="_blank" rel="noopener noreferrer">Penpot: Open-source design and prototyping platform | Hacker News</a>
-同時也上了 Daily Top 10, 看來大家對 Figma 之後的商業行為有許多疑慮.</p>
-<p><img decoding="async" loading="lazy" src="https://lh3.googleusercontent.com/pw/AL9nZEUvTgBADizLXgJKMSkQvOiiUB78oQJCHeCRJTRgowphImX6pwq4Abp47IXIMLyDxm2n-guhoy2hhnGqOYf0_z9iBqBhUpogFgjj4fQw57tazteFea13p7VT4gRToVPU2Kbo7K18bsm2FcXShXwG2-I9OQ=w479-no?authuser=0" alt="hacker news daily top 10" class="img_ev3q"></p>
-<blockquote>
-<p>Penpot is the first Open Source design and prototyping platform meant for cross-domain teams.
-Non dependent on operating systems, Penpot is web based and works with open web standards (SVG).
-For all and empowered by the community.</p>
-</blockquote>
-<p>簡單試用了一下 <a href="https://penpot.app/" target="_blank" rel="noopener noreferrer">Penpot</a>, 功能其實相當完善了, 是個被埋沒已久的專案.</p>
-<p>不知道對這樣開源免費的專案, 最大競爭對手被產業巨頭收購是福是禍. 簡單紀錄.</p>
-<ul>
-<li><a href="https://penpot.app/" target="_blank" rel="noopener noreferrer">Penpot - Design Freedom for Teams</a></li>
-</ul>]]></content:encoded>
         </item>
     </channel>
 </rss>
