@@ -3,7 +3,7 @@ hide_table_of_contents: true
 sidebar_position: 40
 
 title: Jodhpur 梅堡 珍珠宮
-tags: [Backpacker, India, Jodhpur]
+tags: [Backpacker, India, India/Jodhpur]
 
 date: 2013-05-05 11:04:33
 ---

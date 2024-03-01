@@ -2,7 +2,7 @@
 hide_table_of_contents: true
 
 title: 12.02.05 高雄國際馬拉松
-tags: [Runner, kaohsiung]
+tags: [Runner, Kaohsiung]
 
 date: 2012-02-05 21:20:36
 ---

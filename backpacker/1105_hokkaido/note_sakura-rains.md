@@ -1,10 +1,11 @@
 ---
 hide_table_of_contents: true
 sidebar_position: 70
-
 title: 詠嘆．櫻花雨
-tags: [Backpacker, Japan, Hokkaido, Hakodate]
-
+tags:
+  - Backpacker
+  - Japan
+  - Hokkaido/Hakodate
 date: 2011-05-10 23:11:56
 updated: 2014-01-05 23:11:56
 ---

@@ -3,7 +3,7 @@ hide_table_of_contents: true
 sidebar_position: 41
 
 title: 沙巴 菲律賓夜市
-tags: [Backpacker, Malaysia, Sabah]
+tags: [Backpacker, Malaysia/Sabah]
 
 date: 2011-05-14 10:42:47
 updated: 2014-01-06 10:42:47

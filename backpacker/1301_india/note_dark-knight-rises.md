@@ -3,7 +3,7 @@ hide_table_of_contents: true
 sidebar_position: 70
 
 title: 黑暗騎士．黎明升起
-tags: [Backpacker, India, Jodhpur]
+tags: [Backpacker, India, India/Jodhpur]
 
 date: 2014-01-14 17:00:18
 ---

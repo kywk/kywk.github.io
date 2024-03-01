@@ -1,10 +1,11 @@
 ---
 hide_table_of_contents: true
 sidebar_position: 42
-
 title: 函館 八幡坡道
-tags: [Backpacker, Japan, Hokkaido, Hakodate]
-
+tags:
+  - Backpacker
+  - Japan
+  - Hokkaido/Hakodate
 date: 2011-05-10 22:37:12
 updated: 2014-01-05 22:37:12
 ---

@@ -1,7 +1,7 @@
 ---
 title: 新峰肉骨茶
 tags:
-  - Malasiya/KualaLumpur
+  - Malaysia/KualaLumpur
   - Cuisine
   - Backpacker
   - 2024/01

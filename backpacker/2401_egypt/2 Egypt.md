@@ -3,7 +3,7 @@ title: TODO & checklist
 tags:
   - Backpacker
   - Egypt
-  - GTD/TODO
+  - GTD/Done
 draft: true
 sidebar_position: 97
 hide_table_of_contents: true

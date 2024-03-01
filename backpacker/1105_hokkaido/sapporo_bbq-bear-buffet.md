@@ -1,10 +1,12 @@
 ---
 hide_table_of_contents: true
 sidebar_position: 51
-
 title: 札幌 札幌啤酒廠成吉思汗烤肉
-tags: [Backpacker, Japan, Hokkaido, Sapporo, Cuisine]
-
+tags:
+  - Backpacker
+  - Japan
+  - Hokkaido/Sapporo
+  - Cuisine
 date: 2011-05-08 19:18:31
 updated: 2014-01-05 19:18:31
 ---

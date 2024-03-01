@@ -1,10 +1,11 @@
 ---
 hide_table_of_contents: true
 sidebar_position: 43
-
 title: 小樽 小樽駅
-tags: [Backpacker, Japan, Hokkaido, Otaru]
-
+tags:
+  - Backpacker
+  - Japan
+  - Hokkaido/Otaru
 date: 2011-05-09 22:53:44
 updated: 2014-01-05 22:53:44
 ---

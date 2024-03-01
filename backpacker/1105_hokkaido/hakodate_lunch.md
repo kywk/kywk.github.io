@@ -1,10 +1,12 @@
 ---
 hide_table_of_contents: true
 sidebar_position: 52
-
 title: 函館 五稜郭 鈴井商店
-tags: [Backpacker, Japan, Hokkaido, Hakodate, Cuisine]
-
+tags:
+  - Backpacker
+  - Japan
+  - Hokkaido/Hakodate
+  - Cuisine
 date: 2011-05-10 19:56:38
 updated: 2014-01-05 19:56:38
 ---

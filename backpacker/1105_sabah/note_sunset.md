@@ -3,7 +3,7 @@ hide_table_of_contents: true
 sidebar_position: 70
 
 title: 日落時分
-tags: [Backpacker, Malaysia, Sabah]
+tags: [Backpacker, Malaysia/Sabah]
 
 date: 2011-05-13 10:21:10
 updated: 2014-01-06 10:21:10

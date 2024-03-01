@@ -1,7 +1,7 @@
 ---
 title: "Ubuntu Setup"
 description: Ubuntu 20.04 LTS 安裝 MySQL Server
-tags: [Infra, Ubuntu, SQL/MySQL]
+tags: [Infra, Linux/Ubuntu, SQL/MySQL]
 
 #sidebar_position: 1
 #sidebar_label: Easy

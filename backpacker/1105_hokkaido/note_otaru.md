@@ -1,10 +1,11 @@
 ---
 hide_table_of_contents: true
 sidebar_position: 70
-
 title: 小樽行旅
-tags: [Backpacker, Japan, Hokkaido, Otaru]
-
+tags:
+  - Backpacker
+  - Japan
+  - Hokkaido/Otaru
 date: 2011-05-08 19:12:29
 updated: 2014-01-05 19:12:29
 ---

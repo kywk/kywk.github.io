@@ -1,10 +1,11 @@
 ---
 hide_table_of_contents: true
 sidebar_position: 41
-
 title: 札幌 大通公園
-tags: [Backpacker, Japan, Hokkaido, Sapporo]
-
+tags:
+  - Backpacker
+  - Japan
+  - Hokkaido/Sapporo
 date: 2011-05-08 19:48:05
 updated: 2014-01-05 19:48:05
 ---
