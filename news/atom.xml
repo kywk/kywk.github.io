@@ -2,11 +2,59 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kywk.github.io/news</id>
     <title>kywk.me Blog</title>
-    <updated>2024-02-29T00:00:00.000Z</updated>
+    <updated>2024-03-15T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kywk.github.io/news"/>
     <subtitle>kywk.me Blog</subtitle>
     <icon>https://kywk.github.io/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Surf 03.01~ 03.15]]></title>
+        <id>https://kywk.github.io/news/2024/03/15/_Surfing</id>
+        <link href="https://kywk.github.io/news/2024/03/15/_Surfing"/>
+        <updated>2024-03-15T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Surfing quick note 03.01~ 03.15]]></summary>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="it-news">IT News<a href="https://kywk.github.io/news/2024/03/15/_Surfing#it-news" class="hash-link" aria-label="IT News的直接連結" title="IT News的直接連結">​</a></h3>
+<ul>
+<li><a href="https://apiiro.com/blog/malicious-code-campaign-github-repo-confusion-attack/" target="_blank" rel="noopener noreferrer">Over 100,000 Infected Repos Found on GitHub</a>
+<ul>
+<li>目前這份工作以後, 對相關事件會多投入一點關心. 算是種成長?</li>
+</ul>
+</li>
+<li><a href="https://www.ithome.com.tw/voice/161529" target="_blank" rel="noopener noreferrer">實踐FinOps必須先讓工程師有感 | iThome</a></li>
+<li><a href="https://www.ithome.com.tw/people/161528" target="_blank" rel="noopener noreferrer">整合OT與IT打造數據平臺，北捷用數據管理提升乘車體驗 | iThome</a></li>
+<li><a href="https://steachs.com/archives/65133" target="_blank" rel="noopener noreferrer">開啟 Google One 暗網報告，快速掃描你的個資有沒有在暗網中流出過 | 就是教不落 - 給你最豐富的 3C 資訊、教學網站</a></li>
+<li></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tech">Tech<a href="https://kywk.github.io/news/2024/03/15/_Surfing#tech" class="hash-link" aria-label="Tech的直接連結" title="Tech的直接連結">​</a></h3>
+<ul>
+<li><a href="https://blog.gslin.org/archives/2024/03/03/11684/%e7%94%a8-brave-%e7%9a%84-brave-flags-%e8%a8%ad%e5%ae%9a/" target="_blank" rel="noopener noreferrer">用 Brave 的 brave://flags 設定 – Gea-Suan Lin's BLOG</a></li>
+<li><a href="https://studyhost.blogspot.com/2024/03/sk.html" target="_blank" rel="noopener noreferrer">使用Semantic Kernel 建立自然語言請假系統</a></li>
+<li><a href="https://jdev.tw/blog/8350/obsidian-enhanced-tables-plugin" target="_blank" rel="noopener noreferrer">Obs154｜Obsidian交互式表格！超強表格控制：視覺美化、分頁、排序、過濾、搜尋 – 簡睿隨筆</a></li>
+<li><a href="https://www.minwt.com/webdesign-dev/24227.html" target="_blank" rel="noopener noreferrer">透過VS Code將已壓縮的陣列格式還原成樹狀結構 | 梅問題．教學網</a></li>
+<li></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="life">Life<a href="https://kywk.github.io/news/2024/03/15/_Surfing#life" class="hash-link" aria-label="Life的直接連結" title="Life的直接連結">​</a></h3>
+<ul>
+<li><a href="https://crossing.cw.com.tw/article/18673" target="_blank" rel="noopener noreferrer">歡迎來到布達佩斯：掀開華麗的面紗，跟著匈牙利人面對自己的「黑歷史」｜劉政暉／Nuevaidee．新點子｜換日線</a></li>
+<li><a href="https://www.playpcesor.com/2024/03/note-tag-name.html" target="_blank" rel="noopener noreferrer">如何為筆記命名，建立搜尋規則？我的標題、分類、標籤命名法</a></li>
+<li><a href="https://crossing.cw.com.tw/article/18674" target="_blank" rel="noopener noreferrer">「什麼都很酷」的 90 年代回來了？倫敦 vs. 曼徹斯特，誰更能詮釋懷舊風華？｜冼翰宇／地下倫敦呼喚｜換日線</a></li>
+<li><a href="https://www.newsmarket.com.tw/blog/200472/" target="_blank" rel="noopener noreferrer">金柑美食地圖35家》顛覆你對金柑想像！金柑可麗露清新甜美，金柑蜂蜜咖啡香氣十足 | 上下游</a></li>
+<li><a href="https://www.mobile01.com/topicdetail.php?f=628&amp;t=6928326" target="_blank" rel="noopener noreferrer">２０２４.０２ ▲七彩湖▲六順山 ▲百里長征 ～～ - Mobile01</a></li>
+<li><a href="https://www.playpcesor.com/2024/03/arc-windows.html" target="_blank" rel="noopener noreferrer">Arc 瀏覽器 windows 版測試心得，用四大介面改造升級專注工作流</a></li>
+<li><a href="https://jdev.tw/blog/8364/obsidian-codeblock-customizer-ode-styler-codeblock-tabs-keyshots" target="_blank" rel="noopener noreferrer">Obs155｜程設師的編程好友：CodeBlock Customizer／Code Styler、Codeblock Tabs、Keyshots – 簡睿隨筆</a></li>
+<li><a href="https://free.com.tw/devtunes-fm/" target="_blank" rel="noopener noreferrer">【工作音樂推薦】DevTunes FM：讓你在工作時更專注的線上收音機 - 免費資源網路社群</a></li>
+<li><a href="https://www.adaymag.com/2024/03/11/neihu-mingguwu-bakery.html" target="_blank" rel="noopener noreferrer">台北内湖的「茗穀屋」烘培屋：離市區20 分鐘車程，藏在山林裡，超適合來半日遊 - A Day Magazine</a></li>
+<li><a href="https://www.adaymag.com/2024/03/06/why-you-need-a-happy-list.html" target="_blank" rel="noopener noreferrer">最近挑戰了網友熱推的「幸福清單」，感覺離理想生活又近了一步 - A Day Magazine</a></li>
+<li><a href="https://www.mobile01.com/topicdetail.php?f=411&amp;t=6925221" target="_blank" rel="noopener noreferrer">杜拜奇幻沙漠和阿布達比文化之旅 7日自駕遊-Day 2。杜拜豪華沙漠渡假村Al Maha, a Luxury Collection Desert Resort &amp; Spa - Mobile01</a></li>
+<li></li>
+</ul>]]></content>
+        <author>
+            <name>kywk</name>
+            <uri>https://github.io/kywk</uri>
+        </author>
+        <category label="Surf" term="Surf"/>
+        <category label="2024/03" term="2024/03"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Surf 02.15~ 02.29]]></title>
         <id>https://kywk.github.io/news/2024/02/29/_Surfing</id>
@@ -80,7 +128,7 @@
 <ul>
 <li></li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="life">Life<a href="https://kywk.github.io/news/2024/01/31/_Surfing#life" class="hash-link" aria-label="Life的直接連結" title="Life的直接連結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="life">Life<a href="https://kywk.github.io/news/2024/01/31/_Surfing#life" class="hash-link" aria-label="Life的直接連結" title="Life的直接連�結">​</a></h3>
 <ul>
 <li><a href="https://www.playpcesor.com/2024/01/2024-work-optimization-bulletproof-journal-system.html" target="_blank" rel="noopener noreferrer">2024 高效工作法：如何用防彈筆記打造提升生產力的支持系統（實戰案例總集）</a></li>
 <li></li>
@@ -624,28 +672,5 @@ Google / Apple / Here (MS) 以外的最大地圖服務</li>
             <uri>https://github.io/kywk</uri>
         </author>
         <category label="News/HN" term="News/HN"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Obsidian 1.0]]></title>
-        <id>https://kywk.github.io/news/2022/10/13/obsidian-1-0</id>
-        <link href="https://kywk.github.io/news/2022/10/13/obsidian-1-0"/>
-        <updated>2022-10-13T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[2022.10.13 Obsidian 1.0]]></summary>
-        <content type="html"><![CDATA[<p>日常執行 <code>brew upgrade</code> 時順便滑 Hacker News 時看到 <a href="https://news.ycombinator.com/item?id=33190433" target="_blank" rel="noopener noreferrer">Obsidian 1.0 – Personal knowledge base app</a>.
-然後就注意到</p>
-<p><img decoding="async" loading="lazy" src="https://lh3.googleusercontent.com/pw/AL9nZEVUTboiyX9IPC_tRwXCbbKFcE26fbjWTqfbsR75fu9MYtp4WUZSatrzNa6QGjwr_vlrvfj9qmD8C7rKRt_FbUM_x-0-Kc-XtOtoDXnVGUOfnSV4p64QKTOOxxeMz37Fks95ueJUTDfWE1qEaIhAwPRSaA=w800-no?authuser=0" alt="" class="img_ev3q"></p>
-<p>恭喜 Obsidian, 1.0 正式 Release!</p>
-<p><img decoding="async" loading="lazy" src="https://lh3.googleusercontent.com/pw/AL9nZEV5EbhtxtHqXNv5ciw7UZDo1u4nrvN5kcrZ_-HpW79vwJtc4E7tV4LWYkRdzhUnb4AA-dEhwTjrCtoyaC65UlogGAW5lOyUheLJm2ANjYF5NB1R7ufek_3qi9AXxbKIJM76qNhAap_ZbUX3euM3wVVrxQ=w800-no?authuser=0" alt="" class="img_ev3q"></p>
-<p>初步試了一下, 介面上更加洗煉外, 一般需求並沒有太多不同感受.</p>
-<p>也可能是我尚未深入使用 Obsidian 吧, 目前多數文章還是在部落格下,
-只是順便利用 Obsidian 來幫忙進行本地端關聯管理而已.
-需要再撥時間好好理順如何把 Obsidian 加入生活或工作流程中.</p>
-<p>BTW, 編寫文章時同時注意到另一個可能值得關注的新筆記管理軟體 <a href="https://logseq.com/" target="_blank" rel="noopener noreferrer">Logseq: A privacy-first, open-source knowledge base</a>,
-許多特性和 Obsidian 挺像, 哪天好好試用再決定最終去處.</p>]]></content>
-        <author>
-            <name>kywk</name>
-            <uri>https://github.io/kywk</uri>
-        </author>
-        <category label="Obsidian" term="Obsidian"/>
     </entry>
 </feed>
