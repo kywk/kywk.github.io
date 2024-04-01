@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkblog_kywk=self.webpackChunkblog_kywk||[]).push([[85022],{10099:s=>{s.exports=JSON.parse('{"label":"Surf","permalink":"/news/tags/surf","allTagsPath":"/news/tags","count":17,"unlisted":false}')}}]);

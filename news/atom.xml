@@ -2,11 +2,57 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kywk.github.io/news</id>
     <title>kywk.me Blog</title>
-    <updated>2024-03-15T00:00:00.000Z</updated>
+    <updated>2024-03-31T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kywk.github.io/news"/>
     <subtitle>kywk.me Blog</subtitle>
     <icon>https://kywk.github.io/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Surf 03.16~ 03.31]]></title>
+        <id>https://kywk.github.io/news/2024/03/31/_Surfing</id>
+        <link href="https://kywk.github.io/news/2024/03/31/_Surfing"/>
+        <updated>2024-03-31T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Surfing quick note 03.16~ 03.31]]></summary>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="it-news">IT News<a href="https://kywk.github.io/news/2024/03/31/_Surfing#it-news" class="hash-link" aria-label="IT News的直接連結" title="IT News的直接連結">​</a></h3>
+<ul>
+<li><a href="https://www.ithome.com.tw/news/161871" target="_blank" rel="noopener noreferrer">微軟開源多雲容器網路觀測平臺Retina | iThome</a></li>
+<li><a href="https://www.ithome.com.tw/news/161874" target="_blank" rel="noopener noreferrer">JetBrains發布CI/CD新工具TeamCity Pipelines，具多項智慧功能簡化工作管線配置 | iThome</a></li>
+<li><a href="https://blog.gslin.org/archives/2024/03/22/11711/%e6%9f%a5%e8%a9%a2-github-%e4%b8%8a%e9%9d%a2-repository-%e7%9a%84%e5%85%ac%e9%96%8b%e8%a8%98%e9%8c%84/" target="_blank" rel="noopener noreferrer">查詢 GitHub 上面 repository 的公開記錄 – Gea-Suan Lin's BLOG</a></li>
+<li><a href="https://blog.gslin.org/archives/2024/03/22/11710/redis-%e6%94%b9%e8%ae%8a%e6%8e%88%e6%ac%8a%ef%bc%8c%e8%ae%8a%e6%88%90%e9%9d%9e%e9%96%8b%e6%ba%90%e8%bb%9f%e9%ab%94/" target="_blank" rel="noopener noreferrer">Redis 改變授權，變成非開源軟體 – Gea-Suan Lin's BLOG</a>
+<ul>
+<li><a href="https://redis.com/blog/redis-adopts-dual-source-available-licensing/" target="_blank" rel="noopener noreferrer">Redis Adopts Dual Source-Available Licensing | Redis</a></li>
+</ul>
+</li>
+<li><a href="https://www.ithome.com.tw/news/161941" target="_blank" rel="noopener noreferrer">Confluent Tableflow可將Kafka串流資料轉為Iceberg表格最佳化分析流程 | iThome</a></li>
+<li></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tech">Tech<a href="https://kywk.github.io/news/2024/03/31/_Surfing#tech" class="hash-link" aria-label="Tech的直接連結" title="Tech的直接連結">​</a></h3>
+<ul>
+<li><a href="https://github.com/ynqa/jnv" target="_blank" rel="noopener noreferrer">GitHub - ynqa/jnv: interactive JSON filter using jq</a>
+<ul>
+<li><a href="https://news.ycombinator.com/item?id=39759325" target="_blank" rel="noopener noreferrer">Show HN: jnv: interactive JSON filter using jq | Hacker News</a></li>
+</ul>
+</li>
+<li><a href="https://blog.gslin.org/archives/2024/03/21/11709/google-%e7%9a%84-hyperloglog/" target="_blank" rel="noopener noreferrer">Google 的 HyperLogLog++ – Gea-Suan Lin's BLOG</a></li>
+<li><a href="https://www.pgrs.net/2024/03/21/duckdb-as-the-new-jq/" target="_blank" rel="noopener noreferrer">DuckDB as the New jq - Paul Gross’s Blog</a></li>
+<li><a href="https://gitlab.com/Screwtapello/sqlite-schema-diagram" target="_blank" rel="noopener noreferrer">Screwtape / sqlite-schema-diagram · GitLab</a></li>
+<li></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="life">Life<a href="https://kywk.github.io/news/2024/03/31/_Surfing#life" class="hash-link" aria-label="Life的直接連結" title="Life的直接連結">​</a></h3>
+<ul>
+<li><a href="https://blog.kyomind.tw/weekly-review-25/" target="_blank" rel="noopener noreferrer">25，回歸原點的 Weekly Review - Code and Me</a></li>
+<li><a href="https://www.mobile01.com/topicdetail.php?f=408&amp;t=6929555" target="_blank" rel="noopener noreferrer">德奧捷聖誕旅行8日遊-Day 3 &amp; 4 - 布拉格聖誕市集&amp;飯店@Hotel NH Prague City - Mobile01</a></li>
+<li><a href="https://www.mobile01.com/topicdetail.php?f=214&amp;t=6933411" target="_blank" rel="noopener noreferrer">免考照也能在中國自駕｜台灣人換取臨時駕照＆上路心得分享！ - Mobile01</a></li>
+<li><a href="https://www.adaymag.com/2024/03/25/the-idea-of-you-starring-anne-hathaway-nicolas-galitzine-review-revealed.html" target="_blank" rel="noopener noreferrer">「只有 Anne Hathaway 能演活角色！」：愛情電影《The Idea of You》首波影評出爐，爛番茄獲 100% 好評 - A Day Magazine</a></li>
+<li></li>
+</ul>]]></content>
+        <author>
+            <name>kywk</name>
+            <uri>https://github.io/kywk</uri>
+        </author>
+        <category label="Surf" term="Surf"/>
+        <category label="2024/03" term="2024/03"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Surf 03.01~ 03.15]]></title>
         <id>https://kywk.github.io/news/2024/03/15/_Surfing</id>
@@ -651,26 +697,5 @@ Google / Apple / Here (MS) 以外的最大地圖服務</li>
             <uri>https://github.io/kywk</uri>
         </author>
         <category label="Surf" term="Surf"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[A Calculated Move]]></title>
-        <id>https://kywk.github.io/news/2023/01/29/calculators</id>
-        <link href="https://kywk.github.io/news/2023/01/29/calculators"/>
-        <updated>2023-01-29T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[2023.01.29 Calculators Now Emulated at Internet Archive]]></summary>
-        <content type="html"><![CDATA[<p>互聯網檔案館在 <a href="https://www.mamedev.org/index.php" target="_blank" rel="noopener noreferrer">Multi-purpose Emulation Framework (MAME)</a>
-支持之下所推出的 <a href="https://archive.org/details/calculatordrawer" target="_blank" rel="noopener noreferrer">The Calculator Drawer</a>
-一下子就炸裂了 <a href="https://news.ycombinator.com/item?id=34566139" target="_blank" rel="noopener noreferrer">HN</a>.</p>
-<p>討論串裡滿滿的懷舊, 即使不會用, 國小時的工程計算機, 國中的翻譯機, 都是當年熱門, 現在的懷念.</p>
-<p>Refs:</p>
-<ul>
-<li><a href="http://blog.archive.org/2023/01/29/a-calculated-move-calculators-now-emulated-at-internet-archive/" target="_blank" rel="noopener noreferrer">A Calculated Move: Calculators Now Emulated at Internet Archive - Internet Archive Blogs</a></li>
-<li><a href="https://chinese.engadget.com/the-internet-archives-calculator-drawer-lets-you-relive-high-school-math-class-032209905.html" target="_blank" rel="noopener noreferrer">互聯網檔案館推出「計算機抽屜」，帶你回到高中數學班 - Engadget 中文版</a></li>
-</ul>]]></content>
-        <author>
-            <name>kywk</name>
-            <uri>https://github.io/kywk</uri>
-        </author>
-        <category label="News/HN" term="News/HN"/>
     </entry>
 </feed>
