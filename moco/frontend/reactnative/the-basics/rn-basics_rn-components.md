@@ -1,15 +1,11 @@
 ---
 title: Core and Native Components
 description: Core Components and Native Components
-tags: [ReactNative, Tutorial]
-
-sidebar_position: 02
-#sidebar_label: Easy
-#sidebar_class_name: green
-
-#hide_table_of_contents: true
-
-created: 2022-08-29T14:05:03+08:00
+tags:
+  - ReactNative
+  - Tutorial
+sidebar_position: 2
+date_created: 2022-08-29T14:05:03+08:00
 image: https://i.imgur.com/mErPwqL.png
 ---
 	

@@ -1,16 +1,10 @@
 ---
 title: "Docusaurus: 設定筆記"
-description: "Docusaurus 設定筆記"
-tags: [Docusaurus]
-
-#sidebar_position: 1
-#sidebar_label: Easy
-#sidebar_class_name: green
-
-#hide_table_of_contents: true
-
-created: 2022-05-24
-updated: 2023-09-15
+description: Docusaurus 設定筆記
+tags:
+  - Docusaurus
+date_created: 2022-05-24
+date_updated: 2023-09-15
 image: https://i.imgur.com/mErPwqL.png
 ---
 

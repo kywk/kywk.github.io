@@ -1,17 +1,11 @@
 ---
-#id: openapi_prism
-title: "Swagger Editor"
+title: Swagger Editor
 description: Stoplight Prism OpenAPI mock / testing framework
-tags: [OpenAPI]
-
+tags:
+  - OpenAPI
 sidebar_position: 60
-#sidebar_label: Easy
-#sidebar_class_name: green
-
-#hide_table_of_contents: true
-
-created: 2023-03-01
-updated: 2023-03-01
+date_created: 2023-03-01
+date_updated: 2023-03-01
 image: https://i.imgur.com/mErPwqL.png
 ---
 

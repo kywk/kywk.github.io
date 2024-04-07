@@ -1,11 +1,12 @@
 ---
 sidebar_position: 0
-
 title: 2024 Jan 法 老 埃及
-tags: [Backpacker, Index, Egypt]
-
-created: 2023-08-20
-updated: 2023-08-20
+tags:
+  - Backpacker
+  - Index
+  - Egypt
+date_created: 2023-08-20
+date_updated: 2023-08-20
 image: https://lh3.googleusercontent.com/pw/AL9nZEUA9Ifvd5Z8SXDWkeVB6AC4MPGwnXaL6kBXNPoXwOQQ2jOcZ1Jw_0p8TKK8C3ZX0e67_FOY15eDrm7aaXSQJcKtoUzC80SAQEHsaBy6qS2AqNNs5VUFNXBKm439y_1wkvmDl-PnL8ReojnIumNlEvOXBg=w800-no?authuser=0
 ---
 

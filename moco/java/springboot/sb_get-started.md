@@ -1,16 +1,13 @@
 ---
-title: "Get Started"
+title: Get Started
 description: "Spring Boot: Get Started"
-tags: [SpringBoot, Beginner]
-
+tags:
+  - SpringBoot
+  - Beginner
 sidebar_position: 10
-#sidebar_label: Easy
-#sidebar_class_name: green
-
 hide_table_of_contents: true
-
-created: 2023-02-24
-updated: 2023-03-24
+date_created: 2023-02-24
+date_updated: 2023-03-24
 image: https://lh3.googleusercontent.com/pw/AL9nZEUA9Ifvd5Z8SXDWkeVB6AC4MPGwnXaL6kBXNPoXwOQQ2jOcZ1Jw_0p8TKK8C3ZX0e67_FOY15eDrm7aaXSQJcKtoUzC80SAQEHsaBy6qS2AqNNs5VUFNXBKm439y_1wkvmDl-PnL8ReojnIumNlEvOXBg=w800-no?authuser=0
 ---
 

@@ -1,9 +1,10 @@
 ---
-title: "TSC Error"
-tags: [TypeScript]
-
-created: 2022-05-27
-categories: [typescript]
+title: TSC Error
+tags:
+  - TypeScript
+date_created: 2022-05-27
+categories:
+  - typescript
 ---
 
 [TypeScript] tsc Error Troubleshooting

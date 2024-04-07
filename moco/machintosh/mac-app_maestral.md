@@ -1,16 +1,12 @@
 ---
 title: "App: Maestral"
-description: "Open source Dropbox client, Maestral"
-tags: [Mac, Dropbox]
-
+description: Open source Dropbox client, Maestral
+tags:
+  - Mac
+  - Dropbox
 sidebar_position: 20
-#sidebar_label: Easy
-#sidebar_class_name: green
-
-#hide_table_of_contents: false
-
-created: 2023-01-21T00:00:00+08:00
-image: "https://lh3.googleusercontent.com/pw/ACtC-3cYYtkzJjo_oG7Gzqq8T8XQm4V_qLE3wGWVKOahp6YT4lo-on60NJmjrkkatnizX1b-uID-MCM2ztsXH9z27cMRtql3PA5cpYZYbMfSPuM5Yh3MmqnjnnXYkTg6vtIiBL5SGAQRRAI9zEBIOoyP3tZpuA?authuser=0"
+date_created: 2023-01-21T00:00:00+08:00
+image: https://lh3.googleusercontent.com/pw/ACtC-3cYYtkzJjo_oG7Gzqq8T8XQm4V_qLE3wGWVKOahp6YT4lo-on60NJmjrkkatnizX1b-uID-MCM2ztsXH9z27cMRtql3PA5cpYZYbMfSPuM5Yh3MmqnjnnXYkTg6vtIiBL5SGAQRRAI9zEBIOoyP3tZpuA?authuser=0
 ---
 
 [Mac] Maestral, Open source Dropbox client

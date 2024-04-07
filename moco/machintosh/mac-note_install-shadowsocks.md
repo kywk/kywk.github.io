@@ -1,17 +1,11 @@
 ---
-#id: kywk-moco
 title: "Note: shadowsocks setup"
 description: shadowsocks setup
-tags: [Mac]
-
+tags:
+  - Mac
 sidebar_position: 60
-#sidebar_label: Easy
-#sidebar_class_name: green
-
-#hide_table_of_contents: true
-
-created: 2021-03-15T15:33:18+08:00
-image: "https://lh3.googleusercontent.com/pw/ACtC-3d0i64fe-5XcNdEIkJXE_ucdKG_74gSGLz5YO2oik795zztBL7450Ff7dEQpMGRBXf7RKVteWTfqKM_efzjXja7JGyS3ZCUoPfkPJN61wfga53Tgo8mcFyWOFi_68TDQUZyNIvhEaUPyKPzgWAWHbwOHA=w1280-h720-no?authuser=0"
+date_created: 2021-03-15T15:33:18+08:00
+image: https://lh3.googleusercontent.com/pw/ACtC-3d0i64fe-5XcNdEIkJXE_ucdKG_74gSGLz5YO2oik795zztBL7450Ff7dEQpMGRBXf7RKVteWTfqKM_efzjXja7JGyS3ZCUoPfkPJN61wfga53Tgo8mcFyWOFi_68TDQUZyNIvhEaUPyKPzgWAWHbwOHA=w1280-h720-no?authuser=0
 ---
 
 [Mac] shadowsocks setup 

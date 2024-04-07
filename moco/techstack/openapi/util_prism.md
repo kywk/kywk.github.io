@@ -1,17 +1,11 @@
 ---
-#id: openapi_prism
-title: "Stoplight Prism"
+title: Stoplight Prism
 description: Stoplight Prism OpenAPI mock / testing framework
-tags: [OpenAPI]
-
+tags:
+  - OpenAPI
 sidebar_position: 60
-#sidebar_label: Easy
-#sidebar_class_name: green
-
-#hide_table_of_contents: true
-
-created: 2023-01-04
-updated: 2023-01-04
+date_created: 2023-01-04
+date_updated: 2023-01-04
 image: https://i.imgur.com/mErPwqL.png
 ---
 

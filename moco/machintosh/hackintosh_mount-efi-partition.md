@@ -1,16 +1,13 @@
 ---
 title: "Hackintosh: 掛載 EFI 磁區"
 description: Mount EFI
-tags: [Mac, Hackintosh]
-
+tags:
+  - Mac
+  - Hackintosh
 sidebar_position: 90
-#sidebar_label: Easy
-#sidebar_class_name: green
-
 hide_table_of_contents: true
-
-created: 2021-05-14T14:56:41+08:00
-image: "https://lh3.googleusercontent.com/pw/ACtC-3fnLstA2rsbmbt0hI7IWqhfzOU17UzGFO6pEIfoC2_x_l526rOlZ3_p4RbWvVFWlT6uMlnPMzjCSxDILtn7Er5Ch0JPYJReE0BhmCXqJh6TsqrygLrL17dcz1Dyq3eJ7MZhHDqQhvWbX3zJvneD1CRanA=w800-no?authuser=0"
+date_created: 2021-05-14T14:56:41+08:00
+image: https://lh3.googleusercontent.com/pw/ACtC-3fnLstA2rsbmbt0hI7IWqhfzOU17UzGFO6pEIfoC2_x_l526rOlZ3_p4RbWvVFWlT6uMlnPMzjCSxDILtn7Er5Ch0JPYJReE0BhmCXqJh6TsqrygLrL17dcz1Dyq3eJ7MZhHDqQhvWbX3zJvneD1CRanA=w800-no?authuser=0
 ---
 
 [Mac] 掛載 EFI 磁區方式

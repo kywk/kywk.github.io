@@ -1,9 +1,10 @@
 ---
 title: "Redis: Cluster 建製"
-tags: [Infra, Redis]
-
-created: 2021-05-07T09:30:26+08:00
-image: "https://lh3.googleusercontent.com/pw/ACtC-3fIlrxgO6AX1o_tNuiD0YfrwpojgHUZa_OSpR36XoOZ_Ojz9q0Bw9yZ2V9QwSKUqApRMEIPWetv9AQd4TsfGgE0AaZXj7IJ2NV6ffvWj7N_Fjo2EzJ7BaCjZ7Fxx702zh6ZnykZAOChtRM-P1Zr9t0SYQ=w800-no?authuser=0"
+tags:
+  - Infra
+  - Redis
+date_created: 2021-05-07T09:30:26+08:00
+image: https://lh3.googleusercontent.com/pw/ACtC-3fIlrxgO6AX1o_tNuiD0YfrwpojgHUZa_OSpR36XoOZ_Ojz9q0Bw9yZ2V9QwSKUqApRMEIPWetv9AQd4TsfGgE0AaZXj7IJ2NV6ffvWj7N_Fjo2EzJ7BaCjZ7Fxx702zh6ZnykZAOChtRM-P1Zr9t0SYQ=w800-no?authuser=0
 ---
 
 [Redis] 建製 Redis Cluster

@@ -1,17 +1,13 @@
 ---
-#id: obs_why-n-how
-title: "Task Management"
-description: "Use Obsidian as task manager"
-tags: [Obsidian, PKM]
-
+title: Task Management
+description: Use Obsidian as task manager
+tags:
+  - Obsidian
+  - PKM
 sidebar_position: 1
-#sidebar_label: Easy
-#sidebar_class_name: green
-
 hide_table_of_contents: true
-
-created: 2023-05-15
-updated: 2023-05-15
+date_created: 2023-05-15
+date_updated: 2023-05-15
 image: https://i.imgur.com/mErPwqL.png
 ---
 

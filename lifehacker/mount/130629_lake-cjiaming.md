@@ -1,12 +1,12 @@
 ---
 hide_table_of_contents: true
-
 id: 130629_lake-cjiaming
 title: 重拾熱血．嘉明湖
-tags: [Mount, Taiwan]
-
+tags:
+  - Mount
+  - Taiwan
 date: 2013-07-05 17:49:49
-updated: 2013-07-14 17:49:49
+date_updated: 2013-07-14 17:49:49
 ---
 
 2013.06.29 重拾熱血．嘉明湖

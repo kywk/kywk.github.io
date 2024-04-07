@@ -1,16 +1,11 @@
 ---
 title: "Git: add empty folder"
-description: "Add empty folder to git"
-tags: [Git]
-
-#sidebar_position: 1
-#sidebar_label: Easy
-#sidebar_class_name: green
-
+description: Add empty folder to git
+tags:
+  - Git
 hide_table_of_contents: true
-
-created: 2021-05-10T00:00:00+08:00
-image: "https://lh3.googleusercontent.com/pw/ACtC-3c1Fcx8ZIVYrXBrmLfZUFhSnpBJqiUgVL36d3S6x_VzJ0a0JzmkF__USqKP6HCuphBVaLiWP5Vf0Qv2l-WzrdNy3h2G_emtP9mNa82Y2FySF8wu42FOSOySVj-7hf-yuabf58RkxPr-Lv8PvX172gAtYA=w800-no?authuser=0"
+date_created: 2021-05-10T00:00:00+08:00
+image: https://lh3.googleusercontent.com/pw/ACtC-3c1Fcx8ZIVYrXBrmLfZUFhSnpBJqiUgVL36d3S6x_VzJ0a0JzmkF__USqKP6HCuphBVaLiWP5Vf0Qv2l-WzrdNy3h2G_emtP9mNa82Y2FySF8wu42FOSOySVj-7hf-yuabf58RkxPr-Lv8PvX172gAtYA=w800-no?authuser=0
 ---
 
 [Git] Add empty folder

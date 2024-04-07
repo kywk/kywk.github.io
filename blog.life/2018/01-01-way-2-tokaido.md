@@ -1,9 +1,11 @@
 ---
 title: 來趟東海道自然步道吧, 2018
-tags: [kywk, LifeHack]
-author: kywk
+tags:
+  - kywk
+  - LifeHack
+authors: kywk
 hide_table_of_contents: true
-image: "https://lh3.googleusercontent.com/pw/ACtC-3fZwS9uKqsfC14DIgmmNExkeS2Fxxs0omXZdPSv00OqJFxn8hq11-ZbtFi6iN3rg7hz_OfSoJDHTy8F5vXix4Pi7Jmh7sJGjlIYtQ9tF7tLMyWjVMQbqmUSLghnr7ylAzTAthYSRJ2Sz4BOGWAjdOD5dw=w800-no?authuser=0"
+image: https://lh3.googleusercontent.com/pw/ACtC-3fZwS9uKqsfC14DIgmmNExkeS2Fxxs0omXZdPSv00OqJFxn8hq11-ZbtFi6iN3rg7hz_OfSoJDHTy8F5vXix4Pi7Jmh7sJGjlIYtQ9tF7tLMyWjVMQbqmUSLghnr7ylAzTAthYSRJ2Sz4BOGWAjdOD5dw=w800-no?authuser=0
 ---
 
 來趟東海道自然步道吧, 2018

@@ -1,16 +1,10 @@
 ---
-#id: cli_encript-tarball
-title: "Tar 加密打包"
-description: "Tar 加密打包"
-tags: [CLI]
-
-#sidebar_position: 1
-#sidebar_label: Easy
-#sidebar_class_name: green
-
+title: Tar 加密打包
+description: Tar 加密打包
+tags:
+  - CLI
 hide_table_of_contents: true
-
-created: 2020-12-10T17:31:07+08:00
+date_created: 2020-12-10T17:31:07+08:00
 image: https://i.imgur.com/mErPwqL.png
 ---
 

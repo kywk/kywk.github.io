@@ -1,16 +1,14 @@
 ---
 title: "Core: Daily notes"
-description: "My daily notes"
-tags: [Obsidian, Plugin, PKM]
-
+description: My daily notes
+tags:
+  - Obsidian
+  - Plugin
+  - PKM
 sidebar_position: 20
-#sidebar_label: Easy
-#sidebar_class_name: green
-
 hide_table_of_contents: true
-
-created: 2023-01-02
-updated: 2023-01-02
+date_created: 2023-01-02
+date_updated: 2023-01-02
 image: https://i.imgur.com/mErPwqL.png
 ---
 

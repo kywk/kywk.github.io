@@ -1,15 +1,10 @@
 ---
-title: "Get Started"
+title: Get Started
 description: "TypeScript: Get Started"
-tags: [TypeScript, Beginner]
-
-#sidebar_position: 1
-#sidebar_label: Easy
-#sidebar_class_name: green
-
-#hide_table_of_contents: true
-
-created: 2022-05-27T00:00:00+08:00
+tags:
+  - TypeScript
+  - Beginner
+date_created: 2022-05-27T00:00:00+08:00
 image: https://i.imgur.com/mErPwqL.png
 ---
 

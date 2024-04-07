@@ -1,12 +1,12 @@
 ---
 hide_table_of_contents: true
 sidebar_position: 41
-
 title: 沙巴 果菜市場
-tags: [Backpacker, Malaysia/Sabah]
-
+tags:
+  - Backpacker
+  - Malaysia/Sabah
 date: 2011-05-12 10:10:02
-updated: 2014-01-06 10:10:02
+date_updated: 2014-01-06 10:10:02
 ---
 
 [沙巴] 果菜市場

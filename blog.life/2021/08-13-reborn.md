@@ -1,9 +1,11 @@
 ---
 title: Reborn 2021
-tags: [kywk, LifeHack]
-author: kywk
+tags:
+  - kywk
+  - LifeHack
+authors: kywk
 hide_table_of_contents: true
-image: "https://lh3.googleusercontent.com/pw/AM-JKLWtmp1J17CEd7kZbg1_txkZN6YHKxO75EEbyruO0ZWUnHR-eX9v3nZjiv5RH9FgZBx5Q7VoBD54R_YF67051F8J8PlvAsjYw60PXFrT0vuPzqGU9CPeCnanguSph502riw7cc-Aalut81t_upJj5tfU2w=w800-no?authuser=0"
+image: https://lh3.googleusercontent.com/pw/AM-JKLWtmp1J17CEd7kZbg1_txkZN6YHKxO75EEbyruO0ZWUnHR-eX9v3nZjiv5RH9FgZBx5Q7VoBD54R_YF67051F8J8PlvAsjYw60PXFrT0vuPzqGU9CPeCnanguSph502riw7cc-Aalut81t_upJj5tfU2w=w800-no?authuser=0
 ---
 
 2020 很亂， 2021 更亂。  

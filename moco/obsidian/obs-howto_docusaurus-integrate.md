@@ -1,16 +1,14 @@
 ---
-#id: obs_docusaurus-integrate
 title: "HowTo: Docusaurus integration"
-description: "Integrate Obsidian & Docusaurus"
-tags: [Obsidian, howto, Docusaurus, PKM]
-
+description: Integrate Obsidian & Docusaurus
+tags:
+  - Obsidian
+  - howto
+  - Docusaurus
+  - PKM
 sidebar_position: 10
-#sidebar_label: Easy
-#sidebar_class_name: green
-#hide_table_of_contents: true
-
-created: 2022-11-01T00:00:00+08:00
-updated: 2023-09-12T00:00:00+08:00
+date_created: 2022-11-01T00:00:00+08:00
+date_updated: 2023-09-12T00:00:00+08:00
 image: https://i.imgur.com/mErPwqL.png
 ---
 

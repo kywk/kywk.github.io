@@ -1,16 +1,11 @@
 ---
-#id: kywk-moco
 title: "Note: 製作 macOS 安裝 ISO"
 description: make installer ISO
-tags: [Mac]
-
+tags:
+  - Mac
 sidebar_position: 60
-#sidebar_label: Easy
-#sidebar_class_name: green
-
 hide_table_of_contents: true
-
-created: 2021-04-06T11:18:48+08:00
+date_created: 2021-04-06T11:18:48+08:00
 image: https://i.imgur.com/mErPwqL.png
 ---
 

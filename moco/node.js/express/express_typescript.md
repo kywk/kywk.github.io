@@ -1,15 +1,11 @@
 ---
 title: TypeScript
 description: Express + TypeScript
-tags: [Node.js, Nodejs/Express, TypeScript]
-
-#sidebar_position: 1
-#sidebar_label: Easy
-#sidebar_class_name: green
-
-#hide_table_of_contents: true
-
-created: 2022-10-01T00:00:00+08:00
+tags:
+  - Node.js
+  - Nodejs/Express
+  - TypeScript
+date_created: 2022-10-01T00:00:00+08:00
 image: https://i.imgur.com/mErPwqL.png
 ---
 

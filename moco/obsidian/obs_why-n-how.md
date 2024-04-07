@@ -1,16 +1,12 @@
 ---
-#id: obs_why-n-how
-title: "Why & How"
-description: "Why & How I use Obsidian"
-tags: [Obsidian, PKM]
-
+title: Why & How
+description: Why & How I use Obsidian
+tags:
+  - Obsidian
+  - PKM
 sidebar_position: 1
-#sidebar_label: Easy
-#sidebar_class_name: green
-
 hide_table_of_contents: true
-
-created: 2022-11-01T00:00:00+08:00
+date_created: 2022-11-01T00:00:00+08:00
 image: https://i.imgur.com/mErPwqL.png
 ---
 

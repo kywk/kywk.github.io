@@ -8,8 +8,8 @@ location:
   - 29.97527778
   - 31.13777778
 web: https://whc.unesco.org/en/list/86
-wili: https://zh.wikipedia.org/zh-tw/狮身人面像
-marker: default
+wiki: https://zh.wikipedia.org/zh-tw/狮身人面像
+mapmarker: default
 hide_table_of_contents: true
 ---
 
