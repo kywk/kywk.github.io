@@ -2,11 +2,38 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kywk.github.io/news</id>
     <title>kywk.me Blog</title>
-    <updated>2024-03-31T00:00:00.000Z</updated>
+    <updated>2024-04-15T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kywk.github.io/news"/>
     <subtitle>kywk.me Blog</subtitle>
     <icon>https://kywk.github.io/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Surf 04.01~ 04.15]]></title>
+        <id>https://kywk.github.io/news/2024/04/15/_Surfing</id>
+        <link href="https://kywk.github.io/news/2024/04/15/_Surfing"/>
+        <updated>2024-04-15T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Surfing quick note 04.01~ 04.15]]></summary>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="it-news">IT News<a href="https://kywk.github.io/news/2024/04/15/_Surfing#it-news" class="hash-link" aria-label="IT News的直接連結" title="IT News的直接連結">​</a></h3>
+<ul>
+<li></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tech">Tech<a href="https://kywk.github.io/news/2024/04/15/_Surfing#tech" class="hash-link" aria-label="Tech的直接連結" title="Tech的直接連結">​</a></h3>
+<ul>
+<li></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="life">Life<a href="https://kywk.github.io/news/2024/04/15/_Surfing#life" class="hash-link" aria-label="Life的直接連結" title="Life的直接連結">​</a></h3>
+<ul>
+<li><a href="https://blog.gslin.org/archives/2024/04/04/11731/%e4%b8%8b%e9%9b%a8%e5%a4%a9%e6%89%8d%e6%9c%83%e9%80%9a%e7%9a%84%e7%b6%b2%e8%b7%af/" target="_blank" rel="noopener noreferrer">下雨天才會通的網路 – Gea-Suan Lin's BLOG</a></li>
+<li><a href="https://steachs.com/archives/65398" target="_blank" rel="noopener noreferrer">上班時想稍微偷閒一下嗎？試試這以假亂真的「系統更新畫面」Fake Update | 就是教不落 - 給你最豐富的 3C 資訊、教學網站</a></li>
+<li></li>
+</ul>]]></content>
+        <author>
+            <name>kywk</name>
+            <uri>https://github.io/kywk</uri>
+        </author>
+        <category label="Surf" term="Surf"/>
+        <category label="#2024/04" term="#2024/04"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Surf 03.16~ 03.31]]></title>
         <id>https://kywk.github.io/news/2024/03/31/_Surfing</id>
@@ -681,21 +708,5 @@ Google / Apple / Here (MS) 以外的最大地圖服務</li>
             <uri>https://github.io/kywk</uri>
         </author>
         <category label="Apple" term="Apple"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Surf 05.28 ~ 06.03]]></title>
-        <id>https://kywk.github.io/news/2023/06/04/_Surfing</id>
-        <link href="https://kywk.github.io/news/2023/06/04/_Surfing"/>
-        <updated>2023-06-04T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Surfing quick note 05.28 ~ 06.03]]></summary>
-        <content type="html"><![CDATA[<ul>
-<li><a href="https://news.ycombinator.com/item?id=36122270" target="_blank" rel="noopener noreferrer">Rust has been forked to the Crab Language | Hacker News</a><br>
-<!-- -->日前才傳出 Rust 核心成員離開的消息, <a href="https://news.ycombinator.com/item?id=36101501" target="_blank" rel="noopener noreferrer">Why I Left Rust | Hacker News</a> 原本以為又是另一個分家的專案, 仔細看原來是不同取向的分支. 還沒有時間學 Rust, 先 note...</li>
-</ul>]]></content>
-        <author>
-            <name>kywk</name>
-            <uri>https://github.io/kywk</uri>
-        </author>
-        <category label="Surf" term="Surf"/>
     </entry>
 </feed>
