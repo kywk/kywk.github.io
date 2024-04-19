@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://kywk.github.io/life</id>
+    <id>https://kywk.github.io/life/</id>
     <title>kywk.me Blog</title>
     <updated>2024-01-01T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://kywk.github.io/life"/>
+    <link rel="alternate" href="https://kywk.github.io/life/"/>
     <subtitle>kywk.me Blog</subtitle>
     <icon>https://kywk.github.io/img/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[Now or Never 2024]]></title>
-        <id>https://kywk.github.io/life/2024/01/01/now-or-never</id>
-        <link href="https://kywk.github.io/life/2024/01/01/now-or-never"/>
+        <id>https://kywk.github.io/life/2024/01/01/now-or-never/</id>
+        <link href="https://kywk.github.io/life/2024/01/01/now-or-never/"/>
         <updated>2024-01-01T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[嗯, 再一次的 Now or Never...]]></summary>
         <content type="html"><![CDATA[<p>嗯, 再一次的 Now or Never...</p>
@@ -21,7 +21,7 @@
 <p>就繼續吧，
 回馬場、再越野、仍爬山，還工作。
 擬定目標，有所作為，<strong>持之以恆！</strong>，<a href="http://goo.gl/393HY" target="_blank" rel="noopener noreferrer">before i die</a>！</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="daily">Daily<a href="https://kywk.github.io/life/2024/01/01/now-or-never#daily" class="hash-link" aria-label="Daily的直接連結" title="Daily的直接連結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="daily">Daily<a href="https://kywk.github.io/life/2024/01/01/now-or-never/#daily" class="hash-link" aria-label="Daily的直接連結" title="Daily的直接連結">​</a></h3>
 <ul>
 <li>Finish today's todo on-schedule, or re-schedule it</li>
 <li>Regular training: 7k easy run every morning<!-- -->
@@ -34,20 +34,20 @@
 </ul>
 </li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="weekly">Weekly<a href="https://kywk.github.io/life/2024/01/01/now-or-never#weekly" class="hash-link" aria-label="Weekly的直接連結" title="Weekly的直接連結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="weekly">Weekly<a href="https://kywk.github.io/life/2024/01/01/now-or-never/#weekly" class="hash-link" aria-label="Weekly的直接連結" title="Weekly的直接連結">​</a></h3>
 <ul>
 <li>LeetCode Weekly Contest</li>
 <li>A Tokaido/Patagonia a week: A introduction to one trail path of Tokaido/Patagonia</li>
 <li>兩本書、兩篇心得</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="monthly">Monthly<a href="https://kywk.github.io/life/2024/01/01/now-or-never#monthly" class="hash-link" aria-label="Monthly的直接連結" title="Monthly的直接連結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="monthly">Monthly<a href="https://kywk.github.io/life/2024/01/01/now-or-never/#monthly" class="hash-link" aria-label="Monthly的直接連結" title="Monthly的直接連結">​</a></h3>
 <ul>
 <li>(Biweekly) Cook a meal. Include salad, starter, main-dish, dessert... etc</li>
 <li>(Biweekly) Photography: finish one set of previous works</li>
 <li>Announce a minion prject</li>
 <li>Finish a 42k marathon or more than 42k self trainning</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="yearly">Yearly<a href="https://kywk.github.io/life/2024/01/01/now-or-never#yearly" class="hash-link" aria-label="Yearly的直接連結" title="Yearly的直接連結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="yearly">Yearly<a href="https://kywk.github.io/life/2024/01/01/now-or-never/#yearly" class="hash-link" aria-label="Yearly的直接連結" title="Yearly的直接連結">​</a></h3>
 <ul>
 <li>Mointaineering<!-- -->
 <ul>
@@ -74,26 +74,26 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[loma-flmi-l1]]></title>
-        <id>https://kywk.github.io/life/2023/12/04/loma-flmi-l1</id>
-        <link href="https://kywk.github.io/life/2023/12/04/loma-flmi-l1"/>
+        <id>https://kywk.github.io/life/2023/12/04/loma-flmi-l1/</id>
+        <link href="https://kywk.github.io/life/2023/12/04/loma-flmi-l1/"/>
         <updated>2023-12-04T00:00:00.000Z</updated>
     </entry>
     <entry>
         <title type="html"><![CDATA[just-us]]></title>
-        <id>https://kywk.github.io/life/2023/05/13/just-us</id>
-        <link href="https://kywk.github.io/life/2023/05/13/just-us"/>
+        <id>https://kywk.github.io/life/2023/05/13/just-us/</id>
+        <link href="https://kywk.github.io/life/2023/05/13/just-us/"/>
         <updated>2023-05-13T00:00:00.000Z</updated>
     </entry>
     <entry>
         <title type="html"><![CDATA[may-the-4th-be-with-u]]></title>
-        <id>https://kywk.github.io/life/2023/05/04/may-the-4th-be-with-u</id>
-        <link href="https://kywk.github.io/life/2023/05/04/may-the-4th-be-with-u"/>
+        <id>https://kywk.github.io/life/2023/05/04/may-the-4th-be-with-u/</id>
+        <link href="https://kywk.github.io/life/2023/05/04/may-the-4th-be-with-u/"/>
         <updated>2023-05-04T00:00:00.000Z</updated>
     </entry>
     <entry>
         <title type="html"><![CDATA[The Carry 50]]></title>
-        <id>https://kywk.github.io/life/2023/05/01/curry</id>
-        <link href="https://kywk.github.io/life/2023/05/01/curry"/>
+        <id>https://kywk.github.io/life/2023/05/01/curry/</id>
+        <link href="https://kywk.github.io/life/2023/05/01/curry/"/>
         <updated>2023-05-01T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[2022.05.01 Curry 50 in Game 7]]></summary>
         <content type="html"><![CDATA[<p>看 NBA 這幾年來, 今年季後賽 (連同季末、附加賽) 大概是近年來最精彩的一年.</p>
@@ -117,8 +117,8 @@ Curry 竟用如此石破天驚的表現, 撐起了勇士隊.</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[Archive: App 安裝紀錄]]></title>
-        <id>https://kywk.github.io/life/2023/03/31/mac-setup</id>
-        <link href="https://kywk.github.io/life/2023/03/31/mac-setup"/>
+        <id>https://kywk.github.io/life/2023/03/31/mac-setup/</id>
+        <link href="https://kywk.github.io/life/2023/03/31/mac-setup/"/>
         <updated>2023-03-31T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[kywk's favitote macOS Apps]]></summary>
         <content type="html"><![CDATA[<p>重新整理 blog 文章時, 順便整理紀錄一下目前日常使用的 Apps.
@@ -126,14 +126,14 @@ Curry 竟用如此石破天驚的表現, 撐起了勇士隊.</p>
 時代變遷...</p>
 <p>因故拿了 MacBook Pro 2015 重灌 macOS Mojave, 記錄一下軟體安裝歷程.
 隨著網頁工具越來越成熟, 電腦上必備的工具倒是越來越少.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="前置軟體">前置軟體<a href="https://kywk.github.io/life/2023/03/31/mac-setup#%E5%89%8D%E7%BD%AE%E8%BB%9F%E9%AB%94" class="hash-link" aria-label="前置軟體的直接連結" title="前置軟體的直接連結">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="homebrew">Homebrew<a href="https://kywk.github.io/life/2023/03/31/mac-setup#homebrew" class="hash-link" aria-label="Homebrew的直接連結" title="Homebrew的直接連結">​</a></h3>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="前置軟體">前置軟體<a href="https://kywk.github.io/life/2023/03/31/mac-setup/#%E5%89%8D%E7%BD%AE%E8%BB%9F%E9%AB%94" class="hash-link" aria-label="前置軟體的直接連結" title="前置軟體的直接連結">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="homebrew">Homebrew<a href="https://kywk.github.io/life/2023/03/31/mac-setup/#homebrew" class="hash-link" aria-label="Homebrew的直接連結" title="Homebrew的直接連結">​</a></h3>
 <p><a href="https://brew.sh/index_zh-tw" target="_blank" rel="noopener noreferrer"><strong>Homebrew</strong></a></p>
 <p>homebrew cask 的支援越來越多, 越來越方便,
 個人多數軟體都透過 homebrew 安裝.
 在開始安裝各類軟體前, Homebrew 是必要的.</p>
 <div class="language-shell codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-shell codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="複製代碼至剪貼簿" title="複製" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="dropbox">Dropbox<a href="https://kywk.github.io/life/2023/03/31/mac-setup#dropbox" class="hash-link" aria-label="Dropbox的直接連結" title="Dropbox的直接連結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="dropbox">Dropbox<a href="https://kywk.github.io/life/2023/03/31/mac-setup/#dropbox" class="hash-link" aria-label="Dropbox的直接連結" title="Dropbox的直接連結">​</a></h3>
 <p>我的專案和軟體配置檔案 (.files) 都放在 <a href="https://www.dropbox.com/" target="_blank" rel="noopener noreferrer"><strong>Dropbox</strong></a> 上,
 .files 裡也存了為了新環境設定的簡單 setup.sh.
 故新電腦的第二件事就是安裝 Dropbox Desktop, 把工作專案和環境配置同步到新電腦.</p>
@@ -141,11 +141,11 @@ Curry 竟用如此石破天驚的表現, 撐起了勇士隊.</p>
 <li><a href="https://kywk.github.io/life/2023/03/31/mac-setup/mac-app_maestral/">Open source Dropbox client, Maestral</a></li>
 </ul>
 <div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">brew install maestral</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="複製代碼至剪貼簿" title="複製" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="google-chrome">Google Chrome<a href="https://kywk.github.io/life/2023/03/31/mac-setup#google-chrome" class="hash-link" aria-label="Google Chrome的直接連結" title="Google Chrome的直接連結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="google-chrome">Google Chrome<a href="https://kywk.github.io/life/2023/03/31/mac-setup/#google-chrome" class="hash-link" aria-label="Google Chrome的直接連結" title="Google Chrome的直接連結">​</a></h3>
 <p>雖已漸漸棄用 Chrome, 改用 Safari 和 Edge.
 但在 Chrome 長期使用習慣, 仍無法馬上改變.
 導致先安裝 Chrome 也是安裝系統的必備之一.</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="sublime-text">Sublime Text<a href="https://kywk.github.io/life/2023/03/31/mac-setup#sublime-text" class="hash-link" aria-label="Sublime Text的直接連結" title="Sublime Text的直接連結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="sublime-text">Sublime Text<a href="https://kywk.github.io/life/2023/03/31/mac-setup/#sublime-text" class="hash-link" aria-label="Sublime Text的直接連結" title="Sublime Text的直接連結">​</a></h3>
 <p>其實開發程式的主力已經轉為 VSCode, GoLand, WebStorm... 等.
 但 Sublime Text 啟動速度快, 基本作業順暢, 仍是我必然安裝的工具.</p>
 <p>因安裝時 setup.sh 可能需要修改,
@@ -153,29 +153,29 @@ Curry 竟用如此石破天驚的表現, 撐起了勇士隊.</p>
 編改檢查後再行安裝各項軟體或依安裝情況修改配置.</p>
 <p>Sublime Text 已可以用 brew 安裝.</p>
 <div class="language-shell codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-shell codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">brew install sublime-text</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="複製代碼至剪貼簿" title="複製" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="開發工具">開發工具<a href="https://kywk.github.io/life/2023/03/31/mac-setup#%E9%96%8B%E7%99%BC%E5%B7%A5%E5%85%B7" class="hash-link" aria-label="開發工具的直接連結" title="開發工具的直接連結">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="開發工具">開發工具<a href="https://kywk.github.io/life/2023/03/31/mac-setup/#%E9%96%8B%E7%99%BC%E5%B7%A5%E5%85%B7" class="hash-link" aria-label="開發工具的直接連結" title="開發工具的直接連結">​</a></h2>
 <p>參考: <a href="https://kywk.github.io/life/2023/03/31/mac-setup/mac-app_dev-env.md/"><em>macOS 開發環境建構</em></a></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="生產力工具">生產力工具<a href="https://kywk.github.io/life/2023/03/31/mac-setup#%E7%94%9F%E7%94%A2%E5%8A%9B%E5%B7%A5%E5%85%B7" class="hash-link" aria-label="生產力工具的直接連結" title="生產力工具的直接連結">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="obsidian">Obsidian<a href="https://kywk.github.io/life/2023/03/31/mac-setup#obsidian" class="hash-link" aria-label="Obsidian的直接連結" title="Obsidian的直接連結">​</a></h3>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="生產力工具">生產力工具<a href="https://kywk.github.io/life/2023/03/31/mac-setup/#%E7%94%9F%E7%94%A2%E5%8A%9B%E5%B7%A5%E5%85%B7" class="hash-link" aria-label="生產力工具的直接連結" title="生產力工具的直接連結">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="obsidian">Obsidian<a href="https://kywk.github.io/life/2023/03/31/mac-setup/#obsidian" class="hash-link" aria-label="Obsidian的直接連結" title="Obsidian的直接連結">​</a></h3>
 <p><a href="https://zettelkasten.de/" target="_blank" rel="noopener noreferrer">Zettelkasten</a>
-<a href="https://www.zettlr.com/" target="_blank" rel="noopener noreferrer">Zettlr</a>, <a href="https://kywk.github.io/life/2023/03/31/mac-setup#">Joplin</a>, <a href="https://github.com/zadam/trilium" target="_blank" rel="noopener noreferrer">Trilium Notes</a></p>
+<a href="https://www.zettlr.com/" target="_blank" rel="noopener noreferrer">Zettlr</a>, <a href="https://kywk.github.io/life/2023/03/31/mac-setup/#">Joplin</a>, <a href="https://github.com/zadam/trilium" target="_blank" rel="noopener noreferrer">Trilium Notes</a></p>
 <div class="language-shell codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-shell codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">$ brew install obsidian</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="複製代碼至剪貼簿" title="複製" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="raycast">Raycast<a href="https://kywk.github.io/life/2023/03/31/mac-setup#raycast" class="hash-link" aria-label="Raycast的直接連結" title="Raycast的直接連結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="raycast">Raycast<a href="https://kywk.github.io/life/2023/03/31/mac-setup/#raycast" class="hash-link" aria-label="Raycast的直接連結" title="Raycast的直接連結">​</a></h3>
 <ul>
 <li><a href="https://kywk.github.io/life/2023/03/31/mac-setup/mac-app_raycast/"></a></li>
 </ul>
 <div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">brew install raycast</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="複製代碼至剪貼簿" title="複製" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="alfred">Alfred<a href="https://kywk.github.io/life/2023/03/31/mac-setup#alfred" class="hash-link" aria-label="Alfred的直接連結" title="Alfred的直接連結">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="alfred">Alfred<a href="https://kywk.github.io/life/2023/03/31/mac-setup/#alfred" class="hash-link" aria-label="Alfred的直接連結" title="Alfred的直接連結">​</a></h4>
 <p><a href="https://goo.gl/mD9K61" target="_blank" rel="noopener noreferrer"><em>Alfred</em></a> 類似 Spotlight 的軟體, 但功能遠遠不止這樣.
 能大大減少離開來回鍵盤和觸控板的時間, 可以參考<a href="https://goo.gl/SHsXkH" target="_blank" rel="noopener noreferrer">這篇教學</a></p>
 <div class="language-shell codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-shell codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">brew install alfred</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="複製代碼至剪貼簿" title="複製" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="alttab">AltTab<a href="https://kywk.github.io/life/2023/03/31/mac-setup#alttab" class="hash-link" aria-label="AltTab的直接連結" title="AltTab的直接連結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="alttab">AltTab<a href="https://kywk.github.io/life/2023/03/31/mac-setup/#alttab" class="hash-link" aria-label="AltTab的直接連結" title="AltTab的直接連結">​</a></h3>
 <p><a href="https://alt-tab-macos.netlify.app/" target="_blank" rel="noopener noreferrer"><em>AltTab</em></a> 和 Windows 一樣使用 <code>Alt + Tab</code> 切換視窗,
 可在同一程式多個視窗中切換, 比 macOS 內建僅能在應用程式間切換來得快速方邊.</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="pure-paste">Pure Paste<a href="https://kywk.github.io/life/2023/03/31/mac-setup#pure-paste" class="hash-link" aria-label="Pure Paste的直接連結" title="Pure Paste的直接連結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="pure-paste">Pure Paste<a href="https://kywk.github.io/life/2023/03/31/mac-setup/#pure-paste" class="hash-link" aria-label="Pure Paste的直接連結" title="Pure Paste的直接連結">​</a></h3>
 <p><a href="https://sindresorhus.com/pure-paste" target="_blank" rel="noopener noreferrer"><em>Pure Paste</em></a>
 讓預設貼上就是純文字，自動清除複製的文字樣式</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="rectangle">Rectangle<a href="https://kywk.github.io/life/2023/03/31/mac-setup#rectangle" class="hash-link" aria-label="Rectangle的直接連結" title="Rectangle的直接連結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="rectangle">Rectangle<a href="https://kywk.github.io/life/2023/03/31/mac-setup/#rectangle" class="hash-link" aria-label="Rectangle的直接連結" title="Rectangle的直接連結">​</a></h3>
 <p><a href="https://rectangleapp.com/" target="_blank" rel="noopener noreferrer"><em>Rectangl</em></a>  to snap windows to different positions.
 快速整理安排視窗 Layout 的工具, 外接大螢幕時相當實用.</p>
 <ul>
@@ -189,16 +189,16 @@ Curry 竟用如此石破天驚的表現, 撐起了勇士隊.</p>
 </ul>
 </li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="xmind-zen">XMind Zen<a href="https://kywk.github.io/life/2023/03/31/mac-setup#xmind-zen" class="hash-link" aria-label="XMind Zen的直接連結" title="XMind Zen的直接連結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="xmind-zen">XMind Zen<a href="https://kywk.github.io/life/2023/03/31/mac-setup/#xmind-zen" class="hash-link" aria-label="XMind Zen的直接連結" title="XMind Zen的直接連結">​</a></h3>
 <p>不得不說, 重新開發的 <a href="http://www.xmind.net/" target="_blank" rel="noopener noreferrer"><em>XMind Zen</em></a> 不但跟原本的 XMind 一樣好用,
 而且更美觀, 快速. 值得更換.</p>
 <div class="language-shell codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-shell codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">brew install xmind-zen</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="複製代碼至剪貼簿" title="複製" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="menu-bar">Menu Bar<a href="https://kywk.github.io/life/2023/03/31/mac-setup#menu-bar" class="hash-link" aria-label="Menu Bar的直接連結" title="Menu Bar的直接連結">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="itsycal">Itsycal<a href="https://kywk.github.io/life/2023/03/31/mac-setup#itsycal" class="hash-link" aria-label="Itsycal的直接連結" title="Itsycal的直接連結">​</a></h3>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="menu-bar">Menu Bar<a href="https://kywk.github.io/life/2023/03/31/mac-setup/#menu-bar" class="hash-link" aria-label="Menu Bar的直接連結" title="Menu Bar的直接連結">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="itsycal">Itsycal<a href="https://kywk.github.io/life/2023/03/31/mac-setup/#itsycal" class="hash-link" aria-label="Itsycal的直接連結" title="Itsycal的直接連結">​</a></h3>
 <p><a href="https://www.mowglii.com/itsycal/" target="_blank" rel="noopener noreferrer"><em>Itsycal</em></a>
 在功能表列上便捷地查看日曆, 可以查看月曆和事件列表, 還能快速創建新事件.</p>
 <div class="language-shell codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-shell codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">brew install itsycal</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="複製代碼至剪貼簿" title="複製" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="menubarx">MenubarX<a href="https://kywk.github.io/life/2023/03/31/mac-setup#menubarx" class="hash-link" aria-label="MenubarX的直接連結" title="MenubarX的直接連結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="menubarx">MenubarX<a href="https://kywk.github.io/life/2023/03/31/mac-setup/#menubarx" class="hash-link" aria-label="MenubarX的直接連結" title="MenubarX的直接連結">​</a></h3>
 <p><a href="https://menubarx.app/" target="_blank" rel="noopener noreferrer"><em>MenubarX</em></a> <a href="https://apps.apple.com/tw/app/menubarx/id1575588022" target="_blank" rel="noopener noreferrer">AppStore</a> A powerful menu bar browser.
 可在 MenuBar 上放置一個小瀏覽器, 方便查閱資料或當作開發 RWD 網頁時的檢視工具.
 亦可將某些網站放置在 menu bar 上當作 App 來使用.</p>
@@ -207,12 +207,12 @@ Curry 竟用如此石破天驚的表現, 撐起了勇士隊.</p>
 <li><a href="https://www.kocpc.com.tw/archives/421084" target="_blank" rel="noopener noreferrer">MenubarX 讓你在 Mac 選單列中瀏覽網頁的小工具（內購限免） - 電腦王阿達</a></li>
 <li><a href="https://applealmond.com/posts/129059" target="_blank" rel="noopener noreferrer">讓 Mac 多一個小螢幕的《MenubarX》，打報告、查資料很好用 - 蘋果仁 - 果仁 iPhone/iOS/好物推薦科技媒體</a></li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="pomodorome">Pomodorome<a href="https://kywk.github.io/life/2023/03/31/mac-setup#pomodorome" class="hash-link" aria-label="Pomodorome的直接連結" title="Pomodorome的直接連結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="pomodorome">Pomodorome<a href="https://kywk.github.io/life/2023/03/31/mac-setup/#pomodorome" class="hash-link" aria-label="Pomodorome的直接連結" title="Pomodorome的直接連結">​</a></h3>
 <p><a href="https://apps.apple.com/us/app/pomodoro-me-focus-on-tasks/id1484801884?mt=12" target="_blank" rel="noopener noreferrer"><em>Pomodorome</em></a>
 在 menu bar 上的番茄時鐘, 方便調用. 亦有基本統計資訊, 方便追蹤時間使用.</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="dozer">Dozer<a href="https://kywk.github.io/life/2023/03/31/mac-setup#dozer" class="hash-link" aria-label="Dozer的直接連結" title="Dozer的直接連結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="dozer">Dozer<a href="https://kywk.github.io/life/2023/03/31/mac-setup/#dozer" class="hash-link" aria-label="Dozer的直接連結" title="Dozer的直接連結">​</a></h3>
 <div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">brew install dozer</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="複製代碼至剪貼簿" title="複製" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="hidden-bar">Hidden Bar<a href="https://kywk.github.io/life/2023/03/31/mac-setup#hidden-bar" class="hash-link" aria-label="Hidden Bar的直接連結" title="Hidden Bar的直接連結">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="hidden-bar">Hidden Bar<a href="https://kywk.github.io/life/2023/03/31/mac-setup/#hidden-bar" class="hash-link" aria-label="Hidden Bar的直接連結" title="Hidden Bar的直接連結">​</a></h4>
 <p><a href="https://apps.apple.com/tw/app/hidden-bar/id1452453066?mt=12" target="_blank" rel="noopener noreferrer"><em>Hidden Bar</em></a>
 管理隱藏多餘的 menu bar icon, 使桌面保持清爽, 軟體一多很好用.</p>
 <ul>
@@ -225,31 +225,31 @@ Curry 竟用如此石破天驚的表現, 撐起了勇士隊.</p>
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="網路通訊">網路通訊<a href="https://kywk.github.io/life/2023/03/31/mac-setup#%E7%B6%B2%E8%B7%AF%E9%80%9A%E8%A8%8A" class="hash-link" aria-label="網路通訊的直接連結" title="網路通訊的直接連結">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="cloudmounter">CloudMounter<a href="https://kywk.github.io/life/2023/03/31/mac-setup#cloudmounter" class="hash-link" aria-label="CloudMounter的直接連結" title="CloudMounter的直接連結">​</a></h3>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="網路通訊">網路通訊<a href="https://kywk.github.io/life/2023/03/31/mac-setup/#%E7%B6%B2%E8%B7%AF%E9%80%9A%E8%A8%8A" class="hash-link" aria-label="網路通訊的直接連結" title="網路通訊的直接連結">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="cloudmounter">CloudMounter<a href="https://kywk.github.io/life/2023/03/31/mac-setup/#cloudmounter" class="hash-link" aria-label="CloudMounter的直接連結" title="CloudMounter的直接連結">​</a></h3>
 <p><a href="https://cloudmounter.net/" target="_blank" rel="noopener noreferrer"><em>CloudMounter</em></a> 把网络云盘放进你的 Finder 里</p>
 <ul>
 <li><a href="https://apps.apple.com/tw/app/cloudmounter-cloud-encryption/id1130254674?l=en&amp;mt=12" target="_blank" rel="noopener noreferrer">Get From App Store</a></li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="rclone">rclone<a href="https://kywk.github.io/life/2023/03/31/mac-setup#rclone" class="hash-link" aria-label="rclone的直接連結" title="rclone的直接連結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="rclone">rclone<a href="https://kywk.github.io/life/2023/03/31/mac-setup/#rclone" class="hash-link" aria-label="rclone的直接連結" title="rclone的直接連結">​</a></h3>
 <p><a href="https://rclone.org/" target="_blank" rel="noopener noreferrer"><em>rclone</em></a></p>
 <div class="language-shell codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-shell codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">brew install rclone</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="複製代碼至剪貼簿" title="複製" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="其他">其他<a href="https://kywk.github.io/life/2023/03/31/mac-setup#%E5%85%B6%E4%BB%96" class="hash-link" aria-label="其他的直接連結" title="其他的直接連結">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="iina">IINA<a href="https://kywk.github.io/life/2023/03/31/mac-setup#iina" class="hash-link" aria-label="IINA的直接連結" title="IINA的直接連結">​</a></h3>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="其他">其他<a href="https://kywk.github.io/life/2023/03/31/mac-setup/#%E5%85%B6%E4%BB%96" class="hash-link" aria-label="其他的直接連結" title="其他的直接連結">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="iina">IINA<a href="https://kywk.github.io/life/2023/03/31/mac-setup/#iina" class="hash-link" aria-label="IINA的直接連結" title="IINA的直接連結">​</a></h3>
 <p><a href="https://iina.io/" target="_blank" rel="noopener noreferrer"><em>IINA</em></a> 是 Mac 上最強大的播放器, 幾乎支援所有影音格式. 開源, UI 美觀.</p>
 <div class="language-shell codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-shell codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">brew install iina</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="複製代碼至剪貼簿" title="複製" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="exifrenamer">ExifRenamer<a href="https://kywk.github.io/life/2023/03/31/mac-setup#exifrenamer" class="hash-link" aria-label="ExifRenamer的直接連結" title="ExifRenamer的直接連結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="exifrenamer">ExifRenamer<a href="https://kywk.github.io/life/2023/03/31/mac-setup/#exifrenamer" class="hash-link" aria-label="ExifRenamer的直接連結" title="ExifRenamer的直接連結">​</a></h3>
 <p><a href="http://goo.gl/lSWZ" target="_blank" rel="noopener noreferrer"><em>ExifRenamer</em></a></p>
 <div class="language-shell codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-shell codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">brew install exifrenamer</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="複製代碼至剪貼簿" title="複製" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="mcbopomofo-小麥注音輸入法">McBopomofo 小麥注音輸入法<a href="https://kywk.github.io/life/2023/03/31/mac-setup#mcbopomofo-%E5%B0%8F%E9%BA%A5%E6%B3%A8%E9%9F%B3%E8%BC%B8%E5%85%A5%E6%B3%95" class="hash-link" aria-label="McBopomofo 小麥注音輸入法的直接連結" title="McBopomofo 小麥注音輸入法的直接連結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="mcbopomofo-小麥注音輸入法">McBopomofo 小麥注音輸入法<a href="https://kywk.github.io/life/2023/03/31/mac-setup/#mcbopomofo-%E5%B0%8F%E9%BA%A5%E6%B3%A8%E9%9F%B3%E8%BC%B8%E5%85%A5%E6%B3%95" class="hash-link" aria-label="McBopomofo 小麥注音輸入法的直接連結" title="McBopomofo 小麥注音輸入法的直接連結">​</a></h3>
 <p><a href="http://mcbopomofo.openvanilla.org/" target="_blank" rel="noopener noreferrer"><em>McBopomofo 小麥注音輸入法</em></a>
 反應快速, 輕巧簡單, 為 Mac User 量身打造.
 支援標準, 倚天, 許氏, 倚天26 鍵, IBM 以及漢語拼音鍵盤配置.</p>
 <ul>
 <li><a href="https://osxchat.tumblr.com/post/29205181318/mcbopomofo-hidden-settings" target="_blank" rel="noopener noreferrer">小麥注音的隱藏設定</a></li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="see-also">See Also<a href="https://kywk.github.io/life/2023/03/31/mac-setup#see-also" class="hash-link" aria-label="See Also的直接連結" title="See Also的直接連結">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="遺珠">遺珠<a href="https://kywk.github.io/life/2023/03/31/mac-setup#%E9%81%BA%E7%8F%A0" class="hash-link" aria-label="遺珠的直接連結" title="遺珠的直接連結">​</a></h3>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="see-also">See Also<a href="https://kywk.github.io/life/2023/03/31/mac-setup/#see-also" class="hash-link" aria-label="See Also的直接連結" title="See Also的直接連結">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="遺珠">遺珠<a href="https://kywk.github.io/life/2023/03/31/mac-setup/#%E9%81%BA%E7%8F%A0" class="hash-link" aria-label="遺珠的直接連結" title="遺珠的直接連結">​</a></h3>
 <p>以下是曾為個人熱愛, 但因故越來越少用的軟體. 暫列於此...</p>
 <ul>
 <li><a href="https://typora.io/" target="_blank" rel="noopener noreferrer">Typora</a><br>
@@ -263,7 +263,7 @@ Curry 竟用如此石破天驚的表現, 撐起了勇士隊.</p>
 <li><a href="https://github.com/clyang/welly" target="_blank" rel="noopener noreferrer">Welly</a><br>
 <!-- -->一套運行在 Mac 上功能豐富的BBS軟體, 被 PTT 網頁版 term.ptt.cc 取代了.</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="reference">Reference<a href="https://kywk.github.io/life/2023/03/31/mac-setup#reference" class="hash-link" aria-label="Reference的直接連結" title="Reference的直接連結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="reference">Reference<a href="https://kywk.github.io/life/2023/03/31/mac-setup/#reference" class="hash-link" aria-label="Reference的直接連結" title="Reference的直接連結">​</a></h3>
 <ul>
 <li><a href="https://www.youtube.com/watch?v=-xXc7qeiC8I" target="_blank" rel="noopener noreferrer">10 BEST Mac Apps for Productivity (in 2022)!</a></li>
 <li><a href="https://www.youtube.com/watch?v=OWdOq7E62Ws" target="_blank" rel="noopener noreferrer">5 款免费又好用的 Mac 菜单栏软件 - Mac云课堂</a></li>
@@ -278,8 +278,8 @@ Curry 竟用如此石破天驚的表現, 撐起了勇士隊.</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[The Freedom Day]]></title>
-        <id>https://kywk.github.io/life/2023/01/23/freedom-day</id>
-        <link href="https://kywk.github.io/life/2023/01/23/freedom-day"/>
+        <id>https://kywk.github.io/life/2023/01/23/freedom-day/</id>
+        <link href="https://kywk.github.io/life/2023/01/23/freedom-day/"/>
         <updated>2023-01-23T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[2023.01.23 Freedom Day]]></summary>
         <content type="html"><![CDATA[<p>和家人吵了一架後稍稍冷靜下來. 進而過了個平靜的一天.</p>
@@ -294,8 +294,8 @@ Curry 竟用如此石破天驚的表現, 撐起了勇士隊.</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[Keep Running 2023]]></title>
-        <id>https://kywk.github.io/life/2023/01/01/keep-running</id>
-        <link href="https://kywk.github.io/life/2023/01/01/keep-running"/>
+        <id>https://kywk.github.io/life/2023/01/01/keep-running/</id>
+        <link href="https://kywk.github.io/life/2023/01/01/keep-running/"/>
         <updated>2023-01-01T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[2023.01.01 Keep Running 2023]]></summary>
         <content type="html"><![CDATA[<p>不免俗地打掃了家裡，在新的一年的到來，還是冀望個新開始。</p>
@@ -314,7 +314,7 @@ Curry 竟用如此石破天驚的表現, 撐起了勇士隊.</p>
 <p>就繼續吧，<br>
 <!-- -->回馬場、再越野、仍爬山，還工作。<br>
 <!-- -->擬定目標，有所作為，<strong>持之以恆！</strong>，<a href="http://goo.gl/393HY" target="_blank" rel="noopener noreferrer">before i die</a>！</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="daily">Daily<a href="https://kywk.github.io/life/2023/01/01/keep-running#daily" class="hash-link" aria-label="Daily的直接連結" title="Daily的直接連結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="daily">Daily<a href="https://kywk.github.io/life/2023/01/01/keep-running/#daily" class="hash-link" aria-label="Daily的直接連結" title="Daily的直接連結">​</a></h3>
 <ul>
 <li>Finish today's todo on-schedule, or re-schedule it</li>
 <li>English communication exercise</li>
@@ -328,20 +328,20 @@ Curry 竟用如此石破天驚的表現, 撐起了勇士隊.</p>
 </ul>
 </li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="weekly">Weekly<a href="https://kywk.github.io/life/2023/01/01/keep-running#weekly" class="hash-link" aria-label="Weekly的直接連結" title="Weekly的直接連結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="weekly">Weekly<a href="https://kywk.github.io/life/2023/01/01/keep-running/#weekly" class="hash-link" aria-label="Weekly的直接連結" title="Weekly的直接連結">​</a></h3>
 <ul>
 <li>LeetCode Weekly Contest</li>
 <li>A Tokaido/Patagonia a week: A introduction to one trail path of Tokaido/Patagonia</li>
 <li>兩本書、兩篇心得</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="monthly">Monthly<a href="https://kywk.github.io/life/2023/01/01/keep-running#monthly" class="hash-link" aria-label="Monthly的直接連結" title="Monthly的直接連結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="monthly">Monthly<a href="https://kywk.github.io/life/2023/01/01/keep-running/#monthly" class="hash-link" aria-label="Monthly的直接連結" title="Monthly的直接連結">​</a></h3>
 <ul>
 <li>(Biweekly) Cook a meal. Include salad, starter, main-dish, dessert... etc</li>
 <li>(Biweekly) Photography: finish one set of previous works</li>
 <li>Announce a minion prject</li>
 <li>Finish a 42k marathon or more than 42k self trainning</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="yearly">Yearly<a href="https://kywk.github.io/life/2023/01/01/keep-running#yearly" class="hash-link" aria-label="Yearly的直接連結" title="Yearly的直接連結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="yearly">Yearly<a href="https://kywk.github.io/life/2023/01/01/keep-running/#yearly" class="hash-link" aria-label="Yearly的直接連結" title="Yearly的直接連結">​</a></h3>
 <ul>
 <li>Mointaineering<!-- -->
 <ul>
@@ -370,8 +370,8 @@ Curry 竟用如此石破天驚的表現, 撐起了勇士隊.</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[Bye, manjaro]]></title>
-        <id>https://kywk.github.io/life/2022/11/07/bye-manjaro</id>
-        <link href="https://kywk.github.io/life/2022/11/07/bye-manjaro"/>
+        <id>https://kywk.github.io/life/2022/11/07/bye-manjaro/</id>
+        <link href="https://kywk.github.io/life/2022/11/07/bye-manjaro/"/>
         <updated>2022-11-07T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[2022.11.07 Bye, manjaro]]></summary>
         <content type="html"><![CDATA[<p>使用 Manjaro 約半年, 使用上大致滿意.</p>
@@ -395,8 +395,8 @@ Curry 竟用如此石破天驚的表現, 撐起了勇士隊.</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[Old Fashing RD style]]></title>
-        <id>https://kywk.github.io/life/2022/11/02/old-fashion-rd</id>
-        <link href="https://kywk.github.io/life/2022/11/02/old-fashion-rd"/>
+        <id>https://kywk.github.io/life/2022/11/02/old-fashion-rd/</id>
+        <link href="https://kywk.github.io/life/2022/11/02/old-fashion-rd/"/>
         <updated>2022-11-02T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[2022.11.02 Develop in old fashion]]></summary>
         <content type="html"><![CDATA[<p>Chrome 推薦了這篇: <a href="https://dev.to/ruppysuppy/7-shorthand-optimization-tricks-every-javascript-developer-should-know-4fj5" target="_blank" rel="noopener noreferrer">7 Shorthand Optimization Tricks every JavaScript Developer Should Know 😎 - DEV Community 👩‍💻👨‍💻</a>.
@@ -419,8 +419,8 @@ Curry 竟用如此石破天驚的表現, 撐起了勇士隊.</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[One Obsidian]]></title>
-        <id>https://kywk.github.io/life/2022/11/01/one-obsidian</id>
-        <link href="https://kywk.github.io/life/2022/11/01/one-obsidian"/>
+        <id>https://kywk.github.io/life/2022/11/01/one-obsidian/</id>
+        <link href="https://kywk.github.io/life/2022/11/01/one-obsidian/"/>
         <updated>2022-11-01T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[2022.11.01 all in one obsidian]]></summary>
         <content type="html"><![CDATA[<p>決定落腳 Obsidian 後, 如何最大化 Obsidian 的點子一一浮現.</p>
@@ -441,8 +441,8 @@ Dropbox 資料夾結構越來越精簡, 有種莫名成就感.</p>]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[life & moco merged]]></title>
-        <id>https://kywk.github.io/life/2022/10/15/merge-kywk-moco</id>
-        <link href="https://kywk.github.io/life/2022/10/15/merge-kywk-moco"/>
+        <id>https://kywk.github.io/life/2022/10/15/merge-kywk-moco/</id>
+        <link href="https://kywk.github.io/life/2022/10/15/merge-kywk-moco/"/>
         <updated>2022-10-15T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[2022.10.15 kywk.life & kywk.moco merged]]></summary>
         <content type="html"><![CDATA[<p>一直以來都把部落格區分成 life 和 moco 兩個, 分別作為生活旅遊和工作筆記用.
@@ -461,8 +461,8 @@ Dropbox 資料夾結構越來越精簡, 有種莫名成就感.</p>]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[Open Water Certificated]]></title>
-        <id>https://kywk.github.io/life/2022/07/08/openwater-certificated</id>
-        <link href="https://kywk.github.io/life/2022/07/08/openwater-certificated"/>
+        <id>https://kywk.github.io/life/2022/07/08/openwater-certificated/</id>
+        <link href="https://kywk.github.io/life/2022/07/08/openwater-certificated/"/>
         <updated>2022-07-08T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[2022.07.08 Open Water Certificated]]></summary>
         <content type="html"><![CDATA[<p><img decoding="async" loading="lazy" src="https://lh3.googleusercontent.com/pw/AM-JKLXVGm6wXMmOSTcG-I1iDeUSzLKJezwmGta41WG_ICAMZoNXYjx4E1zZIGv33vWiKruMQIya8A8VMOkQf4_xeWxbFjnJAjVhrL48rmWpSWRLlfjPjLYXAvsjnlM3frJkGizKCJ8XtMQjzMTxET4BZpEiYg=w800-no?authuser=0" alt="" class="img_ev3q"></p>
@@ -486,8 +486,8 @@ Dropbox 資料夾結構越來越精簡, 有種莫名成就感.</p>]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[2022 Champions]]></title>
-        <id>https://kywk.github.io/life/2022/06/17/gold-blooded</id>
-        <link href="https://kywk.github.io/life/2022/06/17/gold-blooded"/>
+        <id>https://kywk.github.io/life/2022/06/17/gold-blooded/</id>
+        <link href="https://kywk.github.io/life/2022/06/17/gold-blooded/"/>
         <updated>2022-06-17T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[2022.06.17 2022 Champions]]></summary>
         <content type="html"><![CDATA[<p><img decoding="async" loading="lazy" src="https://lh3.googleusercontent.com/pw/AM-JKLWFNu07GRq5vJsVKeNWgCJ0Qlm8dV5tAbBY9VdFnu3ILyXpdumhsG-6hjTbTIszTcKjrQKepvhfdsPX2ZWkxvamUhpbSj9vAvjuMFAI5J58-O5UUCYqNnMWS2klGed6fwxP1wifZb1n076WRaKjdL_AGg=w690-no?authuser=0" alt="" class="img_ev3q"></p>
@@ -511,8 +511,8 @@ Dropbox 資料夾結構越來越精簡, 有種莫名成就感.</p>]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[Welcome Back KT]]></title>
-        <id>https://kywk.github.io/life/2022/06/14/welcome-back-kt</id>
-        <link href="https://kywk.github.io/life/2022/06/14/welcome-back-kt"/>
+        <id>https://kywk.github.io/life/2022/06/14/welcome-back-kt/</id>
+        <link href="https://kywk.github.io/life/2022/06/14/welcome-back-kt/"/>
         <updated>2022-06-14T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[2022.06.14 Welcome Back KT]]></summary>
         <content type="html"><![CDATA[<p><img decoding="async" loading="lazy" src="https://lh3.googleusercontent.com/0uPHjkl0VeJLxDKzCdL4q1UQ8rsZwTlPZlhp4EizDkQ4leNxQnoX5Oqle6iJ45bvtkGw5G_CenU192A6tzk7bKZ-Qm6RUUx5_QYCwibzpQ6pvKuMxcmyo7UtUl-3rnaUVjhIpJjiHPi8Vkb7W9McYASsXOE5SqjZkDoNyuC5kDhjHUREUn0aRCcYltUBPRMTvRjKyZ-zjKPES3OxJZICy8SyFBguhnKVurRyZMwOqCWTS631ekIc6uunSmU3o9TY_v4pWAgI6k7iFK3INkHvJNUA0bl34Pm02keZMF-aIsGxih9rIg_mhvM7X0MWATe591Uy7OQHAMYKnwSVfFiUR6StCkTP_2ED_i76Z-GHQkHzVTkXmhTOlLVd4u4FQ9dzQji7SEMDiafus4NkjXtozArLi7HYrdAGsMgW5v3zUhSzg1-jfnYLscNuBRxFNTha4nsKF1NFZm9viHLs-eMv2183rXfTarP2ikNqj-HzO0lpxMyw1JdHwkc7Uk-MNpDv3wMou-Pd3zzzbJW2FWPFBat70j5AJFYABtrHtaiEcKhrhok3XzmyQ_AFS-t3Ky58cE0I-aid6KkypnbWbikVqhFLZ5EcKN-Nn8TB3DA-qPQzka-Mni5lJdQb-nwPiwGvTv0bXiPVWdfrpkTDQjRXwKTReb24EIpxCXy8qFxR_qY9uw2r4QmyJVy2Uu4iyUwZ6Uj3y8GvghGxhSmvnOaeoR7-xBKzFaqXwKAKAt79BXprJrtrfCx3u0q1KvT9HxA=w800-no?authuser=0" alt="" class="img_ev3q"></p>
@@ -527,8 +527,8 @@ Dropbox 資料夾結構越來越精簡, 有種莫名成就感.</p>]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[Warriors]]></title>
-        <id>https://kywk.github.io/life/2022/05/27/warriors</id>
-        <link href="https://kywk.github.io/life/2022/05/27/warriors"/>
+        <id>https://kywk.github.io/life/2022/05/27/warriors/</id>
+        <link href="https://kywk.github.io/life/2022/05/27/warriors/"/>
         <updated>2022-05-27T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[2022.05.27 Warriors]]></summary>
         <content type="html"><![CDATA[<p><img decoding="async" loading="lazy" src="https://lh3.googleusercontent.com/pw/AM-JKLWtSLs59gG9IXG_gmKIxhfsucBa-ieaAORS5MMNTgPW_8QF3sLwqqOU6wmzXaxTKIUaBADEtH8ekJlF9u_1l-NfQsBMA-DMC7nhfxZ8ckBE32NHGbIvtAC1XjMIuPn2wNLZTxjoSgcqrFwKkDfhBHD9iw=w800-no?authuser=0" alt="" class="img_ev3q"></p>
@@ -546,8 +546,8 @@ Dropbox 資料夾結構越來越精簡, 有種莫名成就感.</p>]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[Hello Docusaurus]]></title>
-        <id>https://kywk.github.io/life/2022/05/20/move-to-docusaurus</id>
-        <link href="https://kywk.github.io/life/2022/05/20/move-to-docusaurus"/>
+        <id>https://kywk.github.io/life/2022/05/20/move-to-docusaurus/</id>
+        <link href="https://kywk.github.io/life/2022/05/20/move-to-docusaurus/"/>
         <updated>2022-05-20T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[2022.05.20 Why move to Docusaurus]]></summary>
         <content type="html"><![CDATA[<p>在 <a href="https://pjchender.dev/" target="_blank" rel="noopener noreferrer">PJCHENder 未整理筆記</a> 看到 <a href="https://docusaurus.io/" target="_blank" rel="noopener noreferrer">Docusaurus</a> 這套 CMS.
@@ -598,8 +598,8 @@ Docusaurus / Obsidian 都可以正常運行.</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[Keep Running 2022]]></title>
-        <id>https://kywk.github.io/life/2022/01/01/keep-running</id>
-        <link href="https://kywk.github.io/life/2022/01/01/keep-running"/>
+        <id>https://kywk.github.io/life/2022/01/01/keep-running/</id>
+        <link href="https://kywk.github.io/life/2022/01/01/keep-running/"/>
         <updated>2022-01-01T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[2022.01.01 Keep Running 2022]]></summary>
         <content type="html"><![CDATA[<p>2022 年的第一天，夢到靠么。<br>
@@ -619,7 +619,7 @@ Docusaurus / Obsidian 都可以正常運行.</p>
 <p>就繼續吧，<br>
 <!-- -->回馬場、再越野、仍爬山，還工作。<br>
 <!-- -->擬定目標，有所作為，<strong>持之以恆！</strong>，<a href="http://goo.gl/393HY" target="_blank" rel="noopener noreferrer">before i die</a>！</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="daily">Daily<a href="https://kywk.github.io/life/2022/01/01/keep-running#daily" class="hash-link" aria-label="Daily的直接連結" title="Daily的直接連結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="daily">Daily<a href="https://kywk.github.io/life/2022/01/01/keep-running/#daily" class="hash-link" aria-label="Daily的直接連結" title="Daily的直接連結">​</a></h3>
 <ul>
 <li>Finish today's todo on-schedule, or re-schedule it</li>
 <li>English communication exercise</li>
@@ -633,20 +633,20 @@ Docusaurus / Obsidian 都可以正常運行.</p>
 </ul>
 </li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="weekly">Weekly<a href="https://kywk.github.io/life/2022/01/01/keep-running#weekly" class="hash-link" aria-label="Weekly的直接連結" title="Weekly的直接連結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="weekly">Weekly<a href="https://kywk.github.io/life/2022/01/01/keep-running/#weekly" class="hash-link" aria-label="Weekly的直接連結" title="Weekly的直接連結">​</a></h3>
 <ul>
 <li>LeetCode Weekly Contest</li>
 <li>A Tokaido/Patagonia a week: A introduction to one trail path of Tokaido/Patagonia</li>
 <li>兩本書、兩篇心得</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="monthly">Monthly<a href="https://kywk.github.io/life/2022/01/01/keep-running#monthly" class="hash-link" aria-label="Monthly的直接連結" title="Monthly的直接連結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="monthly">Monthly<a href="https://kywk.github.io/life/2022/01/01/keep-running/#monthly" class="hash-link" aria-label="Monthly的直接連結" title="Monthly的直接連結">​</a></h3>
 <ul>
 <li>(Biweekly) Cook a meal. Include salad, starter, main-dish, dessert... etc</li>
 <li>(Biweekly) Photography: finish one set of previous works</li>
 <li>Announce a minion prject</li>
 <li>Finish a 42k marathon or more than 42k self trainning</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="yearly">Yearly<a href="https://kywk.github.io/life/2022/01/01/keep-running#yearly" class="hash-link" aria-label="Yearly的直接連結" title="Yearly的直接連結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="yearly">Yearly<a href="https://kywk.github.io/life/2022/01/01/keep-running/#yearly" class="hash-link" aria-label="Yearly的直接連結" title="Yearly的直接連結">​</a></h3>
 <ul>
 <li>Mointaineering<!-- -->
 <ul>
@@ -675,8 +675,8 @@ Docusaurus / Obsidian 都可以正常運行.</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[Reborn 2021]]></title>
-        <id>https://kywk.github.io/life/2021/08/13/reborn</id>
-        <link href="https://kywk.github.io/life/2021/08/13/reborn"/>
+        <id>https://kywk.github.io/life/2021/08/13/reborn/</id>
+        <link href="https://kywk.github.io/life/2021/08/13/reborn/"/>
         <updated>2021-08-13T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[2020 很亂， 2021 更亂。]]></summary>
         <content type="html"><![CDATA[<p>2020 很亂， 2021 更亂。<br>
@@ -695,7 +695,7 @@ Docusaurus / Obsidian 都可以正常運行.</p>
 <p>就繼續吧，<br>
 <!-- -->回馬場、再越野、仍爬山，還工作。<br>
 <!-- -->擬定目標，有所作為，<strong>持之以恆！</strong>，<a href="http://goo.gl/393HY" target="_blank" rel="noopener noreferrer">before i die</a>！</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="daily">Daily<a href="https://kywk.github.io/life/2021/08/13/reborn#daily" class="hash-link" aria-label="Daily的直接連結" title="Daily的直接連結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="daily">Daily<a href="https://kywk.github.io/life/2021/08/13/reborn/#daily" class="hash-link" aria-label="Daily的直接連結" title="Daily的直接連結">​</a></h3>
 <ul>
 <li>Finish today's todo on-schedule, or re-schedule it</li>
 <li>English communication exercise</li>
@@ -709,20 +709,20 @@ Docusaurus / Obsidian 都可以正常運行.</p>
 </ul>
 </li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="weekly">Weekly<a href="https://kywk.github.io/life/2021/08/13/reborn#weekly" class="hash-link" aria-label="Weekly的直接連結" title="Weekly的直接連結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="weekly">Weekly<a href="https://kywk.github.io/life/2021/08/13/reborn/#weekly" class="hash-link" aria-label="Weekly的直接連結" title="Weekly的直接連結">​</a></h3>
 <ul>
 <li>LeetCode Weekly Contest</li>
 <li>A Tokaido/Patagonia a week: A introduction to one trail path of Tokaido/Patagonia</li>
 <li>兩本書、兩篇心得</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="monthly">Monthly<a href="https://kywk.github.io/life/2021/08/13/reborn#monthly" class="hash-link" aria-label="Monthly的直接連結" title="Monthly的直接連結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="monthly">Monthly<a href="https://kywk.github.io/life/2021/08/13/reborn/#monthly" class="hash-link" aria-label="Monthly的直接連結" title="Monthly的直接連結">​</a></h3>
 <ul>
 <li>(Biweekly) Cook a meal. Include salad, starter, main-dish, dessert... etc</li>
 <li>(Biweekly) Photography: finish one set of previous works</li>
 <li>Announce a minion prject</li>
 <li>Finish a 42k marathon or more than 42k self trainning</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="yearly">Yearly<a href="https://kywk.github.io/life/2021/08/13/reborn#yearly" class="hash-link" aria-label="Yearly的直接連結" title="Yearly的直接連結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="yearly">Yearly<a href="https://kywk.github.io/life/2021/08/13/reborn/#yearly" class="hash-link" aria-label="Yearly的直接連結" title="Yearly的直接連結">​</a></h3>
 <ul>
 <li>Mointaineering<!-- -->
 <ul>
@@ -751,13 +751,13 @@ Docusaurus / Obsidian 都可以正常運行.</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[個人工具箱 2021.Apr]]></title>
-        <id>https://kywk.github.io/life/2021/04/01/utilities</id>
-        <link href="https://kywk.github.io/life/2021/04/01/utilities"/>
+        <id>https://kywk.github.io/life/2021/04/01/utilities/</id>
+        <link href="https://kywk.github.io/life/2021/04/01/utilities/"/>
         <updated>2021-04-01T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[記錄下來手邊使用的工具，慢慢從繁雜中歸納出簡單的使用規則。]]></summary>
         <content type="html"><![CDATA[<p>記錄下來手邊使用的工具，慢慢從繁雜中歸納出簡單的使用規則。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="裝備使用">裝備使用<a href="https://kywk.github.io/life/2021/04/01/utilities#%E8%A3%9D%E5%82%99%E4%BD%BF%E7%94%A8" class="hash-link" aria-label="裝備使用的直接連結" title="裝備使用的直接連結">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="主要裝備">主要裝備<a href="https://kywk.github.io/life/2021/04/01/utilities#%E4%B8%BB%E8%A6%81%E8%A3%9D%E5%82%99" class="hash-link" aria-label="主要裝備的直接連結" title="主要裝備的直接連結">​</a></h3>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="裝備使用">裝備使用<a href="https://kywk.github.io/life/2021/04/01/utilities/#%E8%A3%9D%E5%82%99%E4%BD%BF%E7%94%A8" class="hash-link" aria-label="裝備使用的直接連結" title="裝備使用的直接連結">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="主要裝備">主要裝備<a href="https://kywk.github.io/life/2021/04/01/utilities/#%E4%B8%BB%E8%A6%81%E8%A3%9D%E5%82%99" class="hash-link" aria-label="主要裝備的直接連結" title="主要裝備的直接連結">​</a></h3>
 <ul>
 <li>💻 小米筆電 Pro：安裝黑蘋果 / Windows 雙系統，作為開發主力機<!-- -->
 <ul>
@@ -779,19 +779,19 @@ Docusaurus / Obsidian 都可以正常運行.</p>
 </ul>
 </li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-上班攜帶">💼 上班攜帶<a href="https://kywk.github.io/life/2021/04/01/utilities#-%E4%B8%8A%E7%8F%AD%E6%94%9C%E5%B8%B6" class="hash-link" aria-label="💼 上班攜帶的直接連結" title="💼 上班攜帶的直接連結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-上班攜帶">💼 上班攜帶<a href="https://kywk.github.io/life/2021/04/01/utilities/#-%E4%B8%8A%E7%8F%AD%E6%94%9C%E5%B8%B6" class="hash-link" aria-label="💼 上班攜帶的直接連結" title="💼 上班攜帶的直接連結">​</a></h3>
 <ul>
 <li>🎒 <a href="https://www.amazon.co.uk/HP-Golla-Laptop-Backpack-15-4/dp/B003ARLOI2" target="_blank" rel="noopener noreferrer">HP Golla Laptop Backpack Bag</a></li>
 <li>💻 小米筆電 Pro</li>
 <li>🔌 Lenovo 65W PD</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-會議--出差">🌃 會議 / 出差<a href="https://kywk.github.io/life/2021/04/01/utilities#-%E6%9C%83%E8%AD%B0--%E5%87%BA%E5%B7%AE" class="hash-link" aria-label="🌃 會議 / 出差的直接連結" title="🌃 會議 / 出差的直接連結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-會議--出差">🌃 會議 / 出差<a href="https://kywk.github.io/life/2021/04/01/utilities/#-%E6%9C%83%E8%AD%B0--%E5%87%BA%E5%B7%AE" class="hash-link" aria-label="🌃 會議 / 出差的直接連結" title="🌃 會議 / 出差的直接連結">​</a></h3>
 <ul>
 <li>🎒 <a href="https://shopee.tw/%E5%B0%8F%E7%B1%B390%E5%88%86%E9%80%9A%E5%8B%A4%E9%9B%99%E8%82%A9%E5%8C%85%E9%9D%92%E8%8B%94%E7%81%B0%E8%89%B2%E6%A1%B6%E7%8B%80%E9%96%8B%E5%8F%A34%E7%B4%9A%E9%98%B2%E6%BD%91%E6%B0%B4%E7%B0%A1%E7%B4%84%E8%BC%95%E4%BE%BF-i.4711609.1836486713" target="_blank" rel="noopener noreferrer">小米90分通勤雙肩包</a></li>
 <li>💻 MacBook Pro 13"</li>
 <li>🔌 MagSafe 2</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-外出--旅行--">🛫 外出 / 旅行 / ...<a href="https://kywk.github.io/life/2021/04/01/utilities#-%E5%A4%96%E5%87%BA--%E6%97%85%E8%A1%8C--" class="hash-link" aria-label="🛫 外出 / 旅行 / ...的直接連結" title="🛫 外出 / 旅行 / ...的直接連結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-外出--旅行--">🛫 外出 / 旅行 / ...<a href="https://kywk.github.io/life/2021/04/01/utilities/#-%E5%A4%96%E5%87%BA--%E6%97%85%E8%A1%8C--" class="hash-link" aria-label="🛫 外出 / 旅行 / ...的直接連結" title="🛫 外出 / 旅行 / ...的直接連結">​</a></h3>
 <ul>
 <li>🎒 <a href="https://www.google.com/search?q=%E7%B4%A2%E5%B0%BCCASUALBAG%E5%BE%AE%E5%96%AE%E6%94%9D%E5%BD%B1%E5%8C%85&amp;client=safari&amp;hl=zh-TW&amp;sxsrf=ALeKk010nHlG12_FRKc8tkq1U3C7Wm2U8A:1616571032682&amp;source=lnms&amp;tbm=isch&amp;sa=X&amp;ved=2ahUKEwjE0KCxtMjvAhUUBZQKHZFnDyoQ_AUoAnoECAQQBA&amp;biw=1280&amp;bih=695" target="_blank" rel="noopener noreferrer">Sony Casual Bag 微單攝影包</a></li>
 <li>💻 MacBook 12"</li>
@@ -807,7 +807,7 @@ Docusaurus / Obsidian 都可以正常運行.</p>
 日常工作以螢幕大的小米筆電處理，所有外出需求都用 M1 了。</p>
 <p>手機目前除了主副兩隻外，還需有隻專門客服聯絡與測試用的手機。
 目標依工作與休閒生活，往縮減成工作和私人兩隻手機努力。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="軟體工具--網站服務">軟體工具 / 網站服務<a href="https://kywk.github.io/life/2021/04/01/utilities#%E8%BB%9F%E9%AB%94%E5%B7%A5%E5%85%B7--%E7%B6%B2%E7%AB%99%E6%9C%8D%E5%8B%99" class="hash-link" aria-label="軟體工具 / 網站服務的直接連結" title="軟體工具 / 網站服務的直接連結">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="軟體工具--網站服務">軟體工具 / 網站服務<a href="https://kywk.github.io/life/2021/04/01/utilities/#%E8%BB%9F%E9%AB%94%E5%B7%A5%E5%85%B7--%E7%B6%B2%E7%AB%99%E6%9C%8D%E5%8B%99" class="hash-link" aria-label="軟體工具 / 網站服務的直接連結" title="軟體工具 / 網站服務的直接連結">​</a></h2>
 <ul>
 <li>🌎 瀏覽器：Safari (Mac) / Edge (Windows) / Chrome (Linux)</li>
 <li>👥 主要社交網站：Facebook, PTT</li>
@@ -820,7 +820,7 @@ Docusaurus / Obsidian 都可以正常運行.</p>
 <li>🗂 個人網站：個人網站 Github</li>
 <li>🗂 個人履歷：Linkedin</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="手機應用">手機應用<a href="https://kywk.github.io/life/2021/04/01/utilities#%E6%89%8B%E6%A9%9F%E6%87%89%E7%94%A8" class="hash-link" aria-label="手機應用的直接連結" title="手機應用的直接連結">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="手機應用">手機應用<a href="https://kywk.github.io/life/2021/04/01/utilities/#%E6%89%8B%E6%A9%9F%E6%87%89%E7%94%A8" class="hash-link" aria-label="手機應用的直接連結" title="手機應用的直接連結">​</a></h2>
 <ul>
 <li>Launcher: Lawnchair 2</li>
 <li>Google Calendar, GMail, Google Keep<!-- -->
@@ -858,7 +858,7 @@ Docusaurus / Obsidian 都可以正常運行.</p>
 <p>因有多隻手機使用，手機桌面 App 排列組合是固定的，才能無痛在手機間遊走。
 依手機初次設定當下的心情，挑選合適 IconPack，讓不同手機的使用有些趣味在。</p>
 <p><img decoding="async" loading="lazy" src="https://lh3.googleusercontent.com/pw/ACtC-3ecQh1OTVYERqzvfvU-a8aldX6vKBfnfwd1vQrCwQR2alb6KM5eNpTptdrvz6uWtrrnmGi-vPaUKazmacsehC-6qRGl3BB60dFiqn3zwG8pCBpIksVr4IkCTZ2gNubwFHfs0jk4M3ttiGxqbZi2Y_MV7w=w670-h1390-no?authuser=0" alt="" class="img_ev3q"></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="see-also">See Also<a href="https://kywk.github.io/life/2021/04/01/utilities#see-also" class="hash-link" aria-label="See Also的直接連結" title="See Also的直接連結">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="see-also">See Also<a href="https://kywk.github.io/life/2021/04/01/utilities/#see-also" class="hash-link" aria-label="See Also的直接連結" title="See Also的直接連結">​</a></h2>
 <p>看了 <a href="https://blog.gasolin.idv.tw/2020/11/15/tooling-in-2020-Nov/" target="_blank" rel="noopener noreferrer">個人工具箱（2020 十一月） | 蓋索林 Gasolin</a> 後，
 覺得定期檢視自己使用的工具，至少是可以開個頭的。
 日後是否回顧檢視，就看工具與自己生活型態的變化多少了。</p>]]></content>

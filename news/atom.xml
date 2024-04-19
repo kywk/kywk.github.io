@@ -1,27 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://kywk.github.io/news</id>
+    <id>https://kywk.github.io/news/</id>
     <title>kywk.me Blog</title>
-    <updated>2024-04-15T00:00:00.000Z</updated>
+    <updated>2024-04-30T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://kywk.github.io/news"/>
+    <link rel="alternate" href="https://kywk.github.io/news/"/>
     <subtitle>kywk.me Blog</subtitle>
     <icon>https://kywk.github.io/img/favicon.ico</icon>
     <entry>
-        <title type="html"><![CDATA[Surf 04.01~ 04.15]]></title>
-        <id>https://kywk.github.io/news/2024/04/15/_Surfing</id>
-        <link href="https://kywk.github.io/news/2024/04/15/_Surfing"/>
-        <updated>2024-04-15T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Surfing quick note 04.01~ 04.15]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="it-news">IT News<a href="https://kywk.github.io/news/2024/04/15/_Surfing#it-news" class="hash-link" aria-label="IT News的直接連結" title="IT News的直接連結">​</a></h3>
+        <title type="html"><![CDATA[Surf 04.01~ 04.30]]></title>
+        <id>https://kywk.github.io/news/2024/04/30/_Surfing/</id>
+        <link href="https://kywk.github.io/news/2024/04/30/_Surfing/"/>
+        <updated>2024-04-30T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Surfing quick note 04.01~ 04.30]]></summary>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="it-news">IT News<a href="https://kywk.github.io/news/2024/04/30/_Surfing/#it-news" class="hash-link" aria-label="IT News的直接連結" title="IT News的直接連結">​</a></h3>
 <ul>
 <li></li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tech">Tech<a href="https://kywk.github.io/news/2024/04/15/_Surfing#tech" class="hash-link" aria-label="Tech的直接連結" title="Tech的直接連結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tech">Tech<a href="https://kywk.github.io/news/2024/04/30/_Surfing/#tech" class="hash-link" aria-label="Tech的直接連結" title="Tech的直接連結">​</a></h3>
 <ul>
+<li><a href="https://jimmyswebnote.com/orbstack-tutorial/" target="_blank" rel="noopener noreferrer">Docker Desktop 殺手 - OrbStack 教學 - Jimmy 的架站筆記</a>
+<ul>
+<li><a href="https://www.appinn.com/orbstack/" target="_blank" rel="noopener noreferrer">OrbStack - 0 配置，在 Mac 上快速运行 Docker 容器和 Linux 虚拟机 - 小众软件</a></li>
+<li><a href="https://www.youtube.com/watch?v=LzdlxVWYdiM" target="_blank" rel="noopener noreferrer">用了Orbstack你就再也不想用Docker Desktop了 | Mac用户的福音 - YouTube</a></li>
+<li>同事轉貼的連結, 初步感覺不賴, 已替代 Docker Desktop 了.
+但仍限制非商業使用, 公司電腦似乎還是只能走 Podman...</li>
+</ul>
+</li>
+<li><a href="https://blog.othree.net/log/2024/04/17/json-type-definition/" target="_blank" rel="noopener noreferrer">JSON Type Definition : O3noBLOG</a></li>
+<li><a href="https://ihower.tw/blog/archives/11996" target="_blank" rel="noopener noreferrer">淺談 Prompt 自動最佳化工具 – ihower</a></li>
 <li></li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="life">Life<a href="https://kywk.github.io/news/2024/04/15/_Surfing#life" class="hash-link" aria-label="Life的直接連結" title="Life的直接連結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="life">Life<a href="https://kywk.github.io/news/2024/04/30/_Surfing/#life" class="hash-link" aria-label="Life的直接連結" title="Life的直接連結">​</a></h3>
 <ul>
 <li><a href="https://blog.gslin.org/archives/2024/04/04/11731/%e4%b8%8b%e9%9b%a8%e5%a4%a9%e6%89%8d%e6%9c%83%e9%80%9a%e7%9a%84%e7%b6%b2%e8%b7%af/" target="_blank" rel="noopener noreferrer">下雨天才會通的網路 – Gea-Suan Lin's BLOG</a></li>
 <li><a href="https://steachs.com/archives/65398" target="_blank" rel="noopener noreferrer">上班時想稍微偷閒一下嗎？試試這以假亂真的「系統更新畫面」Fake Update | 就是教不落 - 給你最豐富的 3C 資訊、教學網站</a></li>
@@ -36,11 +46,11 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Surf 03.16~ 03.31]]></title>
-        <id>https://kywk.github.io/news/2024/03/31/_Surfing</id>
-        <link href="https://kywk.github.io/news/2024/03/31/_Surfing"/>
+        <id>https://kywk.github.io/news/2024/03/31/_Surfing/</id>
+        <link href="https://kywk.github.io/news/2024/03/31/_Surfing/"/>
         <updated>2024-03-31T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Surfing quick note 03.16~ 03.31]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="it-news">IT News<a href="https://kywk.github.io/news/2024/03/31/_Surfing#it-news" class="hash-link" aria-label="IT News的直接連結" title="IT News的直接連結">​</a></h3>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="it-news">IT News<a href="https://kywk.github.io/news/2024/03/31/_Surfing/#it-news" class="hash-link" aria-label="IT News的直接連結" title="IT News的直接連結">​</a></h3>
 <ul>
 <li><a href="https://www.ithome.com.tw/news/161871" target="_blank" rel="noopener noreferrer">微軟開源多雲容器網路觀測平臺Retina | iThome</a></li>
 <li><a href="https://www.ithome.com.tw/news/161874" target="_blank" rel="noopener noreferrer">JetBrains發布CI/CD新工具TeamCity Pipelines，具多項智慧功能簡化工作管線配置 | iThome</a></li>
@@ -53,7 +63,7 @@
 <li><a href="https://www.ithome.com.tw/news/161941" target="_blank" rel="noopener noreferrer">Confluent Tableflow可將Kafka串流資料轉為Iceberg表格最佳化分析流程 | iThome</a></li>
 <li></li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tech">Tech<a href="https://kywk.github.io/news/2024/03/31/_Surfing#tech" class="hash-link" aria-label="Tech的直接連結" title="Tech的直接連結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tech">Tech<a href="https://kywk.github.io/news/2024/03/31/_Surfing/#tech" class="hash-link" aria-label="Tech的直接連結" title="Tech的直接連結">​</a></h3>
 <ul>
 <li><a href="https://github.com/ynqa/jnv" target="_blank" rel="noopener noreferrer">GitHub - ynqa/jnv: interactive JSON filter using jq</a>
 <ul>
@@ -65,7 +75,7 @@
 <li><a href="https://gitlab.com/Screwtapello/sqlite-schema-diagram" target="_blank" rel="noopener noreferrer">Screwtape / sqlite-schema-diagram · GitLab</a></li>
 <li></li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="life">Life<a href="https://kywk.github.io/news/2024/03/31/_Surfing#life" class="hash-link" aria-label="Life的直接連結" title="Life的直接連結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="life">Life<a href="https://kywk.github.io/news/2024/03/31/_Surfing/#life" class="hash-link" aria-label="Life的直接連結" title="Life的直接連結">​</a></h3>
 <ul>
 <li><a href="https://blog.kyomind.tw/weekly-review-25/" target="_blank" rel="noopener noreferrer">25，回歸原點的 Weekly Review - Code and Me</a></li>
 <li><a href="https://www.mobile01.com/topicdetail.php?f=408&amp;t=6929555" target="_blank" rel="noopener noreferrer">德奧捷聖誕旅行8日遊-Day 3 &amp; 4 - 布拉格聖誕市集&amp;飯店@Hotel NH Prague City - Mobile01</a></li>
@@ -82,11 +92,11 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Surf 03.01~ 03.15]]></title>
-        <id>https://kywk.github.io/news/2024/03/15/_Surfing</id>
-        <link href="https://kywk.github.io/news/2024/03/15/_Surfing"/>
+        <id>https://kywk.github.io/news/2024/03/15/_Surfing/</id>
+        <link href="https://kywk.github.io/news/2024/03/15/_Surfing/"/>
         <updated>2024-03-15T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Surfing quick note 03.01~ 03.15]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="it-news">IT News<a href="https://kywk.github.io/news/2024/03/15/_Surfing#it-news" class="hash-link" aria-label="IT News的直接連結" title="IT News的直接連結">​</a></h3>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="it-news">IT News<a href="https://kywk.github.io/news/2024/03/15/_Surfing/#it-news" class="hash-link" aria-label="IT News的直接連結" title="IT News的直接連結">​</a></h3>
 <ul>
 <li><a href="https://apiiro.com/blog/malicious-code-campaign-github-repo-confusion-attack/" target="_blank" rel="noopener noreferrer">Over 100,000 Infected Repos Found on GitHub</a>
 <ul>
@@ -98,7 +108,7 @@
 <li><a href="https://steachs.com/archives/65133" target="_blank" rel="noopener noreferrer">開啟 Google One 暗網報告，快速掃描你的個資有沒有在暗網中流出過 | 就是教不落 - 給你最豐富的 3C 資訊、教學網站</a></li>
 <li></li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tech">Tech<a href="https://kywk.github.io/news/2024/03/15/_Surfing#tech" class="hash-link" aria-label="Tech的直接連結" title="Tech的直接連結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tech">Tech<a href="https://kywk.github.io/news/2024/03/15/_Surfing/#tech" class="hash-link" aria-label="Tech的直接連結" title="Tech的直接連結">​</a></h3>
 <ul>
 <li><a href="https://blog.gslin.org/archives/2024/03/03/11684/%e7%94%a8-brave-%e7%9a%84-brave-flags-%e8%a8%ad%e5%ae%9a/" target="_blank" rel="noopener noreferrer">用 Brave 的 brave://flags 設定 – Gea-Suan Lin's BLOG</a></li>
 <li><a href="https://studyhost.blogspot.com/2024/03/sk.html" target="_blank" rel="noopener noreferrer">使用Semantic Kernel 建立自然語言請假系統</a></li>
@@ -106,7 +116,7 @@
 <li><a href="https://www.minwt.com/webdesign-dev/24227.html" target="_blank" rel="noopener noreferrer">透過VS Code將已壓縮的陣列格式還原成樹狀結構 | 梅問題．教學網</a></li>
 <li></li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="life">Life<a href="https://kywk.github.io/news/2024/03/15/_Surfing#life" class="hash-link" aria-label="Life的直接連結" title="Life的直接連結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="life">Life<a href="https://kywk.github.io/news/2024/03/15/_Surfing/#life" class="hash-link" aria-label="Life的直接連結" title="Life的直接連結">​</a></h3>
 <ul>
 <li><a href="https://crossing.cw.com.tw/article/18673" target="_blank" rel="noopener noreferrer">歡迎來到布達佩斯：掀開華麗的面紗，跟著匈牙利人面對自己的「黑歷史」｜劉政暉／Nuevaidee．新點子｜換日線</a></li>
 <li><a href="https://www.playpcesor.com/2024/03/note-tag-name.html" target="_blank" rel="noopener noreferrer">如何為筆記命名，建立搜尋規則？我的標題、分類、標籤命名法</a></li>
@@ -130,11 +140,11 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Surf 02.15~ 02.29]]></title>
-        <id>https://kywk.github.io/news/2024/02/29/_Surfing</id>
-        <link href="https://kywk.github.io/news/2024/02/29/_Surfing"/>
+        <id>https://kywk.github.io/news/2024/02/29/_Surfing/</id>
+        <link href="https://kywk.github.io/news/2024/02/29/_Surfing/"/>
         <updated>2024-02-29T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Surfing quick note 02.15~ 02.29]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="it-news">IT News<a href="https://kywk.github.io/news/2024/02/29/_Surfing#it-news" class="hash-link" aria-label="IT News的直接連結" title="IT News的直接連結">​</a></h3>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="it-news">IT News<a href="https://kywk.github.io/news/2024/02/29/_Surfing/#it-news" class="hash-link" aria-label="IT News的直接連結" title="IT News的直接連結">​</a></h3>
 <ul>
 <li><a href="https://www.ithome.com.tw/news/161316" target="_blank" rel="noopener noreferrer">Google開源內部所使用的檔案辨識系統Magika | iThome</a>
 <ul>
@@ -154,7 +164,7 @@
 <li><a href="https://pagescms.org/" target="_blank" rel="noopener noreferrer">Pages CMS: The No-Hassle CMS for GitHub</a></li>
 <li></li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tech">Tech<a href="https://kywk.github.io/news/2024/02/29/_Surfing#tech" class="hash-link" aria-label="Tech的直接連結" title="Tech的直接連結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tech">Tech<a href="https://kywk.github.io/news/2024/02/29/_Surfing/#tech" class="hash-link" aria-label="Tech的直接連結" title="Tech的直接連結">​</a></h3>
 <ul>
 <li><a href="https://jvns.ca/blog/2024/02/16/popular-git-config-options/" target="_blank" rel="noopener noreferrer">Popular git config options</a></li>
 <li><a href="https://blog.gslin.org/archives/2024/02/19/11671/" target="_blank" rel="noopener noreferrer">關於 GitLab 的 SQL 設計 – Gea-Suan Lin's BLOG</a>
@@ -170,7 +180,7 @@
 </li>
 <li></li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="life">Life<a href="https://kywk.github.io/news/2024/02/29/_Surfing#life" class="hash-link" aria-label="Life的直接連結" title="Life的直接連結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="life">Life<a href="https://kywk.github.io/news/2024/02/29/_Surfing/#life" class="hash-link" aria-label="Life的直接連結" title="Life的直接連結">​</a></h3>
 <ul>
 <li><a href="https://blog.richliu.com/2024/02/16/5780/" target="_blank" rel="noopener noreferrer">阿富汗文件讀書心得 - richliu's blog</a></li>
 <li><a href="https://blog.richliu.com/2024/02/18/5787/up%e5%ad%b8%ef%bc%9a%e6%89%80%e6%9c%89%e7%b6%93%e7%90%86%e4%ba%ba%e7%9b%b8%e8%a6%8b%e6%81%a8%e6%99%9a%e7%9a%84%e4%b8%80%e6%9c%ac%e6%9b%b8%e7%ad%86%e8%a8%98/" target="_blank" rel="noopener noreferrer">UP學：所有經理人相見恨晚的一本書筆記 - richliu's blog</a></li>
@@ -187,21 +197,21 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Surf 01.16~ 01.31]]></title>
-        <id>https://kywk.github.io/news/2024/01/31/_Surfing</id>
-        <link href="https://kywk.github.io/news/2024/01/31/_Surfing"/>
+        <id>https://kywk.github.io/news/2024/01/31/_Surfing/</id>
+        <link href="https://kywk.github.io/news/2024/01/31/_Surfing/"/>
         <updated>2024-01-31T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Surfing quick note 01.16~ 01.31]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="it-news">IT News<a href="https://kywk.github.io/news/2024/01/31/_Surfing#it-news" class="hash-link" aria-label="IT News的直接連結" title="IT News的直接連結">​</a></h3>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="it-news">IT News<a href="https://kywk.github.io/news/2024/01/31/_Surfing/#it-news" class="hash-link" aria-label="IT News的直接連結" title="IT News的直接連結">​</a></h3>
 <ul>
 <li><a href="https://www.ithome.com.tw/news/160848?utm_source=pocket_saves" target="_blank" rel="noopener noreferrer">Azure量子開發套件工具包1.0發布，在瀏覽器就可進行量子程式開發 | iThome</a></li>
 <li><a href="https://studyhost.blogspot.com/2024/01/devops.html" target="_blank" rel="noopener noreferrer">.NET Walker: DevOps導入前後，該如何評估成效?</a></li>
 <li></li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tech">Tech<a href="https://kywk.github.io/news/2024/01/31/_Surfing#tech" class="hash-link" aria-label="Tech的直接連結" title="Tech的直接連結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tech">Tech<a href="https://kywk.github.io/news/2024/01/31/_Surfing/#tech" class="hash-link" aria-label="Tech的直接連結" title="Tech的直接連結">​</a></h3>
 <ul>
 <li></li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="life">Life<a href="https://kywk.github.io/news/2024/01/31/_Surfing#life" class="hash-link" aria-label="Life的直接連結" title="Life的直接連�結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="life">Life<a href="https://kywk.github.io/news/2024/01/31/_Surfing/#life" class="hash-link" aria-label="Life的直接連結" title="Life的直接連結">​</a></h3>
 <ul>
 <li><a href="https://www.playpcesor.com/2024/01/2024-work-optimization-bulletproof-journal-system.html" target="_blank" rel="noopener noreferrer">2024 高效工作法：如何用防彈筆記打造提升生產力的支持系統（實戰案例總集）</a></li>
 <li></li>
@@ -215,11 +225,11 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Surf 01.01~ 01.15]]></title>
-        <id>https://kywk.github.io/news/2024/01/15/_Surfing</id>
-        <link href="https://kywk.github.io/news/2024/01/15/_Surfing"/>
+        <id>https://kywk.github.io/news/2024/01/15/_Surfing/</id>
+        <link href="https://kywk.github.io/news/2024/01/15/_Surfing/"/>
         <updated>2024-01-15T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Surfing quick note 01.01~ 01.15]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="it-news">IT News<a href="https://kywk.github.io/news/2024/01/15/_Surfing#it-news" class="hash-link" aria-label="IT News的直接連結" title="IT News的直接連結">​</a></h3>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="it-news">IT News<a href="https://kywk.github.io/news/2024/01/15/_Surfing/#it-news" class="hash-link" aria-label="IT News的直接連結" title="IT News的直接連結">​</a></h3>
 <ul>
 <li><a href="https://www.minwt.com/free/24174.html" target="_blank" rel="noopener noreferrer">Kinsta 免費網站空間，每月有100GB流量，並支援CI/CD自動化部署 | 梅問題．教學網</a></li>
 <li><a href="https://www.ithome.com.tw/news/160657" target="_blank" rel="noopener noreferrer">Rust 1.75改進特徵語言功能，簡化非同步程式設計 | iThome</a></li>
@@ -229,7 +239,7 @@
 </ul>
 </li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tech">Tech<a href="https://kywk.github.io/news/2024/01/15/_Surfing#tech" class="hash-link" aria-label="Tech的直接連結" title="Tech的直接連結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tech">Tech<a href="https://kywk.github.io/news/2024/01/15/_Surfing/#tech" class="hash-link" aria-label="Tech的直接連結" title="Tech的直接連結">​</a></h3>
 <ul>
 <li><a href="https://blog.gslin.org/archives/2024/01/15/11595" target="_blank" rel="noopener noreferrer">用 x86 組語寫的 web forum – Gea-Suan Lin's BLOG</a></li>
 <li><a href="https://blog.gslin.org/archives/2024/01/14/11593/" target="_blank" rel="noopener noreferrer">用 shebang 掛起 Docker instance – Gea-Suan Lin's BLOG</a></li>
@@ -237,7 +247,7 @@
 <li><a href="https://www.evanlin.com/til-gogle-gemini-pro-vision/" target="_blank" rel="noopener noreferrer">[Golang][Gemini Pro] 使用 Chat Session 與 LINEBot 快速整合出有記憶的智慧小幫手</a></li>
 <li><a href="https://blog.gslin.org/archives/2024/01/09/11573/" target="_blank" rel="noopener noreferrer">觀察 Docker image 每一層變化的 dive，以及操作的 crane – Gea-Suan Lin's BLOG</a></li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="life">Life<a href="https://kywk.github.io/news/2024/01/15/_Surfing#life" class="hash-link" aria-label="Life的直接連結" title="Life的直接連結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="life">Life<a href="https://kywk.github.io/news/2024/01/15/_Surfing/#life" class="hash-link" aria-label="Life的直接連結" title="Life的直接連結">​</a></h3>
 <ul>
 <li><a href="https://www.mobile01.com/topicdetail.php?f=360&amp;t=6898917" target="_blank" rel="noopener noreferrer">【開箱】客廳我們不要了！！！被書櫃包圍的現代溫馨宅 - Mobile01</a></li>
 <li><a href="https://www.mobile01.com/topicdetail.php?f=360&amp;t=6902587" target="_blank" rel="noopener noreferrer">【開箱】打破傳統格局吧！自由曲線的藝廊風格訂製宅 - Mobile01</a></li>
@@ -254,11 +264,11 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Surf 12.16~ 12.31]]></title>
-        <id>https://kywk.github.io/news/2023/12/31/_Surfing</id>
-        <link href="https://kywk.github.io/news/2023/12/31/_Surfing"/>
+        <id>https://kywk.github.io/news/2023/12/31/_Surfing/</id>
+        <link href="https://kywk.github.io/news/2023/12/31/_Surfing/"/>
         <updated>2023-12-31T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Surfing quick note 12.16 ~ 12.31]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="it-news">IT News<a href="https://kywk.github.io/news/2023/12/31/_Surfing#it-news" class="hash-link" aria-label="IT News的直接連結" title="IT News的直接連結">​</a></h3>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="it-news">IT News<a href="https://kywk.github.io/news/2023/12/31/_Surfing/#it-news" class="hash-link" aria-label="IT News的直接連結" title="IT News的直接連結">​</a></h3>
 <ul>
 <li><a href="https://blog.gslin.org/archives/2023/12/20/11535/" target="_blank" rel="noopener noreferrer">Jepsen 回過頭來測試 MySQL 8.0 – Gea-Suan Lin's BLOG</a></li>
 <li><a href="https://www.ithome.com.tw/news/160431" target="_blank" rel="noopener noreferrer">Flipboard後端將全面改用ActivityPub | iThome</a>
@@ -268,7 +278,7 @@
 </li>
 <li></li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tech">Tech<a href="https://kywk.github.io/news/2023/12/31/_Surfing#tech" class="hash-link" aria-label="Tech的直接連結" title="Tech的直接連結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tech">Tech<a href="https://kywk.github.io/news/2023/12/31/_Surfing/#tech" class="hash-link" aria-label="Tech的直接連結" title="Tech的直接連結">​</a></h3>
 <ul>
 <li><a href="https://trofi.github.io/posts/295-ssh-over-https.html" target="_blank" rel="noopener noreferrer">SSH over HTTPS</a>
 <ul>
@@ -278,7 +288,7 @@
 <li><a href="https://blog.gslin.org/archives/2023/12/23/11545/" target="_blank" rel="noopener noreferrer">讓 git blame 可以忽略掉某些 restyle/reformat 的 commit – Gea-Suan Lin's BLOG</a></li>
 <li></li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="life">Life<a href="https://kywk.github.io/news/2023/12/31/_Surfing#life" class="hash-link" aria-label="Life的直接連結" title="Life的直接連結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="life">Life<a href="https://kywk.github.io/news/2023/12/31/_Surfing/#life" class="hash-link" aria-label="Life的直接連結" title="Life的直接連結">​</a></h3>
 <ul>
 <li><a href="https://www.playpcesor.com/2023/12/bulletproof-journaling-mental-exercise.html" target="_blank" rel="noopener noreferrer">寫筆記就是做好心智運動，分享防彈筆記法的四種日常思考力鍛鍊</a></li>
 <li><a href="https://www.mobile01.com/topicdetail.php?f=580&amp;t=6895744" target="_blank" rel="noopener noreferrer">全台首間沈浸式湯屋酒吧「崎白湯屋」於台北東區正式開幕！得以品飲響、山崎、白州等珍稀酒款 - Mobile01</a></li>
@@ -295,22 +305,22 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Surf 11.16 ~ 11.30]]></title>
-        <id>https://kywk.github.io/news/2023/11/30/_Surfing</id>
-        <link href="https://kywk.github.io/news/2023/11/30/_Surfing"/>
+        <id>https://kywk.github.io/news/2023/11/30/_Surfing/</id>
+        <link href="https://kywk.github.io/news/2023/11/30/_Surfing/"/>
         <updated>2023-11-30T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Surfing quick note 11.16 ~ 11.30]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="it-news">IT News<a href="https://kywk.github.io/news/2023/11/30/_Surfing#it-news" class="hash-link" aria-label="IT News的直接連結" title="IT News的直接連結">​</a></h3>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="it-news">IT News<a href="https://kywk.github.io/news/2023/11/30/_Surfing/#it-news" class="hash-link" aria-label="IT News的直接連結" title="IT News的直接連結">​</a></h3>
 <ul>
 <li></li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tech">Tech<a href="https://kywk.github.io/news/2023/11/30/_Surfing#tech" class="hash-link" aria-label="Tech的直接連結" title="Tech的直接連結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tech">Tech<a href="https://kywk.github.io/news/2023/11/30/_Surfing/#tech" class="hash-link" aria-label="Tech的直接連結" title="Tech的直接連結">​</a></h3>
 <ul>
 <li><a href="https://wasmbyexample.dev/home.en-us.html" target="_blank" rel="noopener noreferrer">Wasm By Example</a></li>
 <li><a href="https://cnodejs.org/topic/654316619d13d11a4dfdfd80" target="_blank" rel="noopener noreferrer">用C# 做了个将所有 Word、Excel、PPT 文件逐个转换为 PDF的软件 欢迎大家免费用 - CNode技术社区</a></li>
 <li><a href="https://cnodejs.org/topic/65506e6e9d13d10ee5fdff32" target="_blank" rel="noopener noreferrer">BestGPTs：分享最好用的 GPTs - CNode技术社区</a></li>
 <li></li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="life">Life<a href="https://kywk.github.io/news/2023/11/30/_Surfing#life" class="hash-link" aria-label="Life的直接連結" title="Life的直接連結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="life">Life<a href="https://kywk.github.io/news/2023/11/30/_Surfing/#life" class="hash-link" aria-label="Life的直接連結" title="Life的直接連結">​</a></h3>
 <ul>
 <li><a href="https://www.mobile01.com/topicdetail.php?f=202&amp;t=6871211" target="_blank" rel="noopener noreferrer">台南慢遊 ~ 蝸牛巷、神農街、水交社文化園區、牛稠子車站公園、小啡巷咖啡 - Mobile01</a></li>
 <li><a href="https://free.com.tw/fadblock/" target="_blank" rel="noopener noreferrer">FadBlock：全新 YouTube 廣告阻擋技術，讓廣告在瞬間播放完畢</a></li>
@@ -327,17 +337,17 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Surf 11.01 ~ 11.15]]></title>
-        <id>https://kywk.github.io/news/2023/11/15/_Surfing</id>
-        <link href="https://kywk.github.io/news/2023/11/15/_Surfing"/>
+        <id>https://kywk.github.io/news/2023/11/15/_Surfing/</id>
+        <link href="https://kywk.github.io/news/2023/11/15/_Surfing/"/>
         <updated>2023-11-15T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Surfing quick note 11.01 ~ 11.15]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="it-news">IT News<a href="https://kywk.github.io/news/2023/11/15/_Surfing#it-news" class="hash-link" aria-label="IT News的直接連結" title="IT News的直接連結">​</a></h3>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="it-news">IT News<a href="https://kywk.github.io/news/2023/11/15/_Surfing/#it-news" class="hash-link" aria-label="IT News的直接連結" title="IT News的直接連結">​</a></h3>
 <ul>
 <li><a href="https://blog.gslin.org/archives/2023/11/01/11423/" target="_blank" rel="noopener noreferrer">Sentry 的替代品：GlitchTip – Gea-Suan Lin's BLOG</a></li>
 <li><a href="https://blog.gslin.org/archives/2023/11/06/11430/" target="_blank" rel="noopener noreferrer">Cloudflare 前幾天 API 與 Dashboard 出事的 Post Mortem 記錄 – Gea-Suan Lin's BLOG</a></li>
 <li></li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tech">Tech<a href="https://kywk.github.io/news/2023/11/15/_Surfing#tech" class="hash-link" aria-label="Tech的直接連結" title="Tech的直接連結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tech">Tech<a href="https://kywk.github.io/news/2023/11/15/_Surfing/#tech" class="hash-link" aria-label="Tech的直接連結" title="Tech的直接連結">​</a></h3>
 <ul>
 <li><a href="https://studyhost.blogspot.com/2023/11/apimjwt-token.html" target="_blank" rel="noopener noreferrer">.NET Walker: 在APIM中自動使用Jwt Token統一進行驗證</a></li>
 <li><a href="https://piotrminkowski.com/2023/11/07/slim-docker-images-for-java/" target="_blank" rel="noopener noreferrer">Slim Docker Images for Java - Piotr's TechBlog</a></li>
@@ -348,7 +358,7 @@
 <li><a href="https://blog.gslin.org/archives/2023/11/02/11426/" target="_blank" rel="noopener noreferrer">讓 git diff 可以直接顯示 SQLite3 裡面的差異 – Gea-Suan Lin's BLOG</a></li>
 <li></li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="life">Life<a href="https://kywk.github.io/news/2023/11/15/_Surfing#life" class="hash-link" aria-label="Life的直接連結" title="Life的直接連結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="life">Life<a href="https://kywk.github.io/news/2023/11/15/_Surfing/#life" class="hash-link" aria-label="Life的直接連結" title="Life的直接連結">​</a></h3>
 <ul>
 <li><a href="https://crossing.cw.com.tw/article/18260" target="_blank" rel="noopener noreferrer">捷克人是「和台灣人很像的歐洲人」？駐捷大使第一手的異國生活觀察｜劉郁葶／台灣女孩的捷克觀察日記｜換日線</a></li>
 <li><a href="https://www.adaymag.com/2023/10/27/yk-club-cultural-events.html" target="_blank" rel="noopener noreferrer">週末台北不知要去哪？我找到一個超稀有的活動工坊，有道地異國美食、還能和新朋友玩遊戲 - A Day Magazine</a></li>
@@ -369,11 +379,11 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Surf 10.16 ~ 10.31]]></title>
-        <id>https://kywk.github.io/news/2023/10/31/_Surfing</id>
-        <link href="https://kywk.github.io/news/2023/10/31/_Surfing"/>
+        <id>https://kywk.github.io/news/2023/10/31/_Surfing/</id>
+        <link href="https://kywk.github.io/news/2023/10/31/_Surfing/"/>
         <updated>2023-10-31T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Surfing quick note 10.16 ~ 10.31]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="it-news">IT News<a href="https://kywk.github.io/news/2023/10/31/_Surfing#it-news" class="hash-link" aria-label="IT News的直接連結" title="IT News的直接連結">​</a></h3>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="it-news">IT News<a href="https://kywk.github.io/news/2023/10/31/_Surfing/#it-news" class="hash-link" aria-label="IT News的直接連結" title="IT News的直接連結">​</a></h3>
 <ul>
 <li><a href="https://steachs.com/archives/63941" target="_blank" rel="noopener noreferrer">你也忽略資安問題了嗎？每個人都應該看完（feat. Bitdefender 必特 Total Security 全方位資安軟體） | 就是教不落 - 給你最豐富的 3C 資訊、教學網站</a></li>
 <li><a href="https://www.inside.com.tw/article/10162-the-guy-who-invented-those-annoying-password-rules-now-regrets-wasting-your-time" target="_blank" rel="noopener noreferrer">15 年前發明煩死人的密碼規則，Bill Burr：抱歉浪費大家時間 - INSIDE</a></li>
@@ -382,7 +392,7 @@
 <li><a href="https://www.techbang.com/posts/110551-claude-2-uses-claude-ai-as-a-free-and-powerful-tool-for-pdf" target="_blank" rel="noopener noreferrer">Claude 2 開放台灣註冊：Claude 2是什麼？與ChatGPT有何不同？中文上手實用懶人包 | T客邦</a></li>
 <li></li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="金融上雲">金融上雲<a href="https://kywk.github.io/news/2023/10/31/_Surfing#%E9%87%91%E8%9E%8D%E4%B8%8A%E9%9B%B2" class="hash-link" aria-label="金融上雲的直接連結" title="金融上雲的直接連結">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="金融上雲">金融上雲<a href="https://kywk.github.io/news/2023/10/31/_Surfing/#%E9%87%91%E8%9E%8D%E4%B8%8A%E9%9B%B2" class="hash-link" aria-label="金融上雲的直接連結" title="金融上雲的直接連結">​</a></h4>
 <ul>
 <li><a href="https://www.ithome.com.tw/news/159380" target="_blank" rel="noopener noreferrer">金管會正式發布金融業運用AI原則，放寬業者使用AI皆須人為判斷的一致性規範 | iThome</a></li>
 <li><a href="https://www.ithome.com.tw/news/159424" target="_blank" rel="noopener noreferrer">Fintech周報第219期：新光金保代將建置新核心系統；金管會正式發布金融業運用AI原則 | iThome</a></li>
@@ -393,7 +403,7 @@
 <li><a href="https://www.ithome.com.tw/news/159371" target="_blank" rel="noopener noreferrer">快速了解金融上雲鬆綁重點QA | iThome</a></li>
 <li><a href="https://www.ithome.com.tw/news/159370" target="_blank" rel="noopener noreferrer">金融上雲再次大鬆綁，將掀起金融業新一波加速上雲潮 | iThome</a></li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tech">Tech<a href="https://kywk.github.io/news/2023/10/31/_Surfing#tech" class="hash-link" aria-label="Tech的直接連結" title="Tech的直接連結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tech">Tech<a href="https://kywk.github.io/news/2023/10/31/_Surfing/#tech" class="hash-link" aria-label="Tech的直接連結" title="Tech的直接連結">​</a></h3>
 <ul>
 <li><a href="https://blog.longwin.com.tw/2023/10/programming-write-clean-code-rule-2023/" target="_blank" rel="noopener noreferrer">寫出 乾淨程式碼 的 六條規則 – Tsung's Blog</a></li>
 <li><a href="https://studyhost.blogspot.com/2023/10/devtunnel-webapi.html" target="_blank" rel="noopener noreferrer">.NET Walker: 使用 DevTunnel 做 WebAPI 的測試偵錯</a></li>
@@ -403,7 +413,7 @@
 <li><a href="https://www.makeuseof.com/github-repos-you-should-star/" target="_blank" rel="noopener noreferrer">Site Unreachable</a></li>
 <li></li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="life">Life<a href="https://kywk.github.io/news/2023/10/31/_Surfing#life" class="hash-link" aria-label="Life的直接連結" title="Life的直接連結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="life">Life<a href="https://kywk.github.io/news/2023/10/31/_Surfing/#life" class="hash-link" aria-label="Life的直接連結" title="Life的直接連結">​</a></h3>
 <ul>
 <li><a href="https://jdev.tw/blog/8229/html-tabs-plugin-examples" target="_blank" rel="noopener noreferrer">Obs143｜分頁式介面的應用：HTML Tabs外掛；增加Obsidian呈現的便利性 – 簡睿隨筆</a></li>
 <li><a href="https://free.com.tw/tunemymusic/" target="_blank" rel="noopener noreferrer">如何轉移 Spotify 播放清單？Tune My Music 音樂平台移轉工具教學</a></li>
@@ -426,24 +436,24 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Surf 10.01 ~ 10.15]]></title>
-        <id>https://kywk.github.io/news/2023/10/15/_Surfing</id>
-        <link href="https://kywk.github.io/news/2023/10/15/_Surfing"/>
+        <id>https://kywk.github.io/news/2023/10/15/_Surfing/</id>
+        <link href="https://kywk.github.io/news/2023/10/15/_Surfing/"/>
         <updated>2023-10-15T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Surfing quick note 10.01 ~ 10.15]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="it-news">IT News<a href="https://kywk.github.io/news/2023/10/15/_Surfing#it-news" class="hash-link" aria-label="IT News的直接連結" title="IT News的直接連結">​</a></h3>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="it-news">IT News<a href="https://kywk.github.io/news/2023/10/15/_Surfing/#it-news" class="hash-link" aria-label="IT News的直接連結" title="IT News的直接連結">​</a></h3>
 <ul>
 <li><a href="https://blog.gslin.org/archives/2023/10/12/11392/" target="_blank" rel="noopener noreferrer">WordPress.com 支援 ActivityPub – Gea-Suan Lin's BLOG</a></li>
 <li><a href="https://blog.gslin.org/archives/2023/09/28/11374/" target="_blank" rel="noopener noreferrer">ClickHouse 弄了一個 C++ 寫的 ZooKeeper drop-in replacement：ClickHouse Keeper – Gea-Suan Lin's BLOG</a></li>
 <li><a href="https://blog.gslin.org/archives/2023/09/25/11371" target="_blank" rel="noopener noreferrer">Percona XtraDB Cluster (PXC) 的感想 – Gea-Suan Lin's BLOG</a></li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tech">Tech<a href="https://kywk.github.io/news/2023/10/15/_Surfing#tech" class="hash-link" aria-label="Tech的直接連結" title="Tech的直接連結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tech">Tech<a href="https://kywk.github.io/news/2023/10/15/_Surfing/#tech" class="hash-link" aria-label="Tech的直接連結" title="Tech的直接連結">​</a></h3>
 <ul>
 <li><a href="https://blog.gslin.org/archives/2023/10/08/11388/" target="_blank" rel="noopener noreferrer">gzip 的 –rsyncable (zstd 也有) – Gea-Suan Lin's BLOG</a></li>
 <li><a href="https://blog.wu-boy.com/2023/10/git-commit-signature-verification/" target="_blank" rel="noopener noreferrer">快速設定 Git Commit Signature Verification - 小惡魔 - AppleBOY</a></li>
 <li><a href="https://blog.wu-boy.com/2023/09/secure-encryption-tool-age" target="_blank" rel="noopener noreferrer">加密檔案的好工具 - age - 小惡魔 - AppleBOY</a></li>
 <li><a href="https://www.maketecheasier.com/self-hosted-rss-reader-with-freshrss-docker/" target="_blank" rel="noopener noreferrer">Site Unreachable</a></li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="life">Life<a href="https://kywk.github.io/news/2023/10/15/_Surfing#life" class="hash-link" aria-label="Life的直接連結" title="Life的直接連結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="life">Life<a href="https://kywk.github.io/news/2023/10/15/_Surfing/#life" class="hash-link" aria-label="Life的直接連結" title="Life的直接連結">​</a></h3>
 <ul>
 <li><a href="https://jdev.tw/blog/8218/easy-bake-compile-notes-into-a-new-note" target="_blank" rel="noopener noreferrer">Obs142｜輕鬆烘烤(彙編)出需要的筆記：Easy Bake – 簡睿隨筆</a></li>
 <li><a href="https://jdev.tw/blog/8194/create-index-notes-by-dataview-and-tags" target="_blank" rel="noopener noreferrer">Obs138｜以標籤為基底，用Dataview形成索引筆記的嘗試 – 簡睿隨筆</a></li>
@@ -458,11 +468,11 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[以巴戰爭]]></title>
-        <id>https://kywk.github.io/news/2023/10/07/Israel-Palestine</id>
-        <link href="https://kywk.github.io/news/2023/10/07/Israel-Palestine"/>
+        <id>https://kywk.github.io/news/2023/10/07/Israel-Palestine/</id>
+        <link href="https://kywk.github.io/news/2023/10/07/Israel-Palestine/"/>
         <updated>2023-10-07T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Surf ###]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="surf">Surf<a href="https://kywk.github.io/news/2023/10/07/Israel-Palestine#surf" class="hash-link" aria-label="Surf的直接連結" title="Surf的直接連結">​</a></h3>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="surf">Surf<a href="https://kywk.github.io/news/2023/10/07/Israel-Palestine/#surf" class="hash-link" aria-label="Surf的直接連結" title="Surf的直接連結">​</a></h3>
 <ul>
 <li><a href="https://global.udn.com/global_vision/story/8662/7543669" target="_blank" rel="noopener noreferrer">【Daily Podcast】以軍轟炸加薩難民營，另擊落葉門胡塞軍飛彈／孟加拉成衣工人罷工與反政府示威 | 過去24小時 | 轉角國際 udn Global</a>
 <a href="https://engoo.com.tw/blog/theme/israel-palestine_war_conflict_history/" target="_blank" rel="noopener noreferrer">【時事英文】五分鐘讀懂以巴戰爭懶人包：為什麼發生衝突？加薩走廊在哪裡？哈瑪斯又是誰？ | Engoo線上英文</a></li>
@@ -473,18 +483,18 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Surf 09.16 ~ 09.30]]></title>
-        <id>https://kywk.github.io/news/2023/09/30/_Surfing</id>
-        <link href="https://kywk.github.io/news/2023/09/30/_Surfing"/>
+        <id>https://kywk.github.io/news/2023/09/30/_Surfing/</id>
+        <link href="https://kywk.github.io/news/2023/09/30/_Surfing/"/>
         <updated>2023-09-30T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Surfing quick note 09.16 ~ 09.30]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="it-news">IT News<a href="https://kywk.github.io/news/2023/09/30/_Surfing#it-news" class="hash-link" aria-label="IT News的直接連結" title="IT News的直接連結">​</a></h3>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="it-news">IT News<a href="https://kywk.github.io/news/2023/09/30/_Surfing/#it-news" class="hash-link" aria-label="IT News的直接連結" title="IT News的直接連結">​</a></h3>
 <ul>
 <li><a href="https://steachs.com/archives/63759" target="_blank" rel="noopener noreferrer">四款雲端儲存服務價格比一比，pCloud／Google Drive／OneDrive／Dropbox | 就是教不落 - 給你最豐富的 3C 資訊、教學網站</a></li>
 <li><a href="http://teddy-chen-tw.blogspot.com/2023/09/blog-post_23.html" target="_blank" rel="noopener noreferrer">搞笑談軟工: 練好基本功</a></li>
 <li><a href="https://horstmann.com/unblog/2023-09-19/index.html" target="_blank" rel="noopener noreferrer"># Java 21: The Nice, The Meh, and the ... Momentous</a></li>
 <li><a href="https://blog.gslin.org/archives/2023/09/22/11364/" target="_blank" rel="noopener noreferrer">Golang 將改變常見的 closure 地雷 – Gea-Suan Lin's BLOG</a></li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tech">Tech<a href="https://kywk.github.io/news/2023/09/30/_Surfing#tech" class="hash-link" aria-label="Tech的直接連結" title="Tech的直接連結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tech">Tech<a href="https://kywk.github.io/news/2023/09/30/_Surfing/#tech" class="hash-link" aria-label="Tech的直接連結" title="Tech的直接連結">​</a></h3>
 <ul>
 <li><a href="https://blog.gslin.org/archives/2023/09/25/11370/" target="_blank" rel="noopener noreferrer">scp -3：直接對兩個 remote host 複製檔案 – Gea-Suan Lin's BLOG</a></li>
 <li><a href="https://blog.gslin.org/archives/2023/09/24/11368/" target="_blank" rel="noopener noreferrer">cURL 放入 ipfs:// 支援 – Gea-Suan Lin's BLOG</a></li>
@@ -492,7 +502,7 @@
 <li><a href="https://cnodejs.org/topic/650cfeac1a7c3db18b05e385" target="_blank" rel="noopener noreferrer">大家有没有学习用ts开发node.js的诉求？ - CNode技术社区</a></li>
 <li><a href="https://www.rocksaying.tw/archives/2023/ES6_Async_Function_How_to.html" target="_blank" rel="noopener noreferrer">學習 ECMAScript/JavaScript 6 - Async Function 問答指引 - 石頭閒語</a></li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="life">Life<a href="https://kywk.github.io/news/2023/09/30/_Surfing#life" class="hash-link" aria-label="Life的直接連結" title="Life的直接連結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="life">Life<a href="https://kywk.github.io/news/2023/09/30/_Surfing/#life" class="hash-link" aria-label="Life的直接連結" title="Life的直接連結">​</a></h3>
 <ul>
 <li><a href="https://www.mobile01.com/topicdetail.php?f=202&amp;t=6846772" target="_blank" rel="noopener noreferrer">金三益健康茶飲、溪仔香腸熟肉、神農街 — 被飲料耽誤的海鮮店 與 「老臺南味」，老街美麗夜景相隨 - Mobile01</a></li>
 <li><a href="https://free.com.tw/planet-vpn/" target="_blank" rel="noopener noreferrer">Planet VPN 評測：無限流量免費 VPN 推薦，無需註冊即可使用</a></li>
@@ -508,22 +518,22 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Surf 09.01 ~ 09.15]]></title>
-        <id>https://kywk.github.io/news/2023/09/15/_Surfing</id>
-        <link href="https://kywk.github.io/news/2023/09/15/_Surfing"/>
+        <id>https://kywk.github.io/news/2023/09/15/_Surfing/</id>
+        <link href="https://kywk.github.io/news/2023/09/15/_Surfing/"/>
         <updated>2023-09-15T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Surfing quick note 09.01 ~ 09.15]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="it-news">IT News<a href="https://kywk.github.io/news/2023/09/15/_Surfing#it-news" class="hash-link" aria-label="IT News的直接連結" title="IT News的直接連結">​</a></h3>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="it-news">IT News<a href="https://kywk.github.io/news/2023/09/15/_Surfing/#it-news" class="hash-link" aria-label="IT News的直接連結" title="IT News的直接連結">​</a></h3>
 <ul>
 <li><a href="https://blog.gslin.org/archives/2023/09/01/11331/" target="_blank" rel="noopener noreferrer">Usenet 的回春？ – Gea-Suan Lin's BLOG</a></li>
 <li><a href="https://www.ithome.com.tw/news/158622" target="_blank" rel="noopener noreferrer">Node.js 20.6支援.env配置檔，加入C++垃圾回收函式庫Oilpan | iThome</a></li>
 <li></li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tech">Tech<a href="https://kywk.github.io/news/2023/09/15/_Surfing#tech" class="hash-link" aria-label="Tech的直接連結" title="Tech的直接連結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tech">Tech<a href="https://kywk.github.io/news/2023/09/15/_Surfing/#tech" class="hash-link" aria-label="Tech的直接連結" title="Tech的直接連結">​</a></h3>
 <ul>
 <li><a href="https://www.rocksaying.tw/archives/2023/linux_networkmanager_cli_and_config.html" target="_blank" rel="noopener noreferrer">Linux NetworkManager 用命令列工具或組態檔設定網路連線 - 石頭閒語</a></li>
 <li></li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="life">Life<a href="https://kywk.github.io/news/2023/09/15/_Surfing#life" class="hash-link" aria-label="Life的直接連結" title="Life的直接連結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="life">Life<a href="https://kywk.github.io/news/2023/09/15/_Surfing/#life" class="hash-link" aria-label="Life的直接連結" title="Life的直接連結">​</a></h3>
 <ul>
 <li><a href="https://www.twreporter.org/a/opinion-the-difficulties-of-preserving-historical-sites-of-injustice" target="_blank" rel="noopener noreferrer">蕭文杰／遊蕩在地方的威權幽靈──台灣不義遺址保存困境 - 報導者 The Reporter</a></li>
 <li><a href="https://free.com.tw/bright-vpn/" target="_blank" rel="noopener noreferrer">Bright VPN 全免費跨區下載最佳夥伴，解鎖全球 40+ 國家連線節點</a></li>
@@ -538,11 +548,11 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Surf 08.16 ~ 08.31]]></title>
-        <id>https://kywk.github.io/news/2023/08/31/_Surfing</id>
-        <link href="https://kywk.github.io/news/2023/08/31/_Surfing"/>
+        <id>https://kywk.github.io/news/2023/08/31/_Surfing/</id>
+        <link href="https://kywk.github.io/news/2023/08/31/_Surfing/"/>
         <updated>2023-08-31T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Surfing quick note 08.16 ~ 08.31]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="it-news">IT News<a href="https://kywk.github.io/news/2023/08/31/_Surfing#it-news" class="hash-link" aria-label="IT News的直接連結" title="IT News的直接連結">​</a></h3>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="it-news">IT News<a href="https://kywk.github.io/news/2023/08/31/_Surfing/#it-news" class="hash-link" aria-label="IT News的直接連結" title="IT News的直接連結">​</a></h3>
 <ul>
 <li><a href="https://news.ycombinator.com/item?id=37247767" target="_blank" rel="noopener noreferrer">Show HN: Open-source obsidian.md sync server | Hacker News</a>
 <ul>
@@ -551,7 +561,7 @@
 </li>
 <li></li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tech">Tech<a href="https://kywk.github.io/news/2023/08/31/_Surfing#tech" class="hash-link" aria-label="Tech的直接連結" title="Tech的直接連結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tech">Tech<a href="https://kywk.github.io/news/2023/08/31/_Surfing/#tech" class="hash-link" aria-label="Tech的直接連結" title="Tech的直接連結">​</a></h3>
 <ul>
 <li><a href="https://blog.gslin.org/archives/2023/08/22/11306/" target="_blank" rel="noopener noreferrer">HashiCorp 內 scale 的方法 – Gea-Suan Lin's BLOG</a></li>
 <li><a href="https://studyhost.blogspot.com/2023/08/rdpvm.html" target="_blank" rel="noopener noreferrer">.NET Walker: 禁止RDP(遠端桌面)用戶連上VM時複製、貼上或掛載本機硬碟</a></li>
@@ -559,7 +569,7 @@
 <li><a href="https://learnbyexample.github.io/learn_gnuawk/awk-introduction.html" target="_blank" rel="noopener noreferrer">awk introduction - CLI text processing with GNU awk</a></li>
 <li></li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="life">Life<a href="https://kywk.github.io/news/2023/08/31/_Surfing#life" class="hash-link" aria-label="Life的直接連結" title="Life的直接連結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="life">Life<a href="https://kywk.github.io/news/2023/08/31/_Surfing/#life" class="hash-link" aria-label="Life的直接連結" title="Life的直接連結">​</a></h3>
 <ul>
 <li><a href="https://www.waytogo.cc/page/87661" target="_blank" rel="noopener noreferrer">赤峰街，文青、網紅新聖地，鄰近捷運中山、雙連站 by Tony的遊記 - 旅聯網</a></li>
 <li><a href="https://www.triplife.tw/2023/08/US-National-Parks.html" target="_blank" rel="noopener noreferrer">最新美國國家公園介紹（63座國家公園旅遊資訊）</a></li>
@@ -579,16 +589,16 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Surf 08.01 ~ 08.15]]></title>
-        <id>https://kywk.github.io/news/2023/08/15/_Surfing</id>
-        <link href="https://kywk.github.io/news/2023/08/15/_Surfing"/>
+        <id>https://kywk.github.io/news/2023/08/15/_Surfing/</id>
+        <link href="https://kywk.github.io/news/2023/08/15/_Surfing/"/>
         <updated>2023-08-15T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Surfing quick note 08.01 ~ 08.15]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="it-news">IT News<a href="https://kywk.github.io/news/2023/08/15/_Surfing#it-news" class="hash-link" aria-label="IT News的直接連結" title="IT News的直接連結">​</a></h3>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="it-news">IT News<a href="https://kywk.github.io/news/2023/08/15/_Surfing/#it-news" class="hash-link" aria-label="IT News的直接連結" title="IT News的直接連結">​</a></h3>
 <ul>
 <li><a href="https://blog.gslin.org/archives/2023/08/05/11280" target="_blank" rel="noopener noreferrer">Vim 作者 Bram Moolenaar 過世 – Gea-Suan Lin's BLOG</a></li>
 <li></li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tech">Tech<a href="https://kywk.github.io/news/2023/08/15/_Surfing#tech" class="hash-link" aria-label="Tech的直接連結" title="Tech的直接連結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tech">Tech<a href="https://kywk.github.io/news/2023/08/15/_Surfing/#tech" class="hash-link" aria-label="Tech的直接連結" title="Tech的直接連結">​</a></h3>
 <ul>
 <li><a href="https://rickhw.github.io/2023/07/29/Management/Team-Consensus-and-Talent-Development/" target="_blank" rel="noopener noreferrer">凝聚團隊共識與人才養成 | Complete Think</a></li>
 <li><a href="https://rickhw.github.io/2023/08/01/Management/PERMA/" target="_blank" rel="noopener noreferrer">1 on 1 聊什麼 - PERMA | Complete Think</a></li>
@@ -596,7 +606,7 @@
 <li><a href="https://rickhw.github.io/2023/06/24/DistributedSystems/API-First_Communication-Protocol/" target="_blank" rel="noopener noreferrer">API 設計 - 摘要 API 通訊模式與協議 | Complete Think</a></li>
 <li></li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="life">Life<a href="https://kywk.github.io/news/2023/08/15/_Surfing#life" class="hash-link" aria-label="Life的直接連結" title="Life的直接連結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="life">Life<a href="https://kywk.github.io/news/2023/08/15/_Surfing/#life" class="hash-link" aria-label="Life的直接連結" title="Life的直接連結">​</a></h3>
 <ul>
 <li><a href="https://www.soft4fun.net/software/security/edge-free-vpn-network.htm" target="_blank" rel="noopener noreferrer">什麼？微軟 Edge 瀏覽器裡面居然偷藏免費VPN ！？</a></li>
 </ul>]]></content>
@@ -608,20 +618,20 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Surf 07.17 ~ 07.30]]></title>
-        <id>https://kywk.github.io/news/2023/07/30/_Surfing</id>
-        <link href="https://kywk.github.io/news/2023/07/30/_Surfing"/>
+        <id>https://kywk.github.io/news/2023/07/30/_Surfing/</id>
+        <link href="https://kywk.github.io/news/2023/07/30/_Surfing/"/>
         <updated>2023-07-30T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Surfing quick note 07.17 ~ 07.30]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="it-news">IT News<a href="https://kywk.github.io/news/2023/07/30/_Surfing#it-news" class="hash-link" aria-label="IT News的直接連結" title="IT News的直接連結">​</a></h3>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="it-news">IT News<a href="https://kywk.github.io/news/2023/07/30/_Surfing/#it-news" class="hash-link" aria-label="IT News的直接連結" title="IT News的直接連結">​</a></h3>
 <ul>
 <li><a href="https://www.techbang.com/posts/108208-the-father-of-c-and-typescript-announce-the-ai-open-source" target="_blank" rel="noopener noreferrer">C# 與 TypeScript 之父推出開放原始碼專案 TypeChat，用於大型語言模型與自然語言接口 | T客邦</a></li>
 <li><a href="https://www.makeuseof.com/choose-project-management-tool/" target="_blank" rel="noopener noreferrer">How to Choose the Right Project Management Tool</a></li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tech">Tech<a href="https://kywk.github.io/news/2023/07/30/_Surfing#tech" class="hash-link" aria-label="Tech的直接連結" title="Tech的直接連結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tech">Tech<a href="https://kywk.github.io/news/2023/07/30/_Surfing/#tech" class="hash-link" aria-label="Tech的直接連結" title="Tech的直接連結">​</a></h3>
 <ul>
 <li><a href="https://stackoverflow.com/questions/38648955/authenticate-against-wso2-identity-server-with-no-browser-and-get-saml2-assertio" target="_blank" rel="noopener noreferrer">saml 2.0 - Authenticate against WSO2 Identity Server with no browser and get SAML2 assertion message - Stack Overflow</a></li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="life">Life<a href="https://kywk.github.io/news/2023/07/30/_Surfing#life" class="hash-link" aria-label="Life的直接連結" title="Life的直接連結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="life">Life<a href="https://kywk.github.io/news/2023/07/30/_Surfing/#life" class="hash-link" aria-label="Life的直接連結" title="Life的直接連結">​</a></h3>
 <ul>
 <li><a href="https://www.makeuseof.com/free-4-week-training-plans-short-term-fitness/" target="_blank" rel="noopener noreferrer">6 Free 4-Week Training Plans for Short-Term Fitness Goals</a></li>
 <li><a href="https://www.newsmarket.com.tw/blog/189711/" target="_blank" rel="noopener noreferrer">豆漿詐騙！號稱「 國產」豆漿竟摻進口豆，業者憂衝擊台灣大豆產業，食藥署：無法可管 | 上下游News&amp;Market</a>
@@ -638,25 +648,25 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Surf 07.01 ~ 07.16]]></title>
-        <id>https://kywk.github.io/news/2023/07/16/_Surfing</id>
-        <link href="https://kywk.github.io/news/2023/07/16/_Surfing"/>
+        <id>https://kywk.github.io/news/2023/07/16/_Surfing/</id>
+        <link href="https://kywk.github.io/news/2023/07/16/_Surfing/"/>
         <updated>2023-07-16T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Surfing quick note 07.01 ~ 07.16]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="it-news">IT News<a href="https://kywk.github.io/news/2023/07/16/_Surfing#it-news" class="hash-link" aria-label="IT News的直接連結" title="IT News的直接連結">​</a></h3>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="it-news">IT News<a href="https://kywk.github.io/news/2023/07/16/_Surfing/#it-news" class="hash-link" aria-label="IT News的直接連結" title="IT News的直接連結">​</a></h3>
 <ul>
 <li><a href="https://www.ithome.com.tw/news/157691" target="_blank" rel="noopener noreferrer">【資安週報】2023年7月3日到7月7日 | iThome</a></li>
 <li><a href="https://hk.news.yahoo.com/evernote-is-relocating-to-europe-after-laying-off-most-of-its-us-workforce-040057318.html?guccounter=1" target="_blank" rel="noopener noreferrer">Evernote 裁退美國接近所有員工，專注佈局歐洲市場</a></li>
 <li><a href="https://blog.gslin.org/archives/2023/07/11/11256/suse-%e5%8f%83%e6%88%b0%ef%bc%9asuse-%e5%ae%a3%e4%bd%88%e6%8a%95%e5%85%a5-rhel-clone/" target="_blank" rel="noopener noreferrer">SUSE 參戰：SUSE 宣佈投入 RHEL clone – Gea-Suan Lin's BLOG</a></li>
 <li><a href="https://cnodejs.org/topic/64ad029356d98340339dabfc" target="_blank" rel="noopener noreferrer">NeuroDB图数据库引擎 发布，一款全自主研发的国产图数据库引擎 - CNode技术社区</a></li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tech">Tech<a href="https://kywk.github.io/news/2023/07/16/_Surfing#tech" class="hash-link" aria-label="Tech的直接連結" title="Tech的直接連結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tech">Tech<a href="https://kywk.github.io/news/2023/07/16/_Surfing/#tech" class="hash-link" aria-label="Tech的直接連結" title="Tech的直接連結">​</a></h3>
 <ul>
 <li><a href="https://www.makeuseof.com/ways-check-for-open-ports-on-linux/" target="_blank" rel="noopener noreferrer">5 Easy Ways to Check for Open Ports on Linux</a></li>
 <li><a href="https://blog.longwin.com.tw/2023/07/mysql-server-status-information-2023/" target="_blank" rel="noopener noreferrer">使用 MySQL status 查看是否還有 Query 進來 – Tsung's Blog</a></li>
 <li><a href="https://www.evanlin.com/langchain-embedding-issue/" target="_blank" rel="noopener noreferrer">[LangChain] LangChain Embedding 中可能發生的問題</a></li>
 <li><a href="https://rickhw.github.io/2023/07/11/Coding/Why-Keep-Old-Code/" target="_blank" rel="noopener noreferrer">為什麼有些人都不刪除用不到的程式碼？ | Complete Think</a></li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="life">Life<a href="https://kywk.github.io/news/2023/07/16/_Surfing#life" class="hash-link" aria-label="Life的直接連結" title="Life的直接連結">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="life">Life<a href="https://kywk.github.io/news/2023/07/16/_Surfing/#life" class="hash-link" aria-label="Life的直接連結" title="Life的直接連結">​</a></h3>
 <ul>
 <li><a href="https://blog.longwin.com.tw/2023/07/news-weather-temperature-hot-record-2023/" target="_blank" rel="noopener noreferrer">2023年7月3日、4日破人類史上最熱溫度紀錄 – Tsung's Blog</a></li>
 </ul>]]></content>
@@ -668,8 +678,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Surf 06.05 ~ 06.11]]></title>
-        <id>https://kywk.github.io/news/2023/06/11/_Surfing</id>
-        <link href="https://kywk.github.io/news/2023/06/11/_Surfing"/>
+        <id>https://kywk.github.io/news/2023/06/11/_Surfing/</id>
+        <link href="https://kywk.github.io/news/2023/06/11/_Surfing/"/>
         <updated>2023-06-11T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Surfing quick note 06.05 ~ 06.11]]></summary>
         <content type="html"><![CDATA[<ul>
@@ -694,8 +704,8 @@ Google / Apple / Here (MS) 以外的最大地圖服務</li>
     </entry>
     <entry>
         <title type="html"><![CDATA[WWDC 2023]]></title>
-        <id>https://kywk.github.io/news/2023/06/06/wwdc</id>
-        <link href="https://kywk.github.io/news/2023/06/06/wwdc"/>
+        <id>https://kywk.github.io/news/2023/06/06/wwdc/</id>
+        <link href="https://kywk.github.io/news/2023/06/06/wwdc/"/>
         <updated>2023-06-06T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[2023.06.06 WWDC 2023]]></summary>
         <content type="html"><![CDATA[<p>一如往常蘋果開發者年會, 今年除了還很遙遠, 以及個人並不太看好的 MR 裝置外, 幾乎沒亮點了.</p>
