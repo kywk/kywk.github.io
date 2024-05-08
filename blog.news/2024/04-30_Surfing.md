@@ -14,6 +14,7 @@ Surfing 04.01~ 04.30
 
 ### IT News
 
+- [更激進的考慮使用者會混淆的問題 – Gea-Suan Lin's BLOG](https://blog.gslin.org/archives/2024/04/24/11754/%e6%9b%b4%e6%bf%80%e9%80%b2%e7%9a%84%e8%80%83%e6%85%ae%e4%bd%bf%e7%94%a8%e8%80%85%e6%9c%83%e6%b7%b7%e6%b7%86%e7%9a%84%e5%95%8f%e9%a1%8c/)
 - 
 
 ### Tech
@@ -30,4 +31,7 @@ Surfing 04.01~ 04.30
 
 - [下雨天才會通的網路 – Gea-Suan Lin's BLOG](https://blog.gslin.org/archives/2024/04/04/11731/%e4%b8%8b%e9%9b%a8%e5%a4%a9%e6%89%8d%e6%9c%83%e9%80%9a%e7%9a%84%e7%b6%b2%e8%b7%af/)
 - [上班時想稍微偷閒一下嗎？試試這以假亂真的「系統更新畫面」Fake Update | 就是教不落 - 給你最豐富的 3C 資訊、教學網站](https://steachs.com/archives/65398)
+- [Simon Tatham 的遊戲庫 – Gea-Suan Lin's BLOG](https://blog.gslin.org/archives/2024/04/25/11757/simon-tatham-%e7%9a%84%e9%81%8a%e6%88%b2%e5%ba%ab/)
+- [28，去了 2 個月圖書館之後 - Code and Me](https://blog.kyomind.tw/weekly-review-28/)
+- [執行優先於整理，不要憑空設計系統：以我的防彈筆記法實踐為例](https://www.playpcesor.com/2024/04/blog-post.html)
 - 
