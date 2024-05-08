@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkblog_kywk=self.webpackChunkblog_kywk||[]).push([[4206],{82332:e=>{e.exports=JSON.parse('{"permalink":"/news/tags/surf","page":1,"postsPerPage":10,"totalPages":2,"totalCount":20,"nextPage":"/news/tags/surf/page/2","blogDescription":"Blog","blogTitle":"Blog"}')}}]);

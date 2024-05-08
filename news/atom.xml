@@ -2,11 +2,37 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kywk.github.io/news/</id>
     <title>kywk.me Blog</title>
-    <updated>2024-04-30T00:00:00.000Z</updated>
+    <updated>2024-05-31T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kywk.github.io/news/"/>
     <subtitle>kywk.me Blog</subtitle>
     <icon>https://kywk.github.io/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Surf 05.01~ 05.31]]></title>
+        <id>https://kywk.github.io/news/2024/05/31/_Surfing/</id>
+        <link href="https://kywk.github.io/news/2024/05/31/_Surfing/"/>
+        <updated>2024-05-31T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Surfing quick note 05.01~ 05.31]]></summary>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="it-news">IT News<a href="https://kywk.github.io/news/2024/05/31/_Surfing/#it-news" class="hash-link" aria-label="IT News的直接連結" title="IT News的直接連結">​</a></h3>
+<ul>
+<li></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tech">Tech<a href="https://kywk.github.io/news/2024/05/31/_Surfing/#tech" class="hash-link" aria-label="Tech的直接連結" title="Tech的直接連結">​</a></h3>
+<ul>
+<li></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="life">Life<a href="https://kywk.github.io/news/2024/05/31/_Surfing/#life" class="hash-link" aria-label="Life的直接連結" title="Life的直接連結">​</a></h3>
+<ul>
+<li><a href="https://www.techbang.com/posts/115175-in-may-the-comprehensive-tax-declaration-started-credit-card" target="_blank" rel="noopener noreferrer">5 月綜所稅申報開跑！信用卡、行動支付和超商繳稅回饋全攻略 | T客邦</a></li>
+<li></li>
+</ul>]]></content>
+        <author>
+            <name>kywk</name>
+            <uri>https://github.io/kywk</uri>
+        </author>
+        <category label="Surf" term="Surf"/>
+        <category label="2024/05" term="2024/05"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Surf 04.01~ 04.30]]></title>
         <id>https://kywk.github.io/news/2024/04/30/_Surfing/</id>
@@ -15,6 +41,7 @@
         <summary type="html"><![CDATA[Surfing quick note 04.01~ 04.30]]></summary>
         <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="it-news">IT News<a href="https://kywk.github.io/news/2024/04/30/_Surfing/#it-news" class="hash-link" aria-label="IT News的直接連結" title="IT News的直接連結">​</a></h3>
 <ul>
+<li><a href="https://blog.gslin.org/archives/2024/04/24/11754/%e6%9b%b4%e6%bf%80%e9%80%b2%e7%9a%84%e8%80%83%e6%85%ae%e4%bd%bf%e7%94%a8%e8%80%85%e6%9c%83%e6%b7%b7%e6%b7%86%e7%9a%84%e5%95%8f%e9%a1%8c/" target="_blank" rel="noopener noreferrer">更激進的考慮使用者會混淆的問題 – Gea-Suan Lin's BLOG</a></li>
 <li></li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="tech">Tech<a href="https://kywk.github.io/news/2024/04/30/_Surfing/#tech" class="hash-link" aria-label="Tech的直接連結" title="Tech的直接連結">​</a></h3>
@@ -35,6 +62,9 @@
 <ul>
 <li><a href="https://blog.gslin.org/archives/2024/04/04/11731/%e4%b8%8b%e9%9b%a8%e5%a4%a9%e6%89%8d%e6%9c%83%e9%80%9a%e7%9a%84%e7%b6%b2%e8%b7%af/" target="_blank" rel="noopener noreferrer">下雨天才會通的網路 – Gea-Suan Lin's BLOG</a></li>
 <li><a href="https://steachs.com/archives/65398" target="_blank" rel="noopener noreferrer">上班時想稍微偷閒一下嗎？試試這以假亂真的「系統更新畫面」Fake Update | 就是教不落 - 給你最豐富的 3C 資訊、教學網站</a></li>
+<li><a href="https://blog.gslin.org/archives/2024/04/25/11757/simon-tatham-%e7%9a%84%e9%81%8a%e6%88%b2%e5%ba%ab/" target="_blank" rel="noopener noreferrer">Simon Tatham 的遊戲庫 – Gea-Suan Lin's BLOG</a></li>
+<li><a href="https://blog.kyomind.tw/weekly-review-28/" target="_blank" rel="noopener noreferrer">28，去了 2 個月圖書館之後 - Code and Me</a></li>
+<li><a href="https://www.playpcesor.com/2024/04/blog-post.html" target="_blank" rel="noopener noreferrer">執行優先於整理，不要憑空設計系統：以我的防彈筆記法實踐為例</a></li>
 <li></li>
 </ul>]]></content>
         <author>
@@ -701,22 +731,5 @@ Google / Apple / Here (MS) 以外的最大地圖服務</li>
             <uri>https://github.io/kywk</uri>
         </author>
         <category label="Surf" term="Surf"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[WWDC 2023]]></title>
-        <id>https://kywk.github.io/news/2023/06/06/wwdc/</id>
-        <link href="https://kywk.github.io/news/2023/06/06/wwdc/"/>
-        <updated>2023-06-06T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[2023.06.06 WWDC 2023]]></summary>
-        <content type="html"><![CDATA[<p>一如往常蘋果開發者年會, 今年除了還很遙遠, 以及個人並不太看好的 MR 裝置外, 幾乎沒亮點了.</p>
-<p>過往 Apple 總能在軟體 / 設計 / 生態圈上讓人驚艷! 原來還能這樣玩!</p>
-<p>今年除了不斷打臉自己, 把過去鄙視他廠的功能抄過來, 把過各種嫌棄移掉的功能拿回來,
-最最重要的一件事, 大概就全產品線採用 Apple Silicon, 正式預告黑蘋果的落日吧.</p>
-<p>至於 MR 裝置, 買前生產力, 買後 JAV....</p>]]></content>
-        <author>
-            <name>kywk</name>
-            <uri>https://github.io/kywk</uri>
-        </author>
-        <category label="Apple" term="Apple"/>
     </entry>
 </feed>
