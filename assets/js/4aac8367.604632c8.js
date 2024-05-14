@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkblog_kywk=self.webpackChunkblog_kywk||[]).push([[81683],{59017:l=>{l.exports=JSON.parse('{"label":"Daily","permalink":"/life/tags/daily","allTagsPath":"/life/tags","count":1,"unlisted":false}')}}]);

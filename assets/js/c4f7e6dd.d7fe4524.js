@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkblog_kywk=self.webpackChunkblog_kywk||[]).push([[66773],{57417:e=>{e.exports=JSON.parse('{"title":"Obsidian","description":"Obsidian","slug":"/category/obsidian","permalink":"/lifehacker/category/obsidian","navigation":{"next":{"title":"Docusaurus","permalink":"/lifehacker/category/docusaurus"}}}')}}]);

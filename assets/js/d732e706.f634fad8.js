@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkblog_kywk=self.webpackChunkblog_kywk||[]).push([[19220],{51031:s=>{s.exports=JSON.parse('{"label":"Obsidian","permalink":"/news/tags/obsidian","allTagsPath":"/news/tags","count":1,"unlisted":false}')}}]);

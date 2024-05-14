@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkblog_kywk=self.webpackChunkblog_kywk||[]).push([[52489],{54303:s=>{s.exports=JSON.parse('{"label":"GitHub","permalink":"/news/tags/git-hub","allTagsPath":"/news/tags","count":2,"unlisted":false}')}}]);

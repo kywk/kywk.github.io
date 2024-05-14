@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkkywk_github_io=self.webpackChunkkywk_github_io||[]).push([[96135],{15844:e=>{e.exports=JSON.parse('{"blogBasePath":"/news","blogTitle":"Blog"}')}}]);
