@@ -7,15 +7,14 @@ tags:
 draft: true
 sidebar_position: 97
 hide_table_of_contents: true
+image: https://lh3.googleusercontent.com/pw/AL9nZEUA9Ifvd5Z8SXDWkeVB6AC4MPGwnXaL6kBXNPoXwOQQ2jOcZ1Jw_0p8TKK8C3ZX0e67_FOY15eDrm7aaXSQJcKtoUzC80SAQEHsaBy6qS2AqNNs5VUFNXBKm439y_1wkvmDl-PnL8ReojnIumNlEvOXBg=w800-no?authuser=0
 date_created: 2023-08-30
 date_updated: 2024-01-23
-image: https://lh3.googleusercontent.com/pw/AL9nZEUA9Ifvd5Z8SXDWkeVB6AC4MPGwnXaL6kBXNPoXwOQQ2jOcZ1Jw_0p8TKK8C3ZX0e67_FOY15eDrm7aaXSQJcKtoUzC80SAQEHsaBy6qS2AqNNs5VUFNXBKm439y_1wkvmDl-PnL8ReojnIumNlEvOXBg=w800-no?authuser=0
 ---
 
-[Egypt] TODO & Checklist
-===============================
+# [Egypt] TODO & Checklist
 
-## Schedule & Flight ##
+## Schedule & Flight
 
 - [x] 01.23 TPE > KUL > 02.06 SGN > 02.09 KHH 📅 2023-10-29 ✅ 2023-11-07
 - [x] 01.23 KUL > CAI > 02.03 KUL 📅 2023-10-29 ✅ 2023-11-07
@@ -49,15 +48,15 @@ image: https://lh3.googleusercontent.com/pw/AL9nZEUA9Ifvd5Z8SXDWkeVB6AC4MPGwnXaL
 ### Documentation
 
 - [x] ETA ✅ 2024-01-23
-	- [x] pdf file on mobile phone ✅ 2024-01-18
-	- [x] printed paper ✅ 2024-01-23
+  - [x] pdf file on mobile phone ✅ 2024-01-18
+  - [x] printed paper ✅ 2024-01-23
 - [x] Itinerary ✅ 2024-01-23
-	- [x] TPE > KUL > SGN > KHH ✅ 2024-01-23
-		- [x] pdf file on mobile phone ✅ 2024-01-18
-		- [x] printed paper ✅ 2024-01-23
-	- [x] KUL > CAI > KUL ✅ 2024-01-23
-		- [x] pdf file on mobile phone ✅ 2024-01-18
-		- [x] printed paper ✅ 2024-01-23
+  - [x] TPE > KUL > SGN > KHH ✅ 2024-01-23
+    - [x] pdf file on mobile phone ✅ 2024-01-18
+    - [x] printed paper ✅ 2024-01-23
+  - [x] KUL > CAI > KUL ✅ 2024-01-23
+    - [x] pdf file on mobile phone ✅ 2024-01-18
+    - [x] printed paper ✅ 2024-01-23
 - [x] Hotel booking receipt ✅ 2024-01-18
 - [x] 美金 1,000 📅 2024-01-22 ✅ 2024-01-22
 

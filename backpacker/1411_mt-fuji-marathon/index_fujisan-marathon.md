@@ -1,15 +1,15 @@
 ---
-sidebar_position: 0
-
 title: 2014 Nov 富士山馬拉松
-tags: [Backpacker, Index, Japan, Runner]
-
+tags:
+  - Backpacker
+  - Index
+  - Japan
+  - Runner
+sidebar_position: 0
 date: 2014-12-04 14:48:07
-categories: ["backpacker", "japan"]
 ---
 
-2014.11.26 - 12.04 富士山馬拉松
-=============================
+# 2014.11.26 - 12.04 富士山馬拉松
 
 ![富士山馬拉松 / Fujisan marathon (2014.11.26-12.04)](https://lh3.googleusercontent.com/-Aq6riobKe9g/VVRfmrQLttI/AAAAAAAAays/Fj7Ndi1_aK4/w1392-h950-no/%25E5%25AF%258C%25E5%25A3%25AB%25E5%25B1%25B1%25E9%25A6%25AC%25E7%25AC%25AC%25E4%25BA%258C%25E7%25AF%258712.png)
 
@@ -22,21 +22,21 @@ categories: ["backpacker", "japan"]
 接著是富士山馬和河口湖地區，倒數三天留在東京閒晃。
 最後決定前三天去日光，就定案了。
 
-### schedule / 行程記錄 ###
+### schedule / 行程記錄
 
--   11.26 [Taipei -> Tokyo -> 日光](141126_halo-nikko.md)
--   11.27 中禪寺湖、湯元溫泉
--   11.28 日光 東照宮 -> 東京 
--   11.29 東京 -> 河口湖: 富士山馬拉松報到
--   11.30 富士山馬拉松 3th Mt.Fuji marathon
--   12.01 河口湖 -> 東京 -> 橫濱 -> 東京
--   12.02 東京
--   12.03 東京
--   12.04 東京
--   12.04 Tokyo -> Taipei
+- 11.26 [[141126_halo-nikko:Taipei -> Tokyo -> 日光]]
+- 11.27 中禪寺湖、湯元溫泉
+- 11.28 日光 東照宮 -> 東京
+- 11.29 東京 -> 河口湖: 富士山馬拉松報到
+- 11.30 富士山馬拉松 3th Mt.Fuji marathon
+- 12.01 河口湖 -> 東京 -> 橫濱 -> 東京
+- 12.02 東京
+- 12.03 東京
+- 12.04 東京
+- 12.04 Tokyo -> Taipei
 
-### spot / 景點介紹 ###
+### spot / 景點介紹
 
--   [日光、河口湖、東京．住宿經驗](note_lodge.md)
+- [[note_lodge-tokyo-2014:日光、河口湖、東京．住宿經驗]]
 
-### note / 雜記小文 ###
+### note / 雜記小文

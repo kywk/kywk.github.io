@@ -1,28 +1,105 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-//const lightCodeTheme = require("prism-react-renderer/themes/github");
-//const darkCodeTheme = require("prism-react-renderer/themes/dracula");
-const { themes } = require("prism-react-renderer");
-const lightTheme = themes.github;
-const darkTheme = themes.dracula;
+import { themes } from "prism-react-renderer";
+
+const remarkWikiLink = require("remark-wiki-link");
+const path = require("path");
+
+/**
+ * Method to get the corresponding md file name for a given wikilink
+ *
+ * @param {string} wikilink The text between [[]] in an md file
+ * Returns the file name corresponding to [[wiki link]]
+ */
+function sluggifyWikilink(wikilink) {
+  /**
+   * [[Some Fancy Title]] gets converted to 'some-fancy-title'
+   * so there should be some-fancy-title.md file in docs
+   */
+  const slug = wikilink.replace(/ /g, "-").toLowerCase();
+  return slug;
+
+  // /**
+  // * [[Some Fancy Title]] gets converted to 'Some Fancy Title'
+  // * so there should be 'Some Fancy Title.md' file in docs
+  //   */
+  // return wikilink;
+}
+
+/**
+ * Wiki might be under a subdirectory and the file name might be sluggified
+ * Enable remark-wiki-link plugin to find such md files
+ *
+ * @param {string} wikilink The text between [[]] in an md file
+ * Returns list of paths to help resolve a [[wiki link]]
+ */
+function wikilinkToUrl(docsDir, wikilink) {
+  const slug = sluggifyWikilink(wikilink);
+  const walkSync = require("walk-sync");
+  let paths = walkSync(docsDir, {
+    globs: ["**/" + slug + ".md*"],
+    directories: false,
+  });
+  if (paths == null || paths.length == 0) {
+    paths = walkSync(docsDir, {
+      globs: ["**/" + wikilink + ".md*"],
+      directories: false,
+    });
+  }
+  paths = paths.map((path) => {
+    let walkPaths = path.split("/");
+    walkPaths = walkPaths.map((walkPath) =>
+      walkPath.replace(/^[0-9]+[\-|\_]+/gm, ""),
+    );
+    path = walkPaths.join("/");
+    return path.replace(".mdx", "").replace(".md", "");
+  });
+  return paths;
+}
+
+/**
+ * Returns the url to the wiki
+ *
+ * @param {string} permalink url to the md file
+ * Return the path to the wiki
+ */
+function toDocsUrl(docsDir, permalink) {
+  return `/${docsDir}/${permalink}`;
+}
+
+/**
+ * Plugin declarations
+ *
+ */
+const lunrSearch = require.resolve("docusaurus-lunr-search");
+const wikiGraph = [
+  path.resolve(__dirname, "plugins", "docusaurus-plugin-wikigraph"),
+  { slugMethod: sluggifyWikilink },
+];
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "kywk.me",
   tagline: "All around kywk",
+  favicon: "img/favicon.ico",
+
+  // Set the production url of your site here
   url: "https://kywk.github.io",
+  // Set the /<baseUrl>/ pathname under which your site is served
+  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
+  trailingSlash: true,
+
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
-  favicon: "img/favicon.ico",
+  markdown: { format: "md" },
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: "kywk", // Usually your GitHub org/user name.
   projectName: "kywk.github.io", // Usually your repo name.
   deploymentBranch: "gh-pages",
-  trailingSlash: true,
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -39,13 +116,13 @@ const config = {
       ({
         /*
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           // editUrl:
           //  'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
-        */
+         */
         /*
         blog: {
           showReadingTime: true,
@@ -63,12 +140,26 @@ const config = {
   ],
 
   plugins: [
+    lunrSearch,
     [
       "@docusaurus/plugin-content-docs",
       {
         id: "backpacker",
         path: "backpacker",
         routeBasePath: "backpacker",
+        remarkPlugins: [
+          [
+            remarkWikiLink,
+            {
+              pageResolver: (pageName) => {
+                return wikilinkToUrl("backpacker", pageName);
+              },
+              hrefTemplate: (permalink) => {
+                return toDocsUrl("backpacker", permalink);
+              },
+            },
+          ],
+        ],
         sidebarPath: require.resolve("./sidebars.js"),
       },
     ],
@@ -78,6 +169,19 @@ const config = {
         id: "lifehacker",
         path: "lifehacker",
         routeBasePath: "lifehacker",
+        remarkPlugins: [
+          [
+            remarkWikiLink,
+            {
+              pageResolver: (pageName) => {
+                return wikilinkToUrl("lifehacker", pageName);
+              },
+              hrefTemplate: (permalink) => {
+                return toDocsUrl("lifehacker", permalink);
+              },
+            },
+          ],
+        ],
         sidebarPath: require.resolve("./sidebars.js"),
       },
     ],
@@ -87,6 +191,19 @@ const config = {
         id: "moco",
         path: "moco",
         routeBasePath: "moco",
+        remarkPlugins: [
+          [
+            remarkWikiLink,
+            {
+              pageResolver: (pageName) => {
+                return wikilinkToUrl("moco", pageName);
+              },
+              hrefTemplate: (permalink) => {
+                return toDocsUrl("moco", permalink);
+              },
+            },
+          ],
+        ],
         sidebarPath: require.resolve("./sidebars.js"),
       },
     ],
@@ -121,7 +238,7 @@ const config = {
         },
         items: [
           {
-            to: "/backpacker/way-2-kywk",
+            to: "/backpacker/Lonely Planet",
             label: "lonely planet",
             position: "left",
             activeBaseRegex: `/backpacker/`,
@@ -190,13 +307,13 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} kywk. Built with Docusaurus.`,
       },
       prism: {
-        theme: lightTheme,
-        darkTheme: darkTheme,
+        theme: themes.github,
+        darkTheme: themes.dracula,
       },
     }),
 };
 
-module.exports = config;
+export default config;

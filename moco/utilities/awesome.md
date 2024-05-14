@@ -1,8 +1,11 @@
 ---
 sidebar_position: 0
 title: Awesome Utilities
-tags: [Utility, Awesome]
+tags:
+  - Utility
+  - Awesome
 ---
 
-Awesome Utilities Resources
-===========================
+# Awesome Utilities Resources
+
+[[Awesome Selfhosted]]

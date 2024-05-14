@@ -1,16 +1,15 @@
 ---
-hide_table_of_contents: true
-sidebar_position: 10
-
 title: 11.26 日光 你好
-tags: ["Backpacker", "Japan", "Tokyo"]
-
+tags:
+  - Backpacker
+  - Japan
+  - Tokyo
+sidebar_position: 10
+hide_table_of_contents: true
 date: 2014-12-23 20:54:28
-categories: ["backpacker", "japan"]
 ---
 
-14.11.26 日光，你好！
-===================
+# 14.11.26 日光，你好！
 
 得知為了富士山馬前往日本旅行時，賊董和 Kido 也在日本。  
 對過彼此時間後，他們倆決定更改名古屋後半段行程，相約東京碰頭。  
@@ -70,7 +69,7 @@ _（帶了兩瓶回台灣，一瓶送人、一瓶跨年夜開…）_
 
 ![](https://farm9.staticflickr.com/8636/15465947264_fff87d9de4_c.jpg)
 
-回到旅館，床鋪已經撲好了，陸續下樓洗澡泡湯。  
+回到旅館，床鋪已經撲好了，陸續下樓洗澡泡湯。
 
 深夜，坐在窗邊一同喝酒，各自上網、看書。  
 日本行第一天，什麼也沒做，慢慢地，很享受～

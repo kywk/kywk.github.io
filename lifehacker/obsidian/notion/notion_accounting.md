@@ -86,13 +86,13 @@ image: https://lh3.googleusercontent.com/pw/AL9nZEUA9Ifvd5Z8SXDWkeVB6AC4MPGwnXaL
 ### Notion document design
 
 - [x] Database schema & relationship 📅 2024-04-18 ✅ 2024-04-18
-- [ ] 開支 summary dashboard 📅 2024-05-14
-- [ ] 帳戶 summary dashboard 📅 2024-05-17
-- [ ] 年 / 月報表 📅 2024-05-19
+- [ ] 開支 summary dashboard 📅 2024-05-21
+- [ ] 帳戶 summary dashboard 📅 2024-05-24
+- [ ] 年 / 月報表 📅 2024-05-26
 
 ### Notion accounting 文章
 
-- [ ] Keep it simple 📅 2024-05-12
+- [ ] Keep it simple 📅 2024-05-19
 - [ ]  分離帳戶 / 預算控制
 - [ ] Dashboard
 

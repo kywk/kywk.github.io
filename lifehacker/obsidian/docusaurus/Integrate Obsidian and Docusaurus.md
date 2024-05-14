@@ -7,25 +7,24 @@ tags:
   - Docusaurus
   - PKM
 sidebar_position: 10
-date_created: 2022-11-01T00:00:00+08:00
-date_updated: 2023-09-12T00:00:00+08:00
 image: https://i.imgur.com/mErPwqL.png
+date_created: 2022-11-01T00:00:00+08:00
+date_updated:
+  - 2023-09-12
+  - 2024-05-15
 ---
 
-[Docusaurus] Obsidian Integration
-=================================
+# [Docusaurus] Obsidian Integration
 
 把 Obsidian 和 Docusaurus 整合, 以 Obsidian 當編輯器編寫文章及建立文章知識庫,
 同時利用 Docusaurus 作為客製化發佈工具,
 
-
-Source tree
------------
+## Source tree
 
 Docusaurus 設定彈性很大,
 唯一限制是專案必須有 `docs` 資料夾, 且裡面至少要有一個 ".md" 的檔案. 否則會報錯如下:
 
-``` shell
+```shell
 ❯ rm -rf docs
 ❯ yarn start
 yarn run v1.22.19
@@ -49,61 +48,70 @@ info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this comm
 ```
 
 個人專案檔案結構如下, 看得出同時包含 Docusaurus 專案結構以及其他 Obsidian 文章.
-本站所有文章都放在 `blogging` 資料夾下.
 
-```
-❯ tree -d -L 2
+````
+❯ tree -a -d -L 2
 .
 ├── .docusaurus
+│   ├── ...
+│   └── docusaurus-plugin-wikigraph
 ├── .git
 ├── .github
+│   └── workflows
 ├── .obsidian
-├── assets
-├── blogging
+│   ├── plugins
+│   └── themes
+├── _incoming
 │   ├── archive
-│   ├── backpacker
-│   ├── life
-│   ├── lifehacker
-│   ├── moco
-│   └── news
-├── com.XXXXXX
+│   └── sandbox
+├── _journaling
+│   ├── 2023
+│   └── 2024
+├── _templates
+│   └── scripts
+├── assets
+├── backpacker
 │   ├── ...
-│   └── Team
-├── com.XXXXXX
+│   ├── 2401 Egypt
+│   ├── Around World
+│   └── PIWIW
+├── blog.life
 │   ├── ...
-│   └── NSFW
+│   └── 2024
+├── blog.news
+│   ├── ...
+│   └── 2024
+├── com.XXXX
+│   ├── xxx
+│   └── zip_archive
 ├── docs
 ├── important
+├── lifehacker
 │   ├── ...
-│   └── personal
-├── node_modules
-├── project
+│   └── taiwan
+├── moco
 │   ├── ...
-│   └── sandbox
+│   └── utilities
 ├── src
 │   ├── components
 │   ├── css
 │   └── pages
-├── static
-│   └── img
-├── trip.patagonia
-└── ...
+└── static
+    └── img
 ```
 
-
-Docusaurus
-----------
+## Docusaurus
 
 如前述, Docusaurus 設定彈性很大, 只要指定到正確路徑即可.
 
-``` json
+```json
   plugins: [
     ...
     [
       '@docusaurus/plugin-content-docs',
       {
         id: 'moco',
-        path: 'blogging/moco',
+        path: 'moco',
         routeBasePath: 'moco',
         sidebarPath: require.resolve('./sidebars.js'),
       },
@@ -113,17 +121,15 @@ Docusaurus
       {
         id: 'news',
         routeBasePath: 'news',
-        path: 'blogging/news',
+        path: 'blog.news',
         showReadingTime: true,
       },
     ],
     ...
   ],
-```
+````
 
-
-.gitignore
-----------
+## .gitignore
 
 常見 Docusaurus 發佈到 GitHub 有兩種方式:
 
@@ -138,7 +144,7 @@ Docusaurus
 
 依實際需求把 Obsidian 專案設定和重要個人資料和工作資料加入 `.gitignore` 即可.
 
-``` .gitignore
+```.gitignore
 # Obsidian folder
 .obsidian/
 assets/
@@ -151,14 +157,12 @@ project/
 temporary.md
 ```
 
-
-Obsidian exclude
-----------------
+## Obsidian exclude
 
 上述配置, 是讓 Docusaurus 工作時不受 Obsididan 影響.
 相對的, Obsidian 也需要設定來避免 Docusaurus 檔案的影響.
 
-Obsidian 0.14.6+ 以後支援 __Excluded files__.
+Obsidian 0.14.6+ 以後支援 **Excluded files**.
 符合 pattern 的檔案將不會被納入 Obsidian 資料庫內.
 
 `Setting > Files & Links > Excluded files` 把 Docusaurus 相關檔案加入即可.
@@ -167,11 +171,9 @@ Obsidian 0.14.6+ 以後支援 __Excluded files__.
 
 Ref: [ignore/hide select files and folders](https://forum.obsidian.md/t/config-to-ignore-hide-select-files-and-folders/4186),
 
+## Trick & Tips
 
-Trick & Tips
-------------
-
-### docusaurus draft ###
+### docusaurus draft
 
 隨著 Obsidian 的使用, 在 docusaurus 相關目錄下可能會建立讓 Obsidian 管理的檔案,
 例如把 Obsidian 當 Task Mamanger 的話, 會建立 `Kanban.md`,`TODO.md` 之類的檔案.
@@ -179,14 +181,12 @@ Trick & Tips
 這些檔案內容若不想跟著 docusaurus 一起發佈出去. 最簡單的方式就是在 front matter 的部分加上 `draft: true`.
 讓 docusaurus 把這類檔案視為草稿, 發佈時會自動忽略.
 
-
-See Also
---------
+## See Also
 
 第一階段的整合算是完成, 後續隨著深入使用 Obsidian,
 預計會再折騰一番, 以打造量身製作的知識平台.
 
-### Next Step ###
+### Next Step
 
+- [x] support obsidian wikilink [[Wikilink in Docusaurus]] ✅ 2024-05-15
 - [ ] ignore Obsidian tags
-- [ ] handle backlink in docusaurus

@@ -1,18 +1,16 @@
 ---
 hide_table_of_contents: true
 sidebar_position: 10
-
 title: 05.18 午間野餐
-tags: [Backpacker, France, France]
-
+tags:
+  - Backpacker
+  - France
 date: 2014-01-05 18:10:36
 ---
 
-Lunch picnic at Avignon 午間野餐
-===============================
+# Lunch picnic at Avignon 午間野餐
 
 ![avignon 亞維農 by kywk, on Flickr](http://farm9.staticflickr.com/8116/8632505799_6756187718_c.jpg)
-
 
 近午時，路過教皇堡來到北側一座公園，這公園是亞維農城中較大的一座公園，地勢高，可以遠眺隆河和亞維農斷橋。  
 相較烈日下廣場的炙熱，公園綠地上、樹蔭下可真是涼爽；相對於廣場上的門可羅雀，公園裡可說門庭若市。  

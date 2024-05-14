@@ -1,19 +1,18 @@
 ---
-sidebar_position: 0
 title: 2024 Jan 法 老 埃及
 tags:
   - Backpacker
   - Index
   - Egypt
+sidebar_position: 0
+image: https://lh3.googleusercontent.com/pw/AL9nZEUA9Ifvd5Z8SXDWkeVB6AC4MPGwnXaL6kBXNPoXwOQQ2jOcZ1Jw_0p8TKK8C3ZX0e67_FOY15eDrm7aaXSQJcKtoUzC80SAQEHsaBy6qS2AqNNs5VUFNXBKm439y_1wkvmDl-PnL8ReojnIumNlEvOXBg=w800-no?authuser=0
 date_created: 2023-08-20
 date_updated: 2023-08-20
-image: https://lh3.googleusercontent.com/pw/AL9nZEUA9Ifvd5Z8SXDWkeVB6AC4MPGwnXaL6kBXNPoXwOQQ2jOcZ1Jw_0p8TKK8C3ZX0e67_FOY15eDrm7aaXSQJcKtoUzC80SAQEHsaBy6qS2AqNNs5VUFNXBKm439y_1wkvmDl-PnL8ReojnIumNlEvOXBg=w800-no?authuser=0
 ---
 
-2024.01.23 ~ 02.03 法 老 埃及
-===========================
+# 2024.01.23 ~ 02.03 法 老 埃及
 
-### schedule / 行程記錄 ###
+### schedule / 行程記錄
 
 - 01.23 TPE > KRI > KUL
 - 01.24 KUL > CAI
@@ -26,7 +25,6 @@ image: https://lh3.googleusercontent.com/pw/AL9nZEUA9Ifvd5Z8SXDWkeVB6AC4MPGwnXaL
 - 01.30 錫瓦 > 馬特魯 > 開羅
 - 02.03 CAI > KUL
 - 02.06 KUL > TPE
-
 
 ```leaflet
 id: egypt-2401
@@ -56,8 +54,7 @@ darkMode: true
 markerFolder: backpacker/2401_egypt/kuala_lumpur
 ```
 
-### note / 雜記小文 ###
-
+### note / 雜記小文
 
 <!-- Lonely Planet
 00 Index
