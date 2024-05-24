@@ -1,26 +1,23 @@
 ---
 title: "Hackintosh: 掛載 EFI 磁區"
 description: Mount EFI
+image: https://lh3.googleusercontent.com/pw/ACtC-3fnLstA2rsbmbt0hI7IWqhfzOU17UzGFO6pEIfoC2_x_l526rOlZ3_p4RbWvVFWlT6uMlnPMzjCSxDILtn7Er5Ch0JPYJReE0BhmCXqJh6TsqrygLrL17dcz1Dyq3eJ7MZhHDqQhvWbX3zJvneD1CRanA=w800-no?authuser=0
 tags:
   - Mac
   - Hackintosh
-sidebar_position: 90
 hide_table_of_contents: true
-date_created: 2021-05-14T14:56:41+08:00
-image: https://lh3.googleusercontent.com/pw/ACtC-3fnLstA2rsbmbt0hI7IWqhfzOU17UzGFO6pEIfoC2_x_l526rOlZ3_p4RbWvVFWlT6uMlnPMzjCSxDILtn7Er5Ch0JPYJReE0BhmCXqJh6TsqrygLrL17dcz1Dyq3eJ7MZhHDqQhvWbX3zJvneD1CRanA=w800-no?authuser=0
+sidebar_position: 90
+created: 2021-05-14
 ---
 
-[Mac] 掛載 EFI 磁區方式
-=====================
+# [Mac] 掛載 EFI 磁區方式
 
-
-EFI 系統磁區
------------
+## EFI 系統磁區
 
 EFI系統磁碟分割區是什麼?
 
 > EFI 系統分割區是一個 FAT 或 FAT32 格式的磁碟分割區. UEFI 韌體可從 ESP 加載 EFI 啟動程式或者 EFI 應用程式.
-> 
+>
 > [維基百科](https://zh.wikipedia.org/zh-tw/統一可延伸韌體介面)
 
 EFI 分割區有什麼? 它包含了 4 個主要部分：啟動程式, 裝置驅動程式, 系統工具套件, 資料檔.
@@ -31,17 +28,15 @@ EFI 分割區有什麼? 它包含了 4 個主要部分：啟動程式, 裝置驅
 
 但畢竟 EFI 磁區就是個標準的 FAT/FAT32 磁區, macOS 內建的 `diskutil` 就可以掛載 EFI 磁區了.
 
+## diskutil
 
-diskutil
---------
-
-diskutil 是 macOS 內建的 CLI 工具之一. 
-macOS 上跟磁碟操作相關軟體, 雖有著不同 UI 設計與操作流程外, 
+diskutil 是 macOS 內建的 CLI 工具之一.
+macOS 上跟磁碟操作相關軟體, 雖有著不同 UI 設計與操作流程外,
 底層大多是呼叫 diskutil 來完成磁碟控制動作.
 
-__找出 EFI 磁區__
+**找出 EFI 磁區**
 
-``` shell
+```shell
 $ diskutil list
 ```
 
@@ -53,9 +48,9 @@ $ diskutil list
 標準 `GUID_partition_scheme` 分割的磁碟, 會包含一個 EFI 磁區和其他磁區.
 記住 EFI 磁區最後面的識別代碼.
 
-__掛載 EFI 磁區__
+**掛載 EFI 磁區**
 
-``` shell
+```shell
 $ sudo diskutil mount <EFI_IDENTIFIER>
 ```
 
@@ -66,8 +61,6 @@ EFI 磁區為 FAT/FAT32 檔案系統, 是 macOS 預設支援的格式, 所以會
 
 掛載完後就可以用任何工具去處理 EFI 的設定配置檔了.
 
+## See Also
 
-See Also
---------
-
--   [MacOS 磁碟管理工具 diskutil 介紹](https://www.itread01.com/content/1546611722.html)
+- [MacOS 磁碟管理工具 diskutil 介紹](https://www.itread01.com/content/1546611722.html)

@@ -1,16 +1,16 @@
 ---
 title: "ChromeOS: Dropbox"
 description: "Use Dropbox in ChromeOS"
-tags: [ChromeOS, Dropbox]
-
+tags: 
+    - ChromeOS
+    - Dropbox
 #sidebar_position: 1
 #sidebar_label: Easy
 #sidebar_class_name: green
-
 #hide_table_of_contents: true
-
-date: 2022-10-17T00:00:00+08:00
 image: https://i.imgur.com/mErPwqL.png
+created: 2022-10-17T00:00:00+08:00
+updated: 2022-10-17T00:00:00+08:00
 ---
 
 [ChromeOS] Dropbox HowTos

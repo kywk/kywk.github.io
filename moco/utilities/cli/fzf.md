@@ -1,29 +1,16 @@
 ---
-title: Way 2 kywk
-description: Way 2 kywk
+title: fzf
+description: fzf
 image: https://lh3.googleusercontent.com/pw/AL9nZEUA9Ifvd5Z8SXDWkeVB6AC4MPGwnXaL6kBXNPoXwOQQ2jOcZ1Jw_0p8TKK8C3ZX0e67_FOY15eDrm7aaXSQJcKtoUzC80SAQEHsaBy6qS2AqNNs5VUFNXBKm439y_1wkvmDl-PnL8ReojnIumNlEvOXBg=w800-no?authuser=0
 tags:
-  - Awesome
-  - kywk
+  - CLI
 #sidebar_position: 1
 #sidebar_label: README
 hide_table_of_contents: true
-created: 2023-01-02
-updated: 2023-01-02
+created: 2024-05-24
+updated: 2024-05-24
 ---
 
-<!--
-00 LifeHack
-    02 Obsidian
-    04 Notion
-10 Taiwan
-40 Outdoor
-    42 Mountaineer
-    44 Runner
-50 Photography
-70 LifeStyle
-    72 Reading
-    74 Movie
-80 Equipment
+# fzf
 
--->
+[fzf](https://github.com/junegunn/fzf) is a general-purpose command-line fuzzy finder.

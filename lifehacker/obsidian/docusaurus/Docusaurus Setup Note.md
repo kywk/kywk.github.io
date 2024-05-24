@@ -1,17 +1,22 @@
 ---
 title: 設定筆記
 description: Docusaurus 設定筆記
+image: https://lh3.googleusercontent.com/pw/AL9nZEUA9Ifvd5Z8SXDWkeVB6AC4MPGwnXaL6kBXNPoXwOQQ2jOcZ1Jw_0p8TKK8C3ZX0e67_FOY15eDrm7aaXSQJcKtoUzC80SAQEHsaBy6qS2AqNNs5VUFNXBKm439y_1wkvmDl-PnL8ReojnIumNlEvOXBg=w800-no?authuser=0
 tags:
-  - docusaurus
-image: https://i.imgur.com/mErPwqL.png
-date_created: 2022-05-24
-date_updated:
-  - 2023-09-15
+  - Docusaurus
+  - kywk
+sidebar_position: 10
+#sidebar_label: README
+#hide_table_of_contents: true
+created: 2022-05-24
+updated: 2024-05-24
+history:
+  - 2024-05-24 Rremark Plugin Usage
 ---
 
 # [Docusaurus] 設定筆記
 
-[搬家到 Docusaurus 後](/moco/blog/2022/05/20/move-to-docusaurus/),
+[搬家到 Docusaurus 後](/life/2022/05/20/move-to-docusaurus/),
 覺得 Docusaurus 更適合我對於文章整理呈現的想像, 撥空把 [kywk.life](https://kywk.github.io) 也轉換倒 docusaurus,
 隨之有了一些進階需求.
 
@@ -28,6 +33,10 @@ date_updated:
 > Ref: [Docs Multi-instance | Docusaurus](https://docusaurus.io/docs/docs-multi-instance)
 
 ### install plugin
+
+```bash
+yarn add @docusaurus/plugin-content-docs
+```
 
 ### configure
 
@@ -109,6 +118,15 @@ module.exports = {
   ],
 };
 ```
+
+## Plugins
+
+Docusaurus v3 可以使用 MDX plugin 來擴充 Markdown 的格式支援與處理,使用既有
+[remark](https://github.com/remarkjs/remark/blob/main/doc/plugins.md#list-of-plugins) /
+[rehype](https://github.com/rehypejs/rehype/blob/main/doc/plugins.md#list-of-plugins)
+生態圈的 plugin 可以找到多數使用者共同需求的功能來擴展 Docusaurus 文件的產出.
+
+目前所使用的 [[Docusaurus Plugins:Plugins 另行整理於此]].
 
 ## Tip & Trick
 

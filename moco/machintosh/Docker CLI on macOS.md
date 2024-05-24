@@ -1,15 +1,17 @@
 ---
-title: CLI on macOS
+title: Docker CLI on macOS
 description: docker CLI on macOS
+image: https://lh3.googleusercontent.com/pw/AL9nZEUA9Ifvd5Z8SXDWkeVB6AC4MPGwnXaL6kBXNPoXwOQQ2jOcZ1Jw_0p8TKK8C3ZX0e67_FOY15eDrm7aaXSQJcKtoUzC80SAQEHsaBy6qS2AqNNs5VUFNXBKm439y_1wkvmDl-PnL8ReojnIumNlEvOXBg=w800-no?authuser=0
 tags:
   - Docker
-hide_table_of_contents: true
-date_created: 2024-04-18
-date_updated: 2023-04-18
-image: https://lh3.googleusercontent.com/pw/AL9nZEUA9Ifvd5Z8SXDWkeVB6AC4MPGwnXaL6kBXNPoXwOQQ2jOcZ1Jw_0p8TKK8C3ZX0e67_FOY15eDrm7aaXSQJcKtoUzC80SAQEHsaBy6qS2AqNNs5VUFNXBKm439y_1wkvmDl-PnL8ReojnIumNlEvOXBg=w800-no?authuser=0
+  - Mac
+sidebar_label: Docker CLI
+#hide_table_of_contents: true
+created: 2024-04-18
+updated: 2024-05-24
 ---
 
-# [Docker] Use docker cli w/o Docker Desktop on macOS
+# [Docker] Use docker CLI w/o Docker Desktop on macOS
 
 Docker inc 宣布 Docker Desktop 商業使用不再免費, 原本都是個人開發使用, 影響有限, 但後來公司開發需要, 得面對這個問題.
 
@@ -80,6 +82,17 @@ colima start
 ```bash
 brew services start colima
 ```
+
+## Docker CLI plugin
+
+### Buildx
+
+[buildx](https://github.com/docker/buildx) is a Docker CLI plugin for extended build capabilities with [BuildKit](https://github.com/moby/buildkit).
+
+1. [Manual download](https://github.com/docker/buildx?tab=readme-ov-file#manual-download) buildx binary from [release](https://github.com/docker/buildx/releases/)
+2. Rename the relevant binary to `docker-buildx`
+3. Copy it to the destination `$HOME/.docker/cli-plugins`
+4. Enjoy it
 
 ## See Also
 

@@ -4,7 +4,7 @@ title: Day by day
 tags:
   - Backpacker
   - Egypt
-sidebar_position: 0
+sidebar_position: 10
 ---
 
 ## MEMO

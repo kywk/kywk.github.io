@@ -1,16 +1,15 @@
 ---
 title: "Note: Upgrade to v3"
 description: Upgrade to docusaurus v3
-tags:
-  - HowTo
-  - Docusaurus
-  - Note
-date_created: 2024-01-10T00:00:00+08:00
 image: https://i.imgur.com/mErPwqL.png
+tags:
+  - Docusaurus
+  - HowTo
+  - Note
+created: 2024-01-10
 ---
 
-[Docusaurus] Upgrade to v3
-==========================
+# [Docusaurus] Upgrade to v3
 
 > 使用 docusaurus 好些時間, 一開始遇到 docusaurus 更新時, 都還會小心確認後再行更新.
 > 更新多次沒遇到問題, 近來遇到 docusaurus 提示更新時, 往往無腦跟著提示更新.
@@ -19,17 +18,13 @@ image: https://i.imgur.com/mErPwqL.png
 
 把 Docusaurus 升級到 v3, 具體功能有哪些尚未了解, 可參考 [Release Note].
 
-
-Package Upgrade
----------------
+## Package Upgrade
 
 直接打 `npm install @docusaurus:latest ...` 會有些相依套件沒有跟著更新, 造成生成失敗.
 需要參考官網 [Upgrading to Docusaurus v3 | Docusaurus](https://docusaurus.io/docs/migration/v3) - [Upgrading Dependencies](https://docusaurus.io/docs/migration/v3)
 的說明, 手動修改 `package.json` 中的設定升級相依套件, 方能正確執行.
 
-
-Bad use of \< \{
-----------------
+## Bad use of \< \{
 
 ```example.md
 The object shape looks like {username: string, age: number}
@@ -46,9 +41,7 @@ Docusaurus v3 使用 MDX v3 引擎, 對於 Markdown 文件中可能會造成 MDX
 
 官網的 [Common MDX Problem](https://docusaurus.io/blog/preparing-your-site-for-docusaurus-v3#common-mdx-problems) 有發生原因和處理方式.
 
-
-Summary
--------
+## Summary
 
 v2 到 v3 升級遇到的問題, 幾乎官網文件都有提及, 耐心跟著文件修正可順利升級.
 至於 v3 究竟升級了哪些, 還待研究就是.

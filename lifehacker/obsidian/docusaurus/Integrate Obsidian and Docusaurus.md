@@ -1,17 +1,15 @@
 ---
-title: "HowTo: Obsidian integration"
+title: Obsidian integration
 description: Integrate Obsidian & Docusaurus
+image: https://i.imgur.com/mErPwqL.png
 tags:
   - Obsidian
   - HowTo
   - Docusaurus
-  - PKM
 sidebar_position: 10
-image: https://i.imgur.com/mErPwqL.png
-date_created: 2022-11-01T00:00:00+08:00
-date_updated:
-  - 2023-09-12
-  - 2024-05-15
+sidebar_label: Obsidian integration
+created: 2022-11-01
+updated: 2024-05-15
 ---
 
 # [Docusaurus] Obsidian Integration
@@ -176,7 +174,7 @@ Ref: [ignore/hide select files and folders](https://forum.obsidian.md/t/config-t
 ### docusaurus draft
 
 隨著 Obsidian 的使用, 在 docusaurus 相關目錄下可能會建立讓 Obsidian 管理的檔案,
-例如把 Obsidian 當 Task Mamanger 的話, 會建立 `Kanban.md`,`TODO.md` 之類的檔案.
+例如把 Obsidian 當 Task Manager 的話, 會建立 `Kanban.md`,`TODO.md` 之類的檔案.
 
 這些檔案內容若不想跟著 docusaurus 一起發佈出去. 最簡單的方式就是在 front matter 的部分加上 `draft: true`.
 讓 docusaurus 把這類檔案視為草稿, 發佈時會自動忽略.
@@ -189,4 +187,5 @@ Ref: [ignore/hide select files and folders](https://forum.obsidian.md/t/config-t
 ### Next Step
 
 - [x] support obsidian wikilink [[Wikilink in Docusaurus]] ✅ 2024-05-15
+- [ ] docusaurus-plugin-leaflet
 - [ ] ignore Obsidian tags

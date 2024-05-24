@@ -4,6 +4,7 @@
 import { themes } from "prism-react-renderer";
 
 const remarkWikiLink = require("remark-wiki-link");
+const remarkOembed = require("remark-oembed");
 const path = require("path");
 
 /**
@@ -148,6 +149,7 @@ const config = {
         path: "backpacker",
         routeBasePath: "backpacker",
         remarkPlugins: [
+          remarkOembed,
           [
             remarkWikiLink,
             {
@@ -170,6 +172,7 @@ const config = {
         path: "lifehacker",
         routeBasePath: "lifehacker",
         remarkPlugins: [
+          remarkOembed,
           [
             remarkWikiLink,
             {
@@ -192,6 +195,7 @@ const config = {
         path: "moco",
         routeBasePath: "moco",
         remarkPlugins: [
+          remarkOembed,
           [
             remarkWikiLink,
             {
