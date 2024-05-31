@@ -13,13 +13,11 @@ date: 2022-11-05T12:01:39+08:00
 image: "https://lh3.googleusercontent.com/pw/AM-JKLU2Ot2TyON1chUA-Qw7qj-OQSRMYNin7jsJsUa3E_jwqq1JbwTZZckUtJmNZmqxY5M4egm-ryt4g3Ope_0EqHBrCDSEHmcy-goHRzWh-ZgguUoy1XKpyS1DNx8aV92vAkAM0zZOW6EZR4KS3W1DClQKhw=w800-no?authuser=0"
 ---
 
-API Client and Postman alternative
-==================================
+# API Client and Postman alternative
 
-API Client Compare
-------------------
+## API Client Compare
 
-| Name       |            OS            |             Web             |           Desktop           |               CLI               |             API Support              | Collaboration | ...                          |
+| Name       |        OpenSource        |             Web             |           Desktop           |               CLI               |             API Support              | Collaboration | ...                          |
 | :--------- | :----------------------: | :-------------------------: | :-------------------------: | :-----------------------------: | :----------------------------------: | :------------ | :--------------------------- |
 | Postman    |            -             |  [go.postman][postmanweb]   | [download][postmandesktop]  |      [newman][postmancli]       | REST, GraphQL, WebSocket, gRPC, SOAP | Free for 3    | -                            |
 | Hoppscotch | [MIT][hoppscotchlicense] | [Hoppscotch][hoppscotchweb] |             PWA             | [Hoppscotch CLI][hoppscotchcli] |    REST, GraphQL, WebSocket, MQTT    | unlimited     | -                            |
@@ -28,10 +26,7 @@ API Client Compare
 | HTTPie     |  [BSD3][httpielicense]   |    [req.new][httpieweb]     |  [Electron][httpiedesktop]  |       [httpie][httpiecli]       |                  -                   | -             | -                            |
 | bruno      |    [MIT][brunolicnse]    |  [play.usebruno][brunoweb]  |  [Electron][brunodesktop]   |                -                |                  -                   | -             | -                            |
 
-
-
-[Postman](https://www.postman.com)
-----------------------------------
+## [Postman](https://www.postman.com)
 
 - [Introduction | Postman Learning Center](https://learning.postman.com/docs/getting-started/introduction/)
 
@@ -39,10 +34,7 @@ API Client Compare
 [postmandesktop]: https://www.postman.com/downloads/
 [postmancli]: https://github.com/postmanlabs/newman
 
-
-
-Hoppscotch
-----------
+## Hoppscotch
 
 - [Hoppscotch - Hoppscotch Documentation](https://docs.hoppscotch.io/)
 
@@ -50,10 +42,7 @@ Hoppscotch
 [hoppscotchweb]: https://hoppscotch.io
 [hoppscotchcli]: https://docs.hoppscotch.io/cli
 
-
-
-[Insomnia](https://insomnia.rest/)
-----------------------------------
+## [Insomnia](https://insomnia.rest/)
 
 - [Insomnia Docs](https://docs.insomnia.rest/)
 
@@ -62,10 +51,7 @@ Hoppscotch
 [insomniacli]: https://insomnia.rest/products/inso
 [insomniaplugin]: https://insomnia.rest/plugins
 
-
-
-[RapidAPI](https://paw.app/signup)
-----------------------------------
+## [RapidAPI](https://paw.app/signup)
 
 - [RapidAPI Learn](https://rapidapi.com/learn)
 - [Free Public APIs for Developers & Free Alternatives List | RapidAPI](https://rapidapi.com/collection/list-of-free-apis)
@@ -74,10 +60,7 @@ Hoppscotch
 [rapidapiweb]: https://paw.app/
 [rapidvscode]: https://rapidapi.com/guides/a-deep-dive-into-rapidapi-client-for-vs-code
 
-
-
-[HTTPie](https://httpie.io/)
-----------------------------
+## [HTTPie](https://httpie.io/)
 
 - [HTTPie (latest) docs](https://httpie.io/docs/cli)
 
@@ -86,19 +69,13 @@ Hoppscotch
 [httpiedesktop]: https://httpie.io/product
 [httpiecli]: https://httpie.io/cli
 
-
-
-[bruno](https://www.usebruno.com/)
-----------------------------------
+## [bruno](https://www.usebruno.com/)
 
 [brunolicnse]: https://github.com/usebruno/bruno
 [brunoweb]: https://play.usebruno.com/
 [brunodesktop]: https://www.usebruno.com/downloads
 
-
-
-See Also
---------
+## See Also
 
 - [15 Best Postman Alternatives for Automated API Testing [2022 Updated]](https://testsigma.com/blog/postman-alternatives/)
 - [11 Postman alternatives you should know about](https://testfully.io/blog/top-5-postman-alternatives/)

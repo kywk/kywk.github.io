@@ -1,19 +1,18 @@
 ---
-title: "Core: Daily notes"
+title: "Daily notes"
 description: My daily notes
+image: https://i.imgur.com/mErPwqL.png
 tags:
   - Obsidian
   - Plugin
   - PKM
 sidebar_position: 20
 hide_table_of_contents: true
-date_created: 2023-01-02
-date_updated: 2023-01-02
-image: https://i.imgur.com/mErPwqL.png
+created: 2023-01-02
+updated: 2023-01-02
 ---
 
-[Obs] Daily Notes
-=================
+# [Obs] Daily Notes
 
 Daily notes 是 Obsidian 原生 plugins 之一.
 回規 Obsidian 這類筆記軟體的思維核心:
@@ -23,33 +22,27 @@ Daily notes 是 Obsidian 原生 plugins 之一.
 
 這種思維下, Daily notes 油然而生並不足為奇.
 
-### Date Format ###
+### Date Format
 
-喜歡 [My Obsidian Daily Note Template | Dann Berg: blog, newsletter, shop, and more](https://dannb.org/blog/2022/obsidian-daily-note-template/) 
-中分年月資料夾的樹狀結構,  `YYYY/MM-MMM/YYYY-MM-DD-dddd`
+喜歡 [My Obsidian Daily Note Template | Dann Berg: blog, newsletter, shop, and more](https://dannb.org/blog/2022/obsidian-daily-note-template/)
+中分年月資料夾的樹狀結構, `YYYY/MM-MMM/YYYY-MM-DD-dddd`
 
-
-Template
----------
+## Template
 
 src: [DAILY_NOTE_TEMPLATE.md](https://raw.githubusercontent.com/kywk/kywk.github.io/_templates/DAILY_NOTE_TEMPLATE.md)
 
 隨著 Obsidian community plugins 越蓬勃發展, Daily Notes 扮演角色也越建多元.
 
-### IDEA Pool ###
+### IDEA Pool
 
+### Task & Reminds
 
-### Task & Reminds ###
+### Todo & Routing
 
-
-### Todo & Routing ###
-
-
-### Today Review ###
+### Today Review
 
 - Notes created & modified today,
 - Task finished successfully
-
 
 ## See Also
 

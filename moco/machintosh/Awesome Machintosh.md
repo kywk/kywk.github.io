@@ -1,18 +1,15 @@
 ---
 sidebar_position: 0
 title: Awesome Machintosh
-tags: [Mac, Awesome]
+tags:
+  - Awesome
+  - Mac
 ---
 
-Awesome Machintosh Resources
-============================
+# Awesome Machintosh Resources
 
-Machintosh
-----------
+## Machintosh
 
-
-Hackintosh
-----------
+## Hackintosh
 
 - [Hackintosh Instructions, Hackintosh How To Guides: Hackintosh.com](https://hackintosh.com/)
-

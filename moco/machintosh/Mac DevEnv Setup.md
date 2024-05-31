@@ -105,13 +105,6 @@ nvm use default
 brew install go
 ```
 
-### Dart
-
-```shell
-brew tap dart-lang/dart
-brew install dart
-```
-
 ## IDE & GUI Tools
 
 ### VSCode
@@ -142,13 +135,15 @@ Fork - a fast and friendly git client for Mac
 brew install fork
 ```
 
-**Postman**
+**[Bruno](https://www.usebruno.com/)**
 
 The Collaboration Platform for API Development.
 
 ```shell
-brew install postman
+brew install bruno
 ```
+
+_See Also: [[Postman Alternative]]_
 
 **[Sequel Pro](http://www.sequelpro.com/)**
 
