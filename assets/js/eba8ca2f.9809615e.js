@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkkywk_github_io=self.webpackChunkkywk_github_io||[]).push([[14062],{16043:a=>{a.exports=JSON.parse('{"tag":{"label":"OData","permalink":"/moco/tags/o-data","allTagsPath":"/moco/tags","count":1,"items":[{"id":"techstack/odata","title":"OData Protocol","description":"Open Data Protoco","permalink":"/moco/techstack/odata"}],"unlisted":false}}')}}]);
