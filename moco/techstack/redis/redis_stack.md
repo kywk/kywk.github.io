@@ -3,6 +3,6 @@
 
 ## TODO ##
 
-- [ ] Redis Stack study & survey 📅 2024-06-30
+- [ ] Redis Stack study & survey 📅 2024-09-31
 	- [ ] env
 	- [ ] client lib

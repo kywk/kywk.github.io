@@ -5,11 +5,13 @@ image: https://lh3.googleusercontent.com/pw/AL9nZEUA9Ifvd5Z8SXDWkeVB6AC4MPGwnXaL
 tags:
   - Utilities
   - Zed
-#sidebar_position: 1
-#sidebar_label: README
 hide_table_of_contents: true
-created: 2024-06-01
-updated: 2024-08-13
+date_created: 2024-08-25
+date_updated: 2024-08-25
 ---
 
 # [Zed] 使用與設定筆記
+
+## Setting
+
+## TODOs
