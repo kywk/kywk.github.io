@@ -24,6 +24,7 @@
     "cytoscape-layout-utilities": "^1.1.1",
     "docusaurus-lunr-search": "^3.4.0",
     "fuzzy-search": "^3.2.1",
+    "moment": "^2.30.1",
     "prism-react-renderer": "^2.3.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
