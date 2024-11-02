@@ -57,6 +57,7 @@ yarn-error.log*
 .obsidian/
 assets/
 
+archived/
 _incoming/
 _journaling/
 _templates/

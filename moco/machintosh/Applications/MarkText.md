@@ -1,5 +1,5 @@
 ---
-title: "App: MarkText"
+title: "MarkText"
 description: MarkText
 tags:
   - Mac
@@ -10,7 +10,7 @@ date_created: 2024-04-24
 image: https://lh3.googleusercontent.com/pw/ACtC-3cYYtkzJjo_oG7Gzqq8T8XQm4V_qLE3wGWVKOahp6YT4lo-on60NJmjrkkatnizX1b-uID-MCM2ztsXH9z27cMRtql3PA5cpYZYbMfSPuM5Yh3MmqnjnnXYkTg6vtIiBL5SGAQRRAI9zEBIOoyP3tZpuA?authuser=0
 ---
 
-# [Mac] MarkText
+# [MacApps] MarkText
 
 想找一個 Open Source, 可商業使用 的 WYSIWYG Markdown 編輯器在公司電腦, 找了一圈後覺得 [MarkText](https://github.com/marktext/marktext) 最符合自己需求.
 

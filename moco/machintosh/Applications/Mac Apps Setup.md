@@ -7,8 +7,8 @@ tags:
   - DevEnv
   - kywk
 sidebar_position: 1
-created: 2022-08-13
-updated: 2024-05-24
+date_created: 2022-08-13
+date_updated: 2024-05-24
 ---
 
 # [Mac] 系統與 Apps 安裝紀錄 2024.May

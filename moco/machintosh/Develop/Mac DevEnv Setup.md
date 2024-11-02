@@ -6,9 +6,9 @@ tags:
   - Mac
   - DevEnv
   - kywk
-sidebar_position: 2
-created: 2022-08-13
-updated: 2024-05-24
+sidebar_position: 1
+date_created: 2022-08-13
+date_updated: 2024-05-24
 ---
 
 # [Mac] 開發環境建構 2024.May

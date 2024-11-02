@@ -1,16 +1,15 @@
 ---
-title: "Hackintosh: Catalina on MBA 2011"
+title: "Catalina on MBA 2011"
 description: Catalina on MBA 2011
 tags:
   - Mac
   - Hackintosh
-sidebar_position: 90
+#sidebar_position: 90
 date_created: 2021-05-16T11:45:54+08:00
 image: https://lh3.googleusercontent.com/pw/ACtC-3fVXuzPrSrtx2R10grZCwGi5meFEzFOuBSgtw8JrnWZ4N9G2MOCHLb41djGH8w9KeBv3wazMhPvopYCxvlLDcYrhAhB8JwJC4RYb4WkZo2EWUEXVjMquzbs7S5wYhLbasNhNq1nXFXKqZ6pqD4_qNv-8w=w800-no?authuser=0
 ---
 
-[Mac] Macbook Air 2011 安裝 Mojava/Catalina
-===========================================
+# [Hackintosh] Macbook Air 2011 安裝 Mojava/Catalina
 
 因故拿出閒置已久的 MacBook Air 2011 使用，
 升級 brew 套件時發覺不再支援 High Sierra，
@@ -28,27 +27,23 @@ MacBook Air 爹不疼娘不愛地成了孤兒。
 
 _越獄安裝 macOS Mojava/Catalina 在非官方支援的硬體設備中，仍存有不穩定的風險，後果自負。_
 
-
-準備工作
--------
+## 準備工作
 
 確認主機型號，並非所有舊電腦都可以透過 Patcher 安裝 Mojava/Catalina，
 官方有列出支援的主機，請自行參考官網說明。
 
 ![](https://lh3.googleusercontent.com/pw/ACtC-3dL0riUaXnORmvDJUBkVLQYxPWmZByDQMB1PuFagMM5giIdPMBO6k8pyY1j2g9k6tpSTe9UR_LOk5YlNtg5MEWodsATK5e4ruaxO-TSwzjgoi8fppqRW77WQdSRHfHc-KIs2uOU8m8mjZhzYp-jDd8eBg=w593-h538-no?authuser=0)
 
-Macbook Air 2011 系統型號為 `MacBookAir4.2` 
+Macbook Air 2011 系統型號為 `MacBookAir4.2`
 在官方支援的機型中，可以進行後續準備動作。
 
--   16G 以上隨身碟
--   [macOS Mojava Patcher](http://dosdude1.com/mojave/)
--   [macOS Mojava Installer](https://apps.apple.com/us/app/macos-mojave/id1398502828?mt=12)  
-    建議預先下載官方 macOS 系統安裝程序，亦可透過 Mojava Patcher 下載。  
-    ![](https://lh3.googleusercontent.com/pw/ACtC-3d_P68vX1FQrc3cOVDFTsZXnykQ_iChRuqJ5IqrUarM4K9RGkGO2455iA67EsHJDgYQC83jwGLpmHA_hAV1z_vywntth5N26A421ZeliQa-9eOzpkt3xOlCgnC28kxn66ZH_9llUpc5LU1NDH-yilQt2g=w800-no?authuser=0)
+- 16G 以上隨身碟
+- [macOS Mojava Patcher](http://dosdude1.com/mojave/)
+- [macOS Mojava Installer](https://apps.apple.com/us/app/macos-mojave/id1398502828?mt=12)  
+  建議預先下載官方 macOS 系統安裝程序，亦可透過 Mojava Patcher 下載。  
+  ![](https://lh3.googleusercontent.com/pw/ACtC-3d_P68vX1FQrc3cOVDFTsZXnykQ_iChRuqJ5IqrUarM4K9RGkGO2455iA67EsHJDgYQC83jwGLpmHA_hAV1z_vywntth5N26A421ZeliQa-9eOzpkt3xOlCgnC28kxn66ZH_9llUpc5LU1NDH-yilQt2g=w800-no?authuser=0)
 
-
-製作安裝碟
---------
+## 製作安裝碟
 
 將隨身碟格式化成GUID的擴充格式（日誌式）
 
@@ -58,7 +53,7 @@ Macbook Air 2011 系統型號為 `MacBookAir4.2`
 
 ![](https://lh3.googleusercontent.com/pw/ACtC-3f3oCmV_zRbzb6znhnjPs8Cf5bwM--3KtDKIA9d4l3__tF9m8Y1aUgI9fnkCfvcfcdoSrAmoPdnwIx-7n6JZyoFp0M78Ee0qlmSb5VaOamM9wjEu1bQVYdWEwxwE1rnRohgSL5oT2AwblIxKD8LlrKafg=w800-no?authuser=0)
 
-分別選擇已下載的 Installer、剛剛格式化的隨身碟後按 __Start Operation...__
+分別選擇已下載的 Installer、剛剛格式化的隨身碟後按 **Start Operation...**
 
 ![](https://lh3.googleusercontent.com/pw/ACtC-3dpj2jDzuaPZTYRnBxksbvbfkhcZai1k7gUZaTssI0NOKDqtojW5yqsngQUEyZ5mowvUId7JmNaNKXvf9G3mjbd_inGYQutjXEDuP6Fxji4AVvKGTrjzqXKgJYpPIwsT6Ao17qmvd4wpU7gRoV1fqSdMQ=w800-no?authuser=0)
 
@@ -68,9 +63,7 @@ Macbook Air 2011 系統型號為 `MacBookAir4.2`
 
 ![](https://lh3.googleusercontent.com/pw/ACtC-3dsnASd-CKeHD1Bq-UFWoetPaVGOLVivHOzqPsD4-GseR60nl8ewhcWbvy-DcPoqQyFFYu21jwUpVErZL3HrCGTXDA37w_akjF9fuBrP3pPfyS3pQq1h3IOQjK0IQpXBl9LijItDsXYeSCW3DMsoj6Wsg=w800-no?authuser=0)
 
-
-安裝系統
--------
+## 安裝系統
 
 USB 開機碟製作完成後，在 Macbook Air 2011 上使用隨身碟開機與安裝系統，
 安裝選單介面略有不同，但安裝流程和一般安裝 macOS 並無不同。
@@ -84,9 +77,7 @@ USB 開機碟製作完成後，在 Macbook Air 2011 上使用隨身碟開機與�
 不過不要忘了這台電腦是不被原廠允許安裝這個作業系統的，
 所以需要再次透過 USB 隨身碟開機，安裝修正檔。
 
-
-安裝修正檔
---------
+## 安裝修正檔
 
 第一次開機的時候按下 `Option` 不放，再次選擇USB安裝磁碟。
 這次回來安裝畫面之後，選擇下方的這個 `macOS Post Install`。
@@ -114,18 +105,14 @@ USB 開機碟製作完成後，在 Macbook Air 2011 上使用隨身碟開機與�
 不過在進行系統更新前，最好先去 Mojava Patcher 官網確認支援情況後再更新。
 也就是非必要的話，無須第一時間更新系統。
 
-
-後記
-----
+## 後記
 
 因手上其他筆電皆為 macOS BigSur，介面操作和權限管理上和 Catalina 較為相近，
 所以又把 MacBook Air 重新安裝 Catalina。
 
 安裝流程大致雷同，就不另筆記了。
 
-
-See Also
---------
+## See Also
 
 上述流程和參考資料幾乎一樣，有部分內容也是直接引用參考資料。
 所以發文，一來自己紀錄過會比較有記憶點，
@@ -136,9 +123,9 @@ See Also
 最後再次提醒：  
 _越獄安裝 macOS Mojava/Catalina 在非官方支援的硬體設備中，仍存有不穩定的風險，後果自負。_
 
--   [[OS X] 《吉米教你用》JB的方式讓你的老Mac可以跑macOS Mojave 10.14 - iPhone4.TW](https://iphone4.tw/forums/showthread.php?t=221017)
-    -   [[OS X] 《吉米教你用》JB的方式讓你的老Mac可以跑macOS Catalina 10.15 - iPhone4.TW](https://iphone4.tw/forums/showthread.php?t=221260)
-    -   [非支援機種 macOS 10.15 Catalina USB 安裝工具與重灌 | 民樂電腦](https://7--8.com/how-to-create-a-macos-catalina-10-15-unsupported-usb-installer/)
-    -   [在官方不支援macOS Catalina的裝置安裝macOS Catalina - 酷小易](https://blog.steveyi.net/macos-catalina-on-unsupport-mac/)
-    -   [macOS Catalina Patcher(如何在旧mac上安装Catalina系统) - 知乎](https://blog.steveyi.net/macos-catalina-on-unsupport-mac/)
--   [如何取得舊版 macOS 作業系統 - 我和我的黑蘋果](https://www.imacpc.net/archives/3864)
+- [[OS X] 《吉米教你用》JB的方式讓你的老Mac可以跑macOS Mojave 10.14 - iPhone4.TW](https://iphone4.tw/forums/showthread.php?t=221017)
+  - [[OS X] 《吉米教你用》JB的方式讓你的老Mac可以跑macOS Catalina 10.15 - iPhone4.TW](https://iphone4.tw/forums/showthread.php?t=221260)
+  - [非支援機種 macOS 10.15 Catalina USB 安裝工具與重灌 | 民樂電腦](https://7--8.com/how-to-create-a-macos-catalina-10-15-unsupported-usb-installer/)
+  - [在官方不支援macOS Catalina的裝置安裝macOS Catalina - 酷小易](https://blog.steveyi.net/macos-catalina-on-unsupport-mac/)
+  - [macOS Catalina Patcher(如何在旧mac上安装Catalina系统) - 知乎](https://blog.steveyi.net/macos-catalina-on-unsupport-mac/)
+- [如何取得舊版 macOS 作業系統 - 我和我的黑蘋果](https://www.imacpc.net/archives/3864)
