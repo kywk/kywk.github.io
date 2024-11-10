@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkkywk_github_io=self.webpackChunkkywk_github_io||[]).push([[84329],{77629:e=>{e.exports=JSON.parse('{"tag":{"label":"Awesome","permalink":"/lifehacker/tags/awesome","allTagsPath":"/lifehacker/tags","count":1,"items":[{"id":"way-2-kywk","title":"Way 2 kywk","description":"Way 2 kywk","permalink":"/lifehacker/way-2-kywk"}],"unlisted":false}}')}}]);

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkkywk_github_io=self.webpackChunkkywk_github_io||[]).push([[25091],{77412:e=>{e.exports=JSON.parse('{"metadata":{"permalink":"/life","page":1,"postsPerPage":10,"totalPages":3,"totalCount":24,"nextPage":"/life/page/2","blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
