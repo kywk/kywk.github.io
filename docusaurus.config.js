@@ -102,6 +102,18 @@ const config = {
   projectName: "kywk.github.io", // Usually your repo name.
   deploymentBranch: "gh-pages",
 
+  // https://docusaurus.io/blog/releases/3.6
+  future: {
+    experimental_faster: {
+      swcJsLoader: true,
+      swcJsMinimizer: true,
+      swcHtmlMinimizer: true,
+      lightningCssMinimizer: true,
+      rspackBundler: true,
+      mdxCrossCompilerCache: true,
+    },
+  },
+  
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
