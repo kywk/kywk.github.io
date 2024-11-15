@@ -13,4 +13,6 @@
 - [別所沼公園 - 東京民宿 探險家Explorer](https://www.facebook.com/TOKYO201605EXPLORER/posts/pfbid0xv8CECkwyqYV5vGGfcyCbNcv737fUHoXNew3P52tv4GnUtwYhgCuPNor6hJwfkp1l)
 	- 從 新宿 坐電車大約 35分鐘即可到達寧靜平和的綠洲：別所沼公園！秋天，一大片如鏡的沼澤映照著橘紅色水杉的倒影，悠閒欣賞如詩如畫的美景！
 	  (免費、水杉林蔭大道、夜間點燈)
-- 
+- [嚕嚕米兒童森林公園 - 東京民宿 探險家Explorer | Facebook](https://www.facebook.com/TOKYO201605EXPLORER/posts/pfbid082bP68pXnzF5MGxVqTbb48BMi8okhshJX76xeyGiKvP4fBJESGLEAyhSDP9cQi7ql)
+	- 從 池袋 坐電車再加上徒步 大約總共70分鐘即可到達以北歐童話世界為主題的公園：嚕嚕米兒童森林公園！夢幻的建築與橘紅的水杉交織出的美景，彷彿進入了童話繪本之中！
+	  (免費、蘑菇之家、水中小屋、水杉林蔭大道)

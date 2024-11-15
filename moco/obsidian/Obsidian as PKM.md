@@ -20,8 +20,8 @@ tags:
 	- [ ] DataView for my Media DB
 	- [ ] reopen Netflix
 - [ ] obs-core_properties 🔽 📅 2024-11-30
-- [ ] obs_task-management 🔽 📅 2024-11-11
-- [ ] obs-core_daily-notes 🔽 📅 2024-11-07
+- [ ] obs_task-management 🔽 📅 2024-11-25
+- [ ] obs-core_daily-notes 🔽 📅 2024-11-21
 - [x] Reorganize Obsidian ✅ 2024-01-04
 
 ## Next Step

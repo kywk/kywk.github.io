@@ -30,12 +30,15 @@ Surfing 11.01 ~ 11.15
 - [SQLite之父炮轟程式設計師熟悉的換行字元「CR LF」已經過時，應當被廢除 | T客邦](https://www.techbang.com/posts/118939-sqlitecr-lf)
   > 面對眾多混亂的討論，Hipp最終撤回了自己的提議，他承認，儘管自己的想法在理論上幾乎沒錯，但現實中的軟體依賴情況比他預想的要複雜得多。
 	- 理想很豐滿... 
+- [iThome 鐵人賽寫作攻略——新手必看指南 - Code and Me](https://blog.kyomind.tw/ithome-ironman-tips/)
+	- 每年許願, 但每年都沒做到的鐵人賽.
 - 
 
 ### Tech
 
 - [Writing secure Go code | Jakub Jarosz](https://jarosz.dev/article/writing-secure-go-code/)
 	- [Writing secure Go code | Hacker News](https://news.ycombinator.com/item?id=42043939)
+- [getenv() + putenv() + setenv() 的 thread-safe 問題 – Gea-Suan Lin's BLOG](https://blog.gslin.org/archives/2024/11/13/12063/getenv-putenv-setenv-%e7%9a%84-thread-safe-%e5%95%8f%e9%a1%8c/)
 - 
 
 ### Life
@@ -43,4 +46,6 @@ Surfing 11.01 ~ 11.15
 - [100分森林浴感 | 人潮稀少路線 | 新竹五峰 | 民都有山-面托油山 - Mobile01](https://www.mobile01.com/topicdetail.php?f=628&t=7037342)
 - [國泰世華、台新等推「權益自選」信用卡的策略 - 2024 - Tsung's Blog](https://blog.longwin.com.tw/2024/11/news-bank-credit-card-strategy-2024/)
 - [An IKEA Hack That Works Wonders For The Often Ignored Behind-The-Door Space](https://ikeahackers.net/2024/11/behind-the-door-storage-shelf.html)
+- [去了兩個月健身房之後——我的「有氧運動」進化史 - Code and Me](https://blog.kyomind.tw/cardio-evolution-2-months/)
+- [到世界最高的湖泊露營☺尼泊爾Tilicho Lake健行 (1) - Mobile01](https://www.mobile01.com/topicdetail.php?f=628&t=7043055)
 - 
