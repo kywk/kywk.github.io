@@ -1,12 +1,15 @@
 ---
 hide_table_of_contents: true
-
-title: "衛屋茶室 / 衛屋 Sputnik-Lab"
-tags: ["Tainan", "Essays", "Ancient"]
-
-date: 2012-03-30T01:53:58+08:00
-image: "http://farm8.staticflickr.com/7177/6895743046_1705223d0a_c.jpg"
-categories: ["lifestyle", "tainan"]
+title: 衛屋茶室 / 衛屋 Sputnik-Lab
+tags:
+  - Tainan
+  - Essays
+  - Ancient
+date_created: 2012-03-30T01:53:58+08:00
+image: http://farm8.staticflickr.com/7177/6895743046_1705223d0a_c.jpg
+categories:
+  - lifestyle
+  - tainan
 ---
 
 「哇～～～」看著介紹，勇輕聲但驚訝地讚嘆「台灣竟然有這樣個地方～～～」

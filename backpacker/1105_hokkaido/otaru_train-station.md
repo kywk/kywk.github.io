@@ -6,8 +6,8 @@ tags:
   - Backpacker
   - Japan
   - Hokkaido/Otaru
-date: 2011-05-09 22:53:44
-date_updated: 2014-01-05 22:53:44
+date_created: 2011-05-09 22:53:44
+date_update: 2014-01-05 22:53:44
 ---
 
 [小樽] 小樽駅

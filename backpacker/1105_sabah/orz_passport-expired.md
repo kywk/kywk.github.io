@@ -1,11 +1,11 @@
 ---
 hide_table_of_contents: true
 sidebar_position: 78
-
 title: 說好的於心不忍呢
-tags: [Backpacker, Life/Orz]
-
-date: 2013-08-26 08:18:47
+tags:
+  - Backpacker
+  - Life/Orz
+date_created: 2013-08-26 08:18:47
 ---
 
 護照過期！說好的於心不忍呢～

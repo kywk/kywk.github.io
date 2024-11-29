@@ -1,5 +1,5 @@
 ---
-title: "Daily notes"
+title: Daily notes
 description: My daily notes
 image: https://i.imgur.com/mErPwqL.png
 tags:
@@ -8,8 +8,8 @@ tags:
   - PKM
 sidebar_position: 20
 hide_table_of_contents: true
-created: 2023-01-02
-updated: 2023-01-02
+date_created: 2023-01-02
+date_update: 2023-01-02
 ---
 
 # [Obs] Daily Notes

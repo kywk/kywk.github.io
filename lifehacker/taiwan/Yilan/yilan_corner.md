@@ -1,12 +1,17 @@
 ---
 hide_table_of_contents: true
-
-title: "角烙日式庭園咖啡"
-tags: ["Yilan", "Essays", "Cafe", "Cuisine", "Ancient"]
-
-date: 2012-11-17T07:19:42+08:00
-image: "http://farm9.staticflickr.com/8058/8204844493_7300e5a73c_c.jpg"
-categories: ["lifestyle", "yilan"]
+title: 角烙日式庭園咖啡
+tags:
+  - Yilan
+  - Essays
+  - Cafe
+  - Cuisine
+  - Ancient
+date_created: 2012-11-17T07:19:42+08:00
+image: http://farm9.staticflickr.com/8058/8204844493_7300e5a73c_c.jpg
+categories:
+  - lifestyle
+  - yilan
 ---
 
 李的朋友多、邀約不少，這週末則隻身來到角烙。

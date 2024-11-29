@@ -1,11 +1,14 @@
 ---
 sidebar_position: 55
-
 title: 2014 冬 住宿經驗
-tags: [Backpacker, Japan, Backpacker/Lodge]
-
-date: 2014-12-17 15:48:07
-categories: ["backpacker", "japan"]
+tags:
+  - Backpacker
+  - Japan
+  - Backpacker/Lodge
+date_created: 2014-12-17 15:48:07
+categories:
+  - backpacker
+  - japan
 ---
 
 2014 冬 日光、河口湖、東京．住宿經驗

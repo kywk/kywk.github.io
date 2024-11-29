@@ -1,12 +1,15 @@
 ---
 hide_table_of_contents: true
-
-title: "Ash manna coffee"
-tags: ["Taichung", "Essays", "Cafe"]
-
-date: 2012-10-10T09:29:14+08:00
-image: "https://lh3.googleusercontent.com/pw/ACtC-3dKOzZgiFHnBorw1oYXbQ94A0TbeHQHl0WJQzfXCsxV0IZp9TnoNl7LYX8uSK9PueofGQITqQ8pCsxeaba1sFJcZdHQEGS_-4hdc5JL_RG_yiS8STHhrpOJnbsQ2u_VYemuXtLnxoQI96F_TYBYZgkYdQ=w800-h450-no?authuser=0"
-categories: ["lifestyle", "taichung"]
+title: Ash manna coffee
+tags:
+  - Taichung
+  - Essays
+  - Cafe
+date_created: 2012-10-10T09:29:14+08:00
+image: https://lh3.googleusercontent.com/pw/ACtC-3dKOzZgiFHnBorw1oYXbQ94A0TbeHQHl0WJQzfXCsxV0IZp9TnoNl7LYX8uSK9PueofGQITqQ8pCsxeaba1sFJcZdHQEGS_-4hdc5JL_RG_yiS8STHhrpOJnbsQ2u_VYemuXtLnxoQI96F_TYBYZgkYdQ=w800-h450-no?authuser=0
+categories:
+  - lifestyle
+  - taichung
 ---
 
 找個位子、點杯咖啡、拍張照片！

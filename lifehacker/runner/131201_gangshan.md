@@ -1,10 +1,10 @@
 ---
 hide_table_of_contents: true
-
 title: 13.12.01 阿公店漁鄉風情
-tags: [Runner, Kaohsiung]
-
-date: 2013-12-01 06:30:00
+tags:
+  - Runner
+  - Kaohsiung
+date_created: 2013-12-01 06:30:00
 ---
 
 2013.12.01 阿公店漁鄉風情馬拉松

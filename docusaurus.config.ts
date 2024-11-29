@@ -1,11 +1,10 @@
-// @ts-check
-// Note: type annotations allow type checking and IDEs autocompletion
+import { themes as prismThemes } from 'prism-react-renderer';
+import type { Config } from '@docusaurus/types';
+import type * as Preset from '@docusaurus/preset-classic';
 
-import { themes } from "prism-react-renderer";
-
+const path = require("path");
 const remarkWikiLink = require("remark-wiki-link");
 const remarkOembed = require("remark-oembed");
-const path = require("path");
 
 /**
  * Method to get the corresponding md file name for a given wikilink
@@ -69,32 +68,19 @@ function toDocsUrl(docsDir, permalink) {
   return `/${docsDir}/${permalink}`;
 }
 
-/**
- * Plugin declarations
- *
- */
-const lunrSearch = require.resolve("docusaurus-lunr-search");
-const wikiGraph = [
-  path.resolve(__dirname, "plugins", "docusaurus-plugin-wikigraph"),
-  { slugMethod: sluggifyWikilink },
-];
+// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
-/** @type {import('@docusaurus/types').Config} */
-const config = {
-  title: "kywk.me",
-  tagline: "All around kywk",
-  favicon: "img/favicon.ico",
+const config: Config = {
+  title: 'kywk.me',
+  tagline: 'All around kywk',
+  favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: "https://kywk.github.io",
+  url: 'https://kywk.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: "/",
+  baseUrl: '/',
   trailingSlash: true,
-
-  onBrokenLinks: "warn",
-  onBrokenMarkdownLinks: "warn",
-  markdown: { format: "md" },
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -102,7 +88,22 @@ const config = {
   projectName: "kywk.github.io", // Usually your repo name.
   deploymentBranch: "gh-pages",
 
-  // https://docusaurus.io/blog/releases/3.6
+  onBrokenLinks: 'warn',
+  onBrokenMarkdownLinks: 'warn',
+
+  markdown: {
+    format: "detect",
+    mermaid: true,
+  },
+
+  // Even if you don't use internationalization, you can use this field to set
+  // useful metadata like html lang. For example, if your site is Chinese, you
+  // may want to replace "en" with "zh-Hans".
+  i18n: {
+    defaultLocale: 'zh-TW',
+    locales: ['zh-TW'],
+  },
+
   future: {
     experimental_faster: {
       swcJsLoader: true,
@@ -113,47 +114,19 @@ const config = {
       mdxCrossCompilerCache: true,
     },
   },
-  
-  // Even if you don't use internalization, you can use this field to set useful
-  // metadata like html lang. For example, if your site is Chinese, you may want
-  // to replace "en" with "zh-Hans".
-  i18n: {
-    defaultLocale: "zh-tw",
-    locales: ["zh-tw"],
-  },
 
   presets: [
     [
-      "classic",
-      /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
-        /*
-        docs: {
-          sidebarPath: require.resolve("./sidebars.js"),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          // editUrl:
-          //  'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
-         */
-        /*
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          // editUrl:
-          //  'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
-        */
+      'classic',
+      {
         theme: {
-          customCss: require.resolve("./src/css/custom.css"),
+          customCss: './src/css/custom.css',
         },
-      }),
+      } satisfies Preset.Options,
     ],
   ],
 
   plugins: [
-    lunrSearch,
     [
       "@docusaurus/plugin-content-docs",
       {
@@ -243,93 +216,97 @@ const config = {
     ],
   ],
 
-  themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
-      navbar: {
-        title: "kywk.me",
-        logo: {
-          alt: "My Site Logo",
-          src: "img/logo.svg",
+  themes: [
+    "@docusaurus/theme-mermaid"
+  ],
+
+  themeConfig: {
+    // Replace with your project's social card
+    image: 'img/docusaurus-social-card.jpg',
+    navbar: {
+      title: 'kywk.me',
+      logo: {
+        alt: 'My Site Logo',
+        src: 'img/logo.svg',
+      },
+      items: [
+        {
+          to: "/backpacker/Lonely Planet",
+          label: "lonely planet",
+          position: "left",
+          activeBaseRegex: `/backpacker/`,
         },
-        items: [
-          {
-            to: "/backpacker/Lonely Planet",
-            label: "lonely planet",
-            position: "left",
-            activeBaseRegex: `/backpacker/`,
-          },
-          {
-            to: "/lifehacker/way-2-kywk",
-            label: "lifehacker",
-            position: "left",
-            activeBaseRegex: `/lifehacker/`,
-          },
-          {
-            to: "/moco/kywk.moco",
-            label: "moco",
-            position: "left",
-            activeBaseRegex: `/moco/`,
-          },
-          { to: "/news", label: "news", position: "left" },
-          { to: "/life", label: "life", position: "left" },
-          {
-            href: "https://github.com/kywk/",
-            label: "GitHub",
-            position: "right",
-          },
-        ],
-      },
-      footer: {
-        style: "dark",
-        links: [
-          {
-            title: "Docs",
-            items: [
-              {
-                label: "Journal",
-                to: "/lifehacker/way-2-kywk",
-              },
-            ],
-          },
-          {
-            title: "Community",
-            items: [
-              {
-                label: "Stack Overflow",
-                href: "https://stackoverflow.com/questions/tagged/docusaurus",
-              },
-              {
-                label: "Discord",
-                href: "https://discordapp.com/invite/docusaurus",
-              },
-              {
-                label: "Twitter",
-                href: "https://twitter.com/docusaurus",
-              },
-            ],
-          },
-          {
-            title: "More",
-            items: [
-              {
-                label: "Blog",
-                to: "/life",
-              },
-              {
-                label: "GitHub",
-                href: "https://github.com/facebook/docusaurus",
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} kywk. Built with Docusaurus.`,
-      },
-      prism: {
-        theme: themes.github,
-        darkTheme: themes.dracula,
-      },
-    }),
+        {
+          to: "/lifehacker/way-2-kywk",
+          label: "lifehacker",
+          position: "left",
+          activeBaseRegex: `/lifehacker/`,
+        },
+        {
+          to: "/moco/kywk.moco",
+          label: "moco",
+          position: "left",
+          activeBaseRegex: `/moco/`,
+        },
+        { to: "/news", label: "news", position: "left" },
+        { to: "/life", label: "life", position: "left" },
+        {
+          href: "https://github.com/kywk/",
+          label: "GitHub",
+          position: "right",
+        },
+      ],
+    },
+    footer: {
+      style: "dark",
+      links: [
+        {
+          title: "Docs",
+          items: [
+            {
+              label: "Journal",
+              to: "/lifehacker/way-2-kywk",
+            },
+          ],
+        },
+        {
+          title: "Community",
+          items: [
+            {
+              label: "Stack Overflow",
+              href: "https://stackoverflow.com/questions/tagged/docusaurus",
+            },
+            {
+              label: "Discord",
+              href: "https://discordapp.com/invite/docusaurus",
+            },
+            {
+              label: "Twitter",
+              href: "https://twitter.com/docusaurus",
+            },
+          ],
+        },
+        {
+          title: "More",
+          items: [
+            {
+              label: "Blog",
+              to: "/life",
+            },
+            {
+              label: "GitHub",
+              href: "https://github.com/facebook/docusaurus",
+            },
+          ],
+        },
+      ],
+      copyright: `Copyright © ${new Date().getFullYear()} kywk. Built with Docusaurus.`,
+    },
+    prism: {
+      theme: prismThemes.github,
+      darkTheme: prismThemes.dracula,
+    },
+  } satisfies Preset.ThemeConfig,
 };
 
 export default config;

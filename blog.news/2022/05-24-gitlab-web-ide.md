@@ -2,7 +2,8 @@
 title: The Future of the GitLab Web IDE
 description: 2022.05.24 The Future of the GitLab Web IDE
 authors: kywk
-tags: [GitLab]
+tags:
+  - GitLab
 image: https://i.imgur.com/mErPwqL.png
 hide_table_of_contents: true
 ---

@@ -1,16 +1,11 @@
 ---
-title: "Goroutine"
-description: "Goroutine"
-tags: [Go, Go/GoTour]
-
-#sidebar_position: 1
-#sidebar_label: Easy
-#sidebar_class_name: green
-
-#hide_table_of_contents: true
-
-date: 2022-04-20T15:45:04+08:00
-image: "https://lh3.googleusercontent.com/pw/AM-JKLWu8wVpy5iA1V-YEeQHafjhEuZiS8kFPaPu0pj_m6yi09YtCsVYFT8Z6LxtDL57sWDXa8rRZm6B_OsIhWjgBWupJ1ZopYhtDR5PMn-4q8ypuliQvh5KDBfdZmKAxOkIXb4FhRvkuQsRhKiyjB02tR6otw=w860-h480-no?authuser=0s"
+title: Goroutine
+description: Goroutine
+tags:
+  - Go
+  - Go/GoTour
+date_created: 2022-04-20T15:45:04+08:00
+cover: https://lh3.googleusercontent.com/pw/AM-JKLWu8wVpy5iA1V-YEeQHafjhEuZiS8kFPaPu0pj_m6yi09YtCsVYFT8Z6LxtDL57sWDXa8rRZm6B_OsIhWjgBWupJ1ZopYhtDR5PMn-4q8ypuliQvh5KDBfdZmKAxOkIXb4FhRvkuQsRhKiyjB02tR6otw=w860-h480-no?authuser=0s
 ---
 
 [Go] Tour: Goroutine 心得筆記

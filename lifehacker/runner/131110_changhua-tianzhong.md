@@ -1,10 +1,10 @@
 ---
 hide_table_of_contents: true
-
 title: 13.11.10 米倉田中馬
-tags: [Runner, ChangHua]
-
-date: 2013-11-10 06:30:00
+tags:
+  - Runner
+  - ChangHua
+date_created: 2013-11-10 06:30:00
 ---
 
 2013.11.10 米倉田中馬拉松

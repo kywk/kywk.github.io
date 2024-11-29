@@ -2,7 +2,8 @@
 title: Obsidian 1.0
 description: 2022.10.13 Obsidian 1.0
 authors: kywk
-tags: [Obsidian]
+tags:
+  - Obsidian
 image: https://i.imgur.com/mErPwqL.png
 hide_table_of_contents: true
 ---

@@ -1,12 +1,16 @@
 ---
 hide_table_of_contents: true
-
-title: "十三咖啡．感官的多重饗宴"
-tags: ["Taichung", "Essays", "Cafe", "Ancient"]
-
-date: 2012-08-31T09:03:09+08:00
-image: "https://lh3.googleusercontent.com/pw/ACtC-3eHbyXNlvgXQe7vLc_YTMkU23bAnN-64D6x4yYTf-vPfByAAj4TdNn6SxUmLc4XtFeMBDKjbncfv__Atk4k9P4MwVmfHBQTUesGCj8u-00j6c2KcYvZRI-1suizRSG26beCt8hvInc-RiIwpTxNE23Iwg=w799-h533-no?authuser=0"
-categories: ["lifestyle", "taichung"]
+title: 十三咖啡．感官的多重饗宴
+tags:
+  - Taichung
+  - Essays
+  - Cafe
+  - Ancient
+date_created: 2012-08-31T09:03:09+08:00
+image: https://lh3.googleusercontent.com/pw/ACtC-3eHbyXNlvgXQe7vLc_YTMkU23bAnN-64D6x4yYTf-vPfByAAj4TdNn6SxUmLc4XtFeMBDKjbncfv__Atk4k9P4MwVmfHBQTUesGCj8u-00j6c2KcYvZRI-1suizRSG26beCt8hvInc-RiIwpTxNE23Iwg=w799-h533-no?authuser=0
+categories:
+  - lifestyle
+  - taichung
 ---
 
 「十三哥，今天三位。」

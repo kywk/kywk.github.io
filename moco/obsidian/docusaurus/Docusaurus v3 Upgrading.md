@@ -1,12 +1,13 @@
 ---
 title: "Note: Upgrade to v3"
 description: Upgrade to docusaurus v3
-image: https://i.imgur.com/mErPwqL.png
+cover: https://i.imgur.com/mErPwqL.png
 tags:
   - Docusaurus
   - HowTo
   - Note
-created: 2024-01-10
+date_created: 2024-01-10
+date_update: 2024-11-11
 ---
 
 # [Docusaurus] Upgrade to v3
@@ -24,6 +25,10 @@ created: 2024-01-10
 需要參考官網 [Upgrading to Docusaurus v3 | Docusaurus](https://docusaurus.io/docs/migration/v3) - [Upgrading Dependencies](https://docusaurus.io/docs/migration/v3)
 的說明, 手動修改 `package.json` 中的設定升級相依套件, 方能正確執行.
 
+```bash
+npm i @docusaurus/core@latest @docusaurus/preset-classic@latest @docusaurus/theme-mermaid@latest @docusaurus/module-type-aliases@latest @docusaurus/tsconfig@latest @docusaurus/types@latest @docusaurus/faster@latest
+```
+
 ## Bad use of \< \{
 
 ```example.md
@@ -40,6 +45,14 @@ Docusaurus v3 使用 MDX v3 引擎, 對於 Markdown 文件中可能會造成 MDX
 升級後一堆文章都因為類似錯誤造成編譯失敗.
 
 官網的 [Common MDX Problem](https://docusaurus.io/blog/preparing-your-site-for-docusaurus-v3#common-mdx-problems) 有發生原因和處理方式.
+
+## v3.6
+
+[Docusaurus 3.6 | Docusaurus](https://docusaurus.io/blog/releases/3.6) Docusaurus 3.6 最大的改進就是效能的提升, 須按裝對應套件與新增設定.
+
+```bash
+npm install @docusaurus/faster
+```
 
 ## Summary
 

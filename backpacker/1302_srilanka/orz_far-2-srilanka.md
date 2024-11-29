@@ -1,11 +1,12 @@
 ---
 hide_table_of_contents: true
 sidebar_position: 80
-
-title: "囧 遙遠的斯里蘭卡"
-tags: [Backpacker, Life/Orz, Srilanka]
-
-date: 2013-02-19 01:10:58
+title: 囧 遙遠的斯里蘭卡
+tags:
+  - Backpacker
+  - Life/Orz
+  - Srilanka
+date_created: 2013-02-19 01:10:58
 ---
 
 [牛在囧途] 遙遠的斯里蘭卡

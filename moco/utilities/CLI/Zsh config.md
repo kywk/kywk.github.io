@@ -1,15 +1,14 @@
 ---
 title: Zsh config
-description: .zshrc 
-image: https://lh3.googleusercontent.com/pw/AL9nZEUA9Ifvd5Z8SXDWkeVB6AC4MPGwnXaL6kBXNPoXwOQQ2jOcZ1Jw_0p8TKK8C3ZX0e67_FOY15eDrm7aaXSQJcKtoUzC80SAQEHsaBy6qS2AqNNs5VUFNXBKm439y_1wkvmDl-PnL8ReojnIumNlEvOXBg=w800-no?authuser=0
+description: .zshrc
+cover: https://lh3.googleusercontent.com/pw/AL9nZEUA9Ifvd5Z8SXDWkeVB6AC4MPGwnXaL6kBXNPoXwOQQ2jOcZ1Jw_0p8TKK8C3ZX0e67_FOY15eDrm7aaXSQJcKtoUzC80SAQEHsaBy6qS2AqNNs5VUFNXBKm439y_1wkvmDl-PnL8ReojnIumNlEvOXBg=w800-no?authuser=0
 tags:
   - Zsh
   - Utilities
   - kywk
-#sidebar_label: README
 hide_table_of_contents: true
-created: 2024-10-01
-updated: 2024-10-10
+date_created: 2024-10-01
+date_update: 2024-10-10
 ---
 
 # [Zsh] .zshrc & configuration

@@ -1,10 +1,10 @@
 ---
 hide_table_of_contents: true
-
 title: 14.03.15 東馬出任務．十馬達陣
-tags: [Runner, Hualien]
-
-date: 2014-03-15 06:00:00
+tags:
+  - Runner
+  - Hualien
+date_created: 2014-03-15 06:00:00
 ---
 
 2014.03.15 東馬出任務．十馬達陣

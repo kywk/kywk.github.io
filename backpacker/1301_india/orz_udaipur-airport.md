@@ -6,7 +6,7 @@ tags:
   - Backpacker
   - Life/Orz
   - India
-date: 2013-06-26 01:57:48
+date_created: 2013-06-26 01:57:48
 ---
 
 [牛在囧途] 烏代浦爾機場炸彈客事件

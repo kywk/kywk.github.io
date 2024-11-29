@@ -1,16 +1,12 @@
 ---
-title: "Postman alternative"
-description: "postman alternative"
-tags: [Utility/APIClient, Awesome]
-
+title: Postman alternative
+description: postman alternative
+tags:
+  - Utility/APIClient
+  - Awesome
 sidebar_position: 70
-#sidebar_label: Easy
-#sidebar_class_name: green
-
-#hide_table_of_contents: true
-
-date: 2022-11-05T12:01:39+08:00
-image: "https://lh3.googleusercontent.com/pw/AM-JKLU2Ot2TyON1chUA-Qw7qj-OQSRMYNin7jsJsUa3E_jwqq1JbwTZZckUtJmNZmqxY5M4egm-ryt4g3Ope_0EqHBrCDSEHmcy-goHRzWh-ZgguUoy1XKpyS1DNx8aV92vAkAM0zZOW6EZR4KS3W1DClQKhw=w800-no?authuser=0"
+date_created: 2022-11-05T12:01:39+08:00
+cover: https://lh3.googleusercontent.com/pw/AM-JKLU2Ot2TyON1chUA-Qw7qj-OQSRMYNin7jsJsUa3E_jwqq1JbwTZZckUtJmNZmqxY5M4egm-ryt4g3Ope_0EqHBrCDSEHmcy-goHRzWh-ZgguUoy1XKpyS1DNx8aV92vAkAM0zZOW6EZR4KS3W1DClQKhw=w800-no?authuser=0
 ---
 
 # API Client and Postman alternative

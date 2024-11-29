@@ -3,10 +3,10 @@ title: 牛在囧途
 tags:
   - Backpacker
   - Index
-  - "Life/Orz"
+  - Life/Orz
 hide_table_of_contents: true
 sidebar_position: 78
-date: 2013-08-24 14:20:30
+date_created: 2013-08-24 14:20:30
 ---
 
 # 牛在囧途

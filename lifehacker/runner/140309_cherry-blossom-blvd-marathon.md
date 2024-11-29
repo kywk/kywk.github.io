@@ -1,10 +1,10 @@
 ---
 hide_table_of_contents: true
-
 title: 14.03.09 雙溪櫻花 重回初心
-tags: [Runner, Taipei]
-
-date: 2014-03-09 08:30:00
+tags:
+  - Runner
+  - Taipei
+date_created: 2014-03-09 08:30:00
 ---
 
 2014.03.09 雙溪櫻花 重回初心

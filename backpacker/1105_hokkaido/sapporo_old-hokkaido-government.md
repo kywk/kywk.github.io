@@ -6,8 +6,8 @@ tags:
   - Backpacker
   - Japan
   - Hokkaido/Sapporo
-date: 2011-05-08 19:35:26
-date_updated: 2014-01-05 19:35:26
+date_created: 2011-05-08 19:35:26
+date_update: 2014-01-05 19:35:26
 ---
 
 [札幌] 道廳舊紅磚廳舍

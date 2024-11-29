@@ -6,7 +6,7 @@ tags:
   - Japan
   - Hokkaido
 sidebar_position: 0
-date: 2011-05-08 14:22:54
+date_created: 2011-05-08 14:22:54
 ---
 
 # 2011.05.08 ~ 05.11 再訪北海道

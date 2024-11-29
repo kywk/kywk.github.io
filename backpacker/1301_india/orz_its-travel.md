@@ -1,11 +1,12 @@
 ---
 hide_table_of_contents: true
 sidebar_position: 78
-
-title: "囧 也是旅行的一部分"
-tags: [Backpacker, Life/Orz, Singapore]
-
-date: 2013-01-20 23:59:10
+title: 囧 也是旅行的一部分
+tags:
+  - Backpacker
+  - Life/Orz
+  - Singapore
+date_created: 2013-01-20 23:59:10
 ---
 
 [牛在囧途] 也是旅行的一部分

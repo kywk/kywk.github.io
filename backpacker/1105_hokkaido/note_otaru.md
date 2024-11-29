@@ -6,8 +6,8 @@ tags:
   - Backpacker
   - Japan
   - Hokkaido/Otaru
-date: 2011-05-08 19:12:29
-date_updated: 2014-01-05 19:12:29
+date_created: 2011-05-08 19:12:29
+date_update: 2014-01-05 19:12:29
 ---
 
 小樽行旅

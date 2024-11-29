@@ -1,10 +1,10 @@
 ---
 hide_table_of_contents: true
-
 title: 13.07.20 安平星光馬
-tags: [Runner, Tainan]
-
-date: 2013-07-22 19:30:09
+tags:
+  - Runner
+  - Tainan
+date_created: 2013-07-22 19:30:09
 ---
 
 2013.07.20 府城安平仲夏夜 星光馬拉松

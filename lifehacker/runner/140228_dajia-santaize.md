@@ -1,10 +1,9 @@
 ---
 hide_table_of_contents: true
-
 title: 14.02.28 三太子東京馬返台跑
-tags: [Runner]
-
-date: 2014-02-28 08:00:00
+tags:
+  - Runner
+date_created: 2014-02-28 08:00:00
 ---
 
 2014.02.28 三太子東京馬返台跑

@@ -6,8 +6,8 @@ tags:
   - Index
   - Egypt
 sidebar_position: 10
-created: 2023-08-20
-updated: 2023-08-20
+date_created: 2023-08-20
+date_update: 2023-08-20
 ---
 
 # 2024.01.23 ~ 02.03 法 老 埃及

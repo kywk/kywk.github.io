@@ -1,16 +1,11 @@
 ---
 title: "Git: Remote branch check"
 description: "Git: check if remote branch exists on a given remote repository"
-tags: [Git]
-
-#sidebar_position: 1
-#sidebar_label: Easy
-#sidebar_class_name: green
-
+tags:
+  - Git
 hide_table_of_contents: true
-
-date: 2021-04-12T15:13:11+08:00
-image: "https://lh3.googleusercontent.com/pw/ACtC-3djQkrvy1aqdMWCu9oEoqndQVIiLE9G5ZtlbDehi8_UcJ9pYib4aWForkHYHSu1voqdKMnCowTwGh1MXSnGeNrFwXRaOUCMD8s4rCZ4IuzWXIZ2khQ8KiJyT6SYlbLrnYYqONwaPZxlR8rReuWWMO7SYw=w8000-no?authuser=0"
+date_created: 2021-04-12T15:13:11+08:00
+cover: https://lh3.googleusercontent.com/pw/ACtC-3djQkrvy1aqdMWCu9oEoqndQVIiLE9G5ZtlbDehi8_UcJ9pYib4aWForkHYHSu1voqdKMnCowTwGh1MXSnGeNrFwXRaOUCMD8s4rCZ4IuzWXIZ2khQ8KiJyT6SYlbLrnYYqONwaPZxlR8rReuWWMO7SYw=w8000-no?authuser=0
 ---
 
 [Git] check if remote branch exists

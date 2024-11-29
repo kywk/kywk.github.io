@@ -1,11 +1,13 @@
 ---
 hide_table_of_contents: true
 sidebar_position: 70
-
 title: 童顏
-tags: [Backpacker, Malaysia, Essays, Photography]
-
-date: 2014-01-06 11:17:48
+tags:
+  - Backpacker
+  - Malaysia
+  - Essays
+  - Photography
+date_created: 2014-01-06 11:17:48
 ---
 
 童顏

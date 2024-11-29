@@ -1,12 +1,16 @@
 ---
 hide_table_of_contents: true
-
-title: "45 區公寓 Urban 45"
-tags: ["Taipei", "Essays", "Cuisine", "BAR"]
-
-date: 2012-02-28T11:57:30+08:00
-image: "http://farm5.staticflickr.com/4140/4916205282_b121c64c4e_z.jpg"
-categories: ["lifestyle", "taipei"]
+title: 45 區公寓 Urban 45
+tags:
+  - Taipei
+  - Essays
+  - Cuisine
+  - BAR
+date_created: 2012-02-28T11:57:30+08:00
+image: http://farm5.staticflickr.com/4140/4916205282_b121c64c4e_z.jpg
+categories:
+  - lifestyle
+  - taipei
 ---
 
 ![45 區公寓 Urban 45](https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-snc7/p206x206/423344_2455517045717_1031124396_n.jpg)

@@ -1,5 +1,5 @@
 ---
-title: "一輩子的養份 感謝文先行"
+title: 一輩子的養份 感謝文先行
 categories:
   - backpacker
 tags:
@@ -10,8 +10,8 @@ tags:
   - Annapurna
   - Srilanka
 hide_table_of_contents: true
-image: "/images/hero-trip2.jpg"
-date: 2013-02-28T06:01:59+08:00
+image: /images/hero-trip2.jpg
+date_created: 2013-02-28T06:01:59+08:00
 ---
 
 # 一輩子的養份，感謝文先行

@@ -1,11 +1,12 @@
 ---
 hide_table_of_contents: true
 sidebar_position: 40
-
 title: Jodhpur 梅堡 珍珠宮
-tags: [Backpacker, India, India/Jodhpur]
-
-date: 2013-05-05 11:04:33
+tags:
+  - Backpacker
+  - India
+  - India/Jodhpur
+date_created: 2013-05-05 11:04:33
 ---
 
 [Jodhpur] Moti Mahal - The Pearl Palace, Mehrangarh Fort, 梅堡．珍珠宮

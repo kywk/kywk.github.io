@@ -1,10 +1,10 @@
 ---
 hide_table_of_contents: true
-
 title: 13.11.17 屏東單車國道馬
-tags: [Runner, Pingtung]
-
-date: 2013-11-17 06:30:00
+tags:
+  - Runner
+  - Pingtung
+date_created: 2013-11-17 06:30:00
 ---
 
 2013.11.17 屏東單車國道馬拉松

@@ -1,12 +1,15 @@
 ---
 hide_table_of_contents: true
-
-title: "StayReal Cafe by GABEE"
-tags: ["Taipei", "Essays", "Cafe"]
-
-date: 2011-11-26T13:25:18+08:00
-image: "http://farm7.staticflickr.com/6120/6392810251_ee80900621_z.jpg"
-categories: ["lifestyle", "taipei"]
+title: StayReal Cafe by GABEE
+tags:
+  - Taipei
+  - Essays
+  - Cafe
+date_created: 2011-11-26T13:25:18+08:00
+image: http://farm7.staticflickr.com/6120/6392810251_ee80900621_z.jpg
+categories:
+  - lifestyle
+  - taipei
 ---
 
 「先生，請問幾位？」  

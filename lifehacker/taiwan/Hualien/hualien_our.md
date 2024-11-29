@@ -1,12 +1,15 @@
 ---
 hide_table_of_contents: true
-
-title: "Our 老房子咖啡屋"
-tags: ["Hualien", "Essays", "Ancient"]
-
-date: 2012-03-24T21:01:59+08:00
-image: "https://lh3.googleusercontent.com/pw/ACtC-3fFjTwZSt7eiKULd55va18dn2a8IMQHZtJ28mL8KZxzKu4vhqMLqartukZDF36cXng-qNn2eNjDdWh1BRK0WSNhFY8XgQBl3uJtt1Om1rrvDfiD9dCW5SKOI1QNFzK5WLCLWq8W6ga-RQgojGkxfncssg=w799-h533-no?authuser=0"
-categories: ["lifestyle", "hualien"]
+title: Our 老房子咖啡屋
+tags:
+  - Hualien
+  - Essays
+  - Ancient
+date_created: 2012-03-24T21:01:59+08:00
+image: https://lh3.googleusercontent.com/pw/ACtC-3fFjTwZSt7eiKULd55va18dn2a8IMQHZtJ28mL8KZxzKu4vhqMLqartukZDF36cXng-qNn2eNjDdWh1BRK0WSNhFY8XgQBl3uJtt1Om1rrvDfiD9dCW5SKOI1QNFzK5WLCLWq8W6ga-RQgojGkxfncssg=w799-h533-no?authuser=0
+categories:
+  - lifestyle
+  - hualien
 ---
 
 跟著家銘繞著社區打掃了一圈，在市場吃了碗玉里麵，回到咖啡屋裡窩著看書；  

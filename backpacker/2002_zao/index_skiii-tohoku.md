@@ -5,7 +5,7 @@ tags:
   - Index
   - Japan
 sidebar_position: 0
-date: 2022-06-06 13:03:12
+date_created: 2022-06-06 13:03:12
 ---
 
 # 2020.02.14 ~ 02.25 東北沒雪記

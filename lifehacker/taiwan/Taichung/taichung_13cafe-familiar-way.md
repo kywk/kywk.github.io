@@ -1,12 +1,16 @@
 ---
 hide_table_of_contents: true
-
-title: "十三咖啡．熟悉又新鮮的老味道"
-tags: ["Taichung", "Essays", "Cafe", "Ancient"]
-
-date: 2013-10-19T19:15:41+08:00
-image: "https://lh3.googleusercontent.com/pw/ACtC-3dOn_UkhxRQOM41FopGwUwSLrvcAgPJKuhOfCUbEZydvwZTa09GHTYev9BnxyoXB0YQjSPge62Sli1KOAhizU-AUM_ZLv4CApw_11whWXMa0inWRRJcZT5eUyhE1bNVeDub_6PVtvLTEHWEaKvdshzzTw=w799-h533-no?authuser=0"
-categories: ["lifestyle", "taichung"]
+title: 十三咖啡．熟悉又新鮮的老味道
+tags:
+  - Taichung
+  - Essays
+  - Cafe
+  - Ancient
+date_created: 2013-10-19T19:15:41+08:00
+image: https://lh3.googleusercontent.com/pw/ACtC-3dOn_UkhxRQOM41FopGwUwSLrvcAgPJKuhOfCUbEZydvwZTa09GHTYev9BnxyoXB0YQjSPge62Sli1KOAhizU-AUM_ZLv4CApw_11whWXMa0inWRRJcZT5eUyhE1bNVeDub_6PVtvLTEHWEaKvdshzzTw=w799-h533-no?authuser=0
+categories:
+  - lifestyle
+  - taichung
 ---
 
 「明明是他們亂搞，憑什麼叫我不要管？  

@@ -1,11 +1,11 @@
 ---
 hide_table_of_contents: true
-
 id: cjia-ming-lake-140910
 title: 野孩子．嘉明一夜情
-tags: [Mount, Taiwan]
-
-date: 2014-09-10 16:00:00
+tags:
+  - Mount
+  - Taiwan
+date_created: 2014-09-10 16:00:00
 ---
 
 2014.09.10 野孩子．嘉明一夜情

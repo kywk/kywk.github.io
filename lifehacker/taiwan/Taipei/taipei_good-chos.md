@@ -1,12 +1,17 @@
 ---
 hide_table_of_contents: true
-
-title: "好丘 good cho's"
-tags: ["Taipei", "Essays", "Cafe", "Cuisine", "Ancient"]
-
-date: 2013-01-05T13:39:52+08:00
-image: "http://farm9.staticflickr.com/8181/8071241088_e479535566_c.jpg"
-categories: ["lifestyle", "taipei"]
+title: 好丘 good cho's
+tags:
+  - Taipei
+  - Essays
+  - Cafe
+  - Cuisine
+  - Ancient
+date_created: 2013-01-05T13:39:52+08:00
+image: http://farm9.staticflickr.com/8181/8071241088_e479535566_c.jpg
+categories:
+  - lifestyle
+  - taipei
 ---
 
 出發前日，林約了羅與葉在好丘吃飯，詢問旅遊平安險和意外險等訊息。  

@@ -1,12 +1,16 @@
 ---
 hide_table_of_contents: true
-
-title: "宮原眼科 Miyahara"
-tags: ["Taichung", "Essays", "Cafe", "Ancient"]
-
-date: 2012-03-10T09:35:56+08:00
-image: "https://lh3.googleusercontent.com/pw/ACtC-3dC_V1KYFbCXGoTH7oYfrkILn2TjUhcxGp4j0Q-CbqcGPZ-Af2D2SphAceJCzK2QeDJRPU71y_PEKcKI5pgWu4fuwbX-CsnOx3R9FLaNXD3X4_iY6VG6uYlK0Ucr2sPZkkPM9pSsNy86iyb6IH3mCfzlQ=w799-h533-no?authuser=0"
-categories: ["lifestyle", "taichung"]
+title: 宮原眼科 Miyahara
+tags:
+  - Taichung
+  - Essays
+  - Cafe
+  - Ancient
+date_created: 2012-03-10T09:35:56+08:00
+image: https://lh3.googleusercontent.com/pw/ACtC-3dC_V1KYFbCXGoTH7oYfrkILn2TjUhcxGp4j0Q-CbqcGPZ-Af2D2SphAceJCzK2QeDJRPU71y_PEKcKI5pgWu4fuwbX-CsnOx3R9FLaNXD3X4_iY6VG6uYlK0Ucr2sPZkkPM9pSsNy86iyb6IH3mCfzlQ=w799-h533-no?authuser=0
+categories:
+  - lifestyle
+  - taichung
 ---
 
 區了區手指，李發覺十指不夠數數；超過十年了吧，大學畢業後，就從未踏上台中火車站。

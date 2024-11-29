@@ -1,12 +1,15 @@
 ---
 hide_table_of_contents: true
-
-title: "Vapiano Taipei"
-tags: ["Taipei", "Essays", "Cuisine"]
-
-date: 2012-11-05T13:36:36+08:00
-image: "http://farm9.staticflickr.com/8299/7949017350_a3ccdaf139_c.jpg"
-categories: ["lifestyle", "taipei"]
+title: Vapiano Taipei
+tags:
+  - Taipei
+  - Essays
+  - Cuisine
+date_created: 2012-11-05T13:36:36+08:00
+image: http://farm9.staticflickr.com/8299/7949017350_a3ccdaf139_c.jpg
+categories:
+  - lifestyle
+  - taipei
 ---
 
 暮日時分天色靛籃，華燈初上的信義區依然霓虹閃耀，攝影人管這當下叫魔幻時刻。  

@@ -1,11 +1,11 @@
 ---
 sidebar_position: 1
-title: "系統安裝紀錄"
-tags: ["Mac", "kywk"]
-
-date: 2021-02-26T14:05:03+08:00
-images: ["https://lh3.googleusercontent.com/pw/ACtC-3cYYtkzJjo_oG7Gzqq8T8XQm4V_qLE3wGWVKOahp6YT4lo-on60NJmjrkkatnizX1b-uID-MCM2ztsXH9z27cMRtql3PA5cpYZYbMfSPuM5Yh3MmqnjnnXYkTg6vtIiBL5SGAQRRAI9zEBIOoyP3tZpuA?authuser=0"]
-categories: ["mac"]
+title: 系統安裝紀錄
+tags:
+  - Mac
+  - kywk
+date_created: 2021-02-26T14:05:03+08:00
+image: https://lh3.googleusercontent.com/pw/ACtC-3cYYtkzJjo_oG7Gzqq8T8XQm4V_qLE3wGWVKOahp6YT4lo-on60NJmjrkkatnizX1b-uID-MCM2ztsXH9z27cMRtql3PA5cpYZYbMfSPuM5Yh3MmqnjnnXYkTg6vtIiBL5SGAQRRAI9zEBIOoyP3tZpuA?authuser=0
 ---
 
 [Mac] 系統與 Apps 安裝紀錄 2021.Feb

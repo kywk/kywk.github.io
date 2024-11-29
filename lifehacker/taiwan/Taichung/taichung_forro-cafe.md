@@ -1,12 +1,15 @@
 ---
 hide_table_of_contents: true
-
-title: "Forro Cafe 呼嚕咖啡"
-tags: ["Taichung", "Essays", "Cafe"]
-
-date: 2012-10-28T08:25:14+08:00
-image: "https://lh3.googleusercontent.com/pw/ACtC-3fscg0L90h0ED4iz0ZdNuYmPzh-mRvFvOgRGvrHkG2xoQb462bOEe--8vGFmfRGcYifK8H_8uK2V4bq5AJO7prqQHaAvytCH3M1H5fiTktibdyfkeLySDqldUZPLwRENhixlFtKt6Pn3TlBmXjtb0hRhQ=w799-h533-no?authuser=0"
-categories: ["lifestyle", "taichung"]
+title: Forro Cafe 呼嚕咖啡
+tags:
+  - Taichung
+  - Essays
+  - Cafe
+date_created: 2012-10-28T08:25:14+08:00
+image: https://lh3.googleusercontent.com/pw/ACtC-3fscg0L90h0ED4iz0ZdNuYmPzh-mRvFvOgRGvrHkG2xoQb462bOEe--8vGFmfRGcYifK8H_8uK2V4bq5AJO7prqQHaAvytCH3M1H5fiTktibdyfkeLySDqldUZPLwRENhixlFtKt6Pn3TlBmXjtb0hRhQ=w799-h533-no?authuser=0
+categories:
+  - lifestyle
+  - taichung
 ---
 
 「為什麼就不能說愛我就好？」

@@ -1,16 +1,9 @@
 ---
-#id: kywk-moco
 title: "Youtube: 下載影片"
-description: "download Youtube video by youtube-dl"
-tags: [Youtube]
-
-#sidebar_position: 1
-#sidebar_label: Easy
-#sidebar_class_name: green
-
-#hide_table_of_contents: true
-
-date: 2021-02-07T11:46:48+08:00
+description: download Youtube video by youtube-dl
+tags:
+  - Youtube
+date_created: 2021-02-07T11:46:48+08:00
 image: https://i.imgur.com/mErPwqL.png
 ---
 

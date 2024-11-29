@@ -1,7 +1,7 @@
 {
-  "label": "gRPC",
+  "label": "MySQL",
   "link": {
     "type": "generated-index",
-    "description": "gRPC"
+    "description": "MySQL"
   }
 }

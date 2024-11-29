@@ -1,11 +1,11 @@
 ---
 hide_table_of_contents: true
 sidebar_position: 99
-
 title: 行前準備
-tags: [Backpacker, Malaysia]
-
-date: 2011-05-11 10:15:21
+tags:
+  - Backpacker
+  - Malaysia
+date_created: 2011-05-11 10:15:21
 ---
 
 行前準備

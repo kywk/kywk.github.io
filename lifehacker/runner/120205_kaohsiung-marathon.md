@@ -1,10 +1,10 @@
 ---
 hide_table_of_contents: true
-
 title: 12.02.05 高雄國際馬拉松
-tags: [Runner, Kaohsiung]
-
-date: 2012-02-05 21:20:36
+tags:
+  - Runner
+  - Kaohsiung
+date_created: 2012-02-05 21:20:36
 ---
 
 2012.02.05 高雄國際馬拉松 x 外拍回憶

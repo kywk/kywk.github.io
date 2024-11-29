@@ -1,10 +1,10 @@
 ---
 hide_table_of_contents: true
-
-title: 14.03.02 南科生態人文馬 
-tags: [Runner, Tainan]
-
-date: 2014-03-02 06:00:00
+title: 14.03.02 南科生態人文馬
+tags:
+  - Runner
+  - Tainan
+date_created: 2014-03-02 06:00:00
 ---
 
 2014.03.02 南科生態人文馬拉松 

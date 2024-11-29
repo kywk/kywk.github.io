@@ -1,11 +1,11 @@
 ---
 hide_table_of_contents: true
 sidebar_position: 70
-
-title: "清邁行 感謝誌"
-tags: [Backpacker, ChiangMai]
-
-date: 2013-08-01 20:27:53
+title: 清邁行 感謝誌
+tags:
+  - Backpacker
+  - ChiangMai
+date_created: 2013-08-01 20:27:53
 ---
 
 清邁行 感謝誌

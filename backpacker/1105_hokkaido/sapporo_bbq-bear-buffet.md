@@ -7,8 +7,8 @@ tags:
   - Japan
   - Hokkaido/Sapporo
   - Cuisine
-date: 2011-05-08 19:18:31
-date_updated: 2014-01-05 19:18:31
+date_created: 2011-05-08 19:18:31
+date_update: 2014-01-05 19:18:31
 ---
 
 [札幌] 札幌啤酒廠成吉思汗烤肉

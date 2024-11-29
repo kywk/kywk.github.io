@@ -6,7 +6,7 @@ tags:
   - Essays
 hide_table_of_contents: true
 sidebar_position: 10
-date: 2011-05-16 11:02:02
+date_created: 2011-05-16 11:02:02
 ---
 
 # 11.05.16 旅人．漂流之後

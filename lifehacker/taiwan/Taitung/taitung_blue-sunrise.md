@@ -1,12 +1,15 @@
 ---
 hide_table_of_contents: true
-
-title: "藍色日出"
-tags: ["Taitung", "Essays", "Cuisine"]
-
-date: 2012-09-23T21:14:48+08:00
-image: "http://farm9.staticflickr.com/8328/8095592110_587e812eee_c.jpg"
-categories: ["lifestyle", "taitung"]
+title: 藍色日出
+tags:
+  - Taitung
+  - Essays
+  - Cuisine
+date_created: 2012-09-23T21:14:48+08:00
+image: http://farm9.staticflickr.com/8328/8095592110_587e812eee_c.jpg
+categories:
+  - lifestyle
+  - taitung
 ---
 
 這兩個月來，藍第三次來到台東。  

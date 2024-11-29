@@ -5,11 +5,9 @@ image: https://lh3.googleusercontent.com/pw/AL9nZEUA9Ifvd5Z8SXDWkeVB6AC4MPGwnXaL
 tags:
   - Awesome
   - kywk
-#sidebar_position: 1
-#sidebar_label: README
 hide_table_of_contents: true
-created: 2023-01-02
-updated: 2023-01-02
+date_created: 2023-01-02
+date_update: 2023-01-02
 ---
 
 <!--

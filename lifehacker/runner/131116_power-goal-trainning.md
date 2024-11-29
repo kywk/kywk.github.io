@@ -1,10 +1,9 @@
 ---
 hide_table_of_contents: true
-
 title: 13.11.16 達標愛跑社
-tags: [Runner]
-
-date: 2011-11-16 20:12:44
+tags:
+  - Runner
+date_created: 2011-11-16 20:12:44
 ---
 
 2013.11.16 達標愛跑社 團練

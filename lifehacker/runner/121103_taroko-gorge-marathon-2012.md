@@ -1,10 +1,10 @@
 ---
 hide_table_of_contents: true
-
 title: 12.11.03 太魯閣峽谷馬拉松
-tags: [Runner, Hualien]
-
-date: 2012-11-03 23:06:06
+tags:
+  - Runner
+  - Hualien
+date_created: 2012-11-03 23:06:06
 ---
 
 2012.11.03 太魯閣峽谷馬拉松

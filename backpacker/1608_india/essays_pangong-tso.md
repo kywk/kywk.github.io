@@ -1,13 +1,16 @@
 ---
 hide_table_of_contents: true
 sidebar_position: 80
-
-title: "三個傻瓜 班公錯"
-tags: [Backpacker, India, Essays]
-
-date: 2016-08-17T06:01:59+07:00
-image: "https://lh3.googleusercontent.com/pw/ACtC-3e26xh2R8LfJ6onxFob28de8GDND1t5Fzelru0lKqNMZV86phGP7c2ub-uT_CK063c_AwdByZlnSu_TSeav7v3e9uCMUaO8LHYoyP5kxyOucKjrAczMETydRAXVlgpn9V2V7HOwGGC71qyElM03H-oIuA=w800-h450-no?authuser=0"
-categories: ["backpacker", "india"]
+title: 三個傻瓜 班公錯
+tags:
+  - Backpacker
+  - India
+  - Essays
+date_created: 2016-08-17T06:01:59+07:00
+image: https://lh3.googleusercontent.com/pw/ACtC-3e26xh2R8LfJ6onxFob28de8GDND1t5Fzelru0lKqNMZV86phGP7c2ub-uT_CK063c_AwdByZlnSu_TSeav7v3e9uCMUaO8LHYoyP5kxyOucKjrAczMETydRAXVlgpn9V2V7HOwGGC71qyElM03H-oIuA=w800-h450-no?authuser=0
+categories:
+  - backpacker
+  - india
 ---
 
 三個傻瓜．班公錯 Pangong Tso

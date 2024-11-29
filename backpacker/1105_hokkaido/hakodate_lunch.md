@@ -7,8 +7,8 @@ tags:
   - Japan
   - Hokkaido/Hakodate
   - Cuisine
-date: 2011-05-10 19:56:38
-date_updated: 2014-01-05 19:56:38
+date_created: 2011-05-10 19:56:38
+date_update: 2014-01-05 19:56:38
 ---
 
 [函館] 五稜郭 鈴井商店

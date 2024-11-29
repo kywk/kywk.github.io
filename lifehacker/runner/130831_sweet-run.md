@@ -1,10 +1,9 @@
 ---
 hide_table_of_contents: true
-
 title: 13.08.31 馬卡龍盃路跑試辦
-tags: [Runner]
-
-date: 2013-09-01 11:23:44
+tags:
+  - Runner
+date_created: 2013-09-01 11:23:44
 ---
 
 2013.08.31 Sweet Run 馬卡龍盃路跑試辦賽

@@ -2,7 +2,7 @@
 title: Bitplay Aquaseal 02 使用心得
 tags:
   - Equipment
-date: 2021-04-15T18:21:38+08:00
+date_created: 2021-04-15T18:21:38+08:00
 image: https://lh3.googleusercontent.com/pw/ACtC-3eTC0X_y0Jymsn0Rtja7EKPZNOH3x_Br0TD9dtcEL4JO9HQQiTLZwvEWqAku10CjwTMvYe4WxIPGmncQgMw5q-KUANBrRwdMYGUm5Ac9OK7cT59KhVOYrI6uHi8ejnr-3I4WBROfdBcaiNCRlPJCAj0vQ=w800-no?authuser=0
 categories:
   - equipment

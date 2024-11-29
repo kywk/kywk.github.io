@@ -1,14 +1,12 @@
 ---
 hide_table_of_contents: true
-
 title: trip by AirAsia 2011
-tags: [Backpacker]
-
-date: 2011-01-05 18:50:03
+tags:
+  - Backpacker
+date_created: 2011-01-05 18:50:03
 ---
 
-trip by AirAsia 2011
-=====================
+# trip by AirAsia 2011
 
 算了算 2011 年共去了四個國家，共 11 趟航班。
 -   台灣 -> 曼谷 -> 清邁 -> 曼谷 -> 台灣

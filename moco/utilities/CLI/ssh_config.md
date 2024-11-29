@@ -6,7 +6,7 @@ tags:
   - Git
 hide_table_of_contents: true
 date_created: 2023-01-02T17:31:07+08:00
-image: https://i.imgur.com/mErPwqL.png
+cover: https://i.imgur.com/mErPwqL.png
 ---
 
 [SSH] .ssh/config & id_rsa

@@ -1,11 +1,11 @@
 ---
 hide_table_of_contents: true
 sidebar_position: 99
-
 title: Ready to Halo
-tags: [Backpacker, Italy]
-
-date: 2013-05-31 06:22:57
+tags:
+  - Backpacker
+  - Italy
+date_created: 2013-05-31 06:22:57
 ---
 
 Ready to Halo

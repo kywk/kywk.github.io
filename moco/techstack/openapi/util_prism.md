@@ -5,8 +5,8 @@ tags:
   - OpenAPI
 sidebar_position: 60
 date_created: 2023-01-04
-date_updated: 2023-01-04
-image: https://i.imgur.com/mErPwqL.png
+date_update: 2023-01-04
+cover: https://i.imgur.com/mErPwqL.png
 ---
 
 Stoplight Prism

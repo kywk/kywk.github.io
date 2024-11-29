@@ -1,12 +1,16 @@
 ---
 hide_table_of_contents: true
 sidebar_position: 80
-
-title: "黑白．香港映像"
-tags: [Backpacker, HongKong, Essays, Photography]
-
-date: 2014-12-27 21:40:27
-categories: ["backpacker", "hongkong"]
+title: 黑白．香港映像
+tags:
+  - Backpacker
+  - HongKong
+  - Essays
+  - Photography
+date_created: 2014-12-27 21:40:27
+categories:
+  - backpacker
+  - hongkong
 ---
 
 黑白．香港映像

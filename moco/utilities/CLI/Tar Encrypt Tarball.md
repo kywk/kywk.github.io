@@ -5,7 +5,7 @@ tags:
   - CLI
 hide_table_of_contents: true
 date_created: 2020-12-10T17:31:07+08:00
-image: https://i.imgur.com/mErPwqL.png
+cover: https://i.imgur.com/mErPwqL.png
 ---
 
 [CLI] Tarball 加密打包

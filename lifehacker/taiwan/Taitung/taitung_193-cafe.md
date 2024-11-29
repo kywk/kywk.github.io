@@ -1,12 +1,16 @@
 ---
 hide_table_of_contents: true
-
-title: "193 cafe"
-tags: ["Taitung", "Essays", "Cafe", "Ancient"]
-
-date: 2013-01-11T14:35:21+08:00
-image: "http://farm6.staticflickr.com/5349/9658984582_5dac18ecb2_c.jpg"
-categories: ["lifestyle", "taitung"]
+title: 193 cafe
+tags:
+  - Taitung
+  - Essays
+  - Cafe
+  - Ancient
+date_created: 2013-01-11T14:35:21+08:00
+image: http://farm6.staticflickr.com/5349/9658984582_5dac18ecb2_c.jpg
+categories:
+  - lifestyle
+  - taitung
 ---
 
 藍先和店員寒暄，拿出一疊「eTag 不爽裝」的貼紙給店員，  

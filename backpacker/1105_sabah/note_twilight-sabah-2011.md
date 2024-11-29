@@ -1,11 +1,11 @@
 ---
 hide_table_of_contents: true
 sidebar_position: 70
-
 title: 暮光
-tags: [Backpacker, Malaysia]
-
-date: 2011-05-16 11:13:10
+tags:
+  - Backpacker
+  - Malaysia
+date_created: 2011-05-16 11:13:10
 ---
 
 暮光

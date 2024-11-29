@@ -1,11 +1,11 @@
 ---
 hide_table_of_contents: true
 sidebar_position: 99
-
 title: Travel Plan
-tags: [Backpacker, France]
-
-date: 2012-05-17 18:33:10
+tags:
+  - Backpacker
+  - France
+date_created: 2012-05-17 18:33:10
 ---
 
 Travel Plan

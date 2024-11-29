@@ -3,8 +3,7 @@ title: 10 JavaScript Projects
 tags: [web, js, bootcamp]
 ---
 
-10 JavaScript Projects - Coding Challenge
-=========================================
+# 10 JavaScript Projects - Coding Challenge
 
 看到 [10 JavaScript Projects in 10 Hours - Coding Challenge](https://www.youtube.com/watch?v=dtKciwk_si4) 影片,
 對於很久沒重頭寫 Web 端純 JavaScript code 來說, 覺得是個不錯的練習, 故重造輪子.

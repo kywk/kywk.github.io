@@ -1,16 +1,9 @@
 ---
-#id: dropbox_headless-cli
 title: "Dropbox: Headless CLI"
-description: "Dropbox Headless CLI"
-tags: [Dropbox]
-
-#sidebar_position: 1
-#sidebar_label: Easy
-#sidebar_class_name: green
-
-#hide_table_of_contents: true
-
-date: 2022-10-17T00:00:00+08:00
+description: Dropbox Headless CLI
+tags:
+  - Dropbox
+date_created: 2022-10-17T00:00:00+08:00
 image: https://i.imgur.com/mErPwqL.png
 ---
 

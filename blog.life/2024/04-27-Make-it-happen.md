@@ -1,5 +1,5 @@
 ---
-title: "Make it happen"
+title: Make it happen
 tags:
   - Daily
   - LifeHack

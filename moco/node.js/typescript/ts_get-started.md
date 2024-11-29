@@ -5,7 +5,7 @@ tags:
   - TypeScript
   - Beginner
 date_created: 2022-05-27T00:00:00+08:00
-image: https://i.imgur.com/mErPwqL.png
+cover: https://i.imgur.com/mErPwqL.png
 ---
 
 import Tabs from '@theme/Tabs';

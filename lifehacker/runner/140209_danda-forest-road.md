@@ -1,10 +1,10 @@
 ---
 hide_table_of_contents: true
-
 title: 14.02.09 丹大林道 峽谷馬
-tags: [Runner, Nantou]
-
-date: 2014-02-09 07:00:00
+tags:
+  - Runner
+  - Nantou
+date_created: 2014-02-09 07:00:00
 ---
 
 2014.02.09 丹大林道 峽谷馬拉松

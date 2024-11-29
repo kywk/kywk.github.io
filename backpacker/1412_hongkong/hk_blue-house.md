@@ -1,12 +1,15 @@
 ---
 hide_table_of_contents: true
 sidebar_position: 40
-
-title: "藍屋"
-tags: [Backpacker, HongKong, Photography]
-
-date: 2015-02-05 21:44:08
-categories: ["backpacker", "hongkong"]
+title: 藍屋
+tags:
+  - Backpacker
+  - HongKong
+  - Photography
+date_created: 2015-02-05 21:44:08
+categories:
+  - backpacker
+  - hongkong
 ---
 
 藍屋

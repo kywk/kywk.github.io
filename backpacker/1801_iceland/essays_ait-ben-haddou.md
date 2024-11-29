@@ -1,13 +1,16 @@
 ---
 hide_table_of_contents: true
 sidebar_position: 80
-
-title: "山城 古城 埃本哈度"
-tags: [Backpacker, Morocco, Essays]
-
-date: 2018-02-14T06:01:59+06:00
-image: "https://lh3.googleusercontent.com/pw/ACtC-3cTMVpB3Tp1Ol3z6oiwJnOvnIR8TCjh9_P8YLjzzfIuzpvnR1agjJLvOgpZEuXhVEE10eBI98a-ZFIx8zepsnW2vCCQoZTAgGeFW3eD1T-4MQMe8MONIn5htis3r0eX7pWboQdV2IvSahN7Aud4gC4U6g=w800-h534-no?authuser=0"
-categories: ["backpacker", "morocco"]
+title: 山城 古城 埃本哈度
+tags:
+  - Backpacker
+  - Morocco
+  - Essays
+date_created: 2018-02-14T06:01:59+06:00
+image: https://lh3.googleusercontent.com/pw/ACtC-3cTMVpB3Tp1Ol3z6oiwJnOvnIR8TCjh9_P8YLjzzfIuzpvnR1agjJLvOgpZEuXhVEE10eBI98a-ZFIx8zepsnW2vCCQoZTAgGeFW3eD1T-4MQMe8MONIn5htis3r0eX7pWboQdV2IvSahN7Aud4gC4U6g=w800-h534-no?authuser=0
+categories:
+  - backpacker
+  - morocco
 ---
 
 翻看自己曾經大量使用但停用多時的圖像社群平台，只像是另一人的人生。  

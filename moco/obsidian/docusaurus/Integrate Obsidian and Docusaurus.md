@@ -1,15 +1,15 @@
 ---
 title: Obsidian integration
 description: Integrate Obsidian & Docusaurus
-image: https://i.imgur.com/mErPwqL.png
+cover: https://i.imgur.com/mErPwqL.png
 tags:
   - Obsidian
   - HowTo
   - Docusaurus
 sidebar_position: 10
 sidebar_label: Obsidian integration
-created: 2022-11-01
-updated: 2024-05-15
+date_created: 2022-11-01
+date_update: 2024-05-15
 ---
 
 # [Docusaurus] Obsidian Integration

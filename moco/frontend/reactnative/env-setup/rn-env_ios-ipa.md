@@ -1,17 +1,13 @@
 ---
-#id: rn-env_ios-ipa
-title: "Running On iOS"
+title: Running On iOS
 description: Running your app on iOS devices
-tags: [ReactNative, DevEnv, iOS]
-
+tags:
+  - ReactNative
+  - DevEnv
+  - iOS
 sidebar_position: 2
-#sidebar_label: Easy
-#sidebar_class_name: green
-
-#hide_table_of_contents: false
-
-date: 2022-09-06T00:00:00+08:00
-image: https://i.imgur.com/mErPwqL.png
+date_created: 2022-09-06T00:00:00+08:00
+cover: https://i.imgur.com/mErPwqL.png
 ---
 
 import Tabs from '@theme/Tabs';

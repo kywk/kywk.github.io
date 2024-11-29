@@ -1,11 +1,10 @@
 ---
 hide_table_of_contents: true
-
 id: 090703_nenggao-peak
 title: 十年回憶．能高主
-tags: [Mount]
-
-date: 2013-07-05 18:03:51
+tags:
+  - Mount
+date_created: 2013-07-05 18:03:51
 ---
 
 2009.07.03 十年回憶．能高主

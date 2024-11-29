@@ -1,12 +1,16 @@
 ---
 hide_table_of_contents: true
-
-title: "十三咖啡．難找但值得一找的三合院咖啡"
-tags: ["Taichung", "Essays", "Cafe", "Ancient"]
-
-date: 2012-03-10T08:58:42+08:00
-image: "https://lh3.googleusercontent.com/pw/ACtC-3e9bg9PoaA3t5fHF28KvuDFuw0afeGDqbTE703DAmLMeDoyKiAZdBkofUvkaZ_Bqz3qcS0ZmkZr3HCHX6hLnvwdaq2M4Zm0SEmLsgD6m51tK_idKO29Mp_aZnwDc9atWRi7Ad6slGeTZGz5yEg_40Tmxg=w800-h450-no?authuser=0"
-categories: ["lifestyle", "taichung"]
+title: 十三咖啡．難找但值得一找的三合院咖啡
+tags:
+  - Taichung
+  - Essays
+  - Cafe
+  - Ancient
+date_created: 2012-03-10T08:58:42+08:00
+image: https://lh3.googleusercontent.com/pw/ACtC-3e9bg9PoaA3t5fHF28KvuDFuw0afeGDqbTE703DAmLMeDoyKiAZdBkofUvkaZ_Bqz3qcS0ZmkZr3HCHX6hLnvwdaq2M4Zm0SEmLsgD6m51tK_idKO29Mp_aZnwDc9atWRi7Ad6slGeTZGz5yEg_40Tmxg=w800-h450-no?authuser=0
+categories:
+  - lifestyle
+  - taichung
 ---
 
 If you are looking for the love of your life, stop; they will be waitting for you when you start doing things you love.

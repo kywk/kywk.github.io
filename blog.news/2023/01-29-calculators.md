@@ -2,7 +2,8 @@
 title: A Calculated Move
 description: 2023.01.29 Calculators Now Emulated at Internet Archive
 authors: kywk
-tags: [News/HN]
+tags:
+  - News/HN
 image: https://i.imgur.com/mErPwqL.png
 hide_table_of_contents: true
 ---

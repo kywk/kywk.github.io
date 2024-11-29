@@ -5,7 +5,7 @@ tags:
   - Backpacker
   - Index
   - Italy
-date: 2010-07-01 13:03:12
+date_created: 2010-07-01 13:03:12
 ---
 
 # 2010.07.01 ~ 07.16 義大利假期

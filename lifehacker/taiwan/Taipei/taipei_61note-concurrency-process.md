@@ -1,12 +1,16 @@
 ---
 hide_table_of_contents: true
-
-title: "61 Note 同步進行的瑣事"
-tags: ["Taipei", "Essays", "Cafe", "Cuisine"]
-
-date: 2011-11-25T13:08:53+08:00
-image: "http://farm8.staticflickr.com/7174/6399366269_04ae5cc79f_z.jpg"
-categories: ["lifestyle", "taipei"]
+title: 61 Note 同步進行的瑣事
+tags:
+  - Taipei
+  - Essays
+  - Cafe
+  - Cuisine
+date_created: 2011-11-25T13:08:53+08:00
+image: http://farm8.staticflickr.com/7174/6399366269_04ae5cc79f_z.jpg
+categories:
+  - lifestyle
+  - taipei
 ---
 
 二訪 61note。  

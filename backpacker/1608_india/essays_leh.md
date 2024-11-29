@@ -1,13 +1,16 @@
 ---
 hide_table_of_contents: true
 sidebar_position: 80
-
-title: "裂．晨"
-tags: [Backpacker, India, Essays]
-
-date: 2016-08-15T06:01:59+07:00
-image: "https://lh3.googleusercontent.com/pw/ACtC-3fSN2xSND2HhrGOOakW_XgxPA915k4mofH4Z_L5bFmAMr_NXkNleDSscOtzlPhj7KmhUVp_RmercMpI-_L5Phr8LsgtFRbgs2j6iTJmD8e4KB2HYdxz8EPEk4FJ5cBSEYK2qujnr469pcsl2xoeslX7Bw=w800-h450-no?authuser=0"
-categories: ["backpacker", "india"]
+title: 裂．晨
+tags:
+  - Backpacker
+  - India
+  - Essays
+date_created: 2016-08-15T06:01:59+07:00
+image: https://lh3.googleusercontent.com/pw/ACtC-3fSN2xSND2HhrGOOakW_XgxPA915k4mofH4Z_L5bFmAMr_NXkNleDSscOtzlPhj7KmhUVp_RmercMpI-_L5Phr8LsgtFRbgs2j6iTJmD8e4KB2HYdxz8EPEk4FJ5cBSEYK2qujnr469pcsl2xoeslX7Bw=w800-h450-no?authuser=0
+categories:
+  - backpacker
+  - india
 ---
 
 裂．晨

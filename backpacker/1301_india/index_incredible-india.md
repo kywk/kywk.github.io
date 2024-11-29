@@ -6,7 +6,7 @@ tags:
   - India
   - Singapore
 sidebar_position: 0
-date: 2013-01-20 14:50:52
+date_created: 2013-01-20 14:50:52
 ---
 
 # 2013.01.17 ~ 01.30 印度 不思議

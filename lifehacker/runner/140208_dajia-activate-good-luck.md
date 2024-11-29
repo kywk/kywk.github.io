@@ -1,10 +1,10 @@
 ---
 hide_table_of_contents: true
-
 title: 14.02.08 大甲好神 開運罩
-tags: [Runner, Taichung]
-
-date: 2014-02-08 06:00:00
+tags:
+  - Runner
+  - Taichung
+date_created: 2014-02-08 06:00:00
 ---
 
 2014.02.08 大甲好神 開運罩 新春第一跑 行運繞境財匯路跑

@@ -1,11 +1,11 @@
 ---
 hide_table_of_contents: true
 sidebar_position: 42
-
 title: 吉隆坡 唐人街
-tags: [Backpacker, Malaysia/KualaLumpur]
-
-date: 2014-01-03 23:31:01 
+tags:
+  - Backpacker
+  - Malaysia/KualaLumpur
+date_created: 2014-01-03 23:31:01
 ---
 
 [吉隆坡] Petaling Street 唐人街 

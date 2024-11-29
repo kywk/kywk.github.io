@@ -1,12 +1,15 @@
 ---
 hide_table_of_contents: true
-
-title: "看山小 望海大 La'mer"
-tags: ["Taipei", "Essays", "Cuisine"]
-
-date: 2012-01-05T13:33:47+08:00
-image: "http://farm9.staticflickr.com/8458/7994390139_9c43bccf66_c.jpg"
-categories: ["lifestyle", "taipei"]
+title: 看山小 望海大 La'mer
+tags:
+  - Taipei
+  - Essays
+  - Cuisine
+date_created: 2012-01-05T13:33:47+08:00
+image: http://farm9.staticflickr.com/8458/7994390139_9c43bccf66_c.jpg
+categories:
+  - lifestyle
+  - taipei
 ---
 
 海風灌入車內，幾絲寒意～相較於淡水大雨，三芝一帶意外毫無雨勢。  

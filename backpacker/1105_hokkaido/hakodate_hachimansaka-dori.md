@@ -6,8 +6,8 @@ tags:
   - Backpacker
   - Japan
   - Hokkaido/Hakodate
-date: 2011-05-10 22:37:12
-date_updated: 2014-01-05 22:37:12
+date_created: 2011-05-10 22:37:12
+date_update: 2014-01-05 22:37:12
 ---
 
 [函館] 八幡坡道

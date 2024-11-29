@@ -1,12 +1,16 @@
 ---
 hide_table_of_contents: true
-
-title: "61 Note 南西累了、煩了，請來此尋覓靜縊"
-tags: ["Taipei", "Essays", "Cafe", "Cuisine"]
-
-date: 2011-04-10T09:52:29+08:00
-image: "http://farm7.static.flickr.com/6180/6201408213_b2eb948e72_z.jpg"
-categories: ["lifestyle", "taipei"]
+title: 61 Note 南西累了、煩了，請來此尋覓靜縊
+tags:
+  - Taipei
+  - Essays
+  - Cafe
+  - Cuisine
+date_created: 2011-04-10T09:52:29+08:00
+image: http://farm7.static.flickr.com/6180/6201408213_b2eb948e72_z.jpg
+categories:
+  - lifestyle
+  - taipei
 ---
 
 一直都以為拍下了寫下了

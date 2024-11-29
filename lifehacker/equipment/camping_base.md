@@ -1,12 +1,13 @@
 ---
 sidebar_position: 12
-
-title: "露營基礎裝備組合, 2021 Apr"
-tags: ["Equipment", "Camping"]
-
-date: 2021-04-07T13:16:03+08:00
-image: "https://lh3.googleusercontent.com/pw/ACtC-3eG64ZtpHegixnPtyAFrxhYz5zUOC7bT5Jhh1caUMVE1qqEc3L_uGQYLCmxlBr-3gVRW0gUFHU9nh1PuRxR00cOahBUIJPxlupa0kkq1fNH5HAhNLa9aLSg-kjta9_QcgbPhfnpp_z_NRsj6PNOzIkeOg=w800-no?authuser=0"
-categories: ["equipment"]
+title: 露營基礎裝備組合, 2021 Apr
+tags:
+  - Equipment
+  - Camping
+date_created: 2021-04-07T13:16:03+08:00
+image: https://lh3.googleusercontent.com/pw/ACtC-3eG64ZtpHegixnPtyAFrxhYz5zUOC7bT5Jhh1caUMVE1qqEc3L_uGQYLCmxlBr-3gVRW0gUFHU9nh1PuRxR00cOahBUIJPxlupa0kkq1fNH5HAhNLa9aLSg-kjta9_QcgbPhfnpp_z_NRsj6PNOzIkeOg=w800-no?authuser=0
+categories:
+  - equipment
 ---
 
 _last updated: 2021-04-07_

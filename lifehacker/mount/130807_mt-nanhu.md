@@ -1,11 +1,10 @@
 ---
 hide_table_of_contents: true
-
 id: 130807_mt-nanhu
 title: 南湖大山．初心者
-tags: [Mount]
-
-date: 2013-08-23 22:34:55
+tags:
+  - Mount
+date_created: 2013-08-23 22:34:55
 ---
 
 2013.08.23 南湖大山．初心者
