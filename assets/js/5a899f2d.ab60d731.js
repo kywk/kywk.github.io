@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkkywk_github_io=self.webpackChunkkywk_github_io||[]).push([["26141"],{92217:function(u){u.exports=JSON.parse('{"name":"docusaurus-plugin-content-blog","id":"life"}')}}]);

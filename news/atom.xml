@@ -2,11 +2,83 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kywk.github.io/news/</id>
     <title>kywk.me Blog</title>
-    <updated>2024-11-15T00:00:00.000Z</updated>
+    <updated>2024-11-30T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kywk.github.io/news/"/>
     <subtitle>kywk.me Blog</subtitle>
     <icon>https://kywk.github.io/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Surf 11.16 ~ 11.30]]></title>
+        <id>https://kywk.github.io/news/2024/11/30/_Surfing/</id>
+        <link href="https://kywk.github.io/news/2024/11/30/_Surfing/"/>
+        <updated>2024-11-30T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Surfing quick note 11.16 ~ 11.30]]></summary>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="it-news">IT News<a href="https://kywk.github.io/news/2024/11/30/_Surfing/#it-news" class="hash-link" aria-label="IT News的直接連結" title="IT News的直接連結">​</a></h3>
+<ul>
+<li><a href="https://www.codebuff.com/" target="_blank" rel="noopener noreferrer">Codebuff</a> <a href="https://news.ycombinator.com/item?id=42078536" target="_blank" rel="noopener noreferrer">Launch HN: Codebuff (YC F24) – CLI tool that writes code for you | Hacker News</a></li>
+<li><a href="https://github.com/dandavison/delta" target="_blank" rel="noopener noreferrer">GitHub - dandavison/delta: A syntax-highlighting pager for git, diff, grep, and blame output</a> <a href="https://news.ycombinator.com/item?id=42091365" target="_blank" rel="noopener noreferrer">Delta: A syntax-highlighting pager for Git, diff, grep, and blame output | Hacker News</a>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> 初步看起來資訊更清楚的 pager, 週末花時間研究一下. 📅 2024-11-17</li>
+</ul>
+</li>
+<li><a href="https://mergiraf.org/" target="_blank" rel="noopener noreferrer">Introduction - Mergiraf</a> <a href="https://news.ycombinator.com/item?id=42093756" target="_blank" rel="noopener noreferrer">Mergiraf: a syntax-aware merge driver for Git | Hacker News</a></li>
+<li><a href="https://www.ironcalc.com/" target="_blank" rel="noopener noreferrer">IronCalc - Open-Source Spreadsheet Engine</a>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li>看起來比 Google Docs 更 lightweight 的 WebApp, 筆記下來. 臨時有 Excel 需求處理時也許有用.</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> 確認是否支援複雜函式運算 📅 2024-11-17</li>
+</ul>
+</li>
+<li><a href="https://www.ithome.com.tw/news/166158" target="_blank" rel="noopener noreferrer">AWS與Rust基金會攜手驗證Rust標準函式庫的安全性 | iThome</a></li>
+<li></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tech">Tech<a href="https://kywk.github.io/news/2024/11/30/_Surfing/#tech" class="hash-link" aria-label="Tech的直接連結" title="Tech的直接連結">​</a></h3>
+<ul>
+<li><a href="https://github.com/drogus/jawsm" target="_blank" rel="noopener noreferrer">GitHub - drogus/jawsm: JavaScript to WASM compiler</a>  <a href="https://news.ycombinator.com/item?id=42095879" target="_blank" rel="noopener noreferrer">Show HN: Jaws – a JavaScript to WASM ahead-of-time compiler | Hacker News</a></li>
+<li><a href="https://self-issued.info/?p=2573" target="_blank" rel="noopener noreferrer">OpenID Connect specifications published as ISO standards – Mike Jones: self-issued</a> <a href="https://news.ycombinator.com/item?id=42101181" target="_blank" rel="noopener noreferrer">OpenID Connect specifications published as ISO standards | Hacker News</a>
+<ul>
+<li>一些 OpenID 規格文件資料, 先筆記, 日後用不上就算了.</li>
+</ul>
+</li>
+<li><a href="https://blog.gslin.org/archives/2024/11/25/12100/git-%e7%9a%84-hasconfigremote-url/" target="_blank" rel="noopener noreferrer">Git 的 hasconfig:remote.*.url: – Gea-Suan Lin's BLOG</a>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li>關於 gitconfig 的優化?</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> reorganize gitconfig w/ direnv 📅 2024-12-01</li>
+</ul>
+</li>
+<li></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="life">Life<a href="https://kywk.github.io/news/2024/11/30/_Surfing/#life" class="hash-link" aria-label="Life的直接連結" title="Life的直接連結">​</a></h3>
+<ul>
+<li><a href="https://www.mobile01.com/topicdetail.php?f=628&amp;t=7045521" target="_blank" rel="noopener noreferrer">【橫沙笛縱走】大雪山五星級森林步道 | 橫嶺山 沙蓮山 笛吹山 - Mobile01</a></li>
+<li><a href="https://www.ithome.com.tw/voice/166157" target="_blank" rel="noopener noreferrer">適者生存 | iThome</a></li>
+<li><a href="https://crossing.cw.com.tw/article/19453" target="_blank" rel="noopener noreferrer">為何到澳洲打工度假、加拿大定居後，我才發現出國並非自己的「夢想」？｜Ｗinnie／在加的故事｜換日線</a></li>
+<li></li>
+</ul>]]></content>
+        <author>
+            <name>kywk</name>
+            <uri>https://github.io/kywk</uri>
+        </author>
+        <category label="Surf" term="Surf"/>
+        <category label="2024/11" term="2024/11"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[News Feed]]></title>
+        <id>https://kywk.github.io/news/News Feed/</id>
+        <link href="https://kywk.github.io/news/News Feed/"/>
+        <updated>2024-11-29T14:34:08.000Z</updated>
+        <summary type="html"><![CDATA[This is News Clippins]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="news--discus">news &amp; discus<a href="https://kywk.github.io/news/News%20Feed/#news--discus" class="hash-link" aria-label="news &amp; discus的直接連結" title="news &amp; discus的直接連結">​</a></h2>
+<ul>
+<li><a href="https://news.ycombinator.com/" target="_blank" rel="noopener noreferrer">Hacker News</a></li>
+<li><a href="https://dev.to/" target="_blank" rel="noopener noreferrer">DEV Community 👩‍💻👨‍💻</a></li>
+<li><a href="https://iter01.com/" target="_blank" rel="noopener noreferrer">IT人</a></li>
+<li><a href="https://www.gushiciku.cn/pl/" target="_blank" rel="noopener noreferrer">MdEditor</a></li>
+</ul>]]></content>
+        <author>
+            <name>kywk</name>
+            <uri>https://github.io/kywk</uri>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Surf 11.01 ~ 11.15]]></title>
         <id>https://kywk.github.io/news/2024/11/15/_Surfing/</id>
@@ -738,76 +810,6 @@ Consider carefully if code is truly redundant or just superficially similar.</p>
 <li><a href="https://free.com.tw/bright-vpn/" target="_blank" rel="noopener noreferrer">Bright VPN 全免費跨區下載最佳夥伴，解鎖全球 40+ 國家連線節點</a></li>
 <li><a href="https://www.adaymag.com/2023/09/04/disappointments-diary.html" target="_blank" rel="noopener noreferrer">Site Unreachable</a></li>
 <li></li>
-</ul>]]></content>
-        <author>
-            <name>kywk</name>
-            <uri>https://github.io/kywk</uri>
-        </author>
-        <category label="Surf" term="Surf"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Surf 08.16 ~ 08.31]]></title>
-        <id>https://kywk.github.io/news/2023/08/31/_Surfing/</id>
-        <link href="https://kywk.github.io/news/2023/08/31/_Surfing/"/>
-        <updated>2023-08-31T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Surfing quick note 08.16 ~ 08.31]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="it-news">IT News<a href="https://kywk.github.io/news/2023/08/31/_Surfing/#it-news" class="hash-link" aria-label="IT News的直接連結" title="IT News的直接連結">​</a></h3>
-<ul>
-<li><a href="https://news.ycombinator.com/item?id=37247767" target="_blank" rel="noopener noreferrer">Show HN: Open-source obsidian.md sync server | Hacker News</a>
-<ul>
-<li><a href="https://github.com/acheong08/rev-obsidian-sync" target="_blank" rel="noopener noreferrer">GitHub - acheong08/rev-obsidian-sync: Reverse engineering of Obsidian sync server</a></li>
-</ul>
-</li>
-<li></li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tech">Tech<a href="https://kywk.github.io/news/2023/08/31/_Surfing/#tech" class="hash-link" aria-label="Tech的直接連結" title="Tech的直接連結">​</a></h3>
-<ul>
-<li><a href="https://blog.gslin.org/archives/2023/08/22/11306/" target="_blank" rel="noopener noreferrer">HashiCorp 內 scale 的方法 – Gea-Suan Lin's BLOG</a></li>
-<li><a href="https://studyhost.blogspot.com/2023/08/rdpvm.html" target="_blank" rel="noopener noreferrer">.NET Walker: 禁止RDP(遠端桌面)用戶連上VM時複製、貼上或掛載本機硬碟</a></li>
-<li><a href="https://studyhost.blogspot.com/2023/08/cliline-notify.html" target="_blank" rel="noopener noreferrer">.NET Walker: 使用CLI發送免費的LINE Notify通知</a></li>
-<li><a href="https://learnbyexample.github.io/learn_gnuawk/awk-introduction.html" target="_blank" rel="noopener noreferrer">awk introduction - CLI text processing with GNU awk</a></li>
-<li></li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="life">Life<a href="https://kywk.github.io/news/2023/08/31/_Surfing/#life" class="hash-link" aria-label="Life的直接連結" title="Life的直接連結">​</a></h3>
-<ul>
-<li><a href="https://www.waytogo.cc/page/87661" target="_blank" rel="noopener noreferrer">赤峰街，文青、網紅新聖地，鄰近捷運中山、雙連站 by Tony的遊記 - 旅聯網</a></li>
-<li><a href="https://www.triplife.tw/2023/08/US-National-Parks.html" target="_blank" rel="noopener noreferrer">最新美國國家公園介紹（63座國家公園旅遊資訊）</a></li>
-<li><a href="https://steachs.com/archives/63485?utm_source=pocket_saves" target="_blank" rel="noopener noreferrer">有點廢但其實還蠻有趣的 macOS 軟體「DockX」，Pro 版限時免費中 | 就是教不落 - 給你最豐富的 3C 資訊、教學網站</a></li>
-<li><a href="https://www.adaymag.com/2023/08/24/vision-board-to-reach-my-goal.html" target="_blank" rel="noopener noreferrer">利用 Vision Board，我成功達成了今年年初設下的目標 - A Day Magazine</a></li>
-<li><a href="https://www.adaymag.com/2023/08/24/work-without-emotion-leave-work-happily-every-day.html" target="_blank" rel="noopener noreferrer">學會「不帶情緒工作」後，每天都開心下班 - A Day Magazine</a></li>
-<li><a href="https://crossing.cw.com.tw/article/18027" target="_blank" rel="noopener noreferrer">阿爾卑斯山美景「太貴了」，我們要改變規則！──專訪第一屆瑞士數位遊牧節｜俞錦梅 Yu, Chin Mei／May 在瑞士擱淺｜換日線</a></li>
-<li><a href="https://crossing.cw.com.tw/article/18026" target="_blank" rel="noopener noreferrer">深度走訪三大宗教聖地，以色列如何展現文化、歷史與人情味？｜凱倫｜換日線</a></li>
-<li><a href="https://steachs.com/archives/63509" target="_blank" rel="noopener noreferrer">發現最佳 AI 網站，來看看大家都在用哪些 AI 工具 | 就是教不落 - 給你最豐富的 3C 資訊、教學網站</a></li>
-<li></li>
-</ul>]]></content>
-        <author>
-            <name>kywk</name>
-            <uri>https://github.io/kywk</uri>
-        </author>
-        <category label="Surf" term="Surf"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Surf 08.01 ~ 08.15]]></title>
-        <id>https://kywk.github.io/news/2023/08/15/_Surfing/</id>
-        <link href="https://kywk.github.io/news/2023/08/15/_Surfing/"/>
-        <updated>2023-08-15T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Surfing quick note 08.01 ~ 08.15]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="it-news">IT News<a href="https://kywk.github.io/news/2023/08/15/_Surfing/#it-news" class="hash-link" aria-label="IT News的直接連結" title="IT News的直接連結">​</a></h3>
-<ul>
-<li><a href="https://blog.gslin.org/archives/2023/08/05/11280" target="_blank" rel="noopener noreferrer">Vim 作者 Bram Moolenaar 過世 – Gea-Suan Lin's BLOG</a></li>
-<li></li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tech">Tech<a href="https://kywk.github.io/news/2023/08/15/_Surfing/#tech" class="hash-link" aria-label="Tech的直接連結" title="Tech的直接連結">​</a></h3>
-<ul>
-<li><a href="https://rickhw.github.io/2023/07/29/Management/Team-Consensus-and-Talent-Development/" target="_blank" rel="noopener noreferrer">凝聚團隊共識與人才養成 | Complete Think</a></li>
-<li><a href="https://rickhw.github.io/2023/08/01/Management/PERMA/" target="_blank" rel="noopener noreferrer">1 on 1 聊什麼 - PERMA | Complete Think</a></li>
-<li><a href="https://rickhw.github.io/2023/07/02/DistributedSystems/API-First_Integration-Matrix/" target="_blank" rel="noopener noreferrer">API 設計 - API 整合矩陣 | Complete Think</a></li>
-<li><a href="https://rickhw.github.io/2023/06/24/DistributedSystems/API-First_Communication-Protocol/" target="_blank" rel="noopener noreferrer">API 設計 - 摘要 API 通訊模式與協議 | Complete Think</a></li>
-<li></li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="life">Life<a href="https://kywk.github.io/news/2023/08/15/_Surfing/#life" class="hash-link" aria-label="Life的直接連結" title="Life的直接連結">​</a></h3>
-<ul>
-<li><a href="https://www.soft4fun.net/software/security/edge-free-vpn-network.htm" target="_blank" rel="noopener noreferrer">什麼？微軟 Edge 瀏覽器裡面居然偷藏免費VPN ！？</a></li>
 </ul>]]></content>
         <author>
             <name>kywk</name>

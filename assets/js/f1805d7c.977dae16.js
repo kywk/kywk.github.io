@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkkywk_github_io=self.webpackChunkkywk_github_io||[]).push([["95450"],{83088:function(o){o.exports=JSON.parse('{"tag":{"label":"TODO","permalink":"/moco/tags/todo","allTagsPath":"/moco/tags","count":1,"items":[{"id":"golang/Way to Go","title":"Way to Go","description":"Go: Way to Go","permalink":"/moco/golang/Way to Go"}],"unlisted":false}}')}}]);

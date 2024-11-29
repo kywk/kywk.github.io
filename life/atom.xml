@@ -2,11 +2,68 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kywk.github.io/life/</id>
     <title>kywk.me Blog</title>
-    <updated>2024-07-31T00:00:00.000Z</updated>
+    <updated>2024-12-25T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kywk.github.io/life/"/>
     <subtitle>kywk.me Blog</subtitle>
     <icon>https://kywk.github.io/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Happy Holiday]]></title>
+        <id>https://kywk.github.io/life/2024/12/25/_Happy_Holiday/</id>
+        <link href="https://kywk.github.io/life/2024/12/25/_Happy_Holiday/"/>
+        <updated>2024-12-25T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[- MUJI 無印良品推出「紅杉木聖誕木塊」，好看又自帶香氣 - The Femin]]></summary>
+        <content type="html"><![CDATA[<ul>
+<li><a href="https://thefemin.com/2024/11/muji-red-cedar-christmas-wood-block/" target="_blank" rel="noopener noreferrer">MUJI 無印良品推出「紅杉木聖誕木塊」，好看又自帶香氣 - The Femin</a></li>
+<li><a href="https://thefemin.com/2024/11/muji-holiday-edition-diffuser/" target="_blank" rel="noopener noreferrer">聖誕氛圍就靠這些可愛的小東西，MUJI 這款「玻璃擴香紙組」實在很討喜 - The Femin</a></li>
+<li></li>
+</ul>]]></content>
+        <author>
+            <name>kywk</name>
+            <uri>https://github.io/kywk</uri>
+        </author>
+        <category label="kywk" term="kywk"/>
+        <category label="LifeHack" term="LifeHack"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Yet Another Macbook]]></title>
+        <id>https://kywk.github.io/life/2024/11/28/New-Mac-Setup-Step/</id>
+        <link href="https://kywk.github.io/life/2024/11/28/New-Mac-Setup-Step/"/>
+        <updated>2024-11-28T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[紀錄新購入 Macbook Air 安裝設定流程.]]></summary>
+        <content type="html"><![CDATA[<p>紀錄新購入 Macbook Air 安裝設定流程.</p>
+<ol>
+<li>Homebrew, 所有軟體第一步
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="複製程式碼至剪貼簿" title="複製" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+</li>
+<li>Dropbox, 安裝 maestral, 等候同步完成
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">brew install maestral</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="複製程式碼至剪貼簿" title="複製" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+</li>
+<li>terminal/console 設定
+<ul>
+<li>本步驟所有軟體與
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">brew install iterm2 fzf</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">brew install font-fira-code-nerd-font font-fira-code font-fira-mono font-fira-sans</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">brew install font-source-code-pro</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">brew install font-hack-nerd-font</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="複製程式碼至剪貼簿" title="複製" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+</li>
+<li>打開 iTerm2, 匯入設定與色卡後重啟, 進行 Shell 設定
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">ln -sfF Dropbox/config/dotfiles .files</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">ln -sfF .files/zsh/mac.zshrc .zshrc</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">ln -sfF .files/zsh/mac.zprofile .zprofile</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">mkdir .local</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">touch .local/develop.sh</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">touch .local/local.sh</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="複製程式碼至剪貼簿" title="複製" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+</li>
+<li>重開 iTerm2, 自動進行 zinit 相關套件下載與 p10k config</li>
+</ul>
+</li>
+<li>Mac 環境設定
+<ul>
+<li>Safari / Dock / Hot corners</li>
+</ul>
+</li>
+<li>其他軟體安裝與設定</li>
+</ol>
+<p><em>Ref: <a href="https://kywk.github.io/moco/machintosh/Applications/Mac%20Apps%20Setup/" target="_blank" rel="noopener noreferrer">Setup: App 安裝紀錄 | kywk.me</a></em></p>]]></content>
+        <author>
+            <name>kywk</name>
+            <uri>https://github.io/kywk</uri>
+        </author>
+        <category label="Machintosh" term="Machintosh"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Those Lazy, Hazy, Crazy Days Of Summer]]></title>
         <id>https://kywk.github.io/life/2024/07/31/_Lazy-Hazy-Crazy-Days-Of-Summer/</id>
@@ -595,134 +652,5 @@ Dropbox 資料夾結構越來越精簡, 有種莫名成就感.</p>]]></content>
             <uri>https://github.io/kywk</uri>
         </author>
         <category label="NBA" term="NBA"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Hello Docusaurus]]></title>
-        <id>https://kywk.github.io/life/2022/05/20/move-to-docusaurus/</id>
-        <link href="https://kywk.github.io/life/2022/05/20/move-to-docusaurus/"/>
-        <updated>2022-05-20T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[2022.05.20 Why move to Docusaurus]]></summary>
-        <content type="html"><![CDATA[<p>在 <a href="https://pjchender.dev/" target="_blank" rel="noopener noreferrer">PJCHENder 未整理筆記</a> 看到 <a href="https://docusaurus.io/" target="_blank" rel="noopener noreferrer">Docusaurus</a> 這套 CMS.
-查了一下才知道原來是 Facebook 推出, 適用於專案文件的靜態網站生成框架.</p>
-<p>比起一篇篇獨立文章的部落格系統, 覺得 Docusaurus 更適合心得筆記整理用.
-剛好原本使用的 Hugo Theme 不合適, 正在找新主題,
-試用後, 決定轉往 Docusaurus 重新建構.</p>
-<p><strong>決定轉換系統主因有幾點</strong></p>
-<ol>
-<li>部落格系統偏向一篇篇獨立文章, 文章彼此連結性不強烈, 結構也不清楚.
-而心得筆記該有的結構關係, 透過部落格系統加上 <code>catelogy</code> <code>tag</code> ... 等輔助,
-雖勉強可用但不盡如人意.</li>
-<li>心得筆記會不時更新, 而部落格系統以日期為主的文章陳列方式, 對筆記整理意義不大.</li>
-<li>Docusaurus 原生專注於專案文件, 對於程式語言呈現相當友善.
-側邊欄 / 文章主體 / TOC 基礎版面清楚明瞭. 心得 CMS 很合適.</li>
-<li>Docusaurus 有限客製化, 無須花費過多時間調整版面, 可專注於文件內容編寫.</li>
-<li>Docusaurus 有 Blog 支援, 筆記文件放 <code>docs</code>, 日常文章放 <code>blog</code>.
-筆記文件和部落格文章可以清楚分割.</li>
-</ol>
-<p>當時從 Hexo 換到 Hugo 主因是快! Hugo 生成速度遠快於 Hexo.
-而現在卻從 Hugo 換到比 Hexo 更慢的 Docusaurus.
-除了上述優點外, 透過 <code>GitHub Action</code>, 讓網站生成工作交由 GitHub 處理, 速度就不再是問題.</p>
-<p>官方說明很清楚, 網路上文章也多, 基礎轉移沒遇到問題.
-倒是個人一些特殊需求, 試了一下才解決.</p>
-<p><strong>Obsidian</strong></p>
-<p>我的 Markdown 文件都放在 Obsidian Vault 下, 藉由 Obsidian 來建構筆記資料庫.
-Hugo 框架可以透過 symbolic link 連結到 Obsidian 下的目錄, 而 Docusaurus 則會報錯.</p>
-<p>還好 Obsidian 有 <a href="https://forum.obsidian.md/t/symbolic-links-symlinks-folder-links/1058" target="_blank" rel="noopener noreferrer">Symbolic links</a> 需求的人不少,
-透過 <a href="https://github.com/chrisdmacrae/symlinks-obsidian/" target="_blank" rel="noopener noreferrer">symlinks-obsidian</a> plugin
-可以讓 Obsidian Vault 下的 symbolic link 正常工作.</p>
-<p>如此, 反其向而行.
-文件放於 Docusaurus 工作目錄下, 在 Obsidian Vault 下建立 symbolic link 連結過去.
-Docusaurus / Obsidian 都可以正常運行.</p>
-<p><strong>node_modules</strong></p>
-<p>這也是一般情況不會發生, 個人習慣衍生的問題.</p>
-<p>我的 Docusaurus 工作目錄放在 Dropbox 同步, 為了節省空間,
-會把 <code>node_modules</code> 移到本機目錄後, 建立 symbolic link 連結.</p>
-<p>發現有趣的是, 更改 <code>node_modules</code> 名稱後, 建立的 symbolic link 會出錯:</p>
-<div class="language-shell codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-shell codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">[~/Dropbox/mySite] $ mv node_modules ~/node_modules/Docusaurus</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">[~/Dropbox/mySite] $ ln -sfF ~/node_modules/Docusaurus node_modules</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">[~/Dropbox/mySite] $ npm start</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">node:internal/errors:465</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ErrorCaptureStackTrace(err);</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ^</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Error [ERR_MODULE_NOT_FOUND]: Cannot find package '@docusaurus/logger' imported from /home/kywk/project/node_modules/Docusaurus/doc/@docusaurus/core/bin/docusaurus.mjs</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  ...</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  code: 'ERR_MODULE_NOT_FOUND'</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="複製程式碼至剪貼簿" title="複製" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
-<p>而若維持 <code>node_modules</code> 資料夾名稱, 則不會報錯:</p>
-<div class="language-shell codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-shell codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">[~/Dropbox/mySite] $ mv node_modules ~/Docusaurus/node_modules/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">[~/Dropbox/mySite] $ ln -sfF ~/Docusaurus/node_modules</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">[~/Dropbox/mySite] $ npm start</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">[INFO] Starting the development server...</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">[SUCCESS] Docusaurus website is running at http://localhost:3000/moco/.</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="複製程式碼至剪貼簿" title="複製" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
-<p>Docusaurus 慢慢探索搬中. 初步印象, 85 分!</p>]]></content>
-        <author>
-            <name>kywk</name>
-            <uri>https://github.io/kywk</uri>
-        </author>
-        <category label="Docusaurus" term="Docusaurus"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Keep Running 2022]]></title>
-        <id>https://kywk.github.io/life/2022/01/01/keep-running/</id>
-        <link href="https://kywk.github.io/life/2022/01/01/keep-running/"/>
-        <updated>2022-01-01T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[2022.01.01 Keep Running 2022]]></summary>
-        <content type="html"><![CDATA[<p>2022 年的第一天，夢到靠么。<br>
-夢中和他如往常一般互動、玩耍，彷彿他不曾離開。<br>
-最後外出散步回家前，他突然跑來討抱，抱完後很開心跑走了。</p>
-<p>醒來後回想，夢中的靠么是一隻短腿柴柴。<br>
-該是靠么要去下一世，來說再見。</p>
-<p>2021 過得很亂，回頭省視後，面對 2022 有許多想法：<br>
-減肥健身、技術攀登、新工作、搬家…等，隨之也會有許多改變。<br>
-總歸來說，大方向仍和 Reborn 2021 一樣：</p>
-<p>去接觸新環境、去學習新技能、去結交新朋友、去建立新習慣，<br>
-舒適於新環境、活用於新技能、熟稔於新朋友、生活於新習慣。</p>
-<p>部份老靈魂還活在那，Patagonia 亦仍在。</p>
-<p>每天三件事：完成工作上的緊急事件與進度、發展專業上的重要成果、投入生活上的慾望清單。<br>
-看本書、聽些音樂、練練英文。<br>
-然後運動、放鬆、重置每一天。</p>
-<p>就繼續吧，<br>
-回馬場、再越野、仍爬山，還工作。<br>
-擬定目標，有所作為，<strong>持之以恆！</strong>，<a href="http://goo.gl/393HY" target="_blank" rel="noopener noreferrer">before i die</a>！</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="daily">Daily<a href="https://kywk.github.io/life/2022/01/01/keep-running/#daily" class="hash-link" aria-label="Daily的直接連結" title="Daily的直接連結">​</a></h3>
-<ul>
-<li>Finish today's todo on-schedule, or re-schedule it</li>
-<li>English communication exercise</li>
-<li>Regular training: 7k easy run every morning
-<ul>
-<li>Monday: Core, Strength and Conditioning</li>
-<li>Tuesday: 10k</li>
-<li>Wednesday: Core, Strength and Conditioning</li>
-<li>Thursday: 15k or Core</li>
-<li>Friday: Trail, Bike to home, Stone</li>
-</ul>
-</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="weekly">Weekly<a href="https://kywk.github.io/life/2022/01/01/keep-running/#weekly" class="hash-link" aria-label="Weekly的直接連結" title="Weekly的直接連結">​</a></h3>
-<ul>
-<li>LeetCode Weekly Contest</li>
-<li>A Tokaido/Patagonia a week: A introduction to one trail path of Tokaido/Patagonia</li>
-<li>兩本書、兩篇心得</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="monthly">Monthly<a href="https://kywk.github.io/life/2022/01/01/keep-running/#monthly" class="hash-link" aria-label="Monthly的直接連結" title="Monthly的直接連結">​</a></h3>
-<ul>
-<li>(Biweekly) Cook a meal. Include salad, starter, main-dish, dessert... etc</li>
-<li>(Biweekly) Photography: finish one set of previous works</li>
-<li>Announce a minion prject</li>
-<li>Finish a 42k marathon or more than 42k self trainning</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="yearly">Yearly<a href="https://kywk.github.io/life/2022/01/01/keep-running/#yearly" class="hash-link" aria-label="Yearly的直接連結" title="Yearly的直接連結">​</a></h3>
-<ul>
-<li>Mointaineering
-<ul>
-<li><em>找路</em> 沙韻古道再探</li>
-<li>八通關古道</li>
-<li>北一段</li>
-<li>南二段</li>
-<li>能高安東軍</li>
-</ul>
-</li>
-<li>LifeHaker
-<ul>
-<li>攀岩</li>
-<li>學游泳、潛水</li>
-<li>學飛行傘</li>
-</ul>
-</li>
-</ul>
-<p>仍貪心。公開目標，騎虎難下。</p>]]></content>
-        <author>
-            <name>kywk</name>
-            <uri>https://github.io/kywk</uri>
-        </author>
-        <category label="kywk" term="kywk"/>
-        <category label="LifeHack" term="LifeHack"/>
     </entry>
 </feed>
