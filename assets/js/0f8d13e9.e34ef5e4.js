@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkkywk_me=self.webpackChunkkywk_me||[]).push([["64074"],{89813:function(s){s.exports=JSON.parse('{"tag":{"label":"Zsh","permalink":"/moco/tags/zsh","allTagsPath":"/moco/tags","count":1,"items":[{"id":"utilities/CLI/Zsh config","title":"Zsh config","description":".zshrc","permalink":"/moco/utilities/CLI/Zsh config"}],"unlisted":false}}')}}]);

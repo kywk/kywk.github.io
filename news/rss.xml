@@ -4,10 +4,115 @@
         <title>kywk.me Blog</title>
         <link>https://kywk.github.io/news/</link>
         <description>kywk.me Blog</description>
-        <lastBuildDate>Sat, 30 Nov 2024 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 31 Dec 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-TW</language>
+        <item>
+            <title><![CDATA[Surf 12.01 ~ 12.31]]></title>
+            <link>https://kywk.github.io/news/2024/12/31/_Surfing/</link>
+            <guid>https://kywk.github.io/news/2024/12/31/_Surfing/</guid>
+            <pubDate>Tue, 31 Dec 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[Surfing quick note Surf 12.01 ~ 12.31]]></description>
+            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="it-news">IT News<a href="https://kywk.github.io/news/2024/12/31/_Surfing/#it-news" class="hash-link" aria-label="IT News的直接連結" title="IT News的直接連結">​</a></h3>
+<ul>
+<li><a href="https://grayjay.app/desktop/" target="_blank" rel="noopener noreferrer">Grayjay App - Follow Creators Not Platforms</a>
+<ul>
+<li>和 Follow 有些類似, 聚合多個媒體平台於一身.</li>
+<li>比起平台本身, 主要是 follow creator.</li>
+</ul>
+</li>
+<li><a href="https://github.com/boardgameio/boardgame.io" target="_blank" rel="noopener noreferrer">GitHub - boardgameio/boardgame.io: State Management and Multiplayer Networking for Turn-Based Games</a>
+<ul>
+<li><strong>boardgame.io</strong>&nbsp;is an engine for creating turn-based games using JavaScript.</li>
+</ul>
+</li>
+<li><a href="https://www.nicbarker.com/clay" target="_blank" rel="noopener noreferrer">Clay - UI Layout Library</a>
+<ul>
+<li>Clay is a flex-box style UI auto layout library in C, with declarative syntax and microsecond performance.</li>
+<li>Compile to 15kb .wasm</li>
+<li>效能實在很快的 UI Lib, 看來未來可能是 rust/wasm 的天下.</li>
+</ul>
+</li>
+<li><a href="https://blog.gslin.org/archives/2024/12/21/12146/puppet-%e8%a6%81-fork-%e4%ba%86/" target="_blank" rel="noopener noreferrer">Puppet 要 fork 了 – Gea-Suan Lin's BLOG</a>
+<ul>
+<li><a href="https://blog.gslin.org/archives/2022/04/12/10655/perforce-%e8%b2%b7%e4%b8%8b-puppet/" target="_blank" rel="noopener noreferrer">Perforce 買下 Puppet – Gea-Suan Lin's BLOG</a></li>
+</ul>
+</li>
+<li><a href="https://blog.gslin.org/archives/2024/12/19/12139/%e6%8a%8a-wikipedia-%e6%a2%9d%e7%9b%ae%e5%b0%8d%e6%87%89%e5%88%b0%e5%9c%b0%e5%9c%96%e4%b8%8a%e9%9d%a2/" target="_blank" rel="noopener noreferrer">把 Wikipedia 條目對應到地圖上面 – Gea-Suan Lin's BLOG</a>
+<ul>
+<li>想要弄的旅遊部落格, 文章/照片/... 都可以標示在地圖上</li>
+</ul>
+</li>
+<li><a href="https://engineering.fb.com/2024/12/18/android/translating-java-to-kotlin-at-scale/" target="_blank" rel="noopener noreferrer">Translating Java to Kotlin at Scale - Engineering at Meta</a>
+<ul>
+<li>Java code 轉換到 Kotlin 過程.</li>
+<li><a href="https://github.com/JetBrains/intellij-community/tree/master/plugins/kotlin/j2k" target="_blank" rel="noopener noreferrer">intellij-community/plugins/kotlin/j2k at master · JetBrains/intellij-community · GitHub</a></li>
+<li><a href="https://engineering.fb.com/" target="_blank" rel="noopener noreferrer">Engineering at Meta - Engineering at Meta Blog</a></li>
+</ul>
+</li>
+<li><a href="https://www.ithome.com.tw/news/166667" target="_blank" rel="noopener noreferrer">Apache基金會修補網頁伺服器元件Tomcat遠端程式碼執行漏洞 | iThome</a>
+<ul>
+<li>在金融業工作後, 對於 CVE 資訊會多花一些時間了解...</li>
+</ul>
+</li>
+<li></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tech">Tech<a href="https://kywk.github.io/news/2024/12/31/_Surfing/#tech" class="hash-link" aria-label="Tech的直接連結" title="Tech的直接連結">​</a></h3>
+<ul>
+<li><a href="https://blog.gslin.org/archives/2024/12/16/12126/%e6%8a%8a-libc-%e7%a7%bb%e6%a4%8d%e5%88%b0-gpu-%e4%b8%8a%e8%b7%91/" target="_blank" rel="noopener noreferrer">把 libc 移植到 GPU 上跑 – Gea-Suan Lin's BLOG</a></li>
+<li><a href="https://matt.might.net/articles/shell-scripts-for-passive-voice-weasel-words-duplicates/" target="_blank" rel="noopener noreferrer">3 shell scripts: Kill weasel words, avoid the passive, eliminate duplicates</a>
+<ul>
+<li><a href="https://blog.gslin.org/archives/2024/12/16/12125/%e7%94%a8-script-%e6%89%be%e5%87%ba%e5%af%ab%e4%bd%9c%e6%8a%80%e5%b7%a7%e4%b8%8a%e7%96%8f%e5%bf%bd%e7%9a%84%e9%bb%9e/" target="_blank" rel="noopener noreferrer">用 Script 找出寫作技巧上疏忽的點 – Gea-Suan Lin's BLOG</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/microsoft/markitdown" target="_blank" rel="noopener noreferrer">GitHub - microsoft/markitdown: Python tool for converting files and office documents to Markdown.</a>
+<ul>
+<li><a href="https://blog.gslin.org/archives/2024/12/16/12124/%e5%b0%87%e5%90%84%e7%a8%ae%e6%aa%94%e6%a1%88%e8%bd%89%e6%88%90-markdown-%e7%9a%84-markitdown/" target="_blank" rel="noopener noreferrer">將各種檔案轉成 Markdown 的 markitdown – Gea-Suan Lin's BLOG</a></li>
+</ul>
+</li>
+<li><a href="https://blog.kyomind.tw/network-101-course/" target="_blank" rel="noopener noreferrer">《給網站工程師的網路課》心得：Web 開發者的網路學習指南 - Code and Me</a></li>
+<li><a href="https://nodesource.com/blog/State-of-Nodejs-Performance-2024" target="_blank" rel="noopener noreferrer">State of Node.js Performance 2024</a>
+<ul>
+<li>簡單來說, node 20/22 輾壓 18.</li>
+<li>有任何理由需繼續使用 node 18, 至少升到 18.17.x</li>
+</ul>
+</li>
+<li><a href="https://blog.gslin.org/archives/2024/12/18/12130/nginx-%e7%9a%84-location-%e9%a0%86%e5%ba%8f/" target="_blank" rel="noopener noreferrer">nginx 的 location 順序 – Gea-Suan Lin's BLOG</a></li>
+<li><a href="https://blog.othree.net/log/2024/12/22/innodb-recovery/" target="_blank" rel="noopener noreferrer">InnoDB 修復紀錄 : O3noBLOG</a>
+<ul>
+<li>希望永遠用不上, 但是個值得紀錄的文章.</li>
+</ul>
+</li>
+<li></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="life">Life<a href="https://kywk.github.io/news/2024/12/31/_Surfing/#life" class="hash-link" aria-label="Life的直接連結" title="Life的直接連結">​</a></h3>
+<ul>
+<li><a href="https://www.mobile01.com/topicdetail.php?f=628&amp;t=7054288" target="_blank" rel="noopener noreferrer">阿里山森遊漫步走(下)有夠遠的部落-里佳 - Mobile01</a></li>
+<li><a href="https://ikeahackers.net/2024/12/best-ikea-hacks-2024.html" target="_blank" rel="noopener noreferrer">12 Best IKEA Hacks of 2024: See IKEA in a Brand New Light!</a></li>
+<li><a href="https://www.adaymag.com/2024/12/20/fenster-cafe.html" target="_blank" rel="noopener noreferrer">藏在維也納老城區中，一杯賣 14 歐元的「甜筒卡布奇諾」，是深受當地人喜愛的寶藏咖啡 - A Day Magazine</a></li>
+<li><a href="https://www.adaymag.com/2024/12/20/mohamed-aziz.html" target="_blank" rel="noopener noreferrer">在識字率曾低到 32% 的國家，堅持賣書超過半世紀，73 歲「一人書店」老闆的故事讓我們更珍惜所有 - A Day Magazine</a></li>
+<li><a href="https://www.mobile01.com/topicdetail.php?f=801&amp;t=7059708" target="_blank" rel="noopener noreferrer">2024年7-11信用卡攻略！7-11可以刷卡嗎？8張神卡推薦！ - Mobile01</a></li>
+<li><a href="https://www.adaymag.com/2024/12/25/lamplighter.html" target="_blank" rel="noopener noreferrer">《小王子》裡的角色真實存在：捷克布拉格出現神秘「點燈人」，為冰冷的科技時代帶來溫暖 - A Day Magazine</a></li>
+<li></li>
+</ul>]]></content:encoded>
+            <category>Surf</category>
+            <category>2024/12</category>
+        </item>
+        <item>
+            <title><![CDATA[News Feed]]></title>
+            <link>https://kywk.github.io/news/News Feed/</link>
+            <guid>https://kywk.github.io/news/News Feed/</guid>
+            <pubDate>Wed, 25 Dec 2024 23:32:47 GMT</pubDate>
+            <description><![CDATA[This is News Clippins]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="news--discus">news &amp; discus<a href="https://kywk.github.io/news/News%20Feed/#news--discus" class="hash-link" aria-label="news &amp; discus的直接連結" title="news &amp; discus的直接連結">​</a></h2>
+<ul>
+<li><a href="https://news.ycombinator.com/" target="_blank" rel="noopener noreferrer">Hacker News</a></li>
+<li><a href="https://dev.to/" target="_blank" rel="noopener noreferrer">DEV Community 👩‍💻👨‍💻</a></li>
+<li><a href="https://iter01.com/" target="_blank" rel="noopener noreferrer">IT人</a></li>
+<li><a href="https://www.gushiciku.cn/pl/" target="_blank" rel="noopener noreferrer">MdEditor</a></li>
+</ul>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Surf 11.16 ~ 11.30]]></title>
             <link>https://kywk.github.io/news/2024/11/30/_Surfing/</link>
@@ -19,7 +124,13 @@
 <li><a href="https://www.codebuff.com/" target="_blank" rel="noopener noreferrer">Codebuff</a> <a href="https://news.ycombinator.com/item?id=42078536" target="_blank" rel="noopener noreferrer">Launch HN: Codebuff (YC F24) – CLI tool that writes code for you | Hacker News</a></li>
 <li><a href="https://github.com/dandavison/delta" target="_blank" rel="noopener noreferrer">GitHub - dandavison/delta: A syntax-highlighting pager for git, diff, grep, and blame output</a> <a href="https://news.ycombinator.com/item?id=42091365" target="_blank" rel="noopener noreferrer">Delta: A syntax-highlighting pager for Git, diff, grep, and blame output | Hacker News</a>
 <ul class="contains-task-list containsTaskList_mC6p">
-<li class="task-list-item"><input type="checkbox" disabled=""> 初步看起來資訊更清楚的 pager, 週末花時間研究一下. 📅 2024-11-17</li>
+<li class="task-list-item"><input type="checkbox" disabled="" checked=""> 初步看起來資訊更清楚的 pager, 週末花時間研究一下. 📅 2024-11-17 ✅ 2024-12-22
+<ul>
+<li>和 <code>diff-so-fancy</code> 各有千秋, 列入裝機工具之一, 但尚未轉移設定.</li>
+<li>[[git-delta]]</li>
+<li>研究過程發現的 [[ansifilter]] 是好物!</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><a href="https://mergiraf.org/" target="_blank" rel="noopener noreferrer">Introduction - Mergiraf</a> <a href="https://news.ycombinator.com/item?id=42093756" target="_blank" rel="noopener noreferrer">Mergiraf: a syntax-aware merge driver for Git | Hacker News</a></li>
@@ -30,7 +141,6 @@
 </ul>
 </li>
 <li><a href="https://www.ithome.com.tw/news/166158" target="_blank" rel="noopener noreferrer">AWS與Rust基金會攜手驗證Rust標準函式庫的安全性 | iThome</a></li>
-<li></li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="tech">Tech<a href="https://kywk.github.io/news/2024/11/30/_Surfing/#tech" class="hash-link" aria-label="Tech的直接連結" title="Tech的直接連結">​</a></h3>
 <ul>
@@ -53,24 +163,9 @@
 <li><a href="https://www.mobile01.com/topicdetail.php?f=628&amp;t=7045521" target="_blank" rel="noopener noreferrer">【橫沙笛縱走】大雪山五星級森林步道 | 橫嶺山 沙蓮山 笛吹山 - Mobile01</a></li>
 <li><a href="https://www.ithome.com.tw/voice/166157" target="_blank" rel="noopener noreferrer">適者生存 | iThome</a></li>
 <li><a href="https://crossing.cw.com.tw/article/19453" target="_blank" rel="noopener noreferrer">為何到澳洲打工度假、加拿大定居後，我才發現出國並非自己的「夢想」？｜Ｗinnie／在加的故事｜換日線</a></li>
-<li></li>
 </ul>]]></content:encoded>
             <category>Surf</category>
             <category>2024/11</category>
-        </item>
-        <item>
-            <title><![CDATA[News Feed]]></title>
-            <link>https://kywk.github.io/news/News Feed/</link>
-            <guid>https://kywk.github.io/news/News Feed/</guid>
-            <pubDate>Fri, 29 Nov 2024 14:34:08 GMT</pubDate>
-            <description><![CDATA[This is News Clippins]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="news--discus">news &amp; discus<a href="https://kywk.github.io/news/News%20Feed/#news--discus" class="hash-link" aria-label="news &amp; discus的直接連結" title="news &amp; discus的直接連結">​</a></h2>
-<ul>
-<li><a href="https://news.ycombinator.com/" target="_blank" rel="noopener noreferrer">Hacker News</a></li>
-<li><a href="https://dev.to/" target="_blank" rel="noopener noreferrer">DEV Community 👩‍💻👨‍💻</a></li>
-<li><a href="https://iter01.com/" target="_blank" rel="noopener noreferrer">IT人</a></li>
-<li><a href="https://www.gushiciku.cn/pl/" target="_blank" rel="noopener noreferrer">MdEditor</a></li>
-</ul>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[Surf 11.01 ~ 11.15]]></title>
@@ -715,32 +810,6 @@ Consider carefully if code is truly redundant or just superficially similar.</p>
 </ul>]]></content:encoded>
             <category>Surf</category>
             <category>2023/09</category>
-        </item>
-        <item>
-            <title><![CDATA[Surf 09.01 ~ 09.15]]></title>
-            <link>https://kywk.github.io/news/2023/09/15/_Surfing/</link>
-            <guid>https://kywk.github.io/news/2023/09/15/_Surfing/</guid>
-            <pubDate>Fri, 15 Sep 2023 00:00:00 GMT</pubDate>
-            <description><![CDATA[Surfing quick note 09.01 ~ 09.15]]></description>
-            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="it-news">IT News<a href="https://kywk.github.io/news/2023/09/15/_Surfing/#it-news" class="hash-link" aria-label="IT News的直接連結" title="IT News的直接連結">​</a></h3>
-<ul>
-<li><a href="https://blog.gslin.org/archives/2023/09/01/11331/" target="_blank" rel="noopener noreferrer">Usenet 的回春？ – Gea-Suan Lin's BLOG</a></li>
-<li><a href="https://www.ithome.com.tw/news/158622" target="_blank" rel="noopener noreferrer">Node.js 20.6支援.env配置檔，加入C++垃圾回收函式庫Oilpan | iThome</a></li>
-<li></li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tech">Tech<a href="https://kywk.github.io/news/2023/09/15/_Surfing/#tech" class="hash-link" aria-label="Tech的直接連結" title="Tech的直接連結">​</a></h3>
-<ul>
-<li><a href="https://www.rocksaying.tw/archives/2023/linux_networkmanager_cli_and_config.html" target="_blank" rel="noopener noreferrer">Linux NetworkManager 用命令列工具或組態檔設定網路連線 - 石頭閒語</a></li>
-<li></li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="life">Life<a href="https://kywk.github.io/news/2023/09/15/_Surfing/#life" class="hash-link" aria-label="Life的直接連結" title="Life的直接連結">​</a></h3>
-<ul>
-<li><a href="https://www.twreporter.org/a/opinion-the-difficulties-of-preserving-historical-sites-of-injustice" target="_blank" rel="noopener noreferrer">蕭文杰／遊蕩在地方的威權幽靈──台灣不義遺址保存困境 - 報導者 The Reporter</a></li>
-<li><a href="https://free.com.tw/bright-vpn/" target="_blank" rel="noopener noreferrer">Bright VPN 全免費跨區下載最佳夥伴，解鎖全球 40+ 國家連線節點</a></li>
-<li><a href="https://www.adaymag.com/2023/09/04/disappointments-diary.html" target="_blank" rel="noopener noreferrer">Site Unreachable</a></li>
-<li></li>
-</ul>]]></content:encoded>
-            <category>Surf</category>
         </item>
     </channel>
 </rss>
