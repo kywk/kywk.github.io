@@ -1,12 +1,11 @@
 ---
 hide_table_of_contents: true
-id: 150322_mt-peitawu
 title: 聖境．北大武
 tags:
   - Mount
   - Taiwan
 date_created: 2015-03-22 08:10:35
-date_update: 2015-05-06 14:10:35
+date_updated: 2015-05-06 14:10:35
 ---
 
 2015.03.22 聖境．北大武

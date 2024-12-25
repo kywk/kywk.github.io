@@ -1,6 +1,5 @@
 ---
 hide_table_of_contents: true
-id: 130807_mt-nanhu
 title: 南湖大山．初心者
 tags:
   - Mount

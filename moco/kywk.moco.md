@@ -7,87 +7,51 @@ tags:
   - kywk
 hide_table_of_contents: true
 date_created: 2023-01-02
-date_update: 2023-01-02
+date_updated: 2023-01-02
 ---
-
 # Around kywk.moco
 
 ```
-├── 52projects
-│   └── pm
-├── bootcamp
-│   ├── algorithm
-│   └── beginner
-├── techstack
-│   ├── grpc
-│   ├── mssql
-│   ├── mysql
-│   └── openapi
-├── devsecops
-│   ├── cicd
-│   │   └── fastlane
+├── 52 Projects
+│   └── Project Management
+├── BOOTCAMP
+├── TechStack
+│   ├── Database
+│   ├── OpenAPI
+│   └── Test
+├── DevSecOps
+│   ├── CICD
 │   ├── docker
-│   │   └── dockerfile
-│   ├── security
-│   └── sre
-├── golang
-│   ├── gin
+│   ├── GitLab
+│   ├── infra
+│   └── security
+├── Go
 │   ├── go-tour
 │   └── package
-├── java
-│   └── springboot
-├── node.js
-│   ├── express
-│   └── typescript
-├── python
-├── frontend
-│   ├── electron
-│   ├── flutter
-│   ├── reactnative
-│   │   ├── component
-│   │   ├── env-setup
-│   │   └── the-basics
-│   └── web
-├── utilities
-│   ├── cli
-│   └── vscode
-├── machintosh
-├── obsidian
-└── miscellaneous
-    ├── blockchain
-    └── dart
-
+├── JavaScript
+├── Java
+├── Python
+├── Rust
+├── Frontend
+│   ├── Flutter
+│   ├── ReactNative
+│   └── Web
+├── Utilities
+│   ├── Android
+│   ├── CLI
+│   ├── HomeLab
+│   ├── Linux
+│   └── VSCode
+├── Machintosh
+│   └── Hackintosh
+├── Obsidian
+│   ├── docusaurus
+│   ├── notion
+│   └── plugins
+└── Miscellaneous
 ```
-
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
 
 <!--
-
-<Tabs>
-  <TabItem value="go" label="Go" default>
-
-``` go
-```
-  </TabItem>
-  <TabItem value="js" label="JavaScript">
-
-``` js
-```
-  </TabItem>
-  <TabItem value="ts" label="TypeScript">
-
-``` ts
-```
-  </TabItem>
-  <TabItem value="python" label="Python">
-
-``` python
-```
-  </TabItem>
-</Tabs>
-
-
 00 52 Projects
 03 BOOTCAMP
 
@@ -98,10 +62,11 @@ import TabItem from '@theme/TabItem';
    - docker
 
 30 Go
-31 Node.js
+31 JavaScript
    - TypeScript
 32 Java
 33 Python
+34 Rust
 
 50 Frontend
    - Web
@@ -114,7 +79,4 @@ import TabItem from '@theme/TabItem';
 80 Obsidian
 
 99 Miscellaneous
-  - BlockChain
-  - Dart
-
 -->

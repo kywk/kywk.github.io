@@ -4,7 +4,7 @@ description: Open Data Protoco
 tags:
   - OData
 date_created: 2022-09-16T00:00:00+08:00
-cover: https://i.imgur.com/mErPwqL.png
+image: https://i.imgur.com/mErPwqL.png
 ---
 
 OData - the Best Way to REST

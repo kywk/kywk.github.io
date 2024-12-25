@@ -6,7 +6,7 @@ tags:
   - Dropbox
 image: https://i.imgur.com/mErPwqL.png
 date_created: 2022-10-17T00:00:00+08:00
-date_update: 2022-10-17T00:00:00+08:00
+date_updated: 2022-10-17T00:00:00+08:00
 ---
 
 [ChromeOS] Dropbox HowTos

@@ -7,7 +7,7 @@ tags:
   - Japan
   - Hokkaido/Sapporo
 date_created: 2011-05-08 19:48:05
-date_update: 2014-01-05 19:48:05
+date_updated: 2014-01-05 19:48:05
 ---
 
 [札幌] 大通公園

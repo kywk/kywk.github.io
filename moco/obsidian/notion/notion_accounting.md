@@ -7,8 +7,8 @@ tags:
   - kywk
 hide_table_of_contents: false
 date_created: 2024-04-16
-date_update: 2024-04-19
-cover: https://lh3.googleusercontent.com/pw/AL9nZEUA9Ifvd5Z8SXDWkeVB6AC4MPGwnXaL6kBXNPoXwOQQ2jOcZ1Jw_0p8TKK8C3ZX0e67_FOY15eDrm7aaXSQJcKtoUzC80SAQEHsaBy6qS2AqNNs5VUFNXBKm439y_1wkvmDl-PnL8ReojnIumNlEvOXBg=w800-no?authuser=0
+date_updated: 2024-04-19
+image: https://lh3.googleusercontent.com/pw/AL9nZEUA9Ifvd5Z8SXDWkeVB6AC4MPGwnXaL6kBXNPoXwOQQ2jOcZ1Jw_0p8TKK8C3ZX0e67_FOY15eDrm7aaXSQJcKtoUzC80SAQEHsaBy6qS2AqNNs5VUFNXBKm439y_1wkvmDl-PnL8ReojnIumNlEvOXBg=w800-no?authuser=0
 ---
 
 # [Notion] 用 Notion 記帳
@@ -86,14 +86,14 @@ cover: https://lh3.googleusercontent.com/pw/AL9nZEUA9Ifvd5Z8SXDWkeVB6AC4MPGwnXaL
 ### Notion document design
 
 - [x] Database schema & relationship 📅 2024-04-18 ✅ 2024-04-18
-- [ ] 開支 summary dashboard 📅 2024-12-23
-- [ ] 帳戶 summary dashboard 📅 2024-12-24
-- [ ] 年 / 月報表 📅 2024-12-29
+- [ ] 開支 summary dashboard 📅 2025-01-01
+- [ ] 帳戶 summary dashboard 📅 2025-01-05
+- [ ] 年 / 月報表 📅 2025-01-08
 
 ### Notion accounting 文章
 
-- [ ] Keep it simple 📅 2024-12-21
-- [ ]  分離帳戶 / 預算控制
+- [ ] Keep it simple 📅 2024-12-30
+- [ ] 分離帳戶 / 預算控制
 - [ ] Dashboard
 
 ### Next Step

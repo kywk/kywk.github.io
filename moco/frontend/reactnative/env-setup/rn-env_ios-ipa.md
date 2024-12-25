@@ -7,7 +7,7 @@ tags:
   - iOS
 sidebar_position: 2
 date_created: 2022-09-06T00:00:00+08:00
-cover: https://i.imgur.com/mErPwqL.png
+image: https://i.imgur.com/mErPwqL.png
 ---
 
 import Tabs from '@theme/Tabs';

@@ -15,13 +15,13 @@ tags:
 ## TODO
 
 - [x] obs-howto_docusaurus-integrate 📅 2023-09-08 ✅ 2023-09-14
-- [ ] Obsidian Media DB 📅 2024-11-30
+- [ ] Obsidian Media DB 📅 2025-01-31
 	- [ ] Media related template
 	- [ ] DataView for my Media DB
 	- [ ] reopen Netflix
-- [ ] obs-core_properties 🔽 📅 2024-11-30
-- [ ] obs_task-management 🔽 📅 2024-11-25
-- [ ] obs-core_daily-notes 🔽 📅 2024-11-21
+- [ ] obs-core_properties 🔽 📅 2025-01-11
+- [ ] obs_task-management 🔽 📅 2025-01-08
+- [ ] obs-core_daily-notes 🔽 📅 2025-01-01
 - [x] Reorganize Obsidian ✅ 2024-01-04
 
 ## Next Step

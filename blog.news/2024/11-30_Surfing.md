@@ -16,13 +16,15 @@ Surfing 11.16 ~ 11.30
 
 - [Codebuff](https://www.codebuff.com/) [Launch HN: Codebuff (YC F24) – CLI tool that writes code for you | Hacker News](https://news.ycombinator.com/item?id=42078536) 
 - [GitHub - dandavison/delta: A syntax-highlighting pager for git, diff, grep, and blame output](https://github.com/dandavison/delta) [Delta: A syntax-highlighting pager for Git, diff, grep, and blame output | Hacker News](https://news.ycombinator.com/item?id=42091365)
-	- [ ] 初步看起來資訊更清楚的 pager, 週末花時間研究一下. 📅 2024-11-17 
+	- [x] 初步看起來資訊更清楚的 pager, 週末花時間研究一下. 📅 2024-11-17 ✅ 2024-12-22
+		-  和 `diff-so-fancy` 各有千秋, 列入裝機工具之一, 但尚未轉移設定.
+		- [[git-delta]] 
+		- 研究過程發現的 [[ansifilter]] 是好物!
 - [Introduction - Mergiraf](https://mergiraf.org/) [Mergiraf: a syntax-aware merge driver for Git | Hacker News](https://news.ycombinator.com/item?id=42093756)
 - [IronCalc - Open-Source Spreadsheet Engine](https://www.ironcalc.com/)
 	- 看起來比 Google Docs 更 lightweight 的 WebApp, 筆記下來. 臨時有 Excel 需求處理時也許有用.
 	- [ ] 確認是否支援複雜函式運算 📅 2024-11-17 
 - [AWS與Rust基金會攜手驗證Rust標準函式庫的安全性 | iThome](https://www.ithome.com.tw/news/166158)
-- 
 
 ### Tech
 
@@ -39,4 +41,3 @@ Surfing 11.16 ~ 11.30
 - [【橫沙笛縱走】大雪山五星級森林步道 | 橫嶺山 沙蓮山 笛吹山 - Mobile01](https://www.mobile01.com/topicdetail.php?f=628&t=7045521)
 - [適者生存 | iThome](https://www.ithome.com.tw/voice/166157)
 - [為何到澳洲打工度假、加拿大定居後，我才發現出國並非自己的「夢想」？｜Ｗinnie／在加的故事｜換日線](https://crossing.cw.com.tw/article/19453)
-- 

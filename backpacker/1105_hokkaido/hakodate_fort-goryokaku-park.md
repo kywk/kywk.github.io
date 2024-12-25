@@ -7,7 +7,7 @@ tags:
   - Japan
   - Hokkaido/Hakodate
 date_created: 2011-05-10 22:47:16
-date_update: 2014-01-05 22:47:16
+date_updated: 2014-01-05 22:47:16
 ---
 
 [函館] 五稜郭公園

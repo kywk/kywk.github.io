@@ -6,7 +6,7 @@ tags:
   - Backpacker
   - Malaysia/Sabah
 date_created: 2011-05-12 10:24:02
-date_update: 2014-01-06 10:24:02
+date_updated: 2014-01-06 10:24:02
 ---
 
 [沙巴] Handicraft Market 菲律賓手工藝市場

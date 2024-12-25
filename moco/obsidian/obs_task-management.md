@@ -7,7 +7,7 @@ tags:
 sidebar_position: 1
 hide_table_of_contents: true
 date_created: 2023-05-15
-date_update: 2023-05-15
+date_updated: 2023-05-15
 image: https://i.imgur.com/mErPwqL.png
 ---
 

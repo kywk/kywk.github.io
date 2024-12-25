@@ -8,7 +8,7 @@ tags:
   - Hokkaido/Hakodate
   - Cuisine
 date_created: 2011-05-10 22:42:54
-date_update: 2014-01-05 22:42:54
+date_updated: 2014-01-05 22:42:54
 ---
 
 [函館] 幸福小丑漢堡

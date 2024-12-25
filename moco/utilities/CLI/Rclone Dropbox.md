@@ -4,12 +4,12 @@ description: Rclone Dropbox
 tags:
   - Utility/Rclone
   - Dropbox
+sidebar_position: 90
 date_created: 2022-09-22T00:00:00+08:00
-cover: https://i.imgur.com/mErPwqL.png
+image: https://i.imgur.com/mErPwqL.png
 ---
 
-[Rclone] Dropbox 
-================
+# [Rclone] Dropbox
 
 ```
 ## rclone sync

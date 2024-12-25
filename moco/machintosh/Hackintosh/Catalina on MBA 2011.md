@@ -5,7 +5,7 @@ tags:
   - Mac
   - Hackintosh
 date_created: 2021-05-16T11:45:54+08:00
-cover: https://lh3.googleusercontent.com/pw/ACtC-3fVXuzPrSrtx2R10grZCwGi5meFEzFOuBSgtw8JrnWZ4N9G2MOCHLb41djGH8w9KeBv3wazMhPvopYCxvlLDcYrhAhB8JwJC4RYb4WkZo2EWUEXVjMquzbs7S5wYhLbasNhNq1nXFXKqZ6pqD4_qNv-8w=w800-no?authuser=0
+image: https://lh3.googleusercontent.com/pw/ACtC-3fVXuzPrSrtx2R10grZCwGi5meFEzFOuBSgtw8JrnWZ4N9G2MOCHLb41djGH8w9KeBv3wazMhPvopYCxvlLDcYrhAhB8JwJC4RYb4WkZo2EWUEXVjMquzbs7S5wYhLbasNhNq1nXFXKqZ6pqD4_qNv-8w=w800-no?authuser=0
 ---
 
 # [Hackintosh] Macbook Air 2011 安裝 Mojava/Catalina

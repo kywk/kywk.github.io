@@ -7,7 +7,7 @@ tags:
   - kywk
 sidebar_position: 1
 date_created: 2024-08-25
-date_update: 2024-10-25
+date_updated: 2024-10-25
 draft: true
 ---
 
@@ -19,7 +19,7 @@ draft: true
 	- [x] VSCode extensions & flow 📅 2024-06-30 ✅ 2024-07-02
 	    - [x] `[Day 27: 使用 VS Code 來開發 Java - iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天](https://ithelp.ithome.com.tw/articles/10227841) ✅ 2024-02-23
   - [x] IntelliJ IDEA dev flow 📅 2024-07-14 ✅ 2024-07-12
-	  - [ ] NSFW local dev setting 📅 2024-09-22
+	  - [x] NSFW local dev setting 📅 2024-09-22 ✅ 2024-12-13
   - [ ] NS Windows desktop setup 🔽 📅 2024-09-29
 
 ## CLI Toolkits

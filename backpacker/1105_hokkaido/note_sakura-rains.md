@@ -7,7 +7,7 @@ tags:
   - Japan
   - Hokkaido/Hakodate
 date_created: 2011-05-10 23:11:56
-date_update: 2014-01-05 23:11:56
+date_updated: 2014-01-05 23:11:56
 ---
 
 詠嘆．櫻花雨

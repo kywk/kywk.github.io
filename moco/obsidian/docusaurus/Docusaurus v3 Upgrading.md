@@ -1,13 +1,13 @@
 ---
 title: "Note: Upgrade to v3"
 description: Upgrade to docusaurus v3
-cover: https://i.imgur.com/mErPwqL.png
+image: https://i.imgur.com/mErPwqL.png
 tags:
   - Docusaurus
   - HowTo
   - Note
 date_created: 2024-01-10
-date_update: 2024-11-11
+date_updated: 2024-11-11
 ---
 
 # [Docusaurus] Upgrade to v3

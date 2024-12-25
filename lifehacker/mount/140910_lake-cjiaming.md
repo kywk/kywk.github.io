@@ -1,6 +1,5 @@
 ---
 hide_table_of_contents: true
-id: cjia-ming-lake-140910
 title: 野孩子．嘉明一夜情
 tags:
   - Mount

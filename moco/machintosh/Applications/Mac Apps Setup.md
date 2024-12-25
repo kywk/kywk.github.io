@@ -1,17 +1,17 @@
 ---
 title: "Setup: App 安裝紀錄"
 description: kywk's favitote macOS Apps
-cover: https://lh3.googleusercontent.com/pw/AL9nZEUA9Ifvd5Z8SXDWkeVB6AC4MPGwnXaL6kBXNPoXwOQQ2jOcZ1Jw_0p8TKK8C3ZX0e67_FOY15eDrm7aaXSQJcKtoUzC80SAQEHsaBy6qS2AqNNs5VUFNXBKm439y_1wkvmDl-PnL8ReojnIumNlEvOXBg=w800-no?authuser=0
+image: https://lh3.googleusercontent.com/pw/AL9nZEUA9Ifvd5Z8SXDWkeVB6AC4MPGwnXaL6kBXNPoXwOQQ2jOcZ1Jw_0p8TKK8C3ZX0e67_FOY15eDrm7aaXSQJcKtoUzC80SAQEHsaBy6qS2AqNNs5VUFNXBKm439y_1wkvmDl-PnL8ReojnIumNlEvOXBg=w800-no?authuser=0
 tags:
   - Mac
   - DevEnv
   - kywk
 sidebar_position: 1
 date_created: 2022-08-13
-date_update: 2024-05-24
+date_updated: 2024-12-22
 ---
 
-# [Mac] 系統與 Apps 安裝紀錄 2024.May
+# [Mac] 系統與 Apps 安裝紀錄 2024.Dec
 
 重新整理 blog 文章時, 順便整理紀錄一下目前日常使用的 Apps.
 有趣的是, 這段時間來, 越來越少從文章中看到新 App 的介紹, 反倒越來越多是從 Youtube 影片推薦得知的.
@@ -34,6 +34,8 @@ homebrew cask 的支援越來越多, 越來越方便,
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
+可以進一步直接用 [[homebrew-bundle]] 來安裝必要的工具與軟體.
+
 ### Dropbox
 
 我的專案和軟體配置檔案 (.files) 都放在 [**Dropbox**](https://www.dropbox.com/) 上,
@@ -43,6 +45,7 @@ homebrew cask 的支援越來越多, 越來越方便,
 因 Dropbox 配合頻果的新政策更改了檔案位置, 反而讓自己一直習慣的路徑配置不方便使用.
 加上免費仔只能連結三個裝置的限制, 現在改用第三方軟體取代官方桌面工具.
 
+- [[Dotfiles Management]]
 - [[Maestral:Open source Dropbox client, Maestral]]
 
 ```shell
@@ -51,9 +54,7 @@ brew install maestral
 
 ### Google Chrome
 
-雖已漸漸棄用 Chrome, 改用 Safari 和 Edge.
-但在 Chrome 長期使用習慣, 仍無法馬上改變.
-導致先安裝 Chrome 也是安裝系統的必備之一.
+雖已漸漸棄用 Chrome, 改用 Safari 和 Edge. 但在 Chrome 長期使用習慣, 仍無法馬上改變. 導致先安裝 Chrome 也是安裝系統的必備之一.
 
 - Microsoft Edge,
 - Arc

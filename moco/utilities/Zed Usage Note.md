@@ -7,7 +7,7 @@ tags:
   - Zed
 hide_table_of_contents: true
 date_created: 2024-08-25
-date_update: 2024-08-25
+date_updated: 2024-08-25
 ---
 
 # [Zed] 使用與設定筆記

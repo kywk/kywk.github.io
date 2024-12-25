@@ -5,8 +5,8 @@ tags:
   - OpenAPI
 sidebar_position: 60
 date_created: 2023-03-01
-date_update: 2023-03-01
-cover: https://i.imgur.com/mErPwqL.png
+date_updated: 2023-03-01
+image: https://i.imgur.com/mErPwqL.png
 ---
 
 Swagger Editor

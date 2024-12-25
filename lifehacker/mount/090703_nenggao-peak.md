@@ -1,6 +1,5 @@
 ---
 hide_table_of_contents: true
-id: 090703_nenggao-peak
 title: 十年回憶．能高主
 tags:
   - Mount

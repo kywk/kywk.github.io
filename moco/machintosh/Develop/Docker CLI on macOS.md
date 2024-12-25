@@ -7,7 +7,7 @@ tags:
   - Mac
 sidebar_label: Docker CLI
 date_created: 2024-04-18
-date_update: 2024-05-24
+date_updated: 2024-05-24
 ---
 
 # [Docker] Use docker CLI w/o Docker Desktop on macOS

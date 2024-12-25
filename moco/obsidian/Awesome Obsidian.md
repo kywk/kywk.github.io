@@ -9,7 +9,7 @@ tags:
 sidebar_position: 0
 hide_table_of_contents: true
 date_created: 2023-01-23
-date_update: 2024-05-24
+date_updated: 2024-05-24
 ---
 
 # Awesome Obsidian Resource

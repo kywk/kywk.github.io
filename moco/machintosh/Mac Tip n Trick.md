@@ -8,7 +8,7 @@ tags:
 sidebar_position: 5
 hide_table_of_contents: true
 date_created: 2023-01-02
-date_update: 2024-08-13
+date_updated: 2024-08-13
 ---
 
 # [Mac] macOS 實用小技巧與工具
