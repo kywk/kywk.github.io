@@ -4,10 +4,24 @@
         <title>kywk.me Blog</title>
         <link>https://kywk.github.io/news/</link>
         <description>kywk.me Blog</description>
-        <lastBuildDate>Tue, 31 Dec 2024 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 03 Jan 2025 03:22:11 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-TW</language>
+        <item>
+            <title><![CDATA[News Feed]]></title>
+            <link>https://kywk.github.io/news/News Feed/</link>
+            <guid>https://kywk.github.io/news/News Feed/</guid>
+            <pubDate>Fri, 03 Jan 2025 03:22:11 GMT</pubDate>
+            <description><![CDATA[This is News Clippins]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="news--discus">news &amp; discus<a href="https://kywk.github.io/news/News%20Feed/#news--discus" class="hash-link" aria-label="news &amp; discus的直接連結" title="news &amp; discus的直接連結">​</a></h2>
+<ul>
+<li><a href="https://news.ycombinator.com/" target="_blank" rel="noopener noreferrer">Hacker News</a></li>
+<li><a href="https://dev.to/" target="_blank" rel="noopener noreferrer">DEV Community 👩‍💻👨‍💻</a></li>
+<li><a href="https://iter01.com/" target="_blank" rel="noopener noreferrer">IT人</a></li>
+<li><a href="https://www.gushiciku.cn/pl/" target="_blank" rel="noopener noreferrer">MdEditor</a></li>
+</ul>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Surf 12.01 ~ 12.31]]></title>
             <link>https://kywk.github.io/news/2024/12/31/_Surfing/</link>
@@ -34,6 +48,11 @@
 <li>效能實在很快的 UI Lib, 看來未來可能是 rust/wasm 的天下.</li>
 </ul>
 </li>
+<li><a href="https://www.egui.rs/" target="_blank" rel="noopener noreferrer">egui – An immediate mode GUI written in Rust</a>
+<ul>
+<li><a href="https://news.ycombinator.com/item?id=42512636" target="_blank" rel="noopener noreferrer">Egui – An immediate mode GUI written in Rust | Hacker News</a></li>
+</ul>
+</li>
 <li><a href="https://blog.gslin.org/archives/2024/12/21/12146/puppet-%e8%a6%81-fork-%e4%ba%86/" target="_blank" rel="noopener noreferrer">Puppet 要 fork 了 – Gea-Suan Lin's BLOG</a>
 <ul>
 <li><a href="https://blog.gslin.org/archives/2022/04/12/10655/perforce-%e8%b2%b7%e4%b8%8b-puppet/" target="_blank" rel="noopener noreferrer">Perforce 買下 Puppet – Gea-Suan Lin's BLOG</a></li>
@@ -56,7 +75,36 @@
 <li>在金融業工作後, 對於 CVE 資訊會多花一些時間了解...</li>
 </ul>
 </li>
-<li></li>
+<li><a href="https://ghostty.org/download" target="_blank" rel="noopener noreferrer">Download Ghostty</a>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li><a href="https://news.ycombinator.com/item?id=42517447" target="_blank" rel="noopener noreferrer">Ghostty 1.0 | Hacker News</a></li>
+<li>一個發表前已略有名氣的 terminal emulator.</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> 和 wezterm, kitty, tabby 一起比較玩玩. 📅 2025-01-05</li>
+</ul>
+</li>
+<li><a href="https://github.com/siyuan-note/siyuan" target="_blank" rel="noopener noreferrer">GitHub - siyuan-note/siyuan: A privacy-first, self-hosted, fully open source personal knowledge management software, written in typescript and golang.</a>
+<ul>
+<li><a href="https://news.ycombinator.com/item?id=42512713" target="_blank" rel="noopener noreferrer">Siyuan: Privacy-first, self-hosted personal knowledge management software | Hacker News</a></li>
+<li><a href="https://github.com/Dullage/flatnotes" target="_blank" rel="noopener noreferrer">GitHub - dullage/flatnotes: A self-hosted, database-less note taking web app that utilises a flat folder of markdown files for storage.</a></li>
+</ul>
+</li>
+<li><a href="https://avi.im/blag/2024/sqlite-facts/" target="_blank" rel="noopener noreferrer">Collection of insane and fun facts about SQLite - blag</a>
+<ul>
+<li>最有趣的觀察是 SQLite 和 Redis 誰比較快 !?
+<ul>
+<li>某些(且不少)需求下, SQLite 比 Redis 快.</li>
+<li>網路延遲與 (de)serialisation overhead 可能比想像中大.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://github.com/lexiforest/curl-impersonate" target="_blank" rel="noopener noreferrer">GitHub - lexiforest/curl-impersonate: An active fork of curl-impersonate with more versions and build targets.</a>
+<ul>
+<li><a href="https://news.ycombinator.com/item?id=42547820" target="_blank" rel="noopener noreferrer">Curl-Impersonate | Hacker News</a></li>
+<li><a href="https://blog.gslin.org/archives/2024/12/31/12168/%e5%af%a6%e4%bd%9c%e6%9b%b4%e5%a4%9a%e5%8a%9f%e8%83%bd%e7%9a%84-curl-impersonate-fork/" target="_blank" rel="noopener noreferrer">實作更多功能的 curl-impersonate fork – Gea-Suan Lin's BLOG</a></li>
+</ul>
+</li>
+<li><a href="https://www.ithome.com.tw/news/166609" target="_blank" rel="noopener noreferrer">國泰金控雲端資料湖倉平臺架構大公開！自行研發ETL工具、ML平臺也上雲 | iThome</a></li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="tech">Tech<a href="https://kywk.github.io/news/2024/12/31/_Surfing/#tech" class="hash-link" aria-label="Tech的直接連結" title="Tech的直接連結">​</a></h3>
 <ul>
@@ -84,7 +132,9 @@
 <li>希望永遠用不上, 但是個值得紀錄的文章.</li>
 </ul>
 </li>
-<li></li>
+<li><a href="https://igorstechnoclub.com/server-sent-events-sse-are-underrated/" target="_blank" rel="noopener noreferrer">Server-Sent Events (SSE) Are Underrated | Igor's Techno Club</a></li>
+<li><a href="https://www.jmeiners.com/lc3-vm/" target="_blank" rel="noopener noreferrer">Write your Own Virtual Machine</a></li>
+<li><a href="https://blog.gslin.org/archives/2024/12/31/12171/aws-%e8%b7%a8-az-%e6%99%82%e7%9a%84%e6%b5%81%e9%87%8f%e6%88%90%e6%9c%ac%e5%95%8f%e9%a1%8c/" target="_blank" rel="noopener noreferrer">AWS 跨 AZ 時的流量成本問題 – Gea-Suan Lin's BLOG</a></li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="life">Life<a href="https://kywk.github.io/news/2024/12/31/_Surfing/#life" class="hash-link" aria-label="Life的直接連結" title="Life的直接連結">​</a></h3>
 <ul>
@@ -94,24 +144,11 @@
 <li><a href="https://www.adaymag.com/2024/12/20/mohamed-aziz.html" target="_blank" rel="noopener noreferrer">在識字率曾低到 32% 的國家，堅持賣書超過半世紀，73 歲「一人書店」老闆的故事讓我們更珍惜所有 - A Day Magazine</a></li>
 <li><a href="https://www.mobile01.com/topicdetail.php?f=801&amp;t=7059708" target="_blank" rel="noopener noreferrer">2024年7-11信用卡攻略！7-11可以刷卡嗎？8張神卡推薦！ - Mobile01</a></li>
 <li><a href="https://www.adaymag.com/2024/12/25/lamplighter.html" target="_blank" rel="noopener noreferrer">《小王子》裡的角色真實存在：捷克布拉格出現神秘「點燈人」，為冰冷的科技時代帶來溫暖 - A Day Magazine</a></li>
-<li></li>
+<li><a href="https://www.adaymag.com/2024/12/30/quiet-vacationing.html" target="_blank" rel="noopener noreferrer">上班時間去咖啡廳放個小假，懂得「安靜度假」後，工作效率更高了 - A Day Magazine</a></li>
+<li><a href="https://crossing.cw.com.tw/article/19575" target="_blank" rel="noopener noreferrer">斯洛伐克「小國」大哲學：這裡或許「平凡」，但我們對生活很滿意｜彭孟嫻 Jessica／海外法律人的生活觀點｜換日線</a></li>
 </ul>]]></content:encoded>
             <category>Surf</category>
             <category>2024/12</category>
-        </item>
-        <item>
-            <title><![CDATA[News Feed]]></title>
-            <link>https://kywk.github.io/news/News Feed/</link>
-            <guid>https://kywk.github.io/news/News Feed/</guid>
-            <pubDate>Wed, 25 Dec 2024 23:32:47 GMT</pubDate>
-            <description><![CDATA[This is News Clippins]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="news--discus">news &amp; discus<a href="https://kywk.github.io/news/News%20Feed/#news--discus" class="hash-link" aria-label="news &amp; discus的直接連結" title="news &amp; discus的直接連結">​</a></h2>
-<ul>
-<li><a href="https://news.ycombinator.com/" target="_blank" rel="noopener noreferrer">Hacker News</a></li>
-<li><a href="https://dev.to/" target="_blank" rel="noopener noreferrer">DEV Community 👩‍💻👨‍💻</a></li>
-<li><a href="https://iter01.com/" target="_blank" rel="noopener noreferrer">IT人</a></li>
-<li><a href="https://www.gushiciku.cn/pl/" target="_blank" rel="noopener noreferrer">MdEditor</a></li>
-</ul>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[Surf 11.16 ~ 11.30]]></title>

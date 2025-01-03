@@ -28,8 +28,8 @@
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="nanshan">NANSHAN<a href="https://kywk.github.io/life/2025/01/28/Life-Keeping/#nanshan" class="hash-link" aria-label="NANSHAN的直接連結" title="NANSHAN的直接連結">​</a></h2>
 <ul class="contains-task-list containsTaskList_mC6p">
 <li class="task-list-item"><input type="checkbox" disabled=""> Outlook</li>
-<li class="task-list-item"><input type="checkbox" disabled=""> docusaurus</li>
 <li class="task-list-item"><input type="checkbox" disabled=""> Desktop</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> docusaurus</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="obsidian">Obsidian<a href="https://kywk.github.io/life/2025/01/28/Life-Keeping/#obsidian" class="hash-link" aria-label="Obsidian的直接連結" title="Obsidian的直接連結">​</a></h2>
 <ul class="contains-task-list containsTaskList_mC6p">
@@ -122,6 +122,24 @@
             <category>LifeHack</category>
         </item>
         <item>
+            <title><![CDATA[Library]]></title>
+            <link>https://kywk.github.io/life/2024/12/28/Library/</link>
+            <guid>https://kywk.github.io/life/2024/12/28/Library/</guid>
+            <pubDate>Sat, 28 Dec 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[意外回到多年前生活的一天...]]></description>
+            <content:encoded><![CDATA[<p>意外回到多年前生活的一天...</p>
+<p>清晨抵達高雄, 想找個地方歇息, 腦中浮出 QTime, 找到了高雄僅存的漫畫王.
+不像台北 QTime 重新翻修那麼明亮舒適, 這漫畫王仍保留學生時代的昏暗感.</p>
+<p>逐漸老化後, 這樣的經驗難得,
+在濃濃懷舊味(物理上)中昏睡...</p>
+<p>醒來/打點/吃完南豐後, 閒晃到高雄總圖.<br>
+沒有特別行程安排, 不想大中午四處跑情境下, 挑了本書, 坐下來閱讀.</p>
+<p>逐漸老花後, 這樣的經驗難得,
+在文字迷宮中, 慢慢尋覓出路...</p>]]></content:encoded>
+            <category>kywk</category>
+            <category>LifeHack</category>
+        </item>
+        <item>
             <title><![CDATA[Happy Holiday]]></title>
             <link>https://kywk.github.io/life/2024/12/25/Happy-Holiday/</link>
             <guid>https://kywk.github.io/life/2024/12/25/Happy-Holiday/</guid>
@@ -162,7 +180,7 @@
 <li>terminal/console 設定
 <ul>
 <li>本步驟所有軟體與
-<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">brew install iterm2 fzf</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">brew install font-fira-code-nerd-font font-fira-code font-fira-mono font-fira-sans</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">brew install font-source-code-pro</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">brew install font-hack-nerd-font</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="複製程式碼至�剪貼簿" title="複製" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">brew install iterm2 fzf</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">brew install font-fira-code-nerd-font font-fira-code font-fira-mono font-fira-sans</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">brew install font-source-code-pro</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">brew install font-hack-nerd-font</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="複製程式碼至剪貼簿" title="複製" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 </li>
 <li>打開 iTerm2, 匯入設定與色卡後重啟, 進行 Shell 設定
 <div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">ln -sfF Dropbox/config/dotfiles .files</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">ln -sfF .files/zsh/mac.zshrc .zshrc</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">ln -sfF .files/zsh/mac.zprofile .zprofile</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">mkdir .local</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">touch .local/develop.sh</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">touch .local/local.sh</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="複製程式碼至剪貼簿" title="複製" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
@@ -639,27 +657,6 @@ Dropbox 資料夾結構越來越精簡, 有種莫名成就感.</p>]]></content:e
 <p>應該是跟新工作就職滿兩個月的突發感觸吧, 才會不知道該放生活還是工作筆記...</p>
 <p>紀錄一下.</p>]]></content:encoded>
             <category>Life</category>
-        </item>
-        <item>
-            <title><![CDATA[Open Water Certificated]]></title>
-            <link>https://kywk.github.io/life/2022/07/08/openwater-certificated/</link>
-            <guid>https://kywk.github.io/life/2022/07/08/openwater-certificated/</guid>
-            <pubDate>Fri, 08 Jul 2022 00:00:00 GMT</pubDate>
-            <description><![CDATA[2022.07.08 Open Water Certificated]]></description>
-            <content:encoded><![CDATA[<p><img decoding="async" loading="lazy" src="https://lh3.googleusercontent.com/pw/AM-JKLXVGm6wXMmOSTcG-I1iDeUSzLKJezwmGta41WG_ICAMZoNXYjx4E1zZIGv33vWiKruMQIya8A8VMOkQf4_xeWxbFjnJAjVhrL48rmWpSWRLlfjPjLYXAvsjnlM3frJkGizKCJ8XtMQjzMTxET4BZpEiYg=w800-no?authuser=0" alt="" class="img_ev3q"></p>
-<p>雖然不是太難獲得, 雖然還有相當多要精進的地方.<br>
-不過還是紀錄一下這天, PADI Open Water Certificated!</p>
-<p><img decoding="async" loading="lazy" src="https://lh3.googleusercontent.com/pw/AM-JKLVWIsUj3nArlYVe6LrXq830iM1oRT2-7HIgTDffGyR0aCGw5MijS7xMAbrFCMqCVM2GC8oREgzRXR0uRnt9LRqoSkrbFJVikw6cGMkJGxDR0LgX9w8Kukw0HSW2PAfMvul0mTf2zG6Rc9KeIe6VZR72xw=w800-no?authuser=0" alt="" class="img_ev3q"></p>
-<p>接下來的功課是:</p>
-<ol>
-<li>運動 / 減重 / 增進心肺功能:
-近來日常活動上都有些容易喘息需要大口呼吸的情況,
-陸地上頂多就流汗, 水面下則是會大量消耗氣瓶殘氣. 需要好好加強.</li>
-<li>動作的本能反應與恐慌的控制:
-水面下遇到不如預期的時候太容易緊張恐慌, 進而導致呼吸過度等行為.
-要多多練習水面下活動, 讓肌肉養成記憶.</li>
-</ol>]]></content:encoded>
-            <category>Dive</category>
         </item>
     </channel>
 </rss>
