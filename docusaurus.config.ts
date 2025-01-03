@@ -1,6 +1,6 @@
-import { themes as prismThemes } from 'prism-react-renderer';
-import type { Config } from '@docusaurus/types';
-import type * as Preset from '@docusaurus/preset-classic';
+import { themes as prismThemes } from "prism-react-renderer";
+import type { Config } from "@docusaurus/types";
+import type * as Preset from "@docusaurus/preset-classic";
 
 const path = require("path");
 const remarkWikiLink = require("remark-wiki-link");
@@ -71,15 +71,15 @@ function toDocsUrl(docsDir, permalink) {
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'kywk.me',
-  tagline: 'All around kywk',
-  favicon: 'img/favicon.ico',
+  title: "kywk.me",
+  tagline: "All around kywk",
+  favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: 'https://kywk.github.io',
+  url: "https://kywk.github.io",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: "/",
   trailingSlash: true,
 
   // GitHub pages deployment config.
@@ -88,8 +88,8 @@ const config: Config = {
   projectName: "kywk.github.io", // Usually your repo name.
   deploymentBranch: "gh-pages",
 
-  onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: "warn",
+  onBrokenMarkdownLinks: "warn",
 
   markdown: {
     format: "detect",
@@ -100,8 +100,8 @@ const config: Config = {
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'zh-TW',
-    locales: ['zh-TW'],
+    defaultLocale: "zh-TW",
+    locales: ["zh-TW"],
   },
 
   future: {
@@ -117,10 +117,10 @@ const config: Config = {
 
   presets: [
     [
-      'classic',
+      "classic",
       {
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: "./src/css/custom.css",
         },
       } satisfies Preset.Options,
     ],
@@ -203,6 +203,8 @@ const config: Config = {
         routeBasePath: "news",
         path: "blog.news",
         showReadingTime: true,
+        blogSidebarTitle: "All posts",
+        blogSidebarCount: "ALL",
       },
     ],
     [
@@ -212,22 +214,22 @@ const config: Config = {
         routeBasePath: "life",
         path: "blog.life",
         showReadingTime: true,
+        blogSidebarTitle: "All posts",
+        blogSidebarCount: "ALL",
       },
     ],
   ],
 
-  themes: [
-    "@docusaurus/theme-mermaid"
-  ],
+  themes: ["@docusaurus/theme-mermaid"],
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: "img/docusaurus-social-card.jpg",
     navbar: {
-      title: 'kywk.me',
+      title: "kywk.me",
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: "My Site Logo",
+        src: "img/logo.svg",
       },
       items: [
         {
@@ -246,7 +248,7 @@ const config: Config = {
           to: "/moco/kywk.moco",
           label: "moco",
           position: "left",
-          activeBaseRegex: `/moco/`,
+          activeBaseRegex: "/moco/",
         },
         { to: "/news", label: "news", position: "left" },
         { to: "/life", label: "life", position: "left" },
@@ -254,6 +256,8 @@ const config: Config = {
           href: "https://github.com/kywk/",
           label: "GitHub",
           position: "right",
+          blogSidebarTitle: "All posts",
+          blogSidebarCount: "ALL",
         },
       ],
     },

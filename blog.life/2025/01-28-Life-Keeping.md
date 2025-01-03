@@ -24,8 +24,8 @@ image: https://lh3.googleusercontent.com/pw/ACtC-3dctjoKSszhdu7OFFUmtd-eRmtxUAIx
 
 ## NANSHAN
 - [ ] Outlook
-- [ ] docusaurus
 - [ ] Desktop
+- [ ] docusaurus
 
 ## Obsidian
 - [ ] Obsidian Vault

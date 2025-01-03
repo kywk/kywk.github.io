@@ -30,8 +30,11 @@ date_updated: 2024-05-24
 
 ## Trick and Tip
 
-[Zettelkasten](https://zettelkasten.de/)
-[Zettlr](https://www.zettlr.com), [Joplin](#), [Trilium Notes](https://github.com/zadam/trilium)
+## Voices
+
+- [Is Obsidian Really Worth the Learning Curve for Note-Taking?](https://www.makeuseof.com/obsidian-learning-curve/)
+- [Zettelkasten](https://zettelkasten.de/)
+  - [Zettlr](https://www.zettlr.com), [Joplin](#), [Trilium Notes](https://github.com/zadam/trilium)
 
 ## See Also
 
