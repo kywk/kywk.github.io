@@ -4,10 +4,60 @@
         <title>kywk.me Blog</title>
         <link>https://kywk.github.io/life/</link>
         <description>kywk.me Blog</description>
-        <lastBuildDate>Tue, 28 Jan 2025 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 25 Dec 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-TW</language>
+        <item>
+            <title><![CDATA[Happy Holiday]]></title>
+            <link>https://kywk.github.io/life/2025/12/25/Happy-Holiday/</link>
+            <guid>https://kywk.github.io/life/2025/12/25/Happy-Holiday/</guid>
+            <pubDate>Thu, 25 Dec 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[- MUJI 無印良品推出「紅杉木聖誕木塊」，好看又自帶香氣 - The Femin]]></description>
+            <content:encoded><![CDATA[<ul>
+<li><a href="https://thefemin.com/2024/11/muji-red-cedar-christmas-wood-block/" target="_blank" rel="noopener noreferrer">MUJI 無印良品推出「紅杉木聖誕木塊」，好看又自帶香氣 - The Femin</a></li>
+<li><a href="https://thefemin.com/2024/11/muji-holiday-edition-diffuser/" target="_blank" rel="noopener noreferrer">聖誕氛圍就靠這些可愛的小東西，MUJI 這款「玻璃擴香紙組」實在很討喜 - The Femin</a></li>
+</ul>]]></content:encoded>
+            <category>kywk</category>
+            <category>LifeHack</category>
+        </item>
+        <item>
+            <title><![CDATA[Lunar-New-Year]]></title>
+            <link>https://kywk.github.io/life/2025/01/29/Lunar-New-Year/</link>
+            <guid>https://kywk.github.io/life/2025/01/29/Lunar-New-Year/</guid>
+            <pubDate>Wed, 29 Jan 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[年前大的掃除算是徹底整理了林口家一番, 確實有, 「對！早該如此！」的深深感受.]]></description>
+            <content:encoded><![CDATA[<p>年前大的掃除算是徹底整理了林口家一番, 確實有, 「對！早該如此！」的深深感受.</p>
+<p>利用農曆年間繼續推進生活:</p>
+<ul>
+<li>整理些歷史生活軌跡</li>
+<li>完成些 weekend project</li>
+<li>開始些新生活運動</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="todo">TODO<a href="https://kywk.github.io/life/2025/01/29/Lunar-New-Year/#todo" class="hash-link" aria-label="TODO的直接連結" title="TODO的直接連結">​</a></h2>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> 01/24,25 白雪村 📅 2025-01-25</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> 01/30 阿里山日出 📅 2025-01-30</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> 月亮樹拼圖</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> 旅遊畫框
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> 交通票券</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> 景點票券</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> 酒標</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> 外幣零錢相框</li>
+</ul>
+</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> 文件統整
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> 沙鹿家開支記帳</li>
+</ul>
+</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> [[Obsidian as PKM]] refine</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="see-also">See Also<a href="https://kywk.github.io/life/2025/01/29/Lunar-New-Year/#see-also" class="hash-link" aria-label="See Also的直接連結" title="See Also的直接連結">​</a></h2>]]></content:encoded>
+            <category>kywk</category>
+            <category>LifeHack</category>
+        </item>
         <item>
             <title><![CDATA[Life Keeping]]></title>
             <link>https://kywk.github.io/life/2025/01/28/Life-Keeping/</link>
@@ -20,23 +70,28 @@
 <p>先大破, 而後大立.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="house-keeping">House Keeping<a href="https://kywk.github.io/life/2025/01/28/Life-Keeping/#house-keeping" class="hash-link" aria-label="House Keeping的直接連結" title="House Keeping的直接連結">​</a></h2>
 <ul class="contains-task-list containsTaskList_mC6p">
-<li class="task-list-item"><input type="checkbox" disabled=""> Living Room</li>
-<li class="task-list-item"><input type="checkbox" disabled=""> Kitchen</li>
-<li class="task-list-item"><input type="checkbox" disabled=""> Bad Room</li>
-<li class="task-list-item"><input type="checkbox" disabled=""> Guest Room</li>
+<li class="task-list-item"><input type="checkbox" disabled="" checked=""> Living Room 📅 2025-01-12 ✅ 2025-01-13</li>
+<li class="task-list-item"><input type="checkbox" disabled="" checked=""> Kitchen 📅 2025-01-12 ✅ 2025-01-13</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> Bad Room 📅 2025-01-15</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> Guest Room  📅 2025-01-19</li>
+<li class="task-list-item"><input type="checkbox" disabled="" checked=""> 前後陽台 ✅ 2025-01-06</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="nanshan">NANSHAN<a href="https://kywk.github.io/life/2025/01/28/Life-Keeping/#nanshan" class="hash-link" aria-label="NANSHAN的直接連結" title="NANSHAN的直接連結">​</a></h2>
 <ul class="contains-task-list containsTaskList_mC6p">
-<li class="task-list-item"><input type="checkbox" disabled=""> Outlook</li>
-<li class="task-list-item"><input type="checkbox" disabled=""> Desktop</li>
-<li class="task-list-item"><input type="checkbox" disabled=""> docusaurus</li>
+<li class="task-list-item"><input type="checkbox" disabled="" checked=""> Outlook ✅ 2025-01-09</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> Desktop 📅 2025-01-17</li>
+<li class="task-list-item"><input type="checkbox" disabled="" checked=""> docusaurus ✅ 2025-01-07</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="obsidian">Obsidian<a href="https://kywk.github.io/life/2025/01/28/Life-Keeping/#obsidian" class="hash-link" aria-label="Obsidian的直接連結" title="Obsidian的直接連結">​</a></h2>
 <ul class="contains-task-list containsTaskList_mC6p">
 <li class="task-list-item"><input type="checkbox" disabled=""> Obsidian Vault
 <ul class="contains-task-list containsTaskList_mC6p">
 <li class="task-list-item"><input type="checkbox" disabled=""> TODOs</li>
-<li class="task-list-item"><input type="checkbox" disabled=""> docusaurus</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> docusaurus
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> upgrade to 3.7.x</li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="task-list-item"><input type="checkbox" disabled=""> Document Reorganize</li>
@@ -50,6 +105,47 @@
 </ul>
 </li>
 <li class="task-list-item"><input type="checkbox" disabled=""> Camping</li>
+</ul>]]></content:encoded>
+            <category>kywk</category>
+            <category>LifeHack</category>
+        </item>
+        <item>
+            <title><![CDATA[Six-Habbits]]></title>
+            <link>https://kywk.github.io/life/2025/01/06/Six-Habbits/</link>
+            <guid>https://kywk.github.io/life/2025/01/06/Six-Habbits/</guid>
+            <pubDate>Mon, 06 Jan 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Apple Podcast：《通勤十分鐘 On The Way To Work》〈S5EP484 新年新希望之如何養成好習慣讓2025年成為人〉]]></description>
+            <content:encoded><![CDATA[<p><a href="https://podcasts.apple.com/tw/podcast/id1515636224?i=1000682800270" target="_blank" rel="noopener noreferrer">Apple Podcast：《通勤十分鐘 On The Way To Work》〈S5EP484 新年新希望之如何養成好習慣讓2025年成為人〉</a></p>
+<ul>
+<li>設定季度目標
+<ul>
+<li>三到四個目標</li>
+</ul>
+</li>
+<li>每週回顧</li>
+<li>晨間宣言</li>
+<li>專注日誌</li>
+<li>社交活動</li>
+<li>多模態多工作處理
+<ul>
+<li>同時進行高專注度和低專注度的處理, 有效利用時間</li>
+</ul>
+</li>
+</ul>
+<p>花點時間認真感謝自己, 善待自己.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="see-also">See Also<a href="https://kywk.github.io/life/2025/01/06/Six-Habbits/#see-also" class="hash-link" aria-label="See Also的直接連結" title="See Also的直接連結">​</a></h2>
+<ul>
+<li><a href="https://tw.voicetube.com/videos/167396" target="_blank" rel="noopener noreferrer">想要變成「聰明人」就跟著 Psych2Go 養成這六個習慣！(6 Secret Habits Smart People Do Every Day) - VoiceTube 看影片學英語</a></li>
+<li><a href="https://www.techbang.com/posts/120476-studies-have-found-that-exercise-can-lead-to-short-term" target="_blank" rel="noopener noreferrer">研究發現運動可以帶來短期認知能力提升，讓你聰明到第二天 | T客邦</a>
+<ul>
+<li>保持運動習慣, 各方面皆然.</li>
+</ul>
+</li>
+<li><a href="https://www.adaymag.com/2025/01/03/tips-to-increase-amount-of-books-you-read.html" target="_blank" rel="noopener noreferrer">每天看書 6 分鐘能減輕 68% 的壓力：想無痛增加閱讀量，這 5 個小技巧試過真的有用 - A Day Magazine</a>
+<ul>
+<li>運動/閱讀!</li>
+</ul>
+</li>
 </ul>]]></content:encoded>
             <category>kywk</category>
             <category>LifeHack</category>
@@ -92,13 +188,13 @@
 <ul>
 <li>LeetCode Weekly Contest</li>
 <li>A Tokaido/Patagonia a week: A introduction to one trail path of Tokaido/Patagonia</li>
-<li>兩本書、兩篇心得</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="monthly">Monthly<a href="https://kywk.github.io/life/2025/01/01/Now-or-Never/#monthly" class="hash-link" aria-label="Monthly的直接連結" title="Monthly的直接連結">​</a></h3>
 <ul>
 <li>(Biweekly) Cook a meal. Include salad, starter, main-dish, dessert... etc</li>
 <li>(Biweekly) Photography: finish one set of previous works</li>
-<li>Announce a minion prject</li>
+<li>兩本書、兩篇心得</li>
+<li>Announce a minion project</li>
 <li>Finish a 42k marathon or more than 42k self trainning</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="yearly">Yearly<a href="https://kywk.github.io/life/2025/01/01/Now-or-Never/#yearly" class="hash-link" aria-label="Yearly的直接連結" title="Yearly的直接連結">​</a></h3>
@@ -117,7 +213,13 @@
 </ul>
 </li>
 </ul>
-<p>仍貪心。公開目標，騎虎難下。</p>]]></content:encoded>
+<p>仍貪心。公開目標，騎虎難下。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="see-also">See Also<a href="https://kywk.github.io/life/2025/01/01/Now-or-Never/#see-also" class="hash-link" aria-label="See Also的直接連結" title="See Also的直接連結">​</a></h2>
+<p>2025 的另一個目標, 年底來個對得起自己的回顧.</p>
+<ul>
+<li><a href="https://www.evanlin.com/summary-2024/" target="_blank" rel="noopener noreferrer">[年終回顧] 2024 年的回顧與展望</a></li>
+<li>[[blog.life/2025/12-25-Happy-Holiday|12-25-Happy-Holiday]]</li>
+</ul>]]></content:encoded>
             <category>kywk</category>
             <category>LifeHack</category>
         </item>
@@ -180,7 +282,7 @@
 <li>terminal/console 設定
 <ul>
 <li>本步驟所有軟體與
-<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">brew install iterm2 fzf</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">brew install font-fira-code-nerd-font font-fira-code font-fira-mono font-fira-sans</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">brew install font-source-code-pro</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">brew install font-hack-nerd-font</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="複製程式碼至剪貼簿" title="複製" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">brew install iterm2 fzf</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">brew install font-fira-code-nerd-font font-fira-code font-fira-mono font-fira-sans</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">brew install font-source-code-pro</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">brew install font-hack-nerd-font</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="複製程式��碼至剪貼簿" title="複製" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 </li>
 <li>打開 iTerm2, 匯入設定與色卡後重啟, 進行 Shell 設定
 <div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">ln -sfF Dropbox/config/dotfiles .files</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">ln -sfF .files/zsh/mac.zshrc .zshrc</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">ln -sfF .files/zsh/mac.zprofile .zprofile</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">mkdir .local</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">touch .local/develop.sh</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">touch .local/local.sh</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="複製程式碼至剪貼簿" title="複製" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
@@ -603,60 +705,6 @@ Curry 竟用如此石破天驚的表現, 撐起了勇士隊.</p>
 後來因故需要常態使用該筆電, 小問題不斷, 擾民.</p>
 <p>工作上還是需要穩定性和市佔都比較高的系統, 暫時回歸 ubuntu 懷抱, 改天再折騰了.</p>]]></content:encoded>
             <category>Linux</category>
-        </item>
-        <item>
-            <title><![CDATA[Old Fashing RD style]]></title>
-            <link>https://kywk.github.io/life/2022/11/02/old-fashion-rd/</link>
-            <guid>https://kywk.github.io/life/2022/11/02/old-fashion-rd/</guid>
-            <pubDate>Wed, 02 Nov 2022 00:00:00 GMT</pubDate>
-            <description><![CDATA[2022.11.02 Develop in old fashion]]></description>
-            <content:encoded><![CDATA[<p>Chrome 推薦了這篇: <a href="https://dev.to/ruppysuppy/7-shorthand-optimization-tricks-every-javascript-developer-should-know-4fj5" target="_blank" rel="noopener noreferrer">7 Shorthand Optimization Tricks every JavaScript Developer Should Know 😎 - DEV Community 👩‍💻👨‍💻</a>.
-如何利用 JS 語法特性, 精簡程式碼.
-大多值得參考, 尤其是文章底下的回應討論, 有更多可以偷得技巧.</p>
-<p>特別引起注意的是 <strong>For-of and For-in loops</strong> 這章節,
-<code>for-of</code> 確實能程式看起來精簡易讀, 但會不會有效能問題?
-查了幾篇文章和討論, 雖然最終結論偏向於各有利弊.
-不過多數情況下, <code>for-of</code> 效能是和 <code>for (let i = 0; ....)</code> 老派宣告方法不相上下的.</p>
-<p>接手的專案前人的習慣對陣列元素的處理會大量利用 .map / .reduce / .filter / ... 等方式.
-也許慢慢將這些程式碼改成 <code>for-of</code> 的宣告, 也可能改成最最傳統的 <code>for (let i = 0; ....)</code>.</p>
-<p>老派開發, 除了多數情況下都是效能指標外, 更無須擔心新語法平台支援度問題.</p>
-<p>敬, 永遠年輕的老靈魂.</p>
-<p>Ref. <a href="https://leanylabs.com/blog/js-forEach-map-reduce-vs-for-for_of/" target="_blank" rel="noopener noreferrer">Performance of JavaScript .forEach, .map and .reduce vs for and for..of</a><br>
-Ref. <a href="https://www.fbrs.io/ramda/" target="_blank" rel="noopener noreferrer">Functional Programming vs. Vanilla Javascript - FBRS</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[One Obsidian]]></title>
-            <link>https://kywk.github.io/life/2022/11/01/one-obsidian/</link>
-            <guid>https://kywk.github.io/life/2022/11/01/one-obsidian/</guid>
-            <pubDate>Tue, 01 Nov 2022 00:00:00 GMT</pubDate>
-            <description><![CDATA[2022.11.01 all in one obsidian]]></description>
-            <content:encoded><![CDATA[<p>決定落腳 Obsidian 後, 如何最大化 Obsidian 的點子一一浮現.</p>
-<p>過去是利用 Symbolic Link 的方式串連 Docusaurus 和 Obsidian,
-但這方法不適用同步檔案於手機使用,
-花了些時間 <a href="https://kywk.github.io/life/2022/11/moco/utilities/obsidian/obs_docusaurus-integrate.md/">整合 Docusaurus / Obsidiaan</a>,
-初步成果還可接受.</p>
-<p>整合上癮, 隨後把個人常態保存的文件檔案, 也從 Documents 搬入 Obsidian.
-Dropbox 資料夾結構越來越精簡, 有種莫名成就感.</p>]]></content:encoded>
-            <category>PKM</category>
-            <category>Life</category>
-            <category>#Obsidian</category>
-            <category>Docusaurus</category>
-        </item>
-        <item>
-            <title><![CDATA[life & moco merged]]></title>
-            <link>https://kywk.github.io/life/2022/10/15/merge-kywk-moco/</link>
-            <guid>https://kywk.github.io/life/2022/10/15/merge-kywk-moco/</guid>
-            <pubDate>Sat, 15 Oct 2022 00:00:00 GMT</pubDate>
-            <description><![CDATA[2022.10.15 kywk.life & kywk.moco merged]]></description>
-            <content:encoded><![CDATA[<p>一直以來都把部落格區分成 life 和 moco 兩個, 分別作為生活旅遊和工作筆記用.
-因某篇文章的感想, 不知道該放 life 還是 moco 時,
-想起原本區分成兩個不同部落格, 除了用途不同外, 套用的樣板主題也不同.
-但如今統一使用 docusaurus 框架, 似乎也沒必要再區分不同站台.</p>
-<p>在本來該糜爛的加班日下班後, 花了些時間合併兩個站. 整理了一下 Dropbox 上檔案結構.</p>
-<p>然後就忘了本來想寫的文章是什麼了...</p>
-<p>應該是跟新工作就職滿兩個月的突發感觸吧, 才會不知道該放生活還是工作筆記...</p>
-<p>紀錄一下.</p>]]></content:encoded>
-            <category>Life</category>
         </item>
     </channel>
 </rss>

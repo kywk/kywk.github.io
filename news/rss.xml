@@ -4,7 +4,7 @@
         <title>kywk.me Blog</title>
         <link>https://kywk.github.io/news/</link>
         <description>kywk.me Blog</description>
-        <lastBuildDate>Fri, 03 Jan 2025 03:22:11 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 15 Jan 2025 08:46:40 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-TW</language>
@@ -12,7 +12,7 @@
             <title><![CDATA[News Feed]]></title>
             <link>https://kywk.github.io/news/News Feed/</link>
             <guid>https://kywk.github.io/news/News Feed/</guid>
-            <pubDate>Fri, 03 Jan 2025 03:22:11 GMT</pubDate>
+            <pubDate>Wed, 15 Jan 2025 08:46:40 GMT</pubDate>
             <description><![CDATA[This is News Clippins]]></description>
             <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="news--discus">news &amp; discus<a href="https://kywk.github.io/news/News%20Feed/#news--discus" class="hash-link" aria-label="news &amp; discus的直接連結" title="news &amp; discus的直接連結">​</a></h2>
 <ul>
@@ -21,6 +21,78 @@
 <li><a href="https://iter01.com/" target="_blank" rel="noopener noreferrer">IT人</a></li>
 <li><a href="https://www.gushiciku.cn/pl/" target="_blank" rel="noopener noreferrer">MdEditor</a></li>
 </ul>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Surf 01.01~ 01.15]]></title>
+            <link>https://kywk.github.io/news/2025/01/15/_Surfing/</link>
+            <guid>https://kywk.github.io/news/2025/01/15/_Surfing/</guid>
+            <pubDate>Wed, 15 Jan 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Surfing quick note 01.01~ 01.15]]></description>
+            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="it-news">IT News<a href="https://kywk.github.io/news/2025/01/15/_Surfing/#it-news" class="hash-link" aria-label="IT News的直接連結" title="IT News的直接連結">​</a></h3>
+<ul>
+<li><a href="https://free.com.tw/opengraph-xyz/" target="_blank" rel="noopener noreferrer">OpenGraph.xyz：快速生成 Open Graph 標籤，提升社群網站預覽效果 - 免費資源網路社群</a>
+<ul>
+<li>比較令人感概的心得是,  我已經算很關注資訊新知了, 在這資訊規格的快速迭代, 居然對 Open Graph 完全沒印象...</li>
+<li><a href="https://frankchiu.io/seo-open-graph/" target="_blank" rel="noopener noreferrer">Open Graph 介紹：讓網站在社群上被漂亮分享，就靠 OG 標籤！（含 Meta Sharing Debugger 教學） – Frank Chiu</a></li>
+</ul>
+</li>
+<li><a href="https://www.techbang.com/posts/120589-is-the-era-of-ai-programming-coming-google-engineers-explain" target="_blank" rel="noopener noreferrer">AI寫程式時代真的來臨？Google 工程師解析如何利用 AI 來改進軟體開發 | T客邦</a></li>
+<li><a href="https://www.youtube.com/watch?v=YQnz7L6x068" target="_blank" rel="noopener noreferrer">Creator of Ghostty talks Zig over Go - YouTube</a>
+<ul>
+<li>ghostty 目前看來不錯, 但並非 Zig 不可.</li>
+<li>留言很有趣, 又是個語言戰爭...</li>
+</ul>
+</li>
+<li><a href="https://github.com/TabbyML/tabby" target="_blank" rel="noopener noreferrer">GitHub - TabbyML/tabby: Self-hosted AI coding assistant</a></li>
+<li><a href="https://www.youtube.com/watch?v=jrvhN6yNovA" target="_blank" rel="noopener noreferrer">2788元的新形态无人机，好用吗？DJI Flip上手！ - YouTube</a>
+<ul>
+<li><a href="https://www.mobile01.com/topicdetail.php?f=735&amp;t=7071501" target="_blank" rel="noopener noreferrer">DJI Flip 重量不到 249g、1/1.3 吋 CMOS 支援 4K 60p HDR！ - Mobile01</a></li>
+<li><a href="https://hk.news.yahoo.com/dji-flip-hk-price-spec-130550835.html" target="_blank" rel="noopener noreferrer">DJI Flip 結合了 Neo 的小巧安全和 mini 4 Pro 級相機而來的 vlog 航拍機</a></li>
+<li>看影視颶風的介紹相當心動, 考慮 618 入手, 年中印尼旅行時好好把玩紀錄...</li>
+</ul>
+</li>
+<li><a href="https://www.dgt.is/blog/2025-01-10-nix-death-by-a-thousand-cuts/" target="_blank" rel="noopener noreferrer">Nix - Death by a thousand cuts</a></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tech">Tech<a href="https://kywk.github.io/news/2025/01/15/_Surfing/#tech" class="hash-link" aria-label="Tech的直接連結" title="Tech的直接連結">​</a></h3>
+<ul>
+<li><a href="https://blog.wu-boy.com/2025/01/git-software-development-guide-key-to-improving-team-collaboration-en/" target="_blank" rel="noopener noreferrer">Git Software Development Guidelines: Improving Team Collaboration - 小惡魔 - AppleBOY</a>
+<ul>
+<li><a href="https://blog.wu-boy.com/2025/01/git-software-development-guide-key-to-improving-team-collaboration-zh-tw/" target="_blank" rel="noopener noreferrer">Git 軟體開發指南：提高團隊協作的關鍵 - 小惡魔 - AppleBOY</a></li>
+</ul>
+</li>
+<li><a href="https://blog.yossarian.net/2025/01/10/Be-aware-of-the-Makefile-effect" target="_blank" rel="noopener noreferrer">Be aware of the Makefile effect</a>
+<ul>
+<li><a href="https://blog.gslin.org/archives/2025/01/12/12201/" target="_blank" rel="noopener noreferrer">帶有 make help 說明的 Makefile – Gea-Suan Lin's BLOG</a></li>
+</ul>
+</li>
+<li><a href="https://surfingcomplexity.blog/2024/12/21/the-canva-outage-another-tale-of-saturation-and-resilience/" target="_blank" rel="noopener noreferrer">The Canva outage: another tale of saturation and resilience – Surfing Complexity</a>
+<ul>
+<li><a href="https://news.ycombinator.com/item?id=42676529" target="_blank" rel="noopener noreferrer">The Canva outage: another tale of saturation and resilience | Hacker News</a></li>
+<li><a href="https://blog.gslin.org/archives/2025/01/14/12213/" target="_blank" rel="noopener noreferrer">CDN 造成的後端壓力問題 (Canva 的 outage) – Gea-Suan Lin's BLOG</a></li>
+<li><a href="https://blog.gslin.org/archives/2025/01/14/12216/cdn-%e7%9a%84%e5%90%84%e7%a8%ae%e9%99%90%e5%88%b6/" target="_blank" rel="noopener noreferrer">CDN 的各種限制 – Gea-Suan Lin's BLOG</a></li>
+</ul>
+</li>
+<li><a href="https://educatedguesswork.org/posts/memory-management-1/" target="_blank" rel="noopener noreferrer">Understanding Memory Management, Part 1: C</a></li>
+<li><a href="https://antonz.org/go-1-24/" target="_blank" rel="noopener noreferrer">Go 1.24 interactive tour</a></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="life">Life<a href="https://kywk.github.io/news/2025/01/15/_Surfing/#life" class="hash-link" aria-label="Life的直接連結" title="Life的直接連結">​</a></h3>
+<ul>
+<li><a href="https://blog.kyomind.tw/bbc-6-minute-english/" target="_blank" rel="noopener noreferrer">BBC 6 Minute English：提升英文聽力的好夥伴 - Code and Me</a></li>
+<li><a href="https://www.techbang.com/posts/120567-adobe-announces-starting-january-15-2025-adobe-will-increase" target="_blank" rel="noopener noreferrer">Adobe宣布將在2025年1月15日開始調漲Lightroom和Photoshop的攝影計劃費用 | T客邦</a>
+<ul>
+<li>該訂閱了...</li>
+</ul>
+</li>
+<li><a href="https://free.com.tw/img_0001/" target="_blank" rel="noopener noreferrer">IMG_0001：一窺 2009-2012 年的數位回憶，讓你隨機探索 500 萬個老影片 - 免費資源網路社群</a></li>
+<li><a href="https://www.mobile01.com/topicdetail.php?f=794&amp;t=7070002" target="_blank" rel="noopener noreferrer">滿手日圓還傻傻存銀行？台灣人必學日幣投資放大術 - Mobile01</a></li>
+<li><a href="https://www.ithome.com.tw/article/166942" target="_blank" rel="noopener noreferrer">開發者該懂的商用英語 | iThome</a>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled="" checked=""> Today's English studing 📅 2025-01-14 ✅ 2025-01-14</li>
+</ul>
+</li>
+</ul>]]></content:encoded>
+            <category>Surf</category>
+            <category>2025/01</category>
         </item>
         <item>
             <title><![CDATA[Surf 12.01 ~ 12.31]]></title>
@@ -79,7 +151,7 @@
 <ul class="contains-task-list containsTaskList_mC6p">
 <li><a href="https://news.ycombinator.com/item?id=42517447" target="_blank" rel="noopener noreferrer">Ghostty 1.0 | Hacker News</a></li>
 <li>一個發表前已略有名氣的 terminal emulator.</li>
-<li class="task-list-item"><input type="checkbox" disabled=""> 和 wezterm, kitty, tabby 一起比較玩玩. 📅 2025-01-05</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> 和 wezterm, kitty, tabby 一起比較玩玩. ⏬ 📅 2025-01-05</li>
 </ul>
 </li>
 <li><a href="https://github.com/siyuan-note/siyuan" target="_blank" rel="noopener noreferrer">GitHub - siyuan-note/siyuan: A privacy-first, self-hosted, fully open source personal knowledge management software, written in typescript and golang.</a>
@@ -174,7 +246,7 @@
 <li><a href="https://www.ironcalc.com/" target="_blank" rel="noopener noreferrer">IronCalc - Open-Source Spreadsheet Engine</a>
 <ul class="contains-task-list containsTaskList_mC6p">
 <li>看起來比 Google Docs 更 lightweight 的 WebApp, 筆記下來. 臨時有 Excel 需求處理時也許有用.</li>
-<li class="task-list-item"><input type="checkbox" disabled=""> 確認是否支援複雜函式運算 📅 2024-11-17</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> 確認是否支援複雜函式運算 ⏬ 📅 2024-11-17</li>
 </ul>
 </li>
 <li><a href="https://www.ithome.com.tw/news/166158" target="_blank" rel="noopener noreferrer">AWS與Rust基金會攜手驗證Rust標準函式庫的安全性 | iThome</a></li>
@@ -190,7 +262,7 @@
 <li><a href="https://blog.gslin.org/archives/2024/11/25/12100/git-%e7%9a%84-hasconfigremote-url/" target="_blank" rel="noopener noreferrer">Git 的 hasconfig:remote.*.url: – Gea-Suan Lin's BLOG</a>
 <ul class="contains-task-list containsTaskList_mC6p">
 <li>關於 gitconfig 的優化?</li>
-<li class="task-list-item"><input type="checkbox" disabled=""> reorganize gitconfig w/ direnv 📅 2024-12-01</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> reorganize gitconfig w/ direnv ⏬ 📅 2024-12-01</li>
 </ul>
 </li>
 <li></li>
@@ -816,37 +888,6 @@ Consider carefully if code is truly redundant or just superficially similar.</p>
 <li><a href="https://crossing.cw.com.tw/article/18245?utm_source=pocket_saves" target="_blank" rel="noopener noreferrer">百聞不如一見？我在「加」解鎖各種限定體驗｜Ｗinnie／在加的故事｜換日線</a></li>
 <li></li>
 </ul>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Surf 09.16 ~ 09.30]]></title>
-            <link>https://kywk.github.io/news/2023/09/30/_Surfing/</link>
-            <guid>https://kywk.github.io/news/2023/09/30/_Surfing/</guid>
-            <pubDate>Sat, 30 Sep 2023 00:00:00 GMT</pubDate>
-            <description><![CDATA[Surfing quick note 09.16 ~ 09.30]]></description>
-            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="it-news">IT News<a href="https://kywk.github.io/news/2023/09/30/_Surfing/#it-news" class="hash-link" aria-label="IT News的直接連結" title="IT News的直接連結">​</a></h3>
-<ul>
-<li><a href="https://steachs.com/archives/63759" target="_blank" rel="noopener noreferrer">四款雲端儲存服務價格比一比，pCloud／Google Drive／OneDrive／Dropbox | 就是教不落 - 給你最豐富的 3C 資訊、教學網站</a></li>
-<li><a href="http://teddy-chen-tw.blogspot.com/2023/09/blog-post_23.html" target="_blank" rel="noopener noreferrer">搞笑談軟工: 練好基本功</a></li>
-<li><a href="https://horstmann.com/unblog/2023-09-19/index.html" target="_blank" rel="noopener noreferrer"># Java 21: The Nice, The Meh, and the ... Momentous</a></li>
-<li><a href="https://blog.gslin.org/archives/2023/09/22/11364/" target="_blank" rel="noopener noreferrer">Golang 將改變常見的 closure 地雷 – Gea-Suan Lin's BLOG</a></li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tech">Tech<a href="https://kywk.github.io/news/2023/09/30/_Surfing/#tech" class="hash-link" aria-label="Tech的直接連結" title="Tech的直接連結">​</a></h3>
-<ul>
-<li><a href="https://blog.gslin.org/archives/2023/09/25/11370/" target="_blank" rel="noopener noreferrer">scp -3：直接對兩個 remote host 複製檔案 – Gea-Suan Lin's BLOG</a></li>
-<li><a href="https://blog.gslin.org/archives/2023/09/24/11368/" target="_blank" rel="noopener noreferrer">cURL 放入 ipfs:// 支援 – Gea-Suan Lin's BLOG</a></li>
-<li><a href="https://blog.longwin.com.tw/2023/09/linux-acme-sh-https-ca-2023/" target="_blank" rel="noopener noreferrer">使用 acme.sh 來產生 HTTPS CA 憑證 – Tsung's Blog</a></li>
-<li><a href="https://cnodejs.org/topic/650cfeac1a7c3db18b05e385" target="_blank" rel="noopener noreferrer">大家有没有学习用ts开发node.js的诉求？ - CNode技术社区</a></li>
-<li><a href="https://www.rocksaying.tw/archives/2023/ES6_Async_Function_How_to.html" target="_blank" rel="noopener noreferrer">學習 ECMAScript/JavaScript 6 - Async Function 問答指引 - 石頭閒語</a></li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="life">Life<a href="https://kywk.github.io/news/2023/09/30/_Surfing/#life" class="hash-link" aria-label="Life的直接連結" title="Life的直接連結">​</a></h3>
-<ul>
-<li><a href="https://www.mobile01.com/topicdetail.php?f=202&amp;t=6846772" target="_blank" rel="noopener noreferrer">金三益健康茶飲、溪仔香腸熟肉、神農街 — 被飲料耽誤的海鮮店 與 「老臺南味」，老街美麗夜景相隨 - Mobile01</a></li>
-<li><a href="https://free.com.tw/planet-vpn/" target="_blank" rel="noopener noreferrer">Planet VPN 評測：無限流量免費 VPN 推薦，無需註冊即可使用</a></li>
-<li><a href="https://www.mobile01.com/topicdetail.php?f=628&amp;t=6844792" target="_blank" rel="noopener noreferrer">無私奉獻最最快樂，觀音山揹水新嘗試 - Mobile01</a></li>
-<li><a href="https://steachs.com/archives/63722" target="_blank" rel="noopener noreferrer">你都記得你有哪些保單嗎？透過壽險公會保險存褶就能查看各種保險記錄 | 就是教不落 - 給你最豐富的 3C 資訊、教學網站</a></li>
-</ul>]]></content:encoded>
-            <category>Surf</category>
-            <category>2023/09</category>
         </item>
     </channel>
 </rss>
