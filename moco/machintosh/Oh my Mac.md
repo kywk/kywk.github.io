@@ -13,7 +13,7 @@ date_created: 2024-10-31
 
 ## Setup
 
-[[Mac App Setup]]
+[[Mac Apps Setup]]
 
 [[Mac DevEnv Setup]]
 
@@ -26,3 +26,13 @@ date_created: 2024-10-31
 - Xiaomi Book
 
 ## See Also
+
+### List
+
+| Model                 | Name      | macOS | Usage |
+| :-------------------- | :-------- | :---- | :---- |
+| M1 Macbook Pro 13"    | CowM1Pro  |       |       |
+| M1 Macbook Air 13"    | CowM1Air  |       |       |
+| XiaomiBook Pro i7 15" | CowMi7Pro |       |       |
+| XiaomiBook Pro i5 15" | CowMi5Pro |       |       |
+| XiaomiBook Air i5 13" | CowMi5Air |       |       |

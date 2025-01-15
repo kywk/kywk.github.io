@@ -17,20 +17,22 @@ image: https://lh3.googleusercontent.com/pw/ACtC-3dctjoKSszhdu7OFFUmtd-eRmtxUAIx
 先大破, 而後大立.
 
 ## House Keeping
-- [ ] Living Room
-- [ ] Kitchen
-- [ ] Bad Room
-- [ ] Guest Room
+- [x] Living Room 📅 2025-01-12 ✅ 2025-01-13
+- [x] Kitchen 📅 2025-01-12 ✅ 2025-01-13
+- [ ] Bad Room 📅 2025-01-15 
+- [ ] Guest Room  📅 2025-01-19 
+- [x] 前後陽台 ✅ 2025-01-06
 
 ## NANSHAN
-- [ ] Outlook
-- [ ] Desktop
-- [ ] docusaurus
+- [x] Outlook ✅ 2025-01-09
+- [ ] Desktop 📅 2025-01-17 
+- [x] docusaurus ✅ 2025-01-07
 
 ## Obsidian
 - [ ] Obsidian Vault
 	- [ ] TODOs
 	- [ ] docusaurus
+		- [ ] upgrade to 3.7.x
 - [ ] Document Reorganize
 - [ ] Finance 信用卡 / 銀行
 

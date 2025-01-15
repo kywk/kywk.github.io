@@ -1,9 +1,9 @@
 ---
-hide_table_of_contents: true
 title: 大稻埕 七夕花火節
 tags:
   - Photography
   - Taiwan
+hide_table_of_contents: true
 date_created: 2012-08-18 00:15:57
 date_updated: 2014-01-07 00:15:57
 ---

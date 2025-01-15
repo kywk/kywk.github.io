@@ -43,13 +43,13 @@ image: https://lh3.googleusercontent.com/pw/ACtC-3dctjoKSszhdu7OFFUmtd-eRmtxUAIx
 
 - LeetCode Weekly Contest
 - A Tokaido/Patagonia a week: A introduction to one trail path of Tokaido/Patagonia
-- 兩本書、兩篇心得
 
 ### Monthly
 
 - (Biweekly) Cook a meal. Include salad, starter, main-dish, dessert... etc
 - (Biweekly) Photography: finish one set of previous works
-- Announce a minion prject
+- 兩本書、兩篇心得
+- Announce a minion project
 - Finish a 42k marathon or more than 42k self trainning
 
 ### Yearly
@@ -63,3 +63,10 @@ image: https://lh3.googleusercontent.com/pw/ACtC-3dctjoKSszhdu7OFFUmtd-eRmtxUAIx
   - 學飛行傘
 
 仍貪心。公開目標，騎虎難下。
+
+## See Also
+
+2025 的另一個目標, 年底來個對得起自己的回顧.
+
+- [\[年終回顧\] 2024 年的回顧與展望](https://www.evanlin.com/summary-2024/)
+-  [[blog.life/2025/12-25-Happy-Holiday|12-25-Happy-Holiday]]

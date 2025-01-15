@@ -8,7 +8,7 @@ tags:
 sidebar_position: 5
 hide_table_of_contents: true
 date_created: 2023-01-02
-date_updated: 2024-08-13
+date_updated: 2025-01-06
 ---
 
 # [Mac] macOS 實用小技巧與工具
@@ -26,6 +26,11 @@ Uncheck Automatically rearrange Spaces based on most recent use.
 
 - [Mac 會自己改變 Desktop 位置的問題 – Gea-Suan Lin's BLOG](https://blog.gslin.org/archives/2023/01/31/11048/mac-會自己改變-desktop-位置的問題/)
 - [macos - How to prevent Mac from changing the order of Desktops/Spaces - Ask Different](https://apple.stackexchange.com/questions/214348/how-to-prevent-mac-from-changing-the-order-of-desktops-spaces)
+
+###  Built-in feature
+
+- [MacOS教學 - 如何設定自動開機／關機排程？ \| 就是教不落 - 給你最豐富的 3C 資訊、教學網站](https://steachs.com/archives/73229)
+- 
 
 ## Finder
 

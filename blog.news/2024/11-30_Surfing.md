@@ -23,7 +23,7 @@ Surfing 11.16 ~ 11.30
 - [Introduction - Mergiraf](https://mergiraf.org/) [Mergiraf: a syntax-aware merge driver for Git | Hacker News](https://news.ycombinator.com/item?id=42093756)
 - [IronCalc - Open-Source Spreadsheet Engine](https://www.ironcalc.com/)
 	- 看起來比 Google Docs 更 lightweight 的 WebApp, 筆記下來. 臨時有 Excel 需求處理時也許有用.
-	- [ ] 確認是否支援複雜函式運算 📅 2024-11-17 
+	- [ ] 確認是否支援複雜函式運算 ⏬ 📅 2024-11-17
 - [AWS與Rust基金會攜手驗證Rust標準函式庫的安全性 | iThome](https://www.ithome.com.tw/news/166158)
 
 ### Tech
@@ -33,7 +33,7 @@ Surfing 11.16 ~ 11.30
 	- 一些 OpenID 規格文件資料, 先筆記, 日後用不上就算了.
 - [Git 的 hasconfig:remote.\*.url: – Gea-Suan Lin's BLOG](https://blog.gslin.org/archives/2024/11/25/12100/git-%e7%9a%84-hasconfigremote-url/)
 	- 關於 gitconfig 的優化? 
-	- [ ] reorganize gitconfig w/ direnv 📅 2024-12-01 
+	- [ ] reorganize gitconfig w/ direnv ⏬ 📅 2024-12-01
 - 
 
 ### Life
