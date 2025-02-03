@@ -19,24 +19,33 @@ image: https://lh3.googleusercontent.com/pw/ACtC-3dctjoKSszhdu7OFFUmtd-eRmtxUAIx
 ## House Keeping
 - [x] Living Room 📅 2025-01-12 ✅ 2025-01-13
 - [x] Kitchen 📅 2025-01-12 ✅ 2025-01-13
-- [ ] Bad Room 📅 2025-01-15 
-- [ ] Guest Room  📅 2025-01-19 
+- [x] Bad Room 📅 2025-01-15 ✅ 2025-01-16
+- [x] Guest Room 📅 2025-01-19 ✅ 2025-01-18
 - [x] 前後陽台 ✅ 2025-01-06
+- [x] 洗衣服 📅 2025-01-21 ✅ 2025-01-21
+- [x] 領錢/換鈔 📅 2025-01-22 ✅ 2025-01-22
+	- [2025 農曆過年換新鈔兌換地點（銀行、郵局） 結合 Google 地圖快速查詢 – 免費資源網路社群](https://free.com.tw/2025-new-taiwan-dollar-exchange/)
 
 ## NANSHAN
 - [x] Outlook ✅ 2025-01-09
-- [ ] Desktop 📅 2025-01-17 
+- [x] Desktop 📅 2025-01-17 ✅ 2025-01-16
 - [x] docusaurus ✅ 2025-01-07
 
 ## Obsidian
-- [ ] Obsidian Vault
-	- [ ] TODOs
-	- [ ] docusaurus
-		- [ ] upgrade to 3.7.x
-- [ ] Document Reorganize
-- [ ] Finance 信用卡 / 銀行
+- [ ] Obsidian Vault 📅 2025-02-16 
+	- [ ] TODOs 📅 2025-02-09 
+	- [ ] docusaurus 📅 2025-02-03
+		- [ ] upgrade to 3.7.x  📅 2025-02-03 
+- [x] Document Reorganize ✅ 2025-01-28
+- [ ] Finance 信用卡 / 銀行 📅 2025-02-09 
 
 ## Stuff Reorganize
-- [ ] 3C 
-	- [ ] [[ACTION_2025#ForSale]]
-- [ ] Camping
+- [x] 3C ✅ 2025-01-19
+	- [-] [[ACTION_2025#ForSale]] 🔼 📅 2024-12-31
+- [x] Camping ✅ 2025-01-19
+
+## See Also
+
+- [生活品質越來越低落，原來是這種「臨時主義」，將我逼入了不喜歡的生活 - A Day Magazine](https://www.adaymag.com/2025/01/17/temporary-state-mindset.html)
+	- 這次的大整理, 對這句話有深刻感受.
+- [4 Ways I Use Tech to Romanticize My Life](https://www.makeuseof.com/romanticize-life-with-tech/)

@@ -24,3 +24,7 @@ Trick and Tip
 See Also
 --------
 
+- [GitHub - llZektorll/OB\_Template: OB\_Templates is a Obsidian reference for note templates focused on new users of the application using only core plugins.](https://github.com/llZektorll/OB_Template)
+- [GitHub - llZektorll/Template\_Hub: Obsidian Template Hub started on the 13th of June 2022. It was set up to gather as many note templates as possible.](https://github.com/llZektorll/Template_Hub)
+- [GitHub - AdamJeddy/Bunch-of-Obsidian-Templates: Bunch of Obsidian templates for a lot of things](https://github.com/AdamJeddy/Bunch-of-Obsidian-Templates)
+- 

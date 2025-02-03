@@ -22,10 +22,6 @@ Surfing 01.01~ 01.15
 	- ghostty 目前看來不錯, 但並非 Zig 不可.
 	- 留言很有趣, 又是個語言戰爭...
 - [GitHub - TabbyML/tabby: Self-hosted AI coding assistant](https://github.com/TabbyML/tabby)
-- [2788元的新形态无人机，好用吗？DJI Flip上手！ - YouTube](https://www.youtube.com/watch?v=jrvhN6yNovA)
-	- [DJI Flip 重量不到 249g、1/1.3 吋 CMOS 支援 4K 60p HDR！ - Mobile01](https://www.mobile01.com/topicdetail.php?f=735&t=7071501)
-	- [DJI Flip 結合了 Neo 的小巧安全和 mini 4 Pro 級相機而來的 vlog 航拍機](https://hk.news.yahoo.com/dji-flip-hk-price-spec-130550835.html)
-	- 看影視颶風的介紹相當心動, 考慮 618 入手, 年中印尼旅行時好好把玩紀錄...
 - [Nix - Death by a thousand cuts](https://www.dgt.is/blog/2025-01-10-nix-death-by-a-thousand-cuts/)
 
 ### Tech
@@ -50,4 +46,10 @@ Surfing 01.01~ 01.15
 - [滿手日圓還傻傻存銀行？台灣人必學日幣投資放大術 - Mobile01](https://www.mobile01.com/topicdetail.php?f=794&t=7070002)
 - [開發者該懂的商用英語 \| iThome](https://www.ithome.com.tw/article/166942)
 	- [x] Today's English studing 📅 2025-01-14 ✅ 2025-01-14
+- [2788元的新形态无人机，好用吗？DJI Flip上手！ - YouTube](https://www.youtube.com/watch?v=jrvhN6yNovA)
+	- [DJI Flip 重量不到 249g、1/1.3 吋 CMOS 支援 4K 60p HDR！ - Mobile01](https://www.mobile01.com/topicdetail.php?f=735&t=7071501)
+	- [DJI Flip 結合了 Neo 的小巧安全和 mini 4 Pro 級相機而來的 vlog 航拍機](https://hk.news.yahoo.com/dji-flip-hk-price-spec-130550835.html)
+	- [DJI 空拍機再加入生力軍，正式發表全能 Vlog 空拍機 DJI Flip \| 就是教不落 - 給你最豐富的 3C 資訊、教學網站](https://steachs.com/archives/73512#google_vignette)
+	- [大疆正式發表 DJI Flip！全能 Vlog 空拍機，重量低於 249g，建議售價 NT$12,990 \| T客邦](https://www.techbang.com/posts/120862-dji-flip-vlog-249g-nt12990)
+	- 看影視颶風的介紹相當心動, 考慮 618 入手, 年中印尼旅行時好好把玩紀錄...
 

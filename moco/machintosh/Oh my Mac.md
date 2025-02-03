@@ -35,4 +35,4 @@ date_created: 2024-10-31
 | M1 Macbook Air 13"    | CowM1Air  |       |       |
 | XiaomiBook Pro i7 15" | CowMi7Pro |       |       |
 | XiaomiBook Pro i5 15" | CowMi5Pro |       |       |
-| XiaomiBook Air i5 13" | CowMi5Air |       |       |
+| XiaomiBook Air i5 13" | CowMiAir  |       |       |

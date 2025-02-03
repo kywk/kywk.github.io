@@ -1,22 +1,20 @@
 ---
-title: Basic Setup
+title: PostgreSQL Setup
 description: PostgreSQL basic setup
 tags:
   - SQL/PgSQL
+image: https://lh3.googleusercontent.com/pw/AL9nZEUA9Ifvd5Z8SXDWkeVB6AC4MPGwnXaL6kBXNPoXwOQQ2jOcZ1Jw_0p8TKK8C3ZX0e67_FOY15eDrm7aaXSQJcKtoUzC80SAQEHsaBy6qS2AqNNs5VUFNXBKm439y_1wkvmDl-PnL8ReojnIumNlEvOXBg=w800-no?authuser=0
+sidebar_position: 40
 date_created: 2023-08-10
 date_updated: 2023-08-10
-image: https://lh3.googleusercontent.com/pw/AL9nZEUA9Ifvd5Z8SXDWkeVB6AC4MPGwnXaL6kBXNPoXwOQQ2jOcZ1Jw_0p8TKK8C3ZX0e67_FOY15eDrm7aaXSQJcKtoUzC80SAQEHsaBy6qS2AqNNs5VUFNXBKm439y_1wkvmDl-PnL8ReojnIumNlEvOXBg=w800-no?authuser=0
 ---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-[PGSQL] Basic setup
-===================
+# [PGSQL] Basic setup
 
-
-PostgreSQL Server
------------------
+## PostgreSQL Server
 
 <Tabs groupId="target-os">
   <TabItem value="docker" label="docker run" default>
@@ -36,10 +34,11 @@ docker run --name postgres -d \
 ```
 
 使用 `docker run` 建立 container, 若本機沒有 image, 會自動從 Docker Hub 下載.
+
 - `—name`: container 名字以方便識別 `postgres` (若省略, Docker 會自動以亂數建立)
 - `-d`: `d`etach 建立 container 後就脫離目前 process
-- `-v`:  `v`olume PostgresSQL 的資料放在 container 內的 `/var/lib/postgresql/data` 目錄. 
-  這個設定讓 docker mapping host `~/workspace/docker/postgres` 到 container 內的 `/var/lib/postgresql/data`. 
+- `-v`: `v`olume PostgresSQL 的資料放在 container 內的 `/var/lib/postgresql/data` 目錄.
+  這個設定讓 docker mapping host `~/workspace/docker/postgres` 到 container 內的 `/var/lib/postgresql/data`.
   如此 container 刪除後, 資料仍然會留在 host.
 - `-p`: `p`ort mapping host 與 container post 的對應, 格式為 `host port : container port`.
   PostgreSQL 預設 port 為 `5432`
@@ -52,7 +51,7 @@ docker run --name postgres -d \
 ### 啟用 / 停止服務
 
 ```shell
-docker start postgres 
+docker start postgres
 docker stop postgres
 ```
 
@@ -97,11 +96,9 @@ brew service stop postgresql
   </TabItem>
 </Tabs>
 
+## PostgreSQL Client
 
-PostgreSQL Client
------------------
-
-### CLI client 
+### CLI client
 
 <Tabs groupId="target-os">
   <TabItem value="docker" label="docker exec" default>
@@ -119,9 +116,10 @@ brew link --force libpq
   </TabItem>
 </Tabs>
 
-### psql connection 
+### psql connection
 
 In order to connect to your PostgreSQL server, we’ll need the following connection params:
+
 - Hostname
 - Port
 - Username
@@ -135,21 +133,14 @@ psql -h [HOSTNAME] -p [PORT] -U [USERNAME] -W -d [DATABASENAME]
 ```
 
 or, make a connection URI as following:
+
 ```shell
 psql postgres://[USERNAME]:[PASSWORD]@[HOSTNAME]:[PORT]/[DATABASENAME]?sslmode=require
 ```
 
+## DB User
 
-DB User
--------
-
-
-
-
-See Also
---------
+## See Also
 
 - [如何使用 Docker 安裝 PostgreSQL ? | 點燈坊](https://old-oomusou.goodjack.tw/docker/postgres/)
 - [Docker筆記 - 進入Container，建立並操作 PostgreSQL Container | by Albert Hg | alberthg-docker-notes | Medium](https://medium.com/alberthg-docker-notes/d221ba39aaec)
-- 
-

@@ -8,4 +8,12 @@ tags:
 
 # Awesome Utilities Resources
 
-[[Awesome Selfhosted]]
+## Oh My Awesome
+
+- [[Awesome Selfhosted]]
+- [[Awesome CLI]]
+- [[Awesome Git]]
+- [[Awesome VSCode]]
+- [[Awesome Deopbox]]
+
+## See Also

@@ -12,13 +12,13 @@ date_updated: 2025-01-06
 
 | Title                  | Updated  | pCloud | Photos | Major     | Minor    | Memo                |
 | :--------------------- | :------: | :----: | :----: | :-------- | :------- | :------------------ |
-| 24.01_Egypt            | 25/01/01 |   v    |   v    | Expansion | CowM1T-B | CowM1Pro Processing |
-| 20.02_Japan EN         | 25/01/01 |   v    |        | Expansion | CowM1T-B |                     |
-| 19.10_Praha Budapest   | 25/01/01 |   v    |        | Expansion | CowM1T-A |                     |
+| 24.01_Egypt            | 25/01/01 |   v    |   v    | Expansion | CowM1T-B | CowM1Air Processing |
+| 20.02_Japan EN         | 25/01/01 |   v    |        | Expansion | CowM1T-B | CowM1Air Processing |
+| 19.10_Praha Budapest   | 25/01/01 |   v    |        | Expansion | CowM1T-A | CowM1Pro Processing |
 | 19.02_Lake Baikal      | 25/01/01 |   v    |        | Expansion | CowM1T-B |                     |
 | 19.01_East Euro        | 25/01/01 |   v    |        | Expansion | CowM1T-B |                     |
 | 18.05_Hokkaido         | 25/01/01 |   v    |        | Expansion | CowM1T-B |                     |
-| 18.01_Way 2 Aurora     | 25/01/01 |   v    |        | Expansion | CowM1T-A |                     |
+| 18.01_Way 2 Aurora     | 25/01/01 |   v    |        | Expansion | CowM1T-A | CowM1Pro Processing |
 | 17.12_Nara Marathon    | 25/01/01 |   v    |        | Expansion | CowM1T-A |                     |
 | 17.01_Euro Hopping     | 25/01/01 |   v    |        | Expansion | CowM1T-A |                     |
 | 16.08_India            | 25/01/01 |   v    |        | Expansion | CowM1T-A |                     |

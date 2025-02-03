@@ -1,8 +1,9 @@
 ---
-title: "Util: Warp"
+title: "Terminal: Warp"
 description: Warp, The terminal built for the 21st century
 tags:
   - Utility
+  - Terminal
 hide_table_of_contents: true
 date_created: 2023-02-20
 date_updated: 2023-02-20

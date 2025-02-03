@@ -63,6 +63,7 @@ _journaling/
 _templates/
 com.nanshan/
 important/
+finance/
 
 # syncthing
 .stfolder/
