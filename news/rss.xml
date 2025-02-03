@@ -4,7 +4,7 @@
         <title>kywk.me Blog</title>
         <link>https://kywk.github.io/news/</link>
         <description>kywk.me Blog</description>
-        <lastBuildDate>Wed, 15 Jan 2025 08:46:40 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 03 Feb 2025 05:15:49 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-TW</language>
@@ -12,7 +12,7 @@
             <title><![CDATA[News Feed]]></title>
             <link>https://kywk.github.io/news/News Feed/</link>
             <guid>https://kywk.github.io/news/News Feed/</guid>
-            <pubDate>Wed, 15 Jan 2025 08:46:40 GMT</pubDate>
+            <pubDate>Mon, 03 Feb 2025 05:15:49 GMT</pubDate>
             <description><![CDATA[This is News Clippins]]></description>
             <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="news--discus">news &amp; discus<a href="https://kywk.github.io/news/News%20Feed/#news--discus" class="hash-link" aria-label="news &amp; discus的直接連結" title="news &amp; discus的直接連結">​</a></h2>
 <ul>
@@ -21,6 +21,124 @@
 <li><a href="https://iter01.com/" target="_blank" rel="noopener noreferrer">IT人</a></li>
 <li><a href="https://www.gushiciku.cn/pl/" target="_blank" rel="noopener noreferrer">MdEditor</a></li>
 </ul>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[_DeepSeek]]></title>
+            <link>https://kywk.github.io/news/2025/01/31/_DeepSeek/</link>
+            <guid>https://kywk.github.io/news/2025/01/31/_DeepSeek/</guid>
+            <pubDate>Fri, 31 Jan 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[-  實際嘗試使用DeepSeek API]]></description>
+            <content:encoded><![CDATA[<h2></h2>
+<ul>
+<li><a href="https://studyhost.blogspot.com/2025/01/deepseek-api.html" target="_blank" rel="noopener noreferrer">實際嘗試使用DeepSeek API</a></li>
+<li></li>
+</ul>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Surf 01.16~ 01.31]]></title>
+            <link>https://kywk.github.io/news/2025/01/31/_Surfing/</link>
+            <guid>https://kywk.github.io/news/2025/01/31/_Surfing/</guid>
+            <pubDate>Fri, 31 Jan 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Surfing quick note 01.16~ 01.31]]></description>
+            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="it-news">IT News<a href="https://kywk.github.io/news/2025/01/31/_Surfing/#it-news" class="hash-link" aria-label="IT News的直接連結" title="IT News的直接連結">​</a></h3>
+<ul>
+<li><a href="https://www.inside.com.tw/article/37326-duolingo-tiktok-xiaohongshu-chinese-learners" target="_blank" rel="noopener noreferrer">美 TikTok 難民湧向小紅書，Duolingo 學中文者暴增 216% - INSIDE</a>
+<ul>
+<li>接連在幾個不同頻道看到類似新聞, 看來搬家事件影像比想像中大.
+可能連白宮都不清楚, 為何難民會投奔小紅書, 而非 Twitter / IG / Threads / ... 等美國公司的社交平台.
+說穿了, 政治上的鬥爭, 離人民遠近, 實難評估...</li>
+</ul>
+</li>
+<li><a href="https://www.inside.com.tw/article/37299-translate" target="_blank" rel="noopener noreferrer">AI 翻譯工具「沉浸式翻譯」入選 Google 年度精選推薦 - INSIDE</a>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> 安裝/深入把玩 📅 2025-01-31</li>
+</ul>
+</li>
+<li><a href="https://cnodejs.org/topic/678b1412257f297e2f3fa773" target="_blank" rel="noopener noreferrer">2 小时用 Cursor 开发了一个 PDF 骑缝章工具，第二天就有人用啦！ - CNode技术社区</a>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> Cursor and Prompt 📅 2025-01-31</li>
+</ul>
+</li>
+<li><a href="https://github.blog/changelog/2025-01-13-evolving-github-issues-public-preview/" target="_blank" rel="noopener noreferrer">Evolving GitHub Issues (public preview) - GitHub Changelog</a>
+<ul>
+<li><a href="https://www.ithome.com.tw/news/167055" target="_blank" rel="noopener noreferrer">GitHub Issues加入子議題、分類與進階搜尋，提升議題組織與追蹤效率 | iThome</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/lightpanda-io/browser" target="_blank" rel="noopener noreferrer">GitHub - lightpanda-io/browser: Lightpanda: the headless browser designed for AI and automation</a>
+<ul>
+<li><a href="https://news.ycombinator.com/item?id=42817439" target="_blank" rel="noopener noreferrer">Show HN: Lightpanda, an open-source headless browser in Zig | Hacker News</a></li>
+</ul>
+</li>
+<li><a href="http://sebastianmihai.com/snowdrop/" target="_blank" rel="noopener noreferrer">Snowdrop OS - my operating system from scratch, in assembly language</a>
+<ul>
+<li><a href="https://news.ycombinator.com/item?id=42814820" target="_blank" rel="noopener noreferrer">Snowdrop OS – a homebrew operating system from scratch, in assembly language | Hacker News</a></li>
+</ul>
+</li>
+<li><a href="https://ohdoylerules.com/workflows/why-i-still-like-sublime-text-in-2025/" target="_blank" rel="noopener noreferrer">Why I still like Sublime Text in 2025 | OhDoyleRules</a>
+<ul>
+<li><a href="https://news.ycombinator.com/item?id=42862246" target="_blank" rel="noopener noreferrer">I still like Sublime Text | Hacker News</a></li>
+</ul>
+</li>
+<li><a href="https://blog.gslin.org/archives/2025/01/29/12235/" target="_blank" rel="noopener noreferrer">Google 家的 Swiss Table (高效率的 Hash 結構) – Gea-Suan Lin's BLOG</a></li>
+<li><a href="https://github.com/ggml-org/llama.vim" target="_blank" rel="noopener noreferrer">GitHub - ggml-org/llama.vim: Vim plugin for LLM-assisted code/text completion</a>
+<ul>
+<li><a href="https://news.ycombinator.com/item?id=42806328" target="_blank" rel="noopener noreferrer">Llama.vim – Local LLM-assisted text completion | Hacker News</a></li>
+<li><a href="https://github.com/ggml-org/llama.vim" target="_blank" rel="noopener noreferrer">GitHub - ggml-org/llama.vim: Vim plugin for LLM-assisted code/text completion</a></li>
+<li><a href="https://yasserarg.com/tb" target="_blank" rel="noopener noreferrer">TB</a></li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tech">Tech<a href="https://kywk.github.io/news/2025/01/31/_Surfing/#tech" class="hash-link" aria-label="Tech的直接連結" title="Tech的直接連結">​</a></h3>
+<ul>
+<li><a href="https://www.qovery.com/blog/rust-investigating-a-strange-out-of-memory-error/" target="_blank" rel="noopener noreferrer">Rust: Investigating a Strange Out-of-Memory Error</a></li>
+<li><a href="https://kobzol.github.io/rust/2025/01/15/async-rust-is-about-concurrency.html" target="_blank" rel="noopener noreferrer">Async Rust is about concurrency, not (just) performance | Kobzol’s blog</a></li>
+<li><a href="https://joeyehand.com/blog/2025/01/15/i-ditched-the-algorithm-for-rssand-you-should-too/#conclusion" target="_blank" rel="noopener noreferrer">I Ditched the Algorithm for RSS—and You Should Too - Joey's Hoard of Stuff</a>
+<ul>
+<li><a href="https://news.ycombinator.com/item?id=42724284" target="_blank" rel="noopener noreferrer">I ditched the algorithm for RSS | Hacker News</a></li>
+<li>資訊過多的時代, 如何快速且有效過濾.</li>
+<li>或許可以交給AI?</li>
+</ul>
+</li>
+<li><a href="https://blog.longwin.com.tw/2025/01/linux-ubuntu-redmine-install-docker-2025/" target="_blank" rel="noopener noreferrer">於 Ubuntu Linux 22.04 手動安裝 Redmine 5.1 - Tsung's Blog</a>
+<ul>
+<li>看起來頗為繁雜...</li>
+<li>我會選 docker...</li>
+</ul>
+</li>
+<li><a href="https://build-your-own.org/blog/20251015_db_in_3000/" target="_blank" rel="noopener noreferrer">Build a Database in 3000 Lines with 0 Dependencies | Blog | build-your-own.org</a>
+<ul>
+<li><a href="https://news.ycombinator.com/item?id=42725163" target="_blank" rel="noopener noreferrer">Build a Database in 3000 Lines with 0 Dependencies | Hacker News</a></li>
+<li>Hacker News 上的熱門, 另意外發現 <a href="https://build-your-own.org/" target="_blank" rel="noopener noreferrer">Build Your Own X From Scratch Books</a> 這個酷酷的網站. 好適合跟著作, 當個小型 weekend project 練習.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="life">Life<a href="https://kywk.github.io/news/2025/01/31/_Surfing/#life" class="hash-link" aria-label="Life的直接連結" title="Life的直接連結">​</a></h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/David_Lynch" target="_blank" rel="noopener noreferrer">David Lynch</a> 1946-2025
+<ul>
+<li><a href="https://news.ycombinator.com/item?id=42728862" target="_blank" rel="noopener noreferrer">David Lynch has died | Hacker News</a></li>
+<li>比較意外的是居然是先從 Hacker News 上得知這訊息.</li>
+<li>中文新聞的來源該重新審視了.</li>
+</ul>
+</li>
+<li><a href="https://apnews.com/article/sweden-digital-education-backlash-reading-writing-1dd964c628f76361c43dbf3964f7dbf4" target="_blank" rel="noopener noreferrer">Sweden brings more books and handwriting practice back to its tech-heavy schools | AP News</a>
+<ul>
+<li>Recap <a href="https://podcasts.apple.com/tw/podcast/id1558410138?i=1000684181585" target="_blank" rel="noopener noreferrer">Apple Podcast：《☀️ 全球串連早安新聞｜Morning Taiwan Glocal News》〈0116 全球讀報｜尹錫悅被逮、成南韓首例｜以色列哈瑪斯同意〉</a></li>
+<li>電子書方便, 紙本書籍有溫度. 各取所需.</li>
+<li>不過閱讀習慣的養成, 好像紙本書籍比較容易?</li>
+</ul>
+</li>
+<li><a href="https://www.adaymag.com/2025/01/17/wagyu-ramen-must-try.html" target="_blank" rel="noopener noreferrer">是誰發明的請受我一拜！日本超市的頂級食譜「和牛泡麵」，編輯嚐鮮心得推薦給你 - A Day Magazine</a></li>
+<li><a href="https://crossing.cw.com.tw/article/19616" target="_blank" rel="noopener noreferrer">機會留給「還沒準備好的人」：離開矽谷 Meta 後，我如何用知識變現重塑人生？｜尼可Nicolle／矽谷Bonjour｜換日線</a>
+<ul>
+<li>Callback <a href="https://podcasts.apple.com/tw/podcast/id1605731163?i=1000683755321" target="_blank" rel="noopener noreferrer">Apple Podcast：《博音》〈EP157 |機會不是留給準備好的人 ft. Green F〉</a></li>
+<li>機會留給用勇於接受並前行的人</li>
+</ul>
+</li>
+<li><a href="https://blog.kyomind.tw/noteless/" target="_blank" rel="noopener noreferrer">逐漸被我遺忘的卡片筆記 - Code and Me</a></li>
+</ul>]]></content:encoded>
+            <category>Surf</category>
+            <category>2025/01</category>
         </item>
         <item>
             <title><![CDATA[Surf 01.01~ 01.15]]></title>
@@ -44,13 +162,6 @@
 </ul>
 </li>
 <li><a href="https://github.com/TabbyML/tabby" target="_blank" rel="noopener noreferrer">GitHub - TabbyML/tabby: Self-hosted AI coding assistant</a></li>
-<li><a href="https://www.youtube.com/watch?v=jrvhN6yNovA" target="_blank" rel="noopener noreferrer">2788元的新形态无人机，好用吗？DJI Flip上手！ - YouTube</a>
-<ul>
-<li><a href="https://www.mobile01.com/topicdetail.php?f=735&amp;t=7071501" target="_blank" rel="noopener noreferrer">DJI Flip 重量不到 249g、1/1.3 吋 CMOS 支援 4K 60p HDR！ - Mobile01</a></li>
-<li><a href="https://hk.news.yahoo.com/dji-flip-hk-price-spec-130550835.html" target="_blank" rel="noopener noreferrer">DJI Flip 結合了 Neo 的小巧安全和 mini 4 Pro 級相機而來的 vlog 航拍機</a></li>
-<li>看影視颶風的介紹相當心動, 考慮 618 入手, 年中印尼旅行時好好把玩紀錄...</li>
-</ul>
-</li>
 <li><a href="https://www.dgt.is/blog/2025-01-10-nix-death-by-a-thousand-cuts/" target="_blank" rel="noopener noreferrer">Nix - Death by a thousand cuts</a></li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="tech">Tech<a href="https://kywk.github.io/news/2025/01/15/_Surfing/#tech" class="hash-link" aria-label="Tech的直接連結" title="Tech的直接連結">​</a></h3>
@@ -88,6 +199,15 @@
 <li><a href="https://www.ithome.com.tw/article/166942" target="_blank" rel="noopener noreferrer">開發者該懂的商用英語 | iThome</a>
 <ul class="contains-task-list containsTaskList_mC6p">
 <li class="task-list-item"><input type="checkbox" disabled="" checked=""> Today's English studing 📅 2025-01-14 ✅ 2025-01-14</li>
+</ul>
+</li>
+<li><a href="https://www.youtube.com/watch?v=jrvhN6yNovA" target="_blank" rel="noopener noreferrer">2788元的新形态无人机，好用吗？DJI Flip上手！ - YouTube</a>
+<ul>
+<li><a href="https://www.mobile01.com/topicdetail.php?f=735&amp;t=7071501" target="_blank" rel="noopener noreferrer">DJI Flip 重量不到 249g、1/1.3 吋 CMOS 支援 4K 60p HDR！ - Mobile01</a></li>
+<li><a href="https://hk.news.yahoo.com/dji-flip-hk-price-spec-130550835.html" target="_blank" rel="noopener noreferrer">DJI Flip 結合了 Neo 的小巧安全和 mini 4 Pro 級相機而來的 vlog 航拍機</a></li>
+<li><a href="https://steachs.com/archives/73512#google_vignette" target="_blank" rel="noopener noreferrer">DJI 空拍機再加入生力軍，正式發表全能 Vlog 空拍機 DJI Flip | 就是教不落 - 給你最豐富的 3C 資訊、教學網站</a></li>
+<li><a href="https://www.techbang.com/posts/120862-dji-flip-vlog-249g-nt12990" target="_blank" rel="noopener noreferrer">大疆正式發表 DJI Flip！全能 Vlog 空拍機，重量低於 249g，建議售價 NT$12,990 | T客邦</a></li>
+<li>看影視颶風的介紹相當心動, 考慮 618 入手, 年中印尼旅行時好好把玩紀錄...</li>
 </ul>
 </li>
 </ul>]]></content:encoded>
@@ -845,49 +965,6 @@ Consider carefully if code is truly redundant or just superficially similar.</p>
 </ul>]]></content:encoded>
             <category>Surf</category>
             <category>2023/10</category>
-        </item>
-        <item>
-            <title><![CDATA[Surf 10.01 ~ 10.15]]></title>
-            <link>https://kywk.github.io/news/2023/10/15/_Surfing/</link>
-            <guid>https://kywk.github.io/news/2023/10/15/_Surfing/</guid>
-            <pubDate>Sun, 15 Oct 2023 00:00:00 GMT</pubDate>
-            <description><![CDATA[Surfing quick note 10.01 ~ 10.15]]></description>
-            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="it-news">IT News<a href="https://kywk.github.io/news/2023/10/15/_Surfing/#it-news" class="hash-link" aria-label="IT News的直接連結" title="IT News的直接連結">​</a></h3>
-<ul>
-<li><a href="https://blog.gslin.org/archives/2023/10/12/11392/" target="_blank" rel="noopener noreferrer">WordPress.com 支援 ActivityPub – Gea-Suan Lin's BLOG</a></li>
-<li><a href="https://blog.gslin.org/archives/2023/09/28/11374/" target="_blank" rel="noopener noreferrer">ClickHouse 弄了一個 C++ 寫的 ZooKeeper drop-in replacement：ClickHouse Keeper – Gea-Suan Lin's BLOG</a></li>
-<li><a href="https://blog.gslin.org/archives/2023/09/25/11371" target="_blank" rel="noopener noreferrer">Percona XtraDB Cluster (PXC) 的感想 – Gea-Suan Lin's BLOG</a></li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tech">Tech<a href="https://kywk.github.io/news/2023/10/15/_Surfing/#tech" class="hash-link" aria-label="Tech的直接連結" title="Tech的直接連結">​</a></h3>
-<ul>
-<li><a href="https://blog.gslin.org/archives/2023/10/08/11388/" target="_blank" rel="noopener noreferrer">gzip 的 –rsyncable (zstd 也有) – Gea-Suan Lin's BLOG</a></li>
-<li><a href="https://blog.wu-boy.com/2023/10/git-commit-signature-verification/" target="_blank" rel="noopener noreferrer">快速設定 Git Commit Signature Verification - 小惡魔 - AppleBOY</a></li>
-<li><a href="https://blog.wu-boy.com/2023/09/secure-encryption-tool-age" target="_blank" rel="noopener noreferrer">加密檔案的好工具 - age - 小惡魔 - AppleBOY</a></li>
-<li><a href="https://www.maketecheasier.com/self-hosted-rss-reader-with-freshrss-docker/" target="_blank" rel="noopener noreferrer">Site Unreachable</a></li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="life">Life<a href="https://kywk.github.io/news/2023/10/15/_Surfing/#life" class="hash-link" aria-label="Life的直接連結" title="Life的直接連結">​</a></h3>
-<ul>
-<li><a href="https://jdev.tw/blog/8218/easy-bake-compile-notes-into-a-new-note" target="_blank" rel="noopener noreferrer">Obs142｜輕鬆烘烤(彙編)出需要的筆記：Easy Bake – 簡睿隨筆</a></li>
-<li><a href="https://jdev.tw/blog/8194/create-index-notes-by-dataview-and-tags" target="_blank" rel="noopener noreferrer">Obs138｜以標籤為基底，用Dataview形成索引筆記的嘗試 – 簡睿隨筆</a></li>
-<li><a href="https://steachs.com/archives/63762" target="_blank" rel="noopener noreferrer">太少用到 VPN？偶而用可以試試 FlyVPN 推出的 24 小時使用方案 | 就是教不落 - 給你最豐富的 3C 資訊、教學網站</a></li>
-</ul>]]></content:encoded>
-            <category>Surf</category>
-            <category>2023/10</category>
-        </item>
-        <item>
-            <title><![CDATA[以巴戰爭]]></title>
-            <link>https://kywk.github.io/news/2023/10/07/Israel-Palestine/</link>
-            <guid>https://kywk.github.io/news/2023/10/07/Israel-Palestine/</guid>
-            <pubDate>Sat, 07 Oct 2023 00:00:00 GMT</pubDate>
-            <description><![CDATA[Surf ###]]></description>
-            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="surf">Surf<a href="https://kywk.github.io/news/2023/10/07/Israel-Palestine/#surf" class="hash-link" aria-label="Surf的直接連結" title="Surf的直接連結">​</a></h3>
-<ul>
-<li><a href="https://global.udn.com/global_vision/story/8662/7543669" target="_blank" rel="noopener noreferrer">【Daily Podcast】以軍轟炸加薩難民營，另擊落葉門胡塞軍飛彈／孟加拉成衣工人罷工與反政府示威 | 過去24小時 | 轉角國際 udn Global</a>
-<a href="https://engoo.com.tw/blog/theme/israel-palestine_war_conflict_history/" target="_blank" rel="noopener noreferrer">【時事英文】五分鐘讀懂以巴戰爭懶人包：為什麼發生衝突？加薩走廊在哪裡？哈瑪斯又是誰？ | Engoo線上英文</a></li>
-<li><a href="https://crossing.cw.com.tw/article/18222" target="_blank" rel="noopener noreferrer">以巴衝突與哈瑪斯，主流媒體沒說的事（上）悲劇並非新聞，75 年來從未間斷｜換日線關鍵字 Podcast｜換日線</a></li>
-<li><a href="https://crossing.cw.com.tw/article/18245?utm_source=pocket_saves" target="_blank" rel="noopener noreferrer">百聞不如一見？我在「加」解鎖各種限定體驗｜Ｗinnie／在加的故事｜換日線</a></li>
-<li></li>
-</ul>]]></content:encoded>
         </item>
     </channel>
 </rss>

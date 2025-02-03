@@ -26,9 +26,9 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Lunar-New-Year]]></title>
-        <id>https://kywk.github.io/life/2025/01/29/Lunar-New-Year/</id>
-        <link href="https://kywk.github.io/life/2025/01/29/Lunar-New-Year/"/>
-        <updated>2025-01-29T00:00:00.000Z</updated>
+        <id>https://kywk.github.io/life/2025/02/02/Lunar-New-Year/</id>
+        <link href="https://kywk.github.io/life/2025/02/02/Lunar-New-Year/"/>
+        <updated>2025-02-02T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[年前大的掃除算是徹底整理了林口家一番, 確實有, 「對！早該如此！」的深深感受.]]></summary>
         <content type="html"><![CDATA[<p>年前大的掃除算是徹底整理了林口家一番, 確實有, 「對！早該如此！」的深深感受.</p>
 <p>利用農曆年間繼續推進生活:</p>
@@ -37,12 +37,16 @@
 <li>完成些 weekend project</li>
 <li>開始些新生活運動</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="todo">TODO<a href="https://kywk.github.io/life/2025/01/29/Lunar-New-Year/#todo" class="hash-link" aria-label="TODO的直接連結" title="TODO的直接連結">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="todo">TODO<a href="https://kywk.github.io/life/2025/02/02/Lunar-New-Year/#todo" class="hash-link" aria-label="TODO的直接連結" title="TODO的直接連結">​</a></h2>
 <ul class="contains-task-list containsTaskList_mC6p">
-<li class="task-list-item"><input type="checkbox" disabled=""> 01/24,25 白雪村 📅 2025-01-25</li>
-<li class="task-list-item"><input type="checkbox" disabled=""> 01/30 阿里山日出 📅 2025-01-30</li>
-<li class="task-list-item"><input type="checkbox" disabled=""> 月亮樹拼圖</li>
-<li class="task-list-item"><input type="checkbox" disabled=""> 旅遊畫框
+<li>[-] 01/24,25 白雪村 📅 2025-01-25 ❌ 2025-01-22
+<ul>
+<li>[-] backpacking 📅 2025-01-19 ❌ 2025-01-22</li>
+</ul>
+</li>
+<li>[-] 01/30 阿里山日出 📅 2025-01-30</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> 月亮樹拼圖 📅 2025-02-28</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> 旅遊畫框 📅 2025-02-28
 <ul class="contains-task-list containsTaskList_mC6p">
 <li class="task-list-item"><input type="checkbox" disabled=""> 交通票券</li>
 <li class="task-list-item"><input type="checkbox" disabled=""> 景點票券</li>
@@ -50,14 +54,15 @@
 <li class="task-list-item"><input type="checkbox" disabled=""> 外幣零錢相框</li>
 </ul>
 </li>
-<li class="task-list-item"><input type="checkbox" disabled=""> 文件統整
-<ul class="contains-task-list containsTaskList_mC6p">
-<li class="task-list-item"><input type="checkbox" disabled=""> 沙鹿家開支記帳</li>
+<li class="task-list-item"><input type="checkbox" disabled="" checked=""> 文件統整 ✅ 2025-01-28</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> 沙鹿家開支記帳 📅 2025-02-16</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> [[Obsidian as PKM]] refine 📅 2025-02-09</li>
 </ul>
-</li>
-<li class="task-list-item"><input type="checkbox" disabled=""> [[Obsidian as PKM]] refine</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="see-also">See Also<a href="https://kywk.github.io/life/2025/01/29/Lunar-New-Year/#see-also" class="hash-link" aria-label="See Also的直接連結" title="See Also的直接連結">​</a></h2>]]></content>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="see-also">See Also<a href="https://kywk.github.io/life/2025/02/02/Lunar-New-Year/#see-also" class="hash-link" aria-label="See Also的直接連結" title="See Also的直接連結">​</a></h2>
+<ul>
+<li><a href="https://stephenchencyk.pixnet.net/blog/post/173191396" target="_blank" rel="noopener noreferrer">2025月津港燈節 台南新年最美麗的水岸藝術饗宴－夫子。旅食趣｜痞客邦</a></li>
+<li><a href="https://blog.longwin.com.tw/2025/01/news-document-save-reserve-expire-2025/" target="_blank" rel="noopener noreferrer">哪些文件需要保留七年？哪些可以銷毀？ - Tsung's Blog</a></li>
+</ul>]]></content>
         <author>
             <name>kywk</name>
             <uri>https://github.io/kywk</uri>
@@ -79,40 +84,72 @@
 <ul class="contains-task-list containsTaskList_mC6p">
 <li class="task-list-item"><input type="checkbox" disabled="" checked=""> Living Room 📅 2025-01-12 ✅ 2025-01-13</li>
 <li class="task-list-item"><input type="checkbox" disabled="" checked=""> Kitchen 📅 2025-01-12 ✅ 2025-01-13</li>
-<li class="task-list-item"><input type="checkbox" disabled=""> Bad Room 📅 2025-01-15</li>
-<li class="task-list-item"><input type="checkbox" disabled=""> Guest Room  📅 2025-01-19</li>
+<li class="task-list-item"><input type="checkbox" disabled="" checked=""> Bad Room 📅 2025-01-15 ✅ 2025-01-16</li>
+<li class="task-list-item"><input type="checkbox" disabled="" checked=""> Guest Room 📅 2025-01-19 ✅ 2025-01-18</li>
 <li class="task-list-item"><input type="checkbox" disabled="" checked=""> 前後陽台 ✅ 2025-01-06</li>
+<li class="task-list-item"><input type="checkbox" disabled="" checked=""> 洗衣服 📅 2025-01-21 ✅ 2025-01-21</li>
+<li class="task-list-item"><input type="checkbox" disabled="" checked=""> 領錢/換鈔 📅 2025-01-22 ✅ 2025-01-22
+<ul>
+<li><a href="https://free.com.tw/2025-new-taiwan-dollar-exchange/" target="_blank" rel="noopener noreferrer">2025 農曆過年換新鈔兌換地點（銀行、郵局） 結合 Google 地圖快速查詢 – 免費資源網路社群</a></li>
+</ul>
+</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="nanshan">NANSHAN<a href="https://kywk.github.io/life/2025/01/28/Life-Keeping/#nanshan" class="hash-link" aria-label="NANSHAN的直接連結" title="NANSHAN的直接連結">​</a></h2>
 <ul class="contains-task-list containsTaskList_mC6p">
 <li class="task-list-item"><input type="checkbox" disabled="" checked=""> Outlook ✅ 2025-01-09</li>
-<li class="task-list-item"><input type="checkbox" disabled=""> Desktop 📅 2025-01-17</li>
+<li class="task-list-item"><input type="checkbox" disabled="" checked=""> Desktop 📅 2025-01-17 ✅ 2025-01-16</li>
 <li class="task-list-item"><input type="checkbox" disabled="" checked=""> docusaurus ✅ 2025-01-07</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="obsidian">Obsidian<a href="https://kywk.github.io/life/2025/01/28/Life-Keeping/#obsidian" class="hash-link" aria-label="Obsidian的直接連結" title="Obsidian的直接連結">​</a></h2>
 <ul class="contains-task-list containsTaskList_mC6p">
-<li class="task-list-item"><input type="checkbox" disabled=""> Obsidian Vault
+<li class="task-list-item"><input type="checkbox" disabled=""> Obsidian Vault 📅 2025-02-16
 <ul class="contains-task-list containsTaskList_mC6p">
-<li class="task-list-item"><input type="checkbox" disabled=""> TODOs</li>
-<li class="task-list-item"><input type="checkbox" disabled=""> docusaurus
+<li class="task-list-item"><input type="checkbox" disabled=""> TODOs 📅 2025-02-09</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> docusaurus 📅 2025-02-03
 <ul class="contains-task-list containsTaskList_mC6p">
-<li class="task-list-item"><input type="checkbox" disabled=""> upgrade to 3.7.x</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> upgrade to 3.7.x  📅 2025-02-03</li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="task-list-item"><input type="checkbox" disabled=""> Document Reorganize</li>
-<li class="task-list-item"><input type="checkbox" disabled=""> Finance 信用卡 / 銀行</li>
+<li class="task-list-item"><input type="checkbox" disabled="" checked=""> Document Reorganize ✅ 2025-01-28</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> Finance 信用卡 / 銀行 📅 2025-02-09</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="stuff-reorganize">Stuff Reorganize<a href="https://kywk.github.io/life/2025/01/28/Life-Keeping/#stuff-reorganize" class="hash-link" aria-label="Stuff Reorganize的直接連結" title="Stuff Reorganize的直接連結">​</a></h2>
 <ul class="contains-task-list containsTaskList_mC6p">
-<li class="task-list-item"><input type="checkbox" disabled=""> 3C
-<ul class="contains-task-list containsTaskList_mC6p">
-<li class="task-list-item"><input type="checkbox" disabled=""> [[ACTION_2025#ForSale]]</li>
+<li class="task-list-item"><input type="checkbox" disabled="" checked=""> 3C ✅ 2025-01-19
+<ul>
+<li>[-] [[ACTION_2025#ForSale]] 🔼 📅 2024-12-31</li>
 </ul>
 </li>
-<li class="task-list-item"><input type="checkbox" disabled=""> Camping</li>
+<li class="task-list-item"><input type="checkbox" disabled="" checked=""> Camping ✅ 2025-01-19</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="see-also">See Also<a href="https://kywk.github.io/life/2025/01/28/Life-Keeping/#see-also" class="hash-link" aria-label="See Also的直接連結" title="See Also的直接連結">​</a></h2>
+<ul>
+<li><a href="https://www.adaymag.com/2025/01/17/temporary-state-mindset.html" target="_blank" rel="noopener noreferrer">生活品質越來越低落，原來是這種「臨時主義」，將我逼入了不喜歡的生活 - A Day Magazine</a>
+<ul>
+<li>這次的大整理, 對這句話有深刻感受.</li>
+</ul>
+</li>
+<li><a href="https://www.makeuseof.com/romanticize-life-with-tech/" target="_blank" rel="noopener noreferrer">4 Ways I Use Tech to Romanticize My Life</a></li>
 </ul>]]></content>
+        <author>
+            <name>kywk</name>
+            <uri>https://github.io/kywk</uri>
+        </author>
+        <category label="kywk" term="kywk"/>
+        <category label="LifeHack" term="LifeHack"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Freedom-Day]]></title>
+        <id>https://kywk.github.io/life/2025/01/23/Freedom-Day/</id>
+        <link href="https://kywk.github.io/life/2025/01/23/Freedom-Day/"/>
+        <updated>2025-01-23T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[年前的最後一個工作日, 邁入 2025 後的直個月, 不斷 整理雜物/檢視日常/保持運動/開始閱讀.]]></summary>
+        <content type="html"><![CDATA[<p>年前的最後一個工作日, 邁入 2025 後的直個月, 不斷 整理雜物/檢視日常/保持運動/開始閱讀.</p>
+<p>生活用品逐漸一一歸位, 居家空間越趨簡潔後, 在今日象山運動時, 心境上境也有種重獲自由的感受.</p>
+<p>很是難得, 紀錄之.</p>
+<p>然後, 準備迎接下個挑戰.</p>]]></content>
         <author>
             <name>kywk</name>
             <uri>https://github.io/kywk</uri>
@@ -297,6 +334,126 @@
         <category label="kywk" term="kywk"/>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Setup: 開發環境建構]]></title>
+        <id>https://kywk.github.io/life/2024/11/30/Mac-DevEnv-Setup/</id>
+        <link href="https://kywk.github.io/life/2024/11/30/Mac-DevEnv-Setup/"/>
+        <updated>2024-11-30T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[macOS develop tools of Moo Cow]]></summary>
+        <content type="html"><![CDATA[<p>過去重灌電腦最麻煩的就是還原設定檔, 雖然 Mac 有 TimeMachine 可無痛轉移, 但個人癖好還是喜歡重新檢視與安裝設定.
+但越來越多軟體可以把配置設定存在雲端, 不但保持多台電腦間的同步, 重灌也只需登入帳號就可還原配置, 個人以為比 TimeMachine 方便.</p>
+<p>但仍有些開發或 CLI 工具, 是將配置檔存放於家目錄下的隱藏檔 (.files),
+無法透過雲端同步.
+我是把這些檔案搬移到 Dropbox 資料夾下, 再建立 Symbolic Link,
+如此就可透過 Dropbox 來同步設定檔.</p>
+<p>現在重灌電腦要安裝設定環境, 僅需透過 shell script 安裝軟體與建立 Symbolic Link, 相當無痛.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="cli-environment">CLI Environment<a href="https://kywk.github.io/life/2024/11/30/Mac-DevEnv-Setup/#cli-environment" class="hash-link" aria-label="CLI Environment的直接連結" title="CLI Environment的直接連結">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="iterm2">iTerm2<a href="https://kywk.github.io/life/2024/11/30/Mac-DevEnv-Setup/#iterm2" class="hash-link" aria-label="iTerm2的直接連結" title="iTerm2的直接連結">​</a></h3>
+<div class="language-shell codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-shell codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">brew install iterm2</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="複製程式碼至剪貼簿" title="複製" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="zsh-and-oh-my-zsh">zsh and oh-my-zsh<a href="https://kywk.github.io/life/2024/11/30/Mac-DevEnv-Setup/#zsh-and-oh-my-zsh" class="hash-link" aria-label="zsh and oh-my-zsh的直接連結" title="zsh and oh-my-zsh的直接連結">​</a></h3>
+<p>macOS Mojave (10.14.x) 開始內建 zsh, 而 Catalina (10.15.x) 以後預設 Shell 改為 zsh.</p>
+<p>在 macOS Mojave 系統要把預設 shell 改為 zsh 以及配置 zsh 最方便也推薦的方式就是透過 <a href="https://ohmyz.sh/" target="_blank" rel="noopener noreferrer">Oh My Zsh</a></p>
+<p><strong>Oh My Zsh</strong></p>
+<p>macOS Mojave 以後已經內建 Zsh, 所以直接安裝 Oh My Zsh 即可.</p>
+<div class="language-shell codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-shell codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="複製程式碼至剪貼簿" title="複製" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<div class="language-shell codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-shell codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">brew install zsh-completion</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="複製程式碼至剪貼簿" title="複製" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="powerline-font">Powerline Font<a href="https://kywk.github.io/life/2024/11/30/Mac-DevEnv-Setup/#powerline-font" class="hash-link" aria-label="Powerline Font的直接連結" title="Powerline Font的直接連結">​</a></h3>
+<div class="language-shell codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-shell codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">brew install font-fira-code-nerd-font font-fira-code font-fira-mono font-fira-sans</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">brew install font-source-code-pro</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">brew install font-hack-nerd-font</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="複製程式碼至剪貼簿" title="複製" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="base-environment">Base Environment<a href="https://kywk.github.io/life/2024/11/30/Mac-DevEnv-Setup/#base-environment" class="hash-link" aria-label="Base Environment的直接連結" title="Base Environment的直接連結">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="docker-runtime">Docker runtime<a href="https://kywk.github.io/life/2024/11/30/Mac-DevEnv-Setup/#docker-runtime" class="hash-link" aria-label="Docker runtime的直接連結" title="Docker runtime的直接連結">​</a></h3>
+<ol>
+<li><a href="https://orbstack.dev/" target="_blank" rel="noopener noreferrer"><strong>OrbStack</strong></a> <em>Personal, non-commercial use</em></li>
+<li><a href="https://www.docker.com/products/docker-desktop/" target="_blank" rel="noopener noreferrer">Docker Desktop</a> <em>Personal, non-commercial use</em></li>
+<li>[[Docker CLI on macOS]]</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="brew-formulae">Brew formulae<a href="https://kywk.github.io/life/2024/11/30/Mac-DevEnv-Setup/#brew-formulae" class="hash-link" aria-label="Brew formulae的直接連結" title="Brew formulae的直接連結">​</a></h3>
+<div class="language-shell codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-shell codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">brew install git tig gitui git-delta zsh-completion tmux ncdu htop lesspipe sshtrix tldr diff-so-fancy fd ripgrep rclone thefuck ag svn moreutils asdf ansifilter fzf</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="複製程式碼至剪貼簿" title="複製" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p>See Also: [[Awesome CLI]]</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="program-language">Program Language<a href="https://kywk.github.io/life/2024/11/30/Mac-DevEnv-Setup/#program-language" class="hash-link" aria-label="Program Language的直接連結" title="Program Language的直接連結">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="nodejs">Node.js<a href="https://kywk.github.io/life/2024/11/30/Mac-DevEnv-Setup/#nodejs" class="hash-link" aria-label="Node.js的直接連結" title="Node.js的直接連結">​</a></h3>
+<p><strong><a href="https://nodejs.org/" target="_blank" rel="noopener noreferrer">Node.js</a></strong></p>
+<p><a href="http://goo.gl/26nHDf" target="_blank" rel="noopener noreferrer">Installing Node.js or io.js with nvm</a></p>
+<p><strong>NVM Manual install</strong></p>
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">git clone https://github.com/creationix/nvm.git ~/.nvm &amp;&amp; cd ~/.nvm &amp;&amp; git checkout `git describe --abbrev=0 --tags`</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">cat ". ~/.nvm/nvm.sh" &gt;&gt; .bashrc</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="複製程式碼至剪貼簿" title="複製" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p><strong>Install node.js</strong></p>
+<div class="language-shell codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-shell codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">nvm install v8.11.1</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">nvm alias default tls</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">nvm use default</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="複製程式碼至剪貼簿" title="複製" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="go">Go<a href="https://kywk.github.io/life/2024/11/30/Mac-DevEnv-Setup/#go" class="hash-link" aria-label="Go的直接連結" title="Go的直接連結">​</a></h3>
+<div class="language-shell codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-shell codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">brew install go</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="複製程式碼至剪貼簿" title="複製" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="ide--gui-tools">IDE &amp; GUI Tools<a href="https://kywk.github.io/life/2024/11/30/Mac-DevEnv-Setup/#ide--gui-tools" class="hash-link" aria-label="IDE &amp; GUI Tools的直接連結" title="IDE &amp; GUI Tools的直接連結">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="vscode">VSCode<a href="https://kywk.github.io/life/2024/11/30/Mac-DevEnv-Setup/#vscode" class="hash-link" aria-label="VSCode的直接連結" title="VSCode的直接連結">​</a></h3>
+<div class="language-shell codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-shell codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">brew install --cask visual-studio-code</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="複製程式碼至剪貼簿" title="複製" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="goland">GoLand<a href="https://kywk.github.io/life/2024/11/30/Mac-DevEnv-Setup/#goland" class="hash-link" aria-label="GoLand的直接連結" title="GoLand的直接連結">​</a></h3>
+<div class="language-shell codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-shell codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">brew install --cask goland</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="複製程式碼至剪貼簿" title="複製" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="webstorm">WebStorm<a href="https://kywk.github.io/life/2024/11/30/Mac-DevEnv-Setup/#webstorm" class="hash-link" aria-label="WebStorm的直接連結" title="WebStorm的直接連結">​</a></h3>
+<div class="language-shell codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-shell codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">brew install --cask webstorm</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="複製程式碼至剪貼簿" title="複製" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="others">Others<a href="https://kywk.github.io/life/2024/11/30/Mac-DevEnv-Setup/#others" class="hash-link" aria-label="Others的直接連結" title="Others的直接連結">​</a></h3>
+<p><strong><a href="https://git-fork.com/" target="_blank" rel="noopener noreferrer">Fork</a></strong></p>
+<p>Fork - a fast and friendly git client for Mac</p>
+<div class="language-shell codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-shell codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">brew install fork</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="複製程式碼至剪貼簿" title="複製" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p><strong><a href="https://www.usebruno.com/" target="_blank" rel="noopener noreferrer">Bruno</a></strong></p>
+<p>The Collaboration Platform for API Development.</p>
+<div class="language-shell codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-shell codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">brew install bruno</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="複製程式碼至剪貼簿" title="複製" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p><em>See Also: [[Postman Alternative]]</em></p>
+<p><strong><a href="http://www.sequelpro.com/" target="_blank" rel="noopener noreferrer">Sequel Pro</a></strong></p>
+<p>Sequel Pro is a fast, easy-to-use Mac database management application for working with MySQL databases.</p>
+<div class="language-shell codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-shell codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">brew install sequel-pro</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="複製程式碼至剪貼簿" title="複製" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p><strong><a href="https://tableplus.com/" target="_blank" rel="noopener noreferrer">TablePlus</a></strong></p>
+<p>Modern, Native Tool for Database Management.</p>
+<div class="language-shell codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-shell codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">brew install tableplus</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="複製程式碼至剪貼簿" title="複製" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p><strong><a href="https://rdm.dev/" target="_blank" rel="noopener noreferrer">Redis Desktop Manager</a></strong></p>
+<p>Redis GUI management tool for Windows, Mac OS X, Ubuntu and Debian.</p>
+<div class="language-shell codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-shell codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">brew install --cask another-redis-desktop-manager</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="複製程式碼至剪貼簿" title="複製" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p><strong><a href="https://robomongo.org/" target="_blank" rel="noopener noreferrer">Robo3T</a></strong></p>
+<p>Robo 3T. Free, open-source MongoDB GUI</p>
+<div class="language-shell codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-shell codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">brew install tableplus</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="複製程式碼至剪貼簿" title="複製" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="see-also">See Also<a href="https://kywk.github.io/life/2024/11/30/Mac-DevEnv-Setup/#see-also" class="hash-link" aria-label="See Also的直接連結" title="See Also的直接連結">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="遺珠">遺珠<a href="https://kywk.github.io/life/2024/11/30/Mac-DevEnv-Setup/#%E9%81%BA%E7%8F%A0" class="hash-link" aria-label="遺珠的直接連結" title="遺珠的直接連結">​</a></h3>
+<p>以下是曾為個人熱愛, 但因故越來越少用的軟體. 暫列於此...</p>
+<ul>
+<li><a href="https://atom.io/" target="_blank" rel="noopener noreferrer">Atom</a><br>
+A hackable text editor for the 21st Century by github.</li>
+<li><a href="http://sourcetreeapp.com/" target="_blank" rel="noopener noreferrer">SourceTree</a><br>
+Free Mercurial and Git Client for Windows and Mac</li>
+<li><a href="https://www.gitkraken.com/" target="_blank" rel="noopener noreferrer">GitKraken</a><br>
+The downright luxurious Git client, for Windows, Mac &amp; Linux</li>
+<li><a href="https://hyperterm.org/" target="_blank" rel="noopener noreferrer">HyperTerm</a>
+JS/HTML/CSS Terminal</li>
+<li><a href="https://github.com/alacritty/alacritty" target="_blank" rel="noopener noreferrer">alacritty/alacritty: A cross-platform, OpenGL terminal emulator.</a></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="reference">Reference<a href="https://kywk.github.io/life/2024/11/30/Mac-DevEnv-Setup/#reference" class="hash-link" aria-label="Reference的直接連結" title="Reference的直接連結">​</a></h3>
+<p><strong>Zsh</strong></p>
+<ul>
+<li><a href="https://sspai.com/post/55176" target="_blank" rel="noopener noreferrer">让你的 Mac 提前用上 macOS Catalina 的 Shell——Oh My Zsh 配置指南 - 少数派</a></li>
+<li><a href="https://cyeninesky3.medium.com/bin-to-zsh-%E8%A8%AD%E5%AE%9A%E6%B5%81%E7%A8%8B-d29fe60a4121" target="_blank" rel="noopener noreferrer">bash to zsh 設定流程. 參考這篇一步一步執行，因為我已裝過 homebrew以及 iterm2… | by Youngmi huang | Medium</a></li>
+</ul>
+<p><strong>iTerm2 + Oh My Zsh</strong></p>
+<ul>
+<li><a href="https://ithelp.ithome.com.tw/articles/10192874" target="_blank" rel="noopener noreferrer">[Tool] Mac + iTerm 2 + Oh My Zsh + Powerlevel9k 設定 - iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天</a></li>
+<li><a href="https://medium.com/statementdog-engineering/prettify-your-zsh-command-line-prompt-3ca2acc967f" target="_blank" rel="noopener noreferrer">超簡單！十分鐘打造漂亮又好用的 zsh command line 環境 | by Gary Chu | 財報狗技術部落格 | Medium</a></li>
+<li><a href="https://medium.com/@hazelwu/%E7%94%A8oh-my-zsh%E6%8A%8Aiterm%E8%AE%8A%E7%BE%8E%E7%BE%8E-8a18daa8eac" target="_blank" rel="noopener noreferrer">用Oh My Zsh把iTerm變美美. 使用終端機操作時常密密麻麻的，看一兩個小時還好，但如果長期這樣下去真的會眼殘，畫… | by Hazel Wu | Medium</a></li>
+<li><a href="https://medium.com/@h86991868/%E7%9C%8B%E8%86%A9%E4%BA%86%E4%B8%80%E6%88%90%E4%B8%8D%E8%AE%8A%E7%9A%84%E5%B0%8F%E9%BB%91%E7%AA%97-%E6%94%B9%E7%94%A8iterm2-oh-my-zsh%E5%90%A7-cc2b0683acb" target="_blank" rel="noopener noreferrer">看膩了一成不變的小黑窗？改用iterm2 + oh-my-zsh吧 | by Nathan Chou | Medium</a></li>
+</ul>
+<p><strong>WebStorm</strong></p>
+<ul>
+<li><a href="https://fpjs.fun/webstorm/general/setup/" target="_blank" rel="noopener noreferrer">WebStorm 安裝與設定 | 點燈坊</a></li>
+</ul>
+<p><strong>Mac Dev</strong></p>
+<ul>
+<li><a href="https://goo.gl/ZDYqar" target="_blank" rel="noopener noreferrer">How to set up your Mac for Web Development – freeCodeCamp.org</a></li>
+<li><a href="http://goo.gl/XOrSV6" target="_blank" rel="noopener noreferrer">homebrew - Mac OS X Yosemite 10.10 開発環境構築 - Qiita</a>
+<ul>
+<li><a href="http://goo.gl/8JkuvS" target="_blank" rel="noopener noreferrer">Python Development Environment on Mac OS X Mavericks 10.9 | Hacker Codex</a></li>
+<li><a href="http://goo.gl/5yhNGk" target="_blank" rel="noopener noreferrer">Set Up Python and Install Django on Mac OS X Lion 10.7 | Hacker Codex</a></li>
+</ul>
+</li>
+<li><a href="http://goo.gl/YkCvoT" target="_blank" rel="noopener noreferrer">Setting Up a Mac Dev Machine From Zero to Hero With Dotfiles - Tuts+ Code Tutorial</a></li>
+<li><a href="http://goo.gl/gSnCRv" target="_blank" rel="noopener noreferrer">MacOS 編輯器快捷建設定, short key of editor</a></li>
+<li><a href="https://goo.gl/YZfREq" target="_blank" rel="noopener noreferrer">2018 最新 MacBook 必裝程式與設定 – Ryan Hsu – Medium</a></li>
+</ul>]]></content>
+        <category label="Mac" term="Mac"/>
+        <category label="DevEnv" term="DevEnv"/>
+        <category label="kywk" term="kywk"/>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Yet Another Macbook]]></title>
         <id>https://kywk.github.io/life/2024/11/28/New-Mac-Setup-Step/</id>
         <link href="https://kywk.github.io/life/2024/11/28/New-Mac-Setup-Step/"/>
@@ -313,7 +470,7 @@
 <li>terminal/console 設定
 <ul>
 <li>本步驟所有軟體與
-<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">brew install iterm2 fzf</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">brew install font-fira-code-nerd-font font-fira-code font-fira-mono font-fira-sans</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">brew install font-source-code-pro</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">brew install font-hack-nerd-font</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="複製程式��碼至剪貼簿" title="複製" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">brew install iterm2 fzf</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">brew install font-fira-code-nerd-font font-fira-code font-fira-mono font-fira-sans</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">brew install font-source-code-pro</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">brew install font-hack-nerd-font</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="複製程式碼至剪貼簿" title="複製" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 </li>
 <li>打開 iTerm2, 匯入設定與色卡後重啟, 進行 Shell 設定
 <div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">ln -sfF Dropbox/config/dotfiles .files</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">ln -sfF .files/zsh/mac.zshrc .zshrc</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">ln -sfF .files/zsh/mac.zprofile .zprofile</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">mkdir .local</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">touch .local/develop.sh</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">touch .local/local.sh</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="複製程式碼至剪貼簿" title="複製" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
@@ -671,106 +828,5 @@ Curry 竟用如此石破天驚的表現, 撐起了勇士隊.</p>
             <uri>https://github.io/kywk</uri>
         </author>
         <category label="Life" term="Life"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Keep Running 2023]]></title>
-        <id>https://kywk.github.io/life/2023/01/01/keep-running/</id>
-        <link href="https://kywk.github.io/life/2023/01/01/keep-running/"/>
-        <updated>2023-01-01T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[2023.01.01 Keep Running 2023]]></summary>
-        <content type="html"><![CDATA[<p>不免俗地打掃了家裡，在新的一年的到來，還是冀望個新開始。</p>
-<p>可預期的未來還會很忙，先恢復紀錄日常：工作、閱讀、電影、運動、生活！</p>
-<p>一步一步累積，一天一天前進。</p>
-<p>同時也一點一點排除不需要的東西，物質上、生活上、心靈上。</p>
-<p>最後是老生常談的那些...</p>
-<p>減肥健身、技術攀登、新工作、搬家…等，隨之也會有許多改變。<br>
-總歸來說，大方向仍和 Reborn 2021 一樣：</p>
-<p>去接觸新環境、去學習新技能、去結交新朋友、去建立新習慣，<br>
-舒適於新環境、活用於新技能、熟稔於新朋友、生活於新習慣。</p>
-<p>部份老靈魂還活在那，Patagonia 亦仍在。</p>
-<p>每天三件事：完成工作上的緊急事件與進度、發展專業上的重要成果、投入生活上的慾望清單。<br>
-看本書、聽些音樂、練練英文。<br>
-然後運動、放鬆、重置每一天。</p>
-<p>就繼續吧，<br>
-回馬場、再越野、仍爬山，還工作。<br>
-擬定目標，有所作為，<strong>持之以恆！</strong>，<a href="http://goo.gl/393HY" target="_blank" rel="noopener noreferrer">before i die</a>！</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="daily">Daily<a href="https://kywk.github.io/life/2023/01/01/keep-running/#daily" class="hash-link" aria-label="Daily的直接連結" title="Daily的直接連結">​</a></h3>
-<ul>
-<li>Finish today's todo on-schedule, or re-schedule it</li>
-<li>English communication exercise</li>
-<li>Regular training: 7k easy run every morning
-<ul>
-<li>Monday: Core, Strength and Conditioning</li>
-<li>Tuesday: 10k</li>
-<li>Wednesday: Core, Strength and Conditioning</li>
-<li>Thursday: 15k or Core</li>
-<li>Friday: Trail, Bike to home, Stone</li>
-</ul>
-</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="weekly">Weekly<a href="https://kywk.github.io/life/2023/01/01/keep-running/#weekly" class="hash-link" aria-label="Weekly的直接連結" title="Weekly的直接連結">​</a></h3>
-<ul>
-<li>LeetCode Weekly Contest</li>
-<li>A Tokaido/Patagonia a week: A introduction to one trail path of Tokaido/Patagonia</li>
-<li>兩本書、兩篇心得</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="monthly">Monthly<a href="https://kywk.github.io/life/2023/01/01/keep-running/#monthly" class="hash-link" aria-label="Monthly的直接連結" title="Monthly的直接連結">​</a></h3>
-<ul>
-<li>(Biweekly) Cook a meal. Include salad, starter, main-dish, dessert... etc</li>
-<li>(Biweekly) Photography: finish one set of previous works</li>
-<li>Announce a minion prject</li>
-<li>Finish a 42k marathon or more than 42k self trainning</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="yearly">Yearly<a href="https://kywk.github.io/life/2023/01/01/keep-running/#yearly" class="hash-link" aria-label="Yearly的直接連結" title="Yearly的直接連結">​</a></h3>
-<ul>
-<li>Mointaineering
-<ul>
-<li><em>找路</em> 沙韻古道再探</li>
-<li>八通關古道</li>
-<li>北一段</li>
-<li>南二段</li>
-<li>能高安東軍</li>
-</ul>
-</li>
-<li>LifeHaker
-<ul>
-<li>攀岩</li>
-<li>學游泳、潛水</li>
-<li>學飛行傘</li>
-</ul>
-</li>
-</ul>
-<p>仍貪心。公開目標，騎虎難下。</p>]]></content>
-        <author>
-            <name>kywk</name>
-            <uri>https://github.io/kywk</uri>
-        </author>
-        <category label="kywk" term="kywk"/>
-        <category label="LifeHack" term="LifeHack"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Bye, manjaro]]></title>
-        <id>https://kywk.github.io/life/2022/11/07/bye-manjaro/</id>
-        <link href="https://kywk.github.io/life/2022/11/07/bye-manjaro/"/>
-        <updated>2022-11-07T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[2022.11.07 Bye, manjaro]]></summary>
-        <content type="html"><![CDATA[<p>使用 Manjaro 約半年, 使用上大致滿意.</p>
-<p><a href="https://www.youtube.com/watch?v=oVlD17OjFAc&amp;t=802s" target="_blank" rel="noopener noreferrer">#Linux/Manjaro #Linux MANJARO has a BIG PROBLEM</a></p>
-<p>而前不久 Youtube 自動跳出來的影片, 看了之後有些同感.</p>
-<p>Manjaro 官方態度是比較保險的, 套件測試穩定後才推出, 更新速度較慢.
-所以開放使用者可以直接透過上游 AUR 更新軟體套件.</p>
-<p>但也就是這個方式, 電腦理可能同時會安裝了從 Manjaro 官方安裝的套件及 AUR 來的軟體.
-偶爾會發生 AUR 上的套件依賴的函式庫或核心版本較新, 而 Mnajaro 的版本較舊的衝突狀況.</p>
-<p>某次更新時有些核心套件一直無法順利更新, AUR 資料庫更新也出錯, 然後突發的報錯頻率就越來越高.
-偏偏 Manjaro 官方在維護又是出了名的天兵, SSL 憑證過期這種事都可以屢屢發生.
-影片中所談確實中允.</p>
-<p>原本 Manjaro 是安裝在閒置筆電上, 偶爾開機用用玩玩, 小問題不打緊.
-後來因故需要常態使用該筆電, 小問題不斷, 擾民.</p>
-<p>工作上還是需要穩定性和市佔都比較高的系統, 暫時回歸 ubuntu 懷抱, 改天再折騰了.</p>]]></content>
-        <author>
-            <name>kywk</name>
-            <uri>https://github.io/kywk</uri>
-        </author>
-        <category label="Linux" term="Linux"/>
     </entry>
 </feed>
