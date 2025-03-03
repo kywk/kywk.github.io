@@ -58,6 +58,7 @@ Surfing 12.01 ~ 12.31
 	- [用 Script 找出寫作技巧上疏忽的點 – Gea-Suan Lin's BLOG](https://blog.gslin.org/archives/2024/12/16/12125/%e7%94%a8-script-%e6%89%be%e5%87%ba%e5%af%ab%e4%bd%9c%e6%8a%80%e5%b7%a7%e4%b8%8a%e7%96%8f%e5%bf%bd%e7%9a%84%e9%bb%9e/)
 - [GitHub - microsoft/markitdown: Python tool for converting files and office documents to Markdown.](https://github.com/microsoft/markitdown)
 	- [將各種檔案轉成 Markdown 的 markitdown – Gea-Suan Lin's BLOG](https://blog.gslin.org/archives/2024/12/16/12124/%e5%b0%87%e5%90%84%e7%a8%ae%e6%aa%94%e6%a1%88%e8%bd%89%e6%88%90-markdown-%e7%9a%84-markitdown/)
+	- [markitdown 微軟開源將 Office 文件轉成 Markdown 格式 - Tsung's Blog](https://blog.longwin.com.tw/2025/02/markitdown-microsoft-open-source-office-convert-markdown-2025/)
 - [《給網站工程師的網路課》心得：Web 開發者的網路學習指南 - Code and Me](https://blog.kyomind.tw/network-101-course/)
 - [State of Node.js Performance 2024](https://nodesource.com/blog/State-of-Nodejs-Performance-2024)
 	- 簡單來說, node 20/22 輾壓 18.

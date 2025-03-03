@@ -32,12 +32,12 @@ image: https://lh3.googleusercontent.com/pw/ACtC-3dctjoKSszhdu7OFFUmtd-eRmtxUAIx
 - [x] docusaurus ✅ 2025-01-07
 
 ## Obsidian
-- [ ] Obsidian Vault 📅 2025-02-16 
-	- [ ] TODOs 📅 2025-02-09 
-	- [ ] docusaurus 📅 2025-02-03
-		- [ ] upgrade to 3.7.x  📅 2025-02-03 
+- [x] Obsidian Vault 📅 2025-02-16 ✅ 2025-02-17
+	- [x] TODOs 📅 2025-02-09 ✅ 2025-02-10
+	- [x] docusaurus 📅 2025-02-03 ✅ 2025-02-03
+		- [x] upgrade to 3.7.x 📅 2025-02-03 ✅ 2025-02-03
 - [x] Document Reorganize ✅ 2025-01-28
-- [ ] Finance 信用卡 / 銀行 📅 2025-02-09 
+- [ ] Finance 信用卡 / 銀行 📅 2025-02-28
 
 ## Stuff Reorganize
 - [x] 3C ✅ 2025-01-19

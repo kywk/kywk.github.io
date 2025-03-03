@@ -1,6 +1,6 @@
 ---
-title: Surf 01.01~ 01.15
-description: Surfing quick note 01.01~ 01.15
+title: Surf 01.01 ~ 01.15
+description: Surfing quick note 01.01 ~ 01.15
 authors: kywk
 tags:
   - Surf
@@ -9,7 +9,7 @@ image: https://lh3.googleusercontent.com/pw/AM-JKLXZZHmidSgMMB2k8blkneclNRysPXLr
 hide_table_of_contents: true
 ---
 
-Surfing 01.01~ 01.15
+Surfing 01.01 ~ 01.15
 ==================
 
 ### IT News
@@ -52,4 +52,3 @@ Surfing 01.01~ 01.15
 	- [DJI 空拍機再加入生力軍，正式發表全能 Vlog 空拍機 DJI Flip \| 就是教不落 - 給你最豐富的 3C 資訊、教學網站](https://steachs.com/archives/73512#google_vignette)
 	- [大疆正式發表 DJI Flip！全能 Vlog 空拍機，重量低於 249g，建議售價 NT$12,990 \| T客邦](https://www.techbang.com/posts/120862-dji-flip-vlog-249g-nt12990)
 	- 看影視颶風的介紹相當心動, 考慮 618 入手, 年中印尼旅行時好好把玩紀錄...
-

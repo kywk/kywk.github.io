@@ -28,7 +28,7 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-## END Global/macOS.gitignore 
+## END Global/macOS.gitignore
 
 
 # Dependencies
@@ -64,10 +64,10 @@ _templates/
 com.nanshan/
 important/
 finance/
+*.docx
+*.pdf
 
 # syncthing
 .stfolder/
 .stfolder*
 .stignore
-
-

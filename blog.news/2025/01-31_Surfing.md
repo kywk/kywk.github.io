@@ -1,6 +1,6 @@
 ---
-title: Surf 01.16~ 01.31
-description: Surfing quick note 01.16~ 01.31
+title: Surf 01.16 ~ 01.31
+description: Surfing quick note 01.16 ~ 01.31
 authors: kywk
 tags:
   - Surf
@@ -9,7 +9,7 @@ image: https://lh3.googleusercontent.com/pw/AM-JKLXZZHmidSgMMB2k8blkneclNRysPXLr
 hide_table_of_contents: true
 ---
 
-Surfing 01.16~ 01.31
+Surfing 01.16 ~ 01.31
 ==================
 
 ### IT News
@@ -19,9 +19,9 @@ Surfing 01.16~ 01.31
 	  可能連白宮都不清楚, 為何難民會投奔小紅書, 而非 Twitter / IG / Threads / ... 等美國公司的社交平台.
 	  說穿了, 政治上的鬥爭, 離人民遠近, 實難評估...
 - [AI 翻譯工具「沉浸式翻譯」入選 Google 年度精選推薦 - INSIDE](https://www.inside.com.tw/article/37299-translate)
-	- [ ] 安裝/深入把玩 📅 2025-01-31
+	- [ ] 安裝/深入把玩 🔽 📅 2025-01-31
 - [2 小时用 Cursor 开发了一个 PDF 骑缝章工具，第二天就有人用啦！ - CNode技术社区](https://cnodejs.org/topic/678b1412257f297e2f3fa773)
-	- [ ] Cursor and Prompt 📅 2025-01-31
+	- [ ] Cursor and Prompt 🔽 📅 2025-01-31
 - [Evolving GitHub Issues (public preview) - GitHub Changelog](https://github.blog/changelog/2025-01-13-evolving-github-issues-public-preview/)
 	- [GitHub Issues加入子議題、分類與進階搜尋，提升議題組織與追蹤效率 \| iThome](https://www.ithome.com.tw/news/167055)
 - [GitHub - lightpanda-io/browser: Lightpanda: the headless browser designed for AI and automation](https://github.com/lightpanda-io/browser)

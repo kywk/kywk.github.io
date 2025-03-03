@@ -14,7 +14,7 @@ date_updated: 2023-08-20
 
 ### schedule / 行程記錄
 
-[[Schedule on Egypt]]
+[[backpacker/2401 Egypt/Schedule on Egypt]]
 
 - 01.23 TPE > KRI > KUL
 - 01.24 KUL > CAI
