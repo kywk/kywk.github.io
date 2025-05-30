@@ -33,11 +33,13 @@ console.log(`
 
 ## Working Note
 
-- [[DD About Birds]]
+- [[DD About Birds ${year}]]
+
+### DD Task Force
 
 ## TODO
 
-![[NS_TODO]]
+![[NS_TODO ${year}#TODO]]
 `);
 
 while (beginDate <= endDate) {
@@ -47,6 +49,8 @@ while (beginDate <= endDate) {
 
   console.log(`
 ### ${beginDate.toISOString().split("T")[0].replaceAll("-", "/")} ~ ${weekEndDate.toISOString().split("T")[0].replaceAll("-", "/")}
+
+#### TODO List
 
 \`\`\`tasks
 path includes com.nanshan

@@ -1,5 +1,5 @@
 ---
-kanban-plugin: basic
+kanban-plugin: board
 title: Day by day
 tags:
   - Backpacker

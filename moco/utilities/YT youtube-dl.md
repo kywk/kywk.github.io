@@ -190,10 +190,12 @@ done
 - [youtube-dl | 院長的筆記本](https://ianwu.tw/press/topic/command_line_program/youtube-dl.html)
 - [Youtube-dl濃縮教學筆記 | 小蛇蛇的筆記](https://yogapan.github.io/2017/08/16/Youtube-dl%E6%BF%83%E7%B8%AE%E6%95%99%E5%AD%B8%E7%AD%86%E8%A8%98/)
 - [Downloading youtube playlist with youtube-dl, skipping existing files - Ask Ubuntu](https://askubuntu.com/questions/673442/downloading-youtube-playlist-with-youtube-dl-skipping-existing-files)
+- [yt-dlp 如何下載字幕 - Tsung's Blog](https://blog.longwin.com.tw/2025/03/linux-yt-dlp-download-subtitle-2025/)
+- 
 
 ### GUI Downloader
 
 - [FreeTube - The Private YouTube Client](https://freetubeapp.io/)
-  - [FreeTube 免費 YouTube 播放工具，無廣告、支援影片與音樂下載、訂閱功能 - 電腦王阿達](https://www.kocpc.com.tw/archives/355689)
+	- [FreeTube 免費 YouTube 播放工具，無廣告、支援影片與音樂下載、訂閱功能 - 電腦王阿達](https://www.kocpc.com.tw/archives/355689)
 - [Gihosoft TubeGet - Free YouTube Downloader for PC & Mac](http://www.gihosoft.com/free-youtube-downloader.html)
-  - [如何在 Mac 下載 YouTube 1080P 高清影片 – APPLEFANS 蘋果迷](https://applefans.today/gihosoft-tubeget-download-youtube/)
+	- [如何在 Mac 下載 YouTube 1080P 高清影片 – APPLEFANS 蘋果迷](https://applefans.today/gihosoft-tubeget-download-youtube/)

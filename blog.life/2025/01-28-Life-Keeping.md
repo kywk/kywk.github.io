@@ -37,7 +37,7 @@ image: https://lh3.googleusercontent.com/pw/ACtC-3dctjoKSszhdu7OFFUmtd-eRmtxUAIx
 	- [x] docusaurus 📅 2025-02-03 ✅ 2025-02-03
 		- [x] upgrade to 3.7.x 📅 2025-02-03 ✅ 2025-02-03
 - [x] Document Reorganize ✅ 2025-01-28
-- [ ] Finance 信用卡 / 銀行 📅 2025-02-28
+- [x] Finance 信用卡 / 銀行 📅 2025-02-28 ✅ 2025-03-07
 
 ## Stuff Reorganize
 - [x] 3C ✅ 2025-01-19

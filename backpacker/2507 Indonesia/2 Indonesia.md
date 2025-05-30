@@ -28,7 +28,7 @@ date_updated: 2025-02-03
 
 ### Documentation
 
-- [ ] 換護照 ⏫ 📅 2025-03-31
+- [ ] 換護照 ⏫ 📅 2025-05-31
 - [ ] ETA
 	- [ ] pdf file on mobile phone
 	- [ ] printed paper
