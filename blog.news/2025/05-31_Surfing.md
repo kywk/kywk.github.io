@@ -15,7 +15,7 @@ hide_table_of_contents: true
 
 - [【臺灣資安大會直擊】API資安威脅成挑戰，富邦金建立六項機制管控API安全 \| iThome](https://www.ithome.com.tw/news/168669)
 - [Chrome 也能用垂直分頁！免費擴充功能「側邊欄垂直分頁」支援分組與快捷鍵操作 – 免費資源網路社群](https://free.com.tw/chrome-vertical-tabs/)
-	- [ ] try it now 🔺 📅 2025-05-27
+	- [x] try it now 🔺 📅 2025-05-27 ✅ 2025-05-31
 
 ### AI
 

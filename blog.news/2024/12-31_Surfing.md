@@ -38,7 +38,7 @@ Surfing 12.01 ~ 12.31
 -  [Download Ghostty](https://ghostty.org/download)
 	- [Ghostty 1.0 \| Hacker News](https://news.ycombinator.com/item?id=42517447)
 	- 一個發表前已略有名氣的 terminal emulator.
-	- [ ] 和 wezterm, kitty, tabby 一起比較玩玩. ⏬ 📅 2025-01-05
+	- [x] 和 wezterm, kitty, tabby 一起比較玩玩. ⏬ 📅 2025-01-05 ✅ 2025-05-31
 - [GitHub - siyuan-note/siyuan: A privacy-first, self-hosted, fully open source personal knowledge management software, written in typescript and golang.](https://github.com/siyuan-note/siyuan)
 	- [Siyuan: Privacy-first, self-hosted personal knowledge management software \| Hacker News](https://news.ycombinator.com/item?id=42512713)
 	- [GitHub - dullage/flatnotes: A self-hosted, database-less note taking web app that utilises a flat folder of markdown files for storage.](https://github.com/Dullage/flatnotes)

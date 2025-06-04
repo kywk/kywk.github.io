@@ -32,14 +32,12 @@ Surfing 11.01 ~ 11.15
 	- 理想很豐滿... 
 - [iThome 鐵人賽寫作攻略——新手必看指南 - Code and Me](https://blog.kyomind.tw/ithome-ironman-tips/)
 	- 每年許願, 但每年都沒做到的鐵人賽.
-- 
 
 ### Tech
 
 - [Writing secure Go code | Jakub Jarosz](https://jarosz.dev/article/writing-secure-go-code/)
 	- [Writing secure Go code | Hacker News](https://news.ycombinator.com/item?id=42043939)
 - [getenv() + putenv() + setenv() 的 thread-safe 問題 – Gea-Suan Lin's BLOG](https://blog.gslin.org/archives/2024/11/13/12063/getenv-putenv-setenv-%e7%9a%84-thread-safe-%e5%95%8f%e9%a1%8c/)
-- 
 
 ### Life
 
@@ -48,4 +46,3 @@ Surfing 11.01 ~ 11.15
 - [An IKEA Hack That Works Wonders For The Often Ignored Behind-The-Door Space](https://ikeahackers.net/2024/11/behind-the-door-storage-shelf.html)
 - [去了兩個月健身房之後——我的「有氧運動」進化史 - Code and Me](https://blog.kyomind.tw/cardio-evolution-2-months/)
 - [到世界最高的湖泊露營☺尼泊爾Tilicho Lake健行 (1) - Mobile01](https://www.mobile01.com/topicdetail.php?f=628&t=7043055)
-- 

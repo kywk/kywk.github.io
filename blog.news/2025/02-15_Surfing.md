@@ -19,7 +19,8 @@ Surfing 02.01 ~ 02.15
 - [SaaS 太貴？OpenAlternative 幫你找到最佳開源替代方案 – 免費資源網路社群](https://free.com.tw/openalternative/)
 - [Waydroid \| Android in a Linux container](https://waydro.id/)
 	- [Waydroid – Android in a Linux container \| Hacker News](https://news.ycombinator.com/item?id=42911042)
-	- [ ] 期待 / 研究用模擬器相關技術, 模擬 Pixel 無限相簿. 📅 2025-03-31 
+	- [x] 期待 / 研究用模擬器相關技術, 模擬 Pixel 無限相簿. 📅 2025-03-31 ✅ 2025-05-31
+		- **無法在模擬器上真正模擬出 Pixel 專屬的 Google Photos 無限空間特性**
 - [GitHub - tcgoetz/GarminDB: Download and parse data from Garmin Connect or a Garmin watch, FitBit CSV, and MS Health CSV files into and analyze data in Sqlite serverless databases with Jupyter notebooks.](https://github.com/tcgoetz/GarminDB)
 	- [GarminDB \| Hacker News](https://news.ycombinator.com/item?id=42912515)
 	- 分析 Garmin connect 健康資訊的一些腳本專案.
