@@ -17,9 +17,9 @@ tags:
 - [x] obs-howto_docusaurus-integrate 📅 2023-09-08 ✅ 2023-09-14
 
 ### myOutlook
-- [ ] obs-core_properties 🔽 📅 2025-06-18
-- [ ] obs_task-management 🔽 📅 2025-06-22
-- [ ] obs-core_daily-notes 🔼 📅 2025-06-25
+- [ ] obs-core_properties 🔽 📅 2025-08-18
+- [ ] obs_task-management 🔽 📅 2025-08-22
+- [ ] obs-core_daily-notes 🔼 📅 2025-08-25
 - [x] Reorganize Obsidian ✅ 2024-01-04
 
 ### myAnobii

@@ -49,7 +49,7 @@ ln -s ~/Dropbox/dotfiles/zsh/zshrc ~/.zshrc
 ```shell
 brew install font-fira-code-nerd-font font-fira-code font-fira-mono font-fira-sans
 brew install font-source-code-pro
-brew install font-hack-nerd-font
+brew install font-hack-nerd-font font-meslo-lg-nerd-font
 ```
 
 ## Base Environment
@@ -70,9 +70,7 @@ See Also: [[Awesome CLI]]
 
 ## Program Language
 
-### Node.js
-
-**[Node.js](https://nodejs.org/)**
+### [Node.js](https://nodejs.org/)
 
 [[Volta Get Started]]
 

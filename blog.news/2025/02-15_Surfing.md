@@ -38,13 +38,13 @@ Surfing 02.01 ~ 02.15
 ### Tech
 
 - [Development Machine \| Complete Think](https://rickhw.github.io/2025/02/02/Coding/Development-Machine/)
-	- [ ] Review my Java DEV Env & flow 📅 2025-02-28
-	- [ ] SDK [Java Version Manager \| Complete Think](https://rickhw.github.io/2019/04/07/Coding/Java-Version-Manager/) 📅 2025-02-28
+	- [ ] Review my Java DEV Env & flow 📅 2025-06-06
+	- [ ] SDK [Java Version Manager \| Complete Think](https://rickhw.github.io/2019/04/07/Coding/Java-Version-Manager/) 📅 2025-06-06
 - [/usr/bin/env 在 shebang 可以用 -S 展開參數 – Gea-Suan Lin's BLOG](https://blog.gslin.org/archives/2025/02/03/12242/)
 	- [Linux - 认识shell的解释行（Shebang）\_shebang行-CSDN博客](https://blog.csdn.net/weixin_43999327/article/details/104553431)
 - [# I Wrote a Wasm Interpreter in C - irreducible](https://irreducible.io/blog/my-wasm-interpreter/)
 - [5 Best AI-Powered Git Commit Message Tools Compared - Hongkiat](https://www.hongkiat.com/blog/best-ai-tools-for-git-commit-messages/)
-	- [ ] survey & try 📅 2025-02-23
+	- [x] survey & try 📅 2025-02-23 ✅ 2025-06-06
 - [GitHub - xajik/thedeck: The Deck: An Open-Source, Cross-Platform, Mobile, Turn by Turn Card Game Engine in Flutter](https://github.com/xajik/thedeck)
 	- [The Deck: An open-source cross-platform multiplayer card game engine in Flutter \| Hacker News](https://news.ycombinator.com/item?id=42983699)
 

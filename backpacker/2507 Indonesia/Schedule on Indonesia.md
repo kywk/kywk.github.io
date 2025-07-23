@@ -11,6 +11,7 @@ sidebar_position: 10
 
 ## Refs
 
+- [ ] ![](./assets/messageImage_1750599387418.jpg)
 
 
 ## 07.03 TPE > SUB
@@ -35,41 +36,60 @@ sidebar_position: 10
 	- 2025年 07月 03日 09:35 HRS
 
 
-## 07.03 SUB
+## 07.03 Sub
+
+- [ ] 泗水老街
+	
+	- [[One day in SUB]]
+	- [[Cafe in SUB]]
 
 
+## 07.04 Sub > Sewu
 
-## 07.04 SUB > SEWU
-
+- [ ] 六福村
 - [ ] BROMO 火山
 
 
-## 07.05
+## 07.05 Sewu > Ijen
+
+- [ ] Sewu Waterfall
 
 
+## 07.06 Ijen > Ubo, Bali
 
-## 07.06
-
-
-
-## 07.07
+- [ ] Ijen
+- [ ] Magical forester
 
 
+## 07.07 Ubo
 
-## 07.08
-
-
-
-## 07.09
+- [ ] ATV
+- [ ] Ubo
 
 
+## 07.08 Ubo > Kuta
 
-## 07.10
+- [ ] 神木
+- [ ] 神聖瀑布？
 
 
+## 07.09 Penida
 
-## 07.11
+- [ ] 天使浴池
+- [ ] 精靈沙灘
+- [ ] 斷崖公路
 
+
+## 07.10 Kuta > Komodo
+
+- [ ] 科莫多龍生態公園
+- [ ] 蝙蝠日落
+
+
+## 07.11 Komodo
+
+- [ ] 浮潛：小鯊魚
+- [ ] 浮淺：海龜
 
 
 ## 07.12 LBJ > KUL
@@ -79,6 +99,14 @@ sidebar_position: 10
 
 ## 07.13 KUL > TPE
 
+- [ ] __KUL > TPE__
+	
+	AirAsia D7 0378
+	09:25 表定： 09:25
+	吉隆坡國際機場 T2
+	->
+	13:56 表定： 14:25
+	台北 台灣桃園國際機場 T1
 
 
 
