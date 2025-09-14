@@ -16,10 +16,13 @@ tags:
 
 - [x] obs-howto_docusaurus-integrate 📅 2023-09-08 ✅ 2023-09-14
 
+- [Introduction to Bases - Obsidian Help](https://help.obsidian.md/bases)
+	- [ ] Study & Refine my Obsidian Vault 📅 2025-09-21
+
 ### myOutlook
-- [ ] obs-core_properties 🔽 📅 2025-08-18
-- [ ] obs_task-management 🔽 📅 2025-08-22
-- [ ] obs-core_daily-notes 🔼 📅 2025-08-25
+- [ ] obs-core_properties 🔽 📅 2025-09-15
+- [ ] obs_task-management 🔽 📅 2025-09-19
+- [ ] obs-core_daily-notes 🔼 📅 2025-09-22
 - [x] Reorganize Obsidian ✅ 2024-01-04
 
 ### myAnobii

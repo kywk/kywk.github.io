@@ -35,11 +35,14 @@ console.log(`
 
 - [[DD About Birds ${year}]]
 
-### DD Task Force
+## Reminding
 
-## TODO
+![[Ongoing Project#Ongoing Project TODO]]
 
 ![[NS_TODO ${year}#TODO]]
+
+## Week by week
+
 `);
 
 while (beginDate <= endDate) {
@@ -67,7 +70,7 @@ sort by due
 }
 
 console.log(`
-### Follow Up
+## Follow Up
 
 ![[DefectList#Defects]]
 `);

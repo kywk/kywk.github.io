@@ -38,8 +38,8 @@ Surfing 02.01 ~ 02.15
 ### Tech
 
 - [Development Machine \| Complete Think](https://rickhw.github.io/2025/02/02/Coding/Development-Machine/)
-	- [ ] Review my Java DEV Env & flow 📅 2025-06-06
-	- [ ] SDK [Java Version Manager \| Complete Think](https://rickhw.github.io/2019/04/07/Coding/Java-Version-Manager/) 📅 2025-06-06
+	- [ ] Review my Java DEV Env & flow 🔼 📅 2025-09-30
+	- [ ] SDK [Java Version Manager \| Complete Think](https://rickhw.github.io/2019/04/07/Coding/Java-Version-Manager/) 🔼 📅 2025-09-30
 - [/usr/bin/env 在 shebang 可以用 -S 展開參數 – Gea-Suan Lin's BLOG](https://blog.gslin.org/archives/2025/02/03/12242/)
 	- [Linux - 认识shell的解释行（Shebang）\_shebang行-CSDN博客](https://blog.csdn.net/weixin_43999327/article/details/104553431)
 - [# I Wrote a Wasm Interpreter in C - irreducible](https://irreducible.io/blog/my-wasm-interpreter/)

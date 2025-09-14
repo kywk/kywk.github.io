@@ -14,6 +14,6 @@ image: https://lh3.googleusercontent.com/pw/AL9nZEUA9Ifvd5Z8SXDWkeVB6AC4MPGwnXaL
 
 ### CodeBase
 
-- [ ] CLI project base src tree & README.md 🔽 📅 2025-03-09
+- [ ] CLI project base src tree & README.md 🔽 📅 2025-10-31
 
 ## See Also

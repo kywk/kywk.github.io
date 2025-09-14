@@ -65,6 +65,6 @@ date_updated: 2025-06-05
 
 ## After
 
-- [ ] Photo sync / organize 📅 2025-07-23 
-	- [ ] Mi9 Sync & Upload 📅 2025-07-23 
-- [ ] Kindly Indonesia 📅 2025-07-27 
+- [x] Photo sync / organize 📅 2025-07-23 ✅ 2025-08-10
+	- [x] Mi9 Sync & Upload 📅 2025-07-23 ✅ 2025-08-10
+- [ ] Kindly Indonesia 📅 2025-08-10
