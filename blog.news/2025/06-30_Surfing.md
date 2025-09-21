@@ -17,7 +17,7 @@ hide_table_of_contents: true
 	- [FFmpeg merges WebRTC support \| Hacker News](https://news.ycombinator.com/item?id=44182186)
 	- FFmpeg 整合 WebRTC 支援，特別是 WHIP 協定，為開源串流生態系統帶來了顯著進展。這不僅降低了進入門檻，還為建立去中心化的串流平台鋪平了道路。隨著更多工具和平台採用這些標準，未來的串流體驗將更加靈活和普及。
 - [yadm 教學：實作 macOS 與 Linux 的 dotfiles 跨平台同步 - Code and Me](https://blog.kyomind.tw/yadm-cross-platform/)
-	- [ ] dotfiles management 📅 2025-09-06
+	- [x] dotfiles management 📅 2025-09-06 ✅ 2025-09-18
 
 ### AI
 

@@ -25,12 +25,19 @@ hide_table_of_contents: true
 - [Junior Developers 在 Vibe Coding 時的問題與挑戰](https://studyhost.blogspot.com/2025/08/junior-developers-ai.html)
 - [ChatGPT開發者模式釋出，支援MCP工具讀寫操作 \| iThome](https://www.ithome.com.tw/news/171115)
 - [AI程式碼編輯器Cursor存在RCE弱點，裝置恐自動執行惡意程式碼 \| iThome](https://www.ithome.com.tw/news/171133)
+- [Go開發者現可用Genkit Go，以型別安全Flow函式封裝AI打造智慧應用 \| iThome](https://www.ithome.com.tw/news/171188)
+- [OpenAI 推 GPT-5-Codex 新版：最長可「想」7 小時來解決超難問題 - INSIDE](https://www.inside.com.tw/article/39585-openai-upgrades-codex-with-a-new-version-of-gpt-5)
+	- [GPT-5-Codex出爐，變身為更完整的開發代理系統 \| iThome](https://www.ithome.com.tw/news/171209)
 - 
 
 ### IT News
 
 - [Syncthing 2.0.0 的改變 – Gea-Suan Lin's BLOG](https://blog.gslin.org/archives/2025/08/13/12563/)
 	- SyncThing 專案好像又活了起來, 近來更新頻繁....
+- [markmap：將 Markdown (MD) 轉成 Mindmap - Tsung's Blog](https://blog.longwin.com.tw/2025/09/markmap-markdown-md-convert-mindmap-2025/)
+- [GitHub - DavidLiedle/DriftDB: DriftDB - An experimental append-only database with built-in time travel. Query any point in history, guaranteed data integrity, and immutable audit trails. Written in Rust.](https://github.com/DavidLiedle/DriftDB)
+	- 只能 Append 的資料庫，其實是個挺有趣的點子。
+- [Why our website looks like an operating system - PostHog](https://posthog.com/blog/why-os)
 - 
 
 ### Life

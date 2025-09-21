@@ -1,84 +1,50 @@
 ---
 title: kywk.moco
-description: Notes of Moo Cow
+description: 工程筆記總覽，讓 workflow 可以快速復用與調整。
 image: https://lh3.googleusercontent.com/pw/AL9nZEUA9Ifvd5Z8SXDWkeVB6AC4MPGwnXaL6kBXNPoXwOQQ2jOcZ1Jw_0p8TKK8C3ZX0e67_FOY15eDrm7aaXSQJcKtoUzC80SAQEHsaBy6qS2AqNNs5VUFNXBKm439y_1wkvmDl-PnL8ReojnIumNlEvOXBg=w800-no?authuser=0
 tags:
   - Awesome
   - kywk
-#sidebar_position: 1
-hide_table_of_contents: true
 date_created: 2023-01-02
-date_updated: 2023-01-02
+date_updated: 2025-09-21
 ---
 
-# Around kywk.moco
+# kywk.moco
 
-```
-├── 52 Projects
-│   └── Project Management
-├── BOOTCAMP
-├── TechStack
-│   ├── Database
-│   ├── OpenAPI
-│   └── Test
-├── DevSecOps
-│   ├── CICD
-│   ├── docker
-│   ├── GitLab
-│   ├── infra
-│   └── security
-├── Go
-│   ├── go-tour
-│   └── package
-├── JavaScript
-├── Java
-├── Python
-├── Rust
-├── Frontend
-│   ├── Flutter
-│   ├── ReactNative
-│   └── Web
-├── Utilities
-│   ├── Android
-│   ├── CLI
-│   ├── HomeLab
-│   ├── Linux
-│   └── VSCode
-├── Machintosh
-│   └── Hackintosh
-├── Obsidian
-│   ├── docusaurus
-│   ├── notion
-│   └── plugins
-└── Miscellaneous
-```
+> 「把專案拆成模組，保留可以快速組裝的 workflow。」
 
-<!--
-00 52 Projects
-03 BOOTCAMP
+## 🧪 Core Labs · 核心主題
+- [DevSecOps](/moco/category/devsecops/) — CICD、觀測與安全防線的 SOP。
+- [Tech Stack Library](/moco/category/tech-stack/) — 語言、框架與資料庫索引。
+- [Utilities](/moco/category/utilities/) — 開發環境、CLI 與 Homelab 設定。
 
-10 TechStack
+## 📘 Playbooks · 實戰練功
+:::tip Projects
+- [52 Projects](./52projects/52projects.md) — 年度練習題與進度追蹤。
+- [Bootcamp](/moco/category/bootcamp/) — 基礎補強與工作坊筆記。
+:::
 
-20 DevSecOps
-   - SRE
-   - docker
+:::note Toolchain
+- [DevSecOps > CICD](/moco/category/cicd/)
+- [Docker](/moco/category/docker/)
+- [Security](/moco/category/security/)
+:::
 
-30 Go
-31 JavaScript
-   - TypeScript
-32 Java
-33 Python
-34 Rust
+## 🧉 Language & Frameworks
+- [Go](/moco/category/go/)
+- [Java](/moco/category/java/)
+- [JavaScript](/moco/category/javascript/)
+- [OpenAPI](/moco/category/openapi/)
 
-50 Frontend
-   - Web
-   - Flutter
-   - ReactNative
+## 🧰 Toolbox
+- [Obsidian 筆記](/moco/category/obsidian/)
+- [Machintosh](/moco/category/machintosh/)
+- [Database](/moco/category/database/)
+- [Visual Studio Code](/moco/category/visual-studio-code/)
 
-70 Utilities
-   - CLI
-75 Machintosh
-80 Obsidian
+## 🔎 最近更新
+- [News Log](/news/)
+- [Life Blog](/life/)
+- [Awesome Obsidian](./obsidian/Awesome%20Obsidian.md)
 
-99 Miscellaneous
--->
+後續持續將專案拆成模組化的章節，讓 MoCo Lab 成為可靠的工程資源庫。

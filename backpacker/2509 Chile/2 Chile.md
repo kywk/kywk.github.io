@@ -15,15 +15,15 @@ date_updated: 2025-08-19
 
 ## Schedule & Flight
 
-- [ ] Schedule in Obsidian Kanban view 📅 2025-09-14
+- [ ] Schedule in Obsidian Kanban view 📅 2025-09-18
 - [x] TPE <--> SCL ✅ 2025-08-19
 	- [ ] pdf file on mobile phone
 	- [ ] printed paper
-- [ ] SCL <--> CJC 🔺 📅 2025-09-14
+- [ ] SCL <--> CJC 🔺 📅 2025-09-17
 	- [ ] pdf file on mobile phone
 	- [ ] printed paper
-- [ ] 9/28 ~ 10/1 聖地牙哥行程安排 📅 2025-09-14
-- [ ] 住宿 🔺 📅 2025-09-14
+- [ ] 9/28 ~ 10/1 聖地牙哥行程安排 📅 2025-09-18
+- [ ] 住宿 🔺 📅 2025-09-17
 
 ## Ready... Go
 

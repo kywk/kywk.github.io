@@ -8,7 +8,7 @@ tags:
   - kywk
 sidebar_position: 1
 date_created: 2022-08-13
-date_updated: 2025-06-01
+date_updated: 2025-09-20
 ---
 
 # [Mac] 系統與 Apps 安裝紀錄 2025.Jun
@@ -17,62 +17,110 @@ date_updated: 2025-06-01
 越來越少從文章中看到新 App 的介紹, 更多的是從 Youtube 影片推薦得知. 
 時代變遷...
 
-## 前置軟體
+## 快速安裝
+
+### 一鍵安裝腳本
+
+使用 dotfiles 專案的自動化安裝腳本，一次安裝所有必要工具：
+
+```bash
+# 1. Clone dotfiles 專案
+git clone <repo-url> ~/.files
+
+# 2. 執行初始化
+cd ~/.files && ./init.sh
+
+# 3. 安裝開發環境和應用程式
+./bin/setup-devenv.sh
+```
 
 ### Homebrew
 
 [**Homebrew**](https://brew.sh/index_zh-tw)
 
-homebrew cask 的支援越來越多, 越來越方便,
-個人多數軟體都透過 homebrew 安裝.
-在開始安裝各類軟體前, Homebrew 是必要的.
+所有軟體透過 `Brewfile` 統一管理，包含 70+ 開發工具：
 
 ```shell
+# 手動安裝 Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+# 使用 Brewfile 批次安裝
+brew bundle --file=mac/Brewfile
 ```
 
-可以進一步直接用 [[homebrew-bundle]] 來安裝必要的工具與軟體.
+### 配置同步
 
-### Dropbox
+**Dropbox + Maestral**
 
-專案和軟體配置檔案 (.files) 都放在 [**Dropbox**](https://www.dropbox.com/) 上,
-故新電腦的第二件事就是安裝 Dropbox Desktop, 把工作專案和環境配置同步到新電腦.
-
-許多開發者會把 .files 放到 GitHub 上, 新環境安裝配置時 git clone 下來 
-透過 Dropbox 同步也能達到相同成果, 且更新同步上更為即時.
-
-因 Dropbox 配合頻果的新政策更改了檔案位置, 反而讓自己一直習慣的路徑配置不方便使用.
-加上免費仔只能連結三個裝置的限制, 現在改用第三方軟體取代官方桌面工具.
-
-- [[Dotfiles Management]]
-- [[Maestral:Open source Dropbox client, Maestral]]
+配置檔案透過 Dropbox 同步，使用開源客戶端 Maestral：
 
 ```shell
 brew install maestral
 ```
 
-### Google Chrome
+**Dotfiles 管理**
 
-雖已漸漸棄用 Chrome, 改用 Safari 和 Edge. 但在 Chrome 長期使用習慣, 仍無法馬上改變. 導致先安裝 Chrome 也是安裝系統的必備之一.
+- 🔧 **智能環境管理** - 專案自動切換 Java/Node.js/Go 版本
+- ⚡ **效能最佳化** - Zinit Turbo 模式，Shell 啟動速度提升 50%+
+- 🛡️ **安全設計** - 敏感資料獨立管理，不進版控
+- 📦 **模組化架構** - 功能分離，易於維護和擴展
 
-- Microsoft Edge,
+### 瀏覽器
 
-### Sublime Text / Zed
-
-開發程式的主力已經轉為 VSCode, GoLand, WebStorm... 等.
-但 Sublime Text/Zed 啟動速度快, 基本作業順暢, 仍是必然安裝的工具.
-
-因安裝時 setup.sh 可能需要修改,
-所以會先以 Sublime Text 開啟 setup.sh,
-編改檢查後再行安裝各項軟體或依安裝情況修改配置.
-
-Sublime Text 已可以用 brew 安裝.
+**Google Chrome / Microsoft Edge**
 
 ```shell
-brew install sublime-text zed
+brew install google-chrome microsoft-edge
+```
+
+### 編輯器
+
+**Ghostty / iTerm2 / Kitty**
+
+現代化終端模擬器，支援 GPU 加速和豐富功能：
+
+```shell
+brew install ghostty iterm2 kitty
+```
+
+**Zed / VS Code / Sublime Text**
+
+高效能編輯器，啟動速度快：
+
+```shell
+brew install zed visual-studio-code sublime-text
+```
+
+**JetBrains 系列**
+
+```shell
+brew install intellij-idea goland webstorm
 ```
 
 ## 開發工具
+
+### 程式設計字體
+
+支援 Ligatures 的現代化字體：
+
+```shell
+brew install font-jetbrains-mono font-fira-code font-cascadia-code
+```
+
+### 現代 CLI 工具
+
+取代傳統 Unix 工具的現代化替代品：
+
+```shell
+# 系統監控和檔案管理
+brew install btop eza bat ripgrep zoxide fd
+
+# Git 工具
+brew install tig gitui git-delta
+
+# 其他實用工具
+brew install tldr fzf direnv jq
+```
 
 參考: **[[Mac DevEnv Setup:macOS 開發環境建構]]**
 
@@ -105,6 +153,12 @@ brew install raycast
 ## Menu Bar
 
 ### [Ice - Menu Bar Manager](https://icemenubar.app/)
+
+開源的 Menu Bar 管理工具，取代付費的 Bartender：
+
+```shell
+brew install jordanbaird-ice
+```
 
 - [GitHub - jordanbaird/Ice: Powerful menu bar manager for macOS](https://github.com/jordanbaird/Ice)
 - [極簡控必備，MacOS 選單列整理工具 Ice](https://www.larrynote.com/menubar-ice/)
@@ -147,12 +201,22 @@ brew install rclone
 
 ## 其他
 
-### [IINA](https://iina.io/) 
+### 多媒體工具
 
-Mac 上最強大的播放器, 幾乎支援所有影音格式. 開源, UI 美觀.
+**[IINA](https://iina.io/)**
+
+Mac 上最強大的播放器，幾乎支援所有影音格式，開源且 UI 美觀：
 
 ```shell
 brew install iina
+```
+
+**[ImageOptim](https://imageoptim.com/)**
+
+圖片壓縮優化工具：
+
+```shell
+brew install imageoptim
 ```
 
 ### [ExifRenamer](http://goo.gl/lSWZ)
@@ -168,30 +232,47 @@ brew install exifrenamer
 
 - [小麥注音的隱藏設定](https://osxchat.tumblr.com/post/29205181318/mcbopomofo-hidden-settings)
 
+## 實用工具腳本
+
+### 系統維護
+
+```bash
+# 環境健康檢查
+./bin/health-check.sh
+
+# 更新所有工具
+./bin/update.sh
+
+# 配置備份
+./bin/backup.sh
+
+# 智能生成 .gitignore
+./bin/gen-gitignore.sh
+```
+
+### 版本管理
+
+```bash
+# 軟體版本統一管理
+source config/versions.sh
+
+# 支援的開發環境
+# Java: SDKMAN (21.0.5-zulu)
+# Node.js: Volta/NVM (20)
+# Go: 系統安裝 (1.21.5)
+```
+
 ## See Also
 
-### 遺珠
+### 已整合到 Brewfile 的工具
 
-以下是曾為個人熱愛, 但因故越來越少用的軟體. 暫列於此...
+以下工具已整合到自動化安裝腳本中：
 
-- [Alfred](https://goo.gl/mD9K61) 大大減少離開來回鍵盤和觸控板的時間
-	- [參考教學](https://goo.gl/SHsXkH)
-- [Dozer](https://github.com/Mortennn/Dozer) 管理隱藏多餘的 menu bar icon, 使桌面保持清爽, 軟體一多很好用.
-	- [Hidden Bar](https://apps.apple.com/tw/app/hidden-bar/id1452453066?mt=12)
-		- [Hidden Bar 讓 Mac 工具列更乾淨，自動隱藏用不到的應用程式圖示](https://free.com.tw/hidden-bar/)
-		- [隱藏、整理 Mac 選單列圖示，《Hidden Bar》幫你輕鬆搞定 - 蘋果仁 - 果仁 iPhone/iOS/好物推薦科技媒體](https://applealmond.com/posts/139513)
-		- [Hidden Bar - 解決 Mac 狀態列圖示太多的小工具 – 蘋果迷 APPLEFANS](https://applefans.today/macos-app-hidden-bar/)
-- [Rectangl](https://rectangleapp.com/) to snap windows to different positions, 快速整理安排視窗 Layout 的工具, 外接大螢幕時相當實用.
-	- [Mac 視窗管理工具《Rectangle》，一鍵完成視窗分割、縮放、排列 - 蘋果仁 - 果仁 iPhone/iOS/好物推薦科技媒體](https://applealmond.com/posts/97644)
-	- [Mac 視窗分割，用 Rectangle 就對了 - Starbugs Weekly 星巴哥技術專欄 - Medium](https://medium.com/starbugs/mac-快速分割視窗-用-rectangle-就對了-592ed40405e3)
-	- [Moom vs Magnet vs Rectangle | Medium](https://davidmles.medium.com/moom-vs-magnet-493fd2d31a77)
-	- [Magnet](https://goo.gl/0Ll1DU) 分割視窗軟體, 支援 「拖曳視窗到螢幕邊界後會自動分割」的功能
-- [Typora](https://typora.io/) 基於 Markdown 開源的 IDE
-- [Headset](https://headsetapp.co/) 極為好用的 Youtube 免費線上音樂播放工具! 豐富歌單, 電台以及個人收藏功能
-- [Welly](https://github.com/clyang/welly) Mac 上的BBS軟體, 被 PTT 網頁版 term.ptt.cc 取代了.
-- [XMind Zen](http://www.xmind.net/)  
-  XMind Zen 不但跟原本的 XMind 一樣好用, 而且更美觀快速.  
-  但全面性使用 Obsidian 作為筆記和專案管理以後, 都在 Obsidian 上找相關解決方案了.
+- **Alfred/Raycast** - 應用程式啟動器
+- **Rectangle** - 視窗管理工具
+- **Hidden Bar/Ice** - Menu Bar 管理
+- **Typora** - Markdown 編輯器
+- **XMind** - 心智圖工具
 
 ### Reference
 

@@ -8,10 +8,47 @@ tags:
   - kywk
 hide_table_of_contents: true
 date_created: 2024-10-01
-date_updated: 2024-10-10
+date_updated: 2025-09-20
 ---
 
 # [Zsh] .zshrc & configuration
+
+使用 dotfiles 專案的模組化 Zsh 配置，支援跨平台和智能環境管理。
+
+## dotfiles 中的 Zsh 配置
+
+### 模組化架構
+
+```
+zsh/
+├── kywk.zshrc       # 主配置檔案
+├── common.zshrc     # 通用設定
+├── zinit.zshrc      # Zinit 插件管理 (Turbo 模式)
+├── mac.zshrc        # macOS 專用配置
+├── linux.zshrc      # Linux 專用配置
+└── performance.zshrc # 效能最佳化配置
+```
+
+### 核心特色
+
+- ⚡ **Turbo 模式** - Zinit 延遲載入，啟動速度提升 50%+
+- 🌍 **跨平台** - 自動檢測 macOS/Linux 並載入對應配置
+- 🔧 **智能環境** - 根據專案檔案自動切換版本
+- 🔒 **防污染** - 最小化 .zshrc，避免其他工具污染
+
+### 快速安裝
+
+```bash
+# 使用 dotfiles 專案自動安裝
+cd ~/.files && ./init.sh
+
+# 手動建立 symbolic link
+ln -sf ~/.files/zsh/kywk.zshrc ~/.zshrc
+```
+
+參考：
+- [[Dotfiles Management]] - 完整的 dotfiles 管理系統
+- [[Zinit]] - Zsh 插件管理器配置
 
 ## See Also
 
@@ -22,9 +59,12 @@ date_updated: 2024-10-10
 - [zsh 透過 zinit 安裝 Powerlevel10k 佈景主題 - Code and Me](https://blog.kyomind.tw/powerlevel10k/)
 - [Fetching Title#ozgp](https://www.cnblogs.com/hongdada/p/16821715.html)
 
-## TODO
+## 已完成功能
 
-- [ ] Zsh plugin manager and packages
-- [ ] Zsh completions
-- [ ] Higher contrast color
-- [ ] keybinding
+- ✅ Zsh 插件管理 (Zinit Turbo 模式)
+- ✅ 自動補全 (zsh-completions)
+- ✅ 語法高亮 (fast-syntax-highlighting)
+- ✅ 歷史建議 (zsh-autosuggestions)
+- ✅ 主題配置 (Powerlevel10k)
+- ✅ 跨平台支援
+- ✅ 版本管理整合

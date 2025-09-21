@@ -25,6 +25,7 @@ date_updated: 2025-09-10
 - [Obs177｜Obsidian筆記備份新選擇：Git版本控制與行動同步完整指南 – 簡睿隨筆](https://jdev.tw/blog/8740/)
 - [[Obs＃111] 幾個最近使用的外掛：Surfing、Quiet Outline、Colorful Tag、Share as Gist、Commander - 簡睿隨筆](https://jdev.tw/blog/7967/obsidian-5-plugins-recommended?utm_source=pocket_saves)
 - [【分享】 化繁為簡用Obsidian：擺脫功能依賴的新思維 – 簡睿隨筆](https://jdev.tw/blog/8912/simplify-with-obsidian-new-thinking)
+- [Title Unavailable \| Site Unreachable](https://jdev.tw/blog/8918/)
 - 
 ## Personal Pack
 

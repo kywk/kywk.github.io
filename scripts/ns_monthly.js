@@ -55,6 +55,8 @@ while (beginDate <= endDate) {
 
 #### TODO List
 
+- [ ] Reorganize Outlook / TODOs 📅 ${beginDate.toISOString().split("T")[0]}
+
 \`\`\`tasks
 path includes com.nanshan
 path does not include Works

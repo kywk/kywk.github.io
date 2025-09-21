@@ -2,90 +2,59 @@ import { themes as prismThemes } from "prism-react-renderer";
 import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
 
-const path = require("path");
 const remarkWikiLink = require("remark-wiki-link");
-const remarkOembed = require("remark-oembed");
+const fs = require('fs');
+const path = require('path');
 
-/**
- * Method to get the corresponding md file name for a given wikilink
- *
- * @param {string} wikilink The text between [[]] in an md file
- * Returns the file name corresponding to [[wiki link]]
- */
-function sluggifyWikilink(wikilink) {
-  /**
-   * [[Some Fancy Title]] gets converted to 'some-fancy-title'
-   * so there should be some-fancy-title.md file in docs
-   */
-  const slug = wikilink.replace(/ /g, "-").toLowerCase();
-  return slug;
-
-  // /**
-  // * [[Some Fancy Title]] gets converted to 'Some Fancy Title'
-  // * so there should be 'Some Fancy Title.md' file in docs
-  //   */
-  // return wikilink;
-}
-
-/**
- * Wiki might be under a subdirectory and the file name might be sluggified
- * Enable remark-wiki-link plugin to find such md files
- *
- * @param {string} wikilink The text between [[]] in an md file
- * Returns list of paths to help resolve a [[wiki link]]
- */
-function wikilinkToUrl(docsDir, wikilink) {
-  const slug = sluggifyWikilink(wikilink);
-  const walkSync = require("walk-sync");
-  let paths = walkSync(docsDir, {
-    globs: ["**/" + slug + ".md*"],
-    directories: false,
-  });
-  if (paths == null || paths.length == 0) {
-    paths = walkSync(docsDir, {
-      globs: ["**/" + wikilink + ".md*"],
-      directories: false,
-    });
+// 建立檔案映射表
+function createFileMap(basePath) {
+  const fileMap = new Map();
+  
+  function scanDirectory(dir) {
+    try {
+      const items = fs.readdirSync(dir, { withFileTypes: true });
+      
+      for (const item of items) {
+        const fullPath = path.join(dir, item.name);
+        
+        if (item.isDirectory()) {
+          scanDirectory(fullPath);
+        } else if (item.isFile() && item.name.endsWith('.md')) {
+          const fileName = item.name.replace(/\.md$/, '');
+          const relativePath = path.relative(basePath, fullPath).replace(/\.md$/, '');
+          
+          // 建立多種可能的映射
+          fileMap.set(fileName, relativePath);
+          fileMap.set(fileName.toLowerCase(), relativePath);
+          fileMap.set(fileName.replace(/ /g, '-').toLowerCase(), relativePath);
+          fileMap.set(fileName.replace(/ /g, '_').toLowerCase(), relativePath);
+        }
+      }
+    } catch (error) {
+      // 忽略無法讀取的目錄
+    }
   }
-  paths = paths.map((path) => {
-    let walkPaths = path.split("/");
-    walkPaths = walkPaths.map((walkPath) =>
-      walkPath.replace(/^[0-9]+[\-|\_]+/gm, ""),
-    );
-    path = walkPaths.join("/");
-    return path.replace(".mdx", "").replace(".md", "");
-  });
-  return paths;
+  
+  scanDirectory(basePath);
+  return fileMap;
 }
 
-/**
- * Returns the url to the wiki
- *
- * @param {string} permalink url to the md file
- * Return the path to the wiki
- */
-function toDocsUrl(docsDir, permalink) {
-  return `/${docsDir}/${permalink}`;
-}
-
-// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
+// 為每個文檔實例建立檔案映射
+const backpackerFileMap = createFileMap('backpacker');
+const lifehackerFileMap = createFileMap('lifehacker');
+const mocoFileMap = createFileMap('moco');
 
 const config: Config = {
   title: "kywk.me",
   tagline: "All around kywk",
   favicon: "img/favicon.ico",
 
-  // Set the production url of your site here
   url: "https://kywk.github.io",
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
   trailingSlash: true,
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: "kywk", // Usually your GitHub org/user name.
-  projectName: "kywk.github.io", // Usually your repo name.
+  organizationName: "kywk",
+  projectName: "kywk.github.io",
   deploymentBranch: "gh-pages",
 
   onBrokenLinks: "warn",
@@ -96,9 +65,6 @@ const config: Config = {
     mermaid: true,
   },
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: "zh-TW",
     locales: ["zh-TW"],
@@ -134,16 +100,26 @@ const config: Config = {
         path: "backpacker",
         routeBasePath: "backpacker",
         remarkPlugins: [
-          remarkOembed,
           [
             remarkWikiLink,
             {
-              pageResolver: (pageName) => {
-                return wikilinkToUrl("backpacker", pageName);
+              pageResolver: (name) => {
+                const cleanName = name.replace(/\.md$/, '');
+                
+                // 嘗試從檔案映射表中找到正確路徑
+                const mappedPath = backpackerFileMap.get(cleanName) || 
+                                 backpackerFileMap.get(cleanName.toLowerCase()) ||
+                                 backpackerFileMap.get(cleanName.replace(/ /g, '-').toLowerCase()) ||
+                                 backpackerFileMap.get(cleanName.replace(/ /g, '_').toLowerCase());
+                
+                if (mappedPath) {
+                  return [mappedPath];
+                }
+                
+                // 如果找不到，使用預設轉換
+                return [cleanName.replace(/ /g, '-').toLowerCase()];
               },
-              hrefTemplate: (permalink) => {
-                return toDocsUrl("backpacker", permalink);
-              },
+              hrefTemplate: (permalink) => `/backpacker/${permalink}/`,
             },
           ],
         ],
@@ -157,16 +133,24 @@ const config: Config = {
         path: "lifehacker",
         routeBasePath: "lifehacker",
         remarkPlugins: [
-          remarkOembed,
           [
             remarkWikiLink,
             {
-              pageResolver: (pageName) => {
-                return wikilinkToUrl("lifehacker", pageName);
+              pageResolver: (name) => {
+                const cleanName = name.replace(/\.md$/, '');
+                
+                const mappedPath = lifehackerFileMap.get(cleanName) || 
+                                 lifehackerFileMap.get(cleanName.toLowerCase()) ||
+                                 lifehackerFileMap.get(cleanName.replace(/ /g, '-').toLowerCase()) ||
+                                 lifehackerFileMap.get(cleanName.replace(/ /g, '_').toLowerCase());
+                
+                if (mappedPath) {
+                  return [mappedPath];
+                }
+                
+                return [cleanName.replace(/ /g, '-').toLowerCase()];
               },
-              hrefTemplate: (permalink) => {
-                return toDocsUrl("lifehacker", permalink);
-              },
+              hrefTemplate: (permalink) => `/lifehacker/${permalink}/`,
             },
           ],
         ],
@@ -180,16 +164,24 @@ const config: Config = {
         path: "moco",
         routeBasePath: "moco",
         remarkPlugins: [
-          remarkOembed,
           [
             remarkWikiLink,
             {
-              pageResolver: (pageName) => {
-                return wikilinkToUrl("moco", pageName);
+              pageResolver: (name) => {
+                const cleanName = name.replace(/\.md$/, '');
+                
+                const mappedPath = mocoFileMap.get(cleanName) || 
+                                 mocoFileMap.get(cleanName.toLowerCase()) ||
+                                 mocoFileMap.get(cleanName.replace(/ /g, '-').toLowerCase()) ||
+                                 mocoFileMap.get(cleanName.replace(/ /g, '_').toLowerCase());
+                
+                if (mappedPath) {
+                  return [mappedPath];
+                }
+                
+                return [cleanName.replace(/ /g, '-').toLowerCase()];
               },
-              hrefTemplate: (permalink) => {
-                return toDocsUrl("moco", permalink);
-              },
+              hrefTemplate: (permalink) => `/moco/${permalink}/`,
             },
           ],
         ],
@@ -205,6 +197,7 @@ const config: Config = {
         showReadingTime: true,
         blogSidebarTitle: "All posts",
         blogSidebarCount: "ALL",
+        onUntruncatedBlogPosts: 'ignore',
       },
     ],
     [
@@ -216,6 +209,7 @@ const config: Config = {
         showReadingTime: true,
         blogSidebarTitle: "All posts",
         blogSidebarCount: "ALL",
+        onUntruncatedBlogPosts: 'ignore',
       },
     ],
   ],
@@ -223,7 +217,6 @@ const config: Config = {
   themes: ["@docusaurus/theme-mermaid"],
 
   themeConfig: {
-    // Replace with your project's social card
     image: "img/docusaurus-social-card.jpg",
     navbar: {
       title: "kywk.me",
@@ -256,8 +249,6 @@ const config: Config = {
           href: "https://github.com/kywk/",
           label: "GitHub",
           position: "right",
-          blogSidebarTitle: "All posts",
-          blogSidebarCount: "ALL",
         },
       ],
     },

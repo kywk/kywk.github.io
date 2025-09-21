@@ -1,51 +1,54 @@
 import React from 'react';
 import clsx from 'clsx';
+import Link from '@docusaurus/Link';
 import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
-    description: (
-      <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
-      </>
-    ),
+    id: 'backpacker',
+    title: 'Backpacker',
+    subtitle: 'Travel Playground',
+    Svg: require('@site/static/img/home-backpacker.svg').default,
+    description:
+      '從冰島到四川，把行前規劃、在地交通與住宿筆記折進屬於自己的 Lonely Planet。',
+    to: '/backpacker/Lonely%20Planet/',
+    accentColor: 'rgba(255, 159, 67, 0.18)',
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
-    description: (
-      <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
-      </>
-    ),
+    id: 'lifehacker',
+    title: 'Lifehacker',
+    subtitle: 'Habit & Lifestyle',
+    Svg: require('@site/static/img/home-lifehacker.svg').default,
+    description:
+      '生活系統、習慣追蹤與週末專案，整理每一次嘗試後留下的操作手感。',
+    to: '/lifehacker/way-2-kywk/',
+    accentColor: 'rgba(56, 189, 248, 0.18)',
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
-      </>
-    ),
+    id: 'moco',
+    title: 'MoCo Lab',
+    subtitle: 'Engineering Notes',
+    Svg: require('@site/static/img/home-moco.svg').default,
+    description:
+      'DevSecOps、程式語言與工具鏈的實驗場，把工程日常拆解成可複用的 SOP。',
+    to: '/moco/kywk.moco/',
+    accentColor: 'rgba(129, 140, 248, 0.18)',
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({Svg, title, subtitle, description, to, accentColor}) {
   return (
-    <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+    <Link className={clsx(styles.featureCard)} to={to}>
+      <div className={styles.featureIconWrapper} style={{background: accentColor}}>
+        <Svg className={styles.featureIcon} role="img" />
       </div>
-      <div className="text--center padding-horiz--md">
+      <div className={styles.featureContent}>
+        <span className={styles.featureSubtitle}>{subtitle}</span>
         <h3>{title}</h3>
         <p>{description}</p>
+        <span className={styles.featureLink}>展開筆記 →</span>
       </div>
-    </div>
+    </Link>
   );
 }
 
@@ -53,9 +56,16 @@ export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
       <div className="container">
-        <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
+        <div className={styles.featuresHeader}>
+          <span className={styles.featuresEyebrow}>主題索引</span>
+          <h2>三條主線，持續更新</h2>
+          <p>旅行、生活與工程筆記彼此呼應，歡迎挑一條線開始探索。</p>
+        </div>
+        <div className={clsx('row', styles.featureGrid)}>
+          {FeatureList.map((props) => (
+            <div key={props.id} className={clsx('col col--4', styles.featureCol)}>
+              <Feature {...props} />
+            </div>
           ))}
         </div>
       </div>
