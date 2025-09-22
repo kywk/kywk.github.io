@@ -55,7 +55,7 @@ yarn-error.log*
 
 # My Obsidian folder
 .obsidian/
-assets/
+/assets/
 
 archived/
 _incoming/

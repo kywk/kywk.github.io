@@ -11,7 +11,7 @@ sidebar_position: 10
 
 ## Refs
 
-- [ ] ![](./assets/messageImage_1750599387418.jpg)
+- [ ] ![](assets/messageImage_1750599387418.jpg)
 
 
 ## 07.03 TPE > SUB

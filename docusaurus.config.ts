@@ -3,6 +3,7 @@ import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
 
 const remarkWikiLink = require("remark-wiki-link");
+const remarkOembed = require("remark-oembed");
 const fs = require('fs');
 const path = require('path');
 
@@ -100,6 +101,7 @@ const config: Config = {
         path: "backpacker",
         routeBasePath: "backpacker",
         remarkPlugins: [
+          remarkOembed,
           [
             remarkWikiLink,
             {
@@ -133,6 +135,7 @@ const config: Config = {
         path: "lifehacker",
         routeBasePath: "lifehacker",
         remarkPlugins: [
+          remarkOembed,
           [
             remarkWikiLink,
             {
@@ -164,6 +167,7 @@ const config: Config = {
         path: "moco",
         routeBasePath: "moco",
         remarkPlugins: [
+          remarkOembed,
           [
             remarkWikiLink,
             {
