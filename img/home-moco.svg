@@ -1,0 +1,15 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="16" y="18" width="48" height="44" rx="8" fill="#6C63FF" opacity="0.12" />
+  <rect x="24" y="24" width="32" height="24" rx="4" stroke="#6C63FF" stroke-width="3" />
+  <path d="M20 54H60" stroke="#4338CA" stroke-width="3" stroke-linecap="round" />
+  <path d="M32 60H48" stroke="#6C63FF" stroke-width="3" stroke-linecap="round" />
+  <circle cx="40" cy="36" r="8" stroke="#4338CA" stroke-width="3" />
+  <path d="M40 28V24" stroke="#6C63FF" stroke-width="3" stroke-linecap="round" />
+  <path d="M40 48V44" stroke="#6C63FF" stroke-width="3" stroke-linecap="round" />
+  <path d="M48 36H52" stroke="#6C63FF" stroke-width="3" stroke-linecap="round" />
+  <path d="M28 36H32" stroke="#6C63FF" stroke-width="3" stroke-linecap="round" />
+  <path d="M45.6569 30.3431L48.4853 27.5147" stroke="#6C63FF" stroke-width="3" stroke-linecap="round" />
+  <path d="M31.5147 44.4853L34.3431 41.6569" stroke="#6C63FF" stroke-width="3" stroke-linecap="round" />
+  <path d="M45.6569 41.6569L48.4853 44.4853" stroke="#6C63FF" stroke-width="3" stroke-linecap="round" />
+  <path d="M31.5147 27.5147L34.3431 30.3431" stroke="#6C63FF" stroke-width="3" stroke-linecap="round" />
+</svg>

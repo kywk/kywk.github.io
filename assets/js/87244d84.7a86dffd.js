@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkkywk_me=self.webpackChunkkywk_me||[]).push([["41517"],{28928:function(s){s.exports=JSON.parse('{"tag":{"label":"Rust","permalink":"/moco/tags/rust","allTagsPath":"/moco/tags","count":1,"items":[{"id":"rust/Awesome Rust","title":"Awesome Rust","description":"Awesome Rust","permalink":"/moco/rust/Awesome Rust"}],"unlisted":false}}')}}]);
