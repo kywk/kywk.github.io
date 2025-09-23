@@ -32,7 +32,7 @@ function createFileMap(basePath) {
         }
       }
     } catch (error) {
-      // 忽略無法讀取的目錄
+      console.warn(`Failed to scan directory ${dir}:`, error.message);
     }
   }
   
@@ -44,6 +44,43 @@ function createFileMap(basePath) {
 const backpackerFileMap = createFileMap('backpacker');
 const lifehackerFileMap = createFileMap('lifehacker');
 const mocoFileMap = createFileMap('moco');
+
+// 建立共用的 pageResolver 函數
+function createPageResolver(fileMap) {
+  return (name) => {
+    try {
+      const cleanName = name.replace(/\.md$/, '');
+      
+      const mappedPath = fileMap.get(cleanName) || 
+                       fileMap.get(cleanName.toLowerCase()) ||
+                       fileMap.get(cleanName.replace(/ /g, '-').toLowerCase()) ||
+                       fileMap.get(cleanName.replace(/ /g, '_').toLowerCase());
+      
+      if (mappedPath) {
+        return [mappedPath];
+      }
+      
+      return [cleanName.replace(/ /g, '-').toLowerCase()];
+    } catch (error) {
+      console.warn(`Failed to resolve page ${name}:`, error.message);
+      return [name.replace(/ /g, '-').toLowerCase()];
+    }
+  };
+}
+
+// 建立共用的 remark 插件配置
+function createRemarkPlugins(fileMap, routeBase) {
+  return [
+    [remarkKanban, { pageResolver: createPageResolver(fileMap), hrefTemplate: (permalink) => `${routeBase}${permalink}/` }],
+    [
+      remarkWikiLink,
+      {
+        pageResolver: createPageResolver(fileMap),
+        hrefTemplate: (permalink) => `${routeBase}${permalink}/`,
+      },
+    ],
+  ];
+}
 
 const config: Config = {
   title: "kywk.me",
@@ -100,31 +137,7 @@ const config: Config = {
         id: "backpacker",
         path: "backpacker",
         routeBasePath: "backpacker",
-        remarkPlugins: [
-          remarkKanban,
-          [
-            remarkWikiLink,
-            {
-              pageResolver: (name) => {
-                const cleanName = name.replace(/\.md$/, '');
-                
-                // 嘗試從檔案映射表中找到正確路徑
-                const mappedPath = backpackerFileMap.get(cleanName) || 
-                                 backpackerFileMap.get(cleanName.toLowerCase()) ||
-                                 backpackerFileMap.get(cleanName.replace(/ /g, '-').toLowerCase()) ||
-                                 backpackerFileMap.get(cleanName.replace(/ /g, '_').toLowerCase());
-                
-                if (mappedPath) {
-                  return [mappedPath];
-                }
-                
-                // 如果找不到，使用預設轉換
-                return [cleanName.replace(/ /g, '-').toLowerCase()];
-              },
-              hrefTemplate: (permalink) => `/backpacker/${permalink}/`,
-            },
-          ],
-        ],
+        remarkPlugins: createRemarkPlugins(backpackerFileMap, '/backpacker/'),
         sidebarPath: require.resolve("./sidebars.js"),
       },
     ],
@@ -134,28 +147,7 @@ const config: Config = {
         id: "lifehacker",
         path: "lifehacker",
         routeBasePath: "lifehacker",
-        remarkPlugins: [
-          [
-            remarkWikiLink,
-            {
-              pageResolver: (name) => {
-                const cleanName = name.replace(/\.md$/, '');
-                
-                const mappedPath = lifehackerFileMap.get(cleanName) || 
-                                 lifehackerFileMap.get(cleanName.toLowerCase()) ||
-                                 lifehackerFileMap.get(cleanName.replace(/ /g, '-').toLowerCase()) ||
-                                 lifehackerFileMap.get(cleanName.replace(/ /g, '_').toLowerCase());
-                
-                if (mappedPath) {
-                  return [mappedPath];
-                }
-                
-                return [cleanName.replace(/ /g, '-').toLowerCase()];
-              },
-              hrefTemplate: (permalink) => `/lifehacker/${permalink}/`,
-            },
-          ],
-        ],
+        remarkPlugins: createRemarkPlugins(lifehackerFileMap, '/lifehacker/'),
         sidebarPath: require.resolve("./sidebars.js"),
       },
     ],
@@ -165,28 +157,7 @@ const config: Config = {
         id: "moco",
         path: "moco",
         routeBasePath: "moco",
-        remarkPlugins: [
-          [
-            remarkWikiLink,
-            {
-              pageResolver: (name) => {
-                const cleanName = name.replace(/\.md$/, '');
-                
-                const mappedPath = mocoFileMap.get(cleanName) || 
-                                 mocoFileMap.get(cleanName.toLowerCase()) ||
-                                 mocoFileMap.get(cleanName.replace(/ /g, '-').toLowerCase()) ||
-                                 mocoFileMap.get(cleanName.replace(/ /g, '_').toLowerCase());
-                
-                if (mappedPath) {
-                  return [mappedPath];
-                }
-                
-                return [cleanName.replace(/ /g, '-').toLowerCase()];
-              },
-              hrefTemplate: (permalink) => `/moco/${permalink}/`,
-            },
-          ],
-        ],
+        remarkPlugins: createRemarkPlugins(mocoFileMap, '/moco/'),
         sidebarPath: require.resolve("./sidebars.js"),
       },
     ],
