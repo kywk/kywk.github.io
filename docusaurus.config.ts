@@ -3,6 +3,7 @@ import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
 
 const remarkWikiLink = require("remark-wiki-link");
+const { remarkKanban } = require("./remark-obsidian-kanban/src/index.js");
 const fs = require('fs');
 const path = require('path');
 
@@ -100,6 +101,7 @@ const config: Config = {
         path: "backpacker",
         routeBasePath: "backpacker",
         remarkPlugins: [
+          remarkKanban,
           [
             remarkWikiLink,
             {
