@@ -59,20 +59,32 @@ function remarkKanban(options = {}) {
             if (listItem.children && listItem.children[0]) {
               const firstChild = listItem.children[0];
               if (firstChild.type === 'paragraph') {
-                let titleText = '';
+                let titleHtml = '';
                 visit(firstChild, (node) => {
                   if (node.type === 'text') {
-                    titleText += node.value;
+                    titleHtml += node.value;
                   } else if (node.type === 'wikiLink') {
                     const linkText = node.data?.alias || node.data?.permalink || node.value || '';
-                    titleText += linkText;
+                    try {
+                      const resolvedPages = pageResolver(linkText);
+                      const permalink = resolvedPages && resolvedPages[0] ? resolvedPages[0] : linkText.replace(/ /g, '-').toLowerCase();
+                      const href = hrefTemplate(permalink);
+                      titleHtml += `<a href="${href}" style="color: var(--ifm-color-primary); text-decoration: none; border-bottom: 1px dotted var(--ifm-color-primary);">${linkText}</a>`;
+                    } catch (error) {
+                      console.warn(`Failed to resolve wikilink ${linkText}:`, error.message);
+                      titleHtml += linkText;
+                    }
+                  } else if (node.type === 'image') {
+                    const src = node.url || '';
+                    const alt = node.alt || '';
+                    titleHtml += `<img src="${src}" alt="${alt}" style="max-width: 100%; height: auto; border-radius: 4px; margin: 0.25rem 0;">`;
                   } else if (node.type === 'link' && node.children) {
                     node.children.forEach(child => {
-                      if (child.type === 'text') titleText += child.value;
+                      if (child.type === 'text') titleHtml += child.value;
                     });
                   }
                 });
-                card.title = titleText.trim();
+                card.title = titleHtml.trim();
               }
             }
             
@@ -142,6 +154,10 @@ function remarkKanban(options = {}) {
                       });
                     }
                     contentHtml += '</em>';
+                  } else if (node.type === 'image') {
+                    const src = node.url || '';
+                    const alt = node.alt || '';
+                    contentHtml += `<img src="${src}" alt="${alt}" style="max-width: 100%; height: auto; border-radius: 4px; margin: 0.25rem 0; display: block;">`;
                   } else if (node.type === 'wikiLink') {
                     const linkText = node.data?.alias || node.data?.permalink || node.value || (node.children && node.children[0] && node.children[0].value) || '';
                     
@@ -187,6 +203,7 @@ function remarkKanban(options = {}) {
 .col.col--3 { display: none !important; }
 .row .col:not(.col--3) { max-width: 100% !important; flex: 0 0 100% !important; }
 .kanban-board-container { background: var(--ifm-background-color); padding: 1rem; border-radius: 8px; }
+.kanban-board-container img { max-width: 100%; height: auto; border-radius: 4px; }
 </style><div class="kanban-board-container">${html}<script>
 setTimeout(() => {
   document.querySelectorAll('*').forEach(el => {
