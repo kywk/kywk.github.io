@@ -8,7 +8,7 @@ tags:
 sidebar_position: 20
 sidebar_label: Plugins Usage
 date_created: 2024-05-24
-date_updated: 2024-05-24
+date_updated: 2025-09-23
 history:
   - 2024-05-24 Init
 ---
@@ -25,8 +25,16 @@ history:
 比起 `[Title](URL)` 形式的 Markdown Link, Wiki-Link 還有個好處是不需指明檔案絕對位置, 在產出文件網站時動態搜尋文件,
 若重構資料夾結構或搬移檔案, 較不會造成連結失效.
 
+## remark-obsidian-kanban
+
+[[remark-obsidian-kanban]] 自製的 Docusaurus remark 插件，用於將 Obsidian Kanban 格式的 markdown 文件轉換為網頁看板顯示。
+
+支援 wikilink、圖片嵌入、響應式設計等功能，讓 Obsidian 的看板可以在 Docusaurus 網站中完美呈現。
+
 ## remark-oembed
 
 [remark-oembed](https://github.com/sergioramos/remark-oembed) Converts URLs surrounded by newlines into embeds that are loaded asynchronously.
 
 把獨立一行的 影片/圖片... URL 轉換成嵌入式格式, 顯示閱讀上較為近人.
+
+**注意**: 目前專案中已移除此插件，因為會與 remark-wiki-link 產生衝突。

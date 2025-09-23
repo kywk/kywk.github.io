@@ -9,7 +9,7 @@ tags:
 sidebar_position: 10
 sidebar_label: Obsidian integration
 date_created: 2022-11-01
-date_updated: 2024-05-15
+date_updated: 2025-09-23
 ---
 
 # [Docusaurus] Obsidian Integration
@@ -102,29 +102,40 @@ info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this comm
 
 如前述, Docusaurus 設定彈性很大, 只要指定到正確路徑即可.
 
-```json
-  plugins: [
-    ...
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'moco',
-        path: 'moco',
-        routeBasePath: 'moco',
-        sidebarPath: require.resolve('./sidebars.js'),
-      },
-    ],
-    [
-      '@docusaurus/plugin-content-blog',
-      {
-        id: 'news',
-        routeBasePath: 'news',
-        path: 'blog.news',
-        showReadingTime: true,
-      },
-    ],
-    ...
+```typescript
+// 建立共用的 remark 插件配置
+function createRemarkPlugins(fileMap, routeBase) {
+  return [
+    [remarkKanban, { pageResolver: createPageResolver(fileMap), hrefTemplate: (permalink) => `${routeBase}${permalink}/` }],
+    [remarkWikiLink, {
+      pageResolver: createPageResolver(fileMap),
+      hrefTemplate: (permalink) => `${routeBase}${permalink}/`,
+    }],
+  ];
+}
+
+// 在 plugins 中使用
+plugins: [
+  [
+    '@docusaurus/plugin-content-docs',
+    {
+      id: 'moco',
+      path: 'moco',
+      routeBasePath: 'moco',
+      remarkPlugins: createRemarkPlugins(mocoFileMap, '/moco/'),
+      sidebarPath: require.resolve('./sidebars.js'),
+    },
   ],
+  [
+    '@docusaurus/plugin-content-blog',
+    {
+      id: 'news',
+      routeBasePath: 'news',
+      path: 'blog.news',
+      showReadingTime: true,
+    },
+  ],
+],
 ````
 
 ## .gitignore
@@ -187,5 +198,7 @@ Ref: [ignore/hide select files and folders](https://forum.obsidian.md/t/config-t
 ### Next Step
 
 - [x] support obsidian wikilink [[Wikilink in Docusaurus]] ✅ 2024-05-15
+- [x] support obsidian kanban [[remark-obsidian-kanban]] ✅ 2025-09-23
 - [ ] docusaurus-plugin-leaflet
 - [ ] ignore Obsidian tags
+- [ ] support obsidian callouts
