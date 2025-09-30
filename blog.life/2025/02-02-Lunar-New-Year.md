@@ -26,7 +26,7 @@ image: https://lh3.googleusercontent.com/pw/ACtC-3dctjoKSszhdu7OFFUmtd-eRmtxUAIx
 	- [ ] 酒標
 	- [ ] 外幣零錢相框
 - [x] 文件統整 ✅ 2025-01-28
-- [ ] [[Obsidian as PKM]] refine ⏫ 📅 2025-09-21
+- [ ] [[Obsidian as PKM]] refine ⏫ 📅 2025-09-30
 
 ## See Also
 

@@ -15,41 +15,40 @@ date_updated: 2025-08-19
 
 ## Schedule & Flight
 
-- [ ] Schedule in Obsidian Kanban view 📅 2025-09-18
+- [/] Schedule in Obsidian Kanban view 📅 2025-09-26
 - [x] TPE <--> SCL ✅ 2025-08-19
-	- [ ] pdf file on mobile phone
-	- [ ] printed paper
-- [ ] SCL <--> CJC 🔺 📅 2025-09-17
-	- [ ] pdf file on mobile phone
-	- [ ] printed paper
-- [ ] 9/28 ~ 10/1 聖地牙哥行程安排 📅 2025-09-18
-- [ ] 住宿 🔺 📅 2025-09-17
+	- [x] pdf file on mobile phone ✅ 2025-09-26
+	- [x] printed paper ✅ 2025-09-26
+- [ ] SCL <--> CJC 🔺 📅 2025-09-26
+	- [x] pdf file on mobile phone ✅ 2025-09-26
+	- [x] printed paper ✅ 2025-09-26
+- [x] 9/28 ~ 10/1 聖地牙哥行程安排 📅 2025-09-26 ✅ 2025-09-27
+- [x] 住宿 🔺 📅 2025-09-26 ✅ 2025-09-26
 
 ## Ready... Go
 
 ### Prepare
 
 - [x] 旅遊門診，疫苗 📅 2025-08-20 ✅ 2025-08-21
-- [ ] 確認 Visa 相關事宜
-- [ ] 美金 1500
-- [ ] 旅平險
-- [ ] SIM
-- [ ] Phone Sync Setup
+- [x] 確認 Visa 相關事宜 ✅ 2025-09-25
+- [x] 美金 1500 ✅ 2025-09-26
+- [x] 旅平險 ✅ 2025-09-27
+- [x] SIM ✅ 2025-09-27
+- [x] Phone Sync Setup ✅ 2025-09-27
 
 ### 3C
 
-- [ ] Laptop CowM1Air
-- [ ] GX-85
-- [ ] 行動電源
-- [ ] Charger
+- [x] Laptop CowM1Air ✅ 2025-09-26
+- [x] GX-85 ✅ 2025-09-26
+- [x] 行動電源 ✅ 2025-09-26
+- [x] Charger ✅ 2025-09-26
 
 ### Stuff
 
-- [ ] 換洗衣物: 長褲 / 長袖 x 1 / 短袖組 x 3
-- [ ] 淘汰內衣褲 / 襪子
-- [ ] 運動鞋
-- [ ] 泳褲 / 防水袋
-- [ ] GU 斜背包
-- [ ] 快乾短褲
+- [x] 換洗衣物: 長褲 x 2 / 長袖 x 2 / 短袖組 x 3 ✅ 2025-09-26
+- [x] 淘汰內衣褲 / 襪子 ✅ 2025-09-26
+- [x] 運動鞋 ✅ 2025-09-26
+- [x] 泳褲 / 防水袋 ✅ 2025-09-26
+- [x] 快乾短褲 ✅ 2025-09-26
 
 ## After

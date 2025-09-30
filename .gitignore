@@ -71,3 +71,5 @@ finance/
 .stfolder/
 .stfolder*
 .stignore
+
+.amazonq

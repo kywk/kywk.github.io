@@ -39,7 +39,7 @@ defaultZoom: 6
 unit: meters
 scale: 1
 darkMode: true
-markerFolder: backpacker/2401_egypt/egypt
+markerFolder: backpacker/2401 Egypt/Egypt
 ```
 
 ```leaflet
@@ -53,7 +53,7 @@ defaultZoom: 13
 unit: meters
 scale: 1
 darkMode: true
-markerFolder: backpacker/2401_egypt/kuala_lumpur
+markerFolder: backpacker/2401 Egypt/Kuala Lumpur
 ```
 
 ### note / 雜記小文
