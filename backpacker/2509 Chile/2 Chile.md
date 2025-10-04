@@ -4,22 +4,22 @@ tags:
   - Backpacker
   - Chile
 draft: true
-sidebar_position: 97
+sidebar_position: 99
 hide_table_of_contents: true
 image: https://lh3.googleusercontent.com/pw/AL9nZEUA9Ifvd5Z8SXDWkeVB6AC4MPGwnXaL6kBXNPoXwOQQ2jOcZ1Jw_0p8TKK8C3ZX0e67_FOY15eDrm7aaXSQJcKtoUzC80SAQEHsaBy6qS2AqNNs5VUFNXBKm439y_1wkvmDl-PnL8ReojnIumNlEvOXBg=w800-no?authuser=0
 date_created: 2025-08-19
-date_updated: 2025-08-19
+date_updated: 2025-10-01
 ---
 
-# [Indonesia] TODO & Checklist
+# [Chile] TODO & Checklist
 
 ## Schedule & Flight
 
-- [/] Schedule in Obsidian Kanban view 📅 2025-09-26
+- [x] Schedule in Obsidian Kanban view 📅 2025-09-26 ✅ 2025-09-28
 - [x] TPE <--> SCL ✅ 2025-08-19
 	- [x] pdf file on mobile phone ✅ 2025-09-26
 	- [x] printed paper ✅ 2025-09-26
-- [ ] SCL <--> CJC 🔺 📅 2025-09-26
+- [x] SCL <--> CJC 🔺 📅 2025-09-26 ✅ 2025-09-28
 	- [x] pdf file on mobile phone ✅ 2025-09-26
 	- [x] printed paper ✅ 2025-09-26
 - [x] 9/28 ~ 10/1 聖地牙哥行程安排 📅 2025-09-26 ✅ 2025-09-27

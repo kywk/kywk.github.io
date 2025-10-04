@@ -1,5 +1,14 @@
 ---
 
+title: Day by day
+image: https://lh3.googleusercontent.com/pw/AL9nZEUA9Ifvd5Z8SXDWkeVB6AC4MPGwnXaL6kBXNPoXwOQQ2jOcZ1Jw_0p8TKK8C3ZX0e67_FOY15eDrm7aaXSQJcKtoUzC80SAQEHsaBy6qS2AqNNs5VUFNXBKm439y_1wkvmDl-PnL8ReojnIumNlEvOXBg=w800-no?authuser=0
+tags:
+  - Backpacker
+  - Index
+  - Chile
+sidebar_position: 11
+date_created: 2025-09-27
+date_updated: 2025-10-13
 kanban-plugin: board
 
 ---
@@ -54,29 +63,64 @@ kanban-plugin: board
 
 ## 09.29 ~ 10.01 PNT
 
+- [ ] [[巴塔哥尼亞 Patagonia]]
+	
+	![](./Assets/patagonia.webp)
 - [ ] [[百內國家公園 Torres del Paine National Park]]
 - [ ] [[百內三塔 Torres del Paine]]
+	
+	![](./Assets/Torres-del-Paine.jpg)
 - [ ] [[米洛頓洞穴 Cueva del Milodón]]
+- [ ] [[納塔萊斯港 Puerto Natales]]
+- [ ] [[唱片行餐廳 La Disqueria Restaurant]]
+- [ ] [[巴塔哥尼亞黑羊店 Patagonia Black Lamb]]
 
 
 ## 10.01 PNT > CJC
 
+- [ ] 14.03 PNT > SCL
+	- PNR: **QRASJJ**
+	- From: PUERTO NATALES, CHILE (PNT)
+	- 01/oct/2025 2:03pm
+	- To: SANTIAGO SCL, CHILE (SCL)
+	- 01/oct/2025 6:28pm
+	- **H2 422** SKY AIRLINE
+- [ ] 20:31 SCL > CJC
+	- PNR **WYEXMP**
+	- From: SCL
+	- Departure: 8:31 PM
+	- To: CJC, Calama
+	- Arrival: 10:39PM
+	- **LA384** LATAM AIRLINES
 
 
 ## 10.01 ~ 10.04 卡拉馬沙漠
 
 - [ ] [[阿塔卡馬沙漠 Atacama Desert]]
+- [ ] [[月亮谷 Valle de la Luna]]
+- [ ] [[塔蒂奧間歇泉 Tatio Geyser]]
+	
+	![](./Assets/excursion-el-tatio-machuca-589x392.jpg)
+- [ ] [[普里塔馬河 Rio Puritama]]
+- [ ] [[Adobe Restaurant]]
 
 
 ## 10.04 CJC > SCL
 
+- [ ] 11:00 CJC > SCL
+	- PNR **WYEXMP**
+	- From: CJC, Calama
+	- Departure: 11:00
+	- To: SCL
+	- Arrival: 13:01
+	- **LA143** LATAM AIRLINES
 
 
 ## 10.05 ~ 10.10 Santiago de Chile
 
+- [ ] [[聖地牙哥武器廣場 Plaza de Armas of Santiago de Chile]]
 - [ ] [[聖地牙哥中央市場 Central Market of Santiago]]
 - [ ] [[聖地牙哥海鮮大餐 Donde Blanca]]
-- [ ] [[聖地牙哥武器廣場 Plaza de Armas of Santiago de Chile]]
 - [ ] [[聖地亞哥都主教座堂 Catedral Metropolitana de Santiago de Chile]]
 - [ ] [[瓦爾帕萊索 Viña del Mar]]
 

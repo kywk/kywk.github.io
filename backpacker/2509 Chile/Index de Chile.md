@@ -14,6 +14,8 @@ date_updated: 2025-10-13
 
 ### schedule / 行程記錄
 
+[[Schedule on Chile]]
+
 - 09.26 TPE > LAX > PTY > SCL
 - 09.28 SCL > PNT
 - 09.30 百內國家公園
@@ -43,10 +45,6 @@ markerFolder: backpacker/2509 Chile/Chile
 00 Index
 10 schedule
 40 spot
-    41 roma
-    42 venus
-    43 米蘭
-    44 南義
 50 cuisine
 55 lodge
 70 note
