@@ -3,8 +3,9 @@ kanban-plugin: board
 title: Day by day
 tags:
   - Backpacker
+  - Index
   - Egypt
-sidebar_position: 10
+sidebar_position: 11
 ---
 
 ## MEMO

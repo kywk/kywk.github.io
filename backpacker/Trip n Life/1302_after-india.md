@@ -1,7 +1,5 @@
 ---
 title: 一輩子的養份 感謝文先行
-categories:
-  - backpacker
 tags:
   - Backpacker
   - Singapore

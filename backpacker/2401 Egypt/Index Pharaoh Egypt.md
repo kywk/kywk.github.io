@@ -14,7 +14,7 @@ date_updated: 2023-08-20
 
 ### schedule / 行程記錄
 
-[[backpacker/2401 Egypt/Schedule on Egypt]]
+[[Schedule on Egypt]]
 
 - 01.23 TPE > KRI > KUL
 - 01.24 KUL > CAI
@@ -39,7 +39,7 @@ defaultZoom: 6
 unit: meters
 scale: 1
 darkMode: true
-markerFolder: backpacker/2401_egypt/egypt
+markerFolder: backpacker/2401 Egypt/Egypt
 ```
 
 ```leaflet
@@ -53,7 +53,7 @@ defaultZoom: 13
 unit: meters
 scale: 1
 darkMode: true
-markerFolder: backpacker/2401_egypt/kuala_lumpur
+markerFolder: backpacker/2401 Egypt/Kuala Lumpur
 ```
 
 ### note / 雜記小文

@@ -96,11 +96,13 @@ const config: Config = {
   deploymentBranch: "gh-pages",
 
   onBrokenLinks: "warn",
-  onBrokenMarkdownLinks: "warn",
 
   markdown: {
     format: "detect",
     mermaid: true,
+    hooks: {
+      onBrokenMarkdownLinks: "warn",
+    },
   },
 
   i18n: {

@@ -39,7 +39,7 @@ console.log(`
 
 ![[Ongoing Project#Ongoing Project TODO]]
 
-![[NS_TODO ${year}#TODO]]
+![[NS_TODO ${year}#DTC]]
 
 ## Week by week
 

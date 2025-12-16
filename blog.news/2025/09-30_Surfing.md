@@ -17,7 +17,6 @@ hide_table_of_contents: true
 	- [I ditched Docker for Podman \| Hacker News](https://news.ycombinator.com/item?id=45137525)
 - [\[Go\] golang中defer和return执行顺序 - piaohua's blog](https://piaohua.github.io/post/golang/20250907-go-defer-return/)
 - [Docker 安装 Elasticsearch - piaohua's blog](https://piaohua.github.io/post/docker/20250907-docker-elasticsearch-quickstart/)
-- 
 
 ### AI
 
@@ -28,7 +27,6 @@ hide_table_of_contents: true
 - [Go開發者現可用Genkit Go，以型別安全Flow函式封裝AI打造智慧應用 \| iThome](https://www.ithome.com.tw/news/171188)
 - [OpenAI 推 GPT-5-Codex 新版：最長可「想」7 小時來解決超難問題 - INSIDE](https://www.inside.com.tw/article/39585-openai-upgrades-codex-with-a-new-version-of-gpt-5)
 	- [GPT-5-Codex出爐，變身為更完整的開發代理系統 \| iThome](https://www.ithome.com.tw/news/171209)
-- 
 
 ### IT News
 
@@ -38,7 +36,6 @@ hide_table_of_contents: true
 - [GitHub - DavidLiedle/DriftDB: DriftDB - An experimental append-only database with built-in time travel. Query any point in history, guaranteed data integrity, and immutable audit trails. Written in Rust.](https://github.com/DavidLiedle/DriftDB)
 	- 只能 Append 的資料庫，其實是個挺有趣的點子。
 - [Why our website looks like an operating system - PostHog](https://posthog.com/blog/why-os)
-- 
 
 ### Life
 
@@ -48,8 +45,8 @@ hide_table_of_contents: true
 - [裝潢做基本的就好，但是百搭的中古風傢俱值得認識：覓得主理人 Kevin 的 5 類中古傢俱選物 - A Day Magazine](https://www.adaymag.com/2025/09/09/olivia-interview.html)
 - [住在義大利機場 20 年，Emilietta 奶奶勇敢堅毅的人生，被改編成童話和紀錄片 - A Day Magazine](https://www.adaymag.com/2025/09/09/cesira-ton.html)
 - [你會在週末排滿行程嗎？紐西蘭人的「減法哲學」，教會我「什麼都不做」也很快樂｜Lan Ying Pin／走經的路易海外攻略書｜換日線](https://crossing.cw.com.tw/article/20141)
+	- [ ] deep read and note 📅 2025-09-30 
 - [【分享】 化繁為簡用Obsidian：擺脫功能依賴的新思維 – 簡睿隨筆](https://jdev.tw/blog/8912/simplify-with-obsidian-new-thinking)
 - [工作愈忙愈要即時筆記，多花30秒做三步驟記錄，省下未來N倍重工時間](https://www.playpcesor.com/2025/09/30n.html)
 	- [x] deep read and note 📅 2025-09-10 ✅ 2025-09-10
 	- [[Instant Notes 30sec]]
-- 

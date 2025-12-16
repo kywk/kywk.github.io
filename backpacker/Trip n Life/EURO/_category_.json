@@ -1,6 +1,6 @@
 {
-  "label": "PIWIW",
-  "position": 9999,
+  "label": "PIWIW, EURO",
+  "position": 0,
   "link": {
     "type": "generated-index",
     "description": "Place I wish I were"
