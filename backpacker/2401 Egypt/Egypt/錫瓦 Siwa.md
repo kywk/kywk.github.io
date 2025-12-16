@@ -9,6 +9,7 @@ location:
   - 25.51961
 mapmarker: default
 hide_table_of_contents: true
+slug: /2401-Egypt/Egypt/錫瓦-Siwa/
 ---
 
 錫瓦 Siwa

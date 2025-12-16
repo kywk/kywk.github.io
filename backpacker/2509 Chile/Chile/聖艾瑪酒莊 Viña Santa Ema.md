@@ -5,11 +5,12 @@ tags:
   - Backpacker
   - 2025/09
 location:
-  - -33.6500
+  - -33.65
   - -70.6167
-web: https://www.santaema.cl/
+web: 'https://www.santaema.cl/'
 mapmarker: default
 hide_table_of_contents: true
+slug: /2509-Chile/Chile/聖艾瑪酒莊-Viña-Santa-Ema/
 ---
 
 聖艾瑪酒莊 Viña Santa Ema

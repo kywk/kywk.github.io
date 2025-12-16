@@ -6,10 +6,11 @@ tags:
   - 2024/01
 location:
   - 25.71907
-  - 32.65740
-wiki: https://zh.wikipedia.org/zh-tw/卡纳克神庙
+  - 32.6574
+wiki: 'https://zh.wikipedia.org/zh-tw/卡纳克神庙'
 mapmarker: default
 hide_table_of_contents: true
+slug: /2401-Egypt/Egypt/卡納克神廟-Karnak-Temple-Complex/
 ---
 
 卡納克神廟 Karnak Temple Complex

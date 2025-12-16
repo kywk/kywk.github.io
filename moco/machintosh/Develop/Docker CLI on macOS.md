@@ -1,13 +1,15 @@
 ---
 title: Docker CLI on macOS
 description: docker CLI on macOS
-image: https://lh3.googleusercontent.com/pw/AL9nZEUA9Ifvd5Z8SXDWkeVB6AC4MPGwnXaL6kBXNPoXwOQQ2jOcZ1Jw_0p8TKK8C3ZX0e67_FOY15eDrm7aaXSQJcKtoUzC80SAQEHsaBy6qS2AqNNs5VUFNXBKm439y_1wkvmDl-PnL8ReojnIumNlEvOXBg=w800-no?authuser=0
+image: >-
+  https://lh3.googleusercontent.com/pw/AL9nZEUA9Ifvd5Z8SXDWkeVB6AC4MPGwnXaL6kBXNPoXwOQQ2jOcZ1Jw_0p8TKK8C3ZX0e67_FOY15eDrm7aaXSQJcKtoUzC80SAQEHsaBy6qS2AqNNs5VUFNXBKm439y_1wkvmDl-PnL8ReojnIumNlEvOXBg=w800-no?authuser=0
 tags:
   - Docker
   - Mac
 sidebar_label: Docker CLI
-date_created: 2024-04-18
-date_updated: 2024-05-24
+date_created: 2024-04-18T00:00:00.000Z
+date_updated: 2024-05-24T00:00:00.000Z
+slug: /machintosh/Develop/Docker-CLI-on-macOS/
 ---
 
 # [Docker] Use docker CLI w/o Docker Desktop on macOS

@@ -1,3 +1,6 @@
+---
+slug: /Trip-n-Life/Japan/Tokyo-roaming/
+---
 
 ## Museum 
 

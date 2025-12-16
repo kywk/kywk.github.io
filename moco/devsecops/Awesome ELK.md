@@ -1,7 +1,11 @@
 ---
 sidebar_position: 5
 title: Awesome ELK
-tags: [DevSecOps, ELK, Awesome]
+tags:
+  - DevSecOps
+  - ELK
+  - Awesome
+slug: /devsecops/Awesome-ELK/
 ---
 
 Awesome ELK Resources

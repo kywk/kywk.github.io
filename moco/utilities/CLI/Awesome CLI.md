@@ -4,6 +4,7 @@ tags:
   - Awesome
   - CLI
 sidebar_position: 0
+slug: /utilities/CLI/Awesome-CLI/
 ---
 
 # Awesome CLI Resources

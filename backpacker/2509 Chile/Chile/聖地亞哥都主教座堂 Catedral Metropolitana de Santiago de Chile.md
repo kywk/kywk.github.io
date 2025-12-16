@@ -7,10 +7,11 @@ tags:
 location:
   - -33.4372
   - -70.6506
-web: https://www.catedralsantiago.cl/
-wiki: https://zh.wikipedia.org/wiki/聖地亞哥都主教座堂
+web: 'https://www.catedralsantiago.cl/'
+wiki: 'https://zh.wikipedia.org/wiki/聖地亞哥都主教座堂'
 mapmarker: default
 hide_table_of_contents: true
+slug: /2509-Chile/Chile/聖地亞哥都主教座堂-Catedral-Metropolitana-de-Santiago-de-Chile/
 ---
 
 聖地亞哥都主教座堂 Catedral Metropolitana de Santiago de Chile

@@ -7,10 +7,11 @@ tags:
 location:
   - -22.3333
   - -68.0167
-web: https://www.conaf.cl/parques/reserva-nacional-los-flamencos/
-wiki: https://en.wikipedia.org/wiki/El_Tatio
+web: 'https://www.conaf.cl/parques/reserva-nacional-los-flamencos/'
+wiki: 'https://en.wikipedia.org/wiki/El_Tatio'
 mapmarker: default
 hide_table_of_contents: true
+slug: /2509-Chile/Chile/塔蒂奧間歇泉-Tatio-Geyser/
 ---
 
 塔蒂奧間歇泉 Tatio Geyser

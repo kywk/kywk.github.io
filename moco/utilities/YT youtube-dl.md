@@ -1,10 +1,11 @@
 ---
-title: "Youtube: 下載影片"
+title: 'Youtube: 下載影片'
 description: download Youtube video by youtube-dl
 tags:
   - Youtube
-date_created: 2021-02-07
-image: https://i.imgur.com/mErPwqL.png
+date_created: 2021-02-07T00:00:00.000Z
+image: 'https://i.imgur.com/mErPwqL.png'
+slug: /utilities/YT-youtube-dl/
 ---
 
 # [Youtube] 利用 youtube-dl 下載影片

@@ -7,9 +7,10 @@ tags:
 location:
   - -33.6333
   - -70.7167
-web: https://www.undurraga.cl/
+web: 'https://www.undurraga.cl/'
 mapmarker: default
 hide_table_of_contents: true
+slug: /2509-Chile/Chile/溫德拉加酒莊-Undurraga/
 ---
 
 溫德拉加酒莊 Undurraga

@@ -6,10 +6,11 @@ tags:
   - 2024/01
 location:
   - 25.69971
-  - 32.63950
-wiki: https://zh.wikipedia.org/zh-tw/卢克索神庙
+  - 32.6395
+wiki: 'https://zh.wikipedia.org/zh-tw/卢克索神庙'
 mapmarker: default
 hide_table_of_contents: true
+slug: /2401-Egypt/Egypt/盧客索神廟-Luxor-Temple/
 ---
 
 盧客索神廟 Luxor Temple

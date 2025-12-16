@@ -1,7 +1,10 @@
 ---
 sidebar_position: 1
 title: Awesome Self Hosted
-tags: [Utility, Awesome]
+tags:
+  - Utility
+  - Awesome
+slug: /utilities/HomeLab/Awesome-Self-Hosted/
 ---
 
 Awesome Self Hosted

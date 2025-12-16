@@ -1,12 +1,14 @@
 ---
 title: 掛載 EFI 磁區
 description: Mount EFI
-image: https://lh3.googleusercontent.com/pw/ACtC-3fnLstA2rsbmbt0hI7IWqhfzOU17UzGFO6pEIfoC2_x_l526rOlZ3_p4RbWvVFWlT6uMlnPMzjCSxDILtn7Er5Ch0JPYJReE0BhmCXqJh6TsqrygLrL17dcz1Dyq3eJ7MZhHDqQhvWbX3zJvneD1CRanA=w800-no?authuser=0
+image: >-
+  https://lh3.googleusercontent.com/pw/ACtC-3fnLstA2rsbmbt0hI7IWqhfzOU17UzGFO6pEIfoC2_x_l526rOlZ3_p4RbWvVFWlT6uMlnPMzjCSxDILtn7Er5Ch0JPYJReE0BhmCXqJh6TsqrygLrL17dcz1Dyq3eJ7MZhHDqQhvWbX3zJvneD1CRanA=w800-no?authuser=0
 tags:
   - Mac
   - Hackintosh
 hide_table_of_contents: true
-date_created: 2021-05-14
+date_created: 2021-05-14T00:00:00.000Z
+slug: /machintosh/Hackintosh/Mount-EFI/
 ---
 
 # [Hackintosh] 掛載 EFI 磁區方式

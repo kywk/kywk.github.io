@@ -5,12 +5,13 @@ tags:
   - Backpacker
   - 2025/09
 location:
-  - -33.4370
-  - -70.6500
-web: https://www.mercadocentral.cl/
-wiki: https://en.wikipedia.org/wiki/Mercado_Central_(Santiago)
+  - -33.437
+  - -70.65
+web: 'https://www.mercadocentral.cl/'
+wiki: 'https://en.wikipedia.org/wiki/Mercado_Central_(Santiago)'
 mapmarker: default
 hide_table_of_contents: true
+slug: /2509-Chile/Chile/聖地牙哥中央市場-Central-Market-of-Santiago/
 ---
 
 聖地牙哥中央市場 Central Market of Santiago

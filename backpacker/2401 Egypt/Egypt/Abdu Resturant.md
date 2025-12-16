@@ -10,6 +10,7 @@ location:
   - 25.52066
 mapmarker: food
 hide_table_of_contents: true
+slug: /2401-Egypt/Egypt/Abdu-Resturant/
 ---
 
 Abdu Resturant

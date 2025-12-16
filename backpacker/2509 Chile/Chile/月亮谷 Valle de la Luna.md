@@ -6,11 +6,12 @@ tags:
   - 2025/09
 location:
   - -22.9167
-  - -68.3000
-web: https://www.conaf.cl/parques/reserva-nacional-los-flamencos/
-wiki: https://en.wikipedia.org/wiki/Valle_de_la_Luna
+  - -68.3
+web: 'https://www.conaf.cl/parques/reserva-nacional-los-flamencos/'
+wiki: 'https://en.wikipedia.org/wiki/Valle_de_la_Luna'
 mapmarker: default
 hide_table_of_contents: true
+slug: /2509-Chile/Chile/月亮谷-Valle-de-la-Luna/
 ---
 
 月亮谷 Valle de la Luna

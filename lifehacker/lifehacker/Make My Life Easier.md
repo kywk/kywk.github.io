@@ -1,3 +1,6 @@
+---
+slug: /lifehacker/Make-My-Life-Easier/
+---
 #LifeHack #Note 
 
 Ref: [一天做好三件事就好：經常焦慮到失眠，我透過「選三哲學」讓生活好過點 - A Day Magazine](https://www.adaymag.com/2025/02/08/make-my-life-easier.html)

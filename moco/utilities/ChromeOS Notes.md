@@ -1,11 +1,12 @@
 ---
-title: "ChromeOS: Notes"
+title: 'ChromeOS: Notes'
 description: Dropbox setup & usage notes
 tags:
   - ChromeOS
-image: https://i.imgur.com/mErPwqL.png
+image: 'https://i.imgur.com/mErPwqL.png'
 hide_table_of_contents: true
-date_created: 2022-10-20T00:00:00+08:00
+date_created: 2022-10-19T16:00:00.000Z
+slug: /utilities/ChromeOS-Notes/
 ---
 
 [ChromeOS] Setup / Usage Notes

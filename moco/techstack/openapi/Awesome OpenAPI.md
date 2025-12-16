@@ -1,7 +1,10 @@
 ---
 sidebar_position: 0
 title: Awesome OpenAPI
-tags: [OpenAPI, Awesome]
+tags:
+  - OpenAPI
+  - Awesome
+slug: /techstack/openapi/Awesome-OpenAPI/
 ---
 
 Awesome OpenAPI Resources

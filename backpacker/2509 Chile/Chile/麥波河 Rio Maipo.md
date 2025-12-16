@@ -7,9 +7,10 @@ tags:
 location:
   - -33.5833
   - -70.4167
-wiki: https://en.wikipedia.org/wiki/Maipo_River
+wiki: 'https://en.wikipedia.org/wiki/Maipo_River'
 mapmarker: default
 hide_table_of_contents: true
+slug: /2509-Chile/Chile/麥波河-Rio-Maipo/
 ---
 
 麥波河 Rio Maipo

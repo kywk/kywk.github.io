@@ -4,6 +4,7 @@ title: Awesome Utilities
 tags:
   - Utility
   - Awesome
+slug: /utilities/Awesome-Utilities/
 ---
 
 # Awesome Utilities Resources

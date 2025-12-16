@@ -1,12 +1,11 @@
 ---
-
 kanban-plugin: board
 title: Day by day
 tags:
   - Backpacker
   - Asia/Indonesia
 sidebar_position: 10
-
+slug: /2507-Indonesia/Schedule-on-Indonesia/
 ---
 
 ## Refs

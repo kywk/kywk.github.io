@@ -1,3 +1,6 @@
+---
+slug: /bootcamp/LeetCode/Awesome-LeetCode/
+---
 
 
 

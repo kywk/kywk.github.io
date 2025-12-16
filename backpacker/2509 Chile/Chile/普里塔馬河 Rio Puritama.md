@@ -5,11 +5,12 @@ tags:
   - Backpacker
   - 2025/09
 location:
-  - -22.7500
+  - -22.75
   - -68.1167
-wiki: https://en.wikipedia.org/wiki/Puritama_River
+wiki: 'https://en.wikipedia.org/wiki/Puritama_River'
 mapmarker: default
 hide_table_of_contents: true
+slug: /2509-Chile/Chile/普里塔馬河-Rio-Puritama/
 ---
 
 普里塔馬河 Rio Puritama

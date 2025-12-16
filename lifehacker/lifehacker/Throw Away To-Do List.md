@@ -1,3 +1,6 @@
+---
+slug: /lifehacker/Throw-Away-To-Do-List/
+---
 #LifeHack #Note 
 
 Ref: [Throw Away Your To-Do List (And What to Use Instead)](https://joyfulabode.com/epic-to-do-list/)

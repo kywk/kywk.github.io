@@ -1,13 +1,15 @@
 ---
 title: 2024 Jan 法 老 埃及
-image: https://lh3.googleusercontent.com/pw/AL9nZEUA9Ifvd5Z8SXDWkeVB6AC4MPGwnXaL6kBXNPoXwOQQ2jOcZ1Jw_0p8TKK8C3ZX0e67_FOY15eDrm7aaXSQJcKtoUzC80SAQEHsaBy6qS2AqNNs5VUFNXBKm439y_1wkvmDl-PnL8ReojnIumNlEvOXBg=w800-no?authuser=0
+image: >-
+  https://lh3.googleusercontent.com/pw/AL9nZEUA9Ifvd5Z8SXDWkeVB6AC4MPGwnXaL6kBXNPoXwOQQ2jOcZ1Jw_0p8TKK8C3ZX0e67_FOY15eDrm7aaXSQJcKtoUzC80SAQEHsaBy6qS2AqNNs5VUFNXBKm439y_1wkvmDl-PnL8ReojnIumNlEvOXBg=w800-no?authuser=0
 tags:
   - Backpacker
   - Index
   - Egypt
 sidebar_position: 10
-date_created: 2023-08-20
-date_updated: 2023-08-20
+date_created: 2023-08-20T00:00:00.000Z
+date_updated: 2023-08-20T00:00:00.000Z
+slug: /2401-Egypt/Index-Pharaoh-Egypt/
 ---
 
 # 2024.01.23 ~ 02.03 法 老 埃及

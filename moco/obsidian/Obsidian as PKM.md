@@ -4,6 +4,7 @@ tags:
   - Obsidian
   - PKM
   - GTD/TODO
+slug: /obsidian/Obsidian-as-PKM/
 ---
 ## Summary
 

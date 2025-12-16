@@ -18,6 +18,32 @@
 - **Mermaid 圖表**: 支援流程圖和圖表渲染
 - **中文本地化**: 預設語言設為 `zh-TW`
 
+### 🎯 Obsidian 插件支援
+
+#### Kanban 看板
+透過 `remark-obsidian-kanban` 插件，支援 Obsidian Kanban 格式：
+- 自動偵測 `kanban-plugin: board` frontmatter
+- 將 Markdown 任務列表渲染為互動式看板
+- 支援 wiki-link 連結解析
+
+#### Leaflet 地圖
+透過 `remark-obsidian-leaflet` 插件，支援互動式地圖：
+- 使用 `leaflet` 程式碼區塊定義地圖
+- 支援 `markerFolder` 自動讀取含 `location` frontmatter 的 Markdown 檔案
+- 深色/淺色主題自動切換
+- 地圖標記支援中文標題和連結
+
+範例：
+```markdown
+\`\`\`leaflet
+id: my-map
+lat: 25.0330
+long: 121.5654
+defaultZoom: 12
+markerFolder: backpacker/trip/places
+\`\`\`
+```
+
 ## 開發指令
 
 ### 安裝依賴
@@ -50,17 +76,45 @@ npm run clear          # 清除快取
 npm run typecheck      # TypeScript 類型檢查
 ```
 
+## ⚠️ 重要注意事項
+
+### 檔名/資料夾名稱含空格的處理
+
+Docusaurus 預設會將檔案路徑中的空格編碼為 `%20`，導致 URL 不美觀。本專案透過 `slug` frontmatter 注入來解決此問題。
+
+**新增含空格的檔案時，需執行：**
+```bash
+node scripts/inject-slug-frontmatter.js
+```
+
+此腳本會：
+- 掃描 `backpacker/`、`lifehacker/`、`moco/` 目錄
+- 為路徑含空格的 Markdown 檔案自動注入正規化的 `slug` frontmatter
+- 將空格轉換為破折號 (例如：`2401 Egypt` → `/2401-Egypt/`)
+- 已有 `slug` 的檔案會被跳過
+
+**建議**：新增檔案時直接使用破折號或底線命名，避免空格。
+
 ## 重要配置
 
 ### docusaurus.config.ts
 - **多文檔配置**: 每個主題 (backpacker, lifehacker, moco) 都有獨立的文檔實例
 - **Wiki Link 解析**: 自動將 `[[]]` 語法轉換為 Docusaurus 連結
+- **Remark 插件鏈**: remarkSlugNormalizer → remarkLeaflet → remarkKanban → remarkWikiLink
 - **部署設定**: 配置 GitHub Pages 部署參數
+
+### 自訂插件
+| 檔案 | 說明 |
+|------|------|
+| `remark-obsidian-kanban/` | Obsidian Kanban 看板渲染 |
+| `remark-obsidian-leaflet/` | Obsidian Leaflet 地圖渲染 |
+| `remark-slug-normalizer.js` | URL slug 正規化 |
+| `scripts/inject-slug-frontmatter.js` | 批次注入 slug frontmatter |
 
 ### package.json
 - **版本**: 17.71
-- **核心依賴**: Docusaurus 3.7.0, React 19.0.0
-- **特殊插件**: remark-wiki-link, remark-oembed
+- **核心依賴**: Docusaurus 3.9.2, React 19.2.0
+- **特殊插件**: remark-wiki-link, gray-matter
 
 ## Obsidian 整合
 - **.obsidian/**: 完整的 Obsidian 配置，包含多個插件

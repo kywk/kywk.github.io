@@ -7,10 +7,11 @@ tags:
 location:
   - -51.5769
   - -72.6089
-web: https://www.conaf.cl/parques/monumento-natural-cueva-del-milodon/
-wiki: https://en.wikipedia.org/wiki/Cueva_del_Milod%C3%B3n_Natural_Monument
+web: 'https://www.conaf.cl/parques/monumento-natural-cueva-del-milodon/'
+wiki: 'https://en.wikipedia.org/wiki/Cueva_del_Milod%C3%B3n_Natural_Monument'
 mapmarker: default
 hide_table_of_contents: true
+slug: /2509-Chile/Chile/米洛頓洞穴-Cueva-del-Milodón/
 ---
 
 米洛頓洞穴 Cueva del Milodón

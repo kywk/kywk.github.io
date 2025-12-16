@@ -7,10 +7,11 @@ tags:
 location:
   - -33.0472
   - -71.6127
-web: https://www.valparaiso.cl/
-wiki: https://zh.wikipedia.org/wiki/瓦爾帕萊索
+web: 'https://www.valparaiso.cl/'
+wiki: 'https://zh.wikipedia.org/wiki/瓦爾帕萊索'
 mapmarker: default
 hide_table_of_contents: true
+slug: /2509-Chile/Chile/瓦爾帕萊索港-Valparaiso/
 ---
 
 瓦爾帕萊索港 Valparaiso

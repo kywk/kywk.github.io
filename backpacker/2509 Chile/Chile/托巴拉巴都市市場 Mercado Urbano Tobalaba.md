@@ -7,9 +7,10 @@ tags:
   - Restaurant
 location:
   - -33.4167
-  - -70.6000
+  - -70.6
 mapmarker: restaurant
 hide_table_of_contents: true
+slug: /2509-Chile/Chile/托巴拉巴都市市場-Mercado-Urbano-Tobalaba/
 ---
 
 托巴拉巴都市市場 Mercado Urbano Tobalaba

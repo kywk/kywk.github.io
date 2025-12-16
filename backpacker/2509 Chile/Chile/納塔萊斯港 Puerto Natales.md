@@ -7,10 +7,11 @@ tags:
 location:
   - -51.7236
   - -72.5086
-web: https://www.puertonatales.cl/
-wiki: https://zh.wikipedia.org/wiki/納塔萊斯港
+web: 'https://www.puertonatales.cl/'
+wiki: 'https://zh.wikipedia.org/wiki/納塔萊斯港'
 mapmarker: default
 hide_table_of_contents: true
+slug: /2509-Chile/Chile/納塔萊斯港-Puerto-Natales/
 ---
 
 納塔萊斯港 Puerto Natales

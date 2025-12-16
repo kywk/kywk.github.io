@@ -1,3 +1,6 @@
+---
+slug: /utilities/HomeLab/Home-Lab/
+---
 #TODO #HomeLab
 
 ## Summary

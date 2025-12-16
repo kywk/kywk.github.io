@@ -6,9 +6,11 @@ tags:
 draft: false
 sidebar_position: 20
 hide_table_of_contents: true
-image: https://lh3.googleusercontent.com/pw/AL9nZEUA9Ifvd5Z8SXDWkeVB6AC4MPGwnXaL6kBXNPoXwOQQ2jOcZ1Jw_0p8TKK8C3ZX0e67_FOY15eDrm7aaXSQJcKtoUzC80SAQEHsaBy6qS2AqNNs5VUFNXBKm439y_1wkvmDl-PnL8ReojnIumNlEvOXBg=w800-no?authuser=0
-date_created: 2025-07-03
-date_updated: 2025-07-03
+image: >-
+  https://lh3.googleusercontent.com/pw/AL9nZEUA9Ifvd5Z8SXDWkeVB6AC4MPGwnXaL6kBXNPoXwOQQ2jOcZ1Jw_0p8TKK8C3ZX0e67_FOY15eDrm7aaXSQJcKtoUzC80SAQEHsaBy6qS2AqNNs5VUFNXBKm439y_1wkvmDl-PnL8ReojnIumNlEvOXBg=w800-no?authuser=0
+date_created: 2025-07-03T00:00:00.000Z
+date_updated: 2025-07-03T00:00:00.000Z
+slug: /2507-Indonesia/One-day-in-SUB/
 ---
 
 # [泗水] 泗水一日遊 — 市區精選行程

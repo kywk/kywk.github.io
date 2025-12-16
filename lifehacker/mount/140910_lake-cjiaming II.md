@@ -4,7 +4,8 @@ title: 野孩子．嘉明一夜情
 tags:
   - Mount
   - Taiwan
-date_created: 2014-09-10 16:00:00
+date_created: 2014-09-10T16:00:00.000Z
+slug: /mount/140910_lake-cjiaming-II/
 ---
 
 2014.09.10 野孩子．嘉明一夜情

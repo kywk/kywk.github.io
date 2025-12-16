@@ -11,7 +11,7 @@ const FeatureList = [
     Svg: require('@site/static/img/home-backpacker.svg').default,
     description:
       '從冰島到四川，把行前規劃、在地交通與住宿筆記折進屬於自己的 Lonely Planet。',
-    to: '/backpacker/Lonely%20Planet/',
+    to: '/backpacker/Lonely-Planet/',
     accentColor: 'rgba(255, 159, 67, 0.18)',
   },
   {
@@ -36,10 +36,10 @@ const FeatureList = [
   },
 ];
 
-function Feature({Svg, title, subtitle, description, to, accentColor}) {
+function Feature({ Svg, title, subtitle, description, to, accentColor }) {
   return (
     <Link className={clsx(styles.featureCard)} to={to}>
-      <div className={styles.featureIconWrapper} style={{background: accentColor}}>
+      <div className={styles.featureIconWrapper} style={{ background: accentColor }}>
         <Svg className={styles.featureIcon} role="img" />
       </div>
       <div className={styles.featureContent}>

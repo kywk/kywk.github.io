@@ -4,6 +4,7 @@ title: Awesome Machintosh
 tags:
   - Awesome
   - Mac
+slug: /machintosh/Awesome-Machintosh/
 ---
 
 # Awesome Machintosh Resources

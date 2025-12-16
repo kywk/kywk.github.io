@@ -7,9 +7,10 @@ tags:
 location:
   - -50.9423
   - -73.4068
-wiki: https://zh.wikipedia.org/wiki/百內國家公園
+wiki: 'https://zh.wikipedia.org/wiki/百內國家公園'
 mapmarker: default
 hide_table_of_contents: true
+slug: /2509-Chile/Chile/百內三塔-Torres-del-Paine/
 ---
 
 百內三塔 Torres del Paine

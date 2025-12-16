@@ -1,14 +1,15 @@
 ---
 title: Spring Support Policy
 description: Spring Support Policy
-image: https://lh3.googleusercontent.com/pw/AL9nZEUA9Ifvd5Z8SXDWkeVB6AC4MPGwnXaL6kBXNPoXwOQQ2jOcZ1Jw_0p8TKK8C3ZX0e67_FOY15eDrm7aaXSQJcKtoUzC80SAQEHsaBy6qS2AqNNs5VUFNXBKm439y_1wkvmDl-PnL8ReojnIumNlEvOXBg=w800-no?authuser=0
+image: >-
+  https://lh3.googleusercontent.com/pw/AL9nZEUA9Ifvd5Z8SXDWkeVB6AC4MPGwnXaL6kBXNPoXwOQQ2jOcZ1Jw_0p8TKK8C3ZX0e67_FOY15eDrm7aaXSQJcKtoUzC80SAQEHsaBy6qS2AqNNs5VUFNXBKm439y_1wkvmDl-PnL8ReojnIumNlEvOXBg=w800-no?authuser=0
 tags:
   - SpringBoot
   - Java
 sidebar_position: 99
-#hide_table_of_contents: true
-date_created: 2025-06-10
-date_updated: 2025-06-10
+date_created: 2025-06-10T00:00:00.000Z
+date_updated: 2025-06-10T00:00:00.000Z
+slug: /java/springboot/OSS-Support/
 ---
 
 > 處理 [NVD - CVE-2025-24813](https://nvd.nist.gov/vuln/detail/CVE-2025-24813) 的過程, 意外發覺 Spring Boot 對於 OSS 支援策略的改變.

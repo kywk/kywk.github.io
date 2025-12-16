@@ -5,6 +5,7 @@ tags:
   - Mount
   - Patagonia
 hide_table_of_contents: true
+slug: /Trip-n-Life/Way-2-Patagonia/
 ---
 
 # A patagonia a week

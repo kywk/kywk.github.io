@@ -5,11 +5,12 @@ tags:
   - Backpacker
   - 2025/09
 location:
-  - -33.6500
+  - -33.65
   - -70.3167
-wiki: https://en.wikipedia.org/wiki/Cajón_del_Maipo
+wiki: 'https://en.wikipedia.org/wiki/Cajón_del_Maipo'
 mapmarker: default
 hide_table_of_contents: true
+slug: /2509-Chile/Chile/麥波峽谷-Cajón-del-Maipo/
 ---
 
 麥波峽谷 Cajón del Maipo

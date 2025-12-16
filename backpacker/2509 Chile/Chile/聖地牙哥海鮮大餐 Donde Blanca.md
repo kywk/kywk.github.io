@@ -6,10 +6,11 @@ tags:
   - 2025/09
   - Restaurant
 location:
-  - -33.4370
-  - -70.6500
+  - -33.437
+  - -70.65
 mapmarker: restaurant
 hide_table_of_contents: true
+slug: /2509-Chile/Chile/聖地牙哥海鮮大餐-Donde-Blanca/
 ---
 
 聖地牙哥海鮮大餐 Donde Blanca

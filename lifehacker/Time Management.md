@@ -1,3 +1,6 @@
+---
+slug: /Time-Management/
+---
 # 時間管理大師
 
 ##

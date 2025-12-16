@@ -4,8 +4,9 @@ title: 重拾熱血．嘉明湖
 tags:
   - Mount
   - Taiwan
-date_created: 2013-07-05 17:49:49
-date_updated: 2013-07-14 17:49:49
+date_created: 2013-07-05T17:49:49.000Z
+date_updated: 2013-07-14T17:49:49.000Z
+slug: /mount/130629_lake-cjiaming-I/
 ---
 
 2013.06.29 重拾熱血．嘉明湖

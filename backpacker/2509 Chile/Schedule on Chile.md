@@ -1,16 +1,16 @@
 ---
-
 title: Day by day
-image: https://lh3.googleusercontent.com/pw/AL9nZEUA9Ifvd5Z8SXDWkeVB6AC4MPGwnXaL6kBXNPoXwOQQ2jOcZ1Jw_0p8TKK8C3ZX0e67_FOY15eDrm7aaXSQJcKtoUzC80SAQEHsaBy6qS2AqNNs5VUFNXBKm439y_1wkvmDl-PnL8ReojnIumNlEvOXBg=w800-no?authuser=0
+image: >-
+  https://lh3.googleusercontent.com/pw/AL9nZEUA9Ifvd5Z8SXDWkeVB6AC4MPGwnXaL6kBXNPoXwOQQ2jOcZ1Jw_0p8TKK8C3ZX0e67_FOY15eDrm7aaXSQJcKtoUzC80SAQEHsaBy6qS2AqNNs5VUFNXBKm439y_1wkvmDl-PnL8ReojnIumNlEvOXBg=w800-no?authuser=0
 tags:
   - Backpacker
   - Index
   - Chile
 sidebar_position: 11
-date_created: 2025-09-27
-date_updated: 2025-10-13
+date_created: 2025-09-27T00:00:00.000Z
+date_updated: 2025-10-13T00:00:00.000Z
 kanban-plugin: board
-
+slug: /2509-Chile/Schedule-on-Chile/
 ---
 
 ## Refs

@@ -34,7 +34,7 @@ const quickStarts = [
     id: 'lonely-planet',
     title: 'Lonely Planet Toolkit',
     description: '行前 checklist、交通攻略與目的地索引，一次掌握長程旅行的準備。',
-    to: '/backpacker/Lonely%20Planet/',
+    to: '/backpacker/Lonely-Planet/',
   },
   {
     id: 'weekend-project',
@@ -68,7 +68,7 @@ function Hero() {
           <div className={styles.heroActions}>
             <Link
               className={clsx('button button--primary button--lg', styles.heroButton)}
-              to="/backpacker/Lonely%20Planet/">
+              to="/backpacker/Lonely-Planet/">
               探索 Backpacker
             </Link>
             <Link
@@ -83,7 +83,7 @@ function Hero() {
   );
 }
 
-function ChannelCard({channel}) {
+function ChannelCard({ channel }) {
   return (
     <Link className={styles.channelCard} to={channel.to}>
       <span className={styles.channelTone}>{channel.tone}</span>
@@ -94,7 +94,7 @@ function ChannelCard({channel}) {
   );
 }
 
-function QuickStartItem({item}) {
+function QuickStartItem({ item }) {
   return (
     <li className={styles.quickItem}>
       <Link to={item.to}>
@@ -107,7 +107,7 @@ function QuickStartItem({item}) {
 }
 
 export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   return (
     <Layout title="kywk 的筆記地圖" description="旅行、生活實驗、工程筆記的交會點，kywk 的數位花園首頁。">
       <Hero />

@@ -1,12 +1,14 @@
 ---
-title: "Manjaro: 安裝紀錄"
-description: "Manjaro: 安裝紀錄"
+title: 'Manjaro: 安裝紀錄'
+description: 'Manjaro: 安裝紀錄'
 tags:
   - Linux/Manjaro
   - Linux
   - kywk
-date_created: 2022-05-11T12:01:39+08:00
-image: https://lh3.googleusercontent.com/pw/AM-JKLU2Ot2TyON1chUA-Qw7qj-OQSRMYNin7jsJsUa3E_jwqq1JbwTZZckUtJmNZmqxY5M4egm-ryt4g3Ope_0EqHBrCDSEHmcy-goHRzWh-ZgguUoy1XKpyS1DNx8aV92vAkAM0zZOW6EZR4KS3W1DClQKhw=w800-no?authuser=0
+date_created: 2022-05-11T04:01:39.000Z
+image: >-
+  https://lh3.googleusercontent.com/pw/AM-JKLU2Ot2TyON1chUA-Qw7qj-OQSRMYNin7jsJsUa3E_jwqq1JbwTZZckUtJmNZmqxY5M4egm-ryt4g3Ope_0EqHBrCDSEHmcy-goHRzWh-ZgguUoy1XKpyS1DNx8aV92vAkAM0zZOW6EZR4KS3W1DClQKhw=w800-no?authuser=0
+slug: /utilities/Linux/Manjaro-Installation-Note/
 ---
 
 [Manjaro] 系統安裝紀錄 2022.May

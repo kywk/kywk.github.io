@@ -7,9 +7,10 @@ tags:
 location:
   - -33.4256
   - -70.6344
-wiki: https://en.wikipedia.org/wiki/San_Cristóbal_Hill
+wiki: 'https://en.wikipedia.org/wiki/San_Cristóbal_Hill'
 mapmarker: default
 hide_table_of_contents: true
+slug: /2509-Chile/Chile/聖克里斯托瓦爾山-Cerro-San-Cristobal/
 ---
 
 聖克里斯托瓦爾山 Cerro San Cristobal

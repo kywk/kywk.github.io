@@ -1,12 +1,13 @@
 ---
-title: "ChromeOS: Dropbox"
+title: 'ChromeOS: Dropbox'
 description: Use Dropbox in ChromeOS
 tags:
   - ChromeOS
   - Dropbox
-image: https://i.imgur.com/mErPwqL.png
-date_created: 2022-10-17T00:00:00+08:00
-date_updated: 2022-10-17T00:00:00+08:00
+image: 'https://i.imgur.com/mErPwqL.png'
+date_created: 2022-10-16T16:00:00.000Z
+date_updated: 2022-10-16T16:00:00.000Z
+slug: /utilities/ChromeOS-Dropbox/
 ---
 
 [ChromeOS] Dropbox HowTos

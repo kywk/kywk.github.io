@@ -1,14 +1,16 @@
 ---
 sidebar_position: 10
-title: 隨車放風裝備組合, 2022 Aug
+title: '隨車放風裝備組合, 2022 Aug'
 tags:
   - Equipment
   - Camping
-date_created: 2022-08-04T13:16:03+08:00
-image: https://lh3.googleusercontent.com/pw/ACtC-3eG64ZtpHegixnPtyAFrxhYz5zUOC7bT5Jhh1caUMVE1qqEc3L_uGQYLCmxlBr-3gVRW0gUFHU9nh1PuRxR00cOahBUIJPxlupa0kkq1fNH5HAhNLa9aLSg-kjta9_QcgbPhfnpp_z_NRsj6PNOzIkeOg=w800-no?authuser=0
+date_created: 2022-08-04T05:16:03.000Z
+image: >-
+  https://lh3.googleusercontent.com/pw/ACtC-3eG64ZtpHegixnPtyAFrxhYz5zUOC7bT5Jhh1caUMVE1qqEc3L_uGQYLCmxlBr-3gVRW0gUFHU9nh1PuRxR00cOahBUIJPxlupa0kkq1fNH5HAhNLa9aLSg-kjta9_QcgbPhfnpp_z_NRsj6PNOzIkeOg=w800-no?authuser=0
 categories:
   - equipment
   - camping
+slug: /equipment/Camping-Carry-Around/
 ---
 
 _last updated: 2022-08-04_

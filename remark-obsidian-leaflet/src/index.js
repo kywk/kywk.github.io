@@ -32,6 +32,19 @@ function parseLeafletConfig(content) {
 }
 
 /**
+ * Normalize a path by converting spaces to dashes in all segments
+ * @param {string} urlPath - The path to normalize
+ * @returns {string} Normalized path with spaces replaced by dashes
+ */
+function normalizeSlug(urlPath) {
+    if (!urlPath) return urlPath;
+    return urlPath
+        .split('/')
+        .map(segment => segment.replace(/ /g, '-'))
+        .join('/');
+}
+
+/**
  * Read markers from a folder containing markdown files with location frontmatter
  */
 function readMarkers(markerFolder, routeBase) {
@@ -67,8 +80,12 @@ function readMarkers(markerFolder, routeBase) {
 
                     if (!isNaN(lat) && !isNaN(lng)) {
                         const fileName = file.replace(/\.md$/, '');
-                        const slug = fileName.replace(/ /g, '-').toLowerCase();
-                        const href = `${routeBase}${markerFolder.split('/').slice(1).join('/')}/${slug}/`;
+                        // 正規化檔名：空格轉破折號
+                        const slug = fileName.replace(/ /g, '-');
+                        // 正規化資料夾路徑：空格轉破折號
+                        const folderPath = markerFolder.split('/').slice(1).join('/');
+                        const normalizedFolderPath = normalizeSlug(folderPath);
+                        const href = `${routeBase}${normalizedFolderPath}/${slug}/`;
 
                         markers.push({
                             lat,

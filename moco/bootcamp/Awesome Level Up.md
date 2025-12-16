@@ -1,7 +1,10 @@
 ---
 sidebar_position: 0
 title: Awesome Resources
-tags: [Bootcamp, Awesome]
+tags:
+  - Bootcamp
+  - Awesome
+slug: /bootcamp/Awesome-Level-Up/
 ---
 
 # Awesome Level Up Resources

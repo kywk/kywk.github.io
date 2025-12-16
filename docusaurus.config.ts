@@ -5,6 +5,8 @@ import type * as Preset from "@docusaurus/preset-classic";
 const remarkWikiLink = require("remark-wiki-link");
 const { remarkKanban } = require("./remark-obsidian-kanban/src/index.js");
 const remarkLeaflet = require("./remark-obsidian-leaflet/src/index.js");
+const remarkSlugNormalizer = require("./remark-slug-normalizer.js");
+const { normalizeSlug } = require("./docusaurus-plugin-slug-normalizer.js");
 const fs = require('fs');
 const path = require('path');
 
@@ -25,11 +27,21 @@ function createFileMap(basePath) {
           const fileName = item.name.replace(/\.md$/, '');
           const relativePath = path.relative(basePath, fullPath).replace(/\.md$/, '');
 
+          // 正規化路徑：將空格轉換為破折號
+          const normalizedPath = normalizeSlug(relativePath);
+
           // 建立多種可能的映射
-          fileMap.set(fileName, relativePath);
-          fileMap.set(fileName.toLowerCase(), relativePath);
-          fileMap.set(fileName.replace(/ /g, '-').toLowerCase(), relativePath);
-          fileMap.set(fileName.replace(/ /g, '_').toLowerCase(), relativePath);
+          fileMap.set(fileName, normalizedPath);
+          fileMap.set(fileName.toLowerCase(), normalizedPath);
+          fileMap.set(fileName.replace(/ /g, '-').toLowerCase(), normalizedPath);
+          fileMap.set(fileName.replace(/ /g, '_').toLowerCase(), normalizedPath);
+
+          // 額外映射：使用正規化的檔名作為 key
+          const normalizedFileName = fileName.replace(/ /g, '-');
+          if (normalizedFileName !== fileName) {
+            fileMap.set(normalizedFileName, normalizedPath);
+            fileMap.set(normalizedFileName.toLowerCase(), normalizedPath);
+          }
         }
       }
     } catch (error) {
@@ -72,6 +84,7 @@ function createPageResolver(fileMap) {
 // 建立共用的 remark 插件配置
 function createRemarkPlugins(fileMap, routeBase) {
   return [
+    remarkSlugNormalizer,  // 正規化 slug：空格轉破折號
     [remarkLeaflet, { routeBase }],
     [remarkKanban, { pageResolver: createPageResolver(fileMap), hrefTemplate: (permalink) => `${routeBase}${permalink}/` }],
     [
@@ -221,7 +234,7 @@ const config: Config = {
       },
       items: [
         {
-          to: "/backpacker/Lonely Planet",
+          to: "/backpacker/Lonely-Planet",
           label: "lonely planet",
           position: "left",
           activeBaseRegex: `/backpacker/`,

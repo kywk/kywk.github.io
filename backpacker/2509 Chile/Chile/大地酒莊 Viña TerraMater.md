@@ -6,10 +6,11 @@ tags:
   - 2025/09
 location:
   - -33.5833
-  - -70.5500
-web: https://www.terramater.cl/
+  - -70.55
+web: 'https://www.terramater.cl/'
 mapmarker: default
 hide_table_of_contents: true
+slug: /2509-Chile/Chile/大地酒莊-Viña-TerraMater/
 ---
 
 大地酒莊 Viña TerraMater

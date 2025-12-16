@@ -1,3 +1,6 @@
+---
+slug: /utilities/NeoVim-as-IDE/
+---
 
 
 ## See Also

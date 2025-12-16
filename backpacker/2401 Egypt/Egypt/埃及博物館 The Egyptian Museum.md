@@ -7,10 +7,11 @@ tags:
 location:
   - 30.047778
   - 31.233333
-web: https://www.egyptianmuseumcairo.com/egyptian-museum-cairo/
-wiki: https://zh.wikipedia.org/zh-hant/埃及博物館
+web: 'https://www.egyptianmuseumcairo.com/egyptian-museum-cairo/'
+wiki: 'https://zh.wikipedia.org/zh-hant/埃及博物館'
 mapmarker: default
 hide_table_of_contents: true
+slug: /2401-Egypt/Egypt/埃及博物館-The-Egyptian-Museum/
 ---
 
 埃及博物館 The Egyptian Museum

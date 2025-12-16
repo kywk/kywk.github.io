@@ -7,9 +7,10 @@ tags:
 location:
   - 25.71971
   - 32.60129
-wiki: https://en.wikipedia.org/wiki/Medinet_Habu
+wiki: 'https://en.wikipedia.org/wiki/Medinet_Habu'
 mapmarker: default
 hide_table_of_contents: true
+slug: /2401-Egypt/Egypt/哈布城-Medinet-Habu/
 ---
 
 哈布城 Medinet Habu

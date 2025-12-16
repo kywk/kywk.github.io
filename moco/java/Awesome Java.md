@@ -1,7 +1,10 @@
 ---
 sidebar_position: 0
 title: Awesome Java
-tags: [Java, Awesome]
+tags:
+  - Java
+  - Awesome
+slug: /java/Awesome-Java/
 ---
 
 Awesome Java Resources

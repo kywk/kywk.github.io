@@ -2,6 +2,7 @@
 title: Lonely Planet Toolkit
 description: 行前 checklist、交通攻略與裝備表，為長程旅行鋪好軌道。
 hide_title: true
+slug: /Lonely-Planet/
 ---
 
 # Lonely Planet Toolkit

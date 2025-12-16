@@ -7,9 +7,10 @@ tags:
   - Accounting
 sidebar_position: 1
 hide_table_of_contents: true
-date_created: 2024-12-29
-date_updated: 2024-12-29
-image: https://i.imgur.com/mErPwqL.png
+date_created: 2024-12-29T00:00:00.000Z
+date_updated: 2024-12-29T00:00:00.000Z
+image: 'https://i.imgur.com/mErPwqL.png'
+slug: /obsidian/Plain-Text-Accounting/
 ---
 
 # [Plain Text Accounting](https://plaintextaccounting.org/)

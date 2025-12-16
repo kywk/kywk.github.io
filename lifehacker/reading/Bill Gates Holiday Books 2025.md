@@ -1,3 +1,6 @@
+---
+slug: /reading/Bill-Gates-Holiday-Books-2025/
+---
 
 # # 比爾蓋茲冬季書單 2025
 

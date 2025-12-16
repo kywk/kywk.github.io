@@ -7,9 +7,10 @@ tags:
 location:
   - -33.4372
   - -70.6506
-wiki: https://zh.wikipedia.org/wiki/聖地亞哥武器廣場
+wiki: 'https://zh.wikipedia.org/wiki/聖地亞哥武器廣場'
 mapmarker: default
 hide_table_of_contents: true
+slug: /2509-Chile/Chile/聖地牙哥武器廣場-Plaza-de-Armas-of-Santiago-de-Chile/
 ---
 
 聖地牙哥武器廣場 Plaza de Armas of Santiago de Chile

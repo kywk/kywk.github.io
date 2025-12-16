@@ -7,10 +7,11 @@ tags:
   - Restaurant
 location:
   - -22.91143
-  - -68.20130
-web: http://www.cafeadobe.cl/
+  - -68.2013
+web: 'http://www.cafeadobe.cl/'
 mapmarker: restaurant
 hide_table_of_contents: true
+slug: /2509-Chile/Chile/Adobe-Restaurant/
 ---
 
 Adobe Restaurant

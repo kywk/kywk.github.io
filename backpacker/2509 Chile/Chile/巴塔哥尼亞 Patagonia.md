@@ -5,11 +5,12 @@ tags:
   - Backpacker
   - 2025/09
 location:
-  - -50.0000
-  - -73.0000
-wiki: https://zh.wikipedia.org/wiki/巴塔哥尼亞
+  - -50
+  - -73
+wiki: 'https://zh.wikipedia.org/wiki/巴塔哥尼亞'
 mapmarker: default
 hide_table_of_contents: true
+slug: /2509-Chile/Chile/巴塔哥尼亞-Patagonia/
 ---
 
 巴塔哥尼亞 Patagonia
