@@ -2,16 +2,76 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kywk.github.io/news/</id>
     <title>kywk.me Blog</title>
-    <updated>2025-10-04T18:14:15.000Z</updated>
+    <updated>2025-12-31T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kywk.github.io/news/"/>
     <subtitle>kywk.me Blog</subtitle>
     <icon>https://kywk.github.io/img/favicon.ico</icon>
     <entry>
+        <title type="html"><![CDATA[Surf 10.01 ~ 12.31]]></title>
+        <id>https://kywk.github.io/news/2025/12/31/_Surfing/</id>
+        <link href="https://kywk.github.io/news/2025/12/31/_Surfing/"/>
+        <updated>2025-12-31T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Surfing quick note 10.01 ~ 12.31]]></summary>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tech">Tech<a href="https://kywk.github.io/news/2025/12/31/_Surfing/#tech" class="hash-link" aria-label="Tech的直接連結" title="Tech的直接連結" translate="no">​</a></h3>
+<ul>
+<li><a href="https://hk.news.yahoo.com/aws-%E4%B8%80%E5%AE%B6%E6%95%85%E9%9A%9C%E3%80%81%E8%90%AC%E5%AE%B6%E5%93%80%EF%BC%9Fcrowdstrike-%E4%B9%8B%E5%BE%8C%EF%BC%8C%E5%86%8D%E9%A1%AF%E7%B6%B2%E7%B5%A1%E6%9C%8D%E5%8B%99%E9%81%8E%E5%BA%A6%E9%9B%86%E4%B8%AD%E5%8C%96%E7%9A%84%E9%A2%A8%E9%9A%AA-031146094.html?guccounter=1" target="_blank" rel="noopener noreferrer">AWS 一家故障、萬家哀？CrowdStrike 之後，再顯網絡服務過度集中化的風險</a>
+<ul>
+<li><a href="https://www.inside.com.tw/article/39890-aws-outage-dns" target="_blank" rel="noopener noreferrer">AWS DNS 故障引發網路大規模中斷（現已修復） - INSIDE</a></li>
+<li><a href="https://www.ithome.com.tw/news/171777" target="_blank" rel="noopener noreferrer">AWS美東-1服務中斷近3小時，Disney+、麥當勞程式及Lyft全停擺 | iThome</a></li>
+</ul>
+</li>
+<li><a href="http://hongkiat.com/blog/optimize-visual-studio-code-terminal/" target="_blank" rel="noopener noreferrer">Hidden VS Code Terminal Features Every Developer Should Know - Hongkiat</a></li>
+<li><a href="https://www.evanlin.com/search-grounding/" target="_blank" rel="noopener noreferrer">[Gemini 3.0][Google Search] 使用 Google Search Grounding API 搭配 Gemini 3.0 Pro 來打造新聞與資訊助手</a></li>
+<li><a href="https://runcode.blendviewer.com/" target="_blank" rel="noopener noreferrer">RunCode - 多语言在线代码执行平台</a></li>
+<li><a href="https://www.patterns.dev/" target="_blank" rel="noopener noreferrer">Patterns.dev</a></li>
+<li></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="ai">AI<a href="https://kywk.github.io/news/2025/12/31/_Surfing/#ai" class="hash-link" aria-label="AI的直接連結" title="AI的直接連結" translate="no">​</a></h3>
+<ul>
+<li><a href="https://kywk.github.io/news/2025/12/31/_Surfing/soft4fun.net/tech/ai/deepseek-ocr.htm/">LLM 救星？DeepSeek 推出 DeepSeek-OCR，Token 節省高達 90% - 硬是要學</a></li>
+<li><a href="https://blog.longwin.com.tw/2025/10/news-vibe-coding-not-help-reason-2025/" target="_blank" rel="noopener noreferrer">Vibe Coding 發明者說明 AI 寫程式幫不上忙的原因 - 2025 - Tsung's Blog</a></li>
+<li><a href="https://www.techbang.com/posts/126702-nvidia-ceo-encourage-employees-use-ai" target="_blank" rel="noopener noreferrer">黃仁勳鼓勵員工盡量使用 AI：「能用就用，不必擔心工作會被取代」 | T客邦</a></li>
+<li><a href="https://www.techbang.com/posts/126918-openai-gpt-5-2-released-new-features" target="_blank" rel="noopener noreferrer">OpenAI 深夜放大招！GPT-5.2 正式登場，做表格、做簡報、分析長文通通難不倒 | T客邦</a></li>
+<li></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="it-news">IT News<a href="https://kywk.github.io/news/2025/12/31/_Surfing/#it-news" class="hash-link" aria-label="IT News的直接連結" title="IT News的直接連結" translate="no">​</a></h3>
+<ul>
+<li><a href="https://www.ithome.com.tw/news/172593" target="_blank" rel="noopener noreferrer">Anthropic收購JavaScript執行環境Bun強化Claude Code底層效能 | iThome</a></li>
+<li><a href="https://www.ithome.com.tw/news/172732" target="_blank" rel="noopener noreferrer">Linux基金會成立代理式AI基金會，收編三大標準 | iThome</a></li>
+<li></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="life">Life<a href="https://kywk.github.io/news/2025/12/31/_Surfing/#life" class="hash-link" aria-label="Life的直接連結" title="Life的直接連結" translate="no">​</a></h3>
+<ul>
+<li><a href="https://www.adaymag.com/2025/10/20/robbery-louvre-paris-france-museum.html" target="_blank" rel="noopener noreferrer">震驚全世界的羅浮宮失竊案！短短 7 分鐘，8 件藏品不翼而飛，這些失竊珠寶背後有什麼故事？ - A Day Magazine</a></li>
+<li><a href="https://www.inside.com.tw/article/40167-bill-gates-holiday-books-2025" target="_blank" rel="noopener noreferrer">比爾蓋茲冬季書單出爐！從章魚故事到美國建設危機，5 本書看懂當代關鍵議題 - INSIDEj</a>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled="" checked=""> Do it 📅 2025-12-07 ✅ 2025-12-04</li>
+</ul>
+</li>
+<li><a href="https://www.thenewslens.com/article/261903" target="_blank" rel="noopener noreferrer">冬夜微醺不必醉：到臺南體驗歐洲酒款×在地小吃的完美風味搭配 - TNL The News Lens 關鍵評論網</a></li>
+<li><a href="https://www.adaymag.com/2025/12/10/new-york-times-2025-best-books.html" target="_blank" rel="noopener noreferrer">《紐約時報》公佈 2025 年度十大好書！關於孤獨、創傷、親密關係..總有一本是你的命定 - A Day Magazine</a>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> Do it 📅 2025-12-10</li>
+</ul>
+</li>
+<li><a href="https://www.playpcesor.com/2025/12/google-chrome.html" target="_blank" rel="noopener noreferrer">一定要試試 Google Chrome 內建分割畫面，這是我一直等待的生產力功能</a></li>
+<li></li>
+</ul>]]></content>
+        <author>
+            <name>kywk</name>
+            <uri>https://github.io/kywk</uri>
+        </author>
+        <category label="Surf" term="Surf"/>
+        <category label="2025/10" term="2025/10"/>
+        <category label="2025/11" term="2025/11"/>
+        <category label="2025/12" term="2025/12"/>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[News Feed]]></title>
         <id>https://kywk.github.io/news/News Feed/</id>
         <link href="https://kywk.github.io/news/News Feed/"/>
-        <updated>2025-10-04T18:14:15.000Z</updated>
+        <updated>2025-12-16T14:27:12.000Z</updated>
         <summary type="html"><![CDATA[This is News Clippins]]></summary>
         <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="news--discus">news &amp; discus<a href="https://kywk.github.io/news/News%20Feed/#news--discus" class="hash-link" aria-label="news &amp; discus的直接連結" title="news &amp; discus的直接連結" translate="no">​</a></h2>
 <ul>
@@ -29,7 +89,7 @@
         <title type="html"><![CDATA[2025/template]]></title>
         <id>https://kywk.github.io/news/2025/template/</id>
         <link href="https://kywk.github.io/news/2025/template/"/>
-        <updated>2025-10-04T18:14:15.000Z</updated>
+        <updated>2025-12-16T14:27:12.000Z</updated>
     </entry>
     <entry>
         <title type="html"><![CDATA[Surf 09.01 ~ 09.30]]></title>
@@ -1348,26 +1408,5 @@ XMind Zen 不但跟原本的 XMind 一樣好用, 而且更美觀快速.<br>
         </author>
         <category label="Surf" term="Surf"/>
         <category label="2024/10" term="2024/10"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Don't DRY]]></title>
-        <id>https://kywk.github.io/news/2024/05/31/ Don't DRY Your Code Prematurely/</id>
-        <link href="https://kywk.github.io/news/2024/05/31/ Don't DRY Your Code Prematurely/"/>
-        <updated>2024-05-31T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[[HN Daily] Don't DRY Your Code Prematurely]]></summary>
-        <content type="html"><![CDATA[<p>前些日子團隊針對 Code Quality 進行了討論, 其中重造輪子是團隊成員相當在意的一個部分. 恰巧今日看到
-<a href="https://testing.googleblog.com/2024/05/dont-dry-your-code-prematurely.html" target="_blank" rel="noopener noreferrer">Google Testing Blog: Don't DRY Your Code Prematurely</a>
-這篇上了 <a href="https://news.ycombinator.com/item?id=40525064" target="_blank" rel="noopener noreferrer">HackerNews Daily Top 10</a> 的熱門討論.</p>
-<blockquote>
-<p>Applying DRY principles too rigidly leads to premature abstractions that make future changes more complex than necessary.
-Consider carefully if code is truly redundant or just superficially similar.</p>
-</blockquote>
-<p>觀點出發有些類似 <strong>過早最佳化是萬惡的根源</strong>, 在未確定是否為效能瓶頸時進行優化可時反而會適得其反,
-在未確定是否為 functional redundant 前進行程式複用的加工, 有時反而會讓程式變得複雜.</p>]]></content>
-        <author>
-            <name>kywk</name>
-            <uri>https://github.io/kywk</uri>
-        </author>
-        <category label="HN" term="HN"/>
     </entry>
 </feed>
