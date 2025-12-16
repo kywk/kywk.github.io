@@ -30,17 +30,30 @@ function createFileMap(basePath) {
           // 正規化路徑：將空格轉換為破折號
           const normalizedPath = normalizeSlug(relativePath);
 
-          // 建立多種可能的映射
+          // 建立多種可能的映射 (原始檔名)
           fileMap.set(fileName, normalizedPath);
           fileMap.set(fileName.toLowerCase(), normalizedPath);
-          fileMap.set(fileName.replace(/ /g, '-').toLowerCase(), normalizedPath);
-          fileMap.set(fileName.replace(/ /g, '_').toLowerCase(), normalizedPath);
 
-          // 額外映射：使用正規化的檔名作為 key
-          const normalizedFileName = fileName.replace(/ /g, '-');
-          if (normalizedFileName !== fileName) {
-            fileMap.set(normalizedFileName, normalizedPath);
-            fileMap.set(normalizedFileName.toLowerCase(), normalizedPath);
+          // 空格轉破折號
+          const dashName = fileName.replace(/ /g, '-');
+          fileMap.set(dashName, normalizedPath);
+          fileMap.set(dashName.toLowerCase(), normalizedPath);
+
+          // 空格轉底線
+          const underscoreName = fileName.replace(/ /g, '_');
+          fileMap.set(underscoreName, normalizedPath);
+          fileMap.set(underscoreName.toLowerCase(), normalizedPath);
+
+          // 移除所有空格
+          const noSpaceName = fileName.replace(/ /g, '');
+          fileMap.set(noSpaceName, normalizedPath);
+          fileMap.set(noSpaceName.toLowerCase(), normalizedPath);
+
+          // 破折號轉空格 (反向映射)
+          const spaceName = fileName.replace(/-/g, ' ');
+          if (spaceName !== fileName) {
+            fileMap.set(spaceName, normalizedPath);
+            fileMap.set(spaceName.toLowerCase(), normalizedPath);
           }
         }
       }
@@ -64,15 +77,28 @@ function createPageResolver(fileMap) {
     try {
       const cleanName = name.replace(/\.md$/, '');
 
-      const mappedPath = fileMap.get(cleanName) ||
-        fileMap.get(cleanName.toLowerCase()) ||
-        fileMap.get(cleanName.replace(/ /g, '-').toLowerCase()) ||
-        fileMap.get(cleanName.replace(/ /g, '_').toLowerCase());
+      // 嘗試各種變體來查找檔案
+      const variations = [
+        cleanName,                                    // 原始名稱
+        cleanName.toLowerCase(),                      // 小寫
+        cleanName.replace(/ /g, '-'),                 // 空格轉破折號
+        cleanName.replace(/ /g, '-').toLowerCase(),   // 空格轉破折號 + 小寫
+        cleanName.replace(/ /g, '_'),                 // 空格轉底線
+        cleanName.replace(/ /g, '_').toLowerCase(),   // 空格轉底線 + 小寫
+        cleanName.replace(/-/g, ' '),                 // 破折號轉空格
+        cleanName.replace(/-/g, ' ').toLowerCase(),   // 破折號轉空格 + 小寫
+        cleanName.replace(/ /g, ''),                  // 移除空格
+        cleanName.replace(/ /g, '').toLowerCase(),    // 移除空格 + 小寫
+      ];
 
-      if (mappedPath) {
-        return [mappedPath];
+      for (const variation of variations) {
+        const mappedPath = fileMap.get(variation);
+        if (mappedPath) {
+          return [mappedPath];
+        }
       }
 
+      // 若都找不到，返回正規化的名稱
       return [cleanName.replace(/ /g, '-').toLowerCase()];
     } catch (error) {
       console.warn(`Failed to resolve page ${name}:`, error.message);
@@ -92,6 +118,7 @@ function createRemarkPlugins(fileMap, routeBase) {
       {
         pageResolver: createPageResolver(fileMap),
         hrefTemplate: (permalink) => `${routeBase}${permalink}/`,
+        aliasDivider: '|',
       },
     ],
   ];

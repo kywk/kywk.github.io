@@ -20,7 +20,7 @@ date_updated: 2025-09-21
 
 ## 📘 Playbooks · 實戰練功
 :::tip Projects
-- [52 Projects](./52projects/52projects.md) — 年度練習題與進度追蹤。
+- [[52projects|52 Projects]] — 年度練習題與進度追蹤。
 - [Bootcamp](/moco/category/bootcamp/) — 基礎補強與工作坊筆記。
 :::
 
@@ -45,6 +45,6 @@ date_updated: 2025-09-21
 ## 🔎 最近更新
 - [News Log](/news/)
 - [Life Blog](/life/)
-- [Awesome Obsidian](./obsidian/Awesome%20Obsidian.md)
+- [[Awesome Obsidian]]
 
 後續持續將專案拆成模組化的章節，讓 MoCo Lab 成為可靠的工程資源庫。

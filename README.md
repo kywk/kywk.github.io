@@ -12,7 +12,7 @@
 - **blog.news/**: 技術新聞與資訊
 
 ### 🔧 技術特色
-- **Wiki Link 支援**: 使用 `remark-wiki-link` 插件，支援 Obsidian 的 `[[]]` 連結語法
+- **Wiki Link 支援**: 使用 `remark-wiki-link` 插件，支援 Obsidian 的 `[[]]` 連結語法及 `[[target|display]]` 別名語法
 - **多文檔站點**: 透過多個 `@docusaurus/plugin-content-docs` 實例管理不同主題
 - **雙部落格系統**: 分離個人生活 (life) 和技術資訊 (news)
 - **Mermaid 圖表**: 支援流程圖和圖表渲染
@@ -95,6 +95,21 @@ node scripts/inject-slug-frontmatter.js
 
 **建議**：新增檔案時直接使用破折號或底線命名，避免空格。
 
+### Markdown 連結轉 Wiki-link
+
+為維持 Obsidian 相容性，專案內部連結應使用 wiki-link 格式 `[[file]]` 而非 Markdown 格式 `[text](./file.md)`。
+
+**轉換 Markdown 連結為 wiki-link：**
+```bash
+node scripts/convert-to-wikilinks.js
+```
+
+此腳本會：
+- 將 `[text](./file.md)` 轉換為 `[[file|text]]`
+- 若連結文字與檔名相同，簡化為 `[[file]]`
+- 僅處理相對路徑 (`./` 或 `../`) 的 `.md` 連結
+
+
 ## 重要配置
 
 ### docusaurus.config.ts
@@ -110,6 +125,7 @@ node scripts/inject-slug-frontmatter.js
 | `remark-obsidian-leaflet/` | Obsidian Leaflet 地圖渲染 |
 | `remark-slug-normalizer.js` | URL slug 正規化 |
 | `scripts/inject-slug-frontmatter.js` | 批次注入 slug frontmatter |
+| `scripts/convert-to-wikilinks.js` | Markdown 連結轉 wiki-link |
 
 ### package.json
 - **版本**: 17.71

@@ -12,7 +12,7 @@ image: https://i.imgur.com/mErPwqL.png
 [Express] CORS
 ==============
 
-Express 框架中, 要處理 [CORS 規範設定](../Security/CORS.md), 
+Express 框架中, 要處理 [[CORS|CORS 規範設定]], 
 可以依程式需求手動配置 `res.header()`, 或是使用 [express/cors](https://github.com/expressjs/cors) 套件.
 
 
@@ -129,5 +129,5 @@ See Also
 
 ### References ###
 
-- [CORS](../Security/CORS.md)
+- [[CORS]]
 - [Cors Express端的設定. 最近工作上做了一個平台專門將圖片轉檔，現在這個平台要開始串接到網站上，由clie… | by Tinghuan Wang | summer's code life | Medium](https://medium.com/summers-life/cros-express%E7%AB%AF%E7%9A%84%E8%A8%AD%E5%AE%9A-f94c9a3199a1)

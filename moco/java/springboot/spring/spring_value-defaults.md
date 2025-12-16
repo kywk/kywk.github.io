@@ -111,7 +111,7 @@ See Also
 --------
 
 - [GitHub project][GitHub project]
-- [@Value Annotation](./spring_value-annotation.md)
+- [[spring_value-annotation|@Value Annotation]]
 
 
 [GitHub project]: https://github.com/eugenp/tutorials/tree/master/spring-boot-modules/spring-boot-properties-2

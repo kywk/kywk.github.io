@@ -75,15 +75,15 @@ Around me
 
 ### Trick & Tip ###
 
-- [Integrate Obsidian & Docusaurus](./obs-howto_docusaurus-integrate.md)
-- [Syncing Vault](./obs-howto_sync.md)
+- [[obs-howto_docusaurus-integrate|Integrate Obsidian & Docusaurus]]
+- [[obs-howto_sync|Syncing Vault]]
 
 ### Plugin ###
 
-- [Daily notes](./obs-core_daily-notes.md)
-- [Kanban](./obs-plugin_kanban.md)
-- [Tracker](./obs-plugin_tracker.md)
-- [Templater](./obs-plugin_templater.md)
+- [[obs-core_daily-notes|Daily notes]]
+- [[obs-plugin_kanban|Kanban]]
+- [[obs-plugin_tracker|Tracker]]
+- [[obs-plugin_templater|Templater]]
 
 ---
-__See Also: [Awesome Obsidian](./obs_awesome.md)__
+__See Also: [[obs_awesome|Awesome Obsidian]]__

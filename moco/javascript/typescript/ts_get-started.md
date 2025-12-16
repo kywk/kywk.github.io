@@ -26,7 +26,7 @@ TypeScript 是由微軟開發, 提供型別系統和 ES6 支援的 JavaScript �
 
 ### Install ###
 
-TypeScript 編譯器是 npm 的套件, 需先準備 Node.js 開發環境. [([Node.js] Get Started)](../node.js/js_get-started.md)  
+TypeScript 編譯器是 npm 的套件, 需先準備 Node.js 開發環境. [[js_get-started|[Node.js] Get Started]]  
 準備好後, 透過下列指令安裝 TypeScript 編譯器.
 
 ``` shell

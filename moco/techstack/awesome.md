@@ -19,7 +19,7 @@ Communication Protocol
 ----------------------
 
 - [gRPC](./gRPC)
-- [OData](./odata.md)
+- [[odata]]
 
 
 Open Standard & Spec
@@ -33,8 +33,8 @@ Testing
 
 ### Performance & Stress Test ###
 
-- [k6](./test/k6_awesome.md)
+- [[k6_awesome|k6]]
   - [notes](#)
 - [locust](#)
-  - [notes](./test/locust_notes.md)
+  - [[locust_notes|notes]]
 

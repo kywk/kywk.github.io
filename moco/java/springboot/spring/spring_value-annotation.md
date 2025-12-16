@@ -93,7 +93,7 @@ Here, the value _some default_ will be injected:
 private String someDefault;
 ```
 
-@Value annotation 各種物件 default value 的進一步介紹可參考 [@Value Defaults](./spring_value-defaults.md)
+@Value annotation 各種物件 default value 的進一步介紹可參考 [[spring_value-defaults|@Value Defaults]]
 
 
 ### Properties priority ###
@@ -127,7 +127,7 @@ private String[] valuesArray;
 Advanced Examples With SpEL
 ---------------------------
 
-We can also use [SpEL expressions](./spring_spel-expressions.md) to get the value.
+We can also use [[spring_spel-expressions|SpEL expressions]] to get the value.
 
 If we have a system property named _priority_, then its value will be applied to the field:
 
@@ -331,7 +331,7 @@ See Also
 --------
 
 - [GitHub project][GitHub project]
-- [Value Defaults](./spring_value-defaults.md)
+- [[spring_value-defaults|Value Defaults]]
 
 
 [GitHub project]: https://github.com/eugenp/tutorials/tree/master/spring-boot-modules/spring-boot-properties-2

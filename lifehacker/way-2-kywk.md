@@ -15,19 +15,19 @@ date_updated: 2025-09-21
 > 「讓生活系統保持可玩、可微調，步調就能跟著靈感前進。」
 
 ## 🧭 Core Systems · 生活骨架
-- [Time Management](./Time%20Management.md) — 週期回顧、能量分層與任務節奏。
-- [Time Blocking](./lifehacker/Time%20Blocking.md) — 以不同能量區塊安排專案與例行。
+- [[Time Management]] — 週期回顧、能量分層與任務節奏。
+- [[Time Blocking]] — 以不同能量區塊安排專案與例行。
 - CRONTAB 週期清單（草稿整理中）。
 
 ## 🧪 Experiment · 週末專案
 :::tip Weekend Project
-- [Weekend Project](./WEEKEND-PROJECT.md) — 把靈感做成可 Demo 的作品。
-- [To-Go](./TOGO.md) — 想去、想做的靈感庫。
+- [[WEEKEND-PROJECT|Weekend Project]] — 把靈感做成可 Demo 的作品。
+- [[TOGO|To-Go]] — 想去、想做的靈感庫。
 :::
 
 :::note Equipment
-- [Every Day Carry](./equipment/Every%20Day%20Carry.md) — 日常攜行的工具配置。
-- [Runner 裝備](./runner/marathon.md) — 跑步裝備與訓練筆記。
+- [[Every Day Carry]] — 日常攜行的工具配置。
+- [[marathon|Runner 裝備]] — 跑步裝備與訓練筆記。
 :::
 
 ## 📚 Library · 延伸閱讀
@@ -41,8 +41,8 @@ date_updated: 2025-09-21
 - [Inside Taiwan](/lifehacker/category/inside-taiwan/)
 
 ## ✍️ Creative Flow · 創作工作流
-- [Instant Notes 30sec](./lifehacker/Instant%20Notes%2030sec.md)
-- [Throw Away To-Do List](./lifehacker/Throw%20Away%20To-Do%20List.md)
+- [[Instant Notes 30sec]]
+- [[Throw Away To-Do List]]
 - [Photography](/lifehacker/category/photography/)
 
 持續補上新的系統與專案，讓生活節奏保持流動與好玩。

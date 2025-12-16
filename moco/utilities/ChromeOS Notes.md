@@ -15,7 +15,7 @@ slug: /utilities/ChromeOS-Notes/
 Desktop
 -------
 
-在 ChromeOS 上使用 Dropbox 可參考: [Dropbox HowTos](./chromeos_dropbox.md)
+在 ChromeOS 上使用 Dropbox 可參考: [[chromeos_dropbox|Dropbox HowTos]]
 
 注音輸入在後期的 ChromeOS 上已有內建, 
 從 `Settings` > `Advanced` > `Languages amd inputs` > `Inputs and keeyboards` > `Add input methods` 

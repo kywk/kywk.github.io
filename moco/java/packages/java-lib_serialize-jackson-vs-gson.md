@@ -14,7 +14,7 @@ image: https://lh3.googleusercontent.com/pw/AL9nZEUA9Ifvd5Z8SXDWkeVB6AC4MPGwnXaL
 
 團隊討論著要選用 [Jackson](https://github.com/FasterXML/jackson) 還是 [Gson](https://github.com/google/gson) 當作專案主要的序列化/反序列化套件, 節錄這篇筆記.
 
-另有筆記個別紀錄 [Jackson](./java-lib_serialize-jackson.md) 和 [Gson](./java-lib_serialize-gson.md) 介紹和使用,
+另有筆記個別紀錄 [[java-lib_serialize-jackson|Jackson]] 和 [[java-lib_serialize-gson|Gson]] 介紹和使用,
 本篇著重兩個的比較, 包括功能異同 / 效能資訊 / 開發的坑等等...
 
 ## Conclusion

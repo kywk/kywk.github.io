@@ -16,9 +16,9 @@ image: https://lh3.googleusercontent.com/pw/AL9nZEUA9Ifvd5Z8SXDWkeVB6AC4MPGwnXaL
 Pre Requirement
 ---------------
 
-- [OpenJDK](./sdk_open-jdk.md)
-- [Apache Maven](./sdk_apache-maven.md)
-- [VSCode Extensions](../utilities/vscode/vscode_java-springboot.md)
+- [[sdk_open-jdk|OpenJDK]]
+- [[sdk_apache-maven|Apache Maven]]
+- [[vscode_java-springboot|VSCode Extensions]]
 
 
 See Also

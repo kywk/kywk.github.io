@@ -60,7 +60,7 @@ ChromeOS 的 LinuxBox 是個 Debian container, 使用上和一般 Debian 一樣.
 
 ### rclone ###
 
-若沒有即時同步需求時, 亦可利用 [rclone](../cli/rclone_dropbox.md) 的方式, 手動同步 Dropbox 和本地端檔案.
+若沒有即時同步需求時, 亦可利用 [[rclone_dropbox|rclone]] 的方式, 手動同步 Dropbox 和本地端檔案.
 設定好相關環境與配置, 手動同步專案資料夾其實還算相當方便.
 
 

@@ -14,7 +14,7 @@ slug: /utilities/Linux/Manjaro-Installation-Note/
 [Manjaro] 系統安裝紀錄 2022.May
 ============================
 
-__Updated: [2022.11.07 暫時棄用 Manjaro](../../life/2022/11-07-bye-manjaro.md)__
+__Updated: [[11-07-bye-manjaro|2022.11.07 暫時棄用 Manjaro]]__
 
 因緣際會入手 ThinkPad T470, i7-7500u / 16G / 128+256 SSD / 雙電池的規格,
 鍵盤手感, 整機質感... 等, 仍舊是那熟悉的 ThinkPad T 系列表現.
@@ -173,7 +173,7 @@ Xfce 下調整縮放的設定可從 `Setting > Apperance > Fonts` 中的 DPI 調
 不過 macOS BigSur 系統樣式真的好看, 也適合長期使用 MacBook 的我.
 跟著影片一步步設定安裝, 套用教學中的主題:
 
-[[Xfce] 桌面 macOS 化設定記錄](./linux_xfce-macos-looks.md)
+[[linux_xfce-macos-looks|[Xfce] 桌面 macOS 化設定記錄]]
 
 ## See Also ##
 
