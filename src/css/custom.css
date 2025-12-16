@@ -28,3 +28,113 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* Leaflet Map Styles */
+.leaflet-map-wrapper {
+  position: relative;
+  z-index: 1;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Light mode map background */
+.leaflet-container {
+  background: #f5f5f5;
+}
+
+/* Dark mode map background */
+[data-theme='dark'] .leaflet-container {
+  background: #2a2a2a;
+}
+
+/* Marker icon styling */
+.leaflet-marker-custom {
+  background: transparent !important;
+  border: none !important;
+}
+
+.leaflet-marker-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+  border: 3px solid white;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.leaflet-marker-icon:hover {
+  transform: scale(1.15);
+}
+
+/* Popup styling - Light mode */
+.leaflet-popup-content-wrapper {
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  font-family: var(--ifm-font-family-base);
+}
+
+.leaflet-popup-content {
+  margin: 12px 16px;
+}
+
+.leaflet-custom-popup {
+  min-width: 150px;
+}
+
+.leaflet-custom-popup .popup-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--ifm-color-content);
+  display: block;
+  margin-bottom: 6px;
+}
+
+.leaflet-custom-popup .popup-link {
+  color: var(--ifm-color-primary);
+  font-size: 13px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.leaflet-custom-popup .popup-link:hover {
+  text-decoration: underline;
+}
+
+/* Popup styling - Dark mode */
+[data-theme='dark'] .leaflet-popup-content-wrapper,
+[data-theme='dark'] .leaflet-popup-tip {
+  background: var(--ifm-background-color);
+  color: var(--ifm-color-content);
+}
+
+[data-theme='dark'] .leaflet-popup-close-button {
+  color: var(--ifm-color-content) !important;
+}
+
+/* Fix for Leaflet tiles z-index */
+.leaflet-tile-pane {
+  z-index: 200;
+}
+
+.leaflet-tile-container {
+  opacity: 1 !important;
+}
+
+.leaflet-tile {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* Ensure proper z-index layering */
+.leaflet-marker-pane {
+  z-index: 400;
+}
+
+.leaflet-popup-pane {
+  z-index: 700;
+}

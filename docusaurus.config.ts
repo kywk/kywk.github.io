@@ -4,26 +4,27 @@ import type * as Preset from "@docusaurus/preset-classic";
 
 const remarkWikiLink = require("remark-wiki-link");
 const { remarkKanban } = require("./remark-obsidian-kanban/src/index.js");
+const remarkLeaflet = require("./remark-obsidian-leaflet/src/index.js");
 const fs = require('fs');
 const path = require('path');
 
 // 建立檔案映射表
 function createFileMap(basePath) {
   const fileMap = new Map();
-  
+
   function scanDirectory(dir) {
     try {
       const items = fs.readdirSync(dir, { withFileTypes: true });
-      
+
       for (const item of items) {
         const fullPath = path.join(dir, item.name);
-        
+
         if (item.isDirectory()) {
           scanDirectory(fullPath);
         } else if (item.isFile() && item.name.endsWith('.md')) {
           const fileName = item.name.replace(/\.md$/, '');
           const relativePath = path.relative(basePath, fullPath).replace(/\.md$/, '');
-          
+
           // 建立多種可能的映射
           fileMap.set(fileName, relativePath);
           fileMap.set(fileName.toLowerCase(), relativePath);
@@ -35,7 +36,7 @@ function createFileMap(basePath) {
       console.warn(`Failed to scan directory ${dir}:`, error.message);
     }
   }
-  
+
   scanDirectory(basePath);
   return fileMap;
 }
@@ -50,16 +51,16 @@ function createPageResolver(fileMap) {
   return (name) => {
     try {
       const cleanName = name.replace(/\.md$/, '');
-      
-      const mappedPath = fileMap.get(cleanName) || 
-                       fileMap.get(cleanName.toLowerCase()) ||
-                       fileMap.get(cleanName.replace(/ /g, '-').toLowerCase()) ||
-                       fileMap.get(cleanName.replace(/ /g, '_').toLowerCase());
-      
+
+      const mappedPath = fileMap.get(cleanName) ||
+        fileMap.get(cleanName.toLowerCase()) ||
+        fileMap.get(cleanName.replace(/ /g, '-').toLowerCase()) ||
+        fileMap.get(cleanName.replace(/ /g, '_').toLowerCase());
+
       if (mappedPath) {
         return [mappedPath];
       }
-      
+
       return [cleanName.replace(/ /g, '-').toLowerCase()];
     } catch (error) {
       console.warn(`Failed to resolve page ${name}:`, error.message);
@@ -71,6 +72,7 @@ function createPageResolver(fileMap) {
 // 建立共用的 remark 插件配置
 function createRemarkPlugins(fileMap, routeBase) {
   return [
+    [remarkLeaflet, { routeBase }],
     [remarkKanban, { pageResolver: createPageResolver(fileMap), hrefTemplate: (permalink) => `${routeBase}${permalink}/` }],
     [
       remarkWikiLink,
@@ -96,6 +98,24 @@ const config: Config = {
   deploymentBranch: "gh-pages",
 
   onBrokenLinks: "warn",
+
+  stylesheets: [
+    {
+      href: 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css',
+      type: 'text/css',
+    },
+  ],
+
+  scripts: [
+    {
+      src: 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js',
+      async: false,
+    },
+    {
+      src: '/js/leaflet-init.js',
+      async: false,
+    },
+  ],
 
   markdown: {
     format: "detect",

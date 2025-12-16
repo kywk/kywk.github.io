@@ -1,0 +1,15 @@
+{
+    "name": "remark-obsidian-leaflet",
+    "version": "1.0.0",
+    "description": "Remark plugin for Docusaurus to render Obsidian Leaflet maps",
+    "main": "src/index.js",
+    "author": "kywk",
+    "license": "MIT",
+    "keywords": [
+        "remark",
+        "docusaurus",
+        "obsidian",
+        "leaflet",
+        "map"
+    ]
+}
