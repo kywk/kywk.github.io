@@ -1,53 +1,407 @@
 /**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
+ * kywk.me - Sunset Warm Theme
+ * A warm, professional theme optimized for Chinese content reading
  */
 
-/* You can override the default Infima variables here. */
+/* ============================================
+   🌅 Sunset Warm - Typography & Color System
+   ============================================ */
+
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  /* === Typography System === */
+  --ifm-font-family-base: 'Inter', -apple-system, BlinkMacSystemFont,
+    'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', sans-serif;
+  --ifm-font-family-monospace: 'JetBrains Mono', 'Fira Code', 'SF Mono',
+    Consolas, monospace;
+
+  /* Reading optimization for Chinese */
+  --ifm-line-height-base: 1.75;
+  --ifm-paragraph-margin-bottom: 1.25rem;
+
+  /* Heading hierarchy */
+  --ifm-heading-font-weight: 700;
+  --ifm-h1-font-size: 2.25rem;
+  --ifm-h2-font-size: 1.75rem;
+  --ifm-h3-font-size: 1.375rem;
+
+  /* Letter spacing */
+  --custom-letter-spacing: 0.02em;
+  --custom-heading-letter-spacing: -0.01em;
+
+  /* === Sunset Warm Color Palette === */
+  --ifm-color-primary: #e67e22;
+  --ifm-color-primary-dark: #d35400;
+  --ifm-color-primary-darker: #ba4a00;
+  --ifm-color-primary-darkest: #873600;
+  --ifm-color-primary-light: #f39c12;
+  --ifm-color-primary-lighter: #f5b041;
+  --ifm-color-primary-lightest: #fad7a0;
+
+  /* Gradient colors */
+  --gradient-start: #e67e22;
+  --gradient-mid: #eb984e;
+  --gradient-end: #f5b041;
+  --gradient-accent: #f8c471;
+
+  /* Background colors */
+  --ifm-background-color: #fffdfb;
+  --ifm-background-surface-color: #fef9f3;
+
+  /* === Layout System === */
+  --ifm-container-width: 1400px;
+  --ifm-container-width-xl: 1536px;
+  --content-max-width: 720px;
+  --sidebar-width: 280px;
+
+  /* Spacing */
+  --ifm-spacing-horizontal: 1.5rem;
+  --ifm-spacing-vertical: 1.25rem;
+
+  /* Border radius */
+  --ifm-global-radius: 12px;
+  --card-border-radius: 20px;
+  --button-border-radius: 10px;
+
+  /* Transitions */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Custom properties */
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --docusaurus-highlighted-code-line-bg: rgba(230, 126, 34, 0.1);
+  --ifm-navbar-shadow: 0 2px 16px rgba(230, 126, 34, 0.12);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* Dark mode */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-color-primary: #f5b041;
+  --ifm-color-primary-dark: #f39c12;
+  --ifm-color-primary-darker: #e67e22;
+  --ifm-color-primary-darkest: #d35400;
+  --ifm-color-primary-light: #fad7a0;
+  --ifm-color-primary-lighter: #fdebd0;
+  --ifm-color-primary-lightest: #fef9e7;
+
+  --gradient-start: #f5b041;
+  --gradient-mid: #f8c471;
+  --gradient-end: #fad7a0;
+  --gradient-accent: #fdebd0;
+
+  --ifm-background-color: #1a1512;
+  --ifm-background-surface-color: #231c17;
+
+  --docusaurus-highlighted-code-line-bg: rgba(245, 176, 65, 0.15);
+  --ifm-navbar-shadow: 0 2px 20px rgba(245, 176, 65, 0.15);
 }
 
-/* Leaflet Map Styles */
+/* ============================================
+   Global Typography
+   ============================================ */
+body {
+  letter-spacing: var(--custom-letter-spacing);
+}
+
+.markdown {
+  line-height: var(--ifm-line-height-base);
+}
+
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4 {
+  letter-spacing: var(--custom-heading-letter-spacing);
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.markdown p+p {
+  margin-top: 1.25rem;
+}
+
+/* ============================================
+   Navbar - Warm Gradient
+   ============================================ */
+.navbar {
+  background: linear-gradient(135deg,
+      rgba(45, 35, 25, 0.98) 0%,
+      rgba(35, 28, 23, 0.98) 100%);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  height: 64px;
+}
+
+[data-theme='dark'] .navbar {
+  background: linear-gradient(135deg,
+      rgba(26, 21, 18, 0.98) 0%,
+      rgba(18, 14, 12, 0.98) 100%);
+}
+
+.navbar__title {
+  font-weight: 700;
+  background: linear-gradient(90deg, #ffffff 0%, #fad7a0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.navbar__link {
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-weight: 500;
+  font-size: 0.9375rem;
+  letter-spacing: 0.01em;
+  transition: all var(--transition-fast);
+}
+
+.navbar__link:hover {
+  color: #ffffff !important;
+  text-shadow: 0 0 12px rgba(245, 176, 65, 0.5);
+}
+
+.navbar__link--active {
+  color: #ffffff !important;
+  font-weight: 600;
+  position: relative;
+}
+
+.navbar__link--active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 3px;
+  background: var(--ifm-color-primary);
+  border-radius: 2px;
+}
+
+/* ============================================
+   Buttons - Gradient Style
+   ============================================ */
+.button--primary {
+  background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
+  border: none;
+  border-radius: var(--button-border-radius);
+  transition: all var(--transition-base);
+  box-shadow: 0 4px 15px rgba(230, 126, 34, 0.3);
+}
+
+.button--primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(230, 126, 34, 0.4);
+  background: linear-gradient(135deg, var(--gradient-mid) 0%, var(--gradient-accent) 100%);
+}
+
+.button:active {
+  transform: scale(0.98);
+}
+
+/* Gradient text for headings */
+.hero__title {
+  background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-mid) 50%, var(--gradient-end) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 800;
+}
+
+[data-theme='dark'] .hero__title {
+  background: linear-gradient(135deg, #fad7a0 0%, #f8c471 50%, #f5b041 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ============================================
+   Sidebar Enhancements
+   ============================================ */
+.menu__link {
+  transition: all var(--transition-fast);
+  border-radius: 8px;
+  margin: 2px 0;
+}
+
+.menu__link:hover {
+  background: rgba(230, 126, 34, 0.08);
+  padding-left: 1.25rem;
+}
+
+.menu__link--active:not(.menu__link--sublist) {
+  background: linear-gradient(90deg, rgba(230, 126, 34, 0.15) 0%, rgba(245, 176, 65, 0.1) 100%);
+  border-left: 3px solid var(--ifm-color-primary);
+}
+
+[data-theme='dark'] .menu__link--active:not(.menu__link--sublist) {
+  background: linear-gradient(90deg, rgba(245, 176, 65, 0.15) 0%, rgba(248, 196, 113, 0.1) 100%);
+}
+
+/* ============================================
+   Sidebar Container - 與內容區區隔
+   ============================================ */
+.theme-doc-sidebar-container {
+  background: var(--ifm-background-surface-color);
+  border-right: 1px solid rgba(230, 126, 34, 0.12);
+}
+
+[data-theme='dark'] .theme-doc-sidebar-container {
+  background: var(--ifm-background-surface-color);
+  border-right: 1px solid rgba(245, 176, 65, 0.1);
+}
+
+/* 側邊欄內部容器 */
+.theme-doc-sidebar-menu {
+  padding: 0.5rem;
+}
+
+/* 側邊欄收合按鈕樣式 */
+button[class*="collapseSidebarButton"] {
+  background: var(--ifm-background-surface-color) !important;
+  border: 1px solid rgba(230, 126, 34, 0.2) !important;
+  border-radius: 8px;
+}
+
+button[class*="collapseSidebarButton"]:hover {
+  background: rgba(230, 126, 34, 0.1) !important;
+}
+
+[data-theme='dark'] button[class*="collapseSidebarButton"] {
+  border-color: rgba(245, 176, 65, 0.2) !important;
+}
+
+[data-theme='dark'] button[class*="collapseSidebarButton"]:hover {
+  background: rgba(245, 176, 65, 0.1) !important;
+}
+
+/* ============================================
+   Footer - Warm Gradient
+   ============================================ */
+.footer--dark {
+  background: linear-gradient(135deg, #2d2319 0%, #231c17 50%, #1a1512 100%);
+}
+
+.footer__title {
+  color: #fad7a0;
+}
+
+.footer__link-item {
+  color: rgba(255, 255, 255, 0.8);
+  transition: all var(--transition-fast);
+}
+
+.footer__link-item:hover {
+  color: #f5b041;
+  text-decoration: none;
+}
+
+/* ============================================
+   Code Blocks
+   ============================================ */
+.prism-code {
+  border-left: 3px solid transparent;
+  border-image: linear-gradient(180deg, var(--gradient-start) 0%, var(--gradient-end) 100%) 1;
+  border-radius: var(--ifm-global-radius);
+}
+
+/* ============================================
+   Blockquote Styling
+   ============================================ */
+blockquote {
+  border-left: 4px solid transparent;
+  border-image: linear-gradient(180deg, var(--gradient-start) 0%, var(--gradient-end) 100%) 1;
+  background: linear-gradient(90deg, rgba(230, 126, 34, 0.05) 0%, transparent 100%);
+}
+
+[data-theme='dark'] blockquote {
+  background: linear-gradient(90deg, rgba(245, 176, 65, 0.08) 0%, transparent 100%);
+}
+
+/* ============================================
+   Table of Contents
+   ============================================ */
+.table-of-contents__link--active {
+  color: var(--ifm-color-primary);
+  font-weight: 600;
+  position: relative;
+}
+
+.table-of-contents__link--active::before {
+  content: '';
+  position: absolute;
+  left: -8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 60%;
+  background: linear-gradient(180deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
+  border-radius: 2px;
+}
+
+/* ============================================
+   Links - Micro Interactions
+   ============================================ */
+.markdown a {
+  text-decoration: underline;
+  text-decoration-color: var(--ifm-color-primary-lighter);
+  text-underline-offset: 3px;
+  transition: text-decoration-color var(--transition-fast);
+}
+
+.markdown a:hover {
+  text-decoration-color: var(--ifm-color-primary);
+}
+
+/* ============================================
+   Scrollbar Styling
+   ============================================ */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, var(--gradient-mid) 0%, var(--gradient-accent) 100%);
+}
+
+/* ============================================
+   Selection Highlight
+   ============================================ */
+::selection {
+  background: rgba(230, 126, 34, 0.3);
+  color: inherit;
+}
+
+[data-theme='dark'] ::selection {
+  background: rgba(245, 176, 65, 0.3);
+}
+
+/* ============================================
+   Leaflet Map Styles
+   ============================================ */
 .leaflet-map-wrapper {
   position: relative;
   z-index: 1;
-  border-radius: 8px;
+  border-radius: var(--ifm-global-radius);
   overflow: hidden;
 }
 
-/* Light mode map background */
 .leaflet-container {
   background: #f5f5f5;
 }
 
-/* Dark mode map background */
 [data-theme='dark'] .leaflet-container {
   background: #2a2a2a;
 }
 
-/* Marker icon styling */
 .leaflet-marker-custom {
   background: transparent !important;
   border: none !important;
@@ -71,7 +425,6 @@
   transform: scale(1.15);
 }
 
-/* Popup styling - Light mode */
 .leaflet-popup-content-wrapper {
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -105,7 +458,6 @@
   text-decoration: underline;
 }
 
-/* Popup styling - Dark mode */
 [data-theme='dark'] .leaflet-popup-content-wrapper,
 [data-theme='dark'] .leaflet-popup-tip {
   background: var(--ifm-background-color);
@@ -116,7 +468,6 @@
   color: var(--ifm-color-content) !important;
 }
 
-/* Fix for Leaflet tiles z-index */
 .leaflet-tile-pane {
   z-index: 200;
 }
@@ -130,11 +481,126 @@
   opacity: 1 !important;
 }
 
-/* Ensure proper z-index layering */
 .leaflet-marker-pane {
   z-index: 400;
 }
 
 .leaflet-popup-pane {
   z-index: 700;
+}
+
+/* ============================================
+   Light Mode Enhancements
+   ============================================ */
+
+/* 連結配色加深，加強可讀性 */
+.markdown a {
+  color: var(--ifm-color-primary-dark);
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-color: var(--ifm-color-primary);
+  text-underline-offset: 3px;
+  transition: all var(--transition-fast);
+}
+
+.markdown a:hover {
+  color: var(--ifm-color-primary-darkest);
+  text-decoration-color: var(--ifm-color-primary-dark);
+}
+
+/* 文章標籤 - 橘底白字 */
+.theme-doc-version-badge,
+article .badge,
+.docusaurus-tag-wrapper .tag,
+a[class*="tag_"],
+span[class*="tag_"] {
+  background: linear-gradient(135deg, var(--ifm-color-primary-dark) 0%, var(--ifm-color-primary) 100%) !important;
+  color: #ffffff !important;
+  border: none !important;
+  font-weight: 500;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+}
+
+a[class*="tag_"]:hover {
+  background: linear-gradient(135deg, var(--ifm-color-primary-darkest) 0%, var(--ifm-color-primary-dark) 100%) !important;
+  text-decoration: none;
+}
+
+/* 側邊欄標籤也套用 */
+.theme-doc-sidebar-item-category .menu__link--sublist-caret::after {
+  background-size: 1.5rem;
+}
+
+/* ============================================
+   Kanban Board Light Mode Styling
+   ============================================ */
+
+/* 看板標題與卡片區分 */
+.kanban-board-container h3 {
+  color: var(--ifm-color-primary-darkest) !important;
+  font-weight: 700 !important;
+  font-size: 1.15em !important;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--ifm-color-primary);
+  margin-bottom: 1rem !important;
+}
+
+/* 看板列背景 */
+.kanban-board-container>div>div {
+  background: var(--ifm-background-surface-color) !important;
+  border: 1px solid rgba(230, 126, 34, 0.2) !important;
+}
+
+/* 看板卡片標題 */
+.kanban-board-container>div>div>div>div:first-child {
+  color: var(--ifm-color-primary-darkest) !important;
+  font-weight: 600 !important;
+}
+
+/* 看板卡片內容 */
+.kanban-board-container>div>div>div>div:not(:first-child) {
+  color: var(--ifm-color-content) !important;
+}
+
+/* ============================================
+   深色模式 Kanban 調整
+   ============================================ */
+[data-theme='dark'] .kanban-board-container h3 {
+  color: var(--ifm-color-primary-light) !important;
+  border-bottom-color: var(--ifm-color-primary-light);
+}
+
+[data-theme='dark'] .kanban-board-container>div>div {
+  background: var(--ifm-background-surface-color) !important;
+  border: 1px solid rgba(245, 176, 65, 0.2) !important;
+}
+
+[data-theme='dark'] .kanban-board-container>div>div>div>div:first-child {
+  color: var(--ifm-color-primary-light) !important;
+}
+
+/* ============================================
+   強化 Light 模式對比
+   ============================================ */
+
+/* 按鈕更鮮豔 */
+.button--primary {
+  background: linear-gradient(135deg, var(--ifm-color-primary-dark) 0%, var(--ifm-color-primary) 100%);
+  box-shadow: 0 4px 15px rgba(211, 84, 0, 0.35);
+}
+
+.button--primary:hover {
+  background: linear-gradient(135deg, var(--ifm-color-primary-darkest) 0%, var(--ifm-color-primary-dark) 100%);
+  box-shadow: 0 6px 20px rgba(211, 84, 0, 0.45);
+}
+
+/* TOC 連結顏色加深 */
+.table-of-contents__link {
+  color: var(--ifm-color-content-secondary);
+}
+
+.table-of-contents__link:hover,
+.table-of-contents__link--active {
+  color: var(--ifm-color-primary-dark);
 }
