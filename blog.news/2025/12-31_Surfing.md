@@ -30,6 +30,7 @@ hide_table_of_contents: true
 - [Vibe Coding 發明者說明 AI 寫程式幫不上忙的原因 - 2025 - Tsung's Blog](https://blog.longwin.com.tw/2025/10/news-vibe-coding-not-help-reason-2025/)
 - [黃仁勳鼓勵員工盡量使用 AI：「能用就用，不必擔心工作會被取代」 \| T客邦](https://www.techbang.com/posts/126702-nvidia-ceo-encourage-employees-use-ai)
 - [OpenAI 深夜放大招！GPT-5.2 正式登場，做表格、做簡報、分析長文通通難不倒 \| T客邦](https://www.techbang.com/posts/126918-openai-gpt-5-2-released-new-features)
+- [Fetching Title#r2f1](https://ihower.tw/blog/13513-agent-design-is-still-hard-2025)
 - 
 
 ### IT News

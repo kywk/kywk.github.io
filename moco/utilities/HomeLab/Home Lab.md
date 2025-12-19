@@ -10,7 +10,7 @@ slug: /utilities/HomeLab/Home-Lab/
 ## TODO
 
 ### Self hosting services
-- [ ] [[Cloudflare Tunnel|cloudflare tunnel 內網穿透]] 🔼 📅 2025-10-31
+- [ ] [[Cloudflare Tunnel|cloudflare tunnel 內網穿透]] 🔼 📅 2026-01-01
 	- [ ] [Why does Cloudflare Pages have such a generous Free tier? - mattsayar.com](https://mattsayar.com/why-does-cloudflare-pages-have-such-a-generous-free-tier/)
 - [ ] AnyType
 	- [ ] [[AnyType self hosing]]
