@@ -141,6 +141,10 @@ const config: Config = {
 
   stylesheets: [
     {
+      href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+TC:wght@400;500;700&display=swap',
+      type: 'text/css',
+    },
+    {
       href: 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css',
       type: 'text/css',
     },
@@ -252,11 +256,24 @@ const config: Config = {
   themes: ["@docusaurus/theme-mermaid"],
 
   themeConfig: {
-    image: "img/docusaurus-social-card.jpg",
+    image: "img/og-social-card.png",
+    docs: {
+      sidebar: {
+        hideable: true,
+        autoCollapseCategories: true,
+      },
+    },
+    metadata: [
+      { name: 'keywords', content: '旅行, 背包客, 生活效率, 工程筆記, DevSecOps, Obsidian' },
+      { name: 'author', content: 'kywk' },
+      { property: 'og:type', content: 'website' },
+      { property: 'og:site_name', content: 'kywk.me' },
+      { name: 'twitter:card', content: 'summary_large_image' },
+    ],
     navbar: {
       title: "kywk.me",
       logo: {
-        alt: "My Site Logo",
+        alt: "kywk.me Logo",
         src: "img/logo.svg",
       },
       items: [
@@ -291,42 +308,24 @@ const config: Config = {
       style: "dark",
       links: [
         {
-          title: "Docs",
+          title: "主題索引",
           items: [
-            {
-              label: "Journal",
-              to: "/lifehacker/way-2-kywk",
-            },
+            { label: "Backpacker", to: "/backpacker/Lonely-Planet" },
+            { label: "Lifehacker", to: "/lifehacker/way-2-kywk" },
+            { label: "MoCo Lab", to: "/moco/kywk.moco" },
           ],
         },
         {
-          title: "Community",
+          title: "筆記頻道",
           items: [
-            {
-              label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/docusaurus",
-            },
-            {
-              label: "Discord",
-              href: "https://discordapp.com/invite/docusaurus",
-            },
-            {
-              label: "Twitter",
-              href: "https://twitter.com/docusaurus",
-            },
+            { label: "News Log", to: "/news" },
+            { label: "Life Blog", to: "/life" },
           ],
         },
         {
-          title: "More",
+          title: "連結",
           items: [
-            {
-              label: "Blog",
-              to: "/life",
-            },
-            {
-              label: "GitHub",
-              href: "https://github.com/facebook/docusaurus",
-            },
+            { label: "GitHub", href: "https://github.com/kywk" },
           ],
         },
       ],
