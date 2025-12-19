@@ -1,0 +1,39 @@
+.docItemContainer header+*,
+.docItemContainer article>*:first-child {
+  margin-top: 0;
+}
+
+.docItemContainer {
+  padding: 0 1rem;
+  width: 100%;
+}
+
+/* 無 TOC 時內容居中 */
+.docItemContainerFullWidth {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* 文章主體全寬 */
+.docItemContainer article {
+  width: 100%;
+}
+
+@media (min-width: 997px) {
+
+  /* 有 TOC 時限制欄位寬度給 TOC 騰出空間 */
+  .docItemContainer .docItemCol {
+    max-width: 75% !important;
+    flex: 0 0 75% !important;
+  }
+}
+
+/* Footer 三欄配置修復 - 覆蓋 Docusaurus grid 設定 */
+:global(.footer .row .col.footer__col) {
+  flex: 1 1 0 !important;
+  max-width: 33.333% !important;
+}
+
+:global(.footer__links.row) {
+  flex-wrap: nowrap !important;
+}
