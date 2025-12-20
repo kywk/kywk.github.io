@@ -176,6 +176,17 @@ body {
   border-radius: 2px;
 }
 
+/* Light mode navbar toggle button - match dark mode style */
+.navbar [class*="colorModeToggle"] button,
+.navbar [class*="toggle_"] {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.navbar [class*="colorModeToggle"] button:hover,
+.navbar [class*="toggle_"]:hover {
+  color: #ffffff !important;
+}
+
 /* ============================================
    Buttons - Gradient Style
    ============================================ */

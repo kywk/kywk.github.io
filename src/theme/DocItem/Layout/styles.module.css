@@ -8,10 +8,10 @@
   width: 100%;
 }
 
-/* 無 TOC 時內容居中 */
+/* 無 TOC 時內容靠左、全寬（比照 kanban 文章）*/
 .docItemContainerFullWidth {
-  max-width: 900px;
-  margin: 0 auto;
+  max-width: none;
+  margin: 0;
 }
 
 /* 文章主體全寬 */
