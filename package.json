@@ -12,7 +12,13 @@
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "content:check": "node scripts/content-validator.js",
+    "content:optimize": "node scripts/optimize-images.js",
+    "content:index": "node scripts/build-search-index.js",
+    "content:slug": "node scripts/inject-slug-frontmatter.js",
+    "content:wikilink": "node scripts/convert-to-wikilinks.js",
+    "deploy:preview": "npm run build && npm run serve"
   },
   "dependencies": {
     "@docusaurus/core": "^3.9.2",

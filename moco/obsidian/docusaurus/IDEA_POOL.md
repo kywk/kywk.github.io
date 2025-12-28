@@ -10,7 +10,7 @@
 - [[docusaurus_doc-site]]
   - docx/xlsx/pptx/pdf viewer
   - MD file generato
-- [ ] support obsidian callouts
+- [x] support obsidian callouts ✅ 2025-12-24
 - [ ] support obsidian dataview queries
-- [ ] docusaurus-plugin-leaflet
+- [x] docusaurus-plugin-leaflet ✅ 2025-12-24
 - [ ] ignore Obsidian tags

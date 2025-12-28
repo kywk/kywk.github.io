@@ -5,11 +5,12 @@
 ## 專案架構
 
 ### 📁 內容組織
-- **backpacker/**: 旅遊記錄與遊記
-- **lifehacker/**: 生活技巧、登山、攝影、閱讀等
-- **moco/**: 技術文件 (程式開發、工具使用)
+- **backpacker/**: 旅遊記錄與遊記 (146 檔案)
+- **lifehacker/**: 生活技巧、登山、攝影、閱讀等 (100 檔案)
+- **moco/**: 技術文件 (程式開發、工具使用) (248 檔案)
 - **blog.life/**: 個人生活部落格
 - **blog.news/**: 技術新聞與資訊
+- **總計**: 1,625+ Markdown 檔案，專案大小 158MB
 
 ### 🔧 技術特色
 - **Wiki Link 支援**: 使用 `remark-wiki-link` 插件，支援 Obsidian 的 `[[]]` 連結語法及 `[[target|display]]` 別名語法
@@ -17,6 +18,8 @@
 - **雙部落格系統**: 分離個人生活 (life) 和技術資訊 (news)
 - **Mermaid 圖表**: 支援流程圖和圖表渲染
 - **中文本地化**: 預設語言設為 `zh-TW`
+- **內容搜尋**: 客戶端全文搜尋功能
+- **自動化工具**: 內容驗證、圖片優化、搜尋索引建立
 
 ### 🎯 Obsidian 插件支援
 
@@ -69,6 +72,18 @@ npm run deploy
 ```
 自動建置並部署到 `gh-pages` 分支
 
+### 內容管理指令
+```bash
+npm run content:check      # 驗證內容格式與連結
+npm run content:optimize   # 優化圖片大小與品質
+npm run content:index      # 建立搜尋索引
+npm run content:slug       # 注入 slug frontmatter
+npm run content:wikilink   # 轉換 Markdown 連結為 wiki-link
+npm run deploy:preview     # 建置並預覽部署結果
+```
+
+> 📖 詳細使用說明請參考 [SCRIPTS-GUIDE.md](./SCRIPTS-GUIDE.md)
+
 ### 其他指令
 ```bash
 npm run serve          # 本地預覽建置結果
@@ -78,13 +93,33 @@ npm run typecheck      # TypeScript 類型檢查
 
 ## ⚠️ 重要注意事項
 
+### 內容管理自動化
+
+**內容驗證**：
+```bash
+npm run content:check
+```
+檢查 frontmatter 必填欄位、wiki 連結、檔案路徑等問題。
+
+**圖片優化**：
+```bash
+npm run content:optimize
+```
+自動壓縮圖片，需安裝 ImageMagick (`brew install imagemagick`) 或 Sharp。
+
+**搜尋索引**：
+```bash
+npm run content:index
+```
+建立全站搜尋功能，生成 JSON 索引和搜尋頁面。
+
 ### 檔名/資料夾名稱含空格的處理
 
 Docusaurus 預設會將檔案路徑中的空格編碼為 `%20`，導致 URL 不美觀。本專案透過 `slug` frontmatter 注入來解決此問題。
 
 **新增含空格的檔案時，需執行：**
 ```bash
-node scripts/inject-slug-frontmatter.js
+npm run content:slug
 ```
 
 此腳本會：
@@ -101,7 +136,7 @@ node scripts/inject-slug-frontmatter.js
 
 **轉換 Markdown 連結為 wiki-link：**
 ```bash
-node scripts/convert-to-wikilinks.js
+npm run content:wikilink
 ```
 
 此腳本會：
@@ -121,16 +156,20 @@ node scripts/convert-to-wikilinks.js
 ### 自訂插件
 | 檔案 | 說明 |
 |------|------|
-| `remark-obsidian-kanban/` | Obsidian Kanban 看板渲染 |
-| `remark-obsidian-leaflet/` | Obsidian Leaflet 地圖渲染 |
-| `remark-slug-normalizer.js` | URL slug 正規化 |
+| `plugins/remark-obsidian-kanban/` | Obsidian Kanban 看板渲染 |
+| `plugins/remark-obsidian-leaflet/` | Obsidian Leaflet 地圖渲染 |
+| `plugins/remark-slug-normalizer/` | URL slug 正規化 (統一模組) |
 | `scripts/inject-slug-frontmatter.js` | 批次注入 slug frontmatter |
 | `scripts/convert-to-wikilinks.js` | Markdown 連結轉 wiki-link |
+| `scripts/content-validator.js` | 內容驗證與檢查 |
+| `scripts/optimize-images.js` | 圖片壓縮與優化 |
+| `scripts/build-search-index.js` | 搜尋索引建立 |
 
 ### package.json
 - **版本**: 17.71
 - **核心依賴**: Docusaurus 3.9.2, React 19.2.0
 - **特殊插件**: remark-wiki-link, gray-matter
+- **內容管理**: 自動化驗證、優化、索引腳本
 
 ## Obsidian 整合
 - **.obsidian/**: 完整的 Obsidian 配置，包含多個插件

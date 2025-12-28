@@ -22,6 +22,8 @@ hide_table_of_contents: true
 - [\[Gemini 3.0\]\[Google Search\] 使用 Google Search Grounding API 搭配 Gemini 3.0 Pro 來打造新聞與資訊助手](https://www.evanlin.com/search-grounding/)
 - [RunCode - 多语言在线代码执行平台](https://runcode.blendviewer.com/)
 - [Patterns.dev](https://www.patterns.dev/)
+- [Your browser has suspicious Sec-CH-UA-\* headers](https://utcc.utoronto.ca/~cks/space/blog/programming/ErrorsShouldRequireFixing)
+	- [Title Unavailable \| Site Unreachable](https://news.ycombinator.com/item?id=46301059)
 - 
 
 ### AI
@@ -30,7 +32,10 @@ hide_table_of_contents: true
 - [Vibe Coding 發明者說明 AI 寫程式幫不上忙的原因 - 2025 - Tsung's Blog](https://blog.longwin.com.tw/2025/10/news-vibe-coding-not-help-reason-2025/)
 - [黃仁勳鼓勵員工盡量使用 AI：「能用就用，不必擔心工作會被取代」 \| T客邦](https://www.techbang.com/posts/126702-nvidia-ceo-encourage-employees-use-ai)
 - [OpenAI 深夜放大招！GPT-5.2 正式登場，做表格、做簡報、分析長文通通難不倒 \| T客邦](https://www.techbang.com/posts/126918-openai-gpt-5-2-released-new-features)
-- [Fetching Title#r2f1](https://ihower.tw/blog/13513-agent-design-is-still-hard-2025)
+- [AI Agent 產品開發仍然不簡單 – ihower { blogging }](https://ihower.tw/blog/13513-agent-design-is-still-hard-2025)
+- [Google 推出 FunctionGemma 模型，模型全塞入手機，自然語言直接操作手機](https://hk.news.yahoo.com/google-%E6%8E%A8%E5%87%BA-functiongemma-%E6%A8%A1%E5%9E%8B-%E6%A8%A1%E5%9E%8B%E5%85%A8%E5%A1%9E%E5%85%A5%E6%89%8B%E6%A9%9F-184244400.html)
+- [愛好 AI Engineer 電子報 🚀 2025 Q4 AI 模型與 Agent 開發 #33 – ihower { blogging }](https://ihower.tw/blog/13553-aie-2025-models-and-agents)
+- [Anthropic更新Claude Skills，新增技能目錄並推動開放標準 \| iThome](https://www.ithome.com.tw/news/172920)
 - 
 
 ### IT News
@@ -48,4 +53,8 @@ hide_table_of_contents: true
 - [《紐約時報》公佈 2025 年度十大好書！關於孤獨、創傷、親密關係..總有一本是你的命定 - A Day Magazine](https://www.adaymag.com/2025/12/10/new-york-times-2025-best-books.html)
 	- [ ] Do it 📅 2025-12-10 
 - [一定要試試 Google Chrome 內建分割畫面，這是我一直等待的生產力功能](https://www.playpcesor.com/2025/12/google-chrome.html)
+- [把混亂數據試算表丟進 NotebookLM：自動清理統計，直接變圖表簡報](https://www.playpcesor.com/2025/12/notebooklm.html)
+- [南科工程師的「減速」日記：在不斷加速的 AI 年代，我為什麼選擇「慢」下來？｜noise／讀者投書｜換日線](https://crossing.cw.com.tw/article/20425)
+	- [ ] read it 📅 2025-12-22 
+- [冰島奇遇：不只極光、冰川與火山，還有獨特人文、小國幽默、低調超奢度假村⋯⋯等你探秘｜三姐妹看歐洲｜換日線](https://crossing.cw.com.tw/article/20421)
 - 

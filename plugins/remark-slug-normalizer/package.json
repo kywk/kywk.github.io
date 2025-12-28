@@ -1,0 +1,28 @@
+{
+  "name": "remark-slug-normalizer",
+  "version": "1.0.0",
+  "description": "A Docusaurus plugin to normalize URL slugs by converting spaces to dashes",
+  "main": "src/index.js",
+  "keywords": [
+    "docusaurus",
+    "remark",
+    "slug",
+    "url",
+    "normalize",
+    "plugin"
+  ],
+  "author": "kywk",
+  "license": "MIT",
+  "peerDependencies": {
+    "@docusaurus/core": "^3.0.0"
+  },
+  "dependencies": {
+    "unist-util-visit": "^5.0.0"
+  },
+  "files": [
+    "src/"
+  ],
+  "volta": {
+    "node": "20.19.5"
+  }
+}
