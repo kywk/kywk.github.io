@@ -9,7 +9,7 @@ location:
   - 75.1167
 mapmarker: default
 hide_table_of_contents: true
-slug: /2601-xinjiang/xinjiang/慕士塔格2號冰川-muztagh-ata-glacier-no2/
+slug: /2601-xinjiang/xinjiang/慕士塔格2號冰川-muztagh-ata-glacier-no.2/
 ---
 
 慕士塔格2號冰川 Muztagh Ata Glacier No.2

@@ -3,7 +3,9 @@
 const fs = require('fs');
 const path = require('path');
 const matter = require('gray-matter');
+const { Logger } = require('./logger');
 
+const CONTEXT = 'ContentValidator';
 const CONTENT_DIRS = ['backpacker', 'lifehacker', 'moco', 'blog.life', 'blog.news'];
 const REQUIRED_FRONTMATTER = ['title'];
 const ISSUES = [];
@@ -40,6 +42,7 @@ function validateFile(filePath) {
     }
     
   } catch (error) {
+    Logger.error(`Parse error in ${filePath}`, error, CONTEXT);
     ISSUES.push(`❌ ${filePath}: Parse error - ${error.message}`);
   }
 }
@@ -60,17 +63,16 @@ function scanDirectory(dir) {
   }
 }
 
-console.log('🔍 Validating content...\n');
+Logger.info('Validating content...', CONTEXT);
 
 CONTENT_DIRS.forEach(dir => {
   if (fs.existsSync(dir)) {
-    console.log(`Scanning ${dir}/`);
+    Logger.info(`Scanning ${dir}/`, CONTEXT);
     scanDirectory(dir);
   }
 });
 
-console.log(`\n📊 Validation Results:`);
-console.log(`Total issues found: ${ISSUES.length}`);
+Logger.info(`Validation Results: ${ISSUES.length} issues found`, CONTEXT);
 
 if (ISSUES.length > 0) {
   console.log('\n🚨 Issues:');

@@ -2,14 +2,41 @@ import { themes as prismThemes } from "prism-react-renderer";
 import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
 
-const remarkWikiLink = require("remark-wiki-link");
-const { remarkKanban } = require("./plugins/remark-obsidian-kanban/src/index.js");
-const remarkLeaflet = require("./plugins/remark-obsidian-leaflet/src/index.js");
-const { normalizeSlug, remarkSlugNormalizer } = require("./plugins/remark-slug-normalizer/src/index.js");
+const { Logger } = require("./scripts/logger.js");
+const { pluginConfig, docsConfig, blogConfig, externalResources } = require("./site.config.js");
 const fs = require("fs");
 const path = require("path");
 
-// 建立檔案映射表
+// 插件載入 - 支援多種安裝方式：npm、本地開發、手動 clone
+function loadPlugin(npmPackage, localPath) {
+  const possiblePaths = [
+    npmPackage,                    // npm 安裝的套件
+    localPath,                     // 本地開發路徑
+    `./plugins/${npmPackage}`,     // 手動 clone 到 plugins 目錄
+    `./plugins/${npmPackage}/src/index.js`, // 手動 clone 的完整路徑
+  ];
+  
+  for (const pluginPath of possiblePaths) {
+    try {
+      const plugin = require(pluginPath);
+      Logger.info(`Plugin loaded from: ${pluginPath}`, 'PluginLoader');
+      return plugin;
+    } catch (error) {
+      // 繼續嘗試下一個路徑
+    }
+  }
+  
+  Logger.warn(`Plugin ${npmPackage} not found in any location`, 'PluginLoader');
+  return null;
+}
+
+const remarkWikiLink = require("remark-wiki-link");
+const remarkKanban = loadPlugin("remark-obsidian-kanban", "./plugins/remark-obsidian-kanban/src/index.js")?.remarkKanban;
+const remarkLeaflet = loadPlugin("remark-obsidian-leaflet", "./plugins/remark-obsidian-leaflet/src/index.js");
+const remarkSlugNormalizer = loadPlugin("remark-slug-normalizer", "./plugins/remark-slug-normalizer/src/index.js")?.remarkSlugNormalizer;
+const normalizeSlug = loadPlugin("remark-slug-normalizer", "./plugins/remark-slug-normalizer/src/index.js")?.normalizeSlug;
+
+// 建立檔案映射表 - 統一函數
 function createFileMap(basePath) {
   const fileMap = new Map();
 
@@ -29,37 +56,33 @@ function createFileMap(basePath) {
             .replace(/\.md$/, "");
 
           // 正規化路徑：將空格轉換為破折號
-          const normalizedPath = normalizeSlug(relativePath);
+          const normalizedPath = normalizeSlug ? normalizeSlug(relativePath) : relativePath.replace(/ /g, '-').toLowerCase();
 
-          // 建立多種可能的映射 (原始檔名)
-          fileMap.set(fileName, normalizedPath);
-          fileMap.set(fileName.toLowerCase(), normalizedPath);
+          // 建立多種可能的映射變體
+          const variations = [
+            fileName,
+            fileName.toLowerCase(),
+            fileName.replace(/ /g, "-"),
+            fileName.replace(/ /g, "-").toLowerCase(),
+            fileName.replace(/ /g, "_"),
+            fileName.replace(/ /g, "_").toLowerCase(),
+            fileName.replace(/ /g, ""),
+            fileName.replace(/ /g, "").toLowerCase(),
+            fileName.replace(/-/g, " "),
+            fileName.replace(/-/g, " ").toLowerCase(),
+          ];
 
-          // 空格轉破折號
-          const dashName = fileName.replace(/ /g, "-");
-          fileMap.set(dashName, normalizedPath);
-          fileMap.set(dashName.toLowerCase(), normalizedPath);
-
-          // 空格轉底線
-          const underscoreName = fileName.replace(/ /g, "_");
-          fileMap.set(underscoreName, normalizedPath);
-          fileMap.set(underscoreName.toLowerCase(), normalizedPath);
-
-          // 移除所有空格
-          const noSpaceName = fileName.replace(/ /g, "");
-          fileMap.set(noSpaceName, normalizedPath);
-          fileMap.set(noSpaceName.toLowerCase(), normalizedPath);
-
-          // 破折號轉空格 (反向映射)
-          const spaceName = fileName.replace(/-/g, " ");
-          if (spaceName !== fileName) {
-            fileMap.set(spaceName, normalizedPath);
-            fileMap.set(spaceName.toLowerCase(), normalizedPath);
-          }
+          variations.forEach(variation => {
+            if (variation !== fileName || !fileMap.has(variation)) {
+              fileMap.set(variation, normalizedPath);
+            }
+          });
         }
       }
     } catch (error) {
-      console.warn(`Failed to scan directory ${dir}:`, error.message);
+      if (Logger) {
+        Logger.warn(`Failed to scan directory ${dir}: ${error.message}`, 'FileMap');
+      }
     }
   }
 
@@ -68,9 +91,10 @@ function createFileMap(basePath) {
 }
 
 // 為每個文檔實例建立檔案映射
-const backpackerFileMap = createFileMap("backpacker");
-const lifehackerFileMap = createFileMap("lifehacker");
-const mocoFileMap = createFileMap("moco");
+const fileMaps = {};
+docsConfig.forEach(doc => {
+  fileMaps[doc.id] = createFileMap(doc.path);
+});
 
 // 建立共用的 pageResolver 函數
 function createPageResolver(fileMap) {
@@ -102,7 +126,9 @@ function createPageResolver(fileMap) {
       // 若都找不到，返回正規化的名稱
       return [cleanName.replace(/ /g, "-").toLowerCase()];
     } catch (error) {
-      console.warn(`Failed to resolve page ${name}:`, error.message);
+      if (Logger) {
+        Logger.warn(`Failed to resolve page ${name}: ${error.message}`, 'PageResolver');
+      }
       return [name.replace(/ /g, "-").toLowerCase()];
     }
   };
@@ -110,25 +136,36 @@ function createPageResolver(fileMap) {
 
 // 建立共用的 remark 插件配置
 function createRemarkPlugins(fileMap, routeBase) {
-  return [
-    remarkSlugNormalizer, // 正規化 slug：空格轉破折號
-    [remarkLeaflet, { routeBase }],
-    [
+  const plugins = [];
+  
+  if (remarkSlugNormalizer) {
+    plugins.push(remarkSlugNormalizer);
+  }
+  
+  if (remarkLeaflet) {
+    plugins.push([remarkLeaflet, { routeBase }]);
+  }
+  
+  if (remarkKanban) {
+    plugins.push([
       remarkKanban,
       {
         pageResolver: createPageResolver(fileMap),
-        hrefTemplate: (permalink) => `${routeBase}${permalink}/`,
+        hrefTemplate: (permalink) => pluginConfig.kanban.hrefTemplate(permalink, routeBase),
       },
-    ],
-    [
-      remarkWikiLink,
-      {
-        pageResolver: createPageResolver(fileMap),
-        hrefTemplate: (permalink) => `${routeBase}${permalink}/`,
-        aliasDivider: "|",
-      },
-    ],
-  ];
+    ]);
+  }
+  
+  plugins.push([
+    remarkWikiLink,
+    {
+      pageResolver: createPageResolver(fileMap),
+      hrefTemplate: (permalink) => `${routeBase}${permalink}/`,
+      aliasDivider: pluginConfig.wikiLink.aliasDivider,
+    },
+  ]);
+  
+  return plugins;
 }
 
 const config: Config = {
@@ -148,18 +185,18 @@ const config: Config = {
 
   stylesheets: [
     {
-      href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+TC:wght@400;500;700&display=swap",
+      href: externalResources.fonts,
       type: "text/css",
     },
     {
-      href: "https://unpkg.com/leaflet@1.9.4/dist/leaflet.css",
+      href: externalResources.leafletCSS,
       type: "text/css",
     },
   ],
 
   scripts: [
     {
-      src: "https://unpkg.com/leaflet@1.9.4/dist/leaflet.js",
+      src: externalResources.leafletJS,
       async: false,
     },
     {
@@ -204,60 +241,28 @@ const config: Config = {
   ],
 
   plugins: [
-    [
+    ...docsConfig.map(doc => [
       "@docusaurus/plugin-content-docs",
       {
-        id: "backpacker",
-        path: "backpacker",
-        routeBasePath: "backpacker",
-        remarkPlugins: createRemarkPlugins(backpackerFileMap, "/backpacker/"),
+        id: doc.id,
+        path: doc.path,
+        routeBasePath: doc.routeBasePath,
+        remarkPlugins: createRemarkPlugins(fileMaps[doc.id], doc.routeBase),
         sidebarPath: require.resolve("./sidebars.js"),
       },
-    ],
-    [
-      "@docusaurus/plugin-content-docs",
-      {
-        id: "lifehacker",
-        path: "lifehacker",
-        routeBasePath: "lifehacker",
-        remarkPlugins: createRemarkPlugins(lifehackerFileMap, "/lifehacker/"),
-        sidebarPath: require.resolve("./sidebars.js"),
-      },
-    ],
-    [
-      "@docusaurus/plugin-content-docs",
-      {
-        id: "moco",
-        path: "moco",
-        routeBasePath: "moco",
-        remarkPlugins: createRemarkPlugins(mocoFileMap, "/moco/"),
-        sidebarPath: require.resolve("./sidebars.js"),
-      },
-    ],
-    [
+    ]),
+    ...blogConfig.map(blog => [
       "@docusaurus/plugin-content-blog",
       {
-        id: "news",
-        routeBasePath: "news",
-        path: "blog.news",
+        id: blog.id,
+        routeBasePath: blog.routeBasePath,
+        path: blog.path,
         showReadingTime: true,
         blogSidebarTitle: "All posts",
         blogSidebarCount: "ALL",
         onUntruncatedBlogPosts: "ignore",
       },
-    ],
-    [
-      "@docusaurus/plugin-content-blog",
-      {
-        id: "life",
-        routeBasePath: "life",
-        path: "blog.life",
-        showReadingTime: true,
-        blogSidebarTitle: "All posts",
-        blogSidebarCount: "ALL",
-        onUntruncatedBlogPosts: "ignore",
-      },
-    ],
+    ]),
   ],
 
   themes: ["@docusaurus/theme-mermaid"],

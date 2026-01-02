@@ -1,17 +1,16 @@
 ---
-
 title: Day by day
-slug: /2601-Xinjiang/Schedule-on-Xinjiang/
-image: https://lh3.googleusercontent.com/pw/AL9nZEUA9Ifvd5Z8SXDWkeVB6AC4MPGwnXaL6kBXNPoXwOQQ2jOcZ1Jw_0p8TKK8C3ZX0e67_FOY15eDrm7aaXSQJcKtoUzC80SAQEHsaBy6qS2AqNNs5VUFNXBKm439y_1wkvmDl-PnL8ReojnIumNlEvOXBg=w800-no?authuser=0
+slug: /2601-xinjiang/schedule-on-xinjiang/
+image: >-
+  https://lh3.googleusercontent.com/pw/AL9nZEUA9Ifvd5Z8SXDWkeVB6AC4MPGwnXaL6kBXNPoXwOQQ2jOcZ1Jw_0p8TKK8C3ZX0e67_FOY15eDrm7aaXSQJcKtoUzC80SAQEHsaBy6qS2AqNNs5VUFNXBKm439y_1wkvmDl-PnL8ReojnIumNlEvOXBg=w800-no?authuser=0
 tags:
   - Backpacker
   - Index
   - Xinjiang
 sidebar_position: 11
-date_created: 2026-01-01
-date_updated: 2026-01-01
+date_created: 2026-01-01T00:00:00.000Z
+date_updated: 2026-01-01T00:00:00.000Z
 kanban-plugin: board
-
 ---
 
 ## Reference

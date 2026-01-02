@@ -32,11 +32,9 @@ function parseLeafletConfig(content) {
 }
 
 /**
- * Normalize a path by converting spaces to dashes in all segments
- * @param {string} urlPath - The path to normalize
- * @returns {string} Normalized path with spaces replaced by dashes
+ * Internal slug normalization for this plugin only
  */
-function normalizeSlug(urlPath) {
+function normalizeSlugInternal(urlPath) {
     if (!urlPath) return urlPath;
     return urlPath
         .split('/')
@@ -84,7 +82,7 @@ function readMarkers(markerFolder, routeBase) {
                         const slug = fileName.replace(/ /g, '-').toLowerCase();
                         // 正規化資料夾路徑：空格轉破折號
                         const folderPath = markerFolder.split('/').slice(1).join('/');
-                        const normalizedFolderPath = normalizeSlug(folderPath);
+                        const normalizedFolderPath = normalizeSlugInternal(folderPath);
                         const href = `${routeBase}${normalizedFolderPath}/${slug}/`;
 
                         markers.push({

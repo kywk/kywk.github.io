@@ -12,6 +12,9 @@
 const fs = require('fs');
 const path = require('path');
 const matter = require('gray-matter');
+const { Logger } = require('./logger');
+
+const CONTEXT = 'SlugInjector';
 
 // Directories to process (relative to project root)
 const DOC_DIRS = ['backpacker', 'lifehacker', 'moco'];
@@ -89,11 +92,11 @@ function processFile(filePath, basePath) {
         // Write back to file
         fs.writeFileSync(filePath, newContent, 'utf-8');
 
-        console.log(`  [MODIFIED] ${relativePath}: ${oldSlug} -> ${normalizedSlug}`);
+        Logger.info(`Modified ${relativePath}: ${oldSlug} -> ${normalizedSlug}`, CONTEXT);
         stats.modified++;
 
     } catch (error) {
-        console.error(`  [ERROR] ${filePath}: ${error.message}`);
+        Logger.error(`Failed to process ${filePath}`, error, CONTEXT);
         stats.errors++;
     }
 }
@@ -125,10 +128,8 @@ function scanDirectory(dir, basePath) {
  * Main function
  */
 function main() {
-    console.log('='.repeat(60));
-    console.log('Injecting normalized slug frontmatter');
-    console.log('='.repeat(60));
-    console.log('');
+    Logger.info('Injecting normalized slug frontmatter', CONTEXT);
+    Logger.info('', CONTEXT);
 
     const projectRoot = path.resolve(__dirname, '..');
 
@@ -140,20 +141,12 @@ function main() {
             continue;
         }
 
-        console.log(`\nProcessing: ${docDir}/`);
-        console.log('-'.repeat(40));
+        Logger.info(`Processing: ${docDir}/`, CONTEXT);
 
         scanDirectory(fullPath, fullPath);
     }
 
-    console.log('');
-    console.log('='.repeat(60));
-    console.log('Summary:');
-    console.log(`  Scanned:  ${stats.scanned} files`);
-    console.log(`  Modified: ${stats.modified} files`);
-    console.log(`  Skipped:  ${stats.skipped} files`);
-    console.log(`  Errors:   ${stats.errors} files`);
-    console.log('='.repeat(60));
+    Logger.info(`Summary: ${stats.scanned} scanned, ${stats.modified} modified, ${stats.errors} errors`, CONTEXT);
 }
 
 main();

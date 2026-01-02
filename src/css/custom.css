@@ -349,20 +349,6 @@ blockquote {
 }
 
 /* ============================================
-   Links - Micro Interactions
-   ============================================ */
-.markdown a {
-  text-decoration: underline;
-  text-decoration-color: var(--ifm-color-primary-lighter);
-  text-underline-offset: 3px;
-  transition: text-decoration-color var(--transition-fast);
-}
-
-.markdown a:hover {
-  text-decoration-color: var(--ifm-color-primary);
-}
-
-/* ============================================
    Scrollbar Styling
    ============================================ */
 ::-webkit-scrollbar {
@@ -504,7 +490,9 @@ blockquote {
    Light Mode Enhancements
    ============================================ */
 
-/* 連結配色加深，加強可讀性 */
+/* ============================================
+   Links - Enhanced Readability
+   ============================================ */
 .markdown a {
   color: var(--ifm-color-primary-dark);
   font-weight: 500;

@@ -154,6 +154,16 @@ npm run content:wikilink
 - **部署設定**: 配置 GitHub Pages 部署參數
 
 ### 自訂插件
+
+本專案支援多種插件安裝方式：
+
+**安裝方式**：
+1. **NPM 安裝** (推薦): `npm install remark-obsidian-kanban remark-obsidian-leaflet remark-slug-normalizer`
+2. **手動 Clone**: 直接 clone 到 `plugins/` 目錄
+3. **本地開發**: 在 `plugins/` 目錄下直接開發
+
+系統會自動按優先順序載入可用的插件。詳細說明請參考 [PLUGIN-INSTALL-GUIDE.md](./PLUGIN-INSTALL-GUIDE.md)。
+
 | 檔案 | 說明 |
 |------|------|
 | `plugins/remark-obsidian-kanban/` | Obsidian Kanban 看板渲染 |
