@@ -4,10 +4,30 @@
         <title>kywk.me Blog</title>
         <link>https://kywk.github.io/news/</link>
         <description>kywk.me Blog</description>
-        <lastBuildDate>Wed, 31 Dec 2025 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 02 Jan 2026 06:56:45 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-TW</language>
+        <item>
+            <title><![CDATA[News Feed]]></title>
+            <link>https://kywk.github.io/news/News Feed/</link>
+            <guid>https://kywk.github.io/news/News Feed/</guid>
+            <pubDate>Fri, 02 Jan 2026 06:56:45 GMT</pubDate>
+            <description><![CDATA[This is News Clippins]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="news--discus">news &amp; discus<a href="https://kywk.github.io/news/News%20Feed/#news--discus" class="hash-link" aria-label="news &amp; discus的直接連結" title="news &amp; discus的直接連結" translate="no">​</a></h2>
+<ul>
+<li class=""><a href="https://news.ycombinator.com/" target="_blank" rel="noopener noreferrer" class="">Hacker News</a></li>
+<li class=""><a href="https://dev.to/" target="_blank" rel="noopener noreferrer" class="">DEV Community 👩‍💻👨‍💻</a></li>
+<li class=""><a href="https://iter01.com/" target="_blank" rel="noopener noreferrer" class="">IT人</a></li>
+<li class=""><a href="https://www.gushiciku.cn/pl/" target="_blank" rel="noopener noreferrer" class="">MdEditor</a></li>
+</ul>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[2025/template]]></title>
+            <link>https://kywk.github.io/news/2025/template/</link>
+            <guid>https://kywk.github.io/news/2025/template/</guid>
+            <pubDate>Fri, 02 Jan 2026 06:56:45 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[Surf 10.01 ~ 12.31]]></title>
             <link>https://kywk.github.io/news/2025/12/31/_Surfing/</link>
@@ -79,26 +99,6 @@
             <category>2025/10</category>
             <category>2025/11</category>
             <category>2025/12</category>
-        </item>
-        <item>
-            <title><![CDATA[News Feed]]></title>
-            <link>https://kywk.github.io/news/News Feed/</link>
-            <guid>https://kywk.github.io/news/News Feed/</guid>
-            <pubDate>Sun, 28 Dec 2025 02:03:28 GMT</pubDate>
-            <description><![CDATA[This is News Clippins]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="news--discus">news &amp; discus<a href="https://kywk.github.io/news/News%20Feed/#news--discus" class="hash-link" aria-label="news &amp; discus的直接連結" title="news &amp; discus的直接連結" translate="no">​</a></h2>
-<ul>
-<li class=""><a href="https://news.ycombinator.com/" target="_blank" rel="noopener noreferrer" class="">Hacker News</a></li>
-<li class=""><a href="https://dev.to/" target="_blank" rel="noopener noreferrer" class="">DEV Community 👩‍💻👨‍💻</a></li>
-<li class=""><a href="https://iter01.com/" target="_blank" rel="noopener noreferrer" class="">IT人</a></li>
-<li class=""><a href="https://www.gushiciku.cn/pl/" target="_blank" rel="noopener noreferrer" class="">MdEditor</a></li>
-</ul>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[2025/template]]></title>
-            <link>https://kywk.github.io/news/2025/template/</link>
-            <guid>https://kywk.github.io/news/2025/template/</guid>
-            <pubDate>Sun, 28 Dec 2025 02:03:28 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Surf 09.01 ~ 09.30]]></title>
