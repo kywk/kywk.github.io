@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kywk.github.io/news/</id>
     <title>kywk.me Blog</title>
-    <updated>2026-01-02T06:56:45.000Z</updated>
+    <updated>2026-01-02T08:57:24.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kywk.github.io/news/"/>
     <subtitle>kywk.me Blog</subtitle>
@@ -11,7 +11,7 @@
         <title type="html"><![CDATA[News Feed]]></title>
         <id>https://kywk.github.io/news/News Feed/</id>
         <link href="https://kywk.github.io/news/News Feed/"/>
-        <updated>2026-01-02T06:56:45.000Z</updated>
+        <updated>2026-01-02T08:57:24.000Z</updated>
         <summary type="html"><![CDATA[This is News Clippins]]></summary>
         <content type="html"><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="news--discus">news &amp; discus<a href="https://kywk.github.io/news/News%20Feed/#news--discus" class="hash-link" aria-label="news &amp; discus的直接連結" title="news &amp; discus的直接連結" translate="no">​</a></h2>
 <ul>
@@ -29,7 +29,7 @@
         <title type="html"><![CDATA[2025/template]]></title>
         <id>https://kywk.github.io/news/2025/template/</id>
         <link href="https://kywk.github.io/news/2025/template/"/>
-        <updated>2026-01-02T06:56:45.000Z</updated>
+        <updated>2026-01-02T08:57:24.000Z</updated>
     </entry>
     <entry>
         <title type="html"><![CDATA[Surf 10.01 ~ 12.31]]></title>
@@ -51,10 +51,9 @@
 <li class=""><a href="https://www.patterns.dev/" target="_blank" rel="noopener noreferrer" class="">Patterns.dev</a></li>
 <li class=""><a href="https://utcc.utoronto.ca/~cks/space/blog/programming/ErrorsShouldRequireFixing" target="_blank" rel="noopener noreferrer" class="">Your browser has suspicious Sec-CH-UA-* headers</a>
 <ul>
-<li class=""><a href="https://news.ycombinator.com/item?id=46301059" target="_blank" rel="noopener noreferrer" class="">Title Unavailable | Site Unreachable</a></li>
+<li class=""><a href="https://news.ycombinator.com/item?id=46301059" target="_blank" rel="noopener noreferrer" class="">Log level 'error' should mean that something needs to be fixed | Hacker News</a></li>
 </ul>
 </li>
-<li class=""></li>
 </ul>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ai">AI<a href="https://kywk.github.io/news/2025/12/31/_Surfing/#ai" class="hash-link" aria-label="AI的直接連結" title="AI的直接連結" translate="no">​</a></h3>
 <ul>
@@ -66,13 +65,11 @@
 <li class=""><a href="https://hk.news.yahoo.com/google-%E6%8E%A8%E5%87%BA-functiongemma-%E6%A8%A1%E5%9E%8B-%E6%A8%A1%E5%9E%8B%E5%85%A8%E5%A1%9E%E5%85%A5%E6%89%8B%E6%A9%9F-184244400.html" target="_blank" rel="noopener noreferrer" class="">Google 推出 FunctionGemma 模型，模型全塞入手機，自然語言直接操作手機</a></li>
 <li class=""><a href="https://ihower.tw/blog/13553-aie-2025-models-and-agents" target="_blank" rel="noopener noreferrer" class="">愛好 AI Engineer 電子報&nbsp;🚀&nbsp;2025 Q4 AI 模型與 Agent 開發 #33 – ihower { blogging }</a></li>
 <li class=""><a href="https://www.ithome.com.tw/news/172920" target="_blank" rel="noopener noreferrer" class="">Anthropic更新Claude Skills，新增技能目錄並推動開放標準 | iThome</a></li>
-<li class=""></li>
 </ul>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="it-news">IT News<a href="https://kywk.github.io/news/2025/12/31/_Surfing/#it-news" class="hash-link" aria-label="IT News的直接連結" title="IT News的直接連結" translate="no">​</a></h3>
 <ul>
 <li class=""><a href="https://www.ithome.com.tw/news/172593" target="_blank" rel="noopener noreferrer" class="">Anthropic收購JavaScript執行環境Bun強化Claude Code底層效能 | iThome</a></li>
 <li class=""><a href="https://www.ithome.com.tw/news/172732" target="_blank" rel="noopener noreferrer" class="">Linux基金會成立代理式AI基金會，收編三大標準 | iThome</a></li>
-<li class=""></li>
 </ul>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="life">Life<a href="https://kywk.github.io/news/2025/12/31/_Surfing/#life" class="hash-link" aria-label="Life的直接連結" title="Life的直接連結" translate="no">​</a></h3>
 <ul>
@@ -96,7 +93,6 @@
 </ul>
 </li>
 <li class=""><a href="https://crossing.cw.com.tw/article/20421" target="_blank" rel="noopener noreferrer" class="">冰島奇遇：不只極光、冰川與火山，還有獨特人文、小國幽默、低調超奢度假村⋯⋯等你探秘｜三姐妹看歐洲｜換日線</a></li>
-<li class=""></li>
 </ul>]]></content>
         <author>
             <name>kywk</name>

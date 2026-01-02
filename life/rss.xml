@@ -85,14 +85,14 @@
 <li class="task-list-item"><input type="checkbox" disabled=""> 月亮樹拼圖 📅 2026-01-31</li>
 <li class="">[-] 旅遊畫框 📅 2025-06-01 ❌ 2025-06-02
 <ul class="contains-task-list containsTaskList_mC6p">
-<li class="task-list-item"><input type="checkbox" disabled=""> 交通票券</li>
-<li class="task-list-item"><input type="checkbox" disabled=""> 景點票券</li>
-<li class="task-list-item"><input type="checkbox" disabled=""> 酒標</li>
-<li class="task-list-item"><input type="checkbox" disabled=""> 外幣零錢相框</li>
+<li class="task-list-item"><input type="checkbox" disabled="" checked=""> 交通票券 ✅ 2026-01-01</li>
+<li class="task-list-item"><input type="checkbox" disabled="" checked=""> 景點票券 ✅ 2026-01-01</li>
+<li class="task-list-item"><input type="checkbox" disabled="" checked=""> 酒標 ✅ 2026-01-01</li>
+<li class="task-list-item"><input type="checkbox" disabled="" checked=""> 外幣零錢相框 ✅ 2026-01-01</li>
 </ul>
 </li>
 <li class="task-list-item"><input type="checkbox" disabled="" checked=""> 文件統整 ✅ 2025-01-28</li>
-<li class="task-list-item"><input type="checkbox" disabled=""> [[Obsidian as PKM]] refine ⏫ 📅 2025-12-31</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> [[Obsidian as PKM]] refine ⏫ 📅 2026-01-31</li>
 </ul>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="see-also">See Also<a href="https://kywk.github.io/life/2025/02/02/Lunar-New-Year/#see-also" class="hash-link" aria-label="See Also的直接連結" title="See Also的直接連結" translate="no">​</a></h2>
 <ul>
