@@ -40,7 +40,7 @@ function normalizeSlug(urlPath) {
     if (!urlPath) return urlPath;
     return urlPath
         .split('/')
-        .map(segment => segment.replace(/ /g, '-'))
+        .map(segment => segment.replace(/ /g, '-').toLowerCase())
         .join('/');
 }
 
@@ -81,7 +81,7 @@ function readMarkers(markerFolder, routeBase) {
                     if (!isNaN(lat) && !isNaN(lng)) {
                         const fileName = file.replace(/\.md$/, '');
                         // 正規化檔名：空格轉破折號
-                        const slug = fileName.replace(/ /g, '-');
+                        const slug = fileName.replace(/ /g, '-').toLowerCase();
                         // 正規化資料夾路徑：空格轉破折號
                         const folderPath = markerFolder.split('/').slice(1).join('/');
                         const normalizedFolderPath = normalizeSlug(folderPath);

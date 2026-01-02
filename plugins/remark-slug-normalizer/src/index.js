@@ -9,7 +9,7 @@ function normalizeSlug(urlPath) {
     if (!urlPath) return urlPath;
     return urlPath
         .split('/')
-        .map(segment => segment.replace(/ /g, '-'))
+        .map(segment => segment.replace(/ /g, '-').toLowerCase())
         .join('/');
 }
 

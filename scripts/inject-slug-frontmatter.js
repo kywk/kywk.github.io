@@ -33,7 +33,7 @@ function normalizeSlug(urlPath) {
     if (!urlPath) return urlPath;
     return urlPath
         .split('/')
-        .map(segment => segment.replace(/ /g, '-'))
+        .map(segment => segment.replace(/ /g, '-').toLowerCase())
         .join('/');
 }
 
@@ -68,16 +68,17 @@ function processFile(filePath, basePath) {
         const content = fs.readFileSync(filePath, 'utf-8');
         const parsed = matter(content);
 
-        // Skip if slug is already defined
-        if (parsed.data.slug) {
-            console.log(`  [SKIP] ${relativePath} - slug already defined`);
+        // Calculate the normalized slug
+        const slugPath = relativePath.replace(/\.mdx?$/, '');
+        const normalizedSlug = '/' + normalizeSlug(slugPath) + '/';
+
+        // Check if slug needs update
+        if (parsed.data.slug === normalizedSlug) {
             stats.skipped++;
             return;
         }
 
-        // Calculate the normalized slug
-        const slugPath = relativePath.replace(/\.mdx?$/, '');
-        const normalizedSlug = '/' + normalizeSlug(slugPath) + '/';
+        const oldSlug = parsed.data.slug || '(none)';
 
         // Add slug to frontmatter
         parsed.data.slug = normalizedSlug;
@@ -88,7 +89,7 @@ function processFile(filePath, basePath) {
         // Write back to file
         fs.writeFileSync(filePath, newContent, 'utf-8');
 
-        console.log(`  [MODIFIED] ${relativePath} -> slug: ${normalizedSlug}`);
+        console.log(`  [MODIFIED] ${relativePath}: ${oldSlug} -> ${normalizedSlug}`);
         stats.modified++;
 
     } catch (error) {
