@@ -10,7 +10,7 @@ location:
 wiki: 'https://en.wikipedia.org/wiki/Cajón_del_Maipo'
 mapmarker: default
 hide_table_of_contents: true
-slug: /2509-Chile/Chile/麥波峽谷-Cajón-del-Maipo/
+slug: /2509-chile/chile/麥波峽谷-cajón-del-maipo/
 ---
 
 麥波峽谷 Cajón del Maipo

@@ -4,7 +4,7 @@ title: Awesome OpenAPI
 tags:
   - OpenAPI
   - Awesome
-slug: /techstack/openapi/Awesome-OpenAPI/
+slug: /techstack/openapi/awesome-openapi/
 ---
 
 Awesome OpenAPI Resources

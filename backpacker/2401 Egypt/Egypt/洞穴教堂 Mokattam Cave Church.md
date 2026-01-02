@@ -9,7 +9,7 @@ location:
   - 31.27614
 mapmarker: default
 hide_table_of_contents: true
-slug: /2401-Egypt/Egypt/洞穴教堂-Mokattam-Cave-Church/
+slug: /2401-egypt/egypt/洞穴教堂-mokattam-cave-church/
 ---
 洞穴教堂 Mokattam Cave Church
 ===========================

@@ -5,7 +5,7 @@ tags:
   - Mount
   - Taiwan
 date_created: 2014-09-10T16:00:00.000Z
-slug: /mount/140910_lake-cjiaming-II/
+slug: /mount/140910_lake-cjiaming-ii/
 ---
 
 2014.09.10 野孩子．嘉明一夜情

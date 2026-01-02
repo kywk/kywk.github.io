@@ -8,7 +8,7 @@ tags:
   - kywk
 sidebar_position: 1
 date_created: 2024-10-31T00:00:00.000Z
-slug: /machintosh/Oh-my-Mac/
+slug: /machintosh/oh-my-mac/
 ---
 
 # Oh My Mac, All about my Mac

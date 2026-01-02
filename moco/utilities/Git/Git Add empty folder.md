@@ -8,7 +8,7 @@ hide_table_of_contents: true
 date_created: 2021-05-09T16:00:00.000Z
 image: >-
   https://lh3.googleusercontent.com/pw/ACtC-3c1Fcx8ZIVYrXBrmLfZUFhSnpBJqiUgVL36d3S6x_VzJ0a0JzmkF__USqKP6HCuphBVaLiWP5Vf0Qv2l-WzrdNy3h2G_emtP9mNa82Y2FySF8wu42FOSOySVj-7hf-yuabf58RkxPr-Lv8PvX172gAtYA=w800-no?authuser=0
-slug: /utilities/Git/Git-Add-empty-folder/
+slug: /utilities/git/git-add-empty-folder/
 ---
 
 # [Git] Add empty folder

@@ -10,7 +10,7 @@ location:
   - 28.20137
 mapmarker: default
 hide_table_of_contents: true
-slug: /2401-Egypt/Egypt/白沙灘-White-Desert/
+slug: /2401-egypt/egypt/白沙灘-white-desert/
 ---
 白沙灘 White Desert
 ==================

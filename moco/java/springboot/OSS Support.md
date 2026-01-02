@@ -9,7 +9,7 @@ tags:
 sidebar_position: 99
 date_created: 2025-06-10T00:00:00.000Z
 date_updated: 2025-06-10T00:00:00.000Z
-slug: /java/springboot/OSS-Support/
+slug: /java/springboot/oss-support/
 ---
 
 > 處理 [NVD - CVE-2025-24813](https://nvd.nist.gov/vuln/detail/CVE-2025-24813) 的過程, 意外發覺 Spring Boot 對於 OSS 支援策略的改變.

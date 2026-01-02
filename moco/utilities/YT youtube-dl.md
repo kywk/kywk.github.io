@@ -5,7 +5,7 @@ tags:
   - Youtube
 date_created: 2021-02-07T00:00:00.000Z
 image: 'https://i.imgur.com/mErPwqL.png'
-slug: /utilities/YT-youtube-dl/
+slug: /utilities/yt-youtube-dl/
 ---
 
 # [Youtube] 利用 youtube-dl 下載影片

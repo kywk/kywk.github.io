@@ -11,7 +11,7 @@ web: 'https://www.conaf.cl/parques/parque-nacional-torres-del-paine/'
 wiki: 'https://zh.wikipedia.org/wiki/百內國家公園'
 mapmarker: default
 hide_table_of_contents: true
-slug: /2509-Chile/Chile/百內國家公園-Torres-del-Paine-National-Park/
+slug: /2509-chile/chile/百內國家公園-torres-del-paine-national-park/
 ---
 
 百內國家公園 Torres del Paine National Park

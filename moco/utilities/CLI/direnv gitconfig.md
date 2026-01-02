@@ -9,7 +9,7 @@ sidebar_position: 10
 hide_table_of_contents: false
 date_created: 2025-06-06T00:00:00.000Z
 date_updated: 2025-06-06T00:00:00.000Z
-slug: /utilities/CLI/direnv-gitconfig/
+slug: /utilities/cli/direnv-gitconfig/
 ---
 # direnv + gitconfig
 

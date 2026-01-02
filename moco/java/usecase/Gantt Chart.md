@@ -1,4 +1,4 @@
 ---
-slug: /java/usecase/Gantt-Chart/
+slug: /java/usecase/gantt-chart/
 ---
 

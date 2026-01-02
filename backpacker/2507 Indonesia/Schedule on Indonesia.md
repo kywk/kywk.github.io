@@ -5,7 +5,7 @@ tags:
   - Backpacker
   - Asia/Indonesia
 sidebar_position: 10
-slug: /2507-Indonesia/Schedule-on-Indonesia/
+slug: /2507-indonesia/schedule-on-indonesia/
 ---
 
 ## Refs

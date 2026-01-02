@@ -9,7 +9,7 @@ location:
   - 31.26294
 mapmarker: default
 hide_table_of_contents: true
-slug: /2401-Egypt/Egypt/哈利利市场-Khan-el-Khalili/
+slug: /2401-egypt/egypt/哈利利市场-khan-el-khalili/
 ---
 哈利利市场 Khan el-Khalili
 =======================

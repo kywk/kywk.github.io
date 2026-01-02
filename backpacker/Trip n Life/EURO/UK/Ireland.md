@@ -1,5 +1,5 @@
 ---
-slug: /Trip-n-Life/EURO/UK/Ireland/
+slug: /trip-n-life/euro/uk/ireland/
 ---
 #PIWIW #EURO
 

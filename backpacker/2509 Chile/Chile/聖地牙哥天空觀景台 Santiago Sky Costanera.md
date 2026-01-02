@@ -10,7 +10,7 @@ location:
 web: 'https://www.skycostanera.com/'
 mapmarker: default
 hide_table_of_contents: true
-slug: /2509-Chile/Chile/聖地牙哥天空觀景台-Santiago-Sky-Costanera/
+slug: /2509-chile/chile/聖地牙哥天空觀景台-santiago-sky-costanera/
 ---
 
 聖地牙哥天空觀景台 Santiago Sky Costanera

@@ -10,7 +10,7 @@ location:
 wiki: 'https://zh.wikipedia.org/wiki/開羅大城堡區'
 mapmarker: default
 hide_table_of_contents: true
-slug: /2401-Egypt/Egypt/薩拉丁城堡-Mohamed-Ali-mosque/
+slug: /2401-egypt/egypt/薩拉丁城堡-mohamed-ali-mosque/
 ---
 
 薩拉丁城堡 Mohamed Ali mosque

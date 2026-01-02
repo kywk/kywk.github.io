@@ -5,7 +5,7 @@ tags:
   - DevSecOps
   - ELK
   - Awesome
-slug: /devsecops/Awesome-ELK/
+slug: /devsecops/awesome-elk/
 ---
 
 Awesome ELK Resources

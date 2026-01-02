@@ -10,7 +10,7 @@ sidebar_position: 1
 hide_table_of_contents: true
 date_created: 2024-06-01T00:00:00.000Z
 date_updated: 2024-08-13T00:00:00.000Z
-slug: /utilities/Utilities-2024/
+slug: /utilities/utilities-2024/
 ---
 
 # Utilities Review & Rebuild 2024

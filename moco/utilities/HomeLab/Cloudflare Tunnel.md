@@ -1,4 +1,4 @@
 ---
-slug: /utilities/HomeLab/Cloudflare-Tunnel/
+slug: /utilities/homelab/cloudflare-tunnel/
 ---
 

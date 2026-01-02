@@ -4,7 +4,7 @@ title: Awesome VSCode
 tags:
   - VSCode
   - Awesome
-slug: /utilities/VSCode/Awesome-VSCode/
+slug: /utilities/vscode/awesome-vscode/
 ---
 
 # Awesome Visual Studio Code

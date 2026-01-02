@@ -10,7 +10,7 @@ location:
   - 25.51961
 mapmarker: food
 hide_table_of_contents: true
-slug: /2401-Egypt/Egypt/Muhra/
+slug: /2401-egypt/egypt/muhra/
 ---
 
 Muhra

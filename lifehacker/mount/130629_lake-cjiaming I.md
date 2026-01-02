@@ -6,7 +6,7 @@ tags:
   - Taiwan
 date_created: 2013-07-05T17:49:49.000Z
 date_updated: 2013-07-14T17:49:49.000Z
-slug: /mount/130629_lake-cjiaming-I/
+slug: /mount/130629_lake-cjiaming-i/
 ---
 
 2013.06.29 重拾熱血．嘉明湖

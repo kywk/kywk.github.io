@@ -8,9 +8,9 @@ tags:
   - Antigravity
 image: 'https://i.imgur.com/mErPwqL.png'
 sidebar_position: 0
-date_created: 2025-12-17
-date_updated: 2024-12-26
-slug: /52-projects/border-collie/border-collie/
+date_created: 2025-12-17T00:00:00.000Z
+date_updated: 2024-12-26T00:00:00.000Z
+slug: /52projects/border-collie/border-collie/
 ---
 ## 序
 

@@ -1,5 +1,5 @@
 ---
-slug: /Trip-n-Life/Japan/Tokyo-roaming/
+slug: /trip-n-life/japan/tokyo-roaming/
 ---
 
 ## Museum 

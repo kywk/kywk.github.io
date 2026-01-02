@@ -7,7 +7,7 @@ image: >-
   https://lh3.googleusercontent.com/pw/ACtC-3esXKnm4YdNBng_fgiUQ_R2TapCSKIswXTDEt-kfoJBTkkXYIQhJpILNh65ITVsegLf58uATGzzszjjOkPJtbl7bwNFktICllLeOnGrMjJDzl3LsyIOh38mKpoXoUNcqu7145HEEJ_jwQ6yLQU19_emwA=s800-no?authuser=0
 categories:
   - equipment
-slug: /equipment/Sacoche-Madness/
+slug: /equipment/sacoche-madness/
 ---
 
 ### 廢言 ###

@@ -11,7 +11,7 @@ sidebar_position: 0
 hide_table_of_contents: true
 date_created: 2025-01-21T00:00:00.000Z
 date_updated: 2025-01-24T00:00:00.000Z
-slug: /equipment/Every-Day-Carry/
+slug: /equipment/every-day-carry/
 ---
 
 # Every Day Carry

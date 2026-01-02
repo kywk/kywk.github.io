@@ -10,7 +10,7 @@ location:
 wiki: 'https://zh.wikipedia.org/zh-tw/卢克索神庙'
 mapmarker: default
 hide_table_of_contents: true
-slug: /2401-Egypt/Egypt/盧客索神廟-Luxor-Temple/
+slug: /2401-egypt/egypt/盧客索神廟-luxor-temple/
 ---
 
 盧客索神廟 Luxor Temple

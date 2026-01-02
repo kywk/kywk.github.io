@@ -1,5 +1,5 @@
 ---
-slug: /Time-Management/
+slug: /time-management/
 ---
 # 時間管理大師
 

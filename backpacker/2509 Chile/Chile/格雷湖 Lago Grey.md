@@ -10,7 +10,7 @@ location:
 wiki: 'https://en.wikipedia.org/wiki/Grey_Lake'
 mapmarker: default
 hide_table_of_contents: true
-slug: /2509-Chile/Chile/格雷湖-Lago-Grey/
+slug: /2509-chile/chile/格雷湖-lago-grey/
 ---
 
 格雷湖 Lago Grey

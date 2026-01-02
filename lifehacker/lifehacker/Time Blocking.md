@@ -1,5 +1,5 @@
 ---
-slug: /lifehacker/Time-Blocking/
+slug: /lifehacker/time-blocking/
 ---
 #LifeHack  #Note 
 

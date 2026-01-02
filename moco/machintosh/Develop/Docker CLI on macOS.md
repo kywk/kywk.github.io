@@ -9,7 +9,7 @@ tags:
 sidebar_label: Docker CLI
 date_created: 2024-04-18T00:00:00.000Z
 date_updated: 2024-05-24T00:00:00.000Z
-slug: /machintosh/Develop/Docker-CLI-on-macOS/
+slug: /machintosh/develop/docker-cli-on-macos/
 ---
 
 # [Docker] Use docker CLI w/o Docker Desktop on macOS

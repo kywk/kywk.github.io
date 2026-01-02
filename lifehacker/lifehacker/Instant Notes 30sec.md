@@ -1,5 +1,5 @@
 ---
-slug: /lifehacker/Instant-Notes-30sec/
+slug: /lifehacker/instant-notes-30sec/
 ---
 #LifeHack #Note 
 

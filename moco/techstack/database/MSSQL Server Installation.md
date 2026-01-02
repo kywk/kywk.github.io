@@ -7,7 +7,7 @@ image: >-
   https://lh3.googleusercontent.com/pw/ACtC-3cYYtkzJjo_oG7Gzqq8T8XQm4V_qLE3wGWVKOahp6YT4lo-on60NJmjrkkatnizX1b-uID-MCM2ztsXH9z27cMRtql3PA5cpYZYbMfSPuM5Yh3MmqnjnnXYkTg6vtIiBL5SGAQRRAI9zEBIOoyP3tZpuA?authuser=0
 sidebar_position: 50
 date_created: 2025-01-21T00:00:00.000Z
-slug: /techstack/database/MSSQL-Server-Installation/
+slug: /techstack/database/mssql-server-installation/
 ---
 
 # MSSQL Server Installation

@@ -8,7 +8,7 @@ tags:
 sidebar_position: 50
 hide_table_of_contents: true
 date_created: 2024-05-30T00:00:00.000Z
-slug: /utilities/CLI/Check-Port-Usage/
+slug: /utilities/cli/check-port-usage/
 ---
 
 # [CLI] 找出被佔用的 IP 及 Port

@@ -6,7 +6,7 @@ tags:
 image: 'https://i.imgur.com/mErPwqL.png'
 hide_table_of_contents: true
 date_created: 2022-10-19T16:00:00.000Z
-slug: /utilities/ChromeOS-Notes/
+slug: /utilities/chromeos-notes/
 ---
 
 [ChromeOS] Setup / Usage Notes

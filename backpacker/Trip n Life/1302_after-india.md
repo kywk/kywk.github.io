@@ -10,7 +10,7 @@ tags:
 hide_table_of_contents: true
 image: /images/hero-trip2.jpg
 date_created: 2013-02-27T22:01:59.000Z
-slug: /Trip-n-Life/1302_after-india/
+slug: /trip-n-life/1302_after-india/
 ---
 
 # 一輩子的養份，感謝文先行

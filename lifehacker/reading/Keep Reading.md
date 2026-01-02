@@ -1,5 +1,5 @@
 ---
-slug: /reading/Keep-Reading/
+slug: /reading/keep-reading/
 ---
 
 ## See Also

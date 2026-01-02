@@ -1,4 +1,4 @@
 ---
-slug: /2509-Chile/PNT/
+slug: /2509-chile/pnt/
 ---
 

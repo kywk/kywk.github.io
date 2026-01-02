@@ -2,7 +2,7 @@
 tags:
   - GTD/TODO
 draft: true
-slug: /java/kotlin/Get-Kotlin-Done/
+slug: /java/kotlin/get-kotlin-done/
 ---
 
 Get Kotlin Done

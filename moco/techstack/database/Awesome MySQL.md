@@ -10,7 +10,7 @@ sidebar_position: 0
 hide_table_of_contents: false
 date_created: 2025-01-13T00:00:00.000Z
 date_updated: 2025-01-13T00:00:00.000Z
-slug: /techstack/database/Awesome-MySQL/
+slug: /techstack/database/awesome-mysql/
 ---
 
 # Awesome MySQL Resources

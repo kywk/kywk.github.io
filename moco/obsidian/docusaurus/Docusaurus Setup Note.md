@@ -11,7 +11,7 @@ date_created: 2022-05-24T00:00:00.000Z
 date_updated: 2024-05-24T00:00:00.000Z
 history:
   - 2024-05-24 Rremark Plugin Usage
-slug: /obsidian/docusaurus/Docusaurus-Setup-Note/
+slug: /obsidian/docusaurus/docusaurus-setup-note/
 ---
 
 # [Docusaurus] 設定筆記

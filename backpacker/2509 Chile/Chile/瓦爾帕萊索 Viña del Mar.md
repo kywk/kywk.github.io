@@ -11,7 +11,7 @@ web: 'https://www.vinadelmar.cl/'
 wiki: 'https://zh.wikipedia.org/wiki/比尼亞德爾馬'
 mapmarker: default
 hide_table_of_contents: true
-slug: /2509-Chile/Chile/瓦爾帕萊索-Viña-del-Mar/
+slug: /2509-chile/chile/瓦爾帕萊索-viña-del-mar/
 ---
 
 瓦爾帕萊索 Viña del Mar

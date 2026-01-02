@@ -10,7 +10,7 @@ sidebar_position: 5
 hide_table_of_contents: true
 date_created: 2023-01-02T00:00:00.000Z
 date_updated: 2025-01-06T00:00:00.000Z
-slug: /machintosh/Mac-Tip-n-Trick/
+slug: /machintosh/mac-tip-n-trick/
 ---
 
 # [Mac] macOS 實用小技巧與工具

@@ -10,7 +10,7 @@ location:
   - 29.12639
 mapmarker: default
 hide_table_of_contents: true
-slug: /2401-Egypt/Egypt/黑沙漠-Black-Desert/
+slug: /2401-egypt/egypt/黑沙漠-black-desert/
 ---
 
 黑沙漠 Black Desert

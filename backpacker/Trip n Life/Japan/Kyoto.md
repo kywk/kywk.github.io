@@ -1,5 +1,5 @@
 ---
-slug: /Trip-n-Life/Japan/Kyoto/
+slug: /trip-n-life/japan/kyoto/
 ---
 
 ## See Also

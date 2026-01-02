@@ -11,7 +11,7 @@ web: 'https://www.mercadocentral.cl/'
 wiki: 'https://en.wikipedia.org/wiki/Mercado_Central_(Santiago)'
 mapmarker: default
 hide_table_of_contents: true
-slug: /2509-Chile/Chile/聖地牙哥中央市場-Central-Market-of-Santiago/
+slug: /2509-chile/chile/聖地牙哥中央市場-central-market-of-santiago/
 ---
 
 聖地牙哥中央市場 Central Market of Santiago

@@ -7,7 +7,7 @@ tags:
 sidebar_position: 90
 date_created: 2022-09-21T16:00:00.000Z
 image: 'https://i.imgur.com/mErPwqL.png'
-slug: /utilities/CLI/Rclone-Dropbox/
+slug: /utilities/cli/rclone-dropbox/
 ---
 
 # [Rclone] Dropbox

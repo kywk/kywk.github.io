@@ -4,7 +4,7 @@ title: Awesome Self Hosted
 tags:
   - Utility
   - Awesome
-slug: /utilities/HomeLab/Awesome-Self-Hosted/
+slug: /utilities/homelab/awesome-self-hosted/
 ---
 
 Awesome Self Hosted

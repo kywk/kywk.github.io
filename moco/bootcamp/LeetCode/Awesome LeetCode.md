@@ -1,5 +1,5 @@
 ---
-slug: /bootcamp/LeetCode/Awesome-LeetCode/
+slug: /bootcamp/leetcode/awesome-leetcode/
 ---
 
 

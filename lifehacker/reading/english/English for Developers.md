@@ -1,5 +1,5 @@
 ---
-slug: /reading/english/English-for-Developers/
+slug: /reading/english/english-for-developers/
 ---
 
 

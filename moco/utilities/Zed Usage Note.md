@@ -9,7 +9,7 @@ tags:
 hide_table_of_contents: true
 date_created: 2024-08-25T00:00:00.000Z
 date_updated: 2024-08-25T00:00:00.000Z
-slug: /utilities/Zed-Usage-Note/
+slug: /utilities/zed-usage-note/
 ---
 
 # [Zed] 使用與設定筆記

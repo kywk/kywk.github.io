@@ -10,7 +10,7 @@ sidebar_position: 0
 hide_table_of_contents: false
 date_created: 2025-02-05T00:00:00.000Z
 date_updated: 2025-02-05T00:00:00.000Z
-slug: /techstack/database/Awesome-SQLite/
+slug: /techstack/database/awesome-sqlite/
 ---
 
 # Awesome SQLite Resources

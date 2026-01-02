@@ -4,7 +4,7 @@ title: Awesome Git
 tags:
   - Utility
   - Awesome
-slug: /utilities/Git/Awesome-Git/
+slug: /utilities/git/awesome-git/
 ---
 
 # Awesome Git

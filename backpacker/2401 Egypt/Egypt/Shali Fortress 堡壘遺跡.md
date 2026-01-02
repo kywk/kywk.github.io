@@ -9,7 +9,7 @@ location:
   - 25.51957
 mapmarker: default
 hide_table_of_contents: true
-slug: /2401-Egypt/Egypt/Shali-Fortress-堡壘遺跡/
+slug: /2401-egypt/egypt/shali-fortress-堡壘遺跡/
 ---
 
 Shali Fortress 堡壘遺跡

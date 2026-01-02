@@ -1,4 +1,4 @@
 ---
-slug: /52projects/ril/RIL-Alternative/
+slug: /52projects/ril/ril-alternative/
 ---
 

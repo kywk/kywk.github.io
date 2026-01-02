@@ -9,7 +9,7 @@ hide_table_of_contents: true
 date_created: 2022-11-01T00:00:00.000Z
 date_updated: 2024-12-31T00:00:00.000Z
 image: 'https://i.imgur.com/mErPwqL.png'
-slug: /obsidian/Why-n-How-Obsidian/
+slug: /obsidian/why-n-how-obsidian/
 ---
 
 [Obs] Why & How

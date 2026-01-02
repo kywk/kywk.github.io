@@ -6,7 +6,7 @@ tags:
 image: >-
   https://lh3.googleusercontent.com/pw/ACtC-3eG64ZtpHegixnPtyAFrxhYz5zUOC7bT5Jhh1caUMVE1qqEc3L_uGQYLCmxlBr-3gVRW0gUFHU9nh1PuRxR00cOahBUIJPxlupa0kkq1fNH5HAhNLa9aLSg-kjta9_QcgbPhfnpp_z_NRsj6PNOzIkeOg=w800-no?authuser=0
 date_created: 2021-04-07T05:16:03.000Z
-slug: /equipment/Camping-Base-Pack/
+slug: /equipment/camping-base-pack/
 ---
 
 _last updated: 2021-04-07_

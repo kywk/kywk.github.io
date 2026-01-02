@@ -1,5 +1,5 @@
 ---
-slug: /lifehacker/Make-My-Life-Easier/
+slug: /lifehacker/make-my-life-easier/
 ---
 #LifeHack #Note 
 

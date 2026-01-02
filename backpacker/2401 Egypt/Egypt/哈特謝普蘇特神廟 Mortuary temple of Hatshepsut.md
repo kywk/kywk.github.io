@@ -10,7 +10,7 @@ location:
 wiki: 'https://zh.wikipedia.org/zh-tw/哈特谢普苏特神庙'
 mapmarker: default
 hide_table_of_contents: true
-slug: /2401-Egypt/Egypt/哈特謝普蘇特神廟-Mortuary-temple-of-Hatshepsut/
+slug: /2401-egypt/egypt/哈特謝普蘇特神廟-mortuary-temple-of-hatshepsut/
 ---
 
 哈特謝普蘇特神廟 Mortuary temple of Hatshepsut

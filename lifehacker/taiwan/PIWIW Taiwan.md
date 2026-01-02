@@ -1,6 +1,6 @@
 ---
 draft: 'true'
-slug: /taiwan/PIWIW-Taiwan/
+slug: /taiwan/piwiw-taiwan/
 ---
 
 ## Taipei

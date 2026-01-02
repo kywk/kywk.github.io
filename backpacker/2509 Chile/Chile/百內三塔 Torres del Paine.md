@@ -10,7 +10,7 @@ location:
 wiki: 'https://zh.wikipedia.org/wiki/百內國家公園'
 mapmarker: default
 hide_table_of_contents: true
-slug: /2509-Chile/Chile/百內三塔-Torres-del-Paine/
+slug: /2509-chile/chile/百內三塔-torres-del-paine/
 ---
 
 百內三塔 Torres del Paine

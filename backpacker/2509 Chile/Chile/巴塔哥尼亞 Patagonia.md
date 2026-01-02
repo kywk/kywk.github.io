@@ -10,7 +10,7 @@ location:
 wiki: 'https://zh.wikipedia.org/wiki/巴塔哥尼亞'
 mapmarker: default
 hide_table_of_contents: true
-slug: /2509-Chile/Chile/巴塔哥尼亞-Patagonia/
+slug: /2509-chile/chile/巴塔哥尼亞-patagonia/
 ---
 
 巴塔哥尼亞 Patagonia

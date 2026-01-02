@@ -8,7 +8,7 @@ tags:
   - Hackintosh
 hide_table_of_contents: true
 date_created: 2021-05-14T00:00:00.000Z
-slug: /machintosh/Hackintosh/Mount-EFI/
+slug: /machintosh/hackintosh/mount-efi/
 ---
 
 # [Hackintosh] 掛載 EFI 磁區方式

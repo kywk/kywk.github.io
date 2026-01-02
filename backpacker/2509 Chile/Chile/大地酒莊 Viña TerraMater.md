@@ -10,7 +10,7 @@ location:
 web: 'https://www.terramater.cl/'
 mapmarker: default
 hide_table_of_contents: true
-slug: /2509-Chile/Chile/大地酒莊-Viña-TerraMater/
+slug: /2509-chile/chile/大地酒莊-viña-terramater/
 ---
 
 大地酒莊 Viña TerraMater

@@ -11,7 +11,7 @@ sidebar_position: 0
 hide_table_of_contents: true
 date_created: 2023-01-23T00:00:00.000Z
 date_updated: 2025-09-10T00:00:00.000Z
-slug: /obsidian/Awesome-Obsidian/
+slug: /obsidian/awesome-obsidian/
 ---
 
 # Awesome Obsidian Resource

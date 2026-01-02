@@ -9,7 +9,7 @@ tags:
   - Homebrew
 sidebar_position: 30
 date_created: 2024-10-31T00:00:00.000Z
-slug: /machintosh/Develop/Redis-CLI-only/
+slug: /machintosh/develop/redis-cli-only/
 ---
 
 # Redis CLI Only

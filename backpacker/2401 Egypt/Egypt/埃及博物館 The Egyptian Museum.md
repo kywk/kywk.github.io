@@ -11,7 +11,7 @@ web: 'https://www.egyptianmuseumcairo.com/egyptian-museum-cairo/'
 wiki: 'https://zh.wikipedia.org/zh-hant/埃及博物館'
 mapmarker: default
 hide_table_of_contents: true
-slug: /2401-Egypt/Egypt/埃及博物館-The-Egyptian-Museum/
+slug: /2401-egypt/egypt/埃及博物館-the-egyptian-museum/
 ---
 
 埃及博物館 The Egyptian Museum

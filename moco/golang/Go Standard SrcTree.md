@@ -1,4 +1,4 @@
 ---
-slug: /golang/Go-Standard-SrcTree/
+slug: /golang/go-standard-srctree/
 ---
 

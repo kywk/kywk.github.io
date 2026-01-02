@@ -1,5 +1,5 @@
 ---
-slug: /ai/新增旅遊景點檔案-Prompt/
+slug: /ai/新增旅遊景點檔案-prompt/
 ---
 新增旅遊景點檔案 Prompt
 基本要求

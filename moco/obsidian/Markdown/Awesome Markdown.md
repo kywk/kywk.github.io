@@ -10,7 +10,7 @@ sidebar_position: 0
 hide_table_of_contents: true
 date_created: 2025-01-11T00:00:00.000Z
 date_updated: 2025-01-11T00:00:00.000Z
-slug: /obsidian/Markdown/Awesome-Markdown/
+slug: /obsidian/markdown/awesome-markdown/
 ---
 
 # Awesome Markdown

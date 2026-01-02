@@ -11,7 +11,7 @@ web: 'https://www.chile.travel/en/where-to-go/north/atacama-desert/'
 wiki: 'https://zh.wikipedia.org/wiki/阿塔卡馬沙漠'
 mapmarker: default
 hide_table_of_contents: true
-slug: /2509-Chile/Chile/阿塔卡馬沙漠-Atacama-Desert/
+slug: /2509-chile/chile/阿塔卡馬沙漠-atacama-desert/
 ---
 
 阿塔卡馬沙漠 Atacama Desert

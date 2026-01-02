@@ -10,7 +10,7 @@ sidebar_position: 10
 hide_table_of_contents: true
 date_created: 2025-06-01T00:00:00.000Z
 date_updated: 2025-09-20T00:00:00.000Z
-slug: /utilities/CLI/zinit-vs-oh-my-zsh/
+slug: /utilities/cli/zinit-vs-oh-my-zsh/
 ---
 
 # [Zsh] zinit VS oh-my-zsh

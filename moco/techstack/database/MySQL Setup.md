@@ -8,7 +8,7 @@ image: >-
 sidebar_position: 30
 date_created: 2022-09-21T00:00:00.000Z
 date_updated: 2025-01-21T00:00:00.000Z
-slug: /techstack/database/MySQL-Setup/
+slug: /techstack/database/mysql-setup/
 ---
 
 # [MySQL] Setup

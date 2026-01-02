@@ -1,4 +1,4 @@
 ---
-slug: /obsidian/plugins/Obsidian-Plugins-Develop-Getting-Start/
+slug: /obsidian/plugins/obsidian-plugins-develop-getting-start/
 ---
 

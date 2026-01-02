@@ -11,7 +11,7 @@ web: 'https://www.conaf.cl/parques/reserva-nacional-los-flamencos/'
 wiki: 'https://en.wikipedia.org/wiki/Valle_de_la_Luna'
 mapmarker: default
 hide_table_of_contents: true
-slug: /2509-Chile/Chile/月亮谷-Valle-de-la-Luna/
+slug: /2509-chile/chile/月亮谷-valle-de-la-luna/
 ---
 
 月亮谷 Valle de la Luna

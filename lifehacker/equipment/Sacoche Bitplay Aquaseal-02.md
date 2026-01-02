@@ -7,7 +7,7 @@ image: >-
   https://lh3.googleusercontent.com/pw/ACtC-3eTC0X_y0Jymsn0Rtja7EKPZNOH3x_Br0TD9dtcEL4JO9HQQiTLZwvEWqAku10CjwTMvYe4WxIPGmncQgMw5q-KUANBrRwdMYGUm5Ac9OK7cT59KhVOYrI6uHi8ejnr-3I4WBROfdBcaiNCRlPJCAj0vQ=w800-no?authuser=0
 categories:
   - equipment
-slug: /equipment/Sacoche-Bitplay-Aquaseal-02/
+slug: /equipment/sacoche-bitplay-aquaseal-02/
 ---
 
 ### 廢言 ###

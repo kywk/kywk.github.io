@@ -10,7 +10,7 @@ tags:
 sidebar_position: 5
 date_created: 2024-05-24T00:00:00.000Z
 date_updated: 2025-09-20T00:00:00.000Z
-slug: /utilities/Dotfiles-Management/
+slug: /utilities/dotfiles-management/
 ---
 
 # Dotfiles Management

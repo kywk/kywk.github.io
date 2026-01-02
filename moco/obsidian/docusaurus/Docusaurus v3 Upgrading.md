@@ -8,7 +8,7 @@ tags:
   - Note
 date_created: 2024-01-10T00:00:00.000Z
 date_updated: 2024-11-11T00:00:00.000Z
-slug: /obsidian/docusaurus/Docusaurus-v3-Upgrading/
+slug: /obsidian/docusaurus/docusaurus-v3-upgrading/
 ---
 
 # [Docusaurus] Upgrade to v3

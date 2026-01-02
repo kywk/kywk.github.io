@@ -1,5 +1,5 @@
 ---
-slug: /obsidian/plugins/Todo2Gantt/Todo-2-Gantt/
+slug: /obsidian/plugins/todo2gantt/todo-2-gantt/
 ---
 #SideProject
 

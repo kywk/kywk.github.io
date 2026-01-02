@@ -1,5 +1,5 @@
 ---
-slug: /lifehacker/Throw-Away-To-Do-List/
+slug: /lifehacker/throw-away-to-do-list/
 ---
 #LifeHack #Note 
 

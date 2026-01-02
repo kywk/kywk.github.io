@@ -10,7 +10,7 @@ image: >-
 categories:
   - equipment
   - camping
-slug: /equipment/Camping-Carry-Around/
+slug: /equipment/camping-carry-around/
 ---
 
 _last updated: 2022-08-04_

@@ -1,5 +1,5 @@
 ---
-slug: /utilities/NeoVim-as-IDE/
+slug: /utilities/neovim-as-ide/
 ---
 
 

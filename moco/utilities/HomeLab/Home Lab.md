@@ -1,5 +1,5 @@
 ---
-slug: /utilities/HomeLab/Home-Lab/
+slug: /utilities/homelab/home-lab/
 ---
 #TODO #HomeLab
 

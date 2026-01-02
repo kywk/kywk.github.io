@@ -12,7 +12,7 @@ date_created: 2024-05-24T00:00:00.000Z
 date_updated: 2025-09-23T00:00:00.000Z
 history:
   - 2024-05-24 Init
-slug: /obsidian/docusaurus/Docusaurus-Plugins/
+slug: /obsidian/docusaurus/docusaurus-plugins/
 ---
 
 # [Docusaurus] Plugin 使用筆記

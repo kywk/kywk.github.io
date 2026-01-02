@@ -11,7 +11,7 @@ web: 'https://whc.unesco.org/en/list/86'
 wiki: 'https://zh.wikipedia.org/zh-tw/吉薩金字塔群'
 mapmarker: default
 hide_table_of_contents: true
-slug: /2401-Egypt/Egypt/吉薩金字塔群-Giza-Necropolis/
+slug: /2401-egypt/egypt/吉薩金字塔群-giza-necropolis/
 ---
 吉薩金字塔群 Giza Necropolis
 ==========

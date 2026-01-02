@@ -10,7 +10,7 @@ location:
   - 29.63816
 mapmarker: default
 hide_table_of_contents: true
-slug: /2401-Egypt/Egypt/加拉洞穴-Djara-Cave/
+slug: /2401-egypt/egypt/加拉洞穴-djara-cave/
 ---
 加拉洞穴 Djara Cave
 ==================

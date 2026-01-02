@@ -4,7 +4,7 @@ title: Awesome DevOps
 tags:
   - DevSecOps
   - Awesome
-slug: /devsecops/Awesome-DevSecOps/
+slug: /devsecops/awesome-devsecops/
 ---
 
 Awesome DevSecOps Resources

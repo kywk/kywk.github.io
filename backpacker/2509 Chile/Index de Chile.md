@@ -9,7 +9,7 @@ tags:
 sidebar_position: 10
 date_created: 2025-09-27T00:00:00.000Z
 date_updated: 2025-10-13T00:00:00.000Z
-slug: /2509-Chile/Index-de-Chile/
+slug: /2509-chile/index-de-chile/
 ---
 
 # 2025.09.26 ~ 10.13 峙立 智利
