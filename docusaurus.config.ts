@@ -33,8 +33,9 @@ function loadPlugin(npmPackage, localPath) {
 const remarkWikiLink = require("remark-wiki-link");
 const remarkKanban = loadPlugin("remark-obsidian-kanban", "./plugins/remark-obsidian-kanban/src/index.js")?.remarkKanban;
 const remarkLeaflet = loadPlugin("remark-obsidian-leaflet", "./plugins/remark-obsidian-leaflet/src/index.js");
-const remarkSlugNormalizer = loadPlugin("remark-slug-normalizer", "./plugins/remark-slug-normalizer/src/index.js")?.remarkSlugNormalizer;
-const normalizeSlug = loadPlugin("remark-slug-normalizer", "./plugins/remark-slug-normalizer/src/index.js")?.normalizeSlug;
+const slugNormalizerPlugin = loadPlugin("remark-slug-normalizer", "./plugins/remark-slug-normalizer/src/index.js");
+const remarkSlugNormalizer = slugNormalizerPlugin?.remarkSlugNormalizer;
+const normalizeSlug = slugNormalizerPlugin?.normalizeSlug;
 
 // 建立檔案映射表 - 統一函數
 function createFileMap(basePath) {

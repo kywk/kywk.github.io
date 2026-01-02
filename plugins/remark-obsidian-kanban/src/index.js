@@ -89,15 +89,25 @@ function remarkKanban(options = {}) {
             }
             
             // 處理縮排內容作為卡片內容
-            if (listItem.children && listItem.children[1] && listItem.children[1].type === 'list') {
-              const subList = listItem.children[1];
-              subList.children.forEach(subItem => {
-                if (subItem.type === 'listItem' && subItem.children) {
-                  subItem.children.forEach(subChild => {
-                    card.content.push(subChild);
+            if (listItem.children && listItem.children.length > 1) {
+              // 處理除了第一個段落之外的所有內容
+              for (let i = 1; i < listItem.children.length; i++) {
+                const child = listItem.children[i];
+                
+                if (child.type === 'list') {
+                  // 處理子列表
+                  child.children.forEach(subItem => {
+                    if (subItem.type === 'listItem' && subItem.children) {
+                      subItem.children.forEach(subChild => {
+                        card.content.push(subChild);
+                      });
+                    }
                   });
+                } else {
+                  // 處理其他類型的內容（段落、圖片等）
+                  card.content.push(child);
                 }
-              });
+              }
             }
             
             if (card.title) {
