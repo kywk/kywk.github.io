@@ -23,8 +23,7 @@ hide_table_of_contents: true
 - [RunCode - 多语言在线代码执行平台](https://runcode.blendviewer.com/)
 - [Patterns.dev](https://www.patterns.dev/)
 - [Your browser has suspicious Sec-CH-UA-\* headers](https://utcc.utoronto.ca/~cks/space/blog/programming/ErrorsShouldRequireFixing)
-	- [Title Unavailable \| Site Unreachable](https://news.ycombinator.com/item?id=46301059)
-- 
+	- [Log level 'error' should mean that something needs to be fixed \| Hacker News](https://news.ycombinator.com/item?id=46301059)
 
 ### AI
 
@@ -36,13 +35,11 @@ hide_table_of_contents: true
 - [Google 推出 FunctionGemma 模型，模型全塞入手機，自然語言直接操作手機](https://hk.news.yahoo.com/google-%E6%8E%A8%E5%87%BA-functiongemma-%E6%A8%A1%E5%9E%8B-%E6%A8%A1%E5%9E%8B%E5%85%A8%E5%A1%9E%E5%85%A5%E6%89%8B%E6%A9%9F-184244400.html)
 - [愛好 AI Engineer 電子報 🚀 2025 Q4 AI 模型與 Agent 開發 #33 – ihower { blogging }](https://ihower.tw/blog/13553-aie-2025-models-and-agents)
 - [Anthropic更新Claude Skills，新增技能目錄並推動開放標準 \| iThome](https://www.ithome.com.tw/news/172920)
-- 
 
 ### IT News
 
 - [Anthropic收購JavaScript執行環境Bun強化Claude Code底層效能 \| iThome](https://www.ithome.com.tw/news/172593)
 - [Linux基金會成立代理式AI基金會，收編三大標準 \| iThome](https://www.ithome.com.tw/news/172732)
-- 
 
 ### Life
 
@@ -57,4 +54,3 @@ hide_table_of_contents: true
 - [南科工程師的「減速」日記：在不斷加速的 AI 年代，我為什麼選擇「慢」下來？｜noise／讀者投書｜換日線](https://crossing.cw.com.tw/article/20425)
 	- [ ] read it 📅 2025-12-22 
 - [冰島奇遇：不只極光、冰川與火山，還有獨特人文、小國幽默、低調超奢度假村⋯⋯等你探秘｜三姐妹看歐洲｜換日線](https://crossing.cw.com.tw/article/20421)
-- 

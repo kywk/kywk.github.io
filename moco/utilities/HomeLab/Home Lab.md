@@ -18,7 +18,7 @@ slug: /utilities/homelab/home-lab/
 	- [ ] Read it by AI and review (n8n)
 
 ### NAS
-- [ ] Setup Dell 7040m BigSur for NAS 📅 2025-12-31
+- [ ] Setup Dell 7040m BigSur for NAS 📅 2026-02-28
 
 ## Follow up
 
