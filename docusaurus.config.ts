@@ -294,7 +294,7 @@ const config: Config = {
       },
       items: [
         {
-          to: "/backpacker/Lonely-Planet",
+          to: "/backpacker/lonely-planet",
           label: "lonely planet",
           position: "left",
           activeBaseRegex: `/backpacker/`,
@@ -326,7 +326,7 @@ const config: Config = {
         {
           title: "主題索引",
           items: [
-            { label: "Backpacker", to: "/backpacker/Lonely-Planet" },
+            { label: "Backpacker", to: "/backpacker/lonely-planet" },
             { label: "Lifehacker", to: "/lifehacker/way-2-kywk" },
             { label: "MoCo Lab", to: "/moco/kywk.moco" },
           ],

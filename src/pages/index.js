@@ -34,7 +34,7 @@ const quickStarts = [
     id: 'lonely-planet',
     title: 'Lonely Planet Toolkit',
     description: '行前 checklist、交通攻略與目的地索引，一次掌握長程旅行的準備。',
-    to: '/backpacker/Lonely-Planet/',
+    to: '/backpacker/lonely-planet/',
   },
   {
     id: 'weekend-project',
@@ -68,7 +68,7 @@ function Hero() {
           <div className={styles.heroActions}>
             <Link
               className={clsx('button button--primary button--lg', styles.heroButton)}
-              to="/backpacker/Lonely-Planet/">
+              to="/backpacker/lonely-planet/">
               探索 Backpacker
             </Link>
             <Link
