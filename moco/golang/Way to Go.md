@@ -16,6 +16,6 @@ slug: /golang/way-to-go/
 
 ### CodeBase
 
-- [ ] CLI project base src tree & README.md 🔽 📅 2025-11-30
+- [ ] CLI project base src tree & README.md 🔽 📅 2026-01-01
 
 ## See Also

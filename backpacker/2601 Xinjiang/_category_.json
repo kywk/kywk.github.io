@@ -1,8 +1,8 @@
 {
-  "label": "XingJang",
+  "label": "Xinjiang",
   "position": 7398,
   "link": {
-    "type": "generated-index",
-    "description": "2026.01 XingJang"
+    "type": "doc",
+    "id": "Index Xinjiang"
   }
 }

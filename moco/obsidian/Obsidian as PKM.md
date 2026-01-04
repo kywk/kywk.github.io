@@ -18,12 +18,12 @@ slug: /obsidian/obsidian-as-pkm/
 - [x] obs-howto_docusaurus-integrate 📅 2023-09-08 ✅ 2023-09-14
 
 - [Introduction to Bases - Obsidian Help](https://help.obsidian.md/bases)
-	- [ ] Study & Refine my Obsidian Vault 📅 2026-01-01
+	- [ ] Study & Refine my Obsidian Vault 📅 2026-01-18
 
 ### myOutlook
-- [ ] obs-core_properties 🔽 📅 2026-01-01
-- [ ] obs_task-management 🔽 📅 2026-01-04
-- [ ] obs-core_daily-notes 🔼 📅 2026-01-07
+- [ ] obs-core_properties 🔽 📅 2026-01-07
+- [ ] obs_task-management 🔽 📅 2026-01-11
+- [ ] obs-core_daily-notes 🔼 📅 2026-01-15
 - [x] Reorganize Obsidian ✅ 2024-01-04
 
 ### myAnobii

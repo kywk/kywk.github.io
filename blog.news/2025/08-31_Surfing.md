@@ -35,15 +35,15 @@ hide_table_of_contents: true
 - [Perplexity Labs 快速上手攻略：一人秒變身團隊的 AI 生產力速效藥 \| T客邦](https://www.techbang.com/posts/124802-perplexity-labs-ai-research-platform)
 - [Minusx \| What makes Claude Code so damn good (and how to recreate that magic in your agent)!?](https://minusx.ai/blog/decoding-claude-code/)
 	- [What makes Claude Code so damn good \| Hacker News](https://news.ycombinator.com/item?id=44998295)
-	- [ ] deep reading  📅 2025-08-31 
+	- [ ] deep reading  📅 2026-01-01 
 - [how to build a coding agent: free workshop](https://ghuntley.com/agent/)
 	- [How to build a coding agent \| Hacker News](https://news.ycombinator.com/item?id=45001051)
-	- [ ] deep reading  📅 2025-08-31 
+	- [ ] deep reading  📅 2026-01-01 
 - [別讓使用 Vibe Coding 的起點，成為你學習的終點](https://studyhost.blogspot.com/2025/08/vibe-coding.html)
 - [愛好 AI Engineer 電子報 🚀 OpenAI GPT-5 推出 #31 – ihower { blogging }](https://ihower.tw/blog/13197-aie-openai-gpt-5)
 - [AGENTS.md](https://agents.md/)
 	- [AGENTS.md – Open format for guiding coding agents \| Hacker News](https://news.ycombinator.com/item?id=44957443)
-	- [ ] deep reading  📅 2025-08-31 
+	- [ ] deep reading  📅 2026-01-01 
 - [AI Agent 開發者必學的 Streaming 漸進式輸出技巧](https://studyhost.blogspot.com/2025/08/ai-agent-streaming.html)
 - [挑目標、寫程式到分析受害者全一條龍完成！Anthropic 為何稱「Vibe Hacking」成新駭客主流？ - INSIDE](https://www.inside.com.tw/article/39429-anthropic-admits-its-ai-is-being-used-to-conduct-cybercrime)
 - [官方指南：用 GPT-5 coding 要注意哪些眉眉角角？ - INSIDE](https://www.inside.com.tw/article/39415-openai-gpt-5-vibe-coding)

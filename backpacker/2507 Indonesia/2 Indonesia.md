@@ -69,4 +69,4 @@ slug: /2507-indonesia/2-indonesia/
 
 - [x] Photo sync / organize 📅 2025-07-23 ✅ 2025-08-10
 	- [x] Mi9 Sync & Upload 📅 2025-07-23 ✅ 2025-08-10
-- [ ] Kindly Indonesia 📅 2025-08-10
+- [ ] Kindly Indonesia 📅 2026-01-01
