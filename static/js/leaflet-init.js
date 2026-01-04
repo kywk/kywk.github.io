@@ -1,10 +1,12 @@
 // Leaflet Map Initialization Script for Docusaurus
 // Supports dynamic light/dark theme switching and UTF-8 Chinese characters
+// Fixed: Wait for React hydration to complete before initializing maps
 
 (function () {
     var initAttempts = 0;
     var maxAttempts = 50;
     var initializedMaps = {};
+    var hydrationComplete = false;
 
     // Detect current Docusaurus theme
     function isDarkMode() {
@@ -38,6 +40,9 @@
 
             // Skip if already initialized
             if (initializedMaps[mapId]) return;
+
+            // Check if map element already has Leaflet content (avoid re-init)
+            if (mapEl.classList.contains('leaflet-container')) return;
 
             try {
                 var encodedConfig = wrapper.getAttribute('data-leaflet-config');
@@ -135,20 +140,40 @@
         themeObserver.observe(document.documentElement, { attributes: true });
     }
 
-    // Initialize on load
-    initLeafletMaps();
+    // Wait for hydration to complete before initializing
+    // Docusaurus adds a specific class after hydration
+    function waitForHydration(callback) {
+        // Check if already hydrated (for subsequent navigation)
+        var docEl = document.getElementById('__docusaurus');
+        if (docEl && docEl.hasAttribute('data-has-hydrated')) {
+            callback();
+            return;
+        }
 
-    if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', function () {
+        // Use a longer delay to ensure hydration is complete
+        // React hydration typically completes within 500-1000ms
+        setTimeout(function () {
+            if (docEl) {
+                docEl.setAttribute('data-has-hydrated', 'true');
+            }
+            callback();
+        }, 800);
+    }
+
+    // Initialize after page is fully loaded and hydrated
+    if (document.readyState === 'complete') {
+        waitForHydration(function () {
             initAttempts = 0;
             initLeafletMaps();
         });
+    } else {
+        window.addEventListener('load', function () {
+            waitForHydration(function () {
+                initAttempts = 0;
+                initLeafletMaps();
+            });
+        });
     }
-
-    window.addEventListener('load', function () {
-        initAttempts = 0;
-        setTimeout(initLeafletMaps, 100);
-    });
 
     // Re-run on URL changes (SPA navigation)
     var lastUrl = location.href;
@@ -156,8 +181,17 @@
         if (location.href !== lastUrl) {
             lastUrl = location.href;
             initAttempts = 0;
+            // Clear maps for new page
+            Object.keys(initializedMaps).forEach(function (mapId) {
+                try {
+                    if (initializedMaps[mapId] && initializedMaps[mapId].map) {
+                        initializedMaps[mapId].map.remove();
+                    }
+                } catch (e) { }
+            });
             initializedMaps = {};
-            setTimeout(initLeafletMaps, 300);
+            // Wait a bit for new page content to render
+            setTimeout(initLeafletMaps, 500);
         }
     }).observe(document.body, { childList: true, subtree: true });
 })();
