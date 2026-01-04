@@ -15,7 +15,7 @@ function loadPlugin(npmPackage, localPath) {
     `./plugins/${npmPackage}`,     // 手動 clone 到 plugins 目錄
     `./plugins/${npmPackage}/src/index.js`, // 手動 clone 的完整路徑
   ];
-  
+
   for (const pluginPath of possiblePaths) {
     try {
       const plugin = require(pluginPath);
@@ -25,7 +25,7 @@ function loadPlugin(npmPackage, localPath) {
       // 繼續嘗試下一個路徑
     }
   }
-  
+
   Logger.warn(`Plugin ${npmPackage} not found in any location`, 'PluginLoader');
   return null;
 }
@@ -138,15 +138,15 @@ function createPageResolver(fileMap) {
 // 建立共用的 remark 插件配置
 function createRemarkPlugins(fileMap, routeBase) {
   const plugins = [];
-  
+
   if (remarkSlugNormalizer) {
     plugins.push(remarkSlugNormalizer);
   }
-  
+
   if (remarkLeaflet) {
     plugins.push([remarkLeaflet, { routeBase }]);
   }
-  
+
   if (remarkKanban) {
     plugins.push([
       remarkKanban,
@@ -156,7 +156,7 @@ function createRemarkPlugins(fileMap, routeBase) {
       },
     ]);
   }
-  
+
   plugins.push([
     remarkWikiLink,
     {
@@ -165,7 +165,7 @@ function createRemarkPlugins(fileMap, routeBase) {
       aliasDivider: pluginConfig.wikiLink.aliasDivider,
     },
   ]);
-  
+
   return plugins;
 }
 
@@ -183,6 +183,7 @@ const config: Config = {
   deploymentBranch: "gh-pages",
 
   onBrokenLinks: "warn",
+  onBrokenMarkdownLinks: "warn",
 
   stylesheets: [
     {

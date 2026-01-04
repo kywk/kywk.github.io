@@ -216,9 +216,9 @@ function remarkKanban(options = {}) {
 .kanban-board-container img { max-width: 100%; height: auto; border-radius: 4px; }
 </style><div class="kanban-board-container">${html}<script>
 setTimeout(() => {
-  document.querySelectorAll('*').forEach(el => {
+  document.querySelectorAll('p, code, pre, div:not(.kanban-board-container)').forEach(el => {
     const text = el.textContent || '';
-    if (text.includes('kanban:settings') || text.includes('kanban-plugin') && text.includes('%%')) {
+    if (text.includes('kanban:settings') || (text.includes('kanban-plugin') && text.includes('%%'))) {
       el.style.display = 'none';
     }
   });
