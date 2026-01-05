@@ -1,14 +1,14 @@
 ---
 title: 2026 Jan 心將 新疆
-slug: /2601-xinjiang/index-de-xinjiang/
+slug: /2601-xinjiang/index-xinjiang/
 tags:
   - Backpacker
   - Index
   - China
   - Xinjiang
 sidebar_position: 10
-date_created: 2025-12-31
-date_updated: 2026-01-05
+date_created: 2025-12-31T00:00:00.000Z
+date_updated: 2026-01-05T00:00:00.000Z
 ---
 
 # 2026.01.24 ~ 02.08 心將 新疆

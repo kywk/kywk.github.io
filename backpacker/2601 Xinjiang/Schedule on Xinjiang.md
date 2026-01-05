@@ -33,7 +33,7 @@ kanban-plugin: board
 
 - [ ] ![](https://lh3.googleusercontent.com/pw/AP1GczOnrRaPPfrKXHnc6eypYiaMkBGsRnoFaLhwGM-az6q2SG-Ya_5VLjE_tUL4k-Rn-apfuEMhzPUK_lCr7nttLk8ezKAtVXwGhG870PtRflOptth7Nn6CWunoQTlYvxSIco3uFztec-cytxVfODdCrdx-lQ=w480-no-gm)
 - [ ] 🌡️ **台北** 18°C/12°C | **上海** 8°C/-2°C
-- [ ] 🌅🌇 **日出日落** 台北 06:45/17:25 | 上海 07:00/17:15
+- [ ] 🌅🌇 台北 06:45/17:25 | 上海 07:00/17:15
 - [ ] __18:40 TPE > PVG__
 	
 	中國東方航空股份有限公司 MU5006
@@ -55,7 +55,7 @@ kanban-plugin: board
 
 - [ ] ![](https://lh3.googleusercontent.com/pw/AP1GczMVjQMtyVLSw4i0uxAWnlzrmwo2U38ZOcdktHGeRZhsuQIYCwTJzjbRN9uhjwSDlK2D0ON4P8b4jfnjzwu-hRHPXlZBO0lXijjHs2sWg5Iuy9ToFxRtmLjSvRq8MOUJvmvYw9hIqWxtfQcbKvvpFFtdvA=w480-no-gm)
 - [ ] 🌡️ **上海** 8°C/-2°C | **喀什** -2°C/-14°C ❄️
-- [ ] 🌅🌇 **日出日落** 上海 07:00/17:15 | 喀什 09:15/19:30
+- [ ] 🌅🌇 上海 07:00/17:15 | 喀什 09:15/19:30
 - [ ] __07:45 PVG > KHG__
 	
 	中國東方航空股份有限公司 MU6221
@@ -69,14 +69,14 @@ kanban-plugin: board
 
 - [ ] ![](https://lh3.googleusercontent.com/pw/AP1GczNqQpor6k3aOnWte0MV7FUKLz2h8MYA4TuA1UFSIArD4xYSgThl4m-902vsdYYpJEl0JCZsiH-bmK3J-1mQLb2iF1WBHNK9WbGxVoL_Pzs7zVxeY-aUDKfT0BGHEpn2BYqY1KcyAsoi8B2qVGnKUKGAxg=w480-no-gm)
 - [ ] 🌡️ **喀什** -2°C/-14°C ❄️
-- [ ] 🌅🌇 **日出日落** 喀什 09:15/19:30
+- [ ] 🌅🌇 喀什 09:15/19:30
 
 
 ## 01.27 喀什 > 莎車
 
 - [ ] ![](https://lh3.googleusercontent.com/pw/AP1GczN3lt8pl9uWSVGxf_XjqcLNzXOanguzujuVTdSwm-2XrUY6MJ8-ioH092kak8z9Ssd_q7d0GYylIXU7abaBmvNCE-L5L5Rmzvkq6oaRjbJKnJtmm1CsXGr_PqZeZppFv8Vq48wnRS8DBbYKIKSpE0XJfA=w480-no-gm)
 - [ ] 🌡️ **喀什** -2°C/-14°C ❄️ | **莎車** 0°C/-12°C ❄️
-- [ ] 🌅🌇 **日出日落** 喀什 09:15/19:30 | 莎車 09:20/19:35
+- [ ] 🌅🌇 喀什 09:15/19:30 | 莎車 09:20/19:35
 - [ ] [[香妃墓 Xiangfei Tomb]]
 	![](https://lh3.googleusercontent.com/pw/AP1GczOCCqVgJlgCdJXoMHDH7X7VIdgI7S2fvXy8mH2tpuftprCAGhcMHjmJ-OJ5elmuL8rnpW_LJrY4zQyLx8BnCe0nZfFiMdH_mKdcXBnfqehwpcc9crwqRRvvM-oht2Z2Xsu8lmxX5IKqKo0vOxu1s1dHuA=w275-h183-s-no-gm?authuser=0)
 - [ ] [[玉素甫墓 Yusuf Tomb]]
@@ -88,7 +88,7 @@ kanban-plugin: board
 
 - [ ] ![](https://lh3.googleusercontent.com/pw/AP1GczNuAWaCwyh1y_YhELiyH7fp8cL3f1u7ePbbMKeLvUKclww46i_6M4aE9kYkONMCXwu-jmUlqFMNVLHeba-UxWG3DQUFH5DiRzLQRIfNMC0FXiH3Nqokmp-3IZutlha5gMYeBu9S4miC0mAYJafN0-Q-Rg=w480-no-gm)
 - [ ] 🌡️ **莎車** 0°C/-12°C ❄️ | **喀什** -2°C/-14°C ❄️
-- [ ] 🌅🌇 **日出日落** 莎車 09:20/19:35 | 喀什 09:15/19:30
+- [ ] 🌅🌇 莎車 09:20/19:35 | 喀什 09:15/19:30
 - [ ] [[錫提亞迷城 Xitiya Lost City]]
 	![](https://lh3.googleusercontent.com/pw/AP1GczO9SRk0FcT3soOYTwxJ26C0ZKl6-CeR244E7EAZbSiVROp_PFCBTytAenMchX5RL481TUnGMpgzZB34bwNk4W9JdNlFj3zBIvfBH6lwZCNRdMuQBEmWxv4ljWWUjMPg7xvOS_-fRc6OVGyqIskqSjo3DA=w193-h261-s-no-gm?authuser=0)
 - [ ] ![](https://lh3.googleusercontent.com/pw/AP1GczN04BLdyyPiZLJuihtiazw1VgJPJsUUj3w4UtT83fShXHDaB58l7NDdhj8zkJl9-x1S60Le4KTyMOzoz8ftVoXTq-QHDvjEEGPSq4skvKg3JOFexNojSxn8zH0Z5aU33GYwJc4d6bmceeySITd4L5w3RQ=w480-no-gm)
@@ -98,7 +98,7 @@ kanban-plugin: board
 
 - [ ] ![](https://lh3.googleusercontent.com/pw/AP1GczOthsgppXm13xasx-Je3SVdpan8iYvdPG6Z5dOqaqz2-ijXMcEeFPjC1wiUniTd7G5YegLR0eNix746Pk8ukS_0oGAwF8wxARHMltTF934jrGBR-QSC1ac5mzoda6gh1lEOeYCPZxO2jSxzloWeFQOJ4Q=w480-no-gm)
 - [ ] 🌡️ **喀什** -2°C/-14°C ❄️ | **塔县** -8°C/-22°C 🥶
-- [ ] 🌅🌇 **日出日落** 喀什 09:15/19:30 | 塔县 09:00/19:15
+- [ ] 🌅🌇 喀什 09:15/19:30 | 塔县 09:00/19:15
 - [ ] [[氣泡山 Bubble Mountain]]
 	![](https://lh3.googleusercontent.com/pw/AP1GczNdCQpeohosEPxkxt591TRFOq3wQgQMnrwaQ0mprccSrNYJLOfLDdULzkk0OyRsVW3pjCDRjBwk_KOjjegmN4vuvVf1lut_rJCHorWbWr-eCBdfwJa0hIb0m6B-tB06AilHpA3VlRnPxoaI76TTqdWJdg=w1038-h613-s-no-gm?authuser=0)
 - [ ] [[白沙湖南岸 Baisha Lake South Shore]]
@@ -116,7 +116,7 @@ kanban-plugin: board
 
 - [ ] ![](https://lh3.googleusercontent.com/pw/AP1GczO7VT3aWoDAQa1Onq0tSOYTZHWxLaAjDjdnlxqVOTElDeKg24EGVcYXMUDz_UMo7GXi8B55cKBqO1i5FXuMlMvcGK43IPU0qr7h_b66t0IpaY4Ylt2tHSEhg_API_3-2-UO1NjYSIou2rMtNc5wTlTmMg=w480-no-gm)
 - [ ] 🌡️ **塔县** -8°C/-22°C 🥶
-- [ ] 🌅🌇 **日出日落** 塔县 09:00/19:15
+- [ ] 🌅🌇 塔县 09:00/19:15
 - [ ] [[托克倫夏村 Tuokelunxia Village]]
 	![](https://lh3.googleusercontent.com/pw/AP1GczPG4it7zPYWOiTLNLCSC4-PaxOyMAQUpOJX7j4_ZNYzsvxpxhTC54e0Eyp3o4a6rsdpxh75jSJpQXaI28uMUOk4hizH6Ne6SbAOBzyaSlwip-UC-PWNU-CnTUEDYJ1P9W8uPg6C_mix_tnnQ0l2POIYzA=w278-h181-s-no-gm?authuser=0)
 - [ ] [[盤龍古道 Panlong Ancient Road]]
@@ -131,7 +131,7 @@ kanban-plugin: board
 
 - [ ] ![](https://lh3.googleusercontent.com/pw/AP1GczPy3X1VJ6kFYRHfUc2a4vW5_8JS5zFlQ31ch9g2ec84PP1DhgV6srn6cBek39AFnchikWKtZqBROmXFFE0I42qtrC2jluN0u_YiDSjm9QePxdtCRgu8pbyoD5B3XhnKxwDLv2r4Rabv-FoR48GQeQyQKA=w480-no-gm)
 - [ ] 🌡️ **塔县** -8°C/-22°C 🥶 | **白沙湖** -12°C/-24°C 🧊
-- [ ] 🌅🌇 **日出日落** 塔县 09:00/19:15 | 白沙湖 08:45/19:00
+- [ ] 🌅🌇 塔县 09:00/19:15 | 白沙湖 08:45/19:00
 - [ ] [[慕士塔格2號冰川 Muztagh Ata Glacier No.2]]
 	![](https://lh3.googleusercontent.com/pw/AP1GczOTa6vNvJX_eMRj_cNuvUfaXEa_s2fmU6j-_STISWJ_6Af0N6EweMXHOtE5gZaFf7vJ4DVLqVCvh_oUQeYeVsBvZ_MwEeYtkdFTpcNnRNXqLD4dsVA3WJ9jrna33dDrMYhZBv5VMTt14h5IUTQpEOu7vA=w295-h171-s-no-gm?authuser=0)
 - [ ] ![](https://lh3.googleusercontent.com/pw/AP1GczP1i1aVo271OLAz4XzSTW8272iJxFE1oli0Z3JgYMvKF0LB_8846mLGZX9GVX3qYR3-d1oa_Y_nLnkYFW5J_RAOtDp4Xs8p8f8DEsNFzgLorcgCEm55Ik6hQFOWwHGcMnnVG6KyFxExC-6AwHTjndR55g=w480-no-gm)
@@ -141,7 +141,7 @@ kanban-plugin: board
 
 - [ ] ![](https://lh3.googleusercontent.com/pw/AP1GczMJPYEtx_57g-xxs1r2o0uAQRWj7Vh9cJWA4GYFKXot5a23ND2bQuobYswHSaBugWKwK4hK4l5555sjwFhVz5b1tINf8CV_clskGlpMBPhVo0esvfLrIt1Ka8PkwSbKXuw05NWabpYRiJoGNDM4GLoYXg=w480-no-gm)
 - [ ] 🌡️ **白沙湖** -12°C/-24°C 🧊 | **喀什** -2°C/-14°C ❄️
-- [ ] 🌅🌇 **日出日落** 白沙湖 08:45/19:00 | 喀什 09:15/19:30
+- [ ] 🌅🌇 白沙湖 08:45/19:00 | 喀什 09:15/19:30
 - [ ] [[白沙湖西岸 Baisha Lake West Shore]]
 - [ ] [[木吉火山口 Muji Volcanic Crater]]
 	![](https://lh3.googleusercontent.com/pw/AP1GczNOIpzLZK516_pVR42PNFkT-Ormn_4Z1UaYb5gEqt0eqSWaJPB2yfjxGGefx2RGB6vurc9VzZHp2UVKbw8rkSrX-rZuEvftgnwShRmJd26ohkCurfhXzMc1yqx72CdSgPxP1JflAAgKoqJFTOs0mdaEng=w194-h259-s-no-gm?authuser=0)
@@ -156,7 +156,7 @@ kanban-plugin: board
 
 - [ ] ![](https://lh3.googleusercontent.com/pw/AP1GczPSwdiFuBwO2BzugPTlHCYz6YzQl0YcA-WKoHhnoLHdDOwFSjZDtrUlHGVLMtBpiZ3Uxp5_ehM0Nsb_ouw3_vl84iUsNZYYZaBRMzQsGzja6T3GB_8l7fvjkSlLYFnCgYPMlw_dr1kRllCroy2AB3XMLw=w480-no-gm)
 - [ ] 🌡️ **布爾津** -5°C/-19°C ❄️
-- [ ] 🌅🌇 **日出日落** 布爾津 08:30/18:45
+- [ ] 🌅🌇 布爾津 08:30/18:45
 - [ ] [[將軍山滑雪場 General Mountain Ski Resort]]
 	![](https://lh3.googleusercontent.com/pw/AP1GczN9gKq7fbPR5ACUOcYoEpsKS3lFULlPxr9Gq_A0KxwzCeHHDK2L2Df1pkAT-4aPWh8TInVEOK2QTGSbcHUjt8AgE4TmdFWUshbEE-Y9CI9JRcigaV8CGPz_dQrw1iSLc5m5n9X7aqNr60pjq3fA8PzUKw=w750-h500-s-no-gm?authuser=0)
 - [ ] ![](https://lh3.googleusercontent.com/pw/AP1GczO7FHvXBZPW-OLvvOjXNvpaVX_2s_7zYFtPh4N48U-EptekwjJQbwrlyC-P7pKBkxGQ_VaY4VnP6mmoNoEEMrOWgUPR0h5cXPcoCQnA012HogOIJFw9KmBCnnzKTx7F504q6KWv4YfzsdC5KJpP0w19KA=w480-no-gm)
@@ -166,7 +166,7 @@ kanban-plugin: board
 
 - [ ] ![](https://lh3.googleusercontent.com/pw/AP1GczMyvA3lpwS9DjNk3LL61qWtiO2vyrFNLzb-EgSd3HYUSEoNhgXxciMTm_Ge7hTJQVqhJwQ44LGjUV4j-Ybp1E8fw7bsBm9gyaz4s99htUoNSnad1dfTCRsFv1m8MijJ6eXFbJPCFoh3zBRIzUbjGP7TdA=w480-no-gm)
 - [ ] 🌡️ **布爾津** -5°C/-19°C ❄️ | **喀納斯** -10°C/-26°C 🧊
-- [ ] 🌅🌇 **日出日落** 布爾津 08:30/18:45 | 喀納斯 08:20/18:35
+- [ ] 🌅🌇 布爾津 08:30/18:45 | 喀納斯 08:20/18:35
 - [ ] [[喀納斯三灣 Kanas Three Bays]]
 	![](https://lh3.googleusercontent.com/pw/AP1GczPGuZR_r8YOicMQlrmjlUjCKU4VfXzRpL1rL52rXdugudfrJIkdsp69UTz9s--H3t9xO9W5aXcNchXhin6bWW2fNRDosnDWFVmGMDx97Fl1jPFXlLDxphm7AAGm_1nCuYdytMMam9bwJRVAaZnd7-V3_g=w168-h300-s-no-gm?authuser=0)
 - [ ] ![](https://lh3.googleusercontent.com/pw/AP1GczPG62_CwnQfgAQLP-ViKwTdM_10k6rnLVlr-PWY2TNT58tIABzdts0x3IpkNEzif2qgVyYh9oTrnfWwTvheUdwAoyvzGbZC74Q3Qgr_q_Yy_W7nfoCn81n8NzWiwwkihfMV7zBmUNzV860Z4Efj5FOIBg=w480-no-gm)
@@ -176,7 +176,7 @@ kanban-plugin: board
 
 - [ ] ![](https://lh3.googleusercontent.com/pw/AP1GczPIOj0sxk2rHmPAQo1J-hXXu14KoKyjTYx9LYS11L-CDX3nf5eT_qjwWzSnOVARjuXEE2rGA2Fqe_j2ljiA8BvYS0PabUnRYNZxjgM-r0WfWZzPzxnZX8EWhYfHqsoisnyHYe9re5dmPWqFF0guuMnErA=w480-no-gm)
 - [ ] 🌡️ **禾木村** -12°C/-28°C 🧊
-- [ ] 🌅🌇 **日出日落** 禾木村 08:15/18:30
+- [ ] 🌅🌇 禾木村 08:15/18:30
 - [ ] [[禾木村 Hemu Village]]
 	![](https://lh3.googleusercontent.com/pw/AP1GczOhnBGKRLJmaJ0xgPGodWMoP3K_YD3MBDrv4ah8qEe-cBwk1e_sPdYnfpw0Hi8HlqIB8jL9EHOmfJbMNwK0An6ZbY25egX9Bf-isOIKOt8MhcAX8vrzmXNNwIm1F819ZdLZ6Y23TfN6LIFZcGIy5QgM6A=w1175-h784-s-no-gm?authuser=0)
 - [ ] ![](https://lh3.googleusercontent.com/pw/AP1GczN08s-Th-B6FFtL6RQtOSNU8Mbc73eHo3b85o4uCcBMBTwy0lkY6WWqIm4LLWNnEP_X-TC8ITxFnQFohiuv3hW1bBO727OCp5oFwXgWtYGyY-h7ntu5bKan38rzcuWoCyZGM5AaRv6UBml421vdKDyKsQ=w480-no-gm)
@@ -186,28 +186,28 @@ kanban-plugin: board
 
 - [ ] ![](https://lh3.googleusercontent.com/pw/AP1GczOXMmq5EDLy_03U6oRG-j6bj_ChaW3gKr1q-rnscO2SmxW-pM8VhKpcqyzaI8Y-in72bHD7Pha5qou4FMEP_VPwfcTYa_WCyymraEoE-nMM58AONBznUA7EK5hWdyBtfd6MJPUcVT2HYv5yuJgOVehKDQ=w480-no-gm)
 - [ ] 🌡️ **禾木** -12°C/-28°C 🧊 | **阿勒泰** -8°C/-22°C 🥶
-- [ ] 🌅🌇 **日出日落** 禾木 08:15/18:30 | 阿勒泰 08:25/18:40
+- [ ] 🌅🌇 禾木 08:15/18:30 | 阿勒泰 08:25/18:40
 
 
 ## 02.06 阿勒泰 > 烏魯木齊
 
 - [ ] ![](https://lh3.googleusercontent.com/pw/AP1GczNfABM9ZoJet9gzKi6-0w-jGB25bAoWZv4IA-kIadIGIPF6FoyipnVfAWGOPlP-gcqB2d_8Rqv0bGmluDDDmBZ434XnGqp99RWBEfv-ixt1xKtvIo0mEbGBsX5yvwAO1pE7-8gEgc8-O5KzwtQUakkCLQ=w480-no-gm)
 - [ ] 🌡️ **阿勒泰** -8°C/-22°C 🥶 | **烏魯木齊** -3°C/-17°C ❄️
-- [ ] 🌅🌇 **日出日落** 阿勒泰 08:25/18:40 | 烏魯木齊 08:45/19:00
+- [ ] 🌅🌇 阿勒泰 08:25/18:40 | 烏魯木齊 08:45/19:00
 
 
 ## 02.07 烏魯木齊
 
 - [ ] ![](https://lh3.googleusercontent.com/pw/AP1GczPqM2_jWEaR1vmuW1CrTJGRMLv9ccTZLUDCVO8Sxsps_nqi3mrY-ctdcEOJbKJehJBAQxDE3BZKMTNlY7uVj404a5otfb5WN5nDwNlSjnl8YCoSloCMjbN77lwEQsFxVi4iWY8NL2OWPkbjWqG_jz4snA=w480-no-gm)
 - [ ] 🌡️ **烏魯木齊** -3°C/-17°C ❄️
-- [ ] 🌅🌇 **日出日落** 烏魯木齊 08:45/19:00
+- [ ] 🌅🌇 烏魯木齊 08:45/19:00
 
 
 ## 02.08 烏魯木齊 > 台北
 
 - [ ] ![](https://lh3.googleusercontent.com/pw/AP1GczPc_JbD1hwIjlZqopRuIMXY3Ib7B-gzXx9088McwMe6F9BjMp8GFo1CikAM9QEY3A4a6YwPuIjswBmhPdxxq45lyQTJ7pMQRhO_OPmM6yQF3ASktcWj1S4CUDBwgGFLiVOirjt8eMl6y92YqxGGNTdbsA=w480-no-gm)
 - [ ] 🌡️ **烏魯木齊** -3°C/-17°C ❄️ | **台北** 18°C/12°C 🌞
-- [ ] 🌅🌇 **日出日落** 烏魯木齊 08:45/19:00 | 台北 06:45/17:25
+- [ ] 🌅🌇 烏魯木齊 08:45/19:00 | 台北 06:45/17:25
 - [ ] __07:10 URC > TFU__
 	
 	中國國際航空股份有限公司 CA2506
