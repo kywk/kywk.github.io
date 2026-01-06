@@ -13,7 +13,7 @@ slug: /golang/go-tour/go-tour-channel/
 [Go] Tour: Goroutine 和 Channel 心得筆記
 ======================================
 
-[_承: Go: Goroutine 心得筆記_](Go Tour Goroutine.md)
+[[Go Tour Goroutine|承: Go: Goroutine 心得筆記]]
 
 
 Channel 介紹
