@@ -86,4 +86,4 @@ Around me
 - [[obs-plugin_templater|Templater]]
 
 ---
-__See Also: [[obs_awesome|Awesome Obsidian]]__
+__See Also: [[Awesome Obsidian]]__

@@ -27,7 +27,7 @@ Tools
 ### API Client ###
 
 - [[util_postman-alt|API Client and Postman alternative]]
-- [[util_insomnia-plugin|Insomnia plugin develop note]]
+- [[Insomnia Plugin|Insomnia plugin develop note]]
 
 ---
 
