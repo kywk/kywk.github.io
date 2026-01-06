@@ -7,7 +7,7 @@ tags:
 sidebar_position: 2
 date_created: 2022-08-29T06:05:03.000Z
 image: 'https://i.imgur.com/mErPwqL.png'
-slug: /miscellaneous/reactnative/the-basics/react-native-components/
+slug: /miscellaneous/react-native/react-native-components/
 ---
 	
 import Tabs from '@theme/Tabs';

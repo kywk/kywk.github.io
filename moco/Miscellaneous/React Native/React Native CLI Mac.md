@@ -8,7 +8,7 @@ tags:
 sidebar_position: 1
 date_created: 2022-08-16T16:00:00.000Z
 image: 'https://i.imgur.com/mErPwqL.png'
-slug: /miscellaneous/reactnative/env-setup/react-native-cli-mac/
+slug: /miscellaneous/react-native/react-native-cli-mac/
 ---
 
 import Tabs from '@theme/Tabs';
