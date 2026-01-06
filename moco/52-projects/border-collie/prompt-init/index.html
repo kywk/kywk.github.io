@@ -1,0 +1,294 @@
+<!doctype html><html lang=zh-TW dir=ltr class="docs-wrapper plugin-docs plugin-id-moco docs-version-current docs-doc-page docs-doc-id-52 Projects/Border Collie/Prompt Init" data-has-hydrated=false><head><meta charset=UTF-8><meta name=generator content="Docusaurus v3.9.2"><title data-rh=true>BorderCollie - AI Coding Agent Prompt | kywk.me</title><meta data-rh=true name=viewport content="width=device-width, initial-scale=1.0"/><meta data-rh=true property=og:image content=https://kywk.github.io/img/og-social-card.png /><meta data-rh=true name=twitter:image content=https://kywk.github.io/img/og-social-card.png /><meta data-rh=true property=og:url content=https://kywk.github.io/moco/52-projects/border-collie/prompt-init/ /><meta data-rh=true property=og:locale content=zh_TW /><meta data-rh=true name=docusaurus_locale content=zh-TW /><meta data-rh=true name=docsearch:language content=zh-TW /><meta data-rh=true name=keywords content="旅行, 背包客, 生活效率, 工程筆記, DevSecOps, Obsidian"/><meta data-rh=true name=author content=kywk /><meta data-rh=true property=og:type content=website /><meta data-rh=true property=og:site_name content=kywk.me /><meta data-rh=true name=twitter:card content=summary_large_image /><meta data-rh=true name=docusaurus_version content=current /><meta data-rh=true name=docusaurus_tag content=docs-moco-current /><meta data-rh=true name=docsearch:version content=current /><meta data-rh=true name=docsearch:docusaurus_tag content=docs-moco-current /><meta data-rh=true property=og:title content="BorderCollie - AI Coding Agent Prompt | kywk.me"/><meta data-rh=true name=description content="本文件為 AI Coding Agent 可直接引用的 prompt，描述 BorderCollie 專案的完整規格與設計決策。"/><meta data-rh=true property=og:description content="本文件為 AI Coding Agent 可直接引用的 prompt，描述 BorderCollie 專案的完整規格與設計決策。"/><link data-rh=true rel=icon href=/img/favicon.ico /><link data-rh=true rel=canonical href=https://kywk.github.io/moco/52-projects/border-collie/prompt-init/ /><link data-rh=true rel=alternate href=https://kywk.github.io/moco/52-projects/border-collie/prompt-init/ hreflang=zh-TW /><link data-rh=true rel=alternate href=https://kywk.github.io/moco/52-projects/border-collie/prompt-init/ hreflang=x-default /><script data-rh=true type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://kywk.github.io/moco/52-projects/52-projects/","name":"52 Projects","position":1},{"@type":"ListItem","item":"https://kywk.github.io/moco/52-projects/border-collie/border-collie/","name":"Border Collie","position":2},{"@type":"ListItem","item":"https://kywk.github.io/moco/52-projects/border-collie/prompt-init/","name":"BorderCollie - AI Coding Agent Prompt","position":3}]}</script><link rel=alternate type=application/rss+xml href=/news/rss.xml title="kywk.me RSS Feed"><link rel=alternate type=application/atom+xml href=/news/atom.xml title="kywk.me Atom Feed"><link rel=alternate type=application/rss+xml href=/life/rss.xml title="kywk.me RSS Feed"><link rel=alternate type=application/atom+xml href=/life/atom.xml title="kywk.me Atom Feed"><link rel=stylesheet href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+TC:wght@400;500;700&display=swap" type=text/css><link rel=stylesheet href=https://unpkg.com/leaflet@1.9.4/dist/leaflet.css type=text/css><script src=https://unpkg.com/leaflet@1.9.4/dist/leaflet.js></script><script src=/js/leaflet-init.js></script><link rel=stylesheet href=/assets/css/styles.51adb6cf.css /><script src=/assets/js/runtime~main.18640008.js defer></script><script src=/assets/js/main.05713bfb.js defer></script></head><body class=navigation-with-keyboard><svg style="display: none;"><defs>
+<symbol id=theme-svg-external-link viewBox="0 0 24 24"><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{for(var[t,e]of new URLSearchParams(window.location.search).entries())if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id=__docusaurus><link rel=preload as=image href=/img/logo.svg /><div role=region aria-label=跳至主要内容><a class=skipToContent_fXgn href=#__docusaurus_skipToContent_fallback>跳至主要内容</a></div><nav aria-label=主導航 class="theme-layout-navbar navbar navbar--fixed-top"><div class=navbar__inner><div class="theme-layout-navbar-left navbar__items"><button aria-label=切換導覽列 aria-expanded=false class="navbar__toggle clean-btn" type=button><svg width=30 height=30 viewBox="0 0 30 30" aria-hidden=true><path stroke=currentColor stroke-linecap=round stroke-miterlimit=10 stroke-width=2 d="M4 7h22M4 15h22M4 23h22"/></svg></button><a class=navbar__brand href=/><div class=navbar__logo><img src=/img/logo.svg alt="kywk.me Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"/><img src=/img/logo.svg alt="kywk.me Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"/></div><b class="navbar__title text--truncate">kywk.me</b></a><a class="navbar__item navbar__link" href=/backpacker/lonely-planet/>lonely planet</a><a class="navbar__item navbar__link" href=/lifehacker/way-2-kywk/>lifehacker</a><a aria-current=page class="navbar__item navbar__link navbar__link--active" href=/moco/kywk.moco/>moco</a><a class="navbar__item navbar__link" href=/life/>life</a><a class="navbar__item navbar__link" href=/news/>news</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href=https://github.com/kywk/ target=_blank rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type=button disabled title="system mode" aria-label="切換淺色/深色模式（當前為system mode）"><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill=currentColor d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill=currentColor d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill=currentColor d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"/></svg></button></div><div class=navbarSearchContainer_Bca1></div></div></div><div role=presentation class=navbar-sidebar__backdrop></div></nav><div id=__docusaurus_skipToContent_fallback class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class=docsWrapper_hBAB><button aria-label=回到頂部 class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type=button></button><div class=docRoot_UBD9><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class=sidebarViewport_aRkj><div class=sidebar_njMd><nav aria-label=文件側邊欄 class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href=/moco/52-projects/52-projects/><span title="52 Projects" class=categoryLinkLabel_W154>52 Projects</span></a><button aria-label="收起側邊欄分類 '52 Projects'" aria-expanded=true type=button class="clean-btn menu__caret"></button></div><ul class=menu__list><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex=0 href=/moco/category/project-setting/><span title="Project Setting" class=categoryLinkLabel_W154>Project Setting</span></a><button aria-label="展開側邊欄分類 'Project Setting'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" tabindex=0 href=/moco/52-projects/border-collie/border-collie/><span title="Border Collie" class=categoryLinkLabel_W154>Border Collie</span></a><button aria-label="收起側邊欄分類 'Border Collie'" aria-expanded=true type=button class="clean-btn menu__caret"></button></div><ul class=menu__list><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/moco/52-projects/border-collie/idea-workspace/><span title="Idea Workspace" class=linkLabel_WmDU>Idea Workspace</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/moco/52-projects/border-collie/idea/><span title=Idea class=linkLabel_WmDU>Idea</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/moco/52-projects/border-collie/prompt-dual-layout/><span title="Dual Layout 設計模式 - AI Prompt 參考" class=linkLabel_WmDU>Dual Layout 設計模式 - AI Prompt 參考</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current=page tabindex=0 href=/moco/52-projects/border-collie/prompt-init/><span title="BorderCollie - AI Coding Agent Prompt" class=linkLabel_WmDU>BorderCollie - AI Coding Agent Prompt</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/moco/52-projects/border-collie/prompt-workspace/><span title="Workspace + Gist 多專案管理功能 - AI Prompt 參考" class=linkLabel_WmDU>Workspace + Gist 多專案管理功能 - AI Prompt 參考</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/moco/52-projects/border-collie/readme/><span title="🐕 BorderCollie - 專案管理甘特圖" class=linkLabel_WmDU>🐕 BorderCollie - 專案管理甘特圖</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/moco/52-projects/border-collie/ticket/><span title=Ticket class=linkLabel_WmDU>Ticket</span></a></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex=0 href=/moco/52-projects/sheltie/sheltie/><span title=Sheltie class=categoryLinkLabel_W154>Sheltie</span></a><button aria-label="展開側邊欄分類 'Sheltie'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/moco/category/life-with-ai/><span title="Life with AI" class=categoryLinkLabel_W154>Life with AI</span></a><button aria-label="展開側邊欄分類 'Life with AI'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/moco/category/bootcamp/><span title=BOOTCAMP class=categoryLinkLabel_W154>BOOTCAMP</span></a><button aria-label="展開側邊欄分類 'BOOTCAMP'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/moco/category/tech-stack/><span title="Tech Stack" class=categoryLinkLabel_W154>Tech Stack</span></a><button aria-label="展開側邊欄分類 'Tech Stack'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/moco/category/devsecops/><span title=DevSecOps class=categoryLinkLabel_W154>DevSecOps</span></a><button aria-label="展開側邊欄分類 'DevSecOps'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/moco/category/go/><span title=Go class=categoryLinkLabel_W154>Go</span></a><button aria-label="展開側邊欄分類 'Go'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/moco/category/javascript/><span title=JavaScript class=categoryLinkLabel_W154>JavaScript</span></a><button aria-label="展開側邊欄分類 'JavaScript'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/moco/category/java/><span title=Java class=categoryLinkLabel_W154>Java</span></a><button aria-label="展開側邊欄分類 'Java'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/moco/category/utilities/><span title=Utilities class=categoryLinkLabel_W154>Utilities</span></a><button aria-label="展開側邊欄分類 'Utilities'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/moco/category/machintosh/><span title=Machintosh class=categoryLinkLabel_W154>Machintosh</span></a><button aria-label="展開側邊欄分類 'Machintosh'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/moco/category/obsidian/><span title=Obsidian class=categoryLinkLabel_W154>Obsidian</span></a><button aria-label="展開側邊欄分類 'Obsidian'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/moco/category/miscellaneous/><span title=Miscellaneous class=categoryLinkLabel_W154>Miscellaneous</span></a><button aria-label="展開側邊欄分類 'Miscellaneous'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/moco/kywk.moco/><span title=kywk.moco class=linkLabel_WmDU>kywk.moco</span></a></ul></nav><button type=button title=收起側邊欄 aria-label=收起側邊欄 class="button button--secondary button--outline collapseSidebarButton_PEFL"><svg width=20 height=20 aria-hidden=true class=collapseSidebarButtonIcon_kv0_><g fill=#7a7a7a><path d="M9.992 10.023c0 .2-.062.399-.172.547l-4.996 7.492a.982.982 0 01-.828.454H1c-.55 0-1-.453-1-1 0-.2.059-.403.168-.551l4.629-6.942L.168 3.078A.939.939 0 010 2.528c0-.548.45-.997 1-.997h2.996c.352 0 .649.18.828.45L9.82 9.472c.11.148.172.347.172.55zm0 0"/><path d="M19.98 10.023c0 .2-.058.399-.168.547l-4.996 7.492a.987.987 0 01-.828.454h-3c-.547 0-.996-.453-.996-1 0-.2.059-.403.168-.551l4.625-6.942-4.625-6.945a.939.939 0 01-.168-.55 1 1 0 01.996-.997h3c.348 0 .649.18.828.45l4.996 7.492c.11.148.168.347.168.55zm0 0"/></g></svg></button></div></div></aside><main class=docMainContainer_TBSr><div class="container padding-top--md padding-bottom--lg"><div class=row><div class="col docItemCol_z5aJ"><div class=docItemContainer_c0TR><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label=頁面路徑><ul class=breadcrumbs><li class=breadcrumbs__item><a aria-label=主頁面 class=breadcrumbs__link href=/><svg viewBox="0 0 24 24" class=breadcrumbHomeIcon_YNFT><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill=currentColor /></svg></a><li class=breadcrumbs__item><a class=breadcrumbs__link href=/moco/52-projects/52-projects/><span>52 Projects</span></a><li class=breadcrumbs__item><a class=breadcrumbs__link href=/moco/52-projects/border-collie/border-collie/><span>Border Collie</span></a><li class="breadcrumbs__item breadcrumbs__item--active"><span class=breadcrumbs__link>BorderCollie - AI Coding Agent Prompt</span></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type=button class="clean-btn tocCollapsibleButton_TO0P">本頁導覽</button></div><div class="theme-doc-markdown markdown"><header><h1>BorderCollie - AI Coding Agent Prompt</h1></header>
+<blockquote>
+<p>本文件為 AI Coding Agent 可直接引用的 prompt，描述 BorderCollie 專案的完整規格與設計決策。
+適用於讓另一個 AI Agent 生成雷同專案。</p>
+</blockquote>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=專案概述>專案概述<a href=#專案概述 class=hash-link aria-label=專案概述的直接連結 title=專案概述的直接連結 translate=no>​</a></h2>
+<p><strong>BorderCollie</strong> 是一個現代化、輕量級的專案管理與人力資源甘特圖工具。</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=核心目標>核心目標<a href=#核心目標 class=hash-link aria-label=核心目標的直接連結 title=核心目標的直接連結 translate=no>​</a></h3>
+<ul>
+<li class="">兼顧 <strong>編輯</strong> 與 <strong>視覺呈現</strong> 的專案/人力管理頁面</li>
+<li class="">區分 <em>編輯區塊</em> 和 <em>檢視區塊</em>，資料即時連動</li>
+<li class="">透過雙視角甘特圖，快速掌握團隊人員忙碌/空閒時間，方便新進專案時程規劃</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=技術架構>技術架構<a href=#技術架構 class=hash-link aria-label=技術架構的直接連結 title=技術架構的直接連結 translate=no>​</a></h3>
+<ul>
+<li class="">純前端 SPA，使用 Vue 3 + TypeScript</li>
+<li class="">可直接 host 在 GitHub Pages 或私人靜態網頁服務器，不需後端資料庫</li>
+<li class="">狀態管理：Pinia</li>
+<li class="">打包工具：Vite</li>
+<li class="">資料持久化：Browser LocalStorage</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=純文字編輯規格>純文字編輯規格<a href=#純文字編輯規格 class=hash-link aria-label=純文字編輯規格的直接連結 title=純文字編輯規格的直接連結 translate=no>​</a></h2>
+<p>BorderCollie 使用 Frontmatter + 專案定義的純文字格式。</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=完整格式>完整格式<a href=#完整格式 class=hash-link aria-label=完整格式的直接連結 title=完整格式的直接連結 translate=no>​</a></h3>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-text codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><span class=token-line style=color:#393A34><span class="token plain">name: 工作區名稱</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">description: 描述（選填）</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">gist: GIST_ID（選填）</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">createdAt: 2025-12-18（選填）</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">---</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">專案名稱:</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">- 階段名, 開始時間, 結束時間: 人員1 投入比, 人員2 投入比</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">- 階段名, --, 結束時間: 人員3 投入比</span><br/></span><span class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">另一專案:</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">- ...</span><br/></span></code></pre></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=語法規則>語法規則<a href=#語法規則 class=hash-link aria-label=語法規則的直接連結 title=語法規則的直接連結 translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=frontmatter----之前選用>Frontmatter（<code>---</code> 之前，選用）<a href=#frontmatter----之前選用 class=hash-link aria-label=frontmatter----之前選用的直接連結 title=frontmatter----之前選用的直接連結 translate=no>​</a></h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>欄位<th>必填<th>說明<tbody><tr><td><code>name</code><td>✅<td>工作區名稱，顯示於下拉選單<tr><td><code>description</code><td>❌<td>描述，顯示於下拉選單提示<tr><td><code>gist</code><td>❌<td>Gist ID，用於雲端同步<tr><td><code>createdAt</code><td>❌<td>建立時間</table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=專案內容----之後>專案內容（<code>---</code> 之後）<a href=#專案內容----之後 class=hash-link aria-label=專案內容----之後的直接連結 title=專案內容----之後的直接連結 translate=no>​</a></h4>
+<ol>
+<li class=""><strong>專案宣告</strong>：<code>專案名稱:</code>（冒號結尾）。若加入 <code>, pending</code> 標記（如 <code>專案名, pending:</code>）則代表擱置該專案。</li>
+<li class=""><strong>階段定義</strong>：<code>- 階段名, 開始日期, 結束日期: 人員指派</code></li>
+<li class=""><strong>日期格式</strong>：<code>YYYY-MM</code>（月視圖）或 <code>YYYY-MM-DD</code>（日視圖）</li>
+<li class=""><strong>自動接續</strong>：開始日期填 <code>--</code> 表示接續前一階段結束時間</li>
+<li class=""><strong>人員指派</strong>：<code>人員名稱 投入比例</code>，投入比例 <code>0.1</code> ~ <code>1.0</code></li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=完整範例>完整範例<a href=#完整範例 class=hash-link aria-label=完整範例的直接連結 title=完整範例的直接連結 translate=no>​</a></h3>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-text codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><span class=token-line style=color:#393A34><span class="token plain">name: AI 專案規劃 2025</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">description: 年度 AI 專案時程與人力配置</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">---</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">AI OCR:</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">- BA, 2025-10-01, 2025-11-30: Andy 0.3, Ben 0.8, Cat 0.5</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">- SA, --, 2026-02: Andy 0.3, Danny 0.6, Elsa 0.2</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">- SD, --, 2026-04: Andy 0.6, Elsa 0.2, Frank 0.2</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">- Dev, 2026-03, 2026-05: Andy 0.1, Elsa 0.6, Frank 0.6</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">- Sit, --, 2026-06: Elsa 0.3, Frank 0.3</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">- Uat, --, 2026-07: Elsa 0.1, Frank 0.1, Ben 0.7, Cat 0.4</span><br/></span><span class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">Staff Portal:</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">- BA/SA, 2026-01, 2026-06: Andy 0.3, Monica 0.7, Amber 0.4</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">- SD/Dev, 2026-03, 2026-09: Andy 0.2, Amber 0.7, Kevin 0.7</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">- Sit/Uat, --, 2026-11: Amber 0.2, Kevin 0.2, Monica 0.5, Norman 0.5</span><br/></span></code></pre></div></div>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=功能規格>功能規格<a href=#功能規格 class=hash-link aria-label=功能規格的直接連結 title=功能規格的直接連結 translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=編輯區>編輯區<a href=#編輯區 class=hash-link aria-label=編輯區的直接連結 title=編輯區的直接連結 translate=no>​</a></h3>
+<ul>
+<li class=""><strong>純文字模式</strong>：直接編輯純文字格式</li>
+<li class=""><strong>表格模式</strong>：互動式表格編輯（欄位：專案、階段、開始/結束時間、人員投入）</li>
+<li class="">兩種模式資料即時同步</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=專案甘特圖>專案甘特圖<a href=#專案甘特圖 class=hash-link aria-label=專案甘特圖的直接連結 title=專案甘特圖的直接連結 translate=no>​</a></h3>
+<ul>
+<li class="">縱軸為專案，橫軸為時間</li>
+<li class="">時間範圍依專案實際時間自動計算</li>
+<li class="">若某階段開始日期為 <code>--</code>，和前一階段畫在同一列</li>
+<li class="">支援縮放功能，方便截圖貼簡報</li>
+<li class=""><strong>箭頭視圖</strong>：可切換為箭頭樣式，視覺化階段流向</li>
+<li class=""><strong>隱藏/顯示</strong>：可隱藏特定專案列，方便進行部分項目比較</li>
+<li class=""><strong>專案擱置 (Pending)</strong>：
+<ul>
+<li class="">表格模式提供 Pending 切換按鈕（⏸/▶）</li>
+<li class="">設為 Pending 的專案會從甘特圖中完全移除，且不計入任何人力負荷計算</li>
+<li class="">編輯區保留資料並提供視覺反饋（如不透明度降低）</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=人力甘特圖>人力甘特圖<a href=#人力甘特圖 class=hash-link aria-label=人力甘特圖的直接連結 title=人力甘特圖的直接連結 translate=no>​</a></h3>
+<ul>
+<li class="">縱軸為人員，橫軸為時間</li>
+<li class="">以人員為主，對各專案不同階段投入作 group</li>
+<li class="">相同專案不同階段，若時間不重疊，在同一列顯示</li>
+<li class="">線段顏色依投入百分比呈現濃淡（40% ~ 100%）</li>
+<li class=""><strong>工作負載警示</strong>：超過 110% 紅色背景、少於 50% 綠色背景</li>
+<li class=""><strong>隱藏/顯示</strong>：可隱藏特定人員列，方便進行部分項目比較</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=隱藏顯示功能>隱藏/顯示功能<a href=#隱藏顯示功能 class=hash-link aria-label=隱藏/顯示功能的直接連結 title=隱藏/顯示功能的直接連結 translate=no>​</a></h3>
+<ul>
+<li class="">每個專案/人員名稱前有 SVG 眼睛圖示按鈕</li>
+<li class="">點擊按鈕隱藏該列，專案/人員名稱加入頂部「已隱藏」chip 列表</li>
+<li class="">點擊 chip 可恢復顯示該項目</li>
+<li class="">「全部顯示」按鈕一鍵恢復所有隱藏項目</li>
+<li class="">專案甘特圖與人力甘特圖的隱藏狀態各自獨立管理</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=分享功能>分享功能<a href=#分享功能 class=hash-link aria-label=分享功能的直接連結 title=分享功能的直接連結 translate=no>​</a></h3>
+<ul>
+<li class="">URL <code>?data=compressed</code> 格式，LZ-String 壓縮編碼</li>
+<li class="">無需後端即可分享</li>
+<li class=""><strong>衝突處理</strong>：若專案名稱與本地衝突，可選擇覆蓋/重新命名/取消</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=workspace-多專案管理>Workspace 多專案管理<a href=#workspace-多專案管理 class=hash-link aria-label="Workspace 多專案管理的直接連結" title="Workspace 多專案管理的直接連結" translate=no>​</a></h3>
+<ul>
+<li class="">支援多組專案儲存於 LocalStorage</li>
+<li class="">使用 Frontmatter 定義專案元資料</li>
+<li class="">工作區下拉選單：快速切換、新增、刪除專案</li>
+<li class="">自動遷移舊版 localStorage 資料</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=github-gist-支援>GitHub Gist 支援<a href=#github-gist-支援 class=hash-link aria-label="GitHub Gist 支援的直接連結" title="GitHub Gist 支援的直接連結" translate=no>​</a></h3>
+<ul>
+<li class="">支援 <code>?gist=GIST_ID</code> URL 參數載入公開 Gist</li>
+<li class="">Gist 專案顯示 🔗 標記，可一鍵 🔄 Refresh 重新載入</li>
+<li class="">自動儲存至本地工作區，保留 Gist ID 供同步</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=外部-url-source-支援>外部 URL Source 支援<a href=#外部-url-source-支援 class=hash-link aria-label="外部 URL Source 支援的直接連結" title="外部 URL Source 支援的直接連結" translate=no>​</a></h3>
+<ul>
+<li class="">支援 <code>?source=BASE64_URL</code> URL 參數載入外部資源</li>
+<li class="">適用於公司內網無法訪問 Gist 的情況</li>
+<li class="">同樣顯示 🔗 標記與 🔄 Refresh 按鈕</li>
+<li class="">自動儲存至本地工作區，保留 source URL 供同步</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=匯出功能>匯出功能<a href=#匯出功能 class=hash-link aria-label=匯出功能的直接連結 title=匯出功能的直接連結 translate=no>​</a></h3>
+<ul>
+<li class="">匯出為 PNG 圖片（使用 html-to-image）</li>
+<li class="">匯出為 SVG 向量圖</li>
+<li class="">匯出為 PowerPoint 簡報（使用 pptxgenjs）</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=uiux-設計規範>UI/UX 設計規範<a href=#uiux-設計規範 class=hash-link aria-label="UI/UX 設計規範的直接連結" title="UI/UX 設計規範的直接連結" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=佈局>佈局<a href=#佈局 class=hash-link aria-label=佈局的直接連結 title=佈局的直接連結 translate=no>​</a></h3>
+<ul>
+<li class="">左右分割面板（SplitPane），可拖拉調整寬度</li>
+<li class="">編輯區/檢視區可完全收縮，留下 Toggle 按鈕</li>
+<li class="">全畫面高度（height: 100%），不顯示整頁滾動條</li>
+<li class="">各區域可獨立滾動</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=甘特圖凍結窗格>甘特圖凍結窗格<a href=#甘特圖凍結窗格 class=hash-link aria-label=甘特圖凍結窗格的直接連結 title=甘特圖凍結窗格的直接連結 translate=no>​</a></h3>
+<ul>
+<li class="">仿照 Excel 凍結窗格原理</li>
+<li class="">日期列固定在頂部（sticky top）</li>
+<li class="">專案/人員欄固定在左側（sticky left）</li>
+<li class="">滑動時仍可清楚看到日期和專案/人員</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=視覺設計>視覺設計<a href=#視覺設計 class=hash-link aria-label=視覺設計的直接連結 title=視覺設計的直接連結 translate=no>​</a></h3>
+<ul>
+<li class=""><strong>Glassmorphism</strong>：面板標題使用毛玻璃效果（backdrop-filter: blur）</li>
+<li class=""><strong>漸層背景</strong>：主背景使用微妙漸層</li>
+<li class=""><strong>甘特圖 Bar</strong>：漸層填充、陰影、光澤效果（::before pseudo-element）</li>
+<li class=""><strong>今日標記</strong>：紅色大頭針設計，圓點在日期列，線條垂直貫穿整個甘特圖</li>
+<li class=""><strong>年度時間軸</strong>：首月顯示完整年月，其他月份只顯示月，不同年度交替背景色</li>
+<li class=""><strong>微動畫</strong>：按鈕 hover 浮起、Bar hover 放大、主題切換旋轉特效</li>
+<li class=""><strong>Pill 按鈕</strong>：切換按鈕為膠囊形狀，active 狀態帶 glow</li>
+<li class=""><strong>隱藏按鈕</strong>：淡紅色背景 SVG 眼睛圖示，hover 時顯示斜線表示隱藏動作</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=主題>主題<a href=#主題 class=hash-link aria-label=主題的直接連結 title=主題的直接連結 translate=no>​</a></h3>
+<ul>
+<li class="">支援 Light / Dark 模式</li>
+<li class="">Light 模式：高對比度、飽和顏色</li>
+<li class="">Dark 模式：柔和色調、適當對比</li>
+<li class="">主題切換有平滑過渡動畫</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=配色原則>配色原則<a href=#配色原則 class=hash-link aria-label=配色原則的直接連結 title=配色原則的直接連結 translate=no>​</a></h3>
+<ul>
+<li class="">不同專案使用不同色相（HSL 色彩空間）</li>
+<li class="">配色不過於飽和或灰淡</li>
+<li class="">8 組預設專案顏色，循環使用</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=已實現功能清單>已實現功能清單<a href=#已實現功能清單 class=hash-link aria-label=已實現功能清單的直接連結 title=已實現功能清單的直接連結 translate=no>​</a></h2>
+<ol>
+<li class="">✅ 甘特圖核心、分享連結、UI 架構</li>
+<li class="">✅ 主題增強、佈局優化、匯出功能（PNG/SVG/PPT）</li>
+<li class="">✅ GitHub Actions 自動部署 GitHub Pages</li>
+<li class="">✅ 凍結窗格（Freeze Panes）- 日期列與專案欄固定</li>
+<li class="">✅ UI 美化：Glassmorphism、漸層 Bar、今日標記線、微動畫</li>
+<li class="">✅ LZ-String 壓縮替代 Gzip+Base64（URL 長度減少 10-15%）</li>
+<li class="">✅ 年度時間軸格式：首月顯示完整年月，不同年度交替背景</li>
+<li class="">✅ Today Marker 大頭針設計：紅色圓點 + 垂直線貫穿整個甘特圖</li>
+<li class="">✅ <strong>箭頭顯示模式</strong>：支援標準/箭頭雙模式切換</li>
+<li class="">✅ <strong>UI/UX 優化</strong>：修正 Export 下拉選單 Z-index、統一 Toggle 按鈕風格</li>
+<li class="">✅ <strong>Workspace 多專案管理</strong>：
+<ul>
+<li class="">Frontmatter 解析器（name/gist/description/createdAt）</li>
+<li class="">workspaceStore 多專案 CRUD 與 localStorage 持久化</li>
+<li class="">WorkspaceDropdown 下拉選單元件</li>
+<li class="">分享連結衝突處理（覆蓋/重新命名/取消）</li>
+<li class="">自動遷移舊版 localStorage 資料</li>
+</ul>
+</li>
+<li class="">✅ <strong>GitHub Gist 支援</strong>：
+<ul>
+<li class=""><code>?gist=GIST_ID</code> URL 參數載入公開 Gist</li>
+<li class="">Gist 專案 🔗 標記與 🔄 Refresh 按鈕</li>
+<li class="">Gist Utility：fetchPublicGist, extractGistId, isValidGistId</li>
+</ul>
+</li>
+<li class="">✅ <strong>甘特圖隱藏/顯示功能</strong>：
+<ul>
+<li class="">專案/人員列隱藏按鈕（SVG 眼睛圖示）</li>
+<li class="">頂部「已隱藏」chip 列表</li>
+<li class="">一鍵「全部顯示」恢復隱藏項目</li>
+<li class="">專案/人力甘特圖獨立管理隱藏狀態</li>
+</ul>
+</li>
+<li class="">✅ <strong>專案 Pending 功能</strong>：
+<ul>
+<li class="">支援 <code>, pending</code> 語法標記</li>
+<li class="">支援從人力負荷與甘特圖中排除</li>
+<li class="">表格編輯器支援並排的 Pending/AddPhase 按鈕佈局</li>
+<li class="">擱置專案提供視覺半透明反饋 (Opacity 0.5)</li>
+</ul>
+</li>
+<li class="">✅ <strong>外部 URL Source 支援</strong>：
+<ul>
+<li class=""><code>?source=BASE64_URL</code> URL 參數載入外部資源</li>
+<li class="">Base64 URL-safe encode/decode 工具</li>
+<li class="">CORS 錯誤處理與 fallback 提示</li>
+<li class="">WorkspaceDropdown 顯示 🔗 與 🔄 Refresh</li>
+</ul>
+</li>
+</ol>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=backlog>Backlog<a href=#backlog class=hash-link aria-label=Backlog的直接連結 title=Backlog的直接連結 translate=no>​</a></h2>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class=task-list-item><input type=checkbox disabled/> Gist 寫入（需 OAuth）</li>
+<li class=task-list-item><input type=checkbox disabled/> 匯出/匯入 JSON 備份</li>
+<li class=task-list-item><input type=checkbox disabled/> 專案搜尋/過濾</li>
+<li class=task-list-item><input type=checkbox disabled/> 隱藏狀態持久化（localStorage）</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=專案結構>專案結構<a href=#專案結構 class=hash-link aria-label=專案結構的直接連結 title=專案結構的直接連結 translate=no>​</a></h2>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-text codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><span class=token-line style=color:#393A34><span class="token plain">border-collie/</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">├── src/</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">│   ├── App.vue                         # 主應用元件</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">│   ├── main.ts                         # 入口點</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">│   ├── assets/</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">│   │   └── main.css                    # 全域樣式與 CSS 變數</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">│   ├── components/</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">│   │   ├── SplitPane.vue               # 左右分割面板</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">│   │   ├── EditorPanel.vue             # 編輯區面板</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">│   │   ├── TextEditor.vue              # 純文字編輯器</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">│   │   ├── TableEditor.vue             # 表格編輯器</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">│   │   ├── GanttPanel.vue              # 甘特圖面板（含視圖切換）</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">│   │   ├── ProjectGantt.vue            # 專案甘特圖</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">│   │   ├── PersonGantt.vue             # 人力甘特圖</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">│   │   ├── WorkspaceDropdown.vue       # 工作區下拉選單</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">│   │   ├── ConflictDialog.vue          # 分享衝突對話框</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">│   │   └── ConfirmDialog.vue           # 確認對話框</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">│   ├── composables/</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">│   │   └── useGanttScale.ts            # 甘特圖時間軸計算</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">│   ├── parser/</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">│   │   ├── textParser.ts               # 純文字解析邏輯</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">│   │   └── frontmatterParser.ts        # Frontmatter 解析邏輯</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">│   ├── stores/</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">│   │   ├── projectStore.ts             # 專案狀態管理</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">│   │   └── workspaceStore.ts           # 工作區狀態管理</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">│   ├── types/</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">│   │   └── index.ts                    # TypeScript 型別定義</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">│   └── utils/</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">│       ├── sharing.ts                  # URL 分享編碼/解碼</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">│       ├── gist.ts                     # Gist API 工具</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">│       └── exporter.ts                 # 匯出功能（PNG/SVG/PPT）</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">├── public/</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">├── assets/                             # 文件截圖</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">├── idea/                               # 設計文件與 prompt</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">├── index.html</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">├── package.json</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">├── tsconfig.json</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">├── vite.config.ts</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">└── README.md</span><br/></span></code></pre></div></div>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=關鍵實作細節>關鍵實作細節<a href=#關鍵實作細節 class=hash-link aria-label=關鍵實作細節的直接連結 title=關鍵實作細節的直接連結 translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=甘特圖時間軸計算useganttscalets>甘特圖時間軸計算（useGanttScale.ts）<a href=#甘特圖時間軸計算useganttscalets class=hash-link aria-label=甘特圖時間軸計算（useGanttScale.ts）的直接連結 title=甘特圖時間軸計算（useGanttScale.ts）的直接連結 translate=no>​</a></h3>
+<ul>
+<li class="">根據所有專案階段計算時間範圍（前後各加一個月）</li>
+<li class="">計算月份列表、總寬度、X 座標位置</li>
+<li class="">提供專案顏色漸層生成函數</li>
+<li class="">計算今日標記位置</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=專案人力甘特圖行分配>專案/人力甘特圖行分配<a href=#專案人力甘特圖行分配 class=hash-link aria-label=專案/人力甘特圖行分配的直接連結 title=專案/人力甘特圖行分配的直接連結 translate=no>​</a></h3>
+<ul>
+<li class="">若階段時間不重疊，優先放在同一行</li>
+<li class="">對於接續階段（startDate = <code>--</code>），優先與前一階段同行</li>
+<li class="">智慧分配減少畫面垂直空間使用</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=隱藏顯示狀態管理>隱藏/顯示狀態管理<a href=#隱藏顯示狀態管理 class=hash-link aria-label=隱藏/顯示狀態管理的直接連結 title=隱藏/顯示狀態管理的直接連結 translate=no>​</a></h3>
+<ul>
+<li class="">使用 <code>ref&lt;Set&lt;string>></code> 追蹤已隱藏的專案/人員名稱</li>
+<li class=""><code>toggleHide()</code> 切換隱藏狀態</li>
+<li class=""><code>showAll()</code> 清空隱藏集合</li>
+<li class="">使用 <code>v-show</code> 而非 <code>v-if</code> 保留 DOM 結構</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=工作區持久化>工作區持久化<a href=#工作區持久化 class=hash-link aria-label=工作區持久化的直接連結 title=工作區持久化的直接連結 translate=no>​</a></h3>
+<ul>
+<li class="">每個工作區存為獨立 localStorage 項目</li>
+<li class="">工作區列表存為 <code>border-collie-workspaces</code> 索引</li>
+<li class="">自動遷移舊版單一 localStorage 資料</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=參考檔案>參考檔案<a href=#參考檔案 class=hash-link aria-label=參考檔案的直接連結 title=參考檔案的直接連結 translate=no>​</a></h2>
+<ul>
+<li class=""><code>README.md</code> - 專案說明與使用方式</li>
+<li class=""><code>INSTALL.md</code> - 安裝與部署步驟</li>
+<li class=""><code>src/parser/textParser.ts</code> - 純文字解析邏輯</li>
+<li class=""><code>src/parser/frontmatterParser.ts</code> - Frontmatter 解析邏輯</li>
+<li class=""><code>src/stores/projectStore.ts</code> - 專案狀態管理</li>
+<li class=""><code>src/stores/workspaceStore.ts</code> - 工作區狀態管理</li>
+<li class=""><code>src/utils/gist.ts</code> - Gist API 工具</li>
+<li class=""><code>src/composables/useGanttScale.ts</code> - 甘特圖時間軸計算</li>
+<li class=""><code>src/components/ProjectGantt.vue</code> - 專案甘特圖</li>
+<li class=""><code>src/components/PersonGantt.vue</code> - 人力甘特圖</li>
+<li class=""><code>src/components/WorkspaceDropdown.vue</code> - 工作區下拉選單</li>
+</ul></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label=文件選項卡><a class="pagination-nav__link pagination-nav__link--prev" href=/moco/52-projects/border-collie/prompt-dual-layout/><div class=pagination-nav__sublabel>上一頁</div><div class=pagination-nav__label>Dual Layout 設計模式 - AI Prompt 參考</div></a><a class="pagination-nav__link pagination-nav__link--next" href=/moco/52-projects/border-collie/prompt-workspace/><div class=pagination-nav__sublabel>下一頁</div><div class=pagination-nav__label>Workspace + Gist 多專案管理功能 - AI Prompt 參考</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href=#專案概述 class="table-of-contents__link toc-highlight">專案概述</a><ul><li><a href=#核心目標 class="table-of-contents__link toc-highlight">核心目標</a><li><a href=#技術架構 class="table-of-contents__link toc-highlight">技術架構</a></ul><li><a href=#純文字編輯規格 class="table-of-contents__link toc-highlight">純文字編輯規格</a><ul><li><a href=#完整格式 class="table-of-contents__link toc-highlight">完整格式</a><li><a href=#語法規則 class="table-of-contents__link toc-highlight">語法規則</a><li><a href=#完整範例 class="table-of-contents__link toc-highlight">完整範例</a></ul><li><a href=#功能規格 class="table-of-contents__link toc-highlight">功能規格</a><ul><li><a href=#編輯區 class="table-of-contents__link toc-highlight">編輯區</a><li><a href=#專案甘特圖 class="table-of-contents__link toc-highlight">專案甘特圖</a><li><a href=#人力甘特圖 class="table-of-contents__link toc-highlight">人力甘特圖</a><li><a href=#隱藏顯示功能 class="table-of-contents__link toc-highlight">隱藏/顯示功能</a><li><a href=#分享功能 class="table-of-contents__link toc-highlight">分享功能</a><li><a href=#workspace-多專案管理 class="table-of-contents__link toc-highlight">Workspace 多專案管理</a><li><a href=#github-gist-支援 class="table-of-contents__link toc-highlight">GitHub Gist 支援</a><li><a href=#外部-url-source-支援 class="table-of-contents__link toc-highlight">外部 URL Source 支援</a><li><a href=#匯出功能 class="table-of-contents__link toc-highlight">匯出功能</a></ul><li><a href=#uiux-設計規範 class="table-of-contents__link toc-highlight">UI/UX 設計規範</a><ul><li><a href=#佈局 class="table-of-contents__link toc-highlight">佈局</a><li><a href=#甘特圖凍結窗格 class="table-of-contents__link toc-highlight">甘特圖凍結窗格</a><li><a href=#視覺設計 class="table-of-contents__link toc-highlight">視覺設計</a><li><a href=#主題 class="table-of-contents__link toc-highlight">主題</a><li><a href=#配色原則 class="table-of-contents__link toc-highlight">配色原則</a></ul><li><a href=#已實現功能清單 class="table-of-contents__link toc-highlight">已實現功能清單</a><li><a href=#backlog class="table-of-contents__link toc-highlight">Backlog</a><li><a href=#專案結構 class="table-of-contents__link toc-highlight">專案結構</a><li><a href=#關鍵實作細節 class="table-of-contents__link toc-highlight">關鍵實作細節</a><ul><li><a href=#甘特圖時間軸計算useganttscalets class="table-of-contents__link toc-highlight">甘特圖時間軸計算（useGanttScale.ts）</a><li><a href=#專案人力甘特圖行分配 class="table-of-contents__link toc-highlight">專案/人力甘特圖行分配</a><li><a href=#隱藏顯示狀態管理 class="table-of-contents__link toc-highlight">隱藏/顯示狀態管理</a><li><a href=#工作區持久化 class="table-of-contents__link toc-highlight">工作區持久化</a></ul><li><a href=#參考檔案 class="table-of-contents__link toc-highlight">參考檔案</a></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class=footer__title>主題索引</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/backpacker/lonely-planet/>Backpacker</a><li class=footer__item><a class=footer__link-item href=/lifehacker/way-2-kywk/>Lifehacker</a><li class=footer__item><a class=footer__link-item href=/moco/kywk.moco/>MoCo Lab</a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>筆記頻道</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/news/>News Log</a><li class=footer__item><a class=footer__link-item href=/life/>Life Blog</a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>連結</div><ul class="footer__items clean-list"><li class=footer__item><a href=https://github.com/kywk target=_blank rel="noopener noreferrer" class=footer__link-item>GitHub<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a></ul></div></div><div class="footer__bottom text--center"><div class=footer__copyright>Copyright © 2026 kywk. Built with Docusaurus.</div></div></div></footer></div></body>
