@@ -1,12 +1,12 @@
 ---
 title: 'Redis: Cluster 建製'
 tags:
-  - Infra
+  - Infrastructure
   - Redis
 date_created: 2021-05-07T01:30:26.000Z
 image: >-
   https://lh3.googleusercontent.com/pw/ACtC-3fIlrxgO6AX1o_tNuiD0YfrwpojgHUZa_OSpR36XoOZ_Ojz9q0Bw9yZ2V9QwSKUqApRMEIPWetv9AQd4TsfGgE0AaZXj7IJ2NV6ffvWj7N_Fjo2EzJ7BaCjZ7Fxx702zh6ZnykZAOChtRM-P1Zr9t0SYQ=w800-no?authuser=0
-slug: /devsecops/infra/redis-cluster/
+slug: /devsecops/infrastructure/redis-cluster/
 ---
 
 [Redis] 建製 Redis Cluster
@@ -65,7 +65,7 @@ cow@sandbox:~/tmp/redis/src# ./redis-server
 出現 __Ready to accept connections__ 後表示 Redis 程式可正常運作, 
 可再依需要把執行檔複製到 `/usr/local/bin' 之類系統資料夾中.
 
-而警告訊息的排除可參考: [Redis 警告訊息排除](Redis Troubleshooting.md) 
+而警告訊息的排除可參考: [[Redis Troubleshooting]] 
 
 
 準備 config

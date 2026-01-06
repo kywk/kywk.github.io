@@ -1,12 +1,12 @@
 ---
 title: 'Redis: 警告與問題排除'
 tags:
-  - Infra
+  - Infrastructure
   - Redis
 date_created: 2021-05-06T06:26:31.000Z
 image: >-
   https://lh3.googleusercontent.com/pw/ACtC-3c20fracgrQ2pPqoqdoDC8B2-TKXBr7gWPBBoYkEjUhibsZSiOx-D0rbH0mw4ioWUPFaggeqZhKvWI-og9IzKmSXItl67QFCpd33vklw9QLZU0FW7ggHE1yuZ7S7NVTUSmrshARmmk-iJQifd72Nb86rQ=w800-no?authuser=0
-slug: /devsecops/infra/redis-troubleshooting/
+slug: /devsecops/infrastructure/redis-troubleshooting/
 ---
 
 [Redis] 警告訊息排除

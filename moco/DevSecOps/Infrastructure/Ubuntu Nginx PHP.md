@@ -1,14 +1,14 @@
 ---
 title: 'Ubuntu: NGINX + PHP'
 tags:
-  - Infra
+  - Infrastructure
   - Linux/Ubuntu
   - NGINX
   - PHP
 date_created: 2021-03-16T08:58:20.000Z
 image: >-
   https://lh3.googleusercontent.com/pw/ACtC-3eEjuPzkzGlfvO-sUeB3BeuDd4MxMyUP2r4vJp53f2rK8p-vaRCNdC-UxOMDAQhANNfSTQr9fD4wJBSuDu3dXYIoMYDjaLJV6Np0KQZxnfY0VOm-JrNfVj_c0AjrP0jFEBKnJJrw8qAr8quoeHa5OuKJA=w750-h375-no?authuser=0
-slug: /devsecops/infra/ubuntu-nginx-php/
+slug: /devsecops/infrastructure/ubuntu-nginx-php/
 ---
 
 [Ubuntu] 利用 NGINX 伺服器執行 PHP 程式
