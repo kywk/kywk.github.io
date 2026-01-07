@@ -31,7 +31,7 @@ docker run --name postgres -d \
   -p 5432:5432 \
   -e POSTGRES_DB=sandbox \
   -e POSTGRES_USER=admin \
-  -e POSTGRES_PASSWORD='pw123456' \
+  -e POSTGRES_PASSWORD='<YourStrongPassword>' \
   postgres:15
 ```
 
@@ -140,9 +140,42 @@ or, make a connection URI as following:
 psql postgres://[USERNAME]:[PASSWORD]@[HOSTNAME]:[PORT]/[DATABASENAME]?sslmode=require
 ```
 
-## DB User
+## DB User Management
+
+### 建立新使用者
+
+```sql
+-- 建立新使用者
+CREATE USER myuser WITH PASSWORD '<strong_password>';
+
+-- 建立資料庫
+CREATE DATABASE mydatabase OWNER myuser;
+
+-- 授予權限
+GRANT ALL PRIVILEGES ON DATABASE mydatabase TO myuser;
+```
+
+### 權限管理
+
+```sql
+-- 授予特定表格權限
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE mytable TO myuser;
+
+-- 授予 schema 權限
+GRANT USAGE ON SCHEMA public TO myuser;
+GRANT CREATE ON SCHEMA public TO myuser;
+```
 
 ## See Also
 
+### 官方文件
+- [PostgreSQL Documentation](https://www.postgresql.org/docs/)
+- [PostgreSQL Docker Official Images](https://hub.docker.com/_/postgres)
+
+### 中文教學
 - [如何使用 Docker 安裝 PostgreSQL ? | 點燈坊](https://old-oomusou.goodjack.tw/docker/postgres/)
 - [Docker筆記 - 進入Container，建立並操作 PostgreSQL Container | by Albert Hg | alberthg-docker-notes | Medium](https://medium.com/alberthg-docker-notes/d221ba39aaec)
+
+### 相關工具
+- [[Awesome Database GUI Client]] - GUI 管理工具比較
+- [pgAdmin](https://www.pgadmin.org/) - PostgreSQL 官方 Web GUI

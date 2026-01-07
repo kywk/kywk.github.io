@@ -1,7 +1,7 @@
 {
   "label": "OpenAPI",
   "link": {
-    "type": "generated-index",
-    "description": "OpenAPI"
+    "type": "doc",
+    "id": "Awesome OpenAPI"
   }
 }
