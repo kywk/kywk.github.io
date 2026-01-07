@@ -6,6 +6,7 @@ authors: kywk
 tags:
   - HN
 hide_table_of_contents: true
+slug: /2024/05-31-dont-dry-your-code-prematurely/
 ---
 
 # Don't DRY Your Code Prematurely

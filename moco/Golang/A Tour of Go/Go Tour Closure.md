@@ -7,7 +7,7 @@ tags:
 date_created: 2022-04-13T02:05:05.000Z
 image: >-
   https://lh3.googleusercontent.com/pw/AM-JKLWu8wVpy5iA1V-YEeQHafjhEuZiS8kFPaPu0pj_m6yi09YtCsVYFT8Z6LxtDL57sWDXa8rRZm6B_OsIhWjgBWupJ1ZopYhtDR5PMn-4q8ypuliQvh5KDBfdZmKAxOkIXb4FhRvkuQsRhKiyjB02tR6otw=w860-h480-no?authuser=0s
-slug: /golang/go-tour/go-tour-closure/
+slug: /golang/a-tour-of-go/go-tour-closure/
 ---
 
 [Go] Tour: Closure 心得筆記

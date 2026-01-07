@@ -7,7 +7,7 @@ tags:
 date_created: 2022-04-21T04:03:41.000Z
 image: >-
   https://lh3.googleusercontent.com/pw/AM-JKLWu8wVpy5iA1V-YEeQHafjhEuZiS8kFPaPu0pj_m6yi09YtCsVYFT8Z6LxtDL57sWDXa8rRZm6B_OsIhWjgBWupJ1ZopYhtDR5PMn-4q8ypuliQvh5KDBfdZmKAxOkIXb4FhRvkuQsRhKiyjB02tR6otw=w860-h480-no?authuser=0s
-slug: /golang/go-tour/go-tour-channel/
+slug: /golang/a-tour-of-go/go-tour-channel/
 ---
 
 [Go] Tour: Goroutine 和 Channel 心得筆記

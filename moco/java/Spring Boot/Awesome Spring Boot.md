@@ -4,7 +4,7 @@ title: Awesome Spring Boot
 tags:
   - SpringBoot
   - Awesome
-slug: /java/springboot/awesome-spring-boot/
+slug: /java/spring-boot/awesome-spring-boot/
 ---
 
 Awesome Spring Boot Resources
