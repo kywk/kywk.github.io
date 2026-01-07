@@ -234,17 +234,33 @@ Spring 內建的 Stereotype Annotations 可以從 [org.springframework.stereotyp
 
 - 在 `home()` 方法上的 `@RequestMapping("/")` 是定義控制器的路由, 決定網址的結構.
 
-### 啟動 Spring Boot 網站 ###
+### 啟動 Spring Boot 網站
 
-```
+```bash
 mvn spring-boot:run
 ```
-![](https://lh3.googleusercontent.com/pw/AMWts8D4tdVWZ3j0ck8hlwEXf8VNIWn4El6nxfurdO_MkAiHVEa5ELS_Cqtyon1GWxXulhqa_by3gGNfKvXLlPh-6QcP6CtmtoE1Qfe2kVqap5ymvhvqKvtDRcQd07lihcPcpQyeCtV-ARYOjBEp54IWRJBxXg=w786-no?authuser=0)
 
-透過瀏覽器開啟 http://localhost:8080/ 即可看到網站
+![Spring Boot 啟動畫面](https://lh3.googleusercontent.com/pw/AMWts8D4tdVWZ3j0ck8hlwEXf8VNIWn4El6nxfurdO_MkAiHVEa5ELS_Cqtyon1GWxXulhqa_by3gGNfKvXLlPh-6QcP6CtmtoE1Qfe2kVqap5ymvhvqKvtDRcQd07lihcPcpQyeCtV-ARYOjBEp54IWRJBxXg=w786-no?authuser=0)
 
+透過瀏覽器開啟 [http://localhost:8080/](http://localhost:8080/) 即可看到 "Hello World!" 訊息。
 
-Package & Deploy
+### 程式碼解析
+
+#### @RestController 註解
+
+`@RestController` 是 Spring 的 [Stereotype Annotations](https://github.com/spring-projects/spring-framework/wiki/Spring-Annotation-Programming-Model#stereotype-annotations)（刻板印象標注）之一。這個設計讓開發人員看到 `@RestController` 就能立即識別這是一個支援 REST 功能的控制器。
+
+所有的 Stereotype Annotations 都繼承自 `@Component`，讓 Spring Framework 能透過 **Component Scanning** 自動找到並註冊這些服務。
+
+#### @EnableAutoConfiguration 註解
+
+這個註解讓 Spring Boot 自動掃描所有相依套件中的 JAR 檔案，並自動建立與註冊 Spring Beans 元件。這是 Spring Boot "約定優於配置" 理念的核心實現。
+
+#### @RequestMapping 註解
+
+`@RequestMapping("/")` 定義了控制器的路由規則，決定哪些 URL 會對應到這個方法。
+
+## 打包與部署
 ----------------
 
 ### 打包應用程式 *.jar 檔 ###

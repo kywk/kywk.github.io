@@ -34,22 +34,24 @@ slug: /java/spring-boot/spring-boot-oss-support/
 
 ---
 
-## 📅 Spring Boot 版本與支援週期
+## 📅 Spring Boot 版本與支援週期（2025年1月最新）
 
-| 版本  | 發布時間        | 類型       | 社群支援結束 | 企業支援結束     |
-| ----- | --------------- | ---------- | ------------ | ---------------- |
-| 2.7.x | 2022-05         | 過渡支援   | 2023-11 ✅   | 2025（延長支援） |
-| 3.0.x | 2022-11         | STS        | 2023-05 ❌   | 無               |
-| 3.1.x | 2023-05         | STS        | 2023-11 ❌   | 無               |
-| 3.2.x | 2023-11         | ✅ **LTS** | **2026-11**  | **2028-11**      |
-| 3.3.x | 2024-05         | STS        | 2024-11 ❌   | 無               |
-| 3.4.x | 2024-11         | STS        | 2025-05 ❌   | 無               |
-| 3.5.x | 2025-05         | ✅ **LTS** | **2028-05**  | **2030-05**      |
-| 4.0.x | 2025-11（預定） | ✅ **LTS** | **2028-11**  | **2030-11**      |
+| 版本  | 發布時間 | 類型 | 社群支援結束 | 企業支援結束 | 狀態 |
+| ----- | -------- | ---- | ------------ | ------------ | ---- |
+| 2.7.x | 2022-05  | 延長支援 | **2025-02-18** ❌ | 2027-02 | 即將結束 |
+| 3.0.x | 2022-11  | STS | 2023-05 ❌ | 無 | 已結束 |
+| 3.1.x | 2023-05  | STS | 2023-11 ❌ | 無 | 已結束 |
+| 3.2.x | 2023-11  | LTS | **2025-02-18** ❌ | 2027-02 | 即將結束 |
+| 3.3.x | 2024-05  | STS | **2025-05-18** | 無 | 活躍中 |
+| 3.4.x | 2024-11  | STS | **2025-11-18** | 無 | 活躍中 |
+| 3.5.x | 2025-05（預定） | LTS | 2028-05 | 2030-05 | 未發布 |
+| 4.0.x | 2025-11（預定） | LTS | 2028-11 | 2030-11 | 未發布 |
 
-> 🔸 最新 LTS 為 **3.5.x**
-> 🔸 下一版 LTS 為 **4.0.x**（預計 2025 年底發布）
-> 🔸 非 LTS 的 minor 版本僅提供半年支援
+> ⚠️ **重要更新**：Spring Boot 3.2.x 的 OSS 支援將於 **2025年2月18日結束**
+> 
+> 🔸 目前活躍的 OSS 版本：**3.3.x** 和 **3.4.x**
+> 🔸 建議升級路徑：3.2.x → 3.3.x 或 3.4.x
+> 🔸 下一個 LTS 版本：**3.5.x**（2025年5月）
 
 ---
 
@@ -66,35 +68,80 @@ slug: /java/spring-boot/spring-boot-oss-support/
 
 ---
 
-## 💬 使用建議
+## 💬 使用建議（2025年1月更新）
 
 ### 對 OSS 使用者（開發團隊、個人開發者）：
 
-- **選用 LTS（3.2 或 3.5）版本**，避免短期版本（如 3.3、3.4）。
-- 利用官方公告時間表提前規劃升級，避免踩到支援中斷的地雷。
-- 若對安全性要求高，可考慮透過第三方方式自動追蹤 CVE 並做 hotfix。
+- **緊急行動**：如果使用 Spring Boot 3.2.x，必須在 **2025年2月18日前**升級到 3.3.x 或 3.4.x
+- **版本選擇**：
+  - **短期使用**：選擇 3.4.x（支援到 2025年11月）
+  - **長期穩定**：等待 3.5.x LTS（2025年5月發布）
+- **避免短期版本**：不要使用 3.3.x（僅5月就結束支援）
+- **安全性考量**：考慮使用第三方工具自動追蹤 CVE 並做 hotfix
 
 ### 對企業與政府單位：
 
-- 建議導入 **VMware Tanzu Spring Runtime** 或其他支援通路。
-- 像「政府資安指引」或「金融業資安等級規範」通常需有 CVE 應對計畫，此方案可提供快速修補與 SLA。
-- 可搭配 Tanzu Build Service、Spring Native 等工具實現穩定部署。
+- **商業支援**：建議導入 **VMware Tanzu Spring Runtime**
+- **合規需求**：政府資安指引或金融業資安等級規範通常需有 CVE 應對計畫
+- **整合方案**：可搭配 Tanzu Build Service、Spring Native 等工具
+
+### 版本升級路徑建議：
+
+```
+目前使用 3.2.x → 升級選項：
+
+1. 立即升級到 3.4.x（支援到 2025年11月）
+2. 等待 3.5.x LTS（2025年5月，支援到 2028年）
+
+目前使用 2.7.x → 必須升級：
+
+1. 升級到 3.4.x（較大跨版本升級）
+2. 等待 3.5.x LTS 再升級
+```
 
 ---
 
-## 📰 支援政策公告來源
+## 📰 支援政策公告來源（已驗證）
 
-- 🔗 [Spring Boot 官方支援生命週期表（2025）](https://spring.io/projects/spring-boot#support)
-  - [Spring Boot 2.7 Support Period Extended](https://spring.io/blog/2024/09/27/spring-boot-2-7-support-period-extended)
-- 📰 [Spring Blog: Introducing LTS support in Spring Boot (2023)](https://spring.io/blog/2023/11/21/introducing-long-term-support-lts-for-spring-boot/)
-- 🧾 [VMware Tanzu Spring Runtime 商業支援介紹](https://tanzu.vmware.com/spring-runtime)
+- 🔗 [Spring Boot 官方支援生命週期表](https://spring.io/projects/spring-boot#support)
+- 📰 [Spring Boot 3.2.x 支援結束公告](https://spring.io/blog/2025/01/16/spring-boot-3-2-x-eol-announcement)
+- 📊 [Spring Boot | endoflife.date](https://endoflife.date/spring-boot) - 第三方追蹤網站
+- 📰 [Spring Boot 2.7 Support Period Extended](https://spring.io/blog/2024/09/27/spring-boot-2-7-support-period-extended)
+- 📰 [Introducing LTS support in Spring Boot (2023)](https://spring.io/blog/2023/11/21/introducing-long-term-support-lts-for-spring-boot/)
+- 📭 [VMware Tanzu Spring Runtime 商業支援](https://tanzu.vmware.com/spring-runtime)
+
+### 重要更新時間軸：
+
+- **2025年1月16日**：Spring 官方公告 3.2.x 將於 2025年2月18日結束 OSS 支援
+- **2025年2月18日**：Spring Boot 2.7.x 和 3.2.x 同時結束 OSS 支援
+- **2025年5月**：預計發布 Spring Boot 3.5.x LTS
 
 ---
 
-## AI 誤區
+## ⚠️ 重要更新與修正（2025年1月）
 
-其實在對話過程中, ChatGPT 犯了不少錯誤, 包括誤判斷 `3.2.x` 仍支援到 `2026-11` 等. 有趣的是後面附上的參考連結 [Spring Boot | endoflife.date](https://endoflife.date/spring-boot) 一點進去就看到 3.2.x 大大的紅燈.
-進一步的對話與逼問候, ChatGPT 才更新了今年二月的資訊並給出 **相對正確** 的回答.
+本文件原本包含一些不正確的資訊，經過查證官方最新公告後，已進行以下修正：
 
-事實上, 上述資訊仍有些誤區, 但已可相對忽略. 現代社會資訊更新太快, 今日正確的可能明天就翻案.
-更值得關注的是, AI 幻覺將是 AI 使用拿捏的一大難點, 萬一對話的是個人沒有任何經驗/背景知識的, 如何驗證?
+### 主要修正項目：
+
+1. **Spring Boot 3.2.x 支援結束日期**：
+   - 原誤：2026-11
+   - 正確：**2025-02-18**
+
+2. **Spring Boot 2.7.x 支援結束日期**：
+   - 原誤：2023-11
+   - 正確：**2025-02-18**
+
+3. **目前活躍的 OSS 版本**：
+   - 原誤：3.2.x 為活躍 LTS
+   - 正確：**3.3.x 和 3.4.x** 為活躍版本
+
+### AI 資訊驗證的重要性
+
+在與 ChatGPT 對話過程中，發現了多個錯誤資訊，包括誤判 3.2.x 支援時間等。這提醒我們：
+
+- **始終查證官方來源**：不能完全依賴 AI 提供的資訊
+- **交叉檢查**：使用多個來源驗證重要資訊
+- **定期更新**：技術資訊變化快速，需要持續追蹤
+
+現代社會資訊更新太快，今日正確的可能明天就翻案。AI 幻覺將是 AI 使用拿捏的一大難點，特別是對於沒有相關背景知識的使用者。

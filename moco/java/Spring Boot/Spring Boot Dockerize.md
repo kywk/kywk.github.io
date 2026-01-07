@@ -13,115 +13,400 @@ image: >-
 slug: /java/spring-boot/spring-boot-dockerize/
 ---
 
-[SpringBoot] Dockerize Spring Boot Application
-==============================================
+# Spring Boot Docker 容器化
 
-建立 Sprint Boot Application Container 不外乎兩種方式:
-1. 把原始碼放入 container, 透過 mvn 在 container 跑.
-2. 把 Sprint Boot 編譯成 .jar 檔後放入 Container, 透過 Java 來執行.
+## 概述
 
+將 Spring Boot 應用程式容器化有多種方式，每種方式都有其優缺點和適用場景。本文將介紹三種主要的容器化方法，並提供最佳實踐建議。
 
-Run w/ Java source
-------------------
+## 容器化方法比較
+
+| 方法 | 優點 | 缺點 | 適用場景 |
+|------|------|------|----------|
+| 原始碼容器化 | CI/CD 環境無需 JDK | 容器大、安全性低 | 開發測試環境 |
+| JAR 容器化 | 容器小、安全性高 | 需要本地 JDK 環境 | 手動部署 |
+| 多階段建置 | 兼具前兩者優點 | 建置時間較長 | 生產環境推薦 |
+
+## 方法一：原始碼容器化
+
+### Dockerfile
 
 ```dockerfile
-FROM eclipse-temurin
+FROM eclipse-temurin:17-jdk
 WORKDIR /app
  
+# 複製 Maven 包裝器和配置檔案
 COPY .mvn/ .mvn
 COPY mvnw pom.xml ./
+
+# 下載依賴（利用 Docker 層快取）
 RUN ./mvnw dependency:go-offline
  
+# 複製原始碼
 COPY src ./src
  
+# 暴露埠號
+EXPOSE 8080
+
+# 啟動應用程式
 CMD ["./mvnw", "spring-boot:run"]
 ```
 
-這個 Dockerfile 把 source code 打包進 container 初始化專案檔案後,
-透過 mvn 來編譯與啟動 sprint boot application.
+### 建置和執行
 
-這樣的 image 需要把完整編譯環境和程式都放入 container 中,
-優點是若 CI/CD 環境中沒有 JDK 環境, 仍可編譯出可以正常執行的 Spring Boot container.
+```bash
+# 建置映像檔
+docker build -t spring-boot-source .
 
-但一般來說, 除非部屬執行 container 環境都是自家控管的, 否則不會採用這種方式.
-畢竟 container 中檔案是無法被保護, 原始碼放入 container 部屬出去, 等於程式裸奔在外.
-若程式有重要商務邏輯或加解密資訊, 是相當危險的.
-
-Ref: [Build & Deploy a Spring Boot application in Docker container | by Dhruv Saksena | Medium](https://dhruv-saksena.medium.com/build-deploy-a-spring-boot-application-in-docker-container-49b9b2d3e25e)
-
-
-Run w/ JAR binary
------------------
-
-```dockerfile
-FROM openjdk:11-jdk-alpine
-VOLUME /tmp
-ARG JAR_FILE
-COPY ${JAR_FILE} app.jar
-ENTRYPOINT ["java","-jar","/app.jar"]
+# 執行容器
+docker run -p 8080:8080 spring-boot-source
 ```
 
-```shell
-mvn install dockerfile:build
+### 優缺點分析
+
+**優點：**
+- CI/CD 環境無需安裝 JDK
+- 完整的編譯環境
+- 適合開發和測試
+
+**缺點：**
+- 容器映像檔較大（包含完整 JDK 和原始碼）
+- 安全性較低（原始碼暴露）
+- 不適合生產環境
+
+## 方法二：JAR 容器化
+
+### 本地建置 JAR
+
+```bash
+# 建置 JAR 檔案
+./mvnw clean package -DskipTests
 ```
 
-相對於前者, 這個方式是先把 Java 編譯成 JAR 檔, 
-需準備基本的 Java runtime container, 
-把 JAR 放入 container 中即可執行. 
-
-若要部屬到外部環境, 編譯後的 binary 較不容易被破解.
-
-但若要在 CI/CD 中打包 container, 則需確定 CI/CD runner 上是正確對應 JDK 版本.
-可能不同專案使用了不同 JDK 或 mvn 版本, 造成 CI/CD 設定上的複雜或出錯.
-
-不考慮 CI/CD 情況, 由 develop 手動 build docker image 的話, 這是適合的方式.
-
-
-Multi-Stage Build
------------------
-
-> [Multi-stage builds][Multi-stage builds] are useful to anyone who has struggled to optimize 
-> __Dockerfiles__ while keeping them easy to read and maintain.
-
-Docker 支援 Multi-Stage Build, 可以把不同階段的需求拆開到在不同 docker 中執行,
-再把最終需要部署的檔案分別複製到一個 docker.
-
-常見是透過有完整開發環境的 container 來編譯程式,
-再把編譯後的程式放到最基本的執行環境中發佈.
+### Dockerfile
 
 ```dockerfile
-FROM eclipse-temurin:17-jdk-alpine as build
+FROM eclipse-temurin:17-jre-alpine
+
+# 建立非 root 使用者
+RUN addgroup -g 1001 -S appgroup && \
+    adduser -u 1001 -S appuser -G appgroup
+
+# 設定工作目錄
+WORKDIR /app
+
+# 複製 JAR 檔案
+COPY target/*.jar app.jar
+
+# 變更檔案擁有者
+RUN chown appuser:appgroup app.jar
+
+# 切換到非 root 使用者
+USER appuser
+
+# 暴露埠號
+EXPOSE 8080
+
+# 設定 JVM 參數和啟動應用程式
+ENTRYPOINT ["java", "-Djava.security.egd=file:/dev/./urandom", "-jar", "app.jar"]
+```
+
+### 建置和執行
+
+```bash
+# 建置映像檔
+docker build -t spring-boot-jar .
+
+# 執行容器
+docker run -p 8080:8080 spring-boot-jar
+```
+
+### 優缺點分析
+
+**優點：**
+- 容器映像檔較小（僅包含 JRE 和 JAR）
+- 安全性較高（無原始碼）
+- 啟動速度快
+
+**缺點：**
+- 需要本地 JDK 環境
+- CI/CD 環境配置複雜
+- 依賴本地建置環境
+
+## 方法三：多階段建置（推薦）
+
+### Dockerfile
+
+```dockerfile
+# 第一階段：建置階段
+FROM eclipse-temurin:17-jdk-alpine AS builder
+
+WORKDIR /workspace/app
+
+# 複製 Maven 包裝器和配置
+COPY mvnw .
+COPY .mvn .mvn
+COPY pom.xml .
+
+# 下載依賴
+RUN ./mvnw dependency:go-offline
+
+# 複製原始碼並建置
+COPY src src
+RUN ./mvnw clean package -DskipTests
+
+# 解壓 JAR 檔案以優化層結構
+RUN mkdir -p target/dependency && (cd target/dependency; jar -xf ../*.jar)
+
+# 第二階段：執行階段
+FROM eclipse-temurin:17-jre-alpine
+
+# 安裝必要工具和建立使用者
+RUN apk add --no-cache curl && \
+    addgroup -g 1001 -S appgroup && \
+    adduser -u 1001 -S appuser -G appgroup
+
+WORKDIR /app
+
+# 從建置階段複製檔案（分層複製以優化快取）
+ARG DEPENDENCY=/workspace/app/target/dependency
+COPY --from=builder ${DEPENDENCY}/BOOT-INF/lib /app/lib
+COPY --from=builder ${DEPENDENCY}/META-INF /app/META-INF
+COPY --from=builder ${DEPENDENCY}/BOOT-INF/classes /app
+
+# 變更檔案擁有者
+RUN chown -R appuser:appgroup /app
+
+# 切換到非 root 使用者
+USER appuser
+
+# 暴露埠號
+EXPOSE 8080
+
+# 健康檢查
+HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
+    CMD curl -f http://localhost:8080/actuator/health || exit 1
+
+# 啟動應用程式
+ENTRYPOINT ["java", "-cp", "app:app/lib/*", "com.example.demo.DemoApplication"]
+```
+
+### 優化版本（使用 Spring Boot 2.3+ 的分層功能）
+
+```dockerfile
+# 建置階段
+FROM eclipse-temurin:17-jdk-alpine AS builder
 WORKDIR /workspace/app
 
 COPY mvnw .
 COPY .mvn .mvn
 COPY pom.xml .
+RUN ./mvnw dependency:go-offline
+
 COPY src src
+RUN ./mvnw clean package -DskipTests
+RUN java -Djarmode=layertools -jar target/*.jar extract
 
-RUN ./mvnw install -DskipTests
-RUN mkdir -p target/dependency && (cd target/dependency; jar -xf ../*.jar)
+# 執行階段
+FROM eclipse-temurin:17-jre-alpine
 
-FROM eclipse-temurin:17-jdk-alpine
-VOLUME /tmp
-ARG DEPENDENCY=/workspace/app/target/dependency
-COPY --from=build ${DEPENDENCY}/BOOT-INF/lib /app/lib
-COPY --from=build ${DEPENDENCY}/META-INF /app/META-INF
-COPY --from=build ${DEPENDENCY}/BOOT-INF/classes /app
-ENTRYPOINT ["java","-cp","app:app/lib/*","hello.Application"]
+RUN addgroup -g 1001 -S appgroup && \
+    adduser -u 1001 -S appuser -G appgroup
+
+WORKDIR /app
+USER appuser
+
+# 分層複製（按變更頻率排序）
+COPY --from=builder workspace/app/dependencies/ ./
+COPY --from=builder workspace/app/spring-boot-loader/ ./
+COPY --from=builder workspace/app/snapshot-dependencies/ ./
+COPY --from=builder workspace/app/application/ ./
+
+EXPOSE 8080
+ENTRYPOINT ["java", "org.springframework.boot.loader.JarLauncher"]
 ```
 
-以這個例子來說, 先建立了 builder 這個 container, 
-把專案設定和原始程式檔都複製進 builder 中進行專案初始化和編譯.
+### 建置和執行
 
-再建立一個基本的執行環境 container, 
-把 builder 中所編譯的 JAR 和相關環境檔案複製過來.
+```bash
+# 建置映像檔
+docker build -t spring-boot-multistage .
 
-如此一來, 用來部署的 container 裡面只會有 JAR binary, 可避免資安問題.
-在 CI/CD 流程時, 編譯 JAR 是在 docker 中被執行, 亦可避免環境設定問題造成的錯誤.
+# 執行容器
+docker run -p 8080:8080 spring-boot-multistage
+```
 
-可說是集前兩個方式的優點於一身的方式.
+## Docker Compose 配置
 
-Ref: [Build, Package, and Run Spring Boot Apps With Docker - DZone](https://dzone.com/articles/build-package-and-run-spring-boot-apps-with-docker)
+### docker-compose.yml
+
+```yaml
+version: '3.8'
+
+services:
+  app:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/myapp
+      - SPRING_DATASOURCE_USERNAME=myuser
+      - SPRING_DATASOURCE_PASSWORD=mypassword
+    depends_on:
+      - db
+    networks:
+      - app-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/actuator/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  db:
+    image: postgres:15-alpine
+    environment:
+      - POSTGRES_DB=myapp
+      - POSTGRES_USER=myuser
+      - POSTGRES_PASSWORD=mypassword
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - app-network
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+
+networks:
+  app-network:
+    driver: bridge
+```
+
+## 最佳實踐
+
+### 1. 安全性
+
+```dockerfile
+# 使用非 root 使用者
+RUN addgroup -g 1001 -S appgroup && \
+    adduser -u 1001 -S appuser -G appgroup
+USER appuser
+
+# 使用最小化基礎映像檔
+FROM eclipse-temurin:17-jre-alpine
+
+# 定期更新基礎映像檔
+RUN apk update && apk upgrade
+```
+
+### 2. 效能優化
+
+```dockerfile
+# JVM 調優
+ENV JAVA_OPTS="-Xmx512m -Xms256m -XX:+UseG1GC -XX:+UseContainerSupport"
+
+# 啟動參數
+ENTRYPOINT ["sh", "-c", "java $JAVA_OPTS -jar app.jar"]
+```
+
+### 3. 監控和日誌
+
+```yaml
+# docker-compose.yml
+services:
+  app:
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.app.rule=Host(`myapp.local`)"
+```
+
+### 4. 環境配置
+
+```bash
+# .env 檔案
+SPRING_PROFILES_ACTIVE=production
+DATABASE_URL=jdbc:postgresql://db:5432/myapp
+REDIS_URL=redis://redis:6379
+JWT_SECRET=your-secret-key
+```
+
+## 部署腳本
+
+### deploy.sh
+
+```bash
+#!/bin/bash
+
+set -e
+
+echo "Building Spring Boot application..."
+docker build -t myapp:latest .
+
+echo "Stopping existing containers..."
+docker-compose down
+
+echo "Starting new containers..."
+docker-compose up -d
+
+echo "Waiting for application to start..."
+sleep 30
+
+echo "Checking application health..."
+if curl -f http://localhost:8080/actuator/health; then
+    echo "Application deployed successfully!"
+else
+    echo "Application deployment failed!"
+    docker-compose logs app
+    exit 1
+fi
+```
+
+## 故障排除
+
+### 常見問題
+
+1. **容器啟動失敗**
+   ```bash
+   # 檢查日誌
+   docker logs <container-id>
+   
+   # 進入容器除錯
+   docker exec -it <container-id> /bin/sh
+   ```
+
+2. **記憶體不足**
+   ```dockerfile
+   # 限制 JVM 記憶體使用
+   ENV JAVA_OPTS="-Xmx512m -XX:+UseContainerSupport"
+   ```
+
+3. **網路連線問題**
+   ```bash
+   # 檢查網路配置
+   docker network ls
+   docker network inspect <network-name>
+   ```
+
+### 除錯技巧
+
+```bash
+# 檢查容器資源使用
+docker stats
+
+# 檢查容器詳細資訊
+docker inspect <container-id>
+
+# 即時查看日誌
+docker logs -f <container-id>
+```
 
 
 See Also

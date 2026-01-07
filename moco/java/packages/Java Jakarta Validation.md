@@ -14,15 +14,23 @@ slug: /java/packages/java-jakarta-validation/
 
 # Jakarta Bean Validation
 
-> 後端開發 API 時, 常需要對 Request 欄位最條件檢核, Ex: Not NULL, 僅限數字, 長度限制... 等.
-> 尤其若串接資料庫時, 欄位檢核更是必要的.
+> 後端開發 API 時，常需要對 Request 欄位進行條件檢核，例如：Not NULL、僅限數字、長度限制等。
+> 尤其在串接資料庫時，欄位檢核更是必要的。
 >
-> Node.js Express 開發常搭配 Express-Validator middleware 來簡化資料欄位基本驗證的 coding 瑣事,
-> 查找 SpringBoot 是否也有類似的 middleware 時, 發現 `Jakarta Bean Validation` 這個更好用的套件.
+> Node.js Express 開發常搭配 Express-Validator middleware 來簡化資料欄位基本驗證的程式碼，
+> 在 Spring Boot 中，`Jakarta Bean Validation` 提供了類似且更強大的功能。
 
 ## Overview
 
-`Jakarta Bean Validation`
+`Jakarta Bean Validation` (前身為 Java Bean Validation) 是 Java EE/Jakarta EE 的標準規範，用於驗證 Java Bean 的屬性。Spring Boot 內建支援此規範，透過註解方式可以輕鬆實現資料驗證。
+
+### 主要特色
+
+- **註解驅動**：使用簡潔的註解進行驗證規則定義
+- **內建驗證器**：提供豐富的內建驗證約束
+- **自訂驗證**：支援自訂驗證邏輯
+- **國際化支援**：錯誤訊息支援多語言
+- **群組驗證**：支援不同情境下的驗證規則
 
 ## Jakarta Bean Validation Constraints
 
@@ -411,9 +419,106 @@ String briefMessage;
 
 </table>
 
-## @RequestBody @Valid annotation
+## Spring Boot 整合使用
 
-##
+### 基本用法
+
+在 Spring Boot 中使用 Jakarta Bean Validation 非常簡單：
+
+```java
+@RestController
+public class UserController {
+    
+    @PostMapping("/users")
+    public ResponseEntity<String> createUser(@Valid @RequestBody User user) {
+        // 驗證通過後的處理邏輯
+        return ResponseEntity.ok("User created successfully");
+    }
+}
+```
+
+### DTO 類別定義
+
+```java
+public class User {
+    @NotBlank(message = "使用者名稱不能為空")
+    @Size(min = 3, max = 20, message = "使用者名稱長度必須在 3-20 字元之間")
+    private String username;
+    
+    @Email(message = "請輸入有效的電子郵件地址")
+    @NotBlank(message = "電子郵件不能為空")
+    private String email;
+    
+    @Min(value = 18, message = "年齡必須大於等於 18")
+    @Max(value = 120, message = "年齡必須小於等於 120")
+    private Integer age;
+    
+    // getters and setters
+}
+```
+
+### 錯誤處理
+
+```java
+@ControllerAdvice
+public class ValidationExceptionHandler {
+    
+    @ExceptionHandler(MethodArgumentNotValidException.class)
+    public ResponseEntity<Map<String, String>> handleValidationExceptions(
+            MethodArgumentNotValidException ex) {
+        Map<String, String> errors = new HashMap<>();
+        ex.getBindingResult().getAllErrors().forEach((error) -> {
+            String fieldName = ((FieldError) error).getField();
+            String errorMessage = error.getDefaultMessage();
+            errors.put(fieldName, errorMessage);
+        });
+        return ResponseEntity.badRequest().body(errors);
+    }
+}
+```
+
+## 進階功能
+
+### 群組驗證
+
+```java
+public interface CreateGroup {}
+public interface UpdateGroup {}
+
+public class User {
+    @NotNull(groups = UpdateGroup.class)
+    private Long id;
+    
+    @NotBlank(groups = {CreateGroup.class, UpdateGroup.class})
+    private String username;
+}
+
+// Controller 中使用
+@PostMapping("/users")
+public ResponseEntity<String> createUser(@Validated(CreateGroup.class) @RequestBody User user) {
+    // 建立使用者邏輯
+}
+```
+
+### 自訂驗證器
+
+```java
+@Target({ElementType.FIELD})
+@Retention(RetentionPolicy.RUNTIME)
+@Constraint(validatedBy = PhoneNumberValidator.class)
+public @interface PhoneNumber {
+    String message() default "無效的電話號碼格式";
+    Class<?>[] groups() default {};
+    Class<? extends Payload>[] payload() default {};
+}
+
+public class PhoneNumberValidator implements ConstraintValidator<PhoneNumber, String> {
+    @Override
+    public boolean isValid(String phoneNumber, ConstraintValidatorContext context) {
+        return phoneNumber != null && phoneNumber.matches("^09\\d{8}$");
+    }
+}
+```
 
 ## See Also
 

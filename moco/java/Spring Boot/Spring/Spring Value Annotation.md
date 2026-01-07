@@ -126,26 +126,28 @@ private String[] valuesArray;
 ```
 
 
-Advanced Examples With SpEL
----------------------------
+## 進階範例與 SpEL
 
-We can also use [[Spring SpEL Expressions|SpEL expressions]] to get the value.
+我們也可以使用 [[Spring SpEL Expressions|SpEL 表達式]] 來獲取值。
 
-If we have a system property named _priority_, then its value will be applied to the field:
+### 系統屬性存取
 
-``` java
+如果我們有一個名為 priority 的系統屬性，其值將被應用到欄位：
+
+```java
 @Value("#{systemProperties['priority']}")
 private String spelValue;
 ```
-If we have not defined the system property, then the _null value_ will be assigned.
 
-上面語法讀取 systemProperties 中的 priority 來注入使用.
-透過 SpEL 來讀取 property 可避免多個 property 有相同 key 導致執行時錯誤.
+如果我們沒有定義系統屬性，則會分配 null 值。
 
-若 _PropertySource_ 中有 _priority_ 的值為 "propertySource priority",
-而 _systemProperty_ 中找不到 _priority_:
+> 上述語法讀取 systemProperties 中的 priority 來注入使用。
+> 透過 SpEL 來讀取 property 可避免多個 property 有相同 key 導致執行時錯誤。
 
-``` java
+若 PropertySource 中有 priority 的值為 "propertySource priority"，
+而 systemProperty 中找不到 priority：
+
+```java
 @Value("${priority}")
 private String priorityProperty;
 
@@ -153,34 +155,33 @@ private String priorityProperty;
 private String spelValue;
 ```
 
-_priorityProperty_ 的值為 "propertySource priority",
-而 _spelValue_ 為 null.
+priorityProperty 的值為 "propertySource priority"，
+而 spelValue 為 null。
 
-### default value ###
+### SpEL 預設值
 
-The default value in the SpEL expression a bit complex then behind,
-_some default_ value for the field if the system property is not defined:
+SpEL 表達式中的預設值語法較為複雜，如果系統屬性未定義，則為欄位提供 some default 值：
 
-``` java
+```java
 @Value("#{systemProperties['unknown'] ?: 'some default'}")
 private String spelSomeDefault;
 ```
 
-### from other beans ###
+### 從其他 Bean 獲取值
 
-Suppose we have a bean named _someBean_ with a field _someValue_ equal to _10_.
-Then, _10_ will be assigned to the field:
+假設我們有一個名為 someBean 的 bean，其欄位 someValue 等於 10。
+那麼，10 將被分配給該欄位：
 
-``` java
+```java
 @Value("#{someBean.someValue}")
 private Integer someBeanValue;
 ```
 
-### List ###
+### SpEL 列表處理
 
-We can manipulate properties to get a _List_ of values, here, a list of string values A, B, and C:
+我們可以操作屬性來獲取值的 List，這裡是字串值 A、B 和 C 的列表：
 
-``` java
+```java
 @Value("#{'${listOfValues}'.split(',')}")
 private List<String> valuesList;
 ```
