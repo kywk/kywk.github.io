@@ -12,13 +12,25 @@ date_updated: 2024-12-22T00:00:00.000Z
 slug: /utilities/cli/homebrew-bundle/
 ---
 
-# [homebrew-bundle](https://github.com/Homebrew/homebrew-bundle)
+---
+title: Homebrew Bundle
+description: homebrew-bundle
+image: >
+  https://lh3.googleusercontent.com/pw/AL9nZEUA9Ifvd5Z8SXDWkeVB6AC4MPGwnXaL6kBXNPoXwOQQ2jOcZ1Jw_0p8TKK8C3ZX0e67_FOY15eDrm7aaXSQJcKtoUzC80SAQEHsaBy6qS2AqNNs5VUFNXBKm439y_1wkvmDl-PnL8ReojnIumNlEvOXBg=w800-no?authuser=0
+tags:
+  - CLI
+  - homebrew
+sidebar_position: 5
+date_created: 2024-12-22T00:00:00.000Z
+date_updated: 2024-12-22T00:00:00.000Z
+slug: /utilities/cli/homebrew-bundle/
+---
 
-> Homebrew 也開始支援 linux, 可能未來部分 Linux 上的工具會改用 homebrew 來安裝, 避免不同 Linux distro package manager 版本不一的問題.
+# Homebrew Bundle
 
-homebrew-bundle 類似 node 中的 package.json / go 的 go.mod, 把想要安裝的套件寫在 Brewfile 中, 執行 brew bundle 即可以安裝所有套件.
+> [homebrew-bundle](https://github.com/Homebrew/homebrew-bundle) 是 Homebrew 的官方擴充套件，提供類似 package.json 的套件管理功能。
 
-也可以利用 homebrew-bundle 來備份所有已安裝的套件, 在新電腦無痛安裝.
+Homebrew Bundle 讓你可以將所有需要的套件定義在 `Brewfile` 中，實現一鍵安裝和環境同步。特別適合新機器設定和團隊開發環境標準化。
 
 ## Requirement
 
