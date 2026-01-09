@@ -21,7 +21,7 @@ slug: /obsidian/obsidian-as-pkm/
 	- [ ] Study & Refine my Obsidian Vault 📅 2026-01-18
 
 ### myOutlook
-- [ ] obs-core_properties 🔽 📅 2026-01-07
+- [x] obs-core_properties 🔽 📅 2026-01-07 ✅ 2026-01-09
 - [ ] obs_task-management 🔽 📅 2026-01-11
 - [ ] obs-core_daily-notes 🔼 📅 2026-01-15
 - [x] Reorganize Obsidian ✅ 2024-01-04

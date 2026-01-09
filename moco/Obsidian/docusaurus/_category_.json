@@ -1,0 +1,8 @@
+{
+  "label": "Docusaurus",
+  "position": 0,
+  "link": {
+    "type": "doc",
+    "id": "Integrate Obsidian and Docusaurus"
+  }
+}

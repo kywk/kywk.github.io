@@ -1,6 +1,6 @@
 ---
-title: 'Manjaro Linux 安裝指南'
-description: 'Manjaro Linux 系統安裝與初始設定完整指南'
+title: Manjaro Linux 安裝指南
+description: Manjaro Linux 系統安裝與初始設定完整指南
 tags:
   - Linux/Manjaro
   - Linux
@@ -9,7 +9,7 @@ date_created: 2022-05-11T04:01:39.000Z
 date_updated: 2024-12-19T00:00:00.000Z
 image: >-
   https://lh3.googleusercontent.com/pw/AM-JKLU2Ot2TyON1chUA-Qw7qj-OQSRMYNin7jsJsUa3E_jwqq1JbwTZZckUtJmNZmqxY5M4egm-ryt4g3Ope_0EqHBrCDSEHmcy-goHRzWh-ZgguUoy1XKpyS1DNx8aV92vAkAM0zZOW6EZR4KS3W1DClQKhw=w800-no?authuser=0
-slug: /utilities/linux/manjaro-installation-guide/
+slug: /utilities/linux/manjaro-installation-note/
 ---
 
 # Manjaro Linux 安裝指南

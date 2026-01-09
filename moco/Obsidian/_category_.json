@@ -2,7 +2,7 @@
   "label": "Obsidian",
   "position": 80,
   "link": {
-    "type": "generated-index",
-    "description": "Obsidian"
+    "type": "doc",
+    "id": "Awesome Obsidian"
   }
 }
