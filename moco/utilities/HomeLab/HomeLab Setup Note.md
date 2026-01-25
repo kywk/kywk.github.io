@@ -1,12 +1,12 @@
 ---
-title: 'HomeLab 建置與管理'
-description: '個人 HomeLab 環境建置、服務部署與管理指南'
+title: HomeLab 建置與管理
+description: 個人 HomeLab 環境建置、服務部署與管理指南
 tags:
   - HomeLab
   - Self-Hosted
   - Infrastructure
 date_created: 2024-12-19T00:00:00.000Z
-slug: /utilities/homelab/home-lab/
+slug: /utilities/homelab/homelab-setup-note/
 ---
 
 # HomeLab 建置與管理

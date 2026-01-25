@@ -1,6 +1,6 @@
 ---
-title: 'Sequelize: Migration Seeds'
-description: Sequelize Migration Seeds
+title: 'Sequelize: Migration'
+description: Sequelize Migration
 tags:
   - Node.js
   - ORM
@@ -11,8 +11,8 @@ image: >-
 slug: /javascript/package/sequelize-migration/
 ---
 
-[Node.js] Sequelize Migration Seeds
-===================================
+[Node.js] Sequelize Migration
+=============================
 
 Sequelize 是 Node.js 下相當主流的 ORM 套件.
 ORM 使用與否的爭論大概也和 `Space VS Tab`, `Vi VS Emacs` ... 一樣的永無止盡.
@@ -27,10 +27,10 @@ ORM 使用與否的爭論大概也和 `Space VS Tab`, `Vi VS Emacs` ... 一樣�
 
 
 
-什麼是 Migraiton ?
+什麼是 Migration ?
 -----------------
 
-- __Migration__ 是用來描述 「資料庫的結構掌什麼樣子」 的檔案, 隨著專案開發過程中對資料庫的修改而逐漸增加.
+- __Migration__ 是用來描述「資料庫的結構長什麼樣子」的檔案，隨著專案開發過程中對資料庫的修改而逐漸增加。
 - 可以理解成資料庫格式變更的版本控制.
 
 ![migration files](https://lh3.googleusercontent.com/pw/AL9nZEXTj9J5V07uQ7uWqG_O5kIuauTbX5mOu-pJ8RqJDe5CEPgkF4tHAR294BcbwsGbKdu0NbOqNCik91U8vG-fUtBbt6jVSr6tMuzjaQOIs5ZWTrx59xYN5phxsHd4GPEyX7oDNLn6KAT8Kr4u2f-dAO4lRg=w600-no?authuser=0)
@@ -83,10 +83,11 @@ This will create following folders
 修改 config/config.json 裡頭連接 DB 的相關配置. 
 
 ``` json title="config.json"
+// ⚠️ 範例配置 - 請替換為實際的資料庫連線資訊
 "development": {
-    "username": "user",
-    "password": "password",
-    "database": "database name",
+    "username": "<your_db_user>",
+    "password": "<your_db_password>",
+    "database": "<your_database_name>",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
@@ -318,7 +319,7 @@ See Also
 
 不喜使用 ORM 的開發者或既有的專案, 無須改變存取資料庫的方式,
 程式可以不透過 Sequelize ORM, 自行處理資料庫存取介面.
-專案也可以不依賴 `qequelize-cli`, 
+專案也可以不依賴 `sequelize-cli`, 
 直接透過 `npx sequelize COMMAND [OPTIONS]` 來執行 Sequelize Migration.
 
 ### Reference ###

@@ -1,6 +1,6 @@
 ---
-title: 'Sequelize: Migration'
-description: Sequelize Migration
+title: 'Sequelize: Seeds'
+description: Sequelize Seeds - 資料庫測試資料與初始資料管理
 tags:
   - Node.js
   - ORM
@@ -11,319 +11,201 @@ image: >-
 slug: /javascript/package/sequelize-migration-seeds/
 ---
 
-[Node.js] Sequelize Migration
-=============================
+[Node.js] Sequelize Seeds
+=========================
 
-Sequelize 是 Node.js 下相當主流的 ORM 套件.
-ORM 使用與否的爭論大概也和 `Space VS Tab`, `Vi VS Emacs` ... 一樣的永無止盡.
-
-而 Sequelize 2 之後推出 sequelize-cli 中的 Migration 功能, 
-透過一次又一次的維護檔, 確保移植時有相同的建構過程,
-確實能解決程式開發階段對資料庫操作的常見困擾:
-
-- 出問題回不到上個版本？
-- 忘記做了哪些修改？
-- 改了 schema 沒人知道？
+Seeds 是 Sequelize 用來管理測試資料和初始資料的機制。
+透過 Seeders，可以快速建立開發或測試環境所需的資料，確保團隊成員擁有一致的資料狀態。
 
 
 
-什麼是 Migraiton ?
------------------
+什麼是 Seeds ?
+-------------
 
-- __Migration__ 是用來描述 「資料庫的結構掌什麼樣子」 的檔案, 隨著專案開發過程中對資料庫的修改而逐漸增加.
-- 可以理解成資料庫格式變更的版本控制.
+- __Seeds__ 是用來填充資料庫初始資料或測試資料的檔案
+- 與 Migration 不同，Seeds 主要處理「資料內容」而非「資料結構」
+- 適合用於開發環境、測試環境的資料準備
 
-![migration files](https://lh3.googleusercontent.com/pw/AL9nZEXTj9J5V07uQ7uWqG_O5kIuauTbX5mOu-pJ8RqJDe5CEPgkF4tHAR294BcbwsGbKdu0NbOqNCik91U8vG-fUtBbt6jVSr6tMuzjaQOIs5ZWTrx59xYN5phxsHd4GPEyX7oDNLn6KAT8Kr4u2f-dAO4lRg=w600-no?authuser=0)
+### 使用場景
 
-### 操作行為 ###
-
-Migration 是拿來變動資料表的, 所以會有幾種動作在這裡處理.
-
-- 變動資料表
-- 變動欄位
-- 變動資料表關聯
-
-### 可以幹嘛 ###
-
-- 紀錄操作過程
-- 降低人為操作錯誤的可能
-- 環境部署或是更換資料庫的時候，快速達成同步
-- 錯誤發生時，可以快速回到正確的版本
+- 開發環境的測試資料
+- 應用程式的初始資料（如預設管理員帳號、系統設定）
+- Demo 展示用的範例資料
+- 單元測試或整合測試的固定資料集
 
 
 
-環境安裝與設置
------------
+建立 Seeder
+----------
 
-### sequelize-cli ###
+### 產生 Seeder 檔案
 
-sequelize-cli 可系統全域安裝或安裝在專案項目, 依實際需求而定.
-``` shell
-npm install --save-dev sequelize-cli 
-```
-亦直接透過 `npx sequelize ` 執行.
-
-### Project bootstrapping ###
-
-``` shell
-npx sequelize-cli init
+```bash
+sequelize seed:generate --name demo-users
 ```
 
-This will create following folders
+會在 `seeders/` 目錄下產生檔案：`<YYYYMMDDHHMMSS>-demo-users.js`
 
-- `config`, contains config file, which tells CLI how to connect with database
-- `models`, contains all models for your project
-- `migrations`, contains all migration files
-- `seeders`, contains all seed files
+### 執行 Seeders
 
-![tree](https://lh3.googleusercontent.com/pw/AL9nZEVtWoXHl5m1PaPaMRoSgGYsCk8GxIE78CKElbigXOZj63pXqjmkjyDwnH-Vkk1cErjHsB_xFg_CJsdt6a5l2f-7_8wM046gAZDPcZK2Gc0-6LxwLxATYh81BU5m2V1NE_EscAE3DeLFXH1mb0JntUErkw=w314-no?authuser=0)
+```bash
+# 執行所有 seeders
+sequelize db:seed:all
 
-### configure ###
-
-修改 config/config.json 裡頭連接 DB 的相關配置. 
-
-``` json title="config.json"
-"development": {
-    "username": "user",
-    "password": "password",
-    "database": "database name",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
-  },
-```  
-
-設定完後即可利用 sequelize 來操作 DB. 如新建一張 user table
+# 執行特定 seeder
+sequelize db:seed --seed <YYYYMMDDHHMMSS>-demo-users.js
 ```
-sequelize model:generate --name user --attributes name:string,mail:string
+
+### 復原 Seeders
+
+```bash
+# 復原最近一次的 seeder
+sequelize db:seed:undo
+
+# 復原特定 seeder
+sequelize db:seed:undo --seed <YYYYMMDDHHMMSS>-demo-users.js
+
+# 復原所有 seeders
+sequelize db:seed:undo:all
 ```
 
 
 
-基本使用指令
----------
+Seeder 檔案結構
+--------------
 
-透過下列指令可新增 migration, 並且想好 migration message.
+Seeder 檔案同樣包含 `up()` 和 `down()` 方法：
 
-```
-sequelize migration:create --name <migration message>
-```
-就會產生檔案 `migrations/<YYYYMMDDHHMMSS>-<migration message>.js`.
-用自己習慣的編輯器去修改 js, 搭配 [Query Interface](https://sequelize.org/docs/v6/other-topics/query-interface/) 語法去建立或調整資料庫 Schema 修改.
-
-```
-sequelize db:migrate
-```
-這個指令會自動執行到最後一個 migration.js 檔案裡面的 `up()`, 為資料庫欄位逐次修改調整過程.
-
-```
-sequelize db:migrate:undo
-```
-則執行 js 檔案裡面的 `down()`, 內容為對應修改的還原語法.
-
-### 指令列表 ###
-
-``` 
-Sequelize CLI [Node: 16.17.0, CLI: 6.4.1, ORM: 6.21.6]
-
-sequelize <command>
-
-Commands:
-  sequelize db:migrate                        Run pending migrations
-  sequelize db:migrate:schema:timestamps:add  Update migration table to have timestamps
-  sequelize db:migrate:status                 List the status of all migrations
-  sequelize db:migrate:undo                   Reverts a migration
-  sequelize db:migrate:undo:all               Revert all migrations ran
-  sequelize db:seed                           Run specified seeder
-  sequelize db:seed:undo                      Deletes data from the database
-  sequelize db:seed:all                       Run every seeder
-  sequelize db:seed:undo:all                  Deletes data from the database
-  sequelize db:create                         Create database specified by configuration
-  sequelize db:drop                           Drop database specified by configuration
-  sequelize init                              Initializes project
-  sequelize init:config                       Initializes configuration
-  sequelize init:migrations                   Initializes migrations
-  sequelize init:models                       Initializes models
-  sequelize init:seeders                      Initializes seeders
-  sequelize migration:generate                Generates a new migration file
-  sequelize migration:create                  Generates a new migration file
-  sequelize model:generate                    Generates a model and its migration
-  sequelize model:create                      Generates a model and its migration
-  sequelize seed:generate                     Generates a new seed file
-  sequelize seed:create                       Generates a new seed file
-
-Options:
-  --version  Show version number                                                           [boolean]
-  --help     Show help
-```
-
-
-
-檔案架構
--------
-
-`up()` `down()` 都回傳 promise
-
-``` js title="migration-<DATA>-<MESSAGE>.js"
+```js title="seeders/<TIMESTAMP>-demo-users.js"
 'use strict';
 
 module.exports = {
-  up: (queryInterface, Sequelize) => {
-    // 要增加內容的動作
+  up: async (queryInterface, Sequelize) => {
+    await queryInterface.bulkInsert('Users', [
+      {
+        name: 'John Doe',
+        email: 'john@example.com',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        name: 'Jane Smith',
+        email: 'jane@example.com',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      }
+    ], {});
   },
 
-  down: (queryInterface, Sequelize) => {
-    // 要減少內容的動作
+  down: async (queryInterface, Sequelize) => {
+    await queryInterface.bulkDelete('Users', null, {});
   }
 };
 ```
 
-### Query Interface 常用方法 ###
+### 常用方法
 
-- 變動資料表
-  - 新增資料表 `createTable(tableName, attributes, options)`
-  - 刪除資料表 `dropTable(tableName, options)`
-  - 刪除所有資料表 `dropAllTables(options)`
-  - 重新命名資料表 `renameTable(before, after, options)`
-  - 顯示資料表陣列 `showAllTables(options)`
-    - tableNames 的 datatype Array
-  - 顯示資料表 schema `describeTable(tableName, options)`
-- 變動欄位
-  - 增加欄位 `addColumn(tableName, attributeName, dataTypeOrOptions, options)`
-  - 刪除欄位 `removeColumn(tableName, attributeName, options)`
-  - 修改欄位設定 `changeColumn(tableName, attributeName, dataTypeOrOptions, options)`
-  - 重新命名欄位 `renameColumn(tableName, attrNameBefore, attrNameAfter, options)`
-- 變動索引(資料表屬性的功能)
-  - 建立索引 `addIndex(tableName, attributes, options)`
-  - 移除索引 `removeIndex(tableName, indexNameOrAttributes, options)`
-
-### SQL 語法 ###
-
-除了呼叫 Query Interface 外, 使用 `queryInterface.sequelize.query(SQL 語法)` 的用法,
-可以直接執行 SQL 語法, 補足 Query Interface 方法的不足.
-或因故不想透過 Sequelize ORM 語法時, 可直接使用標準 SQL 來更改資料庫 Schema.
-
-``` js
-up: (queryInterface, Sequelize) => {
-  return queryInterface.method(
-      //...
-    }).then(() => {
-      queryInterface.sequelize.query(`UPDATE table SET column=field`)
-    })
-}
-```
+- `bulkInsert(tableName, records, options)` - 批次新增資料
+- `bulkDelete(tableName, where, options)` - 批次刪除資料
+- `bulkUpdate(tableName, values, where, options)` - 批次更新資料
 
 
 
-進階使用
+實用範例
 -------
 
-### 回朔版本 ###
+### 使用 Model 建立資料
 
-可以建立也可以回溯
+```js
+const { User } = require('../models');
 
-- sequelize db:migrate:undo  一次退一個版本
-- sequelize db:migrate:undo:all 退到初始狀態
-- sequelize db:migrate:undo:all --to XXXXXXXXXXXXXX-create-user.js 退到指定版本
+module.exports = {
+  up: async (queryInterface, Sequelize) => {
+    await User.bulkCreate([
+      { name: 'Admin', email: 'admin@example.com', role: 'admin' },
+      { name: 'User', email: 'user@example.com', role: 'user' }
+    ]);
+  },
 
-### 資料表關聯 ###
-
-在 queryInterface.createTable / addColumn 中, 
-在 attributes 定義欄位的物件中, 寫 reference 決定資料庫變動後, 關聯是否存在.
-
-``` js
-return queryInterface.addColumn(
-  'tableName',
-  'fieldName',
-  {
-    type: Sequelize.INTEGER.UNSIGNED,
-    references: {
-      model: 'tableName',
-      key: 'fieldName'
-    },
-    onDelete: 'SET NULL',
-    onUpdate: 'CASCADE'
-    //...
-  })
-},
+  down: async (queryInterface, Sequelize) => {
+    await User.destroy({ where: { email: ['admin@example.com', 'user@example.com'] } });
+  }
+};
 ```
 
-### Hook ###
+### 條件式刪除
 
-當呼叫 add/set 函數時, beforeUpdate/afterUpdate 也會執行.
-唯一可以執行 beforeDestroy/afterDestroy 的方式, 就是設定 associations 屬性 onDelete: ‘cascade’.
-參考: http://docs.sequelizejs.com/manual/tutorial/hooks.html
+```js
+module.exports = {
+  down: async (queryInterface, Sequelize) => {
+    await queryInterface.bulkDelete('Users', {
+      email: { [Sequelize.Op.like]: '%@example.com' }
+    }, {});
+  }
+};
+```
 
-呼叫 association 時設定 hook 選項, ex: `onUpdate`, `onDelete`.
-預設所有的關聯, 更新用 CASCADE, 刪除用 SET NULL, 除了 n:m 關聯, 用 CASCADE 刪除.
+### 關聯資料的 Seed
 
-1. `RESTRICT`, 同 NO ACTION
-2. `CASCADE`, 同步 update/delete 更新子表 foreign key
-3. `NO ACTION`, 不允許主表 update/delete
-4. `SET DEFAULT`, 子表 foreign key 設為 default (Innodb not use)
-5. `SET NULL`, 子表 foreign key 設為 null
+```js
+module.exports = {
+  up: async (queryInterface, Sequelize) => {
+    // 先建立 Users
+    const users = await queryInterface.bulkInsert('Users', [
+      { name: 'John', email: 'john@example.com', createdAt: new Date(), updatedAt: new Date() }
+    ], { returning: true });
 
-Available constraints:
+    // 再建立關聯的 Posts
+    await queryInterface.bulkInsert('Posts', [
+      {
+        title: 'First Post',
+        content: 'Hello World',
+        userId: users[0].id,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      }
+    ], {});
+  },
 
-- UNIQUE
-  ``` js
-  queryInterface.addConstraint('Users', ['email'], {
-    type: 'unique',
-    name: 'custom_unique_constraint_name'
-  });  
-  ```
-- DEFAULT (MSSQL only)
-  ``` js
-  queryInterface.addConstraint('Users', ['roles'], {
-    type: 'default',
-    defaultValue: 'guest'
-  });
-  ```
-- CHECK (MySQL - Ignored by the database engine)
-  ``` js
-  queryInterface.addConstraint('Users', ['roles'], {
-    type: 'check',
-    where: {
-       roles: ['user', 'admin', 'moderator', 'guest']
-    }
-  });
-  ```
-- FOREIGN KEY
-  ``` js
-  queryInterface.addConstraint('Posts', ['username'], {
-    type: 'foreign key',
-    name: 'custom_fkey_constraint_name',
-    references: { //Required field
-      table: 'target_table_name',
-      field: 'target_column_name'
-    },
-    onDelete: 'cascade',
-    onUpdate: 'cascade'
-  });
-  ```
-- PRIMARY KEY
-  ``` js
-  queryInterface.addConstraint('Users', ['username'], {
-     type: 'primary key',
-     name: 'custom_primary_constraint_name'
-  });
-  ```
+  down: async (queryInterface, Sequelize) => {
+    await queryInterface.bulkDelete('Posts', null, {});
+    await queryInterface.bulkDelete('Users', null, {});
+  }
+};
+```
+
+
+
+注意事項
+-------
+
+### Seeds 不會自動追蹤執行狀態
+
+與 Migration 不同，Sequelize 預設不會追蹤哪些 Seeds 已經執行過。
+這意味著執行 `db:seed:all` 可能會重複插入資料。
+
+解決方案：
+- 在 Seeder 中加入檢查邏輯，避免重複插入
+- 使用 `db:seed:undo:all` 清空後再重新執行
+- 考慮使用 [sequelize-cli-typescript](https://github.com/manuelbieh/sequelize-cli-typescript) 等擴充套件
+
+### 生產環境使用建議
+
+- Seeds 主要用於開發和測試環境
+- 生產環境的初始資料建議透過 Migration 或專門的部署腳本處理
+- 避免在生產環境執行 `db:seed:undo:all`，可能會清空重要資料
 
 
 
 See Also
 --------
 
-雖然 Migration 是 Sequelize 所推出的, 但 sequelize-cli 可獨立使用.
-使用 Sequelize Migration 來管理專案資料庫格式架構和程式中是否使用 Sequelize ORM 並無關係.
+### 相關文章
 
-不喜使用 ORM 的開發者或既有的專案, 無須改變存取資料庫的方式,
-程式可以不透過 Sequelize ORM, 自行處理資料庫存取介面.
-專案也可以不依賴 `qequelize-cli`, 
-直接透過 `npx sequelize COMMAND [OPTIONS]` 來執行 Sequelize Migration.
+- [[Sequelize Migration]] - 資料庫結構變更管理
 
-### Reference ###
+### Reference
 
-- [Migrations | Sequelize](https://sequelize.org/docs/v6/other-topics/migrations/)  
-  [Query Interface](https://sequelize.org/docs/v6/other-topics/query-interface/)
-- [Sequelize Migration - 《Chris 技術筆記》](https://dwatow.github.io/2018/09-24-sequelize/sequelize-migration/)
-- [透過 sequelize 來達成 DB Schema Migration - HackMD](https://hackmd.io/@TSMI_E7ORNeP8YBbWm-lFA/ryCtaVW_M?print-pdf)
+- [Migrations | Sequelize](https://sequelize.org/docs/v6/other-topics/migrations/)
+- [Query Interface | Sequelize](https://sequelize.org/docs/v6/other-topics/query-interface/)
+- [Sequelize CLI Documentation](https://github.com/sequelize/cli)
