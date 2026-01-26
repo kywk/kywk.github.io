@@ -267,18 +267,14 @@ SORT sum(rows.amount) DESC
 自動化交易記錄建立：
 
 ```javascript
-<%*
-const date = tp.date.now("YYYY-MM-DD");
-const amount = await tp.system.prompt("輸入金額");
-const description = await tp.system.prompt("輸入描述");
-%>
 
-## <% date %> <% description %>
+
+## 2026-01-25 null
 
 ```ledger
-<% date %> <% description %>
-    Expenses:    $<% amount %>
-    Assets:Bank:Checking    -$<% amount %>
+2026-01-25 null
+    Expenses:    $null
+    Assets:Bank:Checking    -$null
 ```
 ```
 
