@@ -1,10 +1,10 @@
 ---
-title: 'Youtube: 下載影片'
+title: "Youtube: 下載影片"
 description: download Youtube video by youtube-dl
 tags:
   - Youtube
 date_created: 2021-02-07T00:00:00.000Z
-image: 'https://i.imgur.com/mErPwqL.png'
+image: "https://i.imgur.com/mErPwqL.png"
 slug: /utilities/youtube-dl/
 ---
 
@@ -228,6 +228,6 @@ done
 ### GUI Downloader
 
 - [FreeTube - The Private YouTube Client](https://freetubeapp.io/)
-	- [FreeTube 免費 YouTube 播放工具，無廣告、支援影片與音樂下載、訂閱功能 - 電腦王阿達](https://www.kocpc.com.tw/archives/355689)
+  - [FreeTube 免費 YouTube 播放工具，無廣告、支援影片與音樂下載、訂閱功能 - 電腦王阿達](https://www.kocpc.com.tw/archives/355689)
 - [Gihosoft TubeGet - Free YouTube Downloader for PC & Mac](http://www.gihosoft.com/free-youtube-downloader.html)
-	- [如何在 Mac 下載 YouTube 1080P 高清影片 – APPLEFANS 蘋果迷](https://applefans.today/gihosoft-tubeget-download-youtube/)
+  - [如何在 Mac 下載 YouTube 1080P 高清影片 – APPLEFANS 蘋果迷](https://applefans.today/gihosoft-tubeget-download-youtube/)
