@@ -1,6 +1,6 @@
 ---
 title: Axios Snippets
-description: 'Node.js: Axios 常用程式碼片段與使用技巧'
+description: "Node.js: Axios 常用程式碼片段與使用技巧"
 tags:
   - Node.js
   - Nodejs/Axios
@@ -13,16 +13,12 @@ image: >-
 slug: /javascript/package/axios-snippets/
 ---
 
-[Node.js] Axios Snippets
-========================
+# [Node.js] Axios Snippets
 
 Axios 是一個基於 Promise 的 HTTP 客戶端，適用於瀏覽器和 Node.js 環境。
 本文整理常用的 Axios 程式碼片段與使用技巧。
 
-
-
-基本使用
--------
+## 基本使用
 
 ### 安裝
 
@@ -33,45 +29,48 @@ npm install axios
 ### GET 請求
 
 ```javascript
-const axios = require('axios');
+const axios = require("axios");
 
 // 基本 GET 請求
-axios.get('https://api.example.com/data')
-  .then(response => {
+axios
+  .get("https://api.example.com/data")
+  .then((response) => {
     console.log(response.data);
   })
-  .catch(error => {
+  .catch((error) => {
     console.error(error);
   });
 
 // 帶參數的 GET 請求
-axios.get('https://api.example.com/data', {
-  params: {
-    id: 123,
-    name: 'example'
-  }
-})
-  .then(response => console.log(response.data))
-  .catch(error => console.error(error));
+axios
+  .get("https://api.example.com/data", {
+    params: {
+      id: 123,
+      name: "example",
+    },
+  })
+  .then((response) => console.log(response.data))
+  .catch((error) => console.error(error));
 ```
 
 ### POST 請求
 
 ```javascript
 // JSON 格式 POST
-axios.post('https://api.example.com/data', {
-    name: 'John',
-    email: 'john@example.com'
+axios
+  .post("https://api.example.com/data", {
+    name: "John",
+    email: "john@example.com",
   })
-  .then(response => console.log(response.data))
-  .catch(error => console.error(error));
+  .then((response) => console.log(response.data))
+  .catch((error) => console.error(error));
 
 // 使用 async/await
 async function postData() {
   try {
-    const response = await axios.post('https://api.example.com/data', {
-      name: 'John',
-      email: 'john@example.com'
+    const response = await axios.post("https://api.example.com/data", {
+      name: "John",
+      email: "john@example.com",
     });
     console.log(response.data);
   } catch (error) {
@@ -80,28 +79,26 @@ async function postData() {
 }
 ```
 
-
-
-進階技巧
--------
+## 進階技巧
 
 ### x-www-form-urlencoded 格式
 
 處理 `application/x-www-form-urlencoded` 格式的請求：
 
 ```javascript
-const qs = require('qs');
+const qs = require("qs");
 
-axios.post('https://api.example.com/data',
+axios.post(
+  "https://api.example.com/data",
   qs.stringify({
-    name: 'John',
-    email: 'john@example.com'
+    name: "John",
+    email: "john@example.com",
   }),
   {
     headers: {
-      'Content-Type': 'application/x-www-form-urlencoded'
-    }
-  }
+      "Content-Type": "application/x-www-form-urlencoded",
+    },
+  },
 );
 ```
 
@@ -109,10 +106,10 @@ axios.post('https://api.example.com/data',
 
 ```javascript
 const params = new URLSearchParams();
-params.append('name', 'John');
-params.append('email', 'john@example.com');
+params.append("name", "John");
+params.append("email", "john@example.com");
 
-axios.post('https://api.example.com/data', params);
+axios.post("https://api.example.com/data", params);
 ```
 
 ### 攜帶 Cookie
@@ -120,8 +117,8 @@ axios.post('https://api.example.com/data', params);
 讓請求自動攜帶 Cookie：
 
 ```javascript
-axios.get('https://api.example.com/data', {
-  withCredentials: true
+axios.get("https://api.example.com/data", {
+  withCredentials: true,
 });
 
 // 或設定全域配置
@@ -133,20 +130,21 @@ axios.defaults.withCredentials = true;
 Axios 預設會自動跟隨重定向，但在某些情況下可能需要手動處理：
 
 ```javascript
-axios.get('https://api.example.com/data', {
-  maxRedirects: 0,  // 不自動跟隨重定向
-  validateStatus: function (status) {
-    return status >= 200 && status < 400; // 接受 3xx 狀態碼
-  }
-})
-  .then(response => {
+axios
+  .get("https://api.example.com/data", {
+    maxRedirects: 0, // 不自動跟隨重定向
+    validateStatus: function (status) {
+      return status >= 200 && status < 400; // 接受 3xx 狀態碼
+    },
+  })
+  .then((response) => {
     if (response.status === 302) {
-      console.log('重定向到:', response.headers.location);
+      console.log("重定向到:", response.headers.location);
     }
   })
-  .catch(error => {
+  .catch((error) => {
     if (error.response && error.response.status === 302) {
-      console.log('捕獲到 302 重定向');
+      console.log("捕獲到 302 重定向");
     }
   });
 ```
@@ -154,12 +152,13 @@ axios.get('https://api.example.com/data', {
 ### 設定請求超時
 
 ```javascript
-axios.get('https://api.example.com/data', {
-  timeout: 5000  // 5 秒超時
-})
-  .catch(error => {
-    if (error.code === 'ECONNABORTED') {
-      console.log('請求超時');
+axios
+  .get("https://api.example.com/data", {
+    timeout: 5000, // 5 秒超時
+  })
+  .catch((error) => {
+    if (error.code === "ECONNABORTED") {
+      console.log("請求超時");
     }
   });
 ```
@@ -169,29 +168,29 @@ axios.get('https://api.example.com/data', {
 ```javascript
 // 請求攔截器
 axios.interceptors.request.use(
-  config => {
+  (config) => {
     // 在發送請求前做些什麼
-    config.headers.Authorization = 'Bearer ' + token;
+    config.headers.Authorization = "Bearer " + token;
     return config;
   },
-  error => {
+  (error) => {
     return Promise.reject(error);
-  }
+  },
 );
 
 // 響應攔截器
 axios.interceptors.response.use(
-  response => {
+  (response) => {
     // 對響應數據做些什麼
     return response;
   },
-  error => {
+  (error) => {
     // 對響應錯誤做些什麼
     if (error.response.status === 401) {
       // 處理未授權
     }
     return Promise.reject(error);
-  }
+  },
 );
 ```
 
@@ -199,19 +198,15 @@ axios.interceptors.response.use(
 
 ```javascript
 const instance = axios.create({
-  baseURL: 'https://api.example.com',
+  baseURL: "https://api.example.com",
   timeout: 5000,
-  headers: {'X-Custom-Header': 'foobar'}
+  headers: { "X-Custom-Header": "foobar" },
 });
 
-instance.get('/data')
-  .then(response => console.log(response.data));
+instance.get("/data").then((response) => console.log(response.data));
 ```
 
-
-
-See Also
---------
+## See Also
 
 ### 官方文件
 
@@ -225,4 +220,3 @@ See Also
 - [axios讓請求攜帶cookie的一些小問題](https://www.jianshu.com/p/0bc30d522244)
 - [axios go in catch function instead of then, if status is 302 - Stack Overflow](https://stackoverflow.com/questions/53480518/axios-go-in-catch-function-instead-of-then-if-status-is-302)
 - [關於 axios 302 重定向的問題](https://xudany.github.io/axios/2020/07/14/關於-axios-302-重定向的問題/)
-
