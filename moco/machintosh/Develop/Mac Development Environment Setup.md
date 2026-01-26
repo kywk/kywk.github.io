@@ -1,6 +1,6 @@
 ---
 title: 'Setup: 開發環境建構'
-description: macOS develop tools of Moo Cow
+description: macOS 開發工具與環境配置完整指南
 image: >-
   https://lh3.googleusercontent.com/pw/ACtC-3cYYtkzJjo_oG7Gzqq8T8XQm4V_qLE3wGWVKOahp6YT4lo-on60NJmjrkkatnizX1b-uID-MCM2ztsXH9z27cMRtql3PA5cpYZYbMfSPuM5Yh3MmqnjnnXYkTg6vtIiBL5SGAQRRAI9zEBIOoyP3tZpuA?authuser=0
 tags:
@@ -9,11 +9,11 @@ tags:
   - kywk
 sidebar_position: 1
 date_created: 2022-08-13T00:00:00.000Z
-date_updated: 2025-09-20T00:00:00.000Z
+date_updated: 2025-01-20T00:00:00.000Z
 slug: /machintosh/develop/mac-development-environment-setup/
 ---
 
-# [Mac] 開發環境建構 2025.Jun
+# [Mac] 開發環境建構
 
 使用 dotfiles 專案的自動化腳本，一鍵安裝和配置所有開發環境。
 
@@ -48,7 +48,7 @@ source ~/.zshrc
 
 ### 終端模擬器
 
-**Ghostty** (推薦) - 新一代 GPU 加速終端：
+**Ghostty**（推薦）- 新一代 GPU 加速終端：
 
 ```shell
 brew install ghostty
@@ -62,7 +62,7 @@ brew install iterm2 kitty
 
 ### Shell 環境
 
-**Zinit + Powerlevel10k** (Turbo 模式最佳化)
+**Zinit + Powerlevel10k**（Turbo 模式最佳化）
 
 自動安裝和配置，無需手動設定：
 
@@ -71,7 +71,7 @@ brew install iterm2 kitty
 # ~/.zshrc -> ~/.files/zsh/kywk.zshrc
 ```
 
-**特色**：
+特色：
 - 最小化 .zshrc，避免其他工具污染配置
 - Turbo 模式加載，啟動速度提升 50%+
 - 自動檢測專案類型並切換版本
@@ -88,7 +88,7 @@ brew install font-jetbrains-mono font-fira-code font-cascadia-code
 
 ### Docker Runtime
 
-**OrbStack** (推薦) - 輕量級、高效能：
+**OrbStack**（推薦）- 輕量級、高效能：
 
 ```shell
 brew install orbstack
@@ -155,7 +155,7 @@ sdk install java 21.0.5-zulu
 
 ### Node.js
 
-**Volta** (推薦) - 快速、可靠的 JavaScript 工具管理：
+**Volta**（推薦）- 快速、可靠的 JavaScript 工具管理：
 
 ```bash
 curl https://get.volta.sh | bash

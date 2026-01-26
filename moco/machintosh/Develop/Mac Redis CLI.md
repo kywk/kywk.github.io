@@ -1,5 +1,6 @@
 ---
 title: Redis CLI
+description: macOS 上安裝和使用 Redis CLI 工具
 image: >-
   https://lh3.googleusercontent.com/pw/ACtC-3cYYtkzJjo_oG7Gzqq8T8XQm4V_qLE3wGWVKOahp6YT4lo-on60NJmjrkkatnizX1b-uID-MCM2ztsXH9z27cMRtql3PA5cpYZYbMfSPuM5Yh3MmqnjnnXYkTg6vtIiBL5SGAQRRAI9zEBIOoyP3tZpuA?authuser=0
 tags:
@@ -18,16 +19,17 @@ slug: /machintosh/develop/mac-redis-cli/
 
 ## 安裝方法比較
 
-| 方法 | 優點 | 缺點 | 適用情況 |
-|------|------|------|----------|
-| **Docker** | 無需安裝，版本靈活 | 需要 Docker 環境 | 臨時使用 |
-| **Homebrew Tap** | 輕量化，只安裝 CLI | 第三方套件 | 長期使用 |
-| **Node.js** | 跨平台，易於管理 | 需要 Node.js 環境 | 前端開發環境 |
-| **官方 Redis** | 最新版本，完整功能 | 安裝完整套件 | 需要完整 Redis 功能 |
+| 方法             | 優點               | 缺點              | 適用情況            |
+| ---------------- | ------------------ | ----------------- | ------------------- |
+| **Docker**       | 無需安裝，版本靈活 | 需要 Docker 環境  | 臨時使用            |
+| **Homebrew Tap** | 輕量化，只安裝 CLI | 第三方套件        | 長期使用            |
+| **Node.js**      | 跨平台，易於管理   | 需要 Node.js 環境 | 前端開發環境        |
+| **官方 Redis**   | 最新版本，完整功能 | 安裝完整套件      | 需要完整 Redis 功能 |
 
 ## Docker 方式（推薦）
 
 ### 基本使用
+
 ```bash
 # 連線到本地 Redis
 docker run --rm -it redis:alpine redis-cli
@@ -40,6 +42,7 @@ docker run --rm -it redis:alpine redis-cli -h redis.example.com -a password
 ```
 
 ### 實用 Alias
+
 ```bash
 # 加入 ~/.bashrc 或 ~/.zshrc
 alias redis-cli='docker run --rm -it redis:alpine redis-cli'
@@ -49,6 +52,7 @@ redis-cli -h localhost -p 6379
 ```
 
 ### 進階用法
+
 ```bash
 # 使用特定版本
 docker run --rm -it redis:7.2-alpine redis-cli
@@ -63,6 +67,7 @@ docker run --rm -it --network host redis:alpine redis-cli
 ## Homebrew Tap 方式
 
 ### 安裝步驟
+
 ```bash
 # 添加第三方 tap
 brew tap ringohub/redis-cli
@@ -75,6 +80,7 @@ brew install redis-cli
 ```
 
 ### 安全性檢查
+
 ```bash
 # 檢查套件資訊
 brew info redis-cli
@@ -87,6 +93,7 @@ cat $(brew --repository ringohub/redis-cli)/redis-cli.rb
 ```
 
 ### 套件內容分析
+
 該 Homebrew formula 的主要內容：
 
 ```ruby
@@ -104,6 +111,7 @@ end
 ```
 
 **安全性評估**：
+
 - 使用官方 Redis 原始碼
 - 只編譯和安裝 CLI 部分
 - 不包含任何惡意程式碼
@@ -111,6 +119,7 @@ end
 ## Node.js 方式
 
 ### 安裝
+
 ```bash
 # 使用 npm
 npm install -g redis-cli
@@ -123,6 +132,7 @@ pnpm add -g redis-cli
 ```
 
 ### 使用
+
 ```bash
 # 基本連線
 rdcli -h localhost -p 6379
@@ -132,6 +142,7 @@ rdcli -h redis.example.com -a password
 ```
 
 ### 版本管理
+
 ```bash
 # 檢查安裝的版本
 npm list -g redis-cli
@@ -146,6 +157,7 @@ npm uninstall -g redis-cli
 ## 官方 Redis 安裝
 
 ### 完整安裝
+
 ```bash
 # 安裝完整 Redis
 brew install redis
@@ -161,6 +173,7 @@ brew uninstall redis
 ## Redis CLI 常用指令
 
 ### 連線與認證
+
 ```bash
 # 基本連線
 redis-cli -h hostname -p port
@@ -176,6 +189,7 @@ redis-cli -h hostname -p port --tls --cert cert.pem --key key.pem --cacert ca.pe
 ```
 
 ### 資料庫操作
+
 ```bash
 # 選擇資料庫
 SELECT 1
@@ -203,6 +217,7 @@ DEL keyname
 ```
 
 ### 監控與診斷
+
 ```bash
 # 查看伺服器資訊
 INFO
@@ -222,6 +237,7 @@ CLIENT LIST
 ```
 
 ### 批次操作
+
 ```bash
 # 執行檔案中的指令
 redis-cli < commands.txt
@@ -239,6 +255,7 @@ redis-cli --pipe < data.txt
 ## 實用腳本
 
 ### Redis 連線測試
+
 ```bash
 #!/bin/bash
 # test-redis-connection.sh
@@ -265,6 +282,7 @@ fi
 ```
 
 ### Redis 資料備份
+
 ```bash
 #!/bin/bash
 # backup-redis.sh
@@ -288,6 +306,7 @@ echo "Backup completed: $BACKUP_DIR"
 ```
 
 ### Redis 效能監控
+
 ```bash
 #!/bin/bash
 # monitor-redis.sh
@@ -304,19 +323,19 @@ while true; do
     echo "Redis Status - $(date)"
     echo "Host: $HOST:$PORT"
     echo
-    
+
     # 基本資訊
     redis-cli -h "$HOST" -p "$PORT" INFO server | grep -E "redis_version|uptime_in_seconds"
-    
+
     # 記憶體使用
     redis-cli -h "$HOST" -p "$PORT" INFO memory | grep -E "used_memory_human|used_memory_peak_human"
-    
+
     # 連線數
     redis-cli -h "$HOST" -p "$PORT" INFO clients | grep "connected_clients"
-    
+
     # 指令統計
     redis-cli -h "$HOST" -p "$PORT" INFO stats | grep -E "total_commands_processed|instantaneous_ops_per_sec"
-    
+
     sleep $INTERVAL
 done
 ```
@@ -326,6 +345,7 @@ done
 ### 常見問題
 
 #### 連線被拒絕
+
 ```bash
 # 檢查 Redis 服務是否運行
 telnet hostname 6379
@@ -339,6 +359,7 @@ redis-cli CONFIG GET protected-mode
 ```
 
 #### 認證失敗
+
 ```bash
 # 檢查是否需要密碼
 redis-cli -h hostname -p port INFO server
@@ -352,6 +373,7 @@ redis-cli -h hostname -p port
 ```
 
 #### 指令不存在
+
 ```bash
 # 檢查 redis-cli 是否安裝
 which redis-cli

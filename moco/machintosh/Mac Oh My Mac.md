@@ -1,6 +1,6 @@
 ---
 title: Oh my Mac
-description: kywk's favitote macOS Apps
+description: 關於我的 Mac 設備與配置
 image: >-
   https://lh3.googleusercontent.com/pw/AL9nZEUA9Ifvd5Z8SXDWkeVB6AC4MPGwnXaL6kBXNPoXwOQQ2jOcZ1Jw_0p8TKK8C3ZX0e67_FOY15eDrm7aaXSQJcKtoUzC80SAQEHsaBy6qS2AqNNs5VUFNXBKm439y_1wkvmDl-PnL8ReojnIumNlEvOXBg=w800-no?authuser=0
 tags:
@@ -17,11 +17,11 @@ slug: /machintosh/mac-oh-my-mac/
 
 [[Mac Apps Setup]]
 
-[[Mac DevEnv Setup]]
+[[Mac Development Environment Setup]]
 
-## Tip n Trick
+## Tip & Trick
 
-[[Mac Tip n Trick]]
+[[Mac Tips and Tricks]]
 
 ## Hackintosh
 
