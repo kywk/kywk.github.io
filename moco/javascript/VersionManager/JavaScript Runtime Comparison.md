@@ -1,6 +1,6 @@
 ---
 title: JS Runtime
-description: JavaScript Runtime Comparsion
+description: JavaScript Runtime Comparison
 tags:
   - Node.js
   - JavaScript
@@ -13,7 +13,7 @@ image: >-
 slug: /javascript/versionmanager/javascript-runtime-comparison/
 ---
 
-# [JavaScript] Runtime Comparsion
+# [JavaScript] Runtime Comparison
 
 > 在 Node.js 生態圈, 有些開發者意識到 Node.js 架構的原生限制, 而發起其他 JavaScript Runtime 專案.
 > 目前不同 Runtime 雖不屬於 Node.js Version Manager 範疇內,

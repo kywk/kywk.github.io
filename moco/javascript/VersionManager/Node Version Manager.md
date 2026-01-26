@@ -41,7 +41,7 @@ slug: /javascript/versionmanager/javascript-node-version-manager/
 | `asdf`  | 多語言通用版本管理器            | ✅ 適合 polyglot |
 | `nix`   | 宣告式版本管理與封裝            | 🧠 高階用戶      |
 
-> See Also: [[JavaScript Nvm Volta Fnm Comparison]] / [[Volta]]
+> See Also: [[Nvm Volta Fnm Comparison]] / [[Volta Get Started]]
 
 ---
 
@@ -61,7 +61,7 @@ Node.js 的生態變化快速，不同版本間有不少不相容的地方。例
 | 想快速測試某 lib 在 Node 14 下會不會爆   | `nvm install 14` + `nvm use 14`      |
 | 團隊需要統一 Node/NPM 版本               | 設定 `.nvmrc` / `package.json#volta` |
 
-> [[JavaScript Why Version Manager]]
+> [[Why Version Manager]]
 
 ---
 

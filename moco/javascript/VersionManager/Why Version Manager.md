@@ -16,7 +16,7 @@ slug: /javascript/versionmanager/javascript-why-version-manager/
 [Node.js] Why Version Manager
 =============================
 
-> [[JavaScript Node Version Manager|什麼是 Version Manager]] 中簡單帶過 Version Manager 的使用需求, 這裡進一步以說明為何需要 Version Manager:
+> [[Node Version Manager|什麼是 Version Manager]] 中簡單帶過 Version Manager 的使用需求, 這裡進一步以說明為何需要 Version Manager:
 
 使用 **Node.js 版本管理器**（如 `nvm`、`volta`、`fnm` 等）的原因非常實際且重要，尤其對於開發者來說：
 

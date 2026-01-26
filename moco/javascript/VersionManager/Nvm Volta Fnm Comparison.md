@@ -15,7 +15,7 @@ slug: /javascript/versionmanager/javascript-nvm-volta-fnm-comparison/
 
 # [Node.js] Volta / NVM / FNM Comparison
 
-> [[JavaScript Why Version Manager]] 了解為何版本管理工具如此重要, 那有哪些工具呢?
+> [[Why Version Manager]] 了解為何版本管理工具如此重要, 那有哪些工具呢?
 
 在 Node.js 開發中，版本與環境管理是日常工作的重要一環。常見的工具有 **nvm (Node Version Manager)**、**Volta**、與 **fnm (Fast Node Manager)**。以下是這三者的詳細比較，從功能、效能、平台支援、使用體驗等面向來說明：
 
@@ -99,7 +99,7 @@ slug: /javascript/versionmanager/javascript-nvm-volta-fnm-comparison/
 ## 💡 結論
 
 - **Volta** 是目前功能最完整、對現代開發流程最友善的工具，特別適合需要在不同專案中快速切換的開發者。
-	- [[JavaScript Volta Get Started]]
+	- [[Volta Get Started]]
 - **fnm** 提供最好的性能表現，是 nvm 的「高速升級版」。
 - **nvm** 雖然較舊，但仍是穩定且社群支援度高的選擇，適合不想更動習慣者。
 
@@ -107,7 +107,7 @@ slug: /javascript/versionmanager/javascript-nvm-volta-fnm-comparison/
 
 ## See Also
 
-- [[JavaScript Other Version Manager]]
+- [[Other Version Manager]]
 - [A better Node version manager: Volta vs nvm \| by Duncan Lew \| Medium](https://duncanlew.medium.com/a-better-node-version-manager-volta-vs-nvm-5917c1edd0a1)
 - [Volta vs. nvm for JavaScript tooling : r/javascript](https://www.reddit.com/r/javascript/comments/r07yd5/volta_vs_nvm_for_javascript_tooling/)
 

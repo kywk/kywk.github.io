@@ -26,12 +26,12 @@ slug: /javascript/versionmanager/javascript-version-manager-ending-note/
 
 ## Live, Work w/ AI
 
-- [[JavaScript Node Version Manager]]
-- [[JavaScript Why Version Manager]]
-- [[JavaScript Nvm Volta Fnm Comparison]]
-- [[JavaScript Other Version Manager]]
-- [[JavaScript Runtime Comparsion]]
-- [[JavaScript Volta Get Started]]
+- [[Node Version Manager]]
+- [[Why Version Manager]]
+- [[Nvm Volta Fnm Comparison]]
+- [[Other Version Manager]]
+- [[JavaScript Runtime Comparison]]
+- [[Volta Get Started]]
 
 本文共有六篇, 都是在摸索 Volta 過程中冒出的疑問, 由 ChatGPT 回答後再消化/整理/潤飾而來.
 短短兩三個小時內產出六篇扎扎實實文章, 過去根本不敢想像.

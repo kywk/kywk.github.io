@@ -16,7 +16,7 @@ slug: /javascript/versionmanager/javascript-other-version-manager/
 [Node.js] Other Version Manager
 ===============================
 
-> 那麼, 除了 [[JavaScript Nvm Volta Fnm Comparison]] 之外, 還有哪些工具呢?
+> 那麼, 除了 [[Nvm Volta Fnm Comparison]] 之外, 還有哪些工具呢?
 
 是的，除了 `nvm`、`volta` 和 `fnm` 之外，還有一些其他 **Node.js 版本/環境管理工具**，雖然相對不那麼主流，但在特定情境或平台上也有其使用者和特色。以下是完整整理：
 
