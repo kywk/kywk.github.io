@@ -21,6 +21,7 @@ date_updated: 2024-05-24
 ## 安裝與設定
 
 ### 安裝
+
 ```bash
 # macOS
 brew install zoxide
@@ -30,6 +31,7 @@ cd ~/.files && ./bin/setup-devenv.sh
 ```
 
 ### Shell 整合
+
 ```bash
 # 加入 ~/.zshrc
 eval "$(zoxide init zsh)"
@@ -41,6 +43,7 @@ eval "$(zoxide init --cmd cd zsh)"
 ## 基本用法
 
 ### 目錄跳轉
+
 ```bash
 # 傳統方式
 cd /very/long/path/to/project
@@ -54,6 +57,7 @@ z doc     # 跳轉到 Documents 或 docs 目錄
 ```
 
 ### 互動式選擇
+
 ```bash
 # 當有多個匹配時，顯示選擇列表
 zi project
@@ -65,6 +69,7 @@ zi
 ## 進階功能
 
 ### 查詢與管理
+
 ```bash
 # 查看所有記錄的目錄
 zoxide query -l
@@ -80,6 +85,7 @@ zoxide remove /path/to/directory
 ```
 
 ### 分數系統
+
 ```bash
 # 查看目錄使用頻率分數
 zoxide query -l -s
@@ -93,6 +99,7 @@ zoxide query -l -s
 ## 實用技巧
 
 ### 1. 快速回到專案目錄
+
 ```bash
 # 學習階段：正常使用 cd
 cd ~/projects/my-awesome-project
@@ -101,11 +108,12 @@ cd ~/Documents/notes
 
 # 學習完成後：快速跳轉
 z awesome    # 跳到 my-awesome-project
-z another    # 跳到 another-project  
+z another    # 跳到 another-project
 z notes      # 跳到 Documents/notes
 ```
 
 ### 2. 結合其他工具
+
 ```bash
 # 跳轉並執行命令
 z project && git status
@@ -118,6 +126,7 @@ alias zf='cd $(zoxide query -l | fzf)'
 ```
 
 ### 3. 別名設定
+
 ```bash
 # 常用別名
 alias j='z'        # 更短的跳轉命令
@@ -127,12 +136,12 @@ alias jl='zoxide query -l'  # 列出所有目錄
 
 ## 與其他工具比較
 
-| 工具 | 特色 | 效能 |
-|------|------|------|
+| 工具       | 特色                        | 效能       |
+| ---------- | --------------------------- | ---------- |
 | **zoxide** | Rust 編寫，速度快，智能排序 | ⭐⭐⭐⭐⭐ |
-| autojump | Python 編寫，功能完整 | ⭐⭐⭐ |
-| z | Shell 腳本，輕量級 | ⭐⭐⭐⭐ |
-| fasd | 支援檔案和目錄 | ⭐⭐⭐ |
+| autojump   | Python 編寫，功能完整       | ⭐⭐⭐     |
+| z          | Shell 腳本，輕量級          | ⭐⭐⭐⭐   |
+| fasd       | 支援檔案和目錄              | ⭐⭐⭐     |
 
 ## 在 dotfiles 中的整合
 

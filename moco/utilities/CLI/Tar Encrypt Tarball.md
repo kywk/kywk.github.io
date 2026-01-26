@@ -6,7 +6,7 @@ tags:
 sidebar_position: 50
 hide_table_of_contents: true
 date_created: 2020-12-10T00:00:00.000Z
-image: 'https://i.imgur.com/mErPwqL.png'
+image: "https://i.imgur.com/mErPwqL.png"
 slug: /utilities/cli/tar-encrypt-tarball/
 ---
 
@@ -17,16 +17,19 @@ slug: /utilities/cli/tar-encrypt-tarball/
 ## 背景與需求
 
 ### 雲端儲存安全考量
+
 網路上免費的團隊硬碟服務，雖然創建者是管理員，但實際上所有檔案仍受服務提供商的機構管理員管轄。管理員雖然無法直接存取檔案，但有權將檔案擁有者轉移給他人。
 
 對於個人敏感檔案，建議進行加密壓縮後再上傳雲端。
 
 ### Tar 的限制
+
 Tar 本身支援多種壓縮方式（gzip, bz2, xz 等），但**不支援加密功能**。在命令列環境下要實現加密打包，需要結合其他工具，最常用的是 OpenSSL。
 
 ## 基本加密打包
 
 ### 加密語法
+
 ```bash
 # 基本加密打包（不壓縮）
 tar cvf - FILE_OR_DIRECTORY | openssl des3 -salt -k PASSWORD -out encrypted.tar
@@ -38,24 +41,27 @@ tar czf - FILE_OR_DIRECTORY | openssl des3 -salt -k PASSWORD -out encrypted.tar.
 ### 參數說明
 
 #### Tar 參數
-| 參數 | 說明 |
-|------|------|
-| `c` | create - 創建新的 tarball |
-| `v` | verbose - 顯示處理過程 |
+
+| 參數  | 說明                          |
+| ----- | ----------------------------- |
+| `c`   | create - 創建新的 tarball     |
+| `v`   | verbose - 顯示處理過程        |
 | `f -` | file - 輸出到標準輸出（管道） |
-| `z` | gzip - 使用 gzip 壓縮 |
+| `z`   | gzip - 使用 gzip 壓縮         |
 
 #### OpenSSL 參數
-| 參數 | 說明 |
-|------|------|
-| `des3` | 使用 3DES 加密演算法 |
-| `-salt` | 添加隨機鹽值，防範字典攻擊 |
-| `-k PASSWORD` | 指定加密密碼 |
-| `-out FILE` | 指定輸出檔案名稱 |
+
+| 參數          | 說明                       |
+| ------------- | -------------------------- |
+| `des3`        | 使用 3DES 加密演算法       |
+| `-salt`       | 添加隨機鹽值，防範字典攻擊 |
+| `-k PASSWORD` | 指定加密密碼               |
+| `-out FILE`   | 指定輸出檔案名稱           |
 
 ## 解密與還原
 
 ### 解密語法
+
 ```bash
 # 解密並解包
 openssl des3 -d -k PASSWORD -salt -in encrypted.tar | tar xvf -
@@ -65,14 +71,16 @@ openssl des3 -d -k PASSWORD -salt -in encrypted.tar.gz | tar xzf -
 ```
 
 ### 解密參數
-| 參數 | 說明 |
-|------|------|
-| `-d` | decrypt - 解密模式 |
-| `-in FILE` | 指定輸入檔案 |
+
+| 參數       | 說明               |
+| ---------- | ------------------ |
+| `-d`       | decrypt - 解密模式 |
+| `-in FILE` | 指定輸入檔案       |
 
 ## 進階加密選項
 
 ### 更安全的加密演算法
+
 ```bash
 # 使用 AES-256-CBC（推薦）
 tar czf - FILES | openssl aes-256-cbc -salt -k PASSWORD -out encrypted.tar.gz
@@ -82,6 +90,7 @@ openssl aes-256-cbc -d -k PASSWORD -salt -in encrypted.tar.gz | tar xzf -
 ```
 
 ### 使用金鑰檔案
+
 ```bash
 # 生成隨機金鑰檔案
 openssl rand -base64 32 > encryption.key
@@ -94,6 +103,7 @@ openssl aes-256-cbc -d -salt -kfile encryption.key -in encrypted.tar.gz | tar xz
 ```
 
 ### 密碼提示輸入
+
 ```bash
 # 互動式密碼輸入（更安全）
 tar czf - FILES | openssl aes-256-cbc -salt -out encrypted.tar.gz
@@ -105,6 +115,7 @@ openssl aes-256-cbc -d -salt -in encrypted.tar.gz | tar xzf -
 ## 實用腳本與 Alias
 
 ### 基本 Alias 設定
+
 ```bash
 # ~/.bashrc 或 ~/.zshrc
 
@@ -118,6 +129,7 @@ decrypt-tar -in backup.tar.gz.enc | tar xzf -
 ```
 
 ### 進階加密腳本
+
 ```bash
 #!/bin/bash
 # encrypt-backup.sh
@@ -154,6 +166,7 @@ fi
 ```
 
 ### 解密腳本
+
 ```bash
 #!/bin/bash
 # decrypt-backup.sh
@@ -193,6 +206,7 @@ fi
 ## 批次處理
 
 ### 批次加密多個目錄
+
 ```bash
 #!/bin/bash
 # batch-encrypt.sh
@@ -206,9 +220,9 @@ for dir in */; do
     if [[ -d "$dir" ]]; then
         output_file="$OUTPUT_DIR/${dir%/}.tar.gz.enc"
         echo "Encrypting $dir -> $output_file"
-        
+
         tar czf - "$dir" | openssl aes-256-cbc -salt -k "$PASSWORD" -out "$output_file"
-        
+
         if [[ $? -eq 0 ]]; then
             echo "✓ Success: $output_file"
         else
@@ -219,6 +233,7 @@ done
 ```
 
 ### 定時備份腳本
+
 ```bash
 #!/bin/bash
 # scheduled-backup.sh
@@ -245,7 +260,7 @@ echo "Destination: $BACKUP_DEST/$BACKUP_FILE"
 if tar czf - "$BACKUP_SOURCE" | openssl aes-256-cbc -salt -kfile "$PASSWORD_FILE" -out "$BACKUP_DEST/$BACKUP_FILE"; then
     echo "Backup completed successfully: $(date)"
     echo "File size: $(du -h "$BACKUP_DEST/$BACKUP_FILE" | cut -f1)"
-    
+
     # 清理超過 30 天的備份
     find "$BACKUP_DEST" -name "backup_*.tar.gz.enc" -mtime +30 -delete
 else
@@ -257,6 +272,7 @@ fi
 ## 安全性考量
 
 ### 密碼管理
+
 ```bash
 # 使用環境變數（較安全）
 export BACKUP_PASSWORD="your-secure-password"
@@ -269,6 +285,7 @@ tar czf - FILES | openssl aes-256-cbc -salt -kfile ~/.backup_password -out encry
 ```
 
 ### 金鑰強度建議
+
 ```bash
 # 生成強密碼
 openssl rand -base64 32
@@ -281,6 +298,7 @@ echo -n "your-long-passphrase" | openssl dgst -sha256 -binary | openssl base64
 ```
 
 ### 檔案完整性驗證
+
 ```bash
 # 加密前計算校驗和
 tar czf - FILES | tee >(openssl aes-256-cbc -salt -k PASSWORD -out encrypted.tar.gz) | sha256sum > checksum.txt
@@ -292,6 +310,7 @@ openssl aes-256-cbc -d -k PASSWORD -salt -in encrypted.tar.gz | sha256sum -c che
 ## 效能最佳化
 
 ### 壓縮演算法比較
+
 ```bash
 # gzip（速度快，壓縮率中等）
 tar czf - FILES | openssl aes-256-cbc -salt -k PASSWORD -out backup.tar.gz.enc
@@ -304,6 +323,7 @@ tar cJf - FILES | openssl aes-256-cbc -salt -k PASSWORD -out backup.tar.xz.enc
 ```
 
 ### 大檔案處理
+
 ```bash
 # 使用 pv 顯示進度
 tar czf - LARGE_DIRECTORY | pv | openssl aes-256-cbc -salt -k PASSWORD -out large_backup.tar.gz.enc
@@ -318,6 +338,7 @@ cat backup.tar.gz.enc.* | openssl aes-256-cbc -d -salt -k PASSWORD | tar xzf -
 ## 疑難排解
 
 ### 常見錯誤
+
 ```bash
 # 密碼錯誤
 # Error: bad decrypt
@@ -334,6 +355,7 @@ chmod 644 encrypted.tar.gz.enc
 ```
 
 ### 除錯技巧
+
 ```bash
 # 測試加密/解密流程
 echo "test data" | openssl aes-256-cbc -salt -k "password" | openssl aes-256-cbc -d -salt -k "password"
@@ -348,6 +370,7 @@ file encrypted.tar.gz.enc  # 應該顯示 "data"
 ## 現代化替代方案
 
 ### 使用 GPG
+
 ```bash
 # GPG 對稱加密（推薦）
 tar czf - FILES | gpg --symmetric --cipher-algo AES256 --output backup.tar.gz.gpg
@@ -357,6 +380,7 @@ gpg --decrypt backup.tar.gz.gpg | tar xzf -
 ```
 
 ### 使用 7zip
+
 ```bash
 # 7zip 加密壓縮
 7z a -p"password" -mhe=on backup.7z FILES/
