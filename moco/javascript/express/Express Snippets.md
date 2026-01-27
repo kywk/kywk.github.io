@@ -12,8 +12,7 @@ image: >-
 slug: /javascript/express/express-snippets/
 ---
 
-[Express] snippets
-==================
+# [Express] snippets
 
 [How to pass variables to the next middleware using next() in Express.js ? - GeeksforGeeks](https://www.geeksforgeeks.org/how-to-pass-variables-to-the-next-middleware-using-next-in-express-js/)
 

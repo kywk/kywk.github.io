@@ -25,7 +25,8 @@ Surfing 11.16 ~ 11.30
 	- 看起來比 Google Docs 更 lightweight 的 WebApp, 筆記下來. 臨時有 Excel 需求處理時也許有用.
 	- [x] 確認是否支援複雜函式運算 ⏬ 📅 2024-11-17 ✅ 2025-05-31
 		- 支援函式運算, 且支援 API 呼叫. 也許產製報表有機會用上.
-	- [ ] IronCalc Use Case Study 📅 2026-01-01
+	- [x] IronCalc Use Case Study 📅 2026-01-16 ✅ 2026-01-16
+		- 目前版本最大的敗筆應該是不支援共編, 而這是個人或團隊選用線上 Office 套件最主要的需求.
 - [AWS與Rust基金會攜手驗證Rust標準函式庫的安全性 | iThome](https://www.ithome.com.tw/news/166158)
 
 ### Tech

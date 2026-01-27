@@ -11,10 +11,10 @@ slug: /utilities/awesome-utilities/
 
 ## Oh My Awesome
 
-- [[Awesome Selfhosted]]
+- [[Awesome Self Hosted]]
 - [[Awesome CLI]]
 - [[Awesome Git]]
-- [[Awesome VSCode]]
-- [[Awesome Deopbox]]
+- [[VSCode Extensions]]
+- [[Awesome Dropbox]]
 
 ## See Also

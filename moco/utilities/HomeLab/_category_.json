@@ -2,7 +2,7 @@
   "label": "HomeLab",
   "position": 10,
   "link": {
-    "type": "generated-index",
-    "description": "HomeLab"
+    "type": "doc",
+    "id": "Utilities/HomeLab/Home Lab"
   }
 }

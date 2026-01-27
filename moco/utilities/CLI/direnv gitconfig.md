@@ -11,6 +11,7 @@ date_created: 2025-06-06T00:00:00.000Z
 date_updated: 2025-06-06T00:00:00.000Z
 slug: /utilities/cli/direnv-gitconfig/
 ---
+
 # direnv + gitconfig
 
 > 工作上遇到同一個 Host (如 GitHub) 的不同專案, 需搭配不同 ssh key, 過去會修改 `.git/config` 的 remote host 名字, 並搭配 `.ssh/config` 的設定. 

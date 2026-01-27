@@ -48,9 +48,11 @@ hide_table_of_contents: true
 	- [x] Do it 📅 2025-12-07 ✅ 2025-12-04
 - [冬夜微醺不必醉：到臺南體驗歐洲酒款×在地小吃的完美風味搭配 - TNL The News Lens 關鍵評論網](https://www.thenewslens.com/article/261903)
 - [《紐約時報》公佈 2025 年度十大好書！關於孤獨、創傷、親密關係..總有一本是你的命定 - A Day Magazine](https://www.adaymag.com/2025/12/10/new-york-times-2025-best-books.html)
-	- [ ] Do it 📅 2026-01-01
+	- [ ] Do it 📅 2026-01-24
 - [一定要試試 Google Chrome 內建分割畫面，這是我一直等待的生產力功能](https://www.playpcesor.com/2025/12/google-chrome.html)
 - [把混亂數據試算表丟進 NotebookLM：自動清理統計，直接變圖表簡報](https://www.playpcesor.com/2025/12/notebooklm.html)
 - [南科工程師的「減速」日記：在不斷加速的 AI 年代，我為什麼選擇「慢」下來？｜noise／讀者投書｜換日線](https://crossing.cw.com.tw/article/20425)
-	- [ ] read it 📅 2026-01-01
+	- [x] read it 📅 2026-01-16 ✅ 2026-01-16
+	- [[slowing-down-in-ai-era-engineer-diary]]
+	- [[01-22-Life-with-AI]]
 - [冰島奇遇：不只極光、冰川與火山，還有獨特人文、小國幽默、低調超奢度假村⋯⋯等你探秘｜三姐妹看歐洲｜換日線](https://crossing.cw.com.tw/article/20421)

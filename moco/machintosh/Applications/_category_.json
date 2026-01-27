@@ -2,7 +2,7 @@
   "label": "Mac Apps",
   "position": 20,
   "link": {
-    "type": "generated-index",
-    "description": "macOS / hackintosh"
+    "type": "doc",
+    "id": "Mac Apps Setup"
   }
 }

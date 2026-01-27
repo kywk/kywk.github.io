@@ -12,22 +12,26 @@ date_updated: 2024-05-24T00:00:00.000Z
 slug: /machintosh/develop/mac-docker-cli/
 ---
 
-# [Docker] Use docker CLI w/o Docker Desktop on macOS
+# Docker CLI on macOS
 
-Docker inc 宣布 Docker Desktop 商業使用不再免費, 原本都是個人開發使用, 影響有限, 但後來公司開發需要, 得面對這個問題.
+在 macOS 上使用 Docker CLI 而不依賴 Docker Desktop 的完整指南，適合商業環境或希望使用輕量化解決方案的開發者。
 
-備選方案有:
+## 背景與動機
 
-1. 付費
-2. 改用 [Podman](https://podman.io/)
-3. 改用 docker cli
+Docker Inc 宣布 Docker Desktop 商業使用不再免費，對企業開發造成影響。主要替代方案包括：
 
-公司長期方向是走向 Podman, 不過目前還有許多專案 CI/CD 用 docker 建制, 先打通 docker cli 維持專案正確是必要的.
-且許多雲端服務目前仍是提供 docker 環境和指令, 無法完全棄用 docker.
+1. **付費使用** Docker Desktop
+2. **改用 Podman** - 開源容器引擎
+3. **使用 Docker CLI + Colima** - 本文重點
 
-> It's important to note, the licensing changes only affect the Docker Desktop product, the CLI interface remains free for all users.
+> 重要提醒：授權變更只影響 Docker Desktop 產品，CLI 介面對所有使用者仍然免費。
 
-紀錄一下在 macOS 上安裝 docker cli 過程.
+### 為什麼選擇 Docker CLI + Colima？
+
+- **成本考量**：完全免費的開源解決方案
+- **相容性**：與現有 CI/CD 流程完全相容
+- **雲端整合**：多數雲端服務仍提供 Docker 環境
+- **輕量化**：比 Docker Desktop 更節省系統資源
 
 ## Install docker
 

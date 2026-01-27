@@ -1,6 +1,6 @@
 ---
-title: 'Sequelize: Migration Seeds'
-description: Sequelize Migration Seeds
+title: "Sequelize: Migration"
+description: Sequelize Migration
 tags:
   - Node.js
   - ORM
@@ -11,13 +11,12 @@ image: >-
 slug: /javascript/package/sequelize-migration/
 ---
 
-[Node.js] Sequelize Migration Seeds
-===================================
+# [Node.js] Sequelize Migration
 
 Sequelize 是 Node.js 下相當主流的 ORM 套件.
 ORM 使用與否的爭論大概也和 `Space VS Tab`, `Vi VS Emacs` ... 一樣的永無止盡.
 
-而 Sequelize 2 之後推出 sequelize-cli 中的 Migration 功能, 
+而 Sequelize 2 之後推出 sequelize-cli 中的 Migration 功能,
 透過一次又一次的維護檔, 確保移植時有相同的建構過程,
 確實能解決程式開發階段對資料庫操作的常見困擾:
 
@@ -25,17 +24,14 @@ ORM 使用與否的爭論大概也和 `Space VS Tab`, `Vi VS Emacs` ... 一樣�
 - 忘記做了哪些修改？
 - 改了 schema 沒人知道？
 
+## 什麼是 Migration ?
 
-
-什麼是 Migraiton ?
------------------
-
-- __Migration__ 是用來描述 「資料庫的結構掌什麼樣子」 的檔案, 隨著專案開發過程中對資料庫的修改而逐漸增加.
+- **Migration** 是用來描述「資料庫的結構長什麼樣子」的檔案，隨著專案開發過程中對資料庫的修改而逐漸增加。
 - 可以理解成資料庫格式變更的版本控制.
 
 ![migration files](https://lh3.googleusercontent.com/pw/AL9nZEXTj9J5V07uQ7uWqG_O5kIuauTbX5mOu-pJ8RqJDe5CEPgkF4tHAR294BcbwsGbKdu0NbOqNCik91U8vG-fUtBbt6jVSr6tMuzjaQOIs5ZWTrx59xYN5phxsHd4GPEyX7oDNLn6KAT8Kr4u2f-dAO4lRg=w600-no?authuser=0)
 
-### 操作行為 ###
+### 操作行為
 
 Migration 是拿來變動資料表的, 所以會有幾種動作在這裡處理.
 
@@ -43,29 +39,28 @@ Migration 是拿來變動資料表的, 所以會有幾種動作在這裡處理.
 - 變動欄位
 - 變動資料表關聯
 
-### 可以幹嘛 ###
+### 可以幹嘛
 
 - 紀錄操作過程
 - 降低人為操作錯誤的可能
 - 環境部署或是更換資料庫的時候，快速達成同步
 - 錯誤發生時，可以快速回到正確的版本
 
+## 環境安裝與設置
 
-
-環境安裝與設置
------------
-
-### sequelize-cli ###
+### sequelize-cli
 
 sequelize-cli 可系統全域安裝或安裝在專案項目, 依實際需求而定.
-``` shell
-npm install --save-dev sequelize-cli 
+
+```shell
+npm install --save-dev sequelize-cli
 ```
+
 亦直接透過 `npx sequelize ` 執行.
 
-### Project bootstrapping ###
+### Project bootstrapping
 
-``` shell
+```shell
 npx sequelize-cli init
 ```
 
@@ -78,51 +73,53 @@ This will create following folders
 
 ![tree](https://lh3.googleusercontent.com/pw/AL9nZEVtWoXHl5m1PaPaMRoSgGYsCk8GxIE78CKElbigXOZj63pXqjmkjyDwnH-Vkk1cErjHsB_xFg_CJsdt6a5l2f-7_8wM046gAZDPcZK2Gc0-6LxwLxATYh81BU5m2V1NE_EscAE3DeLFXH1mb0JntUErkw=w314-no?authuser=0)
 
-### configure ###
+### configure
 
-修改 config/config.json 裡頭連接 DB 的相關配置. 
+修改 config/config.json 裡頭連接 DB 的相關配置.
 
-``` json title="config.json"
+```json title="config.json"
+// ⚠️ 範例配置 - 請替換為實際的資料庫連線資訊
 "development": {
-    "username": "user",
-    "password": "password",
-    "database": "database name",
+    "username": "<your_db_user>",
+    "password": "<your_db_password>",
+    "database": "<your_database_name>",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
-```  
+```
 
 設定完後即可利用 sequelize 來操作 DB. 如新建一張 user table
+
 ```
 sequelize model:generate --name user --attributes name:string,mail:string
 ```
 
-
-
-基本使用指令
----------
+## 基本使用指令
 
 透過下列指令可新增 migration, 並且想好 migration message.
 
 ```
 sequelize migration:create --name <migration message>
 ```
+
 就會產生檔案 `migrations/<YYYYMMDDHHMMSS>-<migration message>.js`.
 用自己習慣的編輯器去修改 js, 搭配 [Query Interface](https://sequelize.org/docs/v6/other-topics/query-interface/) 語法去建立或調整資料庫 Schema 修改.
 
 ```
 sequelize db:migrate
 ```
+
 這個指令會自動執行到最後一個 migration.js 檔案裡面的 `up()`, 為資料庫欄位逐次修改調整過程.
 
 ```
 sequelize db:migrate:undo
 ```
+
 則執行 js 檔案裡面的 `down()`, 內容為對應修改的還原語法.
 
-### 指令列表 ###
+### 指令列表
 
-``` 
+```
 Sequelize CLI [Node: 16.17.0, CLI: 6.4.1, ORM: 6.21.6]
 
 sequelize <command>
@@ -156,15 +153,12 @@ Options:
   --help     Show help
 ```
 
-
-
-檔案架構
--------
+## 檔案架構
 
 `up()` `down()` 都回傳 promise
 
-``` js title="migration-<DATA>-<MESSAGE>.js"
-'use strict';
+```js title="migration-<DATA>-<MESSAGE>.js"
+"use strict";
 
 module.exports = {
   up: (queryInterface, Sequelize) => {
@@ -173,11 +167,11 @@ module.exports = {
 
   down: (queryInterface, Sequelize) => {
     // 要減少內容的動作
-  }
+  },
 };
 ```
 
-### Query Interface 常用方法 ###
+### Query Interface 常用方法
 
 - 變動資料表
   - 新增資料表 `createTable(tableName, attributes, options)`
@@ -196,13 +190,13 @@ module.exports = {
   - 建立索引 `addIndex(tableName, attributes, options)`
   - 移除索引 `removeIndex(tableName, indexNameOrAttributes, options)`
 
-### SQL 語法 ###
+### SQL 語法
 
 除了呼叫 Query Interface 外, 使用 `queryInterface.sequelize.query(SQL 語法)` 的用法,
 可以直接執行 SQL 語法, 補足 Query Interface 方法的不足.
 或因故不想透過 Sequelize ORM 語法時, 可直接使用標準 SQL 來更改資料庫 Schema.
 
-``` js
+```js
 up: (queryInterface, Sequelize) => {
   return queryInterface.method(
       //...
@@ -212,25 +206,22 @@ up: (queryInterface, Sequelize) => {
 }
 ```
 
+## 進階使用
 
-
-進階使用
--------
-
-### 回朔版本 ###
+### 回朔版本
 
 可以建立也可以回溯
 
-- sequelize db:migrate:undo  一次退一個版本
+- sequelize db:migrate:undo 一次退一個版本
 - sequelize db:migrate:undo:all 退到初始狀態
 - sequelize db:migrate:undo:all --to XXXXXXXXXXXXXX-create-user.js 退到指定版本
 
-### 資料表關聯 ###
+### 資料表關聯
 
-在 queryInterface.createTable / addColumn 中, 
+在 queryInterface.createTable / addColumn 中,
 在 attributes 定義欄位的物件中, 寫 reference 決定資料庫變動後, 關聯是否存在.
 
-``` js
+```js
 return queryInterface.addColumn(
   'tableName',
   'fieldName',
@@ -247,7 +238,7 @@ return queryInterface.addColumn(
 },
 ```
 
-### Hook ###
+### Hook
 
 當呼叫 add/set 函數時, beforeUpdate/afterUpdate 也會執行.
 唯一可以執行 beforeDestroy/afterDestroy 的方式, 就是設定 associations 屬性 onDelete: ‘cascade’.
@@ -265,63 +256,61 @@ return queryInterface.addColumn(
 Available constraints:
 
 - UNIQUE
-  ``` js
-  queryInterface.addConstraint('Users', ['email'], {
-    type: 'unique',
-    name: 'custom_unique_constraint_name'
-  });  
+  ```js
+  queryInterface.addConstraint("Users", ["email"], {
+    type: "unique",
+    name: "custom_unique_constraint_name",
+  });
   ```
 - DEFAULT (MSSQL only)
-  ``` js
-  queryInterface.addConstraint('Users', ['roles'], {
-    type: 'default',
-    defaultValue: 'guest'
+  ```js
+  queryInterface.addConstraint("Users", ["roles"], {
+    type: "default",
+    defaultValue: "guest",
   });
   ```
 - CHECK (MySQL - Ignored by the database engine)
-  ``` js
-  queryInterface.addConstraint('Users', ['roles'], {
-    type: 'check',
+  ```js
+  queryInterface.addConstraint("Users", ["roles"], {
+    type: "check",
     where: {
-       roles: ['user', 'admin', 'moderator', 'guest']
-    }
+      roles: ["user", "admin", "moderator", "guest"],
+    },
   });
   ```
 - FOREIGN KEY
-  ``` js
-  queryInterface.addConstraint('Posts', ['username'], {
-    type: 'foreign key',
-    name: 'custom_fkey_constraint_name',
-    references: { //Required field
-      table: 'target_table_name',
-      field: 'target_column_name'
+  ```js
+  queryInterface.addConstraint("Posts", ["username"], {
+    type: "foreign key",
+    name: "custom_fkey_constraint_name",
+    references: {
+      //Required field
+      table: "target_table_name",
+      field: "target_column_name",
     },
-    onDelete: 'cascade',
-    onUpdate: 'cascade'
+    onDelete: "cascade",
+    onUpdate: "cascade",
   });
   ```
 - PRIMARY KEY
-  ``` js
-  queryInterface.addConstraint('Users', ['username'], {
-     type: 'primary key',
-     name: 'custom_primary_constraint_name'
+  ```js
+  queryInterface.addConstraint("Users", ["username"], {
+    type: "primary key",
+    name: "custom_primary_constraint_name",
   });
   ```
 
-
-
-See Also
---------
+## See Also
 
 雖然 Migration 是 Sequelize 所推出的, 但 sequelize-cli 可獨立使用.
 使用 Sequelize Migration 來管理專案資料庫格式架構和程式中是否使用 Sequelize ORM 並無關係.
 
 不喜使用 ORM 的開發者或既有的專案, 無須改變存取資料庫的方式,
 程式可以不透過 Sequelize ORM, 自行處理資料庫存取介面.
-專案也可以不依賴 `qequelize-cli`, 
+專案也可以不依賴 `sequelize-cli`,
 直接透過 `npx sequelize COMMAND [OPTIONS]` 來執行 Sequelize Migration.
 
-### Reference ###
+### Reference
 
 - [Migrations | Sequelize](https://sequelize.org/docs/v6/other-topics/migrations/)  
   [Query Interface](https://sequelize.org/docs/v6/other-topics/query-interface/)

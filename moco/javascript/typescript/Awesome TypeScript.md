@@ -7,27 +7,21 @@ tags:
 slug: /javascript/typescript/awesome-typescript/
 ---
 
-Awesome TypeScript Resources
-============================
+# Awesome TypeScript Resources
 
-TypeScript.org
---------------
+## TypeScript.org
 
--   [TypeScript: JavaScript With Syntax For Types.](https://www.typescriptlang.org/)  
-    [Docs](https://www.typescriptlang.org/docs/) |
-    [Handbook](https://www.typescriptlang.org/docs/handbook/intro.html) |
-    [Playground](https://www.typescriptlang.org/play) |
-    [Tools](https://www.typescriptlang.org/tools)
+- [TypeScript: JavaScript With Syntax For Types.](https://www.typescriptlang.org/)  
+  [Docs](https://www.typescriptlang.org/docs/) |
+  [Handbook](https://www.typescriptlang.org/docs/handbook/intro.html) |
+  [Playground](https://www.typescriptlang.org/play) |
+  [Tools](https://www.typescriptlang.org/tools)
 
+## Handbook
 
-Handbook
---------
+- [Learn TypeScript using Step-by-Step Tutorials](https://www.tutorialsteacher.com/typescript)
+- [TypeScript 中文手册 - TypeScript 中文手册](https://typescript.bootcss.com/)
 
--   [Learn TypeScript using Step-by-Step Tutorials](https://www.tutorialsteacher.com/typescript)
--   [TypeScript 中文手册 - TypeScript 中文手册](https://typescript.bootcss.com/)
+## Related Notes
 
-
-Related Notes
--------------
-
--   [Get Started](ts_get-started.md)
+- [Get Started](ts_get-started.md)

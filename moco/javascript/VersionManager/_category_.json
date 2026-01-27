@@ -2,7 +2,7 @@
   "label": "Version Manager",
   "position": 10,
   "link": {
-    "type": "generated-index",
-    "description": "Node.js Version Manager"
+    "type": "doc",
+    "id": "JavaScript/VersionManager/Node Version Manager"
   }
 }

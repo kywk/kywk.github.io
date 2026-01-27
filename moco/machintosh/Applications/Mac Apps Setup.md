@@ -1,6 +1,6 @@
 ---
 title: 'Setup: App 安裝紀錄'
-description: kywk's favitote macOS Apps
+description: kywk's favorite macOS Apps
 image: >-
   https://lh3.googleusercontent.com/pw/AL9nZEUA9Ifvd5Z8SXDWkeVB6AC4MPGwnXaL6kBXNPoXwOQQ2jOcZ1Jw_0p8TKK8C3ZX0e67_FOY15eDrm7aaXSQJcKtoUzC80SAQEHsaBy6qS2AqNNs5VUFNXBKm439y_1wkvmDl-PnL8ReojnIumNlEvOXBg=w800-no?authuser=0
 tags:
@@ -9,14 +9,14 @@ tags:
   - kywk
 sidebar_position: 1
 date_created: 2022-08-13T00:00:00.000Z
-date_updated: 2025-09-20T00:00:00.000Z
+date_updated: 2025-01-20T00:00:00.000Z
 slug: /machintosh/applications/mac-apps-setup/
 ---
 
-# [Mac] 系統與 Apps 安裝紀錄 2025.Jun
+# [Mac] 系統與 Apps 安裝紀錄
 
-設定新電腦, 順便整理紀錄一下目前日常使用的 Apps. 
-越來越少從文章中看到新 App 的介紹, 更多的是從 Youtube 影片推薦得知. 
+設定新電腦，順便整理紀錄目前日常使用的 Apps。
+越來越少從文章中看到新 App 的介紹，更多的是從 YouTube 影片推薦得知。
 時代變遷...
 
 ## 快速安裝
@@ -52,13 +52,15 @@ brew bundle --file=mac/Brewfile
 
 ### 配置同步
 
-**Dropbox + Maestral**
+**Dropbox + [[Maestral]]**
 
 配置檔案透過 Dropbox 同步，使用開源客戶端 Maestral：
 
 ```shell
 brew install maestral
 ```
+
+詳細說明請參考 [[Maestral]] 文章。
 
 **Dotfiles 管理**
 
@@ -124,13 +126,13 @@ brew install tig gitui git-delta
 brew install tldr fzf direnv jq
 ```
 
-參考: **[[Mac DevEnv Setup:macOS 開發環境建構]]**
+詳細開發環境設定請參考：[[Mac DevEnv Setup]]
 
 ## 生產力工具
 
 ### Obsidian
 
-出發點是卡片筆記軟體, 因各種擴充功能, 已是個人全面性筆記與專案管理軟體.
+出發點是卡片筆記軟體，因各種擴充功能，已是個人全面性筆記與專案管理軟體：
 
 ```shell
 brew install obsidian
@@ -138,19 +140,29 @@ brew install obsidian
 
 ### [[Raycast]]
 
-取代 Spotlight 軟體
+強大的應用程式啟動器，取代 Spotlight 和 Alfred：
 
 ```shell
 brew install raycast
 ```
 
+詳細功能介紹請參考 [[Raycast]] 文章。
+
 ### [AltTab](https://alt-tab-macos.netlify.app/)
 
-和 Windows 一樣使用 `Alt + Tab` 切換視窗, 可在同一程式多個視窗中切換, 比 macOS 內建僅能在應用程式間切換來得快速方邊.
+和 Windows 一樣使用 `Alt + Tab` 切換視窗，可在同一程式多個視窗中切換，比 macOS 內建僅能在應用程式間切換來得快速方便：
+
+```shell
+brew install alt-tab
+```
 
 ### [Pure Paste](https://sindresorhus.com/pure-paste)
 
-讓預設貼上就是純文字，自動清除複製的文字樣式
+讓預設貼上就是純文字，自動清除複製的文字樣式：
+
+```shell
+brew install pure-paste
+```
 
 ## Menu Bar
 
@@ -167,37 +179,44 @@ brew install jordanbaird-ice
 
 ### [Itsycal](https://www.mowglii.com/itsycal/)
 
-在功能表列上便捷地查看日曆, 可以查看月曆和事件列表, 還能快速創建新事件.
+在功能表列上便捷地查看日曆，可以查看月曆和事件列表，還能快速創建新事件：
 
 ```shell
 brew install itsycal
 ```
 
-### [TopNotch](https://topnotch.app/) 
+### [TopNotch](https://topnotch.app/)
 
-Makes the notch disappear like a 🥷.
+隱藏 MacBook 瀏海區域，讓螢幕看起來更完整：
 
-### [MenubarX](https://menubarx.app) [AppStore](https://apps.apple.com/tw/app/menubarx/id1575588022) A powerful menu bar browser.
+```shell
+brew install topnotch
+```
 
-可在 MenuBar 上放置一個小瀏覽器, 方便查閱資料或當作開發 RWD 網頁時的檢視工具.
-亦可將某些網站放置在 menu bar 上當作 App 來使用.
+### [MenubarX](https://menubarx.app)
+
+在 Menu Bar 上放置小型瀏覽器，方便查閱資料或當作開發 RWD 網頁時的檢視工具。亦可將常用網站固定在 Menu Bar 上當作 App 使用：
+
 - [MenubarX 在 Mac 選單列加入瀏覽器，固定經常使用的網頁](https://free.com.tw/menubarx/)
-- [MenubarX 讓你在 Mac 選單列中瀏覽網頁的小工具（內購限免） - 電腦王阿達](https://www.kocpc.com.tw/archives/421084)
-- [讓 Mac 多一個小螢幕的《MenubarX》，打報告、查資料很好用 - 蘋果仁 - 果仁 iPhone/iOS/好物推薦科技媒體](https://applealmond.com/posts/129059)
+- [App Store 下載](https://apps.apple.com/tw/app/menubarx/id1575588022)
 
 ### [Pomodorome](https://apps.apple.com/us/app/pomodoro-me-focus-on-tasks/id1484801884?mt=12)
 
-在 menu bar 上的番茄時鐘, 方便調用. 亦有基本統計資訊, 方便追蹤時間使用.
+在 Menu Bar 上的番茄時鐘，方便調用。具備基本統計資訊，方便追蹤時間使用。
 
-## 網路通訊
+## 網路與雲端工具
 
-### [CloudMounter](https://cloudmounter.net/) / [App Store](https://apps.apple.com/tw/app/cloudmounter-cloud-encryption/id1130254674?l=en&mt=12) 
+### [CloudMounter](https://cloudmounter.net/)
 
-把网络云盘放进你的 Finder 里 
+將雲端硬碟掛載到 Finder，支援多種雲端服務：
+
+- [App Store 下載](https://apps.apple.com/tw/app/cloudmounter-cloud-encryption/id1130254674?l=en&mt=12)
 
 ### [rclone](https://rclone.org/)
 
-  ```shell
+命令列雲端同步工具，支援 40+ 雲端服務：
+
+```shell
 brew install rclone
 ```
 
@@ -229,9 +248,13 @@ brew install exifrenamer
 
 ### [McBopomofo 小麥注音輸入法](http://mcbopomofo.openvanilla.org/)
 
-反應快速, 輕巧簡單, 為 Mac User 量身打造.
-支援標準, 倚天, 許氏, 倚天26 鍵, IBM 以及漢語拼音鍵盤配置.
+反應快速、輕巧簡單，為 Mac 使用者量身打造。支援標準、倚天、許氏、倚天 26 鍵、IBM 以及漢語拼音鍵盤配置：
 
+```shell
+brew install mcbopomofo
+```
+
+參考資料：
 - [小麥注音的隱藏設定](https://osxchat.tumblr.com/post/29205181318/mcbopomofo-hidden-settings)
 
 ## 實用工具腳本

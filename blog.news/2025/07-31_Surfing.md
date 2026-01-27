@@ -23,9 +23,12 @@ hide_table_of_contents: true
 
 - [GitHub - stan-smith/FossFLOW: Make beautiful isometric infrastructure diagrams](https://github.com/stan-smith/FossFLOW)
 	- [OpenFLOW – Quickly make beautiful infrastructure diagrams local to your machine \| Hacker News](https://news.ycombinator.com/item?id=44431178)
-	- [ ] HN 的討論是個寶藏, 花時間仔細消化. 📅 2026-01-01
+	- [x] HN 的討論是個寶藏, 花時間仔細消化. 📅 2026-01-16 ✅ 2026-01-16
 		- [GitHub - mmastrac/stylus: Lightweight status page for home infrastructure](https://github.com/mmastrac/stylus)
 		- [Mermaid to Excalidraw Playground](https://mermaid-to-excalidraw.vercel.app/)
+		- [Diagrams \| C4 model](https://c4model.com/diagrams)
+		- [GitHub - terrastruct/d2: D2 is a modern diagram scripting language that turns text to diagrams.](https://github.com/terrastruct/d2)
+		- D2/C4 看起來都是不錯的方案, 值得花時間研究.
 - [跨雲端 AI 服務統一 API Gateway：安全、可擴展的企業級解決方案 - 小惡魔 - AppleBOY](https://blog.wu-boy.com/2025/07/building-a-unified-api-gateway-zh-tw/)
 
 ### Life
