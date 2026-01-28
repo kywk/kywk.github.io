@@ -4,10 +4,111 @@
         <title>kywk.me Blog</title>
         <link>https://kywk.github.io/life/</link>
         <description>kywk.me Blog</description>
-        <lastBuildDate>Thu, 25 Dec 2025 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 22 Jan 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-TW</language>
+        <item>
+            <title><![CDATA[Life with AI]]></title>
+            <link>https://kywk.github.io/life/2026/01/22/Life-with-AI/</link>
+            <guid>https://kywk.github.io/life/2026/01/22/Life-with-AI/</guid>
+            <pubDate>Thu, 22 Jan 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[撥空消化了一些堆積的 TODO item, 其中有不少當時覺得該花時間了解的 AI 新功能, 短短幾個月後, 有些已被取代, 有些已被 AI 工具內化, 不見得需要自己花時間研究學習.]]></description>
+            <content:encoded><![CDATA[<p>撥空消化了一些堆積的 TODO item, 其中有不少當時覺得該花時間了解的 AI 新功能, 短短幾個月後, 有些已被取代, 有些已被 AI 工具內化, 不見得需要自己花時間研究學習.
+也有些已變成使用 AI 的 common sense...</p>
+<p>縮說 AI 已經成為了生活與工作上的重要工具, 讓我們能夠更高效地完成任務, 更好地理解世界.
+但這一年來研究 / 利用 / 實現 / .. AI 在生活與工作上的各項協助, 真的覺得 AI 前進太快, <a href="https://www.youtube.com/@imjuya" target="_blank" rel="noopener noreferrer" class="">橘押</a> 頻道每天的 AI 圈最新消息都十來則,
+但 AI 的前進速度也讓我們需要不斷學習和適應新的技術和工具, 在 AI 的追趕上真的有種『一日不見如隔三秋』...</p>
+<p>[[slowing-down-in-ai-era-engineer-diary]]
+也許是個時機好好反思, 什麼才是根本.</p>]]></content:encoded>
+            <category>AI</category>
+        </item>
+        <item>
+            <title><![CDATA[雜想]]></title>
+            <link>https://kywk.github.io/life/2026/01/15/Demi/</link>
+            <guid>https://kywk.github.io/life/2026/01/15/Demi/</guid>
+            <pubDate>Thu, 15 Jan 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[一些這兩天的雜想, 很呼應前兩天和 Q 的聊天.]]></description>
+            <content:encoded><![CDATA[<p>一些這兩天的雜想, 很呼應前兩天和 Q 的聊天.</p>
+<ul>
+<li class="">轉角國際 或 全球串聯 Podcast 的聽友分享, 談及新聞中伊朗示威抗爭紛亂非官方統計已死傷上萬人, 而該聽友有的伊朗同事, 這些對我們很遙遠的事件, 卻是某些人的周遭日常. 想起你在亞馬遜那段, 同團中有俄羅斯和烏克蘭的尷尬. 想起你說, 這世界有那麼多大事件, 而我們是否在無痛呻吟.</li>
+<li class="">近來重新整理網站文章, 並讓 AI 幫我潤飾與整合. 內容豐富了, 文章紮實了, 結構嚴謹了, 我也消失了. AI 文真的看得出來, 即使是自己已然完成七八成的文章, 也可能被改成自己看不出來的樣貌.</li>
+<li class="">別人家的小孩會吟詩, 而你只會作對.</li>
+</ul>]]></content:encoded>
+            <category>kywk</category>
+        </item>
+        <item>
+            <title><![CDATA[Now or Never 2026]]></title>
+            <link>https://kywk.github.io/life/2026/01/01/Now-or-Never/</link>
+            <guid>https://kywk.github.io/life/2026/01/01/Now-or-Never/</guid>
+            <pubDate>Thu, 01 Jan 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[嗯, 再一次的 Now or Never...]]></description>
+            <content:encoded><![CDATA[<p>嗯, 再一次的 Now or Never...</p>
+<p>今年的新目標？</p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> 回馬場</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> 滑雪</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> 複盤潛水</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> Side Project</li>
+</ul>
+<p>其他, 照舊.</p>
+<p>老靈魂還活在那，Patagonia 亦仍在。</p>
+<p>每天三件事：完成工作上的緊急事件與進度、發展專業上的重要成果、投入生活上的慾望清單。
+然後運動、放鬆、重置每一天。</p>
+<p>就繼續吧，
+回馬場、再越野、仍爬山，還工作。
+擬定目標，有所作為，<strong>持之以恆！</strong>，<a href="http://goo.gl/393HY" target="_blank" rel="noopener noreferrer" class="">before i die</a>！</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="daily">Daily<a href="https://kywk.github.io/life/2026/01/01/Now-or-Never/#daily" class="hash-link" aria-label="Daily的直接連結" title="Daily的直接連結" translate="no">​</a></h3>
+<ul>
+<li class="">Finish today's todo on-schedule, or re-schedule it</li>
+<li class="">Regular training: 7k easy run every morning
+<ul>
+<li class="">Monday: Core, Strength and Conditioning</li>
+<li class="">Tuesday: 10k</li>
+<li class="">Wednesday: Core, Strength and Conditioning</li>
+<li class="">Thursday: 15k or Core</li>
+<li class="">Friday: Trail, Bike to home, Stone</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="weekly">Weekly<a href="https://kywk.github.io/life/2026/01/01/Now-or-Never/#weekly" class="hash-link" aria-label="Weekly的直接連結" title="Weekly的直接連結" translate="no">​</a></h3>
+<ul>
+<li class="">LeetCode Weekly Contest</li>
+<li class="">A Tokaido/Patagonia a week: A introduction to one trail path of Tokaido/Patagonia</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="monthly">Monthly<a href="https://kywk.github.io/life/2026/01/01/Now-or-Never/#monthly" class="hash-link" aria-label="Monthly的直接連結" title="Monthly的直接連結" translate="no">​</a></h3>
+<ul>
+<li class="">(Biweekly) Cook a meal. Include salad, starter, main-dish, dessert... etc</li>
+<li class="">(Biweekly) Photography: finish one set of previous works</li>
+<li class="">兩本書、兩篇心得</li>
+<li class="">Announce a minion project</li>
+<li class="">Finish a 42k marathon or more than 42k self trainning</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="yearly">Yearly<a href="https://kywk.github.io/life/2026/01/01/Now-or-Never/#yearly" class="hash-link" aria-label="Yearly的直接連結" title="Yearly的直接連結" translate="no">​</a></h3>
+<ul>
+<li class="">Mointaineering
+<ul>
+<li class="">嘉明湖</li>
+<li class="">能高安東軍</li>
+</ul>
+</li>
+<li class="">LifeHaker
+<ul>
+<li class="">攀岩</li>
+<li class="">學飛行傘</li>
+</ul>
+</li>
+</ul>
+<p>仍貪心。公開目標，騎虎難下。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="see-also">See Also<a href="https://kywk.github.io/life/2026/01/01/Now-or-Never/#see-also" class="hash-link" aria-label="See Also的直接連結" title="See Also的直接連結" translate="no">​</a></h2>
+<p>2026 的另一個目標, 年底來個對得起自己的回顧.</p>
+<ul>
+<li class=""><a href="https://www.evanlin.com/summary-2024/" target="_blank" rel="noopener noreferrer" class="">[年終回顧] 2024 年的回顧與展望</a></li>
+<li class="">[[blog.life/2025/12-25-Happy-Holiday|12-25-Happy-Holiday]]</li>
+</ul>]]></content:encoded>
+            <category>kywk</category>
+            <category>LifeHack</category>
+        </item>
         <item>
             <title><![CDATA[Happy Holiday]]></title>
             <link>https://kywk.github.io/life/2025/12/25/Happy-Holiday/</link>
@@ -32,6 +133,17 @@
 <li class="">五個人的大法官自己只有比總共八人，最低門檻六人少一人，所以可以用緊急事*態做成決議</li>
 <li class="">台北捷運有一個人丟煙霧彈後殺了三個人，傷了五個人</li>
 <li class="">我今天才發現 Linux kernel 6.18 已經拿掉 iptables</li>
+</ul>
+<p>下午在兩個桌面同時開了 Antigravity 進行開發, 左邊桌面是 <a href="https://github.com/kywk/sheltie" target="_blank" rel="noopener noreferrer" class="">Sheltie</a> 右邊是公司需求.
+Shelite 開發除錯到一定階段需求錯誤已收斂可以邊運行邊觀察收集回饋, 而公司需求的除錯卻遲遲未能收斂.</p>
+<ul>
+<li class="">Antigravity: ... xx 錯誤已排除, 並完成完整測試如下... 下一步可以 ooxx, 需要我幫你處理嗎?</li>
+<li class="">Cow: 不用了, 先讓專案運行並收集回饋再決定後續功能. By the way, 右邊桌面的 Antigravity 好像卡關了, 一直繞不出來沒有進, 你可以過去幫幫他嗎? XD</li>
+<li class="">Antigravity: 很可惜我只能在左邊編輯區工作, 無法幫助右邊預覽區的開發, 祝他好運.</li>
+</ul>
+<p>請 ChatGPT 幫我建議一些賺案的命名, 幾次對話下來, 他自動幫我生了 [[Dog Stack|狗派宇宙]] 的說辭, 大中我心!</p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> TODO: link to GPT... 📅 2026-01-25</li>
 </ul>]]></content:encoded>
             <category>kywk</category>
             <category>Life</category>
@@ -716,24 +828,6 @@ podcast 節目中聽到 [[Atomic habits]] 的幾個核心精神, 備註一下:</
 <p>仍貪心。公開目標，騎虎難下。</p>]]></content:encoded>
             <category>kywk</category>
             <category>LifeHack</category>
-        </item>
-        <item>
-            <title><![CDATA[loma-flmi-l1]]></title>
-            <link>https://kywk.github.io/life/2023/12/04/loma-flmi-l1/</link>
-            <guid>https://kywk.github.io/life/2023/12/04/loma-flmi-l1/</guid>
-            <pubDate>Mon, 04 Dec 2023 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[just-us]]></title>
-            <link>https://kywk.github.io/life/2023/05/13/just-us/</link>
-            <guid>https://kywk.github.io/life/2023/05/13/just-us/</guid>
-            <pubDate>Sat, 13 May 2023 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[may-the-4th-be-with-u]]></title>
-            <link>https://kywk.github.io/life/2023/05/04/may-the-4th-be-with-u/</link>
-            <guid>https://kywk.github.io/life/2023/05/04/may-the-4th-be-with-u/</guid>
-            <pubDate>Thu, 04 May 2023 00:00:00 GMT</pubDate>
         </item>
     </channel>
 </rss>
