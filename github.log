@@ -1,0 +1,464 @@
+2026-01-28T03:10:31.9103310Z Current runner version: '2.331.0'
+2026-01-28T03:10:31.9127968Z ##[group]Runner Image Provisioner
+2026-01-28T03:10:31.9128835Z Hosted Compute Agent
+2026-01-28T03:10:31.9129411Z Version: 20260115.477
+2026-01-28T03:10:31.9129954Z Commit: 4b342d620503cbe250a3154040964899ea7c9b00
+2026-01-28T03:10:31.9130662Z Build Date: 2026-01-15T22:32:41Z
+2026-01-28T03:10:31.9131283Z Worker ID: {f9b29284-c839-4c17-bc41-d9081fe3f39e}
+2026-01-28T03:10:31.9132156Z Azure Region: northcentralus
+2026-01-28T03:10:31.9132692Z ##[endgroup]
+2026-01-28T03:10:31.9134609Z ##[group]Operating System
+2026-01-28T03:10:31.9135216Z Ubuntu
+2026-01-28T03:10:31.9135635Z 24.04.3
+2026-01-28T03:10:31.9136188Z LTS
+2026-01-28T03:10:31.9136605Z ##[endgroup]
+2026-01-28T03:10:31.9137095Z ##[group]Runner Image
+2026-01-28T03:10:31.9137688Z Image: ubuntu-24.04
+2026-01-28T03:10:31.9138182Z Version: 20260119.4.1
+2026-01-28T03:10:31.9139348Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260119.4/images/ubuntu/Ubuntu2404-Readme.md
+2026-01-28T03:10:31.9140778Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260119.4
+2026-01-28T03:10:31.9141936Z ##[endgroup]
+2026-01-28T03:10:31.9144822Z ##[group]GITHUB_TOKEN Permissions
+2026-01-28T03:10:31.9147053Z Actions: write
+2026-01-28T03:10:31.9147889Z ArtifactMetadata: write
+2026-01-28T03:10:31.9148419Z Attestations: write
+2026-01-28T03:10:31.9148914Z Checks: write
+2026-01-28T03:10:31.9149396Z Contents: write
+2026-01-28T03:10:31.9149905Z Deployments: write
+2026-01-28T03:10:31.9150397Z Discussions: write
+2026-01-28T03:10:31.9150923Z Issues: write
+2026-01-28T03:10:31.9151425Z Metadata: read
+2026-01-28T03:10:31.9152167Z Models: read
+2026-01-28T03:10:31.9152708Z Packages: write
+2026-01-28T03:10:31.9153187Z Pages: write
+2026-01-28T03:10:31.9153814Z PullRequests: write
+2026-01-28T03:10:31.9154294Z RepositoryProjects: write
+2026-01-28T03:10:31.9154947Z SecurityEvents: write
+2026-01-28T03:10:31.9155506Z Statuses: write
+2026-01-28T03:10:31.9155957Z ##[endgroup]
+2026-01-28T03:10:31.9158032Z Secret source: Actions
+2026-01-28T03:10:31.9159053Z Prepare workflow directory
+2026-01-28T03:10:31.9577391Z Prepare all required actions
+2026-01-28T03:10:31.9633068Z Getting action download info
+2026-01-28T03:10:32.2878290Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+2026-01-28T03:10:32.4226032Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+2026-01-28T03:10:32.5127412Z Download action repository 'peaceiris/actions-gh-pages@v4' (SHA:4f9cc6602d3f66b9c108549d475ec49e8ef4d45e)
+2026-01-28T03:10:33.0040538Z Complete job name: Deploy to GitHub Pages
+2026-01-28T03:10:33.0712622Z ##[group]Run actions/checkout@v4
+2026-01-28T03:10:33.0713478Z with:
+2026-01-28T03:10:33.0713875Z   repository: kywk/kywk.github.io
+2026-01-28T03:10:33.0714519Z   token: ***
+2026-01-28T03:10:33.0714889Z   ssh-strict: true
+2026-01-28T03:10:33.0715292Z   ssh-user: git
+2026-01-28T03:10:33.0715677Z   persist-credentials: true
+2026-01-28T03:10:33.0716118Z   clean: true
+2026-01-28T03:10:33.0716516Z   sparse-checkout-cone-mode: true
+2026-01-28T03:10:33.0716975Z   fetch-depth: 1
+2026-01-28T03:10:33.0717353Z   fetch-tags: false
+2026-01-28T03:10:33.0717761Z   show-progress: true
+2026-01-28T03:10:33.0718154Z   lfs: false
+2026-01-28T03:10:33.0718517Z   submodules: false
+2026-01-28T03:10:33.0718899Z   set-safe-directory: true
+2026-01-28T03:10:33.0719527Z ##[endgroup]
+2026-01-28T03:10:33.1792506Z Syncing repository: kywk/kywk.github.io
+2026-01-28T03:10:33.1794543Z ##[group]Getting Git version info
+2026-01-28T03:10:33.1795372Z Working directory is '/home/runner/work/kywk.github.io/kywk.github.io'
+2026-01-28T03:10:33.1796358Z [command]/usr/bin/git version
+2026-01-28T03:10:33.1874761Z git version 2.52.0
+2026-01-28T03:10:33.1901418Z ##[endgroup]
+2026-01-28T03:10:33.1916998Z Temporarily overriding HOME='/home/runner/work/_temp/59d73a01-8165-4326-8ef3-6b316675a7db' before making global git config changes
+2026-01-28T03:10:33.1919139Z Adding repository directory to the temporary git global config as a safe directory
+2026-01-28T03:10:33.1930492Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/kywk.github.io/kywk.github.io
+2026-01-28T03:10:33.1970169Z Deleting the contents of '/home/runner/work/kywk.github.io/kywk.github.io'
+2026-01-28T03:10:33.1974129Z ##[group]Initializing the repository
+2026-01-28T03:10:33.1978084Z [command]/usr/bin/git init /home/runner/work/kywk.github.io/kywk.github.io
+2026-01-28T03:10:33.2095266Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-01-28T03:10:33.2097019Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-01-28T03:10:33.2098532Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-01-28T03:10:33.2099674Z hint: call:
+2026-01-28T03:10:33.2100246Z hint:
+2026-01-28T03:10:33.2100980Z hint: 	git config --global init.defaultBranch <name>
+2026-01-28T03:10:33.2102145Z hint:
+2026-01-28T03:10:33.2102715Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-01-28T03:10:33.2103667Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-01-28T03:10:33.2104360Z hint:
+2026-01-28T03:10:33.2104717Z hint: 	git branch -m <name>
+2026-01-28T03:10:33.2105151Z hint:
+2026-01-28T03:10:33.2105792Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-01-28T03:10:33.2107278Z Initialized empty Git repository in /home/runner/work/kywk.github.io/kywk.github.io/.git/
+2026-01-28T03:10:33.2112809Z [command]/usr/bin/git remote add origin https://github.com/kywk/kywk.github.io
+2026-01-28T03:10:33.2147870Z ##[endgroup]
+2026-01-28T03:10:33.2148963Z ##[group]Disabling automatic garbage collection
+2026-01-28T03:10:33.2151877Z [command]/usr/bin/git config --local gc.auto 0
+2026-01-28T03:10:33.2179849Z ##[endgroup]
+2026-01-28T03:10:33.2180491Z ##[group]Setting up auth
+2026-01-28T03:10:33.2186843Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-01-28T03:10:33.2216379Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-01-28T03:10:33.2554641Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-01-28T03:10:33.2585446Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-01-28T03:10:33.2805503Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-01-28T03:10:33.2834660Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-01-28T03:10:33.3097569Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-01-28T03:10:33.3107772Z ##[endgroup]
+2026-01-28T03:10:33.3109149Z ##[group]Fetching the repository
+2026-01-28T03:10:33.3117646Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +aa2cd675ca68aa67ecf5aa5042494bd78111c736:refs/remotes/origin/main
+2026-01-28T03:10:33.8146682Z From https://github.com/kywk/kywk.github.io
+2026-01-28T03:10:33.8147702Z  * [new ref]         aa2cd675ca68aa67ecf5aa5042494bd78111c736 -> origin/main
+2026-01-28T03:10:33.8194533Z ##[endgroup]
+2026-01-28T03:10:33.8195126Z ##[group]Determining the checkout info
+2026-01-28T03:10:33.8197562Z ##[endgroup]
+2026-01-28T03:10:33.8203757Z [command]/usr/bin/git sparse-checkout disable
+2026-01-28T03:10:33.8244277Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-01-28T03:10:33.8268426Z ##[group]Checking out the ref
+2026-01-28T03:10:33.8272994Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-01-28T03:10:33.8778015Z Switched to a new branch 'main'
+2026-01-28T03:10:33.8779302Z branch 'main' set up to track 'origin/main'.
+2026-01-28T03:10:33.8787545Z ##[endgroup]
+2026-01-28T03:10:33.8828501Z [command]/usr/bin/git log -1 --format=%H
+2026-01-28T03:10:33.8851923Z aa2cd675ca68aa67ecf5aa5042494bd78111c736
+2026-01-28T03:10:33.9107922Z ##[group]Run actions/setup-node@v4
+2026-01-28T03:10:33.9108371Z with:
+2026-01-28T03:10:33.9108699Z   node-version: 20
+2026-01-28T03:10:33.9109036Z   cache: npm
+2026-01-28T03:10:33.9109354Z   always-auth: false
+2026-01-28T03:10:33.9109711Z   check-latest: false
+2026-01-28T03:10:33.9110204Z   token: ***
+2026-01-28T03:10:33.9110531Z ##[endgroup]
+2026-01-28T03:10:34.1399908Z Found in cache @ /opt/hostedtoolcache/node/20.20.0/x64
+2026-01-28T03:10:34.1407085Z ##[group]Environment details
+2026-01-28T03:10:36.9082371Z node: v20.20.0
+2026-01-28T03:10:36.9083588Z npm: 10.8.2
+2026-01-28T03:10:36.9084104Z yarn: 1.22.22
+2026-01-28T03:10:36.9085799Z ##[endgroup]
+2026-01-28T03:10:36.9107670Z [command]/opt/hostedtoolcache/node/20.20.0/x64/bin/npm config get cache
+2026-01-28T03:10:37.2511239Z /home/runner/.npm
+2026-01-28T03:10:37.4347662Z Cache hit for: node-cache-Linux-x64-npm-dbe9f864b6191bb64debad14f090984bd5ceddcb905fb90571f2f634242d3769
+2026-01-28T03:10:38.5780233Z Received 104857600 of 167368268 (62.7%), 100.0 MBs/sec
+2026-01-28T03:10:39.5780374Z Received 163173964 of 167368268 (97.5%), 77.8 MBs/sec
+2026-01-28T03:10:39.6734925Z Received 167368268 of 167368268 (100.0%), 76.2 MBs/sec
+2026-01-28T03:10:39.6736063Z Cache Size: ~160 MB (167368268 B)
+2026-01-28T03:10:39.6774150Z [command]/usr/bin/tar -xf /home/runner/work/_temp/4b5a3a60-ab4b-44bd-abcd-56d84745f0df/cache.tzst -P -C /home/runner/work/kywk.github.io/kywk.github.io --use-compress-program unzstd
+2026-01-28T03:10:40.0929851Z Cache restored successfully
+2026-01-28T03:10:40.1248763Z Cache restored from key: node-cache-Linux-x64-npm-dbe9f864b6191bb64debad14f090984bd5ceddcb905fb90571f2f634242d3769
+2026-01-28T03:10:40.1405048Z ##[group]Run npm ci
+2026-01-28T03:10:40.1405397Z [36;1mnpm ci[0m
+2026-01-28T03:10:40.1505002Z shell: /usr/bin/bash -e {0}
+2026-01-28T03:10:40.1505325Z ##[endgroup]
+2026-01-28T03:10:53.2564577Z
+2026-01-28T03:10:53.2574320Z added 1509 packages, and audited 1510 packages in 13s
+2026-01-28T03:10:53.2574826Z
+2026-01-28T03:10:53.2575143Z 450 packages are looking for funding
+2026-01-28T03:10:53.2575633Z   run `npm fund` for details
+2026-01-28T03:10:53.2817254Z
+2026-01-28T03:10:53.2817970Z 15 vulnerabilities (11 moderate, 4 high)
+2026-01-28T03:10:53.2818302Z
+2026-01-28T03:10:53.2818587Z To address issues that do not require attention, run:
+2026-01-28T03:10:53.2819019Z   npm audit fix
+2026-01-28T03:10:53.2819169Z
+2026-01-28T03:10:53.2819467Z To address all issues (including breaking changes), run:
+2026-01-28T03:10:53.2819872Z   npm audit fix --force
+2026-01-28T03:10:53.2820070Z
+2026-01-28T03:10:53.2820216Z Run `npm audit` for details.
+2026-01-28T03:10:53.3553589Z ##[group]Run npm run build
+2026-01-28T03:10:53.3553994Z [36;1mnpm run build[0m
+2026-01-28T03:10:53.3587401Z shell: /usr/bin/bash -e {0}
+2026-01-28T03:10:53.3587653Z ##[endgroup]
+2026-01-28T03:10:53.4663437Z
+2026-01-28T03:10:53.4664002Z > kywk.me@17.71 prebuild
+2026-01-28T03:10:53.4664416Z > npm run content:slug
+2026-01-28T03:10:53.4664583Z
+2026-01-28T03:10:53.5794755Z
+2026-01-28T03:10:53.5795417Z > kywk.me@17.71 content:slug
+2026-01-28T03:10:53.5796239Z > node scripts/inject-slug-frontmatter.js
+2026-01-28T03:10:53.5796650Z
+2026-01-28T03:10:53.6400171Z [SlugInjector] Injecting normalized slug frontmatter
+2026-01-28T03:10:53.6404329Z [SlugInjector]
+2026-01-28T03:10:53.6405536Z [SlugInjector] Processing: backpacker/
+2026-01-28T03:10:53.6855804Z [SlugInjector] Processing: lifehacker/
+2026-01-28T03:10:53.6895619Z [SlugInjector] Processing: moco/
+2026-01-28T03:10:53.7409651Z [SlugInjector] Summary: 423 scanned, 0 modified, 0 errors
+2026-01-28T03:10:53.7528519Z
+2026-01-28T03:10:53.7530012Z > kywk.me@17.71 build
+2026-01-28T03:10:53.7530701Z > docusaurus build
+2026-01-28T03:10:53.7531364Z
+2026-01-28T03:10:54.8055653Z [PluginLoader] Plugin loaded from: ./plugins/remark-obsidian-kanban/src/index.js
+2026-01-28T03:10:54.8074874Z [PluginLoader] Plugin loaded from: ./plugins/remark-obsidian-leaflet/src/index.js
+2026-01-28T03:10:54.8090812Z [PluginLoader] Plugin loaded from: ./plugins/remark-slug-normalizer/src/index.js
+2026-01-28T03:10:54.8246952Z [WARNING] The `siteConfig.onBrokenMarkdownLinks` config option is deprecated and will be removed in Docusaurus v4.
+2026-01-28T03:10:54.8248652Z Please migrate and move this option to `siteConfig.markdown.hooks.onBrokenMarkdownLinks` instead.
+2026-01-28T03:10:54.8857318Z [INFO] [zh-TW] Creating an optimized production build...
+2026-01-28T03:10:54.8897028Z [PluginLoader] Plugin loaded from: ./plugins/remark-obsidian-kanban/src/index.js
+2026-01-28T03:10:54.8907164Z [PluginLoader] Plugin loaded from: ./plugins/remark-obsidian-leaflet/src/index.js
+2026-01-28T03:10:54.8916512Z [PluginLoader] Plugin loaded from: ./plugins/remark-slug-normalizer/src/index.js
+2026-01-28T03:10:54.8999171Z [WARNING] The `siteConfig.onBrokenMarkdownLinks` config option is deprecated and will be removed in Docusaurus v4.
+2026-01-28T03:10:54.9000790Z Please migrate and move this option to `siteConfig.markdown.hooks.onBrokenMarkdownLinks` instead.
+2026-01-28T03:10:55.7398892Z [ERROR] Sidebars file at "/home/runner/work/kywk.github.io/kywk.github.io/sidebars.js" failed to be loaded.
+2026-01-28T03:10:55.7400052Z [ERROR] Loading of version failed for version current
+2026-01-28T03:10:55.7401795Z
+2026-01-28T03:10:55.7426498Z [ERROR] Error: Unable to build website for locale zh-TW.
+2026-01-28T03:10:55.7427233Z [INFO] Docusaurus version: 3.9.2
+2026-01-28T03:10:55.7428710Z     at tryToBuildLocale (/home/runner/work/kywk.github.io/kywk.github.io/node_modules/@docusaurus/core/lib/commands/build/build.js:83:15)
+2026-01-28T03:10:55.7430994Z     at async /home/runner/work/kywk.github.io/kywk.github.io/node_modules/@docusaurus/core/lib/commands/build/build.js:35:9
+2026-01-28T03:10:55.7432212Z Node version: v20.20.0
+2026-01-28T03:10:55.7433051Z     ... 4 lines matching cause stack trace ...
+2026-01-28T03:10:55.7434531Z     at async file:///home/runner/work/kywk.github.io/kywk.github.io/node_modules/@docusaurus/core/bin/docusaurus.mjs:44:3 {
+2026-01-28T03:10:55.7435703Z   [cause]: Error: Can't find any doc with ID Utilities/HomeLab/Home Lab.
+2026-01-28T03:10:55.7436311Z   Available doc IDs:
+2026-01-28T03:10:55.7436688Z   - 52 Projects/52 Projects
+2026-01-28T03:10:55.7437208Z   - 52 Projects/Border Collie/Border Collie
+2026-01-28T03:10:55.7437765Z   - 52 Projects/Border Collie/Idea Workspace
+2026-01-28T03:10:55.7438304Z   - 52 Projects/Border Collie/Idea
+2026-01-28T03:10:55.7438841Z   - 52 Projects/Border Collie/Prompt Dual Layout
+2026-01-28T03:10:55.7439407Z   - 52 Projects/Border Collie/Prompt Init
+2026-01-28T03:10:55.7439976Z   - 52 Projects/Border Collie/Prompt Workspace
+2026-01-28T03:10:55.7440912Z   - 52 Projects/Border Collie/README
+2026-01-28T03:10:55.7441436Z   - 52 Projects/Border Collie/Ticket
+2026-01-28T03:10:55.7442111Z   - 52 Projects/Dog Stack
+2026-01-28T03:10:55.7442537Z   - 52 Projects/PM/editorconfig
+2026-01-28T03:10:55.7442970Z   - 52 Projects/PM/gitconfig
+2026-01-28T03:10:55.7443400Z   - 52 Projects/PM/gitignore
+2026-01-28T03:10:55.7443826Z   - 52 Projects/PM/gitmessage
+2026-01-28T03:10:55.7444234Z   - 52 Projects/Sheltie/Idea
+2026-01-28T03:10:55.7444676Z   - 52 Projects/Sheltie/Plan Init Project
+2026-01-28T03:10:55.7445218Z   - 52 Projects/Sheltie/Prompt Arrow Gantt
+2026-01-28T03:10:55.7445716Z   - 52 Projects/Sheltie/Prompt
+2026-01-28T03:10:55.7446153Z   - 52 Projects/Sheltie/README
+2026-01-28T03:10:55.7446578Z   - 52 Projects/Sheltie/Sample
+2026-01-28T03:10:55.7447006Z   - 52 Projects/Sheltie/Sheltie
+2026-01-28T03:10:55.7447471Z   - 52 Projects/Sheltie/Ticket
+2026-01-28T03:10:55.7448199Z   - AI/新增旅遊景點檔案 Prompt
+2026-01-28T03:10:55.7448639Z   - BootCamp/Algorithm/AVL Tree
+2026-01-28T03:10:55.7449101Z   - BootCamp/Algorithm/AVL
+2026-01-28T03:10:55.7449575Z   - BootCamp/Algorithm/Awesome Algorithm
+2026-01-28T03:10:55.7450400Z   - BootCamp/Algorithm/Binary Heap
+2026-01-28T03:10:55.7450849Z   - BootCamp/Algorithm/BST
+2026-01-28T03:10:55.7451261Z   - BootCamp/Algorithm/Graph
+2026-01-28T03:10:55.7451927Z   - BootCamp/Algorithm/heap
+2026-01-28T03:10:55.7452414Z   - BootCamp/Algorithm/Sorting
+2026-01-28T03:10:55.7452982Z   - BootCamp/Awesome Level Up
+2026-01-28T03:10:55.7453488Z   - BootCamp/Beginner/CS Algorithm 101
+2026-01-28T03:10:55.7454090Z   - BootCamp/Beginner/CS Computer Science 101
+2026-01-28T03:10:55.7454612Z   - BootCamp/OS TinyLFU
+2026-01-28T03:10:55.7455011Z   - DevSecOps/Awesome ELK
+2026-01-28T03:10:55.7455480Z   - DevSecOps/Docker/Awesome Docker
+2026-01-28T03:10:55.7455982Z   - DevSecOps/Docker/Docker Auth
+2026-01-28T03:10:55.7456971Z   - DevSecOps/Docker/Docker CLI Snippets
+2026-01-28T03:10:55.7457589Z   - DevSecOps/Docker/Dockerfile HEALTHCHECK
+2026-01-28T03:10:55.7458189Z   - DevSecOps/GitLab/Script merge and tag
+2026-01-28T03:10:55.7458790Z   - DevSecOps/Infrastructure/Nginx Docker Tips
+2026-01-28T03:10:55.7459431Z   - DevSecOps/Infrastructure/Nginx Lets Encrypt SSL
+2026-01-28T03:10:55.7460088Z   - DevSecOps/Infrastructure/Nginx Modify Endpoint
+2026-01-28T03:10:55.7460707Z   - DevSecOps/Infrastructure/Redis Cluster
+2026-01-28T03:10:55.7461336Z   - DevSecOps/Infrastructure/Redis Troubleshooting
+2026-01-28T03:10:55.7462249Z   - DevSecOps/Infrastructure/Ubuntu Nginx PHP
+2026-01-28T03:10:55.7462832Z   - DevSecOps/Security/HTTP CORS
+2026-01-28T03:10:55.7463340Z   - DevSecOps/Security/HTTP CSRF
+2026-01-28T03:10:55.7463852Z   - Golang/A Tour of Go/Go Tour Channel
+2026-01-28T03:10:55.7464388Z   - Golang/A Tour of Go/Go Tour Closure
+2026-01-28T03:10:55.7464916Z   - Golang/A Tour of Go/Go Tour Defer
+2026-01-28T03:10:55.7465459Z   - Golang/A Tour of Go/Go Tour Goroutine
+2026-01-28T03:10:55.7465942Z   - Golang/Awesome Go
+2026-01-28T03:10:55.7466363Z   - Golang/Go Get Started
+2026-01-28T03:10:55.7466855Z   - java/Apache Maven
+2026-01-28T03:10:55.7467219Z   - java/Awesome Java
+2026-01-28T03:10:55.7467596Z   - java/Java Get Started
+2026-01-28T03:10:55.7468151Z   - java/kotlin/Kotlin From Zero to SpringBoot Services
+2026-01-28T03:10:55.7468743Z   - java/kotlin/Kotlin Get Started
+2026-01-28T03:10:55.7469199Z   - java/OpenJDK
+2026-01-28T03:10:55.7469620Z   - java/packages/Java Gson Serialize
+2026-01-28T03:10:55.7470164Z   - java/packages/Java Jackson Serialize
+2026-01-28T03:10:55.7470695Z   - java/packages/Java Jackson vs Gson
+2026-01-28T03:10:55.7471234Z   - java/packages/Java Jakarta Validation
+2026-01-28T03:10:55.7471988Z   - java/Spring Boot/Awesome Spring Boot
+2026-01-28T03:10:55.7472546Z   - java/Spring Boot/Spring Boot Dockerize
+2026-01-28T03:10:55.7473109Z   - java/Spring Boot/Spring Boot From Scratch
+2026-01-28T03:10:55.7473690Z   - java/Spring Boot/Spring Boot Get Started
+2026-01-28T03:10:55.7474245Z   - java/Spring Boot/Spring Boot JWT
+2026-01-28T03:10:55.7475075Z   - java/Spring Boot/Spring Boot OSS Support
+2026-01-28T03:10:55.7475684Z   - java/Spring Boot/Spring Boot Source Tree
+2026-01-28T03:10:55.7476276Z   - java/Spring Boot/Spring Boot Web Service
+2026-01-28T03:10:55.7476912Z   - java/Spring Boot/Spring/Spring SpEL Expressions
+2026-01-28T03:10:55.7477591Z   - java/Spring Boot/Spring/Spring Value Annotation
+2026-01-28T03:10:55.7478252Z   - java/Spring Boot/Spring/Spring Value Defaults
+2026-01-28T03:10:55.7478869Z   - java/UseCase/Gantt Chat/Gantt Chat SVG
+2026-01-28T03:10:55.7479428Z   - javascript/Awesome JavaScript
+2026-01-28T03:10:55.7479948Z   - javascript/express/Express CORS
+2026-01-28T03:10:55.7480494Z   - javascript/express/Express Snippets
+2026-01-28T03:10:55.7481086Z   - javascript/express/Express TypeScript
+2026-01-28T03:10:55.7482261Z   - javascript/package/Axios Snippets
+2026-01-28T03:10:55.7482910Z   - javascript/package/Sequelize Migration Seeds
+2026-01-28T03:10:55.7483539Z   - javascript/package/Sequelize Migration
+2026-01-28T03:10:55.7484155Z   - javascript/typescript/Awesome TypeScript
+2026-01-28T03:10:55.7484788Z   - javascript/typescript/TypeScript Get Started
+2026-01-28T03:10:55.7485425Z   - javascript/typescript/TypeScript TSC Error
+2026-01-28T03:10:55.7486413Z   - javascript/VersionManager/JavaScript Runtime Comparison
+2026-01-28T03:10:55.7487158Z   - javascript/VersionManager/Node Version Manager
+2026-01-28T03:10:55.7487834Z   - javascript/VersionManager/Nvm Volta Fnm Comparison
+2026-01-28T03:10:55.7488508Z   - javascript/VersionManager/Other Version Manager
+2026-01-28T03:10:55.7489191Z   - javascript/VersionManager/Version Manager Ending Note
+2026-01-28T03:10:55.7489833Z   - javascript/VersionManager/Volta Get Started
+2026-01-28T03:10:55.7490460Z   - javascript/VersionManager/Why Version Manager
+2026-01-28T03:10:55.7490965Z   - kywk.moco
+2026-01-28T03:10:55.7491376Z   - machintosh/Applications/Mac Apps Setup
+2026-01-28T03:10:55.7492126Z   - machintosh/Applications/Maestral
+2026-01-28T03:10:55.7492620Z   - machintosh/Applications/MarkText
+2026-01-28T03:10:55.7493117Z   - machintosh/Applications/Raycast
+2026-01-28T03:10:55.7493608Z   - machintosh/Awesome Machintosh
+2026-01-28T03:10:55.7494203Z   - machintosh/Develop/Mac Development Environment Setup
+2026-01-28T03:10:55.7494806Z   - machintosh/Develop/Mac Docker CLI
+2026-01-28T03:10:55.7495305Z   - machintosh/Develop/Mac Redis CLI
+2026-01-28T03:10:55.7495806Z   - machintosh/Develop/Terminals
+2026-01-28T03:10:55.7496369Z   - machintosh/Hackintosh/Awesome Hackintosh
+2026-01-28T03:10:55.7496947Z   - machintosh/Hackintosh/Catalina on MBA 2011
+2026-01-28T03:10:55.7497506Z   - machintosh/Hackintosh/Mount EFI
+2026-01-28T03:10:55.7497999Z   - machintosh/Mac Install Iftop
+2026-01-28T03:10:55.7498523Z   - machintosh/Mac Install Shadowsocks
+2026-01-28T03:10:55.7499062Z   - machintosh/Mac Location Changer
+2026-01-28T03:10:55.7499605Z   - machintosh/Mac Make Installer ISO
+2026-01-28T03:10:55.7500103Z   - machintosh/Mac Oh My Mac
+2026-01-28T03:10:55.7500603Z   - machintosh/Mac Remove Installer DMG
+2026-01-28T03:10:55.7501154Z   - machintosh/Mac Tips and Tricks
+2026-01-28T03:10:55.7501863Z   - Miscellaneous/App 10 Projects
+2026-01-28T03:10:55.7502386Z   - Miscellaneous/Notion Accounting
+2026-01-28T03:10:55.7502944Z   - Miscellaneous/React Native/Awesome React Native
+2026-01-28T03:10:55.7503316Z   - Miscellaneous/React Native/React Native CLI Mac
+2026-01-28T03:10:55.7503697Z   - Miscellaneous/React Native/React Native Components
+2026-01-28T03:10:55.7504077Z   - Miscellaneous/React Native/React Native Get Started
+2026-01-28T03:10:55.7504431Z   - Miscellaneous/React Native/React Native iOS IPA
+2026-01-28T03:10:55.7504723Z   - Obsidian/Awesome Obsidian
+2026-01-28T03:10:55.7505003Z   - Obsidian/docusaurus/Docusaurus Plugins
+2026-01-28T03:10:55.7505310Z   - Obsidian/docusaurus/Docusaurus Setup Note
+2026-01-28T03:10:55.7505632Z   - Obsidian/docusaurus/Docusaurus v3 Upgrading
+2026-01-28T03:10:55.7505982Z   - Obsidian/docusaurus/IDEA_POOL
+2026-01-28T03:10:55.7506306Z   - Obsidian/docusaurus/Integrate Obsidian and Docusaurus
+2026-01-28T03:10:55.7506854Z   - Obsidian/docusaurus/Plugin Remark Obsidian Kanban
+2026-01-28T03:10:55.7507227Z   - Obsidian/docusaurus/Plugin Remark Obsidian Leaflet
+2026-01-28T03:10:55.7507571Z   - Obsidian/docusaurus/Wikilink in Docusaurus
+2026-01-28T03:10:55.7507870Z   - Obsidian/Markdown/Awesome Markdown
+2026-01-28T03:10:55.7508123Z   - Obsidian/my Obsidian
+2026-01-28T03:10:55.7508346Z   - Obsidian/Obsidian as PKM
+2026-01-28T03:10:55.7508605Z   - Obsidian/Obsidian Block Link Embed
+2026-01-28T03:10:55.7508880Z   - Obsidian/Obsidian Daily Notes
+2026-01-28T03:10:55.7509117Z   - Obsidian/Obsidian Hot Key
+2026-01-28T03:10:55.7509362Z   - Obsidian/Obsidian Properties
+2026-01-28T03:10:55.7509629Z   - Obsidian/Obsidian Task Management
+2026-01-28T03:10:55.7509907Z   - Obsidian/Plain Text Accounting
+2026-01-28T03:10:55.7510198Z   - Obsidian/plugins/Obsidian Plugin Dataview
+2026-01-28T03:10:55.7510503Z   - Obsidian/plugins/Obsidian Plugin Kanban
+2026-01-28T03:10:55.7510811Z   - Obsidian/plugins/Obsidian Plugin Tasks
+2026-01-28T03:10:55.7511128Z   - Obsidian/plugins/Obsidian Plugin Templater
+2026-01-28T03:10:55.7511441Z   - Obsidian/plugins/Obsidian Plugin Tracker
+2026-01-28T03:10:55.7512130Z   - Obsidian/plugins/Obsidian Plugins Overview
+2026-01-28T03:10:55.7512435Z   - Obsidian/plugins/Todo2Gantt/Todo 2 Gantt
+2026-01-28T03:10:55.7512730Z   - Obsidian/Why n How Obsidian
+2026-01-28T03:10:55.7512989Z   - techstack/Awesome Tech Stack
+2026-01-28T03:10:55.7513297Z   - techstack/database/Awesome Database GUI client
+2026-01-28T03:10:55.7513607Z   - techstack/database/Awesome MySQL
+2026-01-28T03:10:55.7513879Z   - techstack/database/Awesome SQLite
+2026-01-28T03:10:55.7514180Z   - techstack/database/MSSQL Server Installation
+2026-01-28T03:10:55.7514507Z   - techstack/database/MySQL Ubuntu Installation
+2026-01-28T03:10:55.7514807Z   - techstack/database/PostgreSQL Setup
+2026-01-28T03:10:55.7515093Z   - techstack/openapi/Awesome OpenAPI
+2026-01-28T03:10:55.7515367Z   - techstack/openapi/Insomnia Plugin
+2026-01-28T03:10:55.7515658Z   - techstack/openapi/Postman Alternative
+2026-01-28T03:10:55.7515920Z   - techstack/Test/K6
+2026-01-28T03:10:55.7516126Z   - utilities/Awesome Dropbox
+2026-01-28T03:10:55.7516385Z   - utilities/Awesome Utilities
+2026-01-28T03:10:55.7516643Z   - utilities/ChromeOS Dropbox
+2026-01-28T03:10:55.7516880Z   - utilities/ChromeOS Notes
+2026-01-28T03:10:55.7517103Z   - utilities/CLI/Awesome CLI
+2026-01-28T03:10:55.7517352Z   - utilities/CLI/Bash Snippets
+2026-01-28T03:10:55.7517607Z   - utilities/CLI/Check Port Usage
+2026-01-28T03:10:55.7517874Z   - utilities/CLI/direnv gitconfig
+2026-01-28T03:10:55.7518107Z   - utilities/CLI/direnv
+2026-01-28T03:10:55.7518313Z   - utilities/CLI/fzf
+2026-01-28T03:10:55.7518540Z   - utilities/CLI/Homebrew Bundle
+2026-01-28T03:10:55.7518772Z   - utilities/CLI/jq
+2026-01-28T03:10:55.7518986Z   - utilities/CLI/Rclone Dropbox
+2026-01-28T03:10:55.7519240Z   - utilities/CLI/Rclone Ignore
+2026-01-28T03:10:55.7519474Z   - utilities/CLI/SSH Config
+2026-01-28T03:10:55.7519730Z   - utilities/CLI/Tar Encrypt Tarball
+2026-01-28T03:10:55.7520008Z   - utilities/CLI/Zinit vs Oh My Zsh
+2026-01-28T03:10:55.7520245Z   - utilities/CLI/zoxide
+2026-01-28T03:10:55.7520488Z   - utilities/Dotfiles Management
+2026-01-28T03:10:55.7520719Z   - utilities/Ghostty
+2026-01-28T03:10:55.7520920Z   - utilities/Git/Awesome Git
+2026-01-28T03:10:55.7521167Z   - utilities/Git/Git Add empty folder
+2026-01-28T03:10:55.7521448Z   - utilities/Git/Git Check remote branch
+2026-01-28T03:10:55.7521900Z   - utilities/Git/Git Delta
+2026-01-28T03:10:55.7522159Z   - utilities/Git/Git Snippets
+2026-01-28T03:10:55.7522420Z   - utilities/HomeLab/Awesome Self Hosted
+2026-01-28T03:10:55.7522693Z   - utilities/HomeLab/Home Lab
+2026-01-28T03:10:55.7522945Z   - utilities/HomeLab/HomeLab Setup Note
+2026-01-28T03:10:55.7523245Z   - utilities/Linux/Linux Commands Reference
+2026-01-28T03:10:55.7523551Z   - utilities/Linux/Linux System Maintenance
+2026-01-28T03:10:55.7523858Z   - utilities/Linux/Manjaro Installation Note
+2026-01-28T03:10:55.7524299Z   - utilities/Linux/Manjaro Package Management
+2026-01-28T03:10:55.7524600Z   - utilities/Linux/Xfce Customization
+2026-01-28T03:10:55.7524877Z   - utilities/Linux/Xfce MacOS Looks
+2026-01-28T03:10:55.7525128Z   - utilities/Utilities 2024
+2026-01-28T03:10:55.7525382Z   - utilities/VSCode/VSCode Extensions
+2026-01-28T03:10:55.7525665Z   - utilities/VSCode/VSCode Tricks and Tips
+2026-01-28T03:10:55.7525930Z   - utilities/YouTube DL
+2026-01-28T03:10:55.7526144Z   - utilities/Zed Usage Note
+2026-01-28T03:10:55.7526356Z   - utilities/Zinit
+2026-01-28T03:10:55.7526547Z   - utilities/Zsh config
+2026-01-28T03:10:55.7527181Z       at getDoc (/home/runner/work/kywk.github.io/kywk.github.io/node_modules/@docusaurus/plugin-content-docs/lib/sidebars/generator.js:30:19)
+2026-01-28T03:10:55.7528269Z       at getCategoryLinkedDocMetadata (/home/runner/work/kywk.github.io/kywk.github.io/node_modules/@docusaurus/plugin-content-docs/lib/sidebars/generator.js:134:56)
+2026-01-28T03:10:55.7529437Z       at createCategoryItem (/home/runner/work/kywk.github.io/kywk.github.io/node_modules/@docusaurus/plugin-content-docs/lib/sidebars/generator.js:149:39)
+2026-01-28T03:10:55.7530499Z       at dirToItem (/home/runner/work/kywk.github.io/kywk.github.io/node_modules/@docusaurus/plugin-content-docs/lib/sidebars/generator.js:185:19)
+2026-01-28T03:10:55.7531755Z       at /home/runner/work/kywk.github.io/kywk.github.io/node_modules/@docusaurus/plugin-content-docs/lib/sidebars/generator.js:110:74
+2026-01-28T03:10:55.7532361Z       at Array.map (<anonymous>)
+2026-01-28T03:10:55.7533050Z       at createCategoryItem (/home/runner/work/kywk.github.io/kywk.github.io/node_modules/@docusaurus/plugin-content-docs/lib/sidebars/generator.js:110:50)
+2026-01-28T03:10:55.7534083Z       at dirToItem (/home/runner/work/kywk.github.io/kywk.github.io/node_modules/@docusaurus/plugin-content-docs/lib/sidebars/generator.js:185:19)
+2026-01-28T03:10:55.7535032Z       at /home/runner/work/kywk.github.io/kywk.github.io/node_modules/@docusaurus/plugin-content-docs/lib/sidebars/generator.js:188:64
+2026-01-28T03:10:55.7535625Z       at Array.map (<anonymous>)
+2026-01-28T03:10:55.7536304Z       at generateSidebar (/home/runner/work/kywk.github.io/kywk.github.io/node_modules/@docusaurus/plugin-content-docs/lib/sidebars/generator.js:188:40)
+2026-01-28T03:10:55.7537422Z       at DefaultSidebarItemsGenerator (/home/runner/work/kywk.github.io/kywk.github.io/node_modules/@docusaurus/plugin-content-docs/lib/sidebars/generator.js:213:33)
+2026-01-28T03:10:55.7538560Z       at processAutoGeneratedItem (/home/runner/work/kywk.github.io/kywk.github.io/node_modules/@docusaurus/plugin-content-docs/lib/sidebars/processor.js:39:38)
+2026-01-28T03:10:55.7539630Z       at processItem (/home/runner/work/kywk.github.io/kywk.github.io/node_modules/@docusaurus/plugin-content-docs/lib/sidebars/processor.js:63:20)
+2026-01-28T03:10:55.7540239Z       at Array.map (<anonymous>)
+2026-01-28T03:10:55.7540888Z       at processItems (/home/runner/work/kywk.github.io/kywk.github.io/node_modules/@docusaurus/plugin-content-docs/lib/sidebars/processor.js:68:41)
+2026-01-28T03:10:55.7542082Z       at processSidebar (/home/runner/work/kywk.github.io/kywk.github.io/node_modules/@docusaurus/plugin-content-docs/lib/sidebars/processor.js:70:36)
+2026-01-28T03:10:55.7543062Z       at /home/runner/work/kywk.github.io/kywk.github.io/node_modules/@docusaurus/plugin-content-docs/lib/sidebars/processor.js:74:141
+2026-01-28T03:10:55.7543826Z       at /home/runner/work/kywk.github.io/kywk.github.io/node_modules/lodash/lodash.js:13469:38
+2026-01-28T03:10:55.7544448Z       at /home/runner/work/kywk.github.io/kywk.github.io/node_modules/lodash/lodash.js:4967:15
+2026-01-28T03:10:55.7545118Z       at baseForOwn (/home/runner/work/kywk.github.io/kywk.github.io/node_modules/lodash/lodash.js:3032:24)
+2026-01-28T03:10:55.7545889Z       at Function.mapValues (/home/runner/work/kywk.github.io/kywk.github.io/node_modules/lodash/lodash.js:13468:7)
+2026-01-28T03:10:55.7546947Z       at processSidebars (/home/runner/work/kywk.github.io/kywk.github.io/node_modules/@docusaurus/plugin-content-docs/lib/sidebars/processor.js:74:86)
+2026-01-28T03:10:55.7547963Z       at loadSidebars (/home/runner/work/kywk.github.io/kywk.github.io/node_modules/@docusaurus/plugin-content-docs/lib/sidebars/index.js:91:73)
+2026-01-28T03:10:55.7548999Z       at async doLoadVersion (/home/runner/work/kywk.github.io/kywk.github.io/node_modules/@docusaurus/plugin-content-docs/lib/versions/loadVersion.js:83:22)
+2026-01-28T03:10:55.7550075Z       at async loadVersion (/home/runner/work/kywk.github.io/kywk.github.io/node_modules/@docusaurus/plugin-content-docs/lib/versions/loadVersion.js:119:16)
+2026-01-28T03:10:55.7550729Z       at async Promise.all (index 0)
+2026-01-28T03:10:55.7551393Z       at async Object.loadContent (/home/runner/work/kywk.github.io/kywk.github.io/node_modules/@docusaurus/plugin-content-docs/lib/index.js:152:33)
+2026-01-28T03:10:55.7552563Z       at async /home/runner/work/kywk.github.io/kywk.github.io/node_modules/@docusaurus/core/lib/server/plugins/plugins.js:40:23
+2026-01-28T03:10:55.7553115Z       at async Promise.all (index 8)
+2026-01-28T03:10:55.7553692Z       at async /home/runner/work/kywk.github.io/kywk.github.io/node_modules/@docusaurus/core/lib/server/plugins/plugins.js:146:25
+2026-01-28T03:10:55.7554681Z       at async loadSite (/home/runner/work/kywk.github.io/kywk.github.io/node_modules/@docusaurus/core/lib/server/site.js:155:45)
+2026-01-28T03:10:55.7555601Z       at async buildLocale (/home/runner/work/kywk.github.io/kywk.github.io/node_modules/@docusaurus/core/lib/commands/build/buildLocale.js:33:18)
+2026-01-28T03:10:55.7556579Z       at async runBuildLocaleTask (/home/runner/work/kywk.github.io/kywk.github.io/node_modules/@docusaurus/core/lib/commands/build/build.js:98:5)
+2026-01-28T03:10:55.7557483Z       at async /home/runner/work/kywk.github.io/kywk.github.io/node_modules/@docusaurus/core/lib/commands/build/build.js:79:13
+2026-01-28T03:10:55.7558393Z       at async tryToBuildLocale (/home/runner/work/kywk.github.io/kywk.github.io/node_modules/@docusaurus/core/lib/commands/build/build.js:75:9)
+2026-01-28T03:10:55.7559292Z       at async /home/runner/work/kywk.github.io/kywk.github.io/node_modules/@docusaurus/core/lib/commands/build/build.js:35:9
+2026-01-28T03:10:55.7560162Z       at async mapAsyncSequential (/home/runner/work/kywk.github.io/kywk.github.io/node_modules/@docusaurus/utils/lib/jsUtils.js:21:24)
+2026-01-28T03:10:55.7561089Z       at async Command.build (/home/runner/work/kywk.github.io/kywk.github.io/node_modules/@docusaurus/core/lib/commands/build/build.js:34:5)
+2026-01-28T03:10:55.7561879Z       at async Promise.all (index 0)
+2026-01-28T03:10:55.7562438Z       at async runCLI (/home/runner/work/kywk.github.io/kywk.github.io/node_modules/@docusaurus/core/lib/commands/cli.js:56:5)
+2026-01-28T03:10:55.7563251Z       at async file:///home/runner/work/kywk.github.io/kywk.github.io/node_modules/@docusaurus/core/bin/docusaurus.mjs:44:3
+2026-01-28T03:10:55.7563742Z }
+2026-01-28T03:10:55.7724758Z ##[error]Process completed with exit code 1.
+2026-01-28T03:10:55.7835945Z Post job cleanup.
+2026-01-28T03:10:55.8775067Z [command]/usr/bin/git version
+2026-01-28T03:10:55.8811179Z git version 2.52.0
+2026-01-28T03:10:55.8855435Z Temporarily overriding HOME='/home/runner/work/_temp/186c6a8d-7996-4856-96da-16b32c0f4991' before making global git config changes
+2026-01-28T03:10:55.8856946Z Adding repository directory to the temporary git global config as a safe directory
+2026-01-28T03:10:55.8869190Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/kywk.github.io/kywk.github.io
+2026-01-28T03:10:55.8904645Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-01-28T03:10:55.8937206Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-01-28T03:10:55.9168147Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-01-28T03:10:55.9189024Z http.https://github.com/.extraheader
+2026-01-28T03:10:55.9201399Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-01-28T03:10:55.9236037Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-01-28T03:10:55.9463547Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-01-28T03:10:55.9494682Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-01-28T03:10:55.9818146Z Cleaning up orphan processes
