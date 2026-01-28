@@ -18,7 +18,7 @@ slug: /2601-xinjiang/2-xinjiang/
 - [x] Schedule in Obsidian Kanban view ✅ 2026-01-06
 - [x] ✈️ TPE <--> XJP ✅ 2026-01-06
 	- [x] 📱 pdf file on mobile phone ✅ 2026-01-23
-	- [ ] 🖨️ printed paper
+	- [-] 🖨️ printed paper
 - [ ] 🏨 住宿
 	- [ ] 02.05 📅 2026-01-17
 	- [x] 02.06, 07 烏魯木齊 📅 2026-01-17 ✅ 2026-01-23

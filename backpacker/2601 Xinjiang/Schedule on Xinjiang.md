@@ -69,6 +69,8 @@ kanban-plugin: board
 
 - [ ] ![](https://lh3.googleusercontent.com/pw/AP1GczNqQpor6k3aOnWte0MV7FUKLz2h8MYA4TuA1UFSIArD4xYSgThl4m-902vsdYYpJEl0JCZsiH-bmK3J-1mQLb2iF1WBHNK9WbGxVoL_Pzs7zVxeY-aUDKfT0BGHEpn2BYqY1KcyAsoi8B2qVGnKUKGAxg=w480-no-gm)
 - [ ] 🌡️ **喀什** -2°C/-14°C ❄️
+- [ ] [[香妃墓 Xiangfei Tomb]]
+	![](https://lh3.googleusercontent.com/pw/AP1GczOCCqVgJlgCdJXoMHDH7X7VIdgI7S2fvXy8mH2tpuftprCAGhcMHjmJ-OJ5elmuL8rnpW_LJrY4zQyLx8BnCe0nZfFiMdH_mKdcXBnfqehwpcc9crwqRRvvM-oht2Z2Xsu8lmxX5IKqKo0vOxu1s1dHuA=w275-h183-s-no-gm?authuser=0)
 - [ ] 🌅🌇 喀什 09:15/19:30
 
 
@@ -77,8 +79,6 @@ kanban-plugin: board
 - [ ] ![](https://lh3.googleusercontent.com/pw/AP1GczN3lt8pl9uWSVGxf_XjqcLNzXOanguzujuVTdSwm-2XrUY6MJ8-ioH092kak8z9Ssd_q7d0GYylIXU7abaBmvNCE-L5L5Rmzvkq6oaRjbJKnJtmm1CsXGr_PqZeZppFv8Vq48wnRS8DBbYKIKSpE0XJfA=w480-no-gm)
 - [ ] 🌡️ **喀什** -2°C/-14°C ❄️ | **莎車** 0°C/-12°C ❄️
 - [ ] 🌅🌇 喀什 09:15/19:30 | 莎車 09:20/19:35
-- [ ] [[香妃墓 Xiangfei Tomb]]
-	![](https://lh3.googleusercontent.com/pw/AP1GczOCCqVgJlgCdJXoMHDH7X7VIdgI7S2fvXy8mH2tpuftprCAGhcMHjmJ-OJ5elmuL8rnpW_LJrY4zQyLx8BnCe0nZfFiMdH_mKdcXBnfqehwpcc9crwqRRvvM-oht2Z2Xsu8lmxX5IKqKo0vOxu1s1dHuA=w275-h183-s-no-gm?authuser=0)
 - [ ] [[玉素甫墓 Yusuf Tomb]]
 	![](https://lh3.googleusercontent.com/pw/AP1GczOkUpePm1h79Gl7wuu9C-QGkUBpYas-0pAf-_vSJKBsLiV8lHhWfWoirGh2rOZvPQ1bhMm25LA-k2HtwY1tuKyb08h7dTEIoUGvXlsVlrny4ukopdZHNY5JmZlZP8mKD5Z0XMP2BZ71IApvAA770fFkgg=w263-h192-s-no-gm?authuser=0)
 - [ ] ![](https://lh3.googleusercontent.com/pw/AP1GczMueqpA7I4Q81qN8m--KvSkmLrYTA1Gg58Qk_vvrmy9LKEnu6nQkdCzqGyLyIPxnon3ZRGIPTUCNxgk8gYXalnfTECuMMMebFn52Tf2D5KHKMKR8wGggrD6PRDJVRSShReKblPGw35YcCn33UGC74l89A=w480-no-gm)
