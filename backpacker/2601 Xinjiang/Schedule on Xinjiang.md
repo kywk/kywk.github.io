@@ -69,9 +69,10 @@ kanban-plugin: board
 
 - [ ] ![](https://lh3.googleusercontent.com/pw/AP1GczNqQpor6k3aOnWte0MV7FUKLz2h8MYA4TuA1UFSIArD4xYSgThl4m-902vsdYYpJEl0JCZsiH-bmK3J-1mQLb2iF1WBHNK9WbGxVoL_Pzs7zVxeY-aUDKfT0BGHEpn2BYqY1KcyAsoi8B2qVGnKUKGAxg=w480-no-gm)
 - [ ] 🌡️ **喀什** -2°C/-14°C ❄️
-- [ ] [[香妃墓 Xiangfei Tomb]]
-	![](https://lh3.googleusercontent.com/pw/AP1GczOCCqVgJlgCdJXoMHDH7X7VIdgI7S2fvXy8mH2tpuftprCAGhcMHjmJ-OJ5elmuL8rnpW_LJrY4zQyLx8BnCe0nZfFiMdH_mKdcXBnfqehwpcc9crwqRRvvM-oht2Z2Xsu8lmxX5IKqKo0vOxu1s1dHuA=w275-h183-s-no-gm?authuser=0)
 - [ ] 🌅🌇 喀什 09:15/19:30
+- [ ] [[喀什古城 Kashgar Old City]]
+	![](https://lh3.googleusercontent.com/pw/AP1GczMXF-UGpkn5t9usuj6Md7qaYsLx3RkRzei2w-jcV-VYxrcRLbjzC8petgt7Xu4Ni7xDtP58kVCb06mNgLUBWp6ifUejxp0Ur2kTuYy9jMrT8y7Hm1PIrs9riSIbe8n26j5GgINLMWEWiYiErCpt1Fm4wQ=w300-h168-s-no-gm?authuser=0)
+	![](https://lh3.googleusercontent.com/pw/AP1GczN7cAu1yowQ0rXrh75s_3DTGCk_9OlzMXAY0CpH3hPxNlzC6HsMwFeNlyXzg4CacNId6lkJZscfEqx0Ulf0qRfQGAGQG_6dSYm3FdDW3cqwcrlS0Xj0S7_UoDIAQH6TfrIuJ4eLUnjudm3_UOQPHIuZcA=w275-h183-s-no-gm?authuser=0)
 
 
 ## 01.27 喀什 > 莎車
@@ -79,8 +80,6 @@ kanban-plugin: board
 - [ ] ![](https://lh3.googleusercontent.com/pw/AP1GczN3lt8pl9uWSVGxf_XjqcLNzXOanguzujuVTdSwm-2XrUY6MJ8-ioH092kak8z9Ssd_q7d0GYylIXU7abaBmvNCE-L5L5Rmzvkq6oaRjbJKnJtmm1CsXGr_PqZeZppFv8Vq48wnRS8DBbYKIKSpE0XJfA=w480-no-gm)
 - [ ] 🌡️ **喀什** -2°C/-14°C ❄️ | **莎車** 0°C/-12°C ❄️
 - [ ] 🌅🌇 喀什 09:15/19:30 | 莎車 09:20/19:35
-- [ ] [[玉素甫墓 Yusuf Tomb]]
-	![](https://lh3.googleusercontent.com/pw/AP1GczOkUpePm1h79Gl7wuu9C-QGkUBpYas-0pAf-_vSJKBsLiV8lHhWfWoirGh2rOZvPQ1bhMm25LA-k2HtwY1tuKyb08h7dTEIoUGvXlsVlrny4ukopdZHNY5JmZlZP8mKD5Z0XMP2BZ71IApvAA770fFkgg=w263-h192-s-no-gm?authuser=0)
 - [ ] ![](https://lh3.googleusercontent.com/pw/AP1GczMueqpA7I4Q81qN8m--KvSkmLrYTA1Gg58Qk_vvrmy9LKEnu6nQkdCzqGyLyIPxnon3ZRGIPTUCNxgk8gYXalnfTECuMMMebFn52Tf2D5KHKMKR8wGggrD6PRDJVRSShReKblPGw35YcCn33UGC74l89A=w480-no-gm)
 
 
@@ -89,6 +88,10 @@ kanban-plugin: board
 - [ ] ![](https://lh3.googleusercontent.com/pw/AP1GczNuAWaCwyh1y_YhELiyH7fp8cL3f1u7ePbbMKeLvUKclww46i_6M4aE9kYkONMCXwu-jmUlqFMNVLHeba-UxWG3DQUFH5DiRzLQRIfNMC0FXiH3Nqokmp-3IZutlha5gMYeBu9S4miC0mAYJafN0-Q-Rg=w480-no-gm)
 - [ ] 🌡️ **莎車** 0°C/-12°C ❄️ | **喀什** -2°C/-14°C ❄️
 - [ ] 🌅🌇 莎車 09:20/19:35 | 喀什 09:15/19:30
+- [ ] [[香妃墓 Xiangfei Tomb]]
+	![](https://lh3.googleusercontent.com/pw/AP1GczOCCqVgJlgCdJXoMHDH7X7VIdgI7S2fvXy8mH2tpuftprCAGhcMHjmJ-OJ5elmuL8rnpW_LJrY4zQyLx8BnCe0nZfFiMdH_mKdcXBnfqehwpcc9crwqRRvvM-oht2Z2Xsu8lmxX5IKqKo0vOxu1s1dHuA=w275-h183-s-no-gm?authuser=0)
+- [ ] [[玉素甫墓 Yusuf Tomb]]
+	![](https://lh3.googleusercontent.com/pw/AP1GczOkUpePm1h79Gl7wuu9C-QGkUBpYas-0pAf-_vSJKBsLiV8lHhWfWoirGh2rOZvPQ1bhMm25LA-k2HtwY1tuKyb08h7dTEIoUGvXlsVlrny4ukopdZHNY5JmZlZP8mKD5Z0XMP2BZ71IApvAA770fFkgg=w263-h192-s-no-gm?authuser=0)
 - [ ] [[錫提亞迷城 Xitiya Lost City]]
 	![](https://lh3.googleusercontent.com/pw/AP1GczO9SRk0FcT3soOYTwxJ26C0ZKl6-CeR244E7EAZbSiVROp_PFCBTytAenMchX5RL481TUnGMpgzZB34bwNk4W9JdNlFj3zBIvfBH6lwZCNRdMuQBEmWxv4ljWWUjMPg7xvOS_-fRc6OVGyqIskqSjo3DA=w193-h261-s-no-gm?authuser=0)
 - [ ] ![](https://lh3.googleusercontent.com/pw/AP1GczN04BLdyyPiZLJuihtiazw1VgJPJsUUj3w4UtT83fShXHDaB58l7NDdhj8zkJl9-x1S60Le4KTyMOzoz8ftVoXTq-QHDvjEEGPSq4skvKg3JOFexNojSxn8zH0Z5aU33GYwJc4d6bmceeySITd4L5w3RQ=w480-no-gm)
@@ -105,8 +108,6 @@ kanban-plugin: board
 	![](https://lh3.googleusercontent.com/pw/AP1GczOSgCQOshWBr2f1wlVjqoE7YBJVS5D987JACMTLgdtM1WaGpSEfo_3iHk_k65KNRL5oeKyu_MvvtFqPhfm1QJWa-dJpv_N0iWYcPjL3bHUGaFBzxC8VGucgItXpyaRBTPCZ4oIE8BIaH9N2deGNTPPhOQ=w900-h500-s-no-gm?authuser=0)
 - [ ] [[喀拉庫勒湖 Karakul Lake]]
 	![](https://lh3.googleusercontent.com/pw/AP1GczP6BFzpto9KHlFD8HiGc_zmKuSScpRACffEWvjDMzZ4ICXkKdf63NsaOBTjyQeYJO4FS_Ip97LENgXQjtXlbmeEPpPKqTIEgGXjwubeddAxOw1DZUz-W5iBYk6j2-ID_kbLtiSJf8UIwtcMij-IFuEX9g=w251-h201-s-no-gm?authuser=0)
-- [ ] [[塔合曼濕地觀景台 Taheman Wetland Viewing Platform]]
-	![](https://lh3.googleusercontent.com/pw/AP1GczOumdvwSFmDVpkm2IUi3q8aAbN8YPoRvEp7BHdsQfUx3BBeasOM99vODfhMEx-aaw0dcWFI4hpy2oIVmYJxMO3r7NhhJrPiimPluePgb1oPZ0YGwqT8LgIidhHtNkxQCij90dbpb0Ojp7Bode7qLXPflQ=w281-h179-s-no-gm?authuser=0)
 - [ ] [[雪柳樹洞 Snow Willow Tree Cave]]
 	![](https://lh3.googleusercontent.com/pw/AP1GczNEtOFFaNsmnZYC4zMSoUhpFEzWBJAXY8o9gcsYv7RUThiyRRbMSa38f7QeVYCesxMK1V8cpVcqkOgbQnFChquzabMedVKhQt_VlT2P_gONB2ZoqJv-g2HNekshJl_dDVlt-P0aSzmF014lVelEsDngEg=w225-h225-s-no-gm?authuser=0)
 - [ ] ![](https://lh3.googleusercontent.com/pw/AP1GczNULa-4BNuz9z59P6L7n-QyuD4K0H-Ss_xQGrMujdQ3pKPqIbWi7rMQAT8iq570XIMscsmZFFxrfiZvva5FC4iOaMENH2ytdLQAq9xonRQaI4u83WTeMmXXmWerQRSHxCxJYFF3i9JHsuYzsyINS1cCdQ=w480-no-gm)
@@ -132,6 +133,8 @@ kanban-plugin: board
 - [ ] ![](https://lh3.googleusercontent.com/pw/AP1GczPy3X1VJ6kFYRHfUc2a4vW5_8JS5zFlQ31ch9g2ec84PP1DhgV6srn6cBek39AFnchikWKtZqBROmXFFE0I42qtrC2jluN0u_YiDSjm9QePxdtCRgu8pbyoD5B3XhnKxwDLv2r4Rabv-FoR48GQeQyQKA=w480-no-gm)
 - [ ] 🌡️ **塔县** -8°C/-22°C 🥶 | **白沙湖** -12°C/-24°C 🧊
 - [ ] 🌅🌇 塔县 09:00/19:15 | 白沙湖 08:45/19:00
+- [ ] [[塔合曼濕地觀景台 Taheman Wetland Viewing Platform]]
+	![](https://lh3.googleusercontent.com/pw/AP1GczOumdvwSFmDVpkm2IUi3q8aAbN8YPoRvEp7BHdsQfUx3BBeasOM99vODfhMEx-aaw0dcWFI4hpy2oIVmYJxMO3r7NhhJrPiimPluePgb1oPZ0YGwqT8LgIidhHtNkxQCij90dbpb0Ojp7Bode7qLXPflQ=w281-h179-s-no-gm?authuser=0)
 - [ ] [[慕士塔格2號冰川 Muztagh Ata Glacier No.2]]
 	![](https://lh3.googleusercontent.com/pw/AP1GczOTa6vNvJX_eMRj_cNuvUfaXEa_s2fmU6j-_STISWJ_6Af0N6EweMXHOtE5gZaFf7vJ4DVLqVCvh_oUQeYeVsBvZ_MwEeYtkdFTpcNnRNXqLD4dsVA3WJ9jrna33dDrMYhZBv5VMTt14h5IUTQpEOu7vA=w295-h171-s-no-gm?authuser=0)
 - [ ] ![](https://lh3.googleusercontent.com/pw/AP1GczP1i1aVo271OLAz4XzSTW8272iJxFE1oli0Z3JgYMvKF0LB_8846mLGZX9GVX3qYR3-d1oa_Y_nLnkYFW5J_RAOtDp4Xs8p8f8DEsNFzgLorcgCEm55Ik6hQFOWwHGcMnnVG6KyFxExC-6AwHTjndR55g=w480-no-gm)
@@ -142,13 +145,10 @@ kanban-plugin: board
 - [ ] ![](https://lh3.googleusercontent.com/pw/AP1GczMJPYEtx_57g-xxs1r2o0uAQRWj7Vh9cJWA4GYFKXot5a23ND2bQuobYswHSaBugWKwK4hK4l5555sjwFhVz5b1tINf8CV_clskGlpMBPhVo0esvfLrIt1Ka8PkwSbKXuw05NWabpYRiJoGNDM4GLoYXg=w480-no-gm)
 - [ ] 🌡️ **白沙湖** -12°C/-24°C 🧊 | **喀什** -2°C/-14°C ❄️
 - [ ] 🌅🌇 白沙湖 08:45/19:00 | 喀什 09:15/19:30
+- [ ] [[白沙湖北岸 Baisha Lake North Shore]]
 - [ ] [[白沙湖西岸 Baisha Lake West Shore]]
 - [ ] [[木吉火山口 Muji Volcanic Crater]]
 	![](https://lh3.googleusercontent.com/pw/AP1GczNOIpzLZK516_pVR42PNFkT-Ormn_4Z1UaYb5gEqt0eqSWaJPB2yfjxGGefx2RGB6vurc9VzZHp2UVKbw8rkSrX-rZuEvftgnwShRmJd26ohkCurfhXzMc1yqx72CdSgPxP1JflAAgKoqJFTOs0mdaEng=w194-h259-s-no-gm?authuser=0)
-- [ ] [[白沙湖北岸 Baisha Lake North Shore]]
-- [ ] [[喀什古城 Kashgar Old City]]
-	![](https://lh3.googleusercontent.com/pw/AP1GczMXF-UGpkn5t9usuj6Md7qaYsLx3RkRzei2w-jcV-VYxrcRLbjzC8petgt7Xu4Ni7xDtP58kVCb06mNgLUBWp6ifUejxp0Ur2kTuYy9jMrT8y7Hm1PIrs9riSIbe8n26j5GgINLMWEWiYiErCpt1Fm4wQ=w300-h168-s-no-gm?authuser=0)
-	![](https://lh3.googleusercontent.com/pw/AP1GczN7cAu1yowQ0rXrh75s_3DTGCk_9OlzMXAY0CpH3hPxNlzC6HsMwFeNlyXzg4CacNId6lkJZscfEqx0Ulf0qRfQGAGQG_6dSYm3FdDW3cqwcrlS0Xj0S7_UoDIAQH6TfrIuJ4eLUnjudm3_UOQPHIuZcA=w275-h183-s-no-gm?authuser=0)
 - [ ] ![](https://lh3.googleusercontent.com/pw/AP1GczPSZSnyB_TfMNj-Q2J5_earhh6uV6uwTghnvcfx_S5XnMcnDrQoDVQNx8YbgryVnOqPewV13AoIiUHe5extlN3w_6CmVevKm22TpagvBnW5aJtgxQL9xuQA3L6zTMq12kGs_BXziYq8ROknDQHwXdS2sw=w480-no-gm)
 
 

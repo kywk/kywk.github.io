@@ -17,7 +17,7 @@ slug: /obsidian/obsidian-as-pkm/
 
 - [x] obs-howto_docusaurus-integrate 📅 2023-09-08 ✅ 2023-09-14
 - [Introduction to Bases - Obsidian Help](https://help.obsidian.md/bases)
-	- [ ] Study & Refine my Obsidian Vault 📅 2026-02-15
+	- [ ] Study & Refine my Obsidian Vault 📅 2026-04-05
 
 ### myOutlook
 

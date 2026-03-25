@@ -68,4 +68,3 @@ image: https://lh3.googleusercontent.com/pw/ACtC-3dctjoKSszhdu7OFFUmtd-eRmtxUAIx
 2026 的另一個目標, 年底來個對得起自己的回顧.
 
 - [\[年終回顧\] 2024 年的回顧與展望](https://www.evanlin.com/summary-2024/)
-- [[blog.life/2025/12-25-Happy-Holiday|12-25-Happy-Holiday]]
