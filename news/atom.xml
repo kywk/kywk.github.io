@@ -2,18 +2,18 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kywk.github.io/news/</id>
     <title>kywk.me Blog</title>
-    <updated>2026-02-28T00:00:00.000Z</updated>
+    <updated>2026-03-31T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kywk.github.io/news/"/>
     <subtitle>kywk.me Blog</subtitle>
     <icon>https://kywk.github.io/img/favicon.ico</icon>
     <entry>
-        <title type="html"><![CDATA[Surf 01.01 ~ 02.28]]></title>
-        <id>https://kywk.github.io/news/2026/02/28/_Surfing/</id>
-        <link href="https://kywk.github.io/news/2026/02/28/_Surfing/"/>
-        <updated>2026-02-28T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Surfing quick note 01.01 ~ 02.28]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="it-news">IT News<a href="https://kywk.github.io/news/2026/02/28/_Surfing/#it-news" class="hash-link" aria-label="IT News的直接連結" title="IT News的直接連結" translate="no">​</a></h3>
+        <title type="html"><![CDATA[Surf 01.01 ~ 03.31]]></title>
+        <id>https://kywk.github.io/news/2026/03/31/_Surfing/</id>
+        <link href="https://kywk.github.io/news/2026/03/31/_Surfing/"/>
+        <updated>2026-03-31T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Surfing quick note 01.01 ~ 03.31]]></summary>
+        <content type="html"><![CDATA[<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="it-news">IT News<a href="https://kywk.github.io/news/2026/03/31/_Surfing/#it-news" class="hash-link" aria-label="IT News的直接連結" title="IT News的直接連結" translate="no">​</a></h3>
 <ul>
 <li class=""><a href="https://www.ithome.com.tw/article/173540" target="_blank" rel="noopener noreferrer" class="">2025全球IT大當機事件回顧 | iThome</a>
 <ul>
@@ -22,11 +22,66 @@
 <li class=""><a href="https://www.ithome.com.tw/news/173539" target="_blank" rel="noopener noreferrer" class="">【釐清事故經過與原因，理解不同服務平臺潛在風險】全面檢視2025全球10大IT當機事件（下） | iThome</a></li>
 </ul>
 </li>
+<li class=""><a href="https://free.com.tw/markdown-new/" target="_blank" rel="noopener noreferrer" class="">markdown.new：網址、PDF、Word 一鍵轉 Markdown，節省 80% Token – 免費資源網路社群</a></li>
+<li class=""><a href="https://blog.longwin.com.tw/2026/03/lazypg-postgresql-terminal-cli-ui-gui-2026/" target="_blank" rel="noopener noreferrer" class="">lazypg：PostgreSQL 終端機CLI 的 GUI - Tsung's Blog</a></li>
+<li class=""><a href="https://blog.gslin.org/archives/2026/03/06/12919/" target="_blank" rel="noopener noreferrer" class="">Google 在 Gemini 服務上把 API key 拿來當作 credential 用的問題 – Gea-Suan Lin's BLOG</a></li>
+<li class=""><a href="https://ki-editor.org/" target="_blank" rel="noopener noreferrer" class="">Ki Editor</a>
+<ul>
+<li class=""><a href="https://news.ycombinator.com/item?id=47286311" target="_blank" rel="noopener noreferrer" class="">Ki Editor - an editor that operates on the AST | Hacker News</a></li>
+</ul>
+</li>
+<li class=""><a href="https://plyx.iz.rs/blog/introducing-ply/" target="_blank" rel="noopener noreferrer" class="">Building apps in Rust shouldn't be this hard, so I made Ply. | Ply</a></li>
+<li class=""><a href="https://blog.gslin.org/archives/2026/03/07/12921/" target="_blank" rel="noopener noreferrer" class="">macOS 上用 sandbox-exec 隔離 – Gea-Suan Lin's BLOG</a></li>
+<li class=""><a href="https://blog.gslin.org/archives/2026/03/10/12925/" target="_blank" rel="noopener noreferrer" class="">另外一套免費的 GeoIP database – Gea-Suan Lin's BLOG</a></li>
+<li class=""><a href="https://blog.kyomind.tw/weamind/" target="_blank" rel="noopener noreferrer" class="">WeaMind 專案解析：從單機 LINE Bot 到 K8s 叢集 - Code and Me</a></li>
+<li class=""><a href="https://blog.gslin.org/archives/2026/03/22/12949/" target="_blank" rel="noopener noreferrer" class="">把 Plausible 架起來玩 (GA 替代品？) – Gea-Suan Lin's BLOG</a></li>
 <li class=""></li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="tech">Tech<a href="https://kywk.github.io/news/2026/02/28/_Surfing/#tech" class="hash-link" aria-label="Tech的直接連結" title="Tech的直接連結" translate="no">​</a></h3>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ai">AI<a href="https://kywk.github.io/news/2026/02/28/_Surfing/#ai" class="hash-link" aria-label="AI的直接連結" title="AI的直接連結" translate="no">​</a></h3>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="life">Life<a href="https://kywk.github.io/news/2026/02/28/_Surfing/#life" class="hash-link" aria-label="Life的直接連結" title="Life的直接連結" translate="no">​</a></h3>]]></content>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="tech">Tech<a href="https://kywk.github.io/news/2026/03/31/_Surfing/#tech" class="hash-link" aria-label="Tech的直接連結" title="Tech的直接連結" translate="no">​</a></h3>
+<ul>
+<li class=""><a href="https://github.com/jmcorgan/fips/blob/master/docs/design/fips-intro.md" target="_blank" rel="noopener noreferrer" class="">fips/docs/design/fips-intro.md at master · jmcorgan/fips · GitHub</a></li>
+<li class=""><a href="https://stackoverflow.com/questions/818255/what-does-21-mean" target="_blank" rel="noopener noreferrer" class="">bash - What does " 2&gt;&amp;1 " mean? - Stack Overflow</a></li>
+<li class=""><a href="https://cacm.acm.org/research/a-decade-of-docker-containers/" target="_blank" rel="noopener noreferrer" class="">A Decade of Docker Containers – Communications of the ACM</a></li>
+<li class=""></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ai">AI<a href="https://kywk.github.io/news/2026/03/31/_Surfing/#ai" class="hash-link" aria-label="AI的直接連結" title="AI的直接連結" translate="no">​</a></h3>
+<ul>
+<li class=""><a href="https://www.ithome.com.tw/news/174054" target="_blank" rel="noopener noreferrer" class="">Claude Code提供遠端控制，手機、瀏覽器可接續本機工作階段 | iThome</a>
+<ul>
+<li class=""><a href="https://code.claude.com/docs/en/remote-control" target="_blank" rel="noopener noreferrer" class="">Continue local sessions from any device with Remote Control - Claude Code Docs</a></li>
+</ul>
+</li>
+<li class=""><a href="https://www.ithome.com.tw/news/174022" target="_blank" rel="noopener noreferrer" class="">Agent要省錢不能只靠模型！Claude Code團隊揭五大提示詞快取心法 | iThome</a></li>
+<li class=""><a href="https://www-cs-faculty.stanford.edu/~knuth/papers/claude-cycles.pdf" target="_blank" rel="noopener noreferrer" class="">https://www-cs-faculty.stanford.edu/~knuth/papers/claude-cycles.pdf</a>
+<ul>
+<li class=""><a href="https://news.ycombinator.com/item?id=47230710" target="_blank" rel="noopener noreferrer" class="">Claude's Cycles [pdf] | Hacker News</a></li>
+</ul>
+</li>
+<li class=""><a href="https://hk.news.yahoo.com/share/0eed9cce-cfae-4742-addc-25560e92ef13" target="_blank" rel="noopener noreferrer" class="">AI 大熱反而要讀文科？Anthropic 創辦人建議大學選科出路、香港學生、家長必讀未來就業指南</a></li>
+<li class="">evanlin.com/install-openclaw-on-gcp/</li>
+<li class=""><a href="https://blog.gslin.org/archives/2026/03/04/12912/" target="_blank" rel="noopener noreferrer" class="">Knuth 看 Claude Opus 4.6 解題 – Gea-Suan Lin's BLOG</a></li>
+<li class=""><a href="https://unsloth.ai/docs/models/qwen3.5" target="_blank" rel="noopener noreferrer" class="">Qwen3.5 - How to Run Locally Guide | Unsloth Documentation</a></li>
+<li class=""><a href="https://www.anthropic.com/news/mozilla-firefox-security" target="_blank" rel="noopener noreferrer" class="">Partnering with Mozilla to improve Firefox’s security \ Anthropic</a>
+<ul>
+<li class=""><a href="https://news.ycombinator.com/item?id=47273854" target="_blank" rel="noopener noreferrer" class="">Hardening Firefox with Anthropic's Red Team | Hacker News</a></li>
+</ul>
+</li>
+<li class=""><a href="https://studyhost.blogspot.com/2026/03/ai-copilot-ai-engineering-system.html" target="_blank" rel="noopener noreferrer" class="">AI 輔助開發的三個時代：從 Copilot 到 AI Engineering System</a></li>
+<li class=""><a href="https://blog.wu-boy.com/2026/03/what-is-agent-skill-and-impact-on-software-industry-zh-tw/" target="_blank" rel="noopener noreferrer" class="">Agent Skill 是什麼？對軟體產業帶來的變化 - 小惡魔 - AppleBOY</a></li>
+<li class=""><a href="https://blog.wu-boy.com/2026/03/ai-driven-development-with-claude-code-and-github-copilot-review-zh-tw/" target="_blank" rel="noopener noreferrer" class="">用 Claude Code + GitHub Copilot Review 打造 AI 驅動的開發流程 - 小惡魔 - AppleBOY</a>
+<ul>
+<li class=""><a href="https://blog.wu-boy.com/2026/03/ai-driven-development-with-claude-code-and-github-copilot-review-en/" target="_blank" rel="noopener noreferrer" class="">Building an AI-Driven Development Workflow with Claude Code + GitHub Copilot Review - 小惡魔 - AppleBOY</a></li>
+</ul>
+</li>
+<li class=""></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="life">Life<a href="https://kywk.github.io/news/2026/03/31/_Surfing/#life" class="hash-link" aria-label="Life的直接連結" title="Life的直接連結" translate="no">​</a></h3>
+<ul>
+<li class=""><a href="https://free.com.tw/flow-fi/" target="_blank" rel="noopener noreferrer" class="">Flow-Fi：免費 Lo-Fi 音樂電台，結合計時器提升工作與唸書專注力 – 免費資源網</a></li>
+<li class=""><a href="https://crossing.cw.com.tw/article/20581" target="_blank" rel="noopener noreferrer" class="">興趣變工作後，快樂去哪了？中年轉職「滑雪教練」的我，決定返台「重啟人生」｜Alex Lin／桑尼爸的溫哥華札記｜換日線</a></li>
+<li class=""><a href="https://thefemin.com/2026/03/bottega-veneta-fila-2026-fw-show-shu-qi/" target="_blank" rel="noopener noreferrer" class="">怎麼能一再被舒淇美到！米蘭時裝週之旅接連出席 Bottega Veneta 及 Fila 大秀 - The Femin</a></li>
+<li class=""></li>
+</ul>]]></content>
         <author>
             <name>kywk</name>
             <uri>https://github.io/kywk</uri>
@@ -34,12 +89,13 @@
         <category label="Surf" term="Surf"/>
         <category label="2026/01" term="2026/01"/>
         <category label="2026/02" term="2026/02"/>
+        <category label="2026/03" term="2026/03"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[News Feed]]></title>
         <id>https://kywk.github.io/news/news-feed/</id>
         <link href="https://kywk.github.io/news/news-feed/"/>
-        <updated>2026-01-28T03:21:15.000Z</updated>
+        <updated>2026-03-25T07:57:46.000Z</updated>
         <summary type="html"><![CDATA[This is News Clippins]]></summary>
         <content type="html"><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="news--discus">news &amp; discus<a href="https://kywk.github.io/news/news-feed/#news--discus" class="hash-link" aria-label="news &amp; discus的直接連結" title="news &amp; discus的直接連結" translate="no">​</a></h2>
 <ul>
@@ -57,7 +113,7 @@
         <title type="html"><![CDATA[2025/template]]></title>
         <id>https://kywk.github.io/news/2025/template/</id>
         <link href="https://kywk.github.io/news/2025/template/"/>
-        <updated>2026-01-28T03:21:15.000Z</updated>
+        <updated>2026-03-25T07:57:46.000Z</updated>
     </entry>
     <entry>
         <title type="html"><![CDATA[Surf 10.01 ~ 12.31]]></title>
