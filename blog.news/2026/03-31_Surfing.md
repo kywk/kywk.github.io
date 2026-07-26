@@ -30,16 +30,17 @@ Surfing 01.01 ~ 03.31
 - [另外一套免費的 GeoIP database – Gea-Suan Lin's BLOG](https://blog.gslin.org/archives/2026/03/10/12925/)
 - [WeaMind 專案解析：從單機 LINE Bot 到 K8s 叢集 - Code and Me](https://blog.kyomind.tw/weamind/)
 - [把 Plausible 架起來玩 (GA 替代品？) – Gea-Suan Lin's BLOG](https://blog.gslin.org/archives/2026/03/22/12949/)
+- [jsongrep is faster than {jq, jmespath, jsonpath-rust, jql}](https://micahkepe.com/blog/jsongrep/)
+- [TOON：節省 JSON 空間的新格式 - Tsung's Blog](https://blog.longwin.com.tw/2026/03/toon-token-orieneted-object-notation-format-2026/)
 - 
-
 
 ### Tech
 
 - [fips/docs/design/fips-intro.md at master · jmcorgan/fips · GitHub](https://github.com/jmcorgan/fips/blob/master/docs/design/fips-intro.md)
 - [bash - What does " 2\>&1 " mean? - Stack Overflow](https://stackoverflow.com/questions/818255/what-does-21-mean)
 - [A Decade of Docker Containers – Communications of the ACM](https://cacm.acm.org/research/a-decade-of-docker-containers/)
+- [K3s 是什麼？為什麼我選擇用 K3s 部署 WeaMind - Code and Me](https://blog.kyomind.tw/k3s-for-weamind/)
 - 
-
 
 ### AI
 
@@ -58,8 +59,9 @@ Surfing 01.01 ~ 03.31
 - [Agent Skill 是什麼？對軟體產業帶來的變化 - 小惡魔 - AppleBOY](https://blog.wu-boy.com/2026/03/what-is-agent-skill-and-impact-on-software-industry-zh-tw/)
 - [用 Claude Code + GitHub Copilot Review 打造 AI 驅動的開發流程 - 小惡魔 - AppleBOY](https://blog.wu-boy.com/2026/03/ai-driven-development-with-claude-code-and-github-copilot-review-zh-tw/)
 	- [Building an AI-Driven Development Workflow with Claude Code + GitHub Copilot Review - 小惡魔 - AppleBOY](https://blog.wu-boy.com/2026/03/ai-driven-development-with-claude-code-and-github-copilot-review-en/)
+- [Anatomy of the .claude/ Folder - by Avi Chawla](https://blog.dailydoseofds.com/p/anatomy-of-the-claude-folder)
+- soft4fun.net/tech/ai/ai-workflow-agents-skills-standards.htm
 - 
-
 
 ### Life
 
@@ -67,4 +69,3 @@ Surfing 01.01 ~ 03.31
 - [興趣變工作後，快樂去哪了？中年轉職「滑雪教練」的我，決定返台「重啟人生」｜Alex Lin／桑尼爸的溫哥華札記｜換日線](https://crossing.cw.com.tw/article/20581)
 - [怎麼能一再被舒淇美到！米蘭時裝週之旅接連出席 Bottega Veneta 及 Fila 大秀 - The Femin](https://thefemin.com/2026/03/bottega-veneta-fila-2026-fw-show-shu-qi/)
 - 
-

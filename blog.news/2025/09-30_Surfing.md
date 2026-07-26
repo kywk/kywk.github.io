@@ -45,7 +45,7 @@ hide_table_of_contents: true
 - [裝潢做基本的就好，但是百搭的中古風傢俱值得認識：覓得主理人 Kevin 的 5 類中古傢俱選物 - A Day Magazine](https://www.adaymag.com/2025/09/09/olivia-interview.html)
 - [住在義大利機場 20 年，Emilietta 奶奶勇敢堅毅的人生，被改編成童話和紀錄片 - A Day Magazine](https://www.adaymag.com/2025/09/09/cesira-ton.html)
 - [你會在週末排滿行程嗎？紐西蘭人的「減法哲學」，教會我「什麼都不做」也很快樂｜Lan Ying Pin／走經的路易海外攻略書｜換日線](https://crossing.cw.com.tw/article/20141)
-	- [ ] deep read and note 📅 2026-02-16
+	- [ ] deep read and note 📅 2026-04-25
 - [【分享】 化繁為簡用Obsidian：擺脫功能依賴的新思維 – 簡睿隨筆](https://jdev.tw/blog/8912/simplify-with-obsidian-new-thinking)
 - [工作愈忙愈要即時筆記，多花30秒做三步驟記錄，省下未來N倍重工時間](https://www.playpcesor.com/2025/09/30n.html)
 	- [x] deep read and note 📅 2025-09-10 ✅ 2025-09-10

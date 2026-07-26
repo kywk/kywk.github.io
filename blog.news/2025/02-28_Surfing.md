@@ -25,8 +25,8 @@ Surfing 02.01 ~ 02.28
 - [SQL Noir - A Detective SQL Game](https://www.sqlnoir.com/)
 	- [Show HN: SQL Noir – Learn SQL by solving crimes \| Hacker News](https://news.ycombinator.com/item?id=43041827)
 	- 專注於 SQL 的 LeetCode
-	- [ ] Solve It 📅 2026-03-31
-	- [ ] Survey discussion on Hacker News 📅 2026-03-31
+	- [ ] Solve It 📅 2026-04-25
+	- [ ] Survey discussion on Hacker News 📅 2026-04-25
 - [XOR](https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/xor/)
 	- [XOR \| Hacker News](https://news.ycombinator.com/item?id=43087944)
 - [Kafka 官方對 Job Queue 的實作進度：KIP-932: Queues for Kafka – Gea-Suan Lin's BLOG](https://blog.gslin.org/archives/2025/02/19/12268/)

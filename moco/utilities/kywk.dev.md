@@ -34,11 +34,13 @@ draft: true
 ### 終端機與編輯器
 - [ ] [[Tmux config]] 終端機多工配置
 - [ ] [[NeoVim base]] 基礎 Vim 配置
-  - [ ] [[NeoVim note writing]] 筆記寫作配置
-  - [ ] [[NeoVim Java]] Java 開發配置
+- [ ] [[NeoVim note writing]] 筆記寫作配置
+- [ ] [[NeoVim Java]] Java 開發配置
 
 ### Windows 開發環境
-- [ ] NS Windows 桌面環境建構 🔽 📅 2026-01-01
+- [ ] NS Windows 桌面環境建構
+	- [ ] kiro-cli
+	- [ ] 
 
 ## 📊 專案統計
 
