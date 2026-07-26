@@ -11,7 +11,7 @@ tags:
   - kywk
 sidebar_position: 5
 date_created: 2024-05-24T00:00:00.000Z
-date_updated: 2024-12-26T00:00:00.000Z
+date_updated: 2026-07-26T00:00:00.000Z
 slug: /utilities/dotfiles-management/
 ---
 
@@ -164,6 +164,28 @@ export JAVA_VERSION="21.0.5-zulu"
 export NODE_VERSION="20"
 export GO_VERSION="1.21.5"
 ```
+
+### 2026 現代化升級
+
+版本管理策略已調整：
+
+| 語言 | 管理工具 | 說明 |
+|------|----------|------|
+| Node.js | [[mise]] | 取代 Volta/NVM |
+| Go | [[mise]] | 取代手動管理 |
+| Python | [[mise]] + [[uv]] | mise 管版本，uv 管套件 |
+| Java | SDKMAN | 保留（JDK vendor 精確度） |
+| Rust | rustup | 保留（生態完整） |
+
+新增工具整合：
+- [[atuin]] - Shell history 管理
+- [[lazygit]] - Git TUI 主力
+- [[yazi]] - 終端檔案管理器
+- [[zellij]] - 現代化終端多工器
+- [[television]] - 通用模糊搜尋
+- [[oha]] - HTTP 負載測試
+
+詳見 [[Utilities 2026]]
 
 ## 實用工具腳本
 

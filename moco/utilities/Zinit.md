@@ -10,7 +10,7 @@ tags:
   - kywk
 sidebar_position: 6
 date_created: 2025-09-20
-date_updated: 2025-12-26
+date_updated: 2026-07-26
 slug: /utilities/zinit/
 ---
 
@@ -332,6 +332,19 @@ zinit load OMZ::themes/robbyrussell
 # 從 antigen 遷移
 # antigen bundle plugin-name -> zinit load plugin-name
 ```
+
+## Atuin 整合
+
+atuin 的初始化放在 `kywk.zshrc`（zinit 載入後），確保 atuin 的 Ctrl+R 覆蓋 fzf 的預設行為：
+
+```bash
+# zsh/kywk.zshrc
+if command -v atuin >/dev/null 2>&1; then
+  eval "$(atuin init zsh --disable-up-arrow)"
+fi
+```
+
+載入順序：zinit.zshrc (fzf key-bindings) → kywk.zshrc (atuin 覆蓋 Ctrl+R) → kywk.shrc
 
 ## 🔗 See Also
 

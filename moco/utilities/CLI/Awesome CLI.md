@@ -1,5 +1,6 @@
 ---
 title: Awesome CLI
+date_updated: 2026-07-26
 tags:
   - Awesome
   - CLI
@@ -25,15 +26,29 @@ slug: /utilities/cli/awesome-cli/
 ## 互動式工具
 
 - [[fzf]] - 模糊搜尋器，支援檔案、歷史、程序搜尋
+- **[[atuin]]** - Shell history 管理與全文模糊搜尋
+- **[[television]]** - 通用模糊搜尋器（內建資料來源）
+- **[[yazi]]** - Rust 編寫的終端檔案管理器
 - **direnv** - 目錄環境變數管理
 - **tldr** - 簡化版 man pages
 - **jq** - JSON 處理工具
 
 ## Git 工具
 
-- **tig** - 文字界面 Git 瀏覽器
-- **gitui** - Rust 編寫的 Git TUI
+- ~~**tig**~~ - 文字界面 Git 瀏覽器 (已由 lazygit/gitui 取代)
+- **[[lazygit]]** - Git TUI 工具（功能豐富，日常主力）
+- **gitui** - Rust 編寫的 Git TUI（極速，大 repo 專用）
 - **git-delta** - Git diff 輸出美化
+
+## 版本管理
+
+- **[[mise]]** - 統一開發環境管理器（Node/Go/Python）
+- **[[uv]]** - 極速 Python 套件管理器（Rust 編寫）
+
+## 終端增強
+
+- **[[zellij]]** - 現代化終端多工器（tmux 替代）
+- **[[oha]]** - HTTP load testing 工具
 
 ## 安裝方式
 
@@ -51,10 +66,16 @@ cd ~/.files && ./bin/setup-devenv.sh
 brew install btop eza bat ripgrep fd zoxide
 
 # 互動式工具
-brew install fzf direnv tldr jq
+brew install fzf atuin television yazi direnv tldr jq
 
 # Git 工具
-brew install tig gitui git-delta
+brew install lazygit gitui git-delta
+
+# 版本管理
+brew install mise uv
+
+# 終端增強
+brew install zellij oha
 ```
 
 ## Tips & Trick

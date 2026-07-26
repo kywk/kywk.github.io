@@ -10,7 +10,7 @@ tags:
 sidebar_position: 10
 hide_table_of_contents: true
 date_created: 2024-12-22T00:00:00.000Z
-date_updated: 2024-12-22T00:00:00.000Z
+date_updated: 2026-07-26T00:00:00.000Z
 slug: /utilities/git/git-delta/
 ---
 
@@ -79,10 +79,16 @@ winget install dandavison.delta
     diffFilter = delta --color-only
 
 [delta]
-    navigate = true    # 使用 n 和 N 在 diff 區塊間導航
-    light = false      # 設為 true 使用淺色主題
-    side-by-side = true # 啟用並排檢視
+    navigate = true
+    side-by-side = false
+    line-numbers = true
+    syntax-theme = Dracula
+
+[merge]
+    conflictstyle = zdiff3
 ```
+
+> 📝 **與 dotfiles 整合**：以上配置已整合到 `~/.files/gitconfig`，搭配 forgit (zinit 插件) 自動偵測 delta 並美化互動式 diff。lazygit 也已配置 `pager: delta --paging=never`。
 
 ### 進階配置
 
@@ -230,6 +236,19 @@ git config --global delta.color-only true
 - **[GitHub 專案](https://github.com/dandavison/delta)** - 原始碼和問題回報
 - **[配置範例](https://github.com/dandavison/delta#configuration)** - 更多配置選項
 - **[Hacker News 討論](https://news.ycombinator.com/item?id=42091365)** - 社群討論和使用心得
+
+## 🔀 與 diff-so-fancy 比較
+
+| 特性 | git-delta | diff-so-fancy |
+|------|-----------|---------------|
+| 語法高亮 | ✅ 完整（同 bat 引擎） | ❌ 無 |
+| 行內差異 | ✅ 字元級別 | ⚙️ 粗略（整行著色） |
+| 並排檢視 | ✅ side-by-side | ❌ 不支援 |
+| 行號 | ✅ | ❌ |
+| 主題 | 30+ 語法主題 | 無（固定配色） |
+| 效能 | Rust 編寫，更快 | Perl 腳本 |
+
+結論：delta 全面勝出，已安裝就用 delta。
 
 ## 💭 使用心得
 

@@ -7,7 +7,7 @@ tags:
 sidebar_position: 10
 hide_table_of_contents: false
 date_created: 2025-06-06
-date_updated: 2025-06-06
+date_updated: 2026-07-26
 ---
 
 # direnv
@@ -122,6 +122,19 @@ direnv allow
 | 使用多種版本管理工具（如 pyenv, nvm） | 自動套用專案中指定的版本                          |
 | 團隊專案需一致開發環境設定            | `.envrc` 可版控（建議搭配 `.envrc.local` 管機密） |
 | 減少 shell 指令疲勞                   | 不再手動 `source` 環境檔或啟動 venv               |
+
+---
+
+## 🔄 與 mise 的關係
+
+mise 內建類似 direnv 的環境變數管理功能（`[env]` section in mise.toml），但兩者可以並存：
+
+- **mise `[env]`** - 適合與工具版本綁定的環境變數（如 `DATABASE_URL`）
+- **direnv `.envrc`** - 適合更複雜的設定（如 `layout python`、條件式設定）
+
+目前 dotfiles 中兩者都保留，direnv 由 `load-env.sh` 初始化，mise 由同一腳本激活。
+
+詳見 [[mise]]
 
 ---
 

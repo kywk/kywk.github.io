@@ -7,7 +7,7 @@ tags:
   - Utility
   - Awesome
 date_created: 2024-01-01T00:00:00.000Z
-date_updated: 2025-01-01T00:00:00.000Z
+date_updated: 2026-07-26
 slug: /utilities/git/awesome-git/
 ---
 
@@ -18,9 +18,9 @@ slug: /utilities/git/awesome-git/
 ## 🛠️ GUI 工具與 TUI
 
 ### Terminal UI
-- **[GitUI](https://github.com/extrawurst/gitui)** - 使用 Rust 編寫的快速終端 Git UI
-- **[Lazygit](https://github.com/jesseduffield/lazygit)** - 簡單的 Git 終端 UI
-- **[Tig](https://github.com/jonas/tig)** - 文字模式的 Git 倉庫瀏覽器
+- **[[lazygit|Lazygit]]** - 功能豐富的 Git TUI（日常主力，custom commands）
+- **[GitUI](https://github.com/gitui-org/gitui)** - Rust 編寫的極速 Git TUI（大 repo 專用）
+- ~~**[Tig](https://github.com/jonas/tig)**~~ - 文字模式 Git 瀏覽器（已由 lazygit/gitui 取代）
 
 ### Desktop GUI
 - **[GitKraken](https://www.gitkraken.com/)** - 跨平台 Git GUI 客戶端
@@ -50,8 +50,8 @@ slug: /utilities/git/awesome-git/
 ## 🔧 增強工具
 
 ### Diff 與 Merge
-- **[[Git Delta]]** - 語法高亮的 Git diff 分頁器
-- **[diff-so-fancy](https://github.com/so-fancy/diff-so-fancy)** - 更好的 Git diff 輸出
+- **[[Git Delta]]** - 語法高亮的 Git diff 分頁器（已整合到 gitconfig）
+- ~~**[diff-so-fancy](https://github.com/so-fancy/diff-so-fancy)**~~ - 已由 delta 取代
 - **[Meld](https://meldmerge.org/)** - 視覺化 diff 和 merge 工具
 
 ### 提交與歷史
