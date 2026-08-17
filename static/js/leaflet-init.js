@@ -8,24 +8,51 @@
     var initializedMaps = {};
     var hydrationComplete = false;
 
+    // Leaflet 本體只在頁面真的有地圖時才載入（全站 920 頁中僅少數幾頁需要）。
+    // 這裡是這兩個 URL 的唯一來源，不再由 docusaurus.config.ts 全域注入。
+    var LEAFLET_CSS = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';
+    var LEAFLET_JS = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';
+    var assetsRequested = false;
+
     // Detect current Docusaurus theme
     function isDarkMode() {
         return document.documentElement.getAttribute('data-theme') === 'dark';
     }
 
+    // 動態注入 Leaflet CSS/JS，重複呼叫只會注入一次
+    function requestLeafletAssets() {
+        if (assetsRequested) return;
+        assetsRequested = true;
+
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = LEAFLET_CSS;
+        document.head.appendChild(link);
+
+        var script = document.createElement('script');
+        script.src = LEAFLET_JS;
+        script.async = true;
+        script.onerror = function () {
+            console.error('[Leaflet Init] Failed to load Leaflet from', LEAFLET_JS);
+        };
+        document.head.appendChild(script);
+    }
+
     function initLeafletMaps() {
         initAttempts++;
 
-        if (typeof L === 'undefined') {
+        // 先確認這頁有地圖，再決定要不要載入 Leaflet
+        var mapWrappers = document.querySelectorAll('.leaflet-map-wrapper[data-leaflet-config]');
+
+        if (mapWrappers.length === 0) {
             if (initAttempts < maxAttempts) {
                 setTimeout(initLeafletMaps, 200);
             }
             return;
         }
 
-        var mapWrappers = document.querySelectorAll('.leaflet-map-wrapper[data-leaflet-config]');
-
-        if (mapWrappers.length === 0) {
+        if (typeof L === 'undefined') {
+            requestLeafletAssets();
             if (initAttempts < maxAttempts) {
                 setTimeout(initLeafletMaps, 200);
             }
@@ -176,22 +203,32 @@
     }
 
     // Re-run on URL changes (SPA navigation)
+    // 注意：本檔在 <head> 執行，此時 document.body 還不存在，
+    // 直接 observe(document.body) 會丟 TypeError 並讓 SPA 換頁後的地圖初始化整段失效。
     var lastUrl = location.href;
-    new MutationObserver(function () {
-        if (location.href !== lastUrl) {
-            lastUrl = location.href;
-            initAttempts = 0;
-            // Clear maps for new page
-            Object.keys(initializedMaps).forEach(function (mapId) {
-                try {
-                    if (initializedMaps[mapId] && initializedMaps[mapId].map) {
-                        initializedMaps[mapId].map.remove();
-                    }
-                } catch (e) { }
-            });
-            initializedMaps = {};
-            // Wait a bit for new page content to render
-            setTimeout(initLeafletMaps, 500);
-        }
-    }).observe(document.body, { childList: true, subtree: true });
+    function observeUrlChanges() {
+        new MutationObserver(function () {
+            if (location.href !== lastUrl) {
+                lastUrl = location.href;
+                initAttempts = 0;
+                // Clear maps for new page
+                Object.keys(initializedMaps).forEach(function (mapId) {
+                    try {
+                        if (initializedMaps[mapId] && initializedMaps[mapId].map) {
+                            initializedMaps[mapId].map.remove();
+                        }
+                    } catch (e) { }
+                });
+                initializedMaps = {};
+                // Wait a bit for new page content to render
+                setTimeout(initLeafletMaps, 500);
+            }
+        }).observe(document.body, { childList: true, subtree: true });
+    }
+
+    if (document.body) {
+        observeUrlChanges();
+    } else {
+        document.addEventListener('DOMContentLoaded', observeUrlChanges);
+    }
 })();

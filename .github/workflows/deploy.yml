@@ -18,6 +18,13 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
+      - name: Typecheck
+        run: npm run typecheck
+      # 目前有 113 個既有內容問題（72 個缺 title + 41 個警告），
+      # 先以不阻擋的方式輸出報告；待內容清理完成後移除 continue-on-error
+      - name: Content check (non-blocking)
+        run: npm run content:check
+        continue-on-error: true
       - name: Build website
         run: npm run build
 

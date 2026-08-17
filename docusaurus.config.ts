@@ -183,27 +183,35 @@ const config: Config = {
   deploymentBranch: "gh-pages",
 
   onBrokenLinks: "warn",
-  onBrokenMarkdownLinks: "warn",
+
+  // 先建立 Google Fonts 連線，縮短字型的等待時間（中文 Noto Sans TC 影響最大）
+  headTags: [
+    {
+      tagName: "link",
+      attributes: { rel: "preconnect", href: "https://fonts.googleapis.com" },
+    },
+    {
+      tagName: "link",
+      attributes: {
+        rel: "preconnect",
+        href: "https://fonts.gstatic.com",
+        crossorigin: "anonymous",
+      },
+    },
+  ],
 
   stylesheets: [
     {
       href: externalResources.fonts,
       type: "text/css",
     },
-    {
-      href: externalResources.leafletCSS,
-      type: "text/css",
-    },
   ],
 
   scripts: [
-    {
-      src: externalResources.leafletJS,
-      async: false,
-    },
+    // Leaflet 本體不再全站載入，改由 leaflet-init.js 在有地圖的頁面動態注入
     {
       src: "/js/leaflet-init.js",
-      async: false,
+      async: true,
     },
   ],
 
@@ -222,12 +230,21 @@ const config: Config = {
   },
 
   future: {
-    experimental_faster: {
+    faster: {
       swcJsLoader: true,
       swcJsMinimizer: true,
       swcHtmlMinimizer: true,
       lightningCssMinimizer: true,
       rspackBundler: true,
+      mdxCrossCompilerCache: true,
+      rspackPersistentCache: true,
+      // 需搭配 v4.removeLegacyPostBuildHeadAttribute
+      ssgWorkerThreads: true,
+      // gitEagerVcs 只在使用 showLastUpdateTime/Author 時有意義，本站未使用
+    },
+    v4: {
+      // 本站無自訂 plugin 使用 postBuild({head})，可安全移除 legacy 參數
+      removeLegacyPostBuildHeadAttribute: true,
     },
   },
 
@@ -235,6 +252,10 @@ const config: Config = {
     [
       "classic",
       {
+        // docs/blog 都由下方 plugins 明確建立實例，關掉 preset 的預設實例，
+        // 否則會多出 /docs 與 /blog 兩個空路由
+        docs: false,
+        blog: false,
         theme: {
           customCss: "./src/css/custom.css",
         },
@@ -267,7 +288,30 @@ const config: Config = {
     ]),
   ],
 
-  themes: ["@docusaurus/theme-mermaid"],
+  themes: [
+    "@docusaurus/theme-mermaid",
+    // 全靜態的站內搜尋（無外部服務），語言含中文分詞
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      {
+        hashed: true,
+        language: ["en", "zh"],
+        indexDocs: true,
+        indexBlog: true,
+        indexPages: true,
+        // 多實例：docs 與 blog 的目錄與路由都要逐一列出
+        docsDir: docsConfig.map(doc => doc.path),
+        docsRouteBasePath: docsConfig.map(doc => doc.routeBasePath),
+        blogDir: blogConfig.map(blog => blog.path),
+        blogRouteBasePath: blogConfig.map(blog => blog.routeBasePath),
+        // 非 docs 頁面（blog、404）沒有 activePlugin，SearchBar 會 fallback 到這個 id；
+        // 不指定會去找不存在的 "default" docs 實例而讓 SSG 失敗
+        docsPluginIdForPreferredVersion: docsConfig[0].id,
+        highlightSearchTermsOnTargetPage: true,
+        searchResultLimits: 10,
+      },
+    ],
+  ],
 
   themeConfig: {
     image: "img/og-social-card.png",
