@@ -34,8 +34,8 @@ const remarkWikiLink = require("remark-wiki-link");
 const remarkKanban = loadPlugin("remark-obsidian-kanban", "./plugins/remark-obsidian-kanban/src/index.js")?.remarkKanban;
 const remarkLeaflet = loadPlugin("remark-obsidian-leaflet", "./plugins/remark-obsidian-leaflet/src/index.js");
 const slugNormalizerPlugin = loadPlugin("remark-slug-normalizer", "./plugins/remark-slug-normalizer/src/index.js");
-const remarkSlugNormalizer = slugNormalizerPlugin?.remarkSlugNormalizer;
 const normalizeSlug = slugNormalizerPlugin?.normalizeSlug;
+const deriveSlug = slugNormalizerPlugin?.deriveSlug;
 
 // 建立檔案映射表 - 統一函數
 function createFileMap(basePath) {
@@ -139,9 +139,9 @@ function createPageResolver(fileMap) {
 function createRemarkPlugins(fileMap, routeBase) {
   const plugins = [];
 
-  if (remarkSlugNormalizer) {
-    plugins.push(remarkSlugNormalizer);
-  }
+  // 注意：slug 不在 remark 階段處理。Docusaurus 在 processDocMetadata 就算好 permalink，
+  // remark 是之後才在 mdx-loader 跑的，改 frontmatter 已經來不及。
+  // slug 統一由下方 markdown.parseFrontMatter 推導。
 
   if (remarkLeaflet) {
     plugins.push([remarkLeaflet, { routeBase }]);
@@ -221,6 +221,27 @@ const config: Config = {
     hooks: {
       onBrokenMarkdownLinks: "warn",
       onBrokenMarkdownImages: "warn",
+    },
+    // 全站 URL 的唯一權威來源：build 時由檔案路徑推導 slug，不寫回原始檔。
+    //   規則：轉小寫 → 空白/底線換成 -、收合、去頭尾 → 去掉結尾的 /index
+    //   docs  → /a/b/          blog → /YYYY/MM/DD/title（沿用 Docusaurus 的日期結構）
+    // 推導函式與 npm run content:slug、wikilink resolver 共用，三者不可能不一致。
+    // 檔案裡即使殘留舊的 slug frontmatter 也會被這裡覆蓋。
+    parseFrontMatter: async (params) => {
+      const result = await params.defaultParseFrontMatter(params);
+      if (!deriveSlug) return result;
+
+      const relPath = path.relative(__dirname, params.filePath);
+      const { slug } = deriveSlug({
+        relPath,
+        docsPaths: docsConfig.map(doc => doc.path),
+        blogPaths: blogConfig.map(blog => blog.path),
+      });
+
+      if (slug) {
+        result.frontMatter.slug = slug;
+      }
+      return result;
     },
   },
 

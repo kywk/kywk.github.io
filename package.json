@@ -15,7 +15,9 @@
     "typecheck": "tsc",
     "content:check": "node scripts/content-validator.js",
     "content:optimize": "node scripts/optimize-images.js",
-    "content:slug": "node scripts/inject-slug-frontmatter.js",
+    "content:slug": "node scripts/slug.js",
+    "content:slug:fix": "node scripts/slug.js --fix",
+    "content:slug:write": "node scripts/slug.js --write",
     "content:wikilink": "node scripts/convert-to-wikilinks.js",
     "deploy:preview": "npm run build && npm run serve"
   },
