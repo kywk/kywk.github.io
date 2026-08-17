@@ -9,8 +9,9 @@ tags:
   - 多實例
 sidebar_position: 10
 date_created: 2022-05-24T00:00:00.000Z
-date_updated: 2024-05-24T00:00:00.000Z
+date_updated: 2026-08-17T00:00:00.000Z
 history:
+  - 2026-08-17 多實例踩坑：preset docs/blog、search-local、backdrop-filter、TOC
   - 2024-05-24 Remark Plugin Usage
   - 2022-05-24 初始建立
 slug: /obsidian/docusaurus/docusaurus-setup-note/
@@ -143,6 +144,63 @@ Push the commit or tag
 ```
 
 到 `Settings` > `Actions` > `General` > `Workflow permissions`，選擇 **Read and write permissions** 即可。
+
+### 多實例站要記得關掉 preset 的預設 docs/blog
+
+`preset-classic` 的 `docs` / `blog` 預設是開啟的。若所有實例都自己在 `plugins` 裡建立，
+preset 還會額外生出讀取 `./docs` 與 `./blog` 的預設實例，產生 `/docs`、`/blog` 兩個空路由：
+
+```typescript
+presets: [
+  ['classic', {
+    docs: false,
+    blog: false,
+    theme: { customCss: './src/css/custom.css' },
+  }],
+],
+```
+
+### 站內搜尋在多實例站的地雷
+
+`@easyops-cn/docusaurus-search-local` 的 `SearchBar` 會呼叫
+`useActiveVersion(activePlugin?.pluginId ?? docsPluginIdForPreferredVersion)`。
+在 blog 與 404 這類非 docs 頁面沒有 `activePlugin`，fallback 會去找 id 為 `default` 的
+docs 實例；多實例站沒有這個 id，SSG 會整批失敗（本站當時 175 頁）。務必指定：
+
+```typescript
+docsPluginIdForPreferredVersion: 'backpacker',  // 任一個實際存在的 docs id
+docsDir: ['backpacker', 'lifehacker', 'moco'],  // 多實例要逐一列出
+docsRouteBasePath: ['backpacker', 'lifehacker', 'moco'],
+language: ['en', 'zh'],                          // 中文分詞
+```
+
+### `backdrop-filter` 會綁死 fixed 子元素
+
+在 `.navbar` 上用 `backdrop-filter`（毛玻璃效果）會讓它成為 fixed 後代的
+**containing block**。Docusaurus 的手機版漢堡選單 `.navbar-sidebar` 是 `.navbar` 的
+`position: fixed` 子元素，於是整個選單被壓縮在 navbar 的高度內 —— 看起來像「選單被文章蓋住、
+點不到」，而遮罩層也一起失效。解法是選單展開時關掉效果：
+
+```css
+.navbar:not(.navbar-sidebar--show) {
+  backdrop-filter: blur(12px);
+}
+```
+
+另外，navbar 高度請設 `--ifm-navbar-height`，不要直接寫 `.navbar { height }`；
+Docusaurus 內部的 sticky sidebar 位移與錨點 scroll offset 都依賴那個變數。
+
+### 要隱藏 TOC 請用 frontmatter，不要用 CSS
+
+用 `display: none` 藏 TOC 只是視覺上看不到，DOM 裡的連結還在。若該頁的 heading 被
+plugin 換掉（例如 Kanban 看板把 `##` 變成看板欄位、不再產生 heading id），
+這些 TOC 連結全部會變成 broken anchors（本站當時 61 個）。正解是：
+
+```yaml
+---
+hide_table_of_contents: true
+---
+```
 
 ## 相關連結
 

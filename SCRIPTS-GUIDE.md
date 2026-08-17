@@ -22,7 +22,6 @@ npm install sharp --save-dev
 |------|------|------|
 | `npm run content:check` | 內容驗證 | 檢查 frontmatter、連結、檔案格式 |
 | `npm run content:optimize` | 圖片優化 | 壓縮圖片，節省空間 |
-| `npm run content:index` | 搜尋索引 | 建立全站搜尋功能 |
 | `npm run content:slug` | 注入 Slug | 為含空格路徑的檔案注入 slug |
 | `npm run content:wikilink` | 轉換連結 | Markdown 連結轉 Wiki 連結 |
 | `npm run deploy:preview` | 預覽部署 | 建置並本地預覽 |
@@ -87,37 +86,21 @@ Images optimized: 15
 Total space saved: 12.3 MB
 ```
 
-### 3. 搜尋索引 (`content:index`)
+### 3. 站內搜尋（已不需要腳本）
 
-**功能**：
-- 🔍 掃描所有 Markdown 檔案
-- 📝 提取標題、內容、標籤、摘要
-- 🗂️ 生成 JSON 搜尋索引
-- 🌐 建立搜尋頁面 (`src/pages/search.md`)
-- 📊 統計各分類文件數量
+搜尋改由 `@easyops-cn/docusaurus-search-local` 提供，索引在 `npm run build` 時自動產生，
+不需要任何額外指令。
 
-**生成檔案**：
-- `static/search-index.json` - 搜尋資料
-- `src/pages/search.md` - 搜尋頁面
+**產出**：
+- `build/search-index.json` - 搜尋索引（約 9,500 筆）
+- `/search` - 搜尋結果頁（由外掛提供）
 
-**範例輸出**：
-```
-🔍 Building search index...
+**設定位置**：`docusaurus.config.ts` 的 `themes`。多實例站要注意 `docsDir`、
+`docsRouteBasePath`、`blogDir`、`blogRouteBasePath` 都得逐一列出，並指定
+`docsPluginIdForPreferredVersion`，否則非 docs 頁面的 SSG 會失敗。
 
-Indexing backpacker/
-Indexing lifehacker/
-Indexing moco/
-
-📊 Search Index Results:
-Total documents indexed: 494
-Categories:
-  - moco: 248 documents
-  - backpacker: 146 documents
-  - lifehacker: 100 documents
-
-✅ Search index saved to static/search-index.json
-✅ Search page created at src/pages/search.md
-```
+> 舊的 `scripts/build-search-index.js` 已移除。它從未被接進 build 流程，
+> 且會產生與外掛衝突的 `static/search-index.json` 與 `src/pages/search.md`。
 
 ### 4. 注入 Slug (`content:slug`)
 
@@ -202,10 +185,9 @@ npm run content:wikilink
 
 # 4. 優化圖片
 npm run content:optimize
-
-# 5. 更新搜尋索引
-npm run content:index
 ```
+
+> 搜尋索引不需要手動更新，`npm run build` 會自動產生。
 
 ### 部署前檢查
 ```bash
@@ -225,7 +207,7 @@ npm run content:slug
 
 1. **圖片優化**需要安裝 ImageMagick 或 Sharp
 2. **內容驗證**失敗會終止程序 (exit code 1)
-3. **搜尋索引**會覆蓋現有的搜尋頁面
+3. **`npm run build` 不再自動注入 slug**（原本掛在 `prebuild`），新增含空格路徑的檔案後要自己跑 `content:slug`
 4. **Slug 注入**僅處理特定目錄，避免影響系統檔案
 5. **連結轉換**僅處理相對路徑，保持外部連結不變
 
@@ -246,6 +228,6 @@ npm install sharp --save-dev
 - 修正 wiki 連結語法
 
 ### 搜尋功能無效
-- 確認 `static/search-index.json` 存在
-- 檢查 `src/pages/search.md` 是否正確生成
-- 重新執行 `npm run content:index`
+- 確認 build 產物中有 `build/search-index.json`
+- 開發模式 (`npm start`) 下搜尋索引不會產生，需用 `npm run build && npm run serve` 驗證
+- 檢查 `docusaurus.config.ts` 中 `docsDir` / `blogDir` 是否涵蓋所有實例

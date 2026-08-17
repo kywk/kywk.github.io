@@ -11,7 +11,7 @@ tags:
 sidebar_position: 40
 sidebar_label: Leaflet Plugin
 date_created: 2025-12-24T00:00:00.000Z
-date_updated: 2025-12-24T00:00:00.000Z
+date_updated: 2026-08-17T00:00:00.000Z
 slug: /obsidian/docusaurus/plugin-remark-obsidian-leaflet/
 ---
 
@@ -68,27 +68,48 @@ remarkPlugins: [
 ],
 ```
 
-### 3. Leaflet 資源載入
+### 3. Leaflet 資源載入（按需載入）
 
-需要在網站中載入 Leaflet CSS 和 JS：
+**不要**把 Leaflet CSS/JS 掛成全域 `headTags` / `stylesheets` / `scripts`。
+全站 900+ 頁裡只有 3 頁有地圖，全域載入等於每頁都多背約 160KB 的阻塞資源。
 
-```html
-<!-- 在 docusaurus.config.ts 的 headTags 中添加 -->
-headTags: [
-  {
-    tagName: 'link',
-    attributes: {
-      rel: 'stylesheet',
-      href: 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css',
-    },
-  },
-  {
-    tagName: 'script',
-    attributes: {
-      src: 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js',
-    },
-  },
+正確做法是只全域載入自己的初始化腳本，由它偵測頁面上有沒有地圖再注入 Leaflet：
+
+```typescript
+// docusaurus.config.ts
+scripts: [
+  { src: "/js/leaflet-init.js", async: true },
 ],
+```
+
+```javascript
+// static/js/leaflet-init.js —— Leaflet CDN 位址的唯一來源
+var LEAFLET_CSS = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';
+var LEAFLET_JS = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';
+var assetsRequested = false;
+
+function requestLeafletAssets() {
+  if (assetsRequested) return;          // 輪詢會重複呼叫，只注入一次
+  assetsRequested = true;
+  // 動態 append <link> 與 <script> 到 document.head
+}
+
+function initLeafletMaps() {
+  // 1. 先找 .leaflet-map-wrapper[data-leaflet-config]，沒有就直接跳出
+  // 2. 有地圖但 L 還沒載入 → requestLeafletAssets() 並排下一次輪詢
+  // 3. L 就緒 → 建立地圖
+}
+```
+
+#### ⚠️ `document.body` 在 `<head>` 階段是 null
+
+`scripts` 注入的 `<script>` 位於 `<head>`，若在 IIFE 尾端直接
+`new MutationObserver(...).observe(document.body, ...)` 會丟 TypeError，
+使 SPA 換頁後的地圖初始化整段失效（首次載入正常，所以很難發現）。要加守衛：
+
+```javascript
+if (document.body) observeUrlChanges();
+else document.addEventListener('DOMContentLoaded', observeUrlChanges);
 ```
 
 ## 使用方式

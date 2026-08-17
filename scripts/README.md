@@ -33,17 +33,10 @@ Optimizes images by:
 npm run content:optimize
 ```
 
-### 🔍 build-search-index.js
-Builds search functionality:
-- Indexes all markdown content
-- Generates JSON search index
-- Creates search page with client-side search
-- Extracts titles, excerpts, tags
-
-**Usage:**
-```bash
-npm run content:index
-```
+### 🔍 站內搜尋
+搜尋已改用 `@easyops-cn/docusaurus-search-local`（設定於 `docusaurus.config.ts` 的 `themes`），
+索引在 build 時自動產生。原本的 `build-search-index.js` 從未接進 build 流程，
+且會寫出與外掛衝突的 `static/search-index.json` 與 `src/pages/search.md`，已移除。
 
 ## Automation
 

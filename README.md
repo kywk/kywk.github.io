@@ -5,12 +5,12 @@
 ## 專案架構
 
 ### 📁 內容組織
-- **backpacker/**: 旅遊記錄與遊記 (146 檔案)
-- **lifehacker/**: 生活技巧、登山、攝影、閱讀等 (100 檔案)
-- **moco/**: 技術文件 (程式開發、工具使用) (248 檔案)
-- **blog.life/**: 個人生活部落格
-- **blog.news/**: 技術新聞與資訊
-- **總計**: 1,625+ Markdown 檔案，專案大小 158MB
+- **backpacker/**: 旅遊記錄與遊記 (142 檔案)
+- **lifehacker/**: 生活技巧、登山、攝影、閱讀等 (84 檔案)
+- **moco/**: 技術文件 (程式開發、工具使用) (224 檔案)
+- **blog.life/**: 個人生活部落格 (42 檔案)
+- **blog.news/**: 技術新聞與資訊 (52 檔案)
+- **總計**: 1,777 Markdown 檔案（含未發佈的 `_incoming/`、`_journaling/` 等），實際產出 916 頁
 
 ### 🔧 技術特色
 - **Wiki Link 支援**: 使用 `remark-wiki-link` 插件，支援 Obsidian 的 `[[]]` 連結語法及 `[[target|display]]` 別名語法
@@ -18,8 +18,8 @@
 - **雙部落格系統**: 分離個人生活 (life) 和技術資訊 (news)
 - **Mermaid 圖表**: 支援流程圖和圖表渲染
 - **中文本地化**: 預設語言設為 `zh-TW`
-- **內容搜尋**: 客戶端全文搜尋功能
-- **自動化工具**: 內容驗證、圖片優化、搜尋索引建立
+- **站內搜尋**: `@easyops-cn/docusaurus-search-local` 純靜態全文搜尋，含中文分詞，索引於 build 時自動產生（無外部服務）
+- **自動化工具**: 內容驗證、圖片優化、slug 注入、連結轉換
 
 ### 🎯 Obsidian 插件支援
 
@@ -35,6 +35,7 @@
 - 支援 `markerFolder` 自動讀取含 `location` frontmatter 的 Markdown 檔案
 - 深色/淺色主題自動切換
 - 地圖標記支援中文標題和連結
+- **按需載入**: Leaflet CSS/JS 不掛全域，由 `static/js/leaflet-init.js` 偵測到頁面上有地圖才注入（全站僅 3 頁需要）
 
 範例：
 ```markdown
@@ -76,7 +77,6 @@ npm run deploy
 ```bash
 npm run content:check      # 驗證內容格式與連結
 npm run content:optimize   # 優化圖片大小與品質
-npm run content:index      # 建立搜尋索引
 npm run content:slug       # 注入 slug frontmatter
 npm run content:wikilink   # 轉換 Markdown 連結為 wiki-link
 npm run deploy:preview     # 建置並預覽部署結果
@@ -107,11 +107,13 @@ npm run content:optimize
 ```
 自動壓縮圖片，需安裝 ImageMagick (`brew install imagemagick`) 或 Sharp。
 
-**搜尋索引**：
-```bash
-npm run content:index
-```
-建立全站搜尋功能，生成 JSON 索引和搜尋頁面。
+**站內搜尋**：
+
+不需要任何指令。搜尋由 `@easyops-cn/docusaurus-search-local` 提供，索引在 `npm run build`
+時自動產生（`build/search-index.json`，目前約 9,500 筆），搜尋頁在 `/search`。
+
+> 舊的 `scripts/build-search-index.js` 已移除：它從未被接進 build 流程，
+> 且會產生與外掛衝突的 `static/search-index.json` 與 `src/pages/search.md`。
 
 ### 檔名/資料夾名稱含空格的處理
 
@@ -121,6 +123,10 @@ Docusaurus 預設會將檔案路徑中的空格編碼為 `%20`，導致 URL 不�
 ```bash
 npm run content:slug
 ```
+
+> ⚠️ 這個步驟原本掛在 `prebuild`，每次 build 都會改寫內容檔（本機 build 完 working tree
+> 就變髒）。目前 450 個檔案都已注入完成（`450 scanned, 0 modified`），因此已從 `prebuild`
+> 移除，改為手動執行。
 
 此腳本會：
 - 掃描 `backpacker/`、`lifehacker/`、`moco/` 目錄
@@ -149,8 +155,11 @@ npm run content:wikilink
 
 ### docusaurus.config.ts
 - **多文檔配置**: 每個主題 (backpacker, lifehacker, moco) 都有獨立的文檔實例
-- **Wiki Link 解析**: 自動將 `[[]]` 語法轉換為 Docusaurus 連結
+- **preset-classic 的預設 docs/blog 已關閉** (`docs: false, blog: false`)，避免多出 `/docs`、`/blog` 空路由
+- **Wiki Link 解析**: 自動將 `[[]]` 語法轉換為 Docusaurus 連結（⚠️ 目前只掛在 docs 實例，blog 尚未支援，詳見下方待辦）
 - **Remark 插件鏈**: remarkSlugNormalizer → remarkLeaflet → remarkKanban → remarkWikiLink
+- **效能 flags**: `future.faster` 全開 + `future.v4.removeLegacyPostBuildHeadAttribute`
+  （`ssgWorkerThreads` 的前置條件），詳見 [Docusaurus v3 升級筆記](./moco/Obsidian/docusaurus/Docusaurus%20v3%20Upgrading.md)
 - **部署設定**: 配置 GitHub Pages 部署參數
 
 ### 自訂插件
@@ -173,13 +182,12 @@ npm run content:wikilink
 | `scripts/convert-to-wikilinks.js` | Markdown 連結轉 wiki-link |
 | `scripts/content-validator.js` | 內容驗證與檢查 |
 | `scripts/optimize-images.js` | 圖片壓縮與優化 |
-| `scripts/build-search-index.js` | 搜尋索引建立 |
 
 ### package.json
 - **版本**: 17.71
-- **核心依賴**: Docusaurus 3.9.2, React 19.2.0
-- **特殊插件**: remark-wiki-link, gray-matter
-- **內容管理**: 自動化驗證、優化、索引腳本
+- **核心依賴**: Docusaurus 3.10.2, React 19.2
+- **特殊插件**: remark-wiki-link, gray-matter, @easyops-cn/docusaurus-search-local
+- **內容管理**: 自動化驗證、優化、slug 注入腳本
 
 ## Obsidian 整合
 - **.obsidian/**: 完整的 Obsidian 配置，包含多個插件
@@ -189,4 +197,22 @@ npm run content:wikilink
 ## 部署流程
 - **GitHub Pages**: 自動部署到 `kywk.github.io`
 - **CI/CD**: 透過 `.github/workflows/` 自動化部署
+  - `deploy.yml` (push to main) 與 `test-deploy.yml` (PR) 都會依序執行
+    `typecheck` → `content:check` → `build`
+  - `content:check` 目前是 `continue-on-error`（只輸出報告不擋 deploy），因為還有 113 個
+    既有內容問題。其中 72 個是「Missing required field 'title'」—— 這條規則對本站不適用
+    （Docusaurus 會從 H1 推導標題），待放寬規則後再改成阻擋
 - **版本控制**: 使用 Git 管理內容版本
+
+## 已知待辦
+
+- **Wiki-link 尚未支援 blog**: `remark-wiki-link` 只掛在 3 個 docs 實例上，
+  `blog.news` / `blog.life` 內的 22 個 `[[...]]` 會以原文顯示。要修需要先建立跨 vault 的
+  全站索引（含 blog 的日期式 permalink 推導），否則 16 個跨 vault 連結會指向錯誤路由
+- **85 條 broken links**: 主要是 wikilink 指向不存在的筆記（40）、舊的 `[[標題:說明]]`
+  冒號別名語法（23）、`[[moco/...]]` 帶 vault 前綴（4）。全部修完後可把
+  `onBrokenLinks` 從 `warn` 改成 `throw`
+- **路由大小寫不一致**: slug 注入只處理過部分檔案，導致同一目錄下
+  `/moco/utilities/cli/yazi/`（小寫）與 `/moco/Utilities/CLI/fzf/`（原大小寫）並存，
+  而 wikilink resolver 一律轉小寫 → `[[fzf]]`、`[[OpenJDK]]`、`[[TOGO]]` 等會連錯。
+  要統一小寫會改動既有 URL，需另行評估
