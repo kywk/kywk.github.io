@@ -10,7 +10,6 @@ location:
 wiki: 'https://zh.wikipedia.org/wiki/香妃墓'
 mapmarker: default
 hide_table_of_contents: true
-slug: /2601-xinjiang/xinjiang/香妃墓-xiangfei-tomb/
 ---
 
 香妃墓 Xiangfei Tomb

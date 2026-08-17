@@ -11,7 +11,6 @@ sidebar_position: 11
 date_created: 2025-09-27T00:00:00.000Z
 date_updated: 2025-10-13T00:00:00.000Z
 kanban-plugin: board
-slug: /2509-chile/schedule-on-chile/
 ---
 
 ## Refs

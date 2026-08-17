@@ -7,7 +7,6 @@ tags:
 hide_table_of_contents: true
 sidebar_position: 78
 date_created: 2013-08-24T14:20:30.000Z
-slug: /trip-n-life/index-orz/
 ---
 
 # 牛在囧途

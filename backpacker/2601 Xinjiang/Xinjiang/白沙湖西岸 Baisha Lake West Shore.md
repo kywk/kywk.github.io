@@ -9,7 +9,6 @@ location:
   - 86.9250
 mapmarker: default
 hide_table_of_contents: true
-slug: /2601-xinjiang/xinjiang/白沙湖西岸-baisha-lake-west-shore/
 ---
 
 白沙湖西岸 Baisha Lake West Shore

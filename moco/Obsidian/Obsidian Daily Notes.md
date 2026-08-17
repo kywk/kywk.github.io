@@ -11,7 +11,6 @@ sidebar_position: 20
 sidebar_label: Daily Notes
 date_created: 2023-01-02T00:00:00.000Z
 date_updated: 2025-12-24T00:00:00.000Z
-slug: /obsidian/obsidian-daily-notes/
 ---
 
 # [Obsidian] Daily Notes 日記系統

@@ -7,7 +7,6 @@ sidebar_position: 50
 hide_table_of_contents: true
 date_created: 2020-12-10T00:00:00.000Z
 image: "https://i.imgur.com/mErPwqL.png"
-slug: /utilities/cli/tar-encrypt-tarball/
 ---
 
 # Tar 加密打包

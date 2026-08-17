@@ -8,7 +8,6 @@ image: >-
   https://lh3.googleusercontent.com/pw/ACtC-3dlde6AddUGr3W5sFOvL0D8daOPkJQdjAiPB8u9xRorMWgPcie0_c6Gt7reWYvL9IMqe4M6NLpwn-FvoBAkNpmRWwZ0SrKJFibtnC6IxzmdSWEtY1u_dMmf4b0YnUewWCkHbEyWCd3Nzod1tiNwb0IiQQ=w800-no?authuser=0
 categories:
   - SRE
-slug: /devsecops/infrastructure/nginx-lets-encrypt-ssl/
 ---
 
 [Nginx] 手動 Let's Encrypt SSL 憑證與設定

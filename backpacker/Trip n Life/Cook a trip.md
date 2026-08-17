@@ -5,7 +5,6 @@ tags:
   - Mount
   - Patagonia
 hide_table_of_contents: true
-slug: /trip-n-life/cook-a-trip/
 ---
 
 # Cooking a trip

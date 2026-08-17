@@ -11,7 +11,6 @@ web: 'https://whc.unesco.org/en/list/86'
 wiki: 'https://zh.wikipedia.org/zh-tw/狮身人面像'
 mapmarker: default
 hide_table_of_contents: true
-slug: /2401-egypt/egypt/狮身人面像-great-sphinx-of-giza/
 ---
 
 人面獅身像 Great Sphinx of Giza

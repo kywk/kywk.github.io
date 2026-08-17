@@ -9,7 +9,6 @@ location:
   - 77.1667
 mapmarker: default
 hide_table_of_contents: true
-slug: /2601-xinjiang/xinjiang/玉素甫墓-yusuf-tomb/
 ---
 
 玉素甫墓 Yusuf Tomb

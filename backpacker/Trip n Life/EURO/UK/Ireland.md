@@ -1,6 +1,3 @@
----
-slug: /trip-n-life/euro/uk/ireland/
----
 #PIWIW #EURO
 
 

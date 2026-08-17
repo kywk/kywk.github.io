@@ -8,7 +8,6 @@ sidebar_position: 20
 hide_table_of_contents: true
 date_created: 2023-12-25T00:00:00.000Z
 image: 'https://i.imgur.com/mErPwqL.png'
-slug: /obsidian/obsidian-properties/
 ---
 
 # [Obs] Properties 屬性系統

@@ -12,7 +12,6 @@ tags:
 sidebar_position: 5
 date_created: 2024-05-24T00:00:00.000Z
 date_updated: 2026-07-26T00:00:00.000Z
-slug: /utilities/dotfiles-management/
 ---
 
 # Dotfiles Management - 跨平台配置管理系統

@@ -12,7 +12,6 @@ sidebar_position: 30
 sidebar_label: Kanban Plugin
 date_created: 2025-09-23T00:00:00.000Z
 date_updated: 2025-09-23T00:00:00.000Z
-slug: /obsidian/docusaurus/plugin-remark-obsidian-kanban/
 ---
 
 # [Docusaurus] remark-obsidian-kanban Plugin

@@ -1,6 +1,3 @@
----
-slug: /lifehacker/instant-notes-30sec/
----
 #LifeHack #Note 
 
 Ref: [工作愈忙愈要即時筆記，多花30秒做三步驟記錄，省下未來N倍重工時間](https://www.playpcesor.com/2025/09/30n.html)

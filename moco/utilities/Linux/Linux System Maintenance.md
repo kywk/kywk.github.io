@@ -7,7 +7,6 @@ tags:
   - Performance
   - Security
 date_created: 2024-12-19T00:00:00.000Z
-slug: /utilities/linux/linux-system-maintenance/
 ---
 
 # Linux 系統維護最佳實踐

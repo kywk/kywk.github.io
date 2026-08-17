@@ -6,7 +6,6 @@ tags:
   - Japan
 sidebar_position: 0
 date_created: 2022-06-06T13:03:12.000Z
-slug: /2002-zao/index-skiii-tohoku/
 ---
 
 # 2020.02.14 ~ 02.25 東北沒雪記

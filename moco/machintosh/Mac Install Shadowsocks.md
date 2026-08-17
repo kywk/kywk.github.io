@@ -8,7 +8,6 @@ sidebar_position: 60
 date_created: 2021-03-15T07:33:18.000Z
 image: >-
   https://lh3.googleusercontent.com/pw/ACtC-3d0i64fe-5XcNdEIkJXE_ucdKG_74gSGLz5YO2oik795zztBL7450Ff7dEQpMGRBXf7RKVteWTfqKM_efzjXja7JGyS3ZCUoPfkPJN61wfga53Tgo8mcFyWOFi_68TDQUZyNIvhEaUPyKPzgWAWHbwOHA=w1280-h720-no?authuser=0
-slug: /machintosh/mac-install-shadowsocks/
 ---
 
 # [Mac] Shadowsocks Setup

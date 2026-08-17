@@ -7,7 +7,6 @@ tags:
 hide_table_of_contents: true
 sidebar_position: 10
 date_created: 2011-05-16T11:02:02.000Z
-slug: /1105-sabah/110516-after-trip/
 ---
 
 # 11.05.16 旅人．漂流之後

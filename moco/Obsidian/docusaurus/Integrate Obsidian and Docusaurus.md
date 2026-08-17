@@ -10,7 +10,6 @@ sidebar_position: 10
 sidebar_label: Obsidian integration
 date_created: 2022-11-01T00:00:00.000Z
 date_updated: 2025-09-23T00:00:00.000Z
-slug: /obsidian/docusaurus/integrate-obsidian-and-docusaurus/
 ---
 
 # [Docusaurus] Obsidian 整合指南

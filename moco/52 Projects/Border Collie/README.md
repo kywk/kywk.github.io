@@ -1,6 +1,3 @@
----
-slug: /52-projects/border-collie/readme/
----
 # 🐕 BorderCollie - 專案管理甘特圖
 
 BorderCollie 是一個現代化、輕量級的專案管理與人力資源甘特圖工具。它專為快速編輯與視覺化設計，支援純文字格式定義專案，並即時轉換為互動式甘特圖。

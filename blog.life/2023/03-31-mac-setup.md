@@ -73,7 +73,7 @@ brew install sublime-text
 開發工具
 --------
 
-參考: [_macOS 開發環境建構_](/life/2024/11/30/Mac-DevEnv-Setup/)
+參考: [_macOS 開發環境建構_](/life/2024/11/30/mac-devenv-setup/)
 
 
 生產力工具

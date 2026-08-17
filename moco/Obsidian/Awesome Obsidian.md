@@ -12,7 +12,6 @@ sidebar_position: 0
 sidebar_label: Awesome Resources
 date_created: 2023-01-23T00:00:00.000Z
 date_updated: 2025-12-24T00:00:00.000Z
-slug: /obsidian/awesome-obsidian/
 ---
 
 # Awesome Obsidian Resources

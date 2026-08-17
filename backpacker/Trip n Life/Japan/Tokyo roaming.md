@@ -1,7 +1,3 @@
----
-slug: /trip-n-life/japan/tokyo-roaming/
----
-
 ## Museum 
 
 - [吉田社長の日本旅遊指南 - 「角川武藏野博物館」真的很漂亮！來東京玩的時候可以來這裡走走拍照喔～ | Facebook](https://www.facebook.com/letsgojp/posts/pfbid02vBLMLUfyu5uPZzFRT8dtGk8VjVe9vqWpeKfFzZpHwdKzMUiudHbTJKw5YycoouoGl)

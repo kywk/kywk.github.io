@@ -10,7 +10,6 @@ location:
 web: 'http://www.jjsski.com/'
 mapmarker: default
 hide_table_of_contents: true
-slug: /2601-xinjiang/xinjiang/將軍山滑雪場-general-mountain-ski-resort/
 ---
 
 將軍山滑雪場 General Mountain Ski Resort

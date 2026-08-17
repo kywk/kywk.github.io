@@ -10,7 +10,6 @@ location:
 wiki: 'https://en.wikipedia.org/wiki/Medinet_Habu'
 mapmarker: default
 hide_table_of_contents: true
-slug: /2401-egypt/egypt/哈布城-medinet-habu/
 ---
 
 哈布城 Medinet Habu

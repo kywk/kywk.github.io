@@ -9,7 +9,6 @@ location:
   - 86.9333
 mapmarker: default
 hide_table_of_contents: true
-slug: /2601-xinjiang/xinjiang/白沙湖-baisha-lake/
 ---
 
 白沙湖 Baisha Lake

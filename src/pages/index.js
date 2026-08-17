@@ -40,7 +40,7 @@ const quickStarts = [
     id: 'weekend-project',
     title: 'Weekend Project',
     description: '把點子化成作品的週末練習，紀錄每一次動手的細節。',
-    to: '/lifehacker/WEEKEND-PROJECT/',
+    to: '/lifehacker/weekend-project/',
   },
   {
     id: 'devsecops',

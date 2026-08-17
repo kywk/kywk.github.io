@@ -6,7 +6,6 @@ tags:
   - Backpacker
   - Malaysia
 date_created: 2011-05-11T10:15:21.000Z
-slug: /1105-sabah/note-plan-for-sabah-2011/
 ---
 
 行前準備

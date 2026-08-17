@@ -4,7 +4,6 @@ title: Awesome TypeScript
 tags:
   - TypeScript
   - Awesome
-slug: /javascript/typescript/awesome-typescript/
 ---
 
 Awesome TypeScript Resources

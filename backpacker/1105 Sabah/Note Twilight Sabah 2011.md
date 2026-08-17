@@ -6,7 +6,6 @@ tags:
   - Backpacker
   - Malaysia
 date_created: 2011-05-16T11:13:10.000Z
-slug: /1105-sabah/note-twilight-sabah-2011/
 ---
 
 暮光

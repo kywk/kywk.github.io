@@ -1,6 +1,5 @@
 ---
 title: 2026 Jan 心將 新疆
-slug: /2601-xinjiang/index-xinjiang/
 tags:
   - Backpacker
   - Index

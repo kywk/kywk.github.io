@@ -9,7 +9,6 @@ location:
   - -70.5833
 mapmarker: default
 hide_table_of_contents: true
-slug: /2509-chile/chile/奇林卡農場-campo-la-quirinca/
 ---
 
 奇林卡農場 Campo La Quirinca

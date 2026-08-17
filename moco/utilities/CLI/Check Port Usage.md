@@ -8,7 +8,6 @@ tags:
 sidebar_position: 50
 hide_table_of_contents: true
 date_created: 2024-05-30T00:00:00.000Z
-slug: /utilities/cli/check-port-usage/
 ---
 
 # 網路埠號使用檢查

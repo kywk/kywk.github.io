@@ -6,7 +6,6 @@ tags:
   - Malaysia
 sidebar_position: 0
 date_created: 2011-05-13T14:39:22.000Z
-slug: /1105-sabah/index-backpacker-in-sabah/
 ---
 
 # 2011.05.13 ~ 05.16 馬來背包客

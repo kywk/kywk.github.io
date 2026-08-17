@@ -7,7 +7,6 @@ tags:
   - TypeScript
 date_created: 2022-09-30T16:00:00.000Z
 image: 'https://i.imgur.com/mErPwqL.png'
-slug: /javascript/express/express-typescript/
 ---
 
 [Express] Using TypeScript

@@ -1,6 +1,3 @@
----
-slug: /52-projects/sheltie/prompt-arrow-gantt/
----
 # Arrow Gantt Chart Design Prompt
 
 ## 設計目標

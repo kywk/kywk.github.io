@@ -11,7 +11,6 @@ sidebar_position: 30
 sidebar_label: Block Link & Embed
 date_created: 2022-11-02T16:00:00.000Z
 date_updated: 2025-12-24T00:00:00.000Z
-slug: /obsidian/obsidian-block-link-embed/
 ---
 
 # [Obsidian] Block Link & Embed - 區塊連結與嵌入

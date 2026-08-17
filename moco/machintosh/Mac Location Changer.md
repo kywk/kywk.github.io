@@ -9,7 +9,6 @@ sidebar_position: 30
 hide_table_of_contents: true
 date_created: 2022-08-24T16:00:00.000Z
 image: 'https://i.imgur.com/mErPwqL.png'
-slug: /machintosh/mac-location-changer/
 ---
 
 # [Mac] 自動依 Wi-Fi 名稱更改網路位置

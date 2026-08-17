@@ -8,7 +8,6 @@ tags:
   - Awesome
 date_created: 2024-01-01T00:00:00.000Z
 date_updated: 2026-07-26
-slug: /utilities/git/awesome-git/
 ---
 
 # Awesome Git

@@ -9,7 +9,6 @@ location:
   - 77.2500
 mapmarker: default
 hide_table_of_contents: true
-slug: /2601-xinjiang/xinjiang/錫提亞迷城-xitiya-lost-city/
 ---
 
 錫提亞迷城 Xitiya Lost City

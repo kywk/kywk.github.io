@@ -12,7 +12,6 @@ image: >-
 categories:
   - backpacker
   - india
-slug: /1608-india/essays-pangong-tso/
 ---
 
 三個傻瓜．班公錯 Pangong Tso

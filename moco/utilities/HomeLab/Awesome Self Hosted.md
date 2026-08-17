@@ -7,7 +7,6 @@ tags:
   - Awesome
   - Software
 date_created: 2024-12-19T00:00:00.000Z
-slug: /utilities/homelab/awesome-self-hosted/
 ---
 
 # 自架服務清單

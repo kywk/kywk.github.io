@@ -9,7 +9,6 @@ hide_table_of_contents: true
 date_created: 2020-12-07T08:48:04.000Z
 image: >-
   https://lh3.googleusercontent.com/pw/ACtC-3fnLstA2rsbmbt0hI7IWqhfzOU17UzGFO6pEIfoC2_x_l526rOlZ3_p4RbWvVFWlT6uMlnPMzjCSxDILtn7Er5Ch0JPYJReE0BhmCXqJh6TsqrygLrL17dcz1Dyq3eJ7MZhHDqQhvWbX3zJvneD1CRanA=w800-no?authuser=0
-slug: /machintosh/mac-install-iftop/
 ---
 
 # [Mac] iftop 安裝失敗與解決方式

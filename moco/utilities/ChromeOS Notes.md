@@ -9,7 +9,6 @@ image: 'https://i.imgur.com/mErPwqL.png'
 hide_table_of_contents: true
 date_created: 2022-10-19T16:00:00.000Z
 date_updated: 2024-12-26T00:00:00.000Z
-slug: /utilities/chromeos-notes/
 ---
 
 # [ChromeOS] 設定與使用筆記

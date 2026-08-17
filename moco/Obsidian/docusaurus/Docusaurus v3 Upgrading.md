@@ -10,7 +10,6 @@ tags:
   - 版本移轉
 date_created: 2024-01-10T00:00:00.000Z
 date_updated: 2026-08-17T00:00:00.000Z
-slug: /obsidian/docusaurus/docusaurus-v3-upgrading/
 ---
 
 # [Docusaurus] v3 升級筆記

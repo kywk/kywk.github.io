@@ -8,7 +8,6 @@ tags:
 sidebar_position: 20
 date_created: 2026-08-17
 date_updated: 2026-08-17
-slug: /lifehacker/habit-tracking-with-obsidian/
 ---
 
 # 用 Obsidian 做量化自我

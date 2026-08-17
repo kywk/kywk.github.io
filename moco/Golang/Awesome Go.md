@@ -4,7 +4,6 @@ title: Awesome Golang
 tags:
   - Go
   - Awesome
-slug: /golang/awesome-go/
 ---
 
 # Awesome Golang Resources

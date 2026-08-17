@@ -6,7 +6,6 @@ tags:
   - Beginner
 date_created: 2022-05-26T16:00:00.000Z
 image: 'https://i.imgur.com/mErPwqL.png'
-slug: /javascript/typescript/typescript-get-started/
 ---
 
 import Tabs from '@theme/Tabs';

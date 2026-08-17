@@ -5,7 +5,6 @@ description: Hackintosh 相關資源、工具與社群整理
 tags:
   - Awesome
   - Hackintosh
-slug: /machintosh/hackintosh/awesome-hackintosh/
 ---
 
 # Awesome Hackintosh Resources

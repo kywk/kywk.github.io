@@ -1,6 +1,3 @@
----
-slug: /52-projects/sheltie/prompt/
----
 # 🤖 Sheltie AI 開發指南 (Prompt)
 
 此文件提供 AI 輔助開發 Sheltie 專案時的提示詞範本，幫助快速建構類似的專案進展協作工具。

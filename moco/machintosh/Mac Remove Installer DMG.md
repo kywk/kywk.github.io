@@ -7,7 +7,6 @@ sidebar_position: 60
 date_created: 2021-05-20T09:43:46.000Z
 image: >-
   https://lh3.googleusercontent.com/pw/ACtC-3cDul66SHDP7oBSL7YOlMBo-SJl26dxZ8JYRv_9BfehLRz0El7Af6HPSRaBXo50ExW2q4oiF4cHsBmeAxq9Jj3GOJQYd4hjQ_MJIQf16HDYM12QvcbkhLLvFYRVY290eKrzn6rOyfiH-kCCHtdB7efiYg=w800-no?authuser=0
-slug: /machintosh/mac-remove-installer-dmg/
 ---
 
 # [Mac] macOS Big Sur 刪除 Mojave/Catalina 映像檔

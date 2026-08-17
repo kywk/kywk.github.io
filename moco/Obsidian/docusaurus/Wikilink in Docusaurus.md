@@ -1,5 +1,4 @@
 ---
-slug: /obsidian/docusaurus/wikilink-in-docusaurus/
 title: Wikilink in Docusaurus
 description: 在 Docusaurus 中實現 Obsidian Wikilink 語法支援的完整指南
 tags: [obsidian, docusaurus, wikilink, markdown]

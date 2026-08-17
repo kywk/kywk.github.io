@@ -11,7 +11,6 @@ sidebar_position: 10
 hide_table_of_contents: true
 date_created: 2024-12-22T00:00:00.000Z
 date_updated: 2026-07-26T00:00:00.000Z
-slug: /utilities/git/git-delta/
 ---
 
 # Git Delta

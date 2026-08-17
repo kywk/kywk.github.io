@@ -9,7 +9,6 @@ tags:
   - Tools
 date_created: 2025-01-13T00:00:00.000Z
 date_updated: 2025-01-13T00:00:00.000Z
-slug: /techstack/openapi/awesome-openapi/
 ---
 
 # Awesome OpenAPI Resources

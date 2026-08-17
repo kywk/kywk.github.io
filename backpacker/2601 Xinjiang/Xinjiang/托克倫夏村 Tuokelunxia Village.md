@@ -9,7 +9,6 @@ location:
   - 75.2167
 mapmarker: default
 hide_table_of_contents: true
-slug: /2601-xinjiang/xinjiang/托克倫夏村-tuokelunxia-village/
 ---
 
 托克倫夏村 Tuokelunxia Village

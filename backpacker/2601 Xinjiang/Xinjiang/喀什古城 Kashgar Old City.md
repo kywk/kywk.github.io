@@ -10,7 +10,6 @@ location:
 wiki: 'https://zh.wikipedia.org/wiki/喀什古城'
 mapmarker: default
 hide_table_of_contents: true
-slug: /2601-xinjiang/xinjiang/喀什古城-kashgar-old-city/
 ---
 
 喀什古城 Kashgar Old City

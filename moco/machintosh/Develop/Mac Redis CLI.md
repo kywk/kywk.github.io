@@ -10,7 +10,6 @@ tags:
   - Homebrew
 sidebar_position: 30
 date_created: 2024-10-31T00:00:00.000Z
-slug: /machintosh/develop/mac-redis-cli/
 ---
 
 # Redis CLI 安裝與使用

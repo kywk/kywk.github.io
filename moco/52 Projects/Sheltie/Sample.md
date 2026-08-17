@@ -1,6 +1,3 @@
----
-slug: /52-projects/sheltie/sample/
----
 # AP 2.0 KM
 
 ## 基本資訊

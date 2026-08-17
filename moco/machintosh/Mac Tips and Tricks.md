@@ -9,7 +9,6 @@ tags:
 sidebar_position: 5
 date_created: 2023-01-02T00:00:00.000Z
 date_updated: 2025-01-20T00:00:00.000Z
-slug: /machintosh/mac-tips-and-tricks/
 ---
 
 # [Mac] macOS 實用小技巧與工具

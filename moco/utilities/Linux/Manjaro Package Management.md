@@ -8,7 +8,6 @@ tags:
 date_created: 2024-12-19T00:00:00.000Z
 image: >-
   https://lh3.googleusercontent.com/pw/AM-JKLW7hPZ9Hjx3TMb2mo5O21FMrQ3-GDHI0YfAdwBcjcSr9XIkGswayNGGub1aY2JXnCDn1SWxvX9OKFSW1vpEr4X5qIa7vE7L8u65_RIs1mVcUR8rhzfA6Tw-zU6bdBIpBeItDDGS-RCWEuINuyzUFF0-xA=w800-no?authuser=0
-slug: /utilities/linux/manjaro-package-management/
 ---
 
 # Manjaro 套件管理完整指南

@@ -7,7 +7,6 @@ tags:
   - Malaysia/Sabah
 date_created: 2011-05-14T10:42:47.000Z
 date_updated: 2014-01-06T10:42:47.000Z
-slug: /1105-sabah/sabah-philippines-market/
 ---
 
 [沙巴] Philippines Market 菲律賓夜市

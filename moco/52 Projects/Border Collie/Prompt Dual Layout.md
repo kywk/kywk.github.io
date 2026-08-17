@@ -1,6 +1,3 @@
----
-slug: /52-projects/border-collie/prompt-dual-layout/
----
 # Dual Layout 設計模式 - AI Prompt 參考
 
 > 本文件整理「左編輯、右預覽」雙欄佈局的設計模式與實作細節，供有類似需求的前端專案參考使用。

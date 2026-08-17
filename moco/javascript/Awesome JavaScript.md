@@ -4,7 +4,6 @@ title: Awesome Node.js
 tags:
   - Node.js
   - Awesome
-slug: /javascript/awesome-javascript/
 ---
 
 Awesome Node.js Resources

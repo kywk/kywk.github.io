@@ -5,7 +5,6 @@ tags:
 date_created: 2022-05-27T00:00:00.000Z
 categories:
   - typescript
-slug: /javascript/typescript/typescript-tsc-error/
 ---
 
 [TypeScript] tsc Error Troubleshooting

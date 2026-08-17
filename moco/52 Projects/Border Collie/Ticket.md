@@ -1,6 +1,3 @@
----
-slug: /52-projects/border-collie/ticket/
----
 ## 調教歷程
 
 ---

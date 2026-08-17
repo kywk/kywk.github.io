@@ -1,6 +1,3 @@
----
-slug: /java/usecase/gantt-chat/gantt-chat-svg/
----
 # Java Gantt Chat SVG generator
 
 ## Intro

@@ -8,7 +8,6 @@ sidebar_position: 60
 hide_table_of_contents: true
 date_created: 2021-04-06T03:18:48.000Z
 image: 'https://i.imgur.com/mErPwqL.png'
-slug: /machintosh/mac-make-installer-iso/
 ---
 
 # [Mac] 製作 macOS 安裝 ISO 檔

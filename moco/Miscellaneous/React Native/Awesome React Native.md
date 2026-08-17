@@ -7,7 +7,6 @@ tags:
   - Mobile Development
   - Awesome
 date_created: 2022-08-01T00:00:00.000Z
-slug: /miscellaneous/react-native/awesome-react-native/
 ---
 
 # Awesome React Native Resources

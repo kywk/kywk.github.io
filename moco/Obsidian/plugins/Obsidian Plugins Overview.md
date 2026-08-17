@@ -12,7 +12,6 @@ sidebar_position: 1
 sidebar_label: Plugins Overview
 date_created: 2025-12-24T00:00:00.000Z
 date_updated: 2025-12-24T00:00:00.000Z
-slug: /obsidian/plugins/obsidian-plugins-overview/
 ---
 
 # [Obsidian] Plugins 使用狀況總覽

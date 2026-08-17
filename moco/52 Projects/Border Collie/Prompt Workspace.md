@@ -1,6 +1,3 @@
----
-slug: /52-projects/border-collie/prompt-workspace/
----
 # Workspace + Gist 多專案管理功能 - AI Prompt 參考
 
 > 本文件整理 Workspace 與 Gist 功能的需求定義、設計決策與實作細節，供有類似需求的前端專案參考使用。

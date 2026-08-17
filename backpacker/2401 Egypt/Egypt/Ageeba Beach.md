@@ -9,7 +9,6 @@ location:
   - 27.00901
 mapmarker: default
 hide_table_of_contents: true
-slug: /2401-egypt/egypt/ageeba-beach/
 ---
 
 Ageeba Beach

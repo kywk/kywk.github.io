@@ -9,7 +9,6 @@ date_created: 2014-12-17T15:48:07.000Z
 categories:
   - backpacker
   - japan
-slug: /1411-mt-fuji-marathon/note-lodge-tokyo-2014/
 ---
 
 2014 冬 日光、河口湖、東京．住宿經驗

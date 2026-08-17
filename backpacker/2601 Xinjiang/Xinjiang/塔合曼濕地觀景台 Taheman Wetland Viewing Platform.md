@@ -9,7 +9,6 @@ location:
   - 75.1833
 mapmarker: default
 hide_table_of_contents: true
-slug: /2601-xinjiang/xinjiang/塔合曼濕地觀景台-taheman-wetland-viewing-platform/
 ---
 
 塔合曼濕地觀景台 Taheman Wetland Viewing Platform

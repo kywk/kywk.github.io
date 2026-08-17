@@ -9,7 +9,6 @@ sidebar_position: 1
 hide_table_of_contents: true
 date_created: 2024-04-07T00:00:00.000Z
 image: 'https://i.imgur.com/mErPwqL.png'
-slug: /obsidian/my-obsidian/
 ---
 
 # [Obs] Customize my Obsidian

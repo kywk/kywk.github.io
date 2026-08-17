@@ -6,7 +6,6 @@ tags:
   - Self-Hosted
   - Infrastructure
 date_created: 2024-12-19T00:00:00.000Z
-slug: /utilities/homelab/homelab-setup-note/
 ---
 
 # HomeLab 建置與管理

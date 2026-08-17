@@ -11,7 +11,6 @@ tags:
 sidebar_position: 6
 date_created: 2025-09-20
 date_updated: 2026-07-26
-slug: /utilities/zinit/
 ---
 
 # Zinit - 高效能 Zsh 插件管理器

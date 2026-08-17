@@ -10,7 +10,6 @@ location:
 wiki: 'https://zh.wikipedia.org/zh-tw/帝王谷'
 mapmarker: default
 hide_table_of_contents: true
-slug: /2401-egypt/egypt/帝王谷-valley-of-the-kings/
 ---
 
 帝王谷 Valley of the Kings

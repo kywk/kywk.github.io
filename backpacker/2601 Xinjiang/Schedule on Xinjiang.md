@@ -2,7 +2,6 @@
 hide_table_of_contents: true
 
 title: Day by day
-slug: /2601-xinjiang/schedule-on-xinjiang/
 tags:
   - Backpacker
   - Index

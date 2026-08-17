@@ -11,7 +11,6 @@ location:
   - -72.50744
 mapmarker: restaurant
 hide_table_of_contents: true
-slug: /2509-chile/chile/巴塔哥尼亞黑羊店-patagonia-black-lamb/
 ---
 
 巴塔哥尼亞黑羊烘焙坊 Patagonia Black Lamb

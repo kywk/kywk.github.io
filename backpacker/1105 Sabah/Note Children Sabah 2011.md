@@ -8,7 +8,6 @@ tags:
   - Essays
   - Photography
 date_created: 2014-01-06T11:17:48.000Z
-slug: /1105-sabah/note-children-sabah-2011/
 ---
 
 童顏

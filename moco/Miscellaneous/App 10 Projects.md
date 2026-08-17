@@ -6,7 +6,6 @@ tags:
   - Web Development
   - Coding Challenge
 date_created: 2023-01-01T00:00:00.000Z
-slug: /miscellaneous/app-10-projects/
 ---
 
 # 10 JavaScript Projects - Coding Challenge

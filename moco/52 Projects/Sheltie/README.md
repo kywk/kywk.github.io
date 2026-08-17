@@ -1,6 +1,3 @@
----
-slug: /52-projects/sheltie/readme/
----
 # 🐕 Sheltie - 專案進展協作工具
 
 Sheltie 是一個 Markdown 線上協同編輯工具，可依循固定格式編寫專案進展，自動整理成投影片，並提供線上投影片播放和匯出 PPTX 功能。

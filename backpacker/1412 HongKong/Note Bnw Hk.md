@@ -11,7 +11,6 @@ date_created: 2014-12-27T21:40:27.000Z
 categories:
   - backpacker
   - hongkong
-slug: /1412-hongkong/note-bnw-hk/
 ---
 
 黑白．香港映像

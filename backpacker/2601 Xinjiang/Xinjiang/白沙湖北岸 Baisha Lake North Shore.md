@@ -9,7 +9,6 @@ location:
   - 86.9350
 mapmarker: default
 hide_table_of_contents: true
-slug: /2601-xinjiang/xinjiang/白沙湖北岸-baisha-lake-north-shore/
 ---
 
 白沙湖北岸 Baisha Lake North Shore

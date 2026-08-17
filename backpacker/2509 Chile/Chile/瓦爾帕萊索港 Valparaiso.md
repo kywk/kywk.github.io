@@ -11,7 +11,6 @@ web: 'https://www.valparaiso.cl/'
 wiki: 'https://zh.wikipedia.org/wiki/瓦爾帕萊索'
 mapmarker: default
 hide_table_of_contents: true
-slug: /2509-chile/chile/瓦爾帕萊索港-valparaiso/
 ---
 
 瓦爾帕萊索港 Valparaiso

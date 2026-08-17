@@ -7,7 +7,6 @@ tags:
   - Security
 date_created: 2022-09-28T16:00:00.000Z
 image: 'https://i.imgur.com/mErPwqL.png'
-slug: /javascript/express/express-cors/
 ---
 
 [Express] CORS

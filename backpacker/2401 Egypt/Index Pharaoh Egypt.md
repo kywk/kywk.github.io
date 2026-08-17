@@ -9,7 +9,6 @@ tags:
 sidebar_position: 10
 date_created: 2023-08-20T00:00:00.000Z
 date_updated: 2023-08-20T00:00:00.000Z
-slug: /2401-egypt/index-pharaoh-egypt/
 ---
 
 # 2024.01.23 ~ 02.03 法 老 埃及

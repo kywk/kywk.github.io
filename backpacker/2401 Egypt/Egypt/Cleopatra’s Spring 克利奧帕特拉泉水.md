@@ -9,7 +9,6 @@ location:
   - 25.5495
 mapmarker: default
 hide_table_of_contents: true
-slug: /2401-egypt/egypt/cleopatra’s-spring-克利奧帕特拉泉水/
 ---
 
 Cleopatra’s Spring 克利奧帕特拉泉水

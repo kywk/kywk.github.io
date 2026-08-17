@@ -7,7 +7,6 @@ tags:
   - Index
   - Egypt
 sidebar_position: 11
-slug: /2401-egypt/schedule-on-egypt/
 ---
 
 ## MEMO

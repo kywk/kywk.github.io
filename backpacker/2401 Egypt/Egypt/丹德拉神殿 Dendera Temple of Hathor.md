@@ -10,7 +10,6 @@ location:
 wiki: 'https://en.wikipedia.org/wiki/Dendera'
 hide_table_of_contents: true
 mapmarker: default
-slug: /2401-egypt/egypt/丹德拉神殿-dendera-temple-of-hathor/
 ---
 
 丹德拉神殿 Dendera Temple of Hathor

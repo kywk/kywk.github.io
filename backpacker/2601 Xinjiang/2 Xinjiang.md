@@ -8,7 +8,6 @@ sidebar_position: 99
 hide_table_of_contents: false
 date_created: 2026-01-04
 date_updated: 2026-01-04
-slug: /2601-xinjiang/2-xinjiang/
 ---
 
 # [Xinjiang] TODO & Checklist 🏔️

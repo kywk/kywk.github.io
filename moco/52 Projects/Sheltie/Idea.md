@@ -1,7 +1,3 @@
----
-slug: /52-projects/sheltie/idea/
----
-
 # Sheltie
 
 Sheltie 是個 markdown 線上協同編輯的工具, 依循固定格式編寫專案進展, 

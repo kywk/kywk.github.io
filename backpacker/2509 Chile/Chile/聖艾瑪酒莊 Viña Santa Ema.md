@@ -10,7 +10,6 @@ location:
 web: 'https://www.santaema.cl/'
 mapmarker: default
 hide_table_of_contents: true
-slug: /2509-chile/chile/聖艾瑪酒莊-viña-santa-ema/
 ---
 
 聖艾瑪酒莊 Viña Santa Ema

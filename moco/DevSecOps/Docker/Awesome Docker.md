@@ -4,7 +4,6 @@ title: Awesome Docker
 tags:
   - Docker
   - Awesome
-slug: /devsecops/docker/awesome-docker/
 ---
 
 Awesome Docker Resources

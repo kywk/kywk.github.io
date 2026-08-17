@@ -7,7 +7,6 @@ tags:
   - Singapore
 sidebar_position: 0
 date_created: 2013-01-20T14:50:52.000Z
-slug: /1301-india/index-incredible-india/
 ---
 
 # 2013.01.17 ~ 01.30 印度 不思議

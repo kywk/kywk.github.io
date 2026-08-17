@@ -11,7 +11,6 @@ location:
 web: 'http://www.cafeadobe.cl/'
 mapmarker: restaurant
 hide_table_of_contents: true
-slug: /2509-chile/chile/adobe-restaurant/
 ---
 
 Adobe Restaurant

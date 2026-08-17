@@ -7,7 +7,6 @@ sidebar_position: 10
 hide_table_of_contents: true
 date_created: 2026-07-26
 date_updated: 2026-07-26
-slug: /utilities/cli/atuin/
 ---
 
 # Atuin
@@ -208,6 +207,6 @@ atuin stats
 
 - [Atuin 官方文件](https://docs.atuin.sh/)
 - [Atuin GitHub](https://github.com/atuinsh/atuin)
-- [fzf](/moco/Utilities/CLI/fzf/) — 通用模糊搜尋工具
+- [fzf](/moco/utilities/cli/fzf/) — 通用模糊搜尋工具
 - [Zinit 插件管理](/utilities/cli/zinit/) — Zsh 插件管理器
 - [zsh-history-substring-search](https://github.com/zsh-users/zsh-history-substring-search) — ↑↓ 前綴搜尋插件

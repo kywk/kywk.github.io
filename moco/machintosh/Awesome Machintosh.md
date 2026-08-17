@@ -5,7 +5,6 @@ description: macOS 相關資源、工具與學習資料整理
 tags:
   - Awesome
   - Mac
-slug: /machintosh/awesome-machintosh/
 ---
 
 # Awesome Machintosh Resources

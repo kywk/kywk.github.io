@@ -8,7 +8,6 @@ sidebar_position: 50
 hide_table_of_contents: true
 date_created: 2023-01-02T09:31:07.000Z
 image: "https://i.imgur.com/mErPwqL.png"
-slug: /utilities/cli/ssh-config/
 ---
 
 # SSH 配置與金鑰管理

@@ -9,7 +9,6 @@ location:
   - 86.9300
 mapmarker: default
 hide_table_of_contents: true
-slug: /2601-xinjiang/xinjiang/白沙湖南岸-baisha-lake-south-shore/
 ---
 
 白沙湖南岸 Baisha Lake South Shore

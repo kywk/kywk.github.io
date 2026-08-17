@@ -10,7 +10,6 @@ date_created: 2015-02-05T21:44:08.000Z
 categories:
   - backpacker
   - hongkong
-slug: /1412-hongkong/hk-blue-house/
 ---
 
 藍屋

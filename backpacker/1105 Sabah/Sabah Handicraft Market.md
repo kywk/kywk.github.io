@@ -7,7 +7,6 @@ tags:
   - Malaysia/Sabah
 date_created: 2011-05-12T10:24:02.000Z
 date_updated: 2014-01-06T10:24:02.000Z
-slug: /1105-sabah/sabah-handicraft-market/
 ---
 
 [沙巴] Handicraft Market 菲律賓手工藝市場

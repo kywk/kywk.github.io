@@ -9,7 +9,6 @@ location:
   - 75.2500
 mapmarker: default
 hide_table_of_contents: true
-slug: /2601-xinjiang/xinjiang/盤龍古道-panlong-ancient-road/
 ---
 
 盤龍古道 Panlong Ancient Road

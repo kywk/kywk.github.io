@@ -11,7 +11,6 @@ sidebar_position: 5
 hide_table_of_contents: false
 date_created: 2025-01-13T00:00:00.000Z
 date_updated: 2025-01-13T00:00:00.000Z
-slug: /techstack/database/awesome-database-gui-client/
 ---
 
 # Awesome Database GUI Client

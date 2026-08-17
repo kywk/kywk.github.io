@@ -9,7 +9,6 @@ location:
   - 75.3000
 mapmarker: default
 hide_table_of_contents: true
-slug: /2601-xinjiang/xinjiang/班迪爾藍湖-bandier-blue-lake/
 ---
 
 班迪爾藍湖 Bandier Blue Lake

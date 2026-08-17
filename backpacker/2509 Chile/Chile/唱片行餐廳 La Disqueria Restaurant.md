@@ -10,7 +10,6 @@ location:
   - -72.50871
 mapmarker: restaurant
 hide_table_of_contents: true
-slug: /2509-chile/chile/唱片行餐廳-la-disqueria-restaurant/
 ---
 
 唱片行餐廳 La Disqueria Restaurant

@@ -6,7 +6,6 @@ tags:
   - Backpacker
   - Malaysia/KualaLumpur
 date_created: 2014-01-03T23:31:01.000Z
-slug: /1105-sabah/kuala-lumpur-petaling-street/
 ---
 
 [吉隆坡] Petaling Street 唐人街 

@@ -9,7 +9,6 @@ location:
   - 75.0000
 mapmarker: default
 hide_table_of_contents: true
-slug: /2601-xinjiang/xinjiang/氣泡山-bubble-mountain/
 ---
 
 氣泡山 Bubble Mountain

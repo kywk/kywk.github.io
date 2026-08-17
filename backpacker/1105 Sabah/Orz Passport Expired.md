@@ -6,7 +6,6 @@ tags:
   - Backpacker
   - Life/Orz
 date_created: 2013-08-26T08:18:47.000Z
-slug: /1105-sabah/orz-passport-expired/
 ---
 
 護照過期！說好的於心不忍呢～

@@ -4,7 +4,6 @@ title: 52 Projects
 tags:
   - 52Projects
   - Awesome
-slug: /52-projects/52-projects/
 ---
 
 # 52 Projects

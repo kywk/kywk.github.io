@@ -6,7 +6,6 @@ tags:
   - Mac
   - Dropbox
 date_created: 2023-01-21
-slug: /machintosh/applications/maestral/
 ---
 
 # [Mac] Maestral, Open source Dropbox client

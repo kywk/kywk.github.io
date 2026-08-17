@@ -7,7 +7,6 @@ tags:
   - Life/Orz
   - India
 date_created: 2013-06-26T01:57:48.000Z
-slug: /1301-india/orz-udaipur-airport/
 ---
 
 [牛在囧途] 烏代浦爾機場炸彈客事件

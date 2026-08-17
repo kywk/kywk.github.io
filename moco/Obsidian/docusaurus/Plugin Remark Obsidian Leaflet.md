@@ -12,7 +12,6 @@ sidebar_position: 40
 sidebar_label: Leaflet Plugin
 date_created: 2025-12-24T00:00:00.000Z
 date_updated: 2026-08-17T00:00:00.000Z
-slug: /obsidian/docusaurus/plugin-remark-obsidian-leaflet/
 ---
 
 # [Docusaurus] remark-obsidian-leaflet Plugin

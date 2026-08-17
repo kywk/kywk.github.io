@@ -8,7 +8,6 @@ tags:
 sidebar_position: 20
 date_created: 2025-05-31
 date_updated: 2025-05-31
-slug: /machintosh/develop/terminals/
 ---
 
 # [Mac] 終端機軟體比較

@@ -10,7 +10,6 @@ location:
 wiki: 'https://zh.wikipedia.org/wiki/喀拉庫勒湖'
 mapmarker: default
 hide_table_of_contents: true
-slug: /2601-xinjiang/xinjiang/喀拉庫勒湖-karakul-lake/
 ---
 
 喀拉庫勒湖 Karakul Lake

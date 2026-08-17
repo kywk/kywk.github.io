@@ -10,7 +10,6 @@ location:
 wiki: 'https://zh.wikipedia.org/wiki/喀納斯湖'
 mapmarker: default
 hide_table_of_contents: true
-slug: /2601-xinjiang/xinjiang/喀納斯三灣-kanas-three-bays/
 ---
 
 喀納斯三灣 Kanas Three Bays

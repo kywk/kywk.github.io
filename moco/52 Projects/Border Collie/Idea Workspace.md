@@ -1,6 +1,3 @@
----
-slug: /52-projects/border-collie/idea-workspace/
----
 ## 需求目的
 
 編輯區新增 Workspace 功能, localstorge 可以儲存多組不同專案的設定.

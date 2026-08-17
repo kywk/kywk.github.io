@@ -4,7 +4,6 @@ title: trip by AirAsia 2011
 tags:
   - Backpacker
 date_created: 2011-01-05T18:50:03.000Z
-slug: /trip-n-life/1102-with-airasia/
 ---
 
 # trip by AirAsia 2011

@@ -7,7 +7,6 @@ tags:
   - Life/Orz
   - Singapore
 date_created: 2013-01-20T23:59:10.000Z
-slug: /1301-india/orz-its-travel/
 ---
 
 [牛在囧途] 也是旅行的一部分

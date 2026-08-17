@@ -10,7 +10,6 @@ image: 'https://i.imgur.com/mErPwqL.png'
 sidebar_position: 0
 date_created: 2026-01-06T00:00:00.000Z
 date_updated: 2026-01-06T00:00:00.000Z
-slug: /52-projects/sheltie/sheltie/
 ---
 ## 序
 

@@ -7,7 +7,6 @@ tags:
   - Life/Orz
   - Srilanka
 date_created: 2013-02-19T01:10:58.000Z
-slug: /1302-srilanka/orz-far-2-srilanka/
 ---
 
 [牛在囧途] 遙遠的斯里蘭卡

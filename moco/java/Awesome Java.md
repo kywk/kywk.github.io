@@ -4,7 +4,6 @@ title: Awesome Java
 tags:
   - Java
   - Awesome
-slug: /java/awesome-java/
 ---
 
 Awesome Java Resources

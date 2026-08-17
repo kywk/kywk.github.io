@@ -10,7 +10,6 @@ tags:
 sidebar_position: 1
 date_created: 2022-08-13T00:00:00.000Z
 date_updated: 2025-01-20T00:00:00.000Z
-slug: /machintosh/develop/mac-development-environment-setup/
 ---
 
 # [Mac] 開發環境建構

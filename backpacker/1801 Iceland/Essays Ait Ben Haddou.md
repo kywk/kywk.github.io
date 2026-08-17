@@ -12,7 +12,6 @@ image: >-
 categories:
   - backpacker
   - morocco
-slug: /1801-iceland/essays-ait-ben-haddou/
 ---
 
 翻看自己曾經大量使用但停用多時的圖像社群平台，只像是另一人的人生。  

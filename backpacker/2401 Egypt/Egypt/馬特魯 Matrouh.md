@@ -9,7 +9,6 @@ location:
   - 27.23752
 mapmarker: default
 hide_table_of_contents: true
-slug: /2401-egypt/egypt/馬特魯-matrouh/
 ---
 
 馬特魯 Matrouh

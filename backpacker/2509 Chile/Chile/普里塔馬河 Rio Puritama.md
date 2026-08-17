@@ -10,7 +10,6 @@ location:
 wiki: 'https://en.wikipedia.org/wiki/Puritama_River'
 mapmarker: default
 hide_table_of_contents: true
-slug: /2509-chile/chile/普里塔馬河-rio-puritama/
 ---
 
 普里塔馬河 Rio Puritama

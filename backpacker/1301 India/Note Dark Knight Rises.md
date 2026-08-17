@@ -7,7 +7,6 @@ tags:
   - India
   - India/Jodhpur
 date_created: 2014-01-14T17:00:18.000Z
-slug: /1301-india/note-dark-knight-rises/
 ---
 
 黑暗騎士．黎明升起

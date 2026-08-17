@@ -3,7 +3,6 @@ sidebar_position: 10
 title: 狗派宇宙
 tags:
   - Awesome
-slug: /52-projects/dog-stack/
 ---
 
 #  狗派宇宙

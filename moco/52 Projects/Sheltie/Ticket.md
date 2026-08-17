@@ -1,7 +1,3 @@
----
-slug: /52-projects/sheltie/ticket/
----
-
 播放模式下:
 - 字體再放大些
 - 時程長度依實際需要日期比例

@@ -11,7 +11,6 @@ image: >-
 sidebar_position: 30
 date_created: 2022-09-20T16:00:00.000Z
 date_updated: 2025-01-13T00:00:00.000Z
-slug: /techstack/database/mysql-ubuntu-installation/
 ---
 
 # MySQL Ubuntu Installation

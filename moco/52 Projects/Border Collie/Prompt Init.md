@@ -1,6 +1,3 @@
----
-slug: /52-projects/border-collie/prompt-init/
----
 # BorderCollie - AI Coding Agent Prompt
 
 > 本文件為 AI Coding Agent 可直接引用的 prompt，描述 BorderCollie 專案的完整規格與設計決策。

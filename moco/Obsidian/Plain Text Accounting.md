@@ -10,7 +10,6 @@ hide_table_of_contents: true
 date_created: 2024-12-29T00:00:00.000Z
 date_updated: 2024-12-29T00:00:00.000Z
 image: 'https://i.imgur.com/mErPwqL.png'
-slug: /obsidian/plain-text-accounting/
 ---
 
 # [Plain Text Accounting](https://plaintextaccounting.org/)

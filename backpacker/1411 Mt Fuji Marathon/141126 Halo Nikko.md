@@ -7,7 +7,6 @@ tags:
 sidebar_position: 10
 hide_table_of_contents: true
 date_created: 2014-12-23T20:54:28.000Z
-slug: /1411-mt-fuji-marathon/141126-halo-nikko/
 ---
 
 # 14.11.26 日光，你好！

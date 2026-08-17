@@ -7,7 +7,6 @@ sidebar_position: 1
 hide_table_of_contents: false
 date_created: 2026-07-26
 date_updated: 2026-07-26
-slug: /utilities/utilities-2026/
 ---
 
 # Utilities Review & Modernization 2026

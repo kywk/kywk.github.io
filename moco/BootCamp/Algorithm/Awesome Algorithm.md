@@ -4,7 +4,6 @@ title: Awesome Resources
 tags:
   - Algorithm
   - Awesome
-slug: /bootcamp/algorithm/awesome-algorithm/
 ---
 
 Awesome Algorithm Resources

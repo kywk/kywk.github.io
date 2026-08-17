@@ -8,7 +8,6 @@ tags:
 sidebar_position: 2
 date_created: 2022-09-05T16:00:00.000Z
 image: 'https://i.imgur.com/mErPwqL.png'
-slug: /miscellaneous/react-native/react-native-ios-ipa/
 ---
 
 import Tabs from '@theme/Tabs';

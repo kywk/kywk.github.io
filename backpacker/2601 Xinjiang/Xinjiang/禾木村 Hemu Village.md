@@ -10,7 +10,6 @@ location:
 wiki: 'https://zh.wikipedia.org/wiki/禾木村'
 mapmarker: default
 hide_table_of_contents: true
-slug: /2601-xinjiang/xinjiang/禾木村-hemu-village/
 ---
 
 禾木村 Hemu Village

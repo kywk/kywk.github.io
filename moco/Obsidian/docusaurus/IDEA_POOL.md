@@ -6,7 +6,6 @@ tags:
   - TODO
   - 想法池
 sidebar_position: 99
-slug: /obsidian/docusaurus/idea-pool/
 ---
 
 # Docusaurus 開發想法池

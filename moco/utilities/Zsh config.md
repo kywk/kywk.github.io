@@ -12,7 +12,6 @@ tags:
 hide_table_of_contents: false
 date_created: 2024-10-01T00:00:00.000Z
 date_updated: 2025-12-26T00:00:00.000Z
-slug: /utilities/zsh-config/
 ---
 
 # Zsh Configuration - 模組化 Shell 環境配置

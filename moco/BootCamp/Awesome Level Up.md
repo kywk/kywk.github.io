@@ -4,7 +4,6 @@ title: Awesome Level Up
 tags:
   - Bootcamp
   - Awesome
-slug: /bootcamp/awesome-level-up/
 ---
 
 # Awesome Level Up Resources

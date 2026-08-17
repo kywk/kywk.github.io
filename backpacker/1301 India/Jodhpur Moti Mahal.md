@@ -7,7 +7,6 @@ tags:
   - India
   - India/Jodhpur
 date_created: 2013-05-05T11:04:33.000Z
-slug: /1301-india/jodhpur-moti-mahal/
 ---
 
 [Jodhpur] Moti Mahal - The Pearl Palace, Mehrangarh Fort, 梅堡．珍珠宮

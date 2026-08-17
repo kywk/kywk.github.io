@@ -10,7 +10,6 @@ image: 'https://i.imgur.com/mErPwqL.png'
 sidebar_position: 5
 date_created: 2022-10-17T00:00:00.000Z
 date_updated: 2024-12-26T00:00:00.000Z
-slug: /utilities/awesome-dropbox/
 ---
 
 # Awesome Dropbox Resources

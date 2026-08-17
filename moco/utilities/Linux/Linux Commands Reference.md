@@ -6,7 +6,6 @@ tags:
   - Commands
   - Reference
 date_created: 2024-12-19T00:00:00.000Z
-slug: /utilities/linux/linux-commands-reference/
 ---
 
 # Linux 基礎指令參考手冊

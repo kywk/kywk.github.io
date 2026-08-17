@@ -9,7 +9,6 @@ location:
   - 74.9500
 mapmarker: default
 hide_table_of_contents: true
-slug: /2601-xinjiang/xinjiang/木吉火山口-muji-volcanic-crater/
 ---
 
 木吉火山口 Muji Volcanic Crater

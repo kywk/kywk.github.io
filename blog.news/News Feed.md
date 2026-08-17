@@ -5,7 +5,6 @@ date_created: 2022-05-20
 authors: kywk
 image: https://i.imgur.com/mErPwqL.png
 hide_table_of_contents: false
-slug: /news-feed/
 ---
 
 <!--truncate-->

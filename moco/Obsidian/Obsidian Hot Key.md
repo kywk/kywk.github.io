@@ -11,7 +11,6 @@ sidebar_position: 40
 sidebar_label: Hot Keys
 date_created: 2024-04-07T00:00:00.000Z
 date_updated: 2025-12-24T00:00:00.000Z
-slug: /obsidian/obsidian-hot-key/
 ---
 
 # [Obsidian] Hot Keys - 快速鍵大全

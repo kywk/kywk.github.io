@@ -7,7 +7,6 @@ tags:
   - Beginner
 date_created: 2024-02-13T00:00:00.000Z
 date_updated: 2025-01-06T00:00:00.000Z
-slug: /java/kotlin/kotlin-get-started/
 ---
 
 # Kotlin 入門指南

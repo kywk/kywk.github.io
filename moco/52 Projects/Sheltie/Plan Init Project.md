@@ -1,6 +1,3 @@
----
-slug: /52-projects/sheltie/plan-init-project/
----
 # Sheltie - Markdown 協同編輯投影片工具
 
 線上協同編輯 Markdown 專案進展文件，自動轉換為投影片並匯出 PPTX。

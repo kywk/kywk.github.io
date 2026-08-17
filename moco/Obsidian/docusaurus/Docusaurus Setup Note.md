@@ -14,7 +14,6 @@ history:
   - 2026-08-17 多實例踩坑：preset docs/blog、search-local、backdrop-filter、TOC
   - 2024-05-24 Remark Plugin Usage
   - 2022-05-24 初始建立
-slug: /obsidian/docusaurus/docusaurus-setup-note/
 ---
 
 # [Docusaurus] 進階設定筆記

@@ -8,7 +8,6 @@ tags:
 sidebar_position: 1
 date_created: 2022-08-25T06:05:03.000Z
 image: 'https://i.imgur.com/mErPwqL.png'
-slug: /miscellaneous/react-native/react-native-get-started/
 ---
 
 import Tabs from '@theme/Tabs';

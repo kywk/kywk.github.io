@@ -7,7 +7,6 @@ tags:
   - Malaysia/Sabah
 date_created: 2011-05-13T10:21:10.000Z
 date_updated: 2014-01-06T10:21:10.000Z
-slug: /1105-sabah/note-sunset-sabah-2011/
 ---
 
 日落時分
