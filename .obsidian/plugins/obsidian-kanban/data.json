@@ -1,0 +1,64 @@
+{
+  "tag-colors": [
+    {
+      "tagKey": "#kywk",
+      "color": "rgba(48, 54, 58, 1)",
+      "backgroundColor": "rgba(244, 244, 238, 1)"
+    },
+    {
+      "tagKey": "#NANSHAN",
+      "color": "rgba(244, 244, 238, 1)",
+      "backgroundColor": "rgba(74, 147, 217, 1)"
+    },
+    {
+      "tagKey": "#MASA",
+      "color": "rgba(244, 244, 238, 1)",
+      "backgroundColor": "rgba(125, 176, 81, 1)"
+    },
+    {
+      "tagKey": "#PM",
+      "color": "rgba(244, 244, 238, 1)",
+      "backgroundColor": "rgba(72, 86, 95, 1)"
+    },
+    {
+      "tagKey": "#NASA",
+      "color": "rgba(244, 244, 238, 1)",
+      "backgroundColor": "rgba(41, 190, 176, 1)"
+    },
+    {
+      "tagKey": "#NSFW",
+      "color": "rgba(244, 244, 238, 1)",
+      "backgroundColor": "rgba(74, 147, 217, 1)"
+    },
+    {
+      "tagKey": "#CI/CD",
+      "color": "rgba(244, 244, 238, 1)",
+      "backgroundColor": "rgba(21, 103, 115, 0.88)"
+    },
+    {
+      "tagKey": "#FollowUp",
+      "color": "",
+      "backgroundColor": "rgba(202, 48, 48, 0.71)"
+    },
+    {
+      "tagKey": "#TODO",
+      "color": "",
+      "backgroundColor": "rgba(202, 48, 48, 0.71)"
+    },
+    {
+      "tagKey": "#NextStep",
+      "color": "rgba(178, 201, 60, 1)",
+      "backgroundColor": "rgba(39, 70, 100, 1)"
+    },
+    {
+      "tagKey": "#DevEnv",
+      "color": "",
+      "backgroundColor": "rgba(34, 41, 105, 0.79)"
+    }
+  ],
+  "link-date-to-daily-note": true,
+  "prepend-archive-date": true,
+  "hide-tags-display": false,
+  "hide-tags-in-title": true,
+  "hide-date-in-title": true
+}

@@ -54,7 +54,34 @@ yarn-error.log*
 
 
 # My Obsidian folder
-.obsidian/
+# 只納管「設定」：vault 設定檔與各插件的 data.json。
+# 插件程式碼(main.js/styles.css)、主題、快取、workspace 都不進 git。
+# 注意：git 無法 re-include 位於「被忽略的目錄」底下的檔案，
+#       所以這裡必須用 .obsidian/* 逐層放行，不能寫成 .obsidian/
+.obsidian/*
+!.obsidian/plugins/
+.obsidian/plugins/*/*
+!.obsidian/plugins/*/data.json
+# QuickAdd 的 data.json 含 apiKey 欄位（目前為空字串，且已遷移到 secret storage）。
+# 這是公開 repo，為免日後填入金鑰被一起推上去，不納管。
+.obsidian/plugins/quickadd/data.json
+# Recent Files 的 data.json 會記錄最近開啟的 50 個檔案路徑，
+# 實測其中 41 個屬於 com.nanshan / _journaling / important 等私有目錄 —— 絕對不能進公開 repo。
+.obsidian/plugins/recent-files-obsidian/data.json
+# 這個資料夾裡只有一個 .git（沒有 manifest/main.js 的壞殘骸），
+# 納管會被 git 當成 submodule gitlink。
+.obsidian/plugins/symlinks-obsidian/
+
+# vault 設定檔（workspace*.json 會隨開啟的檔案不斷變動，不納管）
+!.obsidian/app.json
+!.obsidian/appearance.json
+!.obsidian/community-plugins.json
+!.obsidian/core-plugins.json
+!.obsidian/daily-notes.json
+!.obsidian/hotkeys.json
+!.obsidian/templates.json
+!.obsidian/types.json
+
 /assets/
 
 archived/

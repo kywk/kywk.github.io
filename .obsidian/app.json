@@ -1,0 +1,30 @@
+{
+  "userIgnoreFilters": [
+    "node_modules/",
+    "plugins/",
+    "scripts/",
+    "src/",
+    "static/",
+    "build/",
+    ".docusaurus/",
+    ".git/"
+  ],
+  "livePreview": true,
+  "alwaysUpdateLinks": true,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "_incoming",
+  "attachmentFolderPath": "assets",
+  "showLineNumber": false,
+  "readableLineLength": false,
+  "strictLineBreaks": false,
+  "promptDelete": false,
+  "showFrontmatter": true,
+  "propertiesInDocument": "visible",
+  "pdfExportSettings": {
+    "pageSize": "Letter",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  },
+  "openBehavior": "daily"
+}

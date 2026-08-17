@@ -1,0 +1,166 @@
+{
+  "mapMarkers": [
+    {
+      "id": "egypt-map",
+      "locked": false,
+      "lastAccessed": 1706660769589,
+      "markers": [],
+      "overlays": [],
+      "shapes": [
+        {
+          "type": "polyline",
+          "color": "#3388FF",
+          "vertices": [
+            {
+              "lat": 29.85500602192249,
+              "lng": 30.458815544843677,
+              "id": "ID_68eb997bfbc8",
+              "targets": {
+                "vertexIds": []
+              }
+            },
+            {
+              "lat": 29.42531390326485,
+              "lng": 26.569655388593674,
+              "id": "ID_0998f9893ad9",
+              "targets": {
+                "vertexIds": []
+              }
+            },
+            {
+              "lat": 28.589414701014228,
+              "lng": 28.876784294843677,
+              "id": "ID_bb7a0b4aabbb",
+              "targets": {
+                "vertexIds": []
+              }
+            }
+          ],
+          "arrows": true,
+          "reversed": false
+        },
+        {
+          "type": "polyline",
+          "color": "#3388FF",
+          "vertices": [
+            {
+              "lat": 28.454273116631665,
+              "lng": 31.359694451093677,
+              "id": "ID_28496b7b38f9",
+              "targets": {
+                "vertexIds": []
+              }
+            },
+            {
+              "lat": 27.581207233838303,
+              "lng": 31.844679415225986,
+              "id": "ID_69fa1a5bb9a9",
+              "targets": {
+                "vertexIds": []
+              }
+            }
+          ],
+          "arrows": true,
+          "reversed": false
+        }
+      ],
+      "files": [
+        "backpacker/2401_egypt/index_pharaoh-egypt.md"
+      ]
+    }
+  ],
+  "defaultMarker": {
+    "type": "default",
+    "iconName": "map-marker",
+    "color": "#dddddd",
+    "transform": {
+      "size": 6,
+      "x": 0,
+      "y": -2
+    },
+    "isImage": false
+  },
+  "markerIcons": [
+    {
+      "type": "food",
+      "iconName": "utensils",
+      "color": "#dddddd",
+      "alpha": 1,
+      "layer": true,
+      "transform": {
+        "size": 6,
+        "x": 0,
+        "y": -2
+      },
+      "isImage": false,
+      "tags": [],
+      "minZoom": null,
+      "maxZoom": null
+    }
+  ],
+  "color": "#dddddd",
+  "lat": 39.983334,
+  "long": -82.98333,
+  "notePreview": false,
+  "layerMarkers": true,
+  "previousVersion": "6.0.5",
+  "version": {
+    "major": 6,
+    "minor": 0,
+    "patch": 5
+  },
+  "warnedAboutMapMarker": false,
+  "copyOnClick": false,
+  "displayMarkerTooltips": "hover",
+  "displayOverlayTooltips": true,
+  "configDirectory": null,
+  "mapViewEnabled": true,
+  "mapViewParameters": {
+    "darkMode": true,
+    "defaultZoom": 6,
+    "distanceMultiplier": 1,
+    "drawColor": "#3388ff",
+    "geojson": [],
+    "geojsonColor": "#3388ff",
+    "gpx": [],
+    "gpxColor": "#3388ff",
+    "height": "500px",
+    "image": "real",
+    "imageOverlay": [],
+    "isMapView": false,
+    "layers": [
+      "real"
+    ],
+    "linksFrom": [],
+    "linksTo": [],
+    "marker": [],
+    "commandMarker": [],
+    "markerFile": [],
+    "markerFolder": [
+      "backpacker/2401_egypt/spot"
+    ],
+    "markerTag": [],
+    "maxZoom": 13,
+    "minZoom": 5,
+    "osmLayer": true,
+    "overlay": [],
+    "overlayColor": "blue",
+    "scale": 1,
+    "showAllMarkers": false,
+    "tileServer": [],
+    "verbose": false,
+    "zoomDelta": 1,
+    "zoomFeatures": false,
+    "id": "egypt-map",
+    "lat": 26.76167,
+    "long": 29.74588,
+    "unit": "meters",
+    "filterTag": []
+  },
+  "enableDraw": true,
+  "defaultUnitType": "metric",
+  "defaultTile": "https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png",
+  "defaultTileDark": "https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png",
+  "defaultAttribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors &copy; <a href=\"https://carto.com/attributions\">CARTO</a>",
+  "defaultTileSubdomains": "a,b,c,d"
+}
