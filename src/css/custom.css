@@ -71,6 +71,7 @@
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(230, 126, 34, 0.1);
   --ifm-navbar-shadow: 0 2px 16px rgba(230, 126, 34, 0.12);
+  --ifm-navbar-height: 64px;
 }
 
 /* Dark mode */
@@ -126,9 +127,17 @@ body {
   background: linear-gradient(135deg,
       rgba(45, 35, 25, 0.98) 0%,
       rgba(35, 28, 23, 0.98) 100%);
-  backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-  height: 64px;
+}
+
+/*
+ * backdrop-filter 會讓 .navbar 成為 fixed 子元素的 containing block，
+ * 而 .navbar-sidebar / __backdrop 都是 .navbar 的 fixed 子元素，
+ * 會被壓縮在 navbar 的 64px 高度內 → 漢堡選單內容被文章蓋住且無法點選。
+ * 因此選單展開時（.navbar-sidebar--show）必須關閉 backdrop-filter。
+ */
+.navbar:not(.navbar-sidebar--show) {
+  backdrop-filter: blur(12px);
 }
 
 [data-theme='dark'] .navbar {
@@ -245,6 +254,14 @@ body {
 
 [data-theme='dark'] .menu__link--active:not(.menu__link--sublist) {
   background: linear-gradient(90deg, rgba(245, 176, 65, 0.15) 0%, rgba(248, 196, 113, 0.1) 100%);
+}
+
+/* ============================================
+   Mobile Sidebar Overlay - 確保疊在內容之上
+   ============================================ */
+.navbar-sidebar,
+.navbar-sidebar__backdrop {
+  z-index: var(--ifm-z-index-overlay);
 }
 
 /* ============================================
