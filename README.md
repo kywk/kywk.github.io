@@ -19,7 +19,8 @@
 - **Mermaid 圖表**: 支援流程圖和圖表渲染
 - **中文本地化**: 預設語言設為 `zh-TW`
 - **站內搜尋**: `@easyops-cn/docusaurus-search-local` 純靜態全文搜尋，含中文分詞，索引於 build 時自動產生（無外部服務）
-- **自動化工具**: 內容驗證、圖片優化、slug 注入、連結轉換
+- **URL 正規化**: slug 由 build 時的 hook 依檔案路徑推導，全站規則一致，原始檔不受汙染
+- **自動化工具**: 內容驗證、圖片優化、slug 檢查、連結轉換
 
 ### 🎯 Obsidian 插件支援
 
@@ -75,9 +76,9 @@ npm run deploy
 
 ### 內容管理指令
 ```bash
-npm run content:check      # 驗證內容格式與連結
-npm run content:optimize   # 優化圖片大小與品質
-npm run content:slug       # 注入 slug frontmatter
+npm run content:check      # 驗證內容（有 error 才失敗，warning 不擋）
+npm run content:optimize   # 優化圖片（加 -- --dry-run 只預覽）
+npm run content:slug       # 檢查 slug（:fix 清理、:write 寫入）
 npm run content:wikilink   # 轉換 Markdown 連結為 wiki-link
 npm run deploy:preview     # 建置並預覽部署結果
 ```
@@ -97,15 +98,19 @@ npm run typecheck      # TypeScript 類型檢查
 
 **內容驗證**：
 ```bash
-npm run content:check
+npm run content:check            # 有 error 才 exit 1
+npm run content:check -- --strict  # warning 也視為失敗
 ```
-檢查 frontmatter 必填欄位、wiki 連結、檔案路徑等問題。
+- **error**（會讓 build 失敗）：frontmatter 用 tab 縮排、控制字元、`foo: : bar` 這類重複冒號
+- **warning**：既無 `title` frontmatter 又無 H1、tag 開頭是 `#`、舊的 `[[標題:說明]]` 冒號語法、內容過短
 
 **圖片優化**：
 ```bash
-npm run content:optimize
+npm run content:optimize -- --dry-run   # 先看會處理哪些、能省多少
+npm run content:optimize                # 實際壓縮（就地覆寫，無備份）
 ```
-自動壓縮圖片，需安裝 ImageMagick (`brew install imagemagick`) 或 Sharp。
+需安裝 ImageMagick (`brew install imagemagick`) 或 sharp。找不到工具時會明確回報跳過幾張，
+不會再假裝「沒有圖片需要壓縮」。
 
 **站內搜尋**：
 
@@ -115,26 +120,33 @@ npm run content:optimize
 > 舊的 `scripts/build-search-index.js` 已移除：它從未被接進 build 流程，
 > 且會產生與外掛衝突的 `static/search-index.json` 與 `src/pages/search.md`。
 
-### 檔名/資料夾名稱含空格的處理
+### URL slug 的產生方式
 
-Docusaurus 預設會將檔案路徑中的空格編碼為 `%20`，導致 URL 不美觀。本專案透過 `slug` frontmatter 注入來解決此問題。
+**規則只有一條，寫在一個地方。** `docusaurus.config.ts` 的 `markdown.parseFrontMatter`
+在 build 時由檔案路徑即時推導 slug，**不寫回原始檔**：
 
-**新增含空格的檔案時，需執行：**
+1. 取 vault 內的相對路徑，去掉 `.md`/`.mdx`
+2. 去掉結尾的 `/index`（`1901 Paul/index.md` → `/1901-paul/`，不會多一段 `/index/`）
+3. 每個路徑段：轉小寫 → 空白與底線換成 `-` → 收合連續 `-` → 去掉頭尾 `-` → 移除引號
+4. docs 產生 `/a/b/`；blog 產生 `/YYYY/MM/DD/title`（沿用 Docusaurus 的日期結構）
+
+推導函式在 `plugins/remark-slug-normalizer/src/index.js` 的 `deriveSlug()`，
+**同時被三個地方使用**：parseFrontMatter hook、`npm run content:slug`、wikilink 的 pageResolver。
+三者共用同一份實作，所以「路由」與「`[[wikilink]]` 產生的網址」不可能不一致。
+
+因此：**新增檔案不需要做任何事**，也不需要在 frontmatter 寫 `slug:`。
+檔名和資料夾名可以自由使用空格、大小寫、中文。
+
 ```bash
-npm run content:slug
+npm run content:slug          # 檢查：列出每個檔案的 slug、偵測衝突與殘留設定
+npm run content:slug:fix      # 清理：移除檔案裡多餘的 slug frontmatter
+npm run content:slug:write    # 寫入：把推導出的 slug 寫回 frontmatter（想在 Obsidian 裡看到時）
 ```
 
-> ⚠️ 這個步驟原本掛在 `prebuild`，每次 build 都會改寫內容檔（本機 build 完 working tree
-> 就變髒）。目前 450 個檔案都已注入完成（`450 scanned, 0 modified`），因此已從 `prebuild`
-> 移除，改為手動執行。
-
-此腳本會：
-- 掃描 `backpacker/`、`lifehacker/`、`moco/` 目錄
-- 為路徑含空格的 Markdown 檔案自動注入正規化的 `slug` frontmatter
-- 將空格轉換為破折號 (例如：`2401 Egypt` → `/2401-Egypt/`)
-- 已有 `slug` 的檔案會被跳過
-
-**建議**：新增檔案時直接使用破折號或底線命名，避免空格。
+> 歷史：原本是 `prebuild` 自動跑 `inject-slug-frontmatter.js` 把 slug 寫進檔案，
+> 但它只處理「路徑含空格」的檔案，所以 `Utilities/CLI` 這種目錄永遠不會被正規化 ——
+> 這是路由大小寫不一致的根因。加上它用 gray-matter 重新序列化整份 frontmatter，
+> 會把 `date_created: 2026-07-26` 改寫成 ISO 時間戳並和 Obsidian 來回打架。已移除。
 
 ### Markdown 連結轉 Wiki-link
 
@@ -157,7 +169,9 @@ npm run content:wikilink
 - **多文檔配置**: 每個主題 (backpacker, lifehacker, moco) 都有獨立的文檔實例
 - **preset-classic 的預設 docs/blog 已關閉** (`docs: false, blog: false`)，避免多出 `/docs`、`/blog` 空路由
 - **Wiki Link 解析**: 自動將 `[[]]` 語法轉換為 Docusaurus 連結（⚠️ 目前只掛在 docs 實例，blog 尚未支援，詳見下方待辦）
-- **Remark 插件鏈**: remarkSlugNormalizer → remarkLeaflet → remarkKanban → remarkWikiLink
+- **Remark 插件鏈**: remarkLeaflet → remarkKanban → remarkWikiLink
+  （slug 不在 remark 階段處理 —— Docusaurus 在 processDocMetadata 就算好 permalink，
+  remark 是之後才在 mdx-loader 跑的，改 frontmatter 已經來不及）
 - **效能 flags**: `future.faster` 全開 + `future.v4.removeLegacyPostBuildHeadAttribute`
   （`ssgWorkerThreads` 的前置條件），詳見 [Docusaurus v3 升級筆記](./moco/Obsidian/docusaurus/Docusaurus%20v3%20Upgrading.md)
 - **部署設定**: 配置 GitHub Pages 部署參數
@@ -177,8 +191,8 @@ npm run content:wikilink
 |------|------|
 | `plugins/remark-obsidian-kanban/` | Obsidian Kanban 看板渲染 |
 | `plugins/remark-obsidian-leaflet/` | Obsidian Leaflet 地圖渲染 |
-| `plugins/remark-slug-normalizer/` | URL slug 正規化 (統一模組) |
-| `scripts/inject-slug-frontmatter.js` | 批次注入 slug frontmatter |
+| `plugins/remark-slug-normalizer/` | URL slug 推導規則（`deriveSlug`，全站唯一實作） |
+| `scripts/slug.js` | slug 檢查／清理／寫入 |
 | `scripts/convert-to-wikilinks.js` | Markdown 連結轉 wiki-link |
 | `scripts/content-validator.js` | 內容驗證與檢查 |
 | `scripts/optimize-images.js` | 圖片壓縮與優化 |
@@ -187,7 +201,7 @@ npm run content:wikilink
 - **版本**: 17.71
 - **核心依賴**: Docusaurus 3.10.2, React 19.2
 - **特殊插件**: remark-wiki-link, gray-matter, @easyops-cn/docusaurus-search-local
-- **內容管理**: 自動化驗證、優化、slug 注入腳本
+- **內容管理**: 自動化驗證、圖片優化、slug 檢查腳本
 
 ## Obsidian 整合
 - **.obsidian/**: 完整的 Obsidian 配置，包含多個插件
@@ -199,9 +213,8 @@ npm run content:wikilink
 - **CI/CD**: 透過 `.github/workflows/` 自動化部署
   - `deploy.yml` (push to main) 與 `test-deploy.yml` (PR) 都會依序執行
     `typecheck` → `content:check` → `build`
-  - `content:check` 目前是 `continue-on-error`（只輸出報告不擋 deploy），因為還有 113 個
-    既有內容問題。其中 72 個是「Missing required field 'title'」—— 這條規則對本站不適用
-    （Docusaurus 會從 H1 推導標題），待放寬規則後再改成阻擋
+  - `content:check` 會擋下 deploy，但只在「會讓 build 失敗」的問題上（frontmatter 用 tab
+    縮排、控制字元、重複冒號）。品質類提醒是 warning 不擋；要連 warning 一起擋加 `-- --strict`
 - **版本控制**: 使用 Git 管理內容版本
 
 ## 已知待辦
@@ -209,10 +222,8 @@ npm run content:wikilink
 - **Wiki-link 尚未支援 blog**: `remark-wiki-link` 只掛在 3 個 docs 實例上，
   `blog.news` / `blog.life` 內的 22 個 `[[...]]` 會以原文顯示。要修需要先建立跨 vault 的
   全站索引（含 blog 的日期式 permalink 推導），否則 16 個跨 vault 連結會指向錯誤路由
-- **85 條 broken links**: 主要是 wikilink 指向不存在的筆記（40）、舊的 `[[標題:說明]]`
+- **78 條 broken links**: 主要是 wikilink 指向不存在的筆記（40）、舊的 `[[標題:說明]]`
   冒號別名語法（23）、`[[moco/...]]` 帶 vault 前綴（4）。全部修完後可把
   `onBrokenLinks` 從 `warn` 改成 `throw`
-- **路由大小寫不一致**: slug 注入只處理過部分檔案，導致同一目錄下
-  `/moco/utilities/cli/yazi/`（小寫）與 `/moco/Utilities/CLI/fzf/`（原大小寫）並存，
-  而 wikilink resolver 一律轉小寫 → `[[fzf]]`、`[[OpenJDK]]`、`[[TOGO]]` 等會連錯。
-  要統一小寫會改動既有 URL，需另行評估
+- ~~路由大小寫不一致~~：**已解決**。全站 919 個路由現在 0 個含大寫、0 個 `%20`、
+  0 個含底線、0 個 doc 路由以 `/index/` 結尾（改造前分別是 98 / 0 / 若干 / 8）

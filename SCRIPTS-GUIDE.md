@@ -22,7 +22,7 @@ npm install sharp --save-dev
 |------|------|------|
 | `npm run content:check` | 內容驗證 | 檢查 frontmatter、連結、檔案格式 |
 | `npm run content:optimize` | 圖片優化 | 壓縮圖片，節省空間 |
-| `npm run content:slug` | 注入 Slug | 為含空格路徑的檔案注入 slug |
+| `npm run content:slug` | Slug 檢查 | 列出推導出的 slug、偵測衝突（`:fix` 清理、`:write` 寫入） |
 | `npm run content:wikilink` | 轉換連結 | Markdown 連結轉 Wiki 連結 |
 | `npm run deploy:preview` | 預覽部署 | 建置並本地預覽 |
 
@@ -102,36 +102,25 @@ Total space saved: 12.3 MB
 > 舊的 `scripts/build-search-index.js` 已移除。它從未被接進 build 流程，
 > 且會產生與外掛衝突的 `static/search-index.json` 與 `src/pages/search.md`。
 
-### 4. 注入 Slug (`content:slug`)
+### 4. Slug 檢查 (`content:slug`)
 
-**功能**：
-- 🔗 為路徑含空格的檔案自動注入 `slug` frontmatter
-- 📝 將空格轉換為破折號 (SEO 友善)
-- ⚡ 跳過已有 slug 的檔案
-- 🎯 僅處理 backpacker, lifehacker, moco 目錄
+slug 的權威來源是 `docusaurus.config.ts` 的 `markdown.parseFrontMatter`，build 時由檔案路徑
+即時推導，**不寫回原始檔**。這支腳本用的是同一個 `deriveSlug()`，所以列出的結果與實際路由必然一致。
 
-**使用時機**：
-- 新增含空格的檔案/資料夾後
-- URL 出現 %20 編碼時
-
-**範例**：
-```
-檔案路徑: backpacker/2401 Egypt/Day 1 Cairo.md
-注入 slug: /2401-Egypt/Day-1-Cairo/
+```bash
+npm run content:slug          # 檢查（預設）
+npm run content:slug:fix      # 移除檔案裡多餘的 slug frontmatter
+npm run content:slug:write    # 把推導出的 slug 寫回 frontmatter
 ```
 
-**範例輸出**：
-```
-🔗 Injecting slug frontmatter...
+**檢查模式會告訴你**：
+- 每個檔案對應的最終路由
+- **slug 衝突**：兩個檔案推導出同一個路由（會 exit 1，可當 CI gate）
+- 檔案內殘留的 `slug:` 與推導值不同（等於失效設定，會被 hook 覆蓋）
 
-Processing backpacker/2401 Egypt/Day 1 Cairo.md
-✅ Added slug: /2401-Egypt/Day-1-Cairo/
-
-📊 Results:
-Files processed: 12
-Slugs injected: 8
-Skipped (already has slug): 4
-```
+**寫檔一律逐行插入／替換**，不用 gray-matter 重新序列化 —— 後者會把
+`date_created: 2026-07-26` 改成 ISO 時間戳、把 inline `tags: [a, b]` 展開成 block list，
+跟 Obsidian 的 properties UI 來回打架。
 
 ### 5. 轉換連結 (`content:wikilink`)
 
@@ -177,7 +166,7 @@ Links converted: 23
 # 1. 新增內容後檢查
 npm run content:check
 
-# 2. 處理空格檔名 (如有需要)
+# 2. 檢查 slug 有沒有衝突（新增檔案不需要做任何 slug 相關處理）
 npm run content:slug
 
 # 3. 轉換連結格式 (如有需要)
@@ -206,10 +195,11 @@ npm run content:slug
 ## ⚠️ 注意事項
 
 1. **圖片優化**需要安裝 ImageMagick 或 Sharp
-2. **內容驗證**失敗會終止程序 (exit code 1)
-3. **`npm run build` 不再自動注入 slug**（原本掛在 `prebuild`），新增含空格路徑的檔案後要自己跑 `content:slug`
-4. **Slug 注入**僅處理特定目錄，避免影響系統檔案
-5. **連結轉換**僅處理相對路徑，保持外部連結不變
+2. **內容驗證**只有 error 才 exit 1（warning 不擋，要擋加 `-- --strict`）
+3. **slug 不需要手動處理**：build 時由 `markdown.parseFrontMatter` 依檔案路徑推導，
+   檔名可自由使用空格、大小寫、中文。`content:slug` 只是檢查工具
+4. **圖片壓縮是就地覆寫且無備份**，先用 `-- --dry-run` 確認
+5. **連結轉換**預設 dry-run，要寫檔得加 `-- --write`；已修正原本會改到程式碼區塊內範例的問題
 
 ## 🐛 故障排除
 
