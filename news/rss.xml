@@ -4,7 +4,7 @@
         <title>kywk.me Blog</title>
         <link>https://kywk.github.io/news/</link>
         <description>kywk.me Blog</description>
-        <lastBuildDate>Sun, 26 Jul 2026 13:27:21 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 17 Aug 2026 04:31:04 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-TW</language>
@@ -12,7 +12,7 @@
             <title><![CDATA[News Feed]]></title>
             <link>https://kywk.github.io/news/news-feed/</link>
             <guid>https://kywk.github.io/news/news-feed/</guid>
-            <pubDate>Sun, 26 Jul 2026 13:27:21 GMT</pubDate>
+            <pubDate>Mon, 17 Aug 2026 04:31:04 GMT</pubDate>
             <description><![CDATA[This is News Clippins]]></description>
             <content:encoded><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="news--discus">news &amp; discus<a href="https://kywk.github.io/news/news-feed/#news--discus" class="hash-link" aria-label="news &amp; discus的直接連結" title="news &amp; discus的直接連結" translate="no">​</a></h2>
 <ul>
@@ -26,7 +26,33 @@
             <title><![CDATA[2025/template]]></title>
             <link>https://kywk.github.io/news/2025/template/</link>
             <guid>https://kywk.github.io/news/2025/template/</guid>
-            <pubDate>Sun, 26 Jul 2026 13:27:21 GMT</pubDate>
+            <pubDate>Mon, 17 Aug 2026 04:31:04 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[_Happy-Birthday]]></title>
+            <link>https://kywk.github.io/news/2026/08/13/_Happy-Birthday/</link>
+            <guid>https://kywk.github.io/news/2026/08/13/_Happy-Birthday/</guid>
+            <pubDate>Thu, 13 Aug 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[生日快樂，我對自己說。]]></description>
+            <content:encoded><![CDATA[<p><img decoding="async" loading="lazy" src="https://lh3.googleusercontent.com/pw/AP1GczNKbUF1T9D4XtQ_lyHZ2O1zePRajyYVzpq3uGI0ue2F29Y97UCfqOv1fIPKYSnxMPhsu8tmJwwtJ3bMGD7F2TbQHjPndElIGvtnTlmc9hfnCOcMARmwhaYTTFjCOOCO5s6x8EqOIMuYvt0IZGAZoARFHw=w960-h640-s-no-gm?authuser=0" alt="" class="img_ev3q"></p>
+<p>生日快樂，我對自己說。</p>
+<p>久違地，放下工作，平日下班後，和好些時間沒碰面的朋友聚聚。</p>
+<p>一如往常天南地北，</p>
+<ul>
+<li class="">
+<p>充滿老人臭的老花、 職涯</p>
+</li>
+<li class="">
+<p>幹勁十足的健身、運動</p>
+</li>
+<li class="">
+<p>叛逆依舊的生活、瑣事</p>
+<p>我也替我自己真開心，我發現我在整個過程中，是百分之六百都替你開心。
+我覺得長大了，你聽到別人的好消息，就坦承的講，是沒有辦法百分百替對方開心的。
+但是我很開心我百分之六百替你開心，我很高興我還是這樣的大人。</p>
+<p><a href="https://podcasts.apple.com/tw/podcast/id1558410138?i=1000780381013" target="_blank" rel="noopener noreferrer" class="">Apple Podcast：《☀️ 全球串連早安新聞｜Morning Taiwan Glocal News》〈0807 全球讀報｜川普簽行政命令：限縮出生公民權、禁生育旅⋯〉</a></p>
+</li>
+</ul>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[Surf 04.01 ~ 04.30]]></title>
@@ -1288,68 +1314,6 @@ XMind Zen 不但跟原本的 XMind 一樣好用, 而且更美觀快速.<br>
             <category>Mac</category>
             <category>DevEnv</category>
             <category>kywk</category>
-        </item>
-        <item>
-            <title><![CDATA[Surf 11.16 ~ 11.30]]></title>
-            <link>https://kywk.github.io/news/2024/11/30/_Surfing/</link>
-            <guid>https://kywk.github.io/news/2024/11/30/_Surfing/</guid>
-            <pubDate>Sat, 30 Nov 2024 00:00:00 GMT</pubDate>
-            <description><![CDATA[Surfing quick note 11.16 ~ 11.30]]></description>
-            <content:encoded><![CDATA[<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="it-news">IT News<a href="https://kywk.github.io/news/2024/11/30/_Surfing/#it-news" class="hash-link" aria-label="IT News的直接連結" title="IT News的直接連結" translate="no">​</a></h3>
-<ul>
-<li class=""><a href="https://www.codebuff.com/" target="_blank" rel="noopener noreferrer" class="">Codebuff</a> <a href="https://news.ycombinator.com/item?id=42078536" target="_blank" rel="noopener noreferrer" class="">Launch HN: Codebuff (YC F24) – CLI tool that writes code for you | Hacker News</a></li>
-<li class=""><a href="https://github.com/dandavison/delta" target="_blank" rel="noopener noreferrer" class="">GitHub - dandavison/delta: A syntax-highlighting pager for git, diff, grep, and blame output</a> <a href="https://news.ycombinator.com/item?id=42091365" target="_blank" rel="noopener noreferrer" class="">Delta: A syntax-highlighting pager for Git, diff, grep, and blame output | Hacker News</a>
-<ul class="contains-task-list containsTaskList_mC6p">
-<li class="task-list-item"><input type="checkbox" disabled="" checked=""> 初步看起來資訊更清楚的 pager, 週末花時間研究一下. 📅 2024-11-17 ✅ 2024-12-22
-<ul>
-<li class="">和 <code>diff-so-fancy</code> 各有千秋, 列入裝機工具之一, 但尚未轉移設定.</li>
-<li class="">[[git-delta]]</li>
-<li class="">研究過程發現的 [[ansifilter]] 是好物!</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class=""><a href="https://mergiraf.org/" target="_blank" rel="noopener noreferrer" class="">Introduction - Mergiraf</a> <a href="https://news.ycombinator.com/item?id=42093756" target="_blank" rel="noopener noreferrer" class="">Mergiraf: a syntax-aware merge driver for Git | Hacker News</a></li>
-<li class=""><a href="https://www.ironcalc.com/" target="_blank" rel="noopener noreferrer" class="">IronCalc - Open-Source Spreadsheet Engine</a>
-<ul class="contains-task-list containsTaskList_mC6p">
-<li class="">看起來比 Google Docs 更 lightweight 的 WebApp, 筆記下來. 臨時有 Excel 需求處理時也許有用.</li>
-<li class="task-list-item"><input type="checkbox" disabled="" checked=""> 確認是否支援複雜函式運算 ⏬ 📅 2024-11-17 ✅ 2025-05-31
-<ul>
-<li class="">支援函式運算, 且支援 API 呼叫. 也許產製報表有機會用上.</li>
-</ul>
-</li>
-<li class="task-list-item"><input type="checkbox" disabled="" checked=""> IronCalc Use Case Study 📅 2026-01-16 ✅ 2026-01-16
-<ul>
-<li class="">目前版本最大的敗筆應該是不支援共編, 而這是個人或團隊選用線上 Office 套件最主要的需求.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class=""><a href="https://www.ithome.com.tw/news/166158" target="_blank" rel="noopener noreferrer" class="">AWS與Rust基金會攜手驗證Rust標準函式庫的安全性 | iThome</a></li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="tech">Tech<a href="https://kywk.github.io/news/2024/11/30/_Surfing/#tech" class="hash-link" aria-label="Tech的直接連結" title="Tech的直接連結" translate="no">​</a></h3>
-<ul>
-<li class=""><a href="https://github.com/drogus/jawsm" target="_blank" rel="noopener noreferrer" class="">GitHub - drogus/jawsm: JavaScript to WASM compiler</a>  <a href="https://news.ycombinator.com/item?id=42095879" target="_blank" rel="noopener noreferrer" class="">Show HN: Jaws – a JavaScript to WASM ahead-of-time compiler | Hacker News</a></li>
-<li class=""><a href="https://self-issued.info/?p=2573" target="_blank" rel="noopener noreferrer" class="">OpenID Connect specifications published as ISO standards – Mike Jones: self-issued</a> <a href="https://news.ycombinator.com/item?id=42101181" target="_blank" rel="noopener noreferrer" class="">OpenID Connect specifications published as ISO standards | Hacker News</a>
-<ul>
-<li class="">一些 OpenID 規格文件資料, 先筆記, 日後用不上就算了.</li>
-</ul>
-</li>
-<li class=""><a href="https://blog.gslin.org/archives/2024/11/25/12100/git-%e7%9a%84-hasconfigremote-url/" target="_blank" rel="noopener noreferrer" class="">Git 的 hasconfig:remote.*.url: – Gea-Suan Lin's BLOG</a>
-<ul class="contains-task-list containsTaskList_mC6p">
-<li class="">關於 gitconfig 的優化?</li>
-<li class="task-list-item"><input type="checkbox" disabled="" checked=""> reorganize gitconfig w/ direnv 🔺 📅 2025-06-04 ✅ 2025-06-05</li>
-</ul>
-</li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="life">Life<a href="https://kywk.github.io/news/2024/11/30/_Surfing/#life" class="hash-link" aria-label="Life的直接連結" title="Life的直接連結" translate="no">​</a></h3>
-<ul>
-<li class=""><a href="https://www.mobile01.com/topicdetail.php?f=628&amp;t=7045521" target="_blank" rel="noopener noreferrer" class="">【橫沙笛縱走】大雪山五星級森林步道 | 橫嶺山 沙蓮山 笛吹山 - Mobile01</a></li>
-<li class=""><a href="https://www.ithome.com.tw/voice/166157" target="_blank" rel="noopener noreferrer" class="">適者生存 | iThome</a></li>
-<li class=""><a href="https://crossing.cw.com.tw/article/19453" target="_blank" rel="noopener noreferrer" class="">為何到澳洲打工度假、加拿大定居後，我才發現出國並非自己的「夢想」？｜Ｗinnie／在加的故事｜換日線</a></li>
-</ul>]]></content:encoded>
-            <category>Surf</category>
-            <category>2024/11</category>
         </item>
     </channel>
 </rss>
