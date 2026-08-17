@@ -208,10 +208,8 @@ function remarkKanban(options = {}) {
       newChildren.unshift({
         type: 'html',
         value: `<style>
-.table-of-contents { display: none !important; }
-.theme-doc-toc-desktop { display: none !important; }
-.col.col--3 { display: none !important; }
-.row .col:not(.col--3) { max-width: 100% !important; flex: 0 0 100% !important; }
+/* TOC 請改用 frontmatter 的 hide_table_of_contents: true 關閉。
+   用 CSS 隱藏會留下指向看板欄位（無 heading id）的 TOC 連結，造成 broken anchors。 */
 .kanban-board-container { background: var(--ifm-background-color); padding: 1rem; border-radius: 8px; }
 .kanban-board-container img { max-width: 100%; height: auto; border-radius: 4px; }
 </style><div class="kanban-board-container">${html}</div>`

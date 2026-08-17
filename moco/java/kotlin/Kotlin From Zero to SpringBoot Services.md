@@ -11,10 +11,10 @@ image: >-
 slug: /java/kotlin/kotlin-from-zero-to-springboot-services/
 ---
 
-[Kotlin] 30天從零撰寫 Kotlin 語言並應用於 Spring Boot 開發
+[Kotlin] 30天從零撰寫 Kotlin 語言並應用於 Spring Boot 開發
 ====================
 
-> 本篇為 [30天從零撰寫 Kotlin 語言並應用於 Spring Boot 開發](https://ithelp.ithome.com.tw/users/20121179/ironman/3005) 筆記, 閱讀與實作過程中的隨手紀錄, 無結構化整理.
+> 本篇為 [30天從零撰寫 Kotlin 語言並應用於 Spring Boot 開發](https://ithelp.ithome.com.tw/users/20121179/ironman/3005) 筆記, 閱讀與實作過程中的隨手紀錄, 無結構化整理.
 
 
 Basic in Kotlin

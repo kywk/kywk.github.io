@@ -30,4 +30,4 @@ Handbook
 Related Notes
 -------------
 
--   [Get Started](ts_get-started.md)
+-   [Get Started](/moco/javascript/typescript/typescript-get-started/)

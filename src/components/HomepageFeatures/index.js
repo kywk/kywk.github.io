@@ -11,7 +11,7 @@ const FeatureList = [
     Svg: require('@site/static/img/home-backpacker.svg').default,
     description:
       '從冰島到四川，把行前規劃、在地交通與住宿筆記折進屬於自己的 Lonely Planet。',
-    to: '/backpacker/Lonely-Planet/',
+    to: '/backpacker/lonely-planet/',
     accentColor: 'rgba(255, 159, 67, 0.18)',
   },
   {

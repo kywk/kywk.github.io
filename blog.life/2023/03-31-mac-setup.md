@@ -42,7 +42,7 @@ homebrew cask 的支援越來越多, 越來越方便,
 .files 裡也存了為了新環境設定的簡單 setup.sh.
 故新電腦的第二件事就是安裝 Dropbox Desktop, 把工作專案和環境配置同步到新電腦.
 
-- [Open source Dropbox client, Maestral](./mac-app_maestral)
+- [Open source Dropbox client, Maestral](/moco/machintosh/applications/maestral/)
 
 ```
 brew install maestral
@@ -73,7 +73,7 @@ brew install sublime-text
 開發工具
 --------
 
-參考: [_macOS 開發環境建構_](mac-app_dev-env.md)
+參考: [_macOS 開發環境建構_](/life/2024/11/30/Mac-DevEnv-Setup/)
 
 
 生產力工具
@@ -90,7 +90,7 @@ $ brew install obsidian
 
 ### Raycast ###
 
-- [](./mac-app_raycast)
+- [Raycast](/moco/machintosh/applications/raycast/)
 
 ```
 brew install raycast

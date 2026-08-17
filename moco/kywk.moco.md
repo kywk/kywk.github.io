@@ -15,30 +15,30 @@ date_updated: 2025-09-21
 
 ## 🧪 Core Labs · 核心主題
 - [DevSecOps](/moco/category/devsecops/) — CICD、觀測與安全防線的 SOP。
-- [Tech Stack Library](/moco/category/tech-stack/) — 語言、框架與資料庫索引。
+- [Tech Stack Library](/moco/techstack/awesome-tech-stack/) — 語言、框架與資料庫索引。
 - [Utilities](/moco/category/utilities/) — 開發環境、CLI 與 Homelab 設定。
 
 ## 📘 Playbooks · 實戰練功
 :::tip Projects
 - [[52 Projects]] — 年度練習題與進度追蹤。
-- [Bootcamp](/moco/category/bootcamp/) — 基礎補強與工作坊筆記。
+- [Bootcamp](/moco/bootcamp/awesome-level-up/) — 基礎補強與工作坊筆記。
 :::
 
 :::note Toolchain
 - [DevSecOps > CICD](/moco/category/cicd/)
-- [Docker](/moco/category/docker/)
+- [Docker](/moco/devsecops/docker/awesome-docker/)
 - [Security](/moco/category/security/)
 :::
 
 ## 🧉 Language & Frameworks
-- [Go](/moco/category/go/)
-- [Java](/moco/category/java/)
-- [JavaScript](/moco/category/javascript/)
-- [OpenAPI](/moco/category/openapi/)
+- [Go](/moco/golang/awesome-go/)
+- [Java](/moco/java/awesome-java/)
+- [JavaScript](/moco/javascript/awesome-javascript/)
+- [OpenAPI](/moco/techstack/openapi/awesome-openapi/)
 
 ## 🧰 Toolbox
-- [Obsidian 筆記](/moco/category/obsidian/)
-- [Machintosh](/moco/category/machintosh/)
+- [Obsidian 筆記](/moco/obsidian/awesome-obsidian/)
+- [Machintosh](/moco/machintosh/awesome-machintosh/)
 - [Database](/moco/category/database/)
 - [Visual Studio Code](/moco/category/visual-studio-code/)
 

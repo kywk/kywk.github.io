@@ -1,4 +1,5 @@
 ---
+hide_table_of_contents: true
 kanban-plugin: board
 title: Day by day
 tags:
