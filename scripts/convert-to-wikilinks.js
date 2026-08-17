@@ -13,6 +13,10 @@
 const fs = require('fs');
 const path = require('path');
 
+// 預設 dry-run —— 這支腳本會改寫內容檔，沒有備份也沒有 git 保護（部分目錄被 gitignore），
+// 所以必須明確加 --write 才動手。
+const WRITE = process.argv.slice(2).includes('--write');
+
 // Directories to process
 const DOC_DIRS = ['backpacker', 'lifehacker', 'moco'];
 
@@ -73,14 +77,38 @@ function processFile(filePath) {
         // Captures: [1] = text, [2] = url
         const linkRegex = /\[([^\]]+)\]\(([^)]+\.md)\)/g;
 
-        content = content.replace(linkRegex, (match, text, url) => {
-            return convertToWikiLink(match, text, url);
-        });
+        // 逐行處理並跳過 fenced code block 與 inline code。
+        // 原本是整份檔案直接 replace，會把程式碼範例裡的 markdown 連結也一起改掉。
+        let inFence = false;
+        content = content
+            .split('\n')
+            .map((line) => {
+                if (/^\s*(```|~~~)/.test(line)) {
+                    inFence = !inFence;
+                    return line;
+                }
+                if (inFence) return line;
+                // 先把 inline code 挖出來，避免 `[x](y.md)` 這種示範被轉換
+                const inlineCode = [];
+                const masked = line.replace(/`[^`]*`/g, (m) => {
+                    inlineCode.push(m);
+                    return `\u0000${inlineCode.length - 1}\u0000`;
+                });
+                const converted = masked.replace(linkRegex, (match, text, url) =>
+                    convertToWikiLink(match, text, url),
+                );
+                return converted.replace(/\u0000(\d+)\u0000/g, (_, i) => inlineCode[Number(i)]);
+            })
+            .join('\n');
 
         // Check if content changed
         if (content !== originalContent) {
-            fs.writeFileSync(filePath, content, 'utf-8');
-            console.log(`  [MODIFIED] ${path.relative(process.cwd(), filePath)}`);
+            if (WRITE) {
+                fs.writeFileSync(filePath, content, 'utf-8');
+                console.log(`  [MODIFIED] ${path.relative(process.cwd(), filePath)}`);
+            } else {
+                console.log(`  [DRY-RUN] ${path.relative(process.cwd(), filePath)}`);
+            }
             stats.modified++;
         } else {
             stats.skipped++;
@@ -122,7 +150,7 @@ function scanDirectory(dir) {
  */
 function main() {
     console.log('='.repeat(60));
-    console.log('Converting Markdown links to Wiki-links');
+    console.log(`Converting Markdown links to Wiki-links${WRITE ? '' : '  [DRY-RUN，加 --write 才會寫檔]'}`);
     console.log('='.repeat(60));
     console.log('');
 
@@ -142,7 +170,7 @@ function main() {
     console.log('='.repeat(60));
     console.log('Summary:');
     console.log(`  Scanned:    ${stats.scanned} files`);
-    console.log(`  Modified:   ${stats.modified} files`);
+    console.log(`  ${WRITE ? 'Modified' : 'Would modify'}:   ${stats.modified} files`);
     console.log(`  Converted:  ${stats.linksConverted} links`);
     console.log(`  Skipped:    ${stats.skipped} files (no changes)`);
     console.log(`  Errors:     ${stats.errors} files`);

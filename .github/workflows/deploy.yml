@@ -20,11 +20,10 @@ jobs:
         run: npm ci
       - name: Typecheck
         run: npm run typecheck
-      # 目前有 113 個既有內容問題（72 個缺 title + 41 個警告），
-      # 先以不阻擋的方式輸出報告；待內容清理完成後移除 continue-on-error
-      - name: Content check (non-blocking)
+      # content:check 只在「會讓 build 失敗」的問題上回傳非 0（tab 縮排、控制字元等），
+      # 品質類提醒是 warning 不擋。想連 warning 一起擋就加 -- --strict
+      - name: Content check
         run: npm run content:check
-        continue-on-error: true
       - name: Build website
         run: npm run build
 
