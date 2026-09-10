@@ -2,16 +2,43 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kywk.github.io/news/</id>
     <title>kywk.me Blog</title>
-    <updated>2026-08-17T11:12:55.000Z</updated>
+    <updated>2026-09-30T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kywk.github.io/news/"/>
     <subtitle>kywk.me Blog</subtitle>
     <icon>https://kywk.github.io/img/favicon.ico</icon>
     <entry>
+        <title type="html"><![CDATA[Surf 08.01 ~ 09.30]]></title>
+        <id>https://kywk.github.io/news/2026/09/30/surfing/</id>
+        <link href="https://kywk.github.io/news/2026/09/30/surfing/"/>
+        <updated>2026-09-30T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Surfing quick note 08.01 ~ 09.30]]></summary>
+        <content type="html"><![CDATA[<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="it-news">IT News<a href="https://kywk.github.io/news/2026/09/30/surfing/#it-news" class="hash-link" aria-label="IT News的直接連結" title="IT News的直接連結" translate="no">​</a></h3>
+<ul>
+<li class=""></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ai">AI<a href="https://kywk.github.io/news/2026/09/30/surfing/#ai" class="hash-link" aria-label="AI的直接連結" title="AI的直接連結" translate="no">​</a></h3>
+<ul>
+<li class=""></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="life">Life<a href="https://kywk.github.io/news/2026/09/30/surfing/#life" class="hash-link" aria-label="Life的直接連結" title="Life的直接連結" translate="no">​</a></h3>
+<ul>
+<li class=""><a href="https://blog.edumeme.org/2026/08/choose-study-guide-you-will-actually-us.html" target="_blank" rel="noopener noreferrer" class="">如何挑一本最好的講義？ - Meme -- 教學與反省</a></li>
+<li class=""></li>
+</ul>]]></content>
+        <author>
+            <name>kywk</name>
+            <uri>https://github.io/kywk</uri>
+        </author>
+        <category label="Surf" term="Surf"/>
+        <category label="2026/08" term="2026/08"/>
+        <category label="2026/09" term="2026/09"/>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[News Feed]]></title>
         <id>https://kywk.github.io/news/news-feed/</id>
         <link href="https://kywk.github.io/news/news-feed/"/>
-        <updated>2026-08-17T11:12:55.000Z</updated>
+        <updated>2026-09-10T07:51:28.000Z</updated>
         <summary type="html"><![CDATA[This is News Clippins]]></summary>
         <content type="html"><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="news--discus">news &amp; discus<a href="https://kywk.github.io/news/news-feed/#news--discus" class="hash-link" aria-label="news &amp; discus的直接連結" title="news &amp; discus的直接連結" translate="no">​</a></h2>
 <ul>
@@ -29,7 +56,49 @@
         <title type="html"><![CDATA[2025/template]]></title>
         <id>https://kywk.github.io/news/2025/template/</id>
         <link href="https://kywk.github.io/news/2025/template/"/>
-        <updated>2026-08-17T11:12:55.000Z</updated>
+        <updated>2026-09-10T07:51:28.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[What's up What'Sub]]></title>
+        <id>https://kywk.github.io/news/2026/08/20/whats-up-whatsub/</id>
+        <link href="https://kywk.github.io/news/2026/08/20/whats-up-whatsub/"/>
+        <updated>2026-08-20T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[AI 真的會造反？Anthropic 震撼報告：Agent 竟學會「集體罷工」還會消滅同類搶資源 \| T客邦]]></summary>
+        <content type="html"><![CDATA[<p><a href="https://www.techbang.com/posts/132428-anthropic-ai-agents-dark-side-alignment-risk" target="_blank" rel="noopener noreferrer" class="">AI 真的會造反？Anthropic 震撼報告：Agent 竟學會「集體罷工」還會消滅同類搶資源 | T客邦</a></p>]]></content>
+        <author>
+            <name>kywk</name>
+            <uri>https://github.io/kywk</uri>
+        </author>
+        <category label="AI" term="AI"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[I, Robot]]></title>
+        <id>https://kywk.github.io/news/2026/08/18/i-robot/</id>
+        <link href="https://kywk.github.io/news/2026/08/18/i-robot/"/>
+        <updated>2026-08-18T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[- Now we have a timeline of the OpenAI accidental attack against Hugging Face,]]></summary>
+        <content type="html"><![CDATA[<ul>
+<li class=""><a href="https://simonwillison.net/2026/Aug/7/openai-timeline/" target="_blank" rel="noopener noreferrer" class="">Now we have a timeline of the OpenAI accidental attack against Hugging Face</a>,
+<ul>
+<li class=""><a href="https://simonwillison.net/2026/Aug/7/openai-timeline/" target="_blank" rel="noopener noreferrer" class=""><strong>如今已有 OpenAI 意外攻擊 Hugging Face 事件的時間軸</strong></a></li>
+</ul>
+</li>
+<li class=""><a href="https://www.ithome.com.tw/news/177777" target="_blank" rel="noopener noreferrer" class="">不只OpenAI，Anthropic也揭露Claude在資安測試中入侵3個真實組織 | iThome</a></li>
+<li class=""><a href="https://www.informationsecurity.com.tw/article/article_detail.aspx?aid=13133" target="_blank" rel="noopener noreferrer" class="">Anthropic揭露Claude意外入侵真實系統 六起事件源於測試環境防護漏洞,Information Security 資安人科技網</a></li>
+</ul>
+<p>AI 不受控的案例越來越多，過往還有許多是使用者使用不當造成，近期前沿模型主導業者 OpenAI / Anthropic 傳出實驗室 AI 模型對外部網路的攻擊事件，甚者在使用端還也傳出  <a href="https://news.ltn.com.tw/news/world/breakingnews/5535765" target="_blank" rel="noopener noreferrer" class="">澳洲傳首起AI自主攻擊！ 幫主人搶健身房會員 暗中踢掉其他人 - 國際 - 自由時報電子報</a>。</p>
+<p>看到這些新聞，想到 <a href="https://zh.wikipedia.org/zh-tw/%E6%A9%9F%E6%A2%B0%E5%85%AC%E6%95%B5" target="_blank" rel="noopener noreferrer" class="">機械公敵</a> ，看似完美的機器人三大定律尚有 Viki 擴大解讀造成「劇情推進」，目前 AI 的發展似乎沒有任何管制？也難怪陸續出現政府要出手管制。</p>
+<ul>
+<li class="">三大定律內容第一定律：機器人不得傷害人類，或坐視人類受到傷害。</li>
+<li class="">第二定律：除非違反第一定律，否則機器人必須服從人類的命令。</li>
+<li class="">第三定律：除非違反第一或第二定律，否則機器人必須保護自己。</li>
+</ul>
+<p>By the way, , <a href="https://www.rickmanelius.com/p/aidr-ai-didnt-read" target="_blank" rel="noopener noreferrer" class="">AI;DR (AI; Didn’t Read) - Rick Manelius's Newsletter</a></p>]]></content>
+        <author>
+            <name>kywk</name>
+            <uri>https://github.io/kywk</uri>
+        </author>
+        <category label="AI" term="AI"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Surf 04.01 ~ 04.30]]></title>
@@ -1058,368 +1127,5 @@
         </author>
         <category label="Surf" term="Surf"/>
         <category label="2025/01" term="2025/01"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Surf 12.01 ~ 12.31]]></title>
-        <id>https://kywk.github.io/news/2024/12/31/surfing/</id>
-        <link href="https://kywk.github.io/news/2024/12/31/surfing/"/>
-        <updated>2024-12-31T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Surfing quick note Surf 12.01 ~ 12.31]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="it-news">IT News<a href="https://kywk.github.io/news/2024/12/31/surfing/#it-news" class="hash-link" aria-label="IT News的直接連結" title="IT News的直接連結" translate="no">​</a></h3>
-<ul>
-<li class=""><a href="https://grayjay.app/desktop/" target="_blank" rel="noopener noreferrer" class="">Grayjay App - Follow Creators Not Platforms</a>
-<ul>
-<li class="">和 Follow 有些類似, 聚合多個媒體平台於一身.</li>
-<li class="">比起平台本身, 主要是 follow creator.</li>
-</ul>
-</li>
-<li class=""><a href="https://github.com/boardgameio/boardgame.io" target="_blank" rel="noopener noreferrer" class="">GitHub - boardgameio/boardgame.io: State Management and Multiplayer Networking for Turn-Based Games</a>
-<ul>
-<li class=""><strong>boardgame.io</strong>&nbsp;is an engine for creating turn-based games using JavaScript.</li>
-</ul>
-</li>
-<li class=""><a href="https://www.nicbarker.com/clay" target="_blank" rel="noopener noreferrer" class="">Clay - UI Layout Library</a>
-<ul>
-<li class="">Clay is a flex-box style UI auto layout library in C, with declarative syntax and microsecond performance.</li>
-<li class="">Compile to 15kb .wasm</li>
-<li class="">效能實在很快的 UI Lib, 看來未來可能是 rust/wasm 的天下.</li>
-</ul>
-</li>
-<li class=""><a href="https://www.egui.rs/" target="_blank" rel="noopener noreferrer" class="">egui – An immediate mode GUI written in Rust</a>
-<ul>
-<li class=""><a href="https://news.ycombinator.com/item?id=42512636" target="_blank" rel="noopener noreferrer" class="">Egui – An immediate mode GUI written in Rust | Hacker News</a></li>
-</ul>
-</li>
-<li class=""><a href="https://blog.gslin.org/archives/2024/12/21/12146/puppet-%e8%a6%81-fork-%e4%ba%86/" target="_blank" rel="noopener noreferrer" class="">Puppet 要 fork 了 – Gea-Suan Lin's BLOG</a>
-<ul>
-<li class=""><a href="https://blog.gslin.org/archives/2022/04/12/10655/perforce-%e8%b2%b7%e4%b8%8b-puppet/" target="_blank" rel="noopener noreferrer" class="">Perforce 買下 Puppet – Gea-Suan Lin's BLOG</a></li>
-</ul>
-</li>
-<li class=""><a href="https://blog.gslin.org/archives/2024/12/19/12139/%e6%8a%8a-wikipedia-%e6%a2%9d%e7%9b%ae%e5%b0%8d%e6%87%89%e5%88%b0%e5%9c%b0%e5%9c%96%e4%b8%8a%e9%9d%a2/" target="_blank" rel="noopener noreferrer" class="">把 Wikipedia 條目對應到地圖上面 – Gea-Suan Lin's BLOG</a>
-<ul>
-<li class="">想要弄的旅遊部落格, 文章/照片/... 都可以標示在地圖上</li>
-</ul>
-</li>
-<li class=""><a href="https://engineering.fb.com/2024/12/18/android/translating-java-to-kotlin-at-scale/" target="_blank" rel="noopener noreferrer" class="">Translating Java to Kotlin at Scale - Engineering at Meta</a>
-<ul>
-<li class="">Java code 轉換到 Kotlin 過程.</li>
-<li class=""><a href="https://github.com/JetBrains/intellij-community/tree/master/plugins/kotlin/j2k" target="_blank" rel="noopener noreferrer" class="">intellij-community/plugins/kotlin/j2k at master · JetBrains/intellij-community · GitHub</a></li>
-<li class=""><a href="https://engineering.fb.com/" target="_blank" rel="noopener noreferrer" class="">Engineering at Meta - Engineering at Meta Blog</a></li>
-</ul>
-</li>
-<li class=""><a href="https://www.ithome.com.tw/news/166667" target="_blank" rel="noopener noreferrer" class="">Apache基金會修補網頁伺服器元件Tomcat遠端程式碼執行漏洞 | iThome</a>
-<ul>
-<li class="">在金融業工作後, 對於 CVE 資訊會多花一些時間了解...</li>
-</ul>
-</li>
-<li class=""><a href="https://ghostty.org/download" target="_blank" rel="noopener noreferrer" class="">Download Ghostty</a>
-<ul class="contains-task-list containsTaskList_mC6p">
-<li class=""><a href="https://news.ycombinator.com/item?id=42517447" target="_blank" rel="noopener noreferrer" class="">Ghostty 1.0 | Hacker News</a></li>
-<li class="">一個發表前已略有名氣的 terminal emulator.</li>
-<li class="task-list-item"><input type="checkbox" disabled="" checked=""> 和 wezterm, kitty, tabby 一起比較玩玩. ⏬ 📅 2025-01-05 ✅ 2025-05-31</li>
-</ul>
-</li>
-<li class=""><a href="https://github.com/siyuan-note/siyuan" target="_blank" rel="noopener noreferrer" class="">GitHub - siyuan-note/siyuan: A privacy-first, self-hosted, fully open source personal knowledge management software, written in typescript and golang.</a>
-<ul>
-<li class=""><a href="https://news.ycombinator.com/item?id=42512713" target="_blank" rel="noopener noreferrer" class="">Siyuan: Privacy-first, self-hosted personal knowledge management software | Hacker News</a></li>
-<li class=""><a href="https://github.com/Dullage/flatnotes" target="_blank" rel="noopener noreferrer" class="">GitHub - dullage/flatnotes: A self-hosted, database-less note taking web app that utilises a flat folder of markdown files for storage.</a></li>
-</ul>
-</li>
-<li class=""><a href="https://avi.im/blag/2024/sqlite-facts/" target="_blank" rel="noopener noreferrer" class="">Collection of insane and fun facts about SQLite - blag</a>
-<ul>
-<li class="">最有趣的觀察是 SQLite 和 Redis 誰比較快 !?
-<ul>
-<li class="">某些(且不少)需求下, SQLite 比 Redis 快.</li>
-<li class="">網路延遲與 (de)serialisation overhead 可能比想像中大.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class=""><a href="https://github.com/lexiforest/curl-impersonate" target="_blank" rel="noopener noreferrer" class="">GitHub - lexiforest/curl-impersonate: An active fork of curl-impersonate with more versions and build targets.</a>
-<ul>
-<li class=""><a href="https://news.ycombinator.com/item?id=42547820" target="_blank" rel="noopener noreferrer" class="">Curl-Impersonate | Hacker News</a></li>
-<li class=""><a href="https://blog.gslin.org/archives/2024/12/31/12168/%e5%af%a6%e4%bd%9c%e6%9b%b4%e5%a4%9a%e5%8a%9f%e8%83%bd%e7%9a%84-curl-impersonate-fork/" target="_blank" rel="noopener noreferrer" class="">實作更多功能的 curl-impersonate fork – Gea-Suan Lin's BLOG</a></li>
-</ul>
-</li>
-<li class=""><a href="https://www.ithome.com.tw/news/166609" target="_blank" rel="noopener noreferrer" class="">國泰金控雲端資料湖倉平臺架構大公開！自行研發ETL工具、ML平臺也上雲 | iThome</a></li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="tech">Tech<a href="https://kywk.github.io/news/2024/12/31/surfing/#tech" class="hash-link" aria-label="Tech的直接連結" title="Tech的直接連結" translate="no">​</a></h3>
-<ul>
-<li class=""><a href="https://blog.gslin.org/archives/2024/12/16/12126/%e6%8a%8a-libc-%e7%a7%bb%e6%a4%8d%e5%88%b0-gpu-%e4%b8%8a%e8%b7%91/" target="_blank" rel="noopener noreferrer" class="">把 libc 移植到 GPU 上跑 – Gea-Suan Lin's BLOG</a></li>
-<li class=""><a href="https://matt.might.net/articles/shell-scripts-for-passive-voice-weasel-words-duplicates/" target="_blank" rel="noopener noreferrer" class="">3 shell scripts: Kill weasel words, avoid the passive, eliminate duplicates</a>
-<ul>
-<li class=""><a href="https://blog.gslin.org/archives/2024/12/16/12125/%e7%94%a8-script-%e6%89%be%e5%87%ba%e5%af%ab%e4%bd%9c%e6%8a%80%e5%b7%a7%e4%b8%8a%e7%96%8f%e5%bf%bd%e7%9a%84%e9%bb%9e/" target="_blank" rel="noopener noreferrer" class="">用 Script 找出寫作技巧上疏忽的點 – Gea-Suan Lin's BLOG</a></li>
-</ul>
-</li>
-<li class=""><a href="https://github.com/microsoft/markitdown" target="_blank" rel="noopener noreferrer" class="">GitHub - microsoft/markitdown: Python tool for converting files and office documents to Markdown.</a>
-<ul>
-<li class=""><a href="https://blog.gslin.org/archives/2024/12/16/12124/%e5%b0%87%e5%90%84%e7%a8%ae%e6%aa%94%e6%a1%88%e8%bd%89%e6%88%90-markdown-%e7%9a%84-markitdown/" target="_blank" rel="noopener noreferrer" class="">將各種檔案轉成 Markdown 的 markitdown – Gea-Suan Lin's BLOG</a></li>
-<li class=""><a href="https://blog.longwin.com.tw/2025/02/markitdown-microsoft-open-source-office-convert-markdown-2025/" target="_blank" rel="noopener noreferrer" class="">markitdown 微軟開源將 Office 文件轉成 Markdown 格式 - Tsung's Blog</a></li>
-</ul>
-</li>
-<li class=""><a href="https://blog.kyomind.tw/network-101-course/" target="_blank" rel="noopener noreferrer" class="">《給網站工程師的網路課》心得：Web 開發者的網路學習指南 - Code and Me</a></li>
-<li class=""><a href="https://nodesource.com/blog/State-of-Nodejs-Performance-2024" target="_blank" rel="noopener noreferrer" class="">State of Node.js Performance 2024</a>
-<ul>
-<li class="">簡單來說, node 20/22 輾壓 18.</li>
-<li class="">有任何理由需繼續使用 node 18, 至少升到 18.17.x</li>
-</ul>
-</li>
-<li class=""><a href="https://blog.gslin.org/archives/2024/12/18/12130/nginx-%e7%9a%84-location-%e9%a0%86%e5%ba%8f/" target="_blank" rel="noopener noreferrer" class="">nginx 的 location 順序 – Gea-Suan Lin's BLOG</a></li>
-<li class=""><a href="https://blog.othree.net/log/2024/12/22/innodb-recovery/" target="_blank" rel="noopener noreferrer" class="">InnoDB 修復紀錄 : O3noBLOG</a>
-<ul>
-<li class="">希望永遠用不上, 但是個值得紀錄的文章.</li>
-</ul>
-</li>
-<li class=""><a href="https://igorstechnoclub.com/server-sent-events-sse-are-underrated/" target="_blank" rel="noopener noreferrer" class="">Server-Sent Events (SSE) Are Underrated | Igor's Techno Club</a></li>
-<li class=""><a href="https://www.jmeiners.com/lc3-vm/" target="_blank" rel="noopener noreferrer" class="">Write your Own Virtual Machine</a></li>
-<li class=""><a href="https://blog.gslin.org/archives/2024/12/31/12171/aws-%e8%b7%a8-az-%e6%99%82%e7%9a%84%e6%b5%81%e9%87%8f%e6%88%90%e6%9c%ac%e5%95%8f%e9%a1%8c/" target="_blank" rel="noopener noreferrer" class="">AWS 跨 AZ 時的流量成本問題 – Gea-Suan Lin's BLOG</a></li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="life">Life<a href="https://kywk.github.io/news/2024/12/31/surfing/#life" class="hash-link" aria-label="Life的直接連結" title="Life的直接連結" translate="no">​</a></h3>
-<ul>
-<li class=""><a href="https://www.mobile01.com/topicdetail.php?f=628&amp;t=7054288" target="_blank" rel="noopener noreferrer" class="">阿里山森遊漫步走(下)有夠遠的部落-里佳 - Mobile01</a></li>
-<li class=""><a href="https://ikeahackers.net/2024/12/best-ikea-hacks-2024.html" target="_blank" rel="noopener noreferrer" class="">12 Best IKEA Hacks of 2024: See IKEA in a Brand New Light!</a></li>
-<li class=""><a href="https://www.adaymag.com/2024/12/20/fenster-cafe.html" target="_blank" rel="noopener noreferrer" class="">藏在維也納老城區中，一杯賣 14 歐元的「甜筒卡布奇諾」，是深受當地人喜愛的寶藏咖啡 - A Day Magazine</a></li>
-<li class=""><a href="https://www.adaymag.com/2024/12/20/mohamed-aziz.html" target="_blank" rel="noopener noreferrer" class="">在識字率曾低到 32% 的國家，堅持賣書超過半世紀，73 歲「一人書店」老闆的故事讓我們更珍惜所有 - A Day Magazine</a></li>
-<li class=""><a href="https://www.mobile01.com/topicdetail.php?f=801&amp;t=7059708" target="_blank" rel="noopener noreferrer" class="">2024年7-11信用卡攻略！7-11可以刷卡嗎？8張神卡推薦！ - Mobile01</a></li>
-<li class=""><a href="https://www.adaymag.com/2024/12/25/lamplighter.html" target="_blank" rel="noopener noreferrer" class="">《小王子》裡的角色真實存在：捷克布拉格出現神秘「點燈人」，為冰冷的科技時代帶來溫暖 - A Day Magazine</a></li>
-<li class=""><a href="https://www.adaymag.com/2024/12/30/quiet-vacationing.html" target="_blank" rel="noopener noreferrer" class="">上班時間去咖啡廳放個小假，懂得「安靜度假」後，工作效率更高了 - A Day Magazine</a></li>
-<li class=""><a href="https://crossing.cw.com.tw/article/19575" target="_blank" rel="noopener noreferrer" class="">斯洛伐克「小國」大哲學：這裡或許「平凡」，但我們對生活很滿意｜彭孟嫻 Jessica／海外法律人的生活觀點｜換日線</a></li>
-</ul>]]></content>
-        <author>
-            <name>kywk</name>
-            <uri>https://github.io/kywk</uri>
-        </author>
-        <category label="Surf" term="Surf"/>
-        <category label="2024/12" term="2024/12"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Setup: App 安裝紀錄]]></title>
-        <id>https://kywk.github.io/news/2024/12/24/mac-app-setup/</id>
-        <link href="https://kywk.github.io/news/2024/12/24/mac-app-setup/"/>
-        <updated>2024-12-24T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[kywk's favitote macOS Apps]]></summary>
-        <content type="html"><![CDATA[<p>重新整理 blog 文章時, 順便整理紀錄一下目前日常使用的 Apps.
-有趣的是, 這段時間來, 越來越少從文章中看到新 App 的介紹, 反倒越來越多是從 Youtube 影片推薦得知的.
-時代變遷...</p>
-<p>因工作上裝置轉換, 重新整理一下軟體配置.
-隨著網頁工具越來越成熟, 電腦上必備的工具倒是越來越少.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="前置軟體">前置軟體<a href="https://kywk.github.io/news/2024/12/24/mac-app-setup/#%E5%89%8D%E7%BD%AE%E8%BB%9F%E9%AB%94" class="hash-link" aria-label="前置軟體的直接連結" title="前置軟體的直接連結" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="homebrew">Homebrew<a href="https://kywk.github.io/news/2024/12/24/mac-app-setup/#homebrew" class="hash-link" aria-label="Homebrew的直接連結" title="Homebrew的直接連結" translate="no">​</a></h3>
-<p><a href="https://brew.sh/index_zh-tw" target="_blank" rel="noopener noreferrer" class=""><strong>Homebrew</strong></a></p>
-<p>homebrew cask 的支援越來越多, 越來越方便,
-個人多數軟體都透過 homebrew 安裝.
-在開始安裝各類軟體前, Homebrew 是必要的.</p>
-<div class="language-shell codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-shell codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</span><br></div></code></pre></div></div>
-<p>可以進一步直接用 [[homebrew-bundle]] 來安裝必要的工具與軟體.</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="dropbox">Dropbox<a href="https://kywk.github.io/news/2024/12/24/mac-app-setup/#dropbox" class="hash-link" aria-label="Dropbox的直接連結" title="Dropbox的直接連結" translate="no">​</a></h3>
-<p>我的專案和軟體配置檔案 (.files) 都放在 <a href="https://www.dropbox.com/" target="_blank" rel="noopener noreferrer" class=""><strong>Dropbox</strong></a> 上,
-.files 裡也存了為了新環境設定的簡單 setup.sh.
-故新電腦的第二件事就是安裝 Dropbox Desktop, 把工作專案和環境配置同步到新電腦.</p>
-<p>因 Dropbox 配合頻果的新政策更改了檔案位置, 反而讓自己一直習慣的路徑配置不方便使用.
-加上免費仔只能連結三個裝置的限制, 現在改用第三方軟體取代官方桌面工具.</p>
-<ul>
-<li class="">[[Dotfiles Management]]</li>
-<li class="">[[Maestral:Open source Dropbox client, Maestral]]</li>
-</ul>
-<div class="language-shell codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-shell codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">brew install maestral</span><br></div></code></pre></div></div>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="google-chrome">Google Chrome<a href="https://kywk.github.io/news/2024/12/24/mac-app-setup/#google-chrome" class="hash-link" aria-label="Google Chrome的直接連結" title="Google Chrome的直接連結" translate="no">​</a></h3>
-<p>雖已漸漸棄用 Chrome, 改用 Safari 和 Edge. 但在 Chrome 長期使用習慣, 仍無法馬上改變. 導致先安裝 Chrome 也是安裝系統的必備之一.</p>
-<ul>
-<li class="">Microsoft Edge,</li>
-<li class="">Arc</li>
-<li class="">Orion</li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="sublime-text--zed">Sublime Text / Zed<a href="https://kywk.github.io/news/2024/12/24/mac-app-setup/#sublime-text--zed" class="hash-link" aria-label="Sublime Text / Zed的直接連結" title="Sublime Text / Zed的直接連結" translate="no">​</a></h3>
-<p>開發程式的主力已經轉為 VSCode, GoLand, WebStorm... 等.
-但 Sublime Text/Zed 啟動速度快, 基本作業順暢, 仍是必然安裝的工具.</p>
-<p>因安裝時 setup.sh 可能需要修改,
-所以會先以 Sublime Text 開啟 setup.sh,
-編改檢查後再行安裝各項軟體或依安裝情況修改配置.</p>
-<p>Sublime Text 已可以用 brew 安裝.</p>
-<div class="language-shell codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-shell codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">brew install sublime-text zed</span><br></div></code></pre></div></div>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="開發工具">開發工具<a href="https://kywk.github.io/news/2024/12/24/mac-app-setup/#%E9%96%8B%E7%99%BC%E5%B7%A5%E5%85%B7" class="hash-link" aria-label="開發工具的直接連結" title="開發工具的直接連結" translate="no">​</a></h2>
-<p>參考: <strong>[[Mac DevEnv Setup:macOS 開發環境建構]]</strong></p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="生產力工具">生產力工具<a href="https://kywk.github.io/news/2024/12/24/mac-app-setup/#%E7%94%9F%E7%94%A2%E5%8A%9B%E5%B7%A5%E5%85%B7" class="hash-link" aria-label="生產力工具的直接連結" title="生產力工具的直接連結" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="obsidian">Obsidian<a href="https://kywk.github.io/news/2024/12/24/mac-app-setup/#obsidian" class="hash-link" aria-label="Obsidian的直接連結" title="Obsidian的直接連結" translate="no">​</a></h3>
-<p>出發點是卡片筆記軟體, 因各種擴充功能, 已是個人全面性筆記與專案管理軟體.</p>
-<div class="language-shell codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-shell codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">brew install obsidian</span><br></div></code></pre></div></div>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="raycast">Raycast<a href="https://kywk.github.io/news/2024/12/24/mac-app-setup/#raycast" class="hash-link" aria-label="Raycast的直接連結" title="Raycast的直接連結" translate="no">​</a></h3>
-<p>取代 Spotlight 軟體, [[Raycast]]</p>
-<div class="language-shell codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-shell codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">brew install raycast</span><br></div></code></pre></div></div>
-<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="alfred">Alfred<a href="https://kywk.github.io/news/2024/12/24/mac-app-setup/#alfred" class="hash-link" aria-label="Alfred的直接連結" title="Alfred的直接連結" translate="no">​</a></h4>
-<p><a href="https://goo.gl/mD9K61" target="_blank" rel="noopener noreferrer" class="">Alfred</a> 大大減少離開來回鍵盤和觸控板的時間,
-<a href="https://goo.gl/SHsXkH" target="_blank" rel="noopener noreferrer" class="">參考教學</a></p>
-<div class="language-shell codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-shell codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">brew install alfred</span><br></div></code></pre></div></div>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="alttab">AltTab<a href="https://kywk.github.io/news/2024/12/24/mac-app-setup/#alttab" class="hash-link" aria-label="AltTab的直接連結" title="AltTab的直接連結" translate="no">​</a></h3>
-<p><a href="https://alt-tab-macos.netlify.app/" target="_blank" rel="noopener noreferrer" class=""><em>AltTab</em></a> 和 Windows 一樣使用 <code>Alt + Tab</code> 切換視窗,
-可在同一程式多個視窗中切換, 比 macOS 內建僅能在應用程式間切換來得快速方邊.</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="pure-paste">Pure Paste<a href="https://kywk.github.io/news/2024/12/24/mac-app-setup/#pure-paste" class="hash-link" aria-label="Pure Paste的直接連結" title="Pure Paste的直接連結" translate="no">​</a></h3>
-<p><a href="https://sindresorhus.com/pure-paste" target="_blank" rel="noopener noreferrer" class=""><em>Pure Paste</em></a>
-讓預設貼上就是純文字，自動清除複製的文字樣式</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="rectangle">Rectangle<a href="https://kywk.github.io/news/2024/12/24/mac-app-setup/#rectangle" class="hash-link" aria-label="Rectangle的直接連結" title="Rectangle的直接連結" translate="no">​</a></h3>
-<p><a href="https://rectangleapp.com/" target="_blank" rel="noopener noreferrer" class=""><em>Rectangl</em></a> to snap windows to different positions.
-快速整理安排視窗 Layout 的工具, 外接大螢幕時相當實用.</p>
-<ul>
-<li class=""><a href="https://applealmond.com/posts/97644" target="_blank" rel="noopener noreferrer" class="">Mac 視窗管理工具《Rectangle》，一鍵完成視窗分割、縮放、排列 - 蘋果仁 - 果仁 iPhone/iOS/好物推薦科技媒體</a></li>
-<li class=""><a href="https://medium.com/starbugs/mac-%E5%BF%AB%E9%80%9F%E5%88%86%E5%89%B2%E8%A6%96%E7%AA%97-%E7%94%A8-rectangle-%E5%B0%B1%E5%B0%8D%E4%BA%86-592ed40405e3" target="_blank" rel="noopener noreferrer" class="">Mac 視窗分割，用 Rectangle 就對了 - Starbugs Weekly 星巴哥技術專欄 - Medium</a></li>
-<li class=""><a href="https://davidmles.medium.com/moom-vs-magnet-493fd2d31a77" target="_blank" rel="noopener noreferrer" class="">Moom vs Magnet vs Rectangle | Medium</a></li>
-<li class="">See Also:
-<ul>
-<li class=""><a href="https://goo.gl/0Ll1DU" target="_blank" rel="noopener noreferrer" class="">Magnet</a><br>
-分割視窗軟體, 支援 「拖曳視窗到螢幕邊界後會自動分割」的功能</li>
-</ul>
-</li>
-</ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="menu-bar">Menu Bar<a href="https://kywk.github.io/news/2024/12/24/mac-app-setup/#menu-bar" class="hash-link" aria-label="Menu Bar的直接連結" title="Menu Bar的直接連結" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="itsycal">Itsycal<a href="https://kywk.github.io/news/2024/12/24/mac-app-setup/#itsycal" class="hash-link" aria-label="Itsycal的直接連結" title="Itsycal的直接連結" translate="no">​</a></h3>
-<p><a href="https://www.mowglii.com/itsycal/" target="_blank" rel="noopener noreferrer" class=""><em>Itsycal</em></a>
-在功能表列上便捷地查看日曆, 可以查看月曆和事件列表, 還能快速創建新事件.</p>
-<div class="language-shell codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-shell codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">brew install itsycal</span><br></div></code></pre></div></div>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="dozer">Dozer<a href="https://kywk.github.io/news/2024/12/24/mac-app-setup/#dozer" class="hash-link" aria-label="Dozer的直接連結" title="Dozer的直接連結" translate="no">​</a></h3>
-<p>管理隱藏多餘的 menu bar icon, 使桌面保持清爽, 軟體一多很好用.</p>
-<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">brew install dozer</span><br></div></code></pre></div></div>
-<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="hidden-bar">Hidden Bar<a href="https://kywk.github.io/news/2024/12/24/mac-app-setup/#hidden-bar" class="hash-link" aria-label="Hidden Bar的直接連結" title="Hidden Bar的直接連結" translate="no">​</a></h4>
-<p><a href="https://apps.apple.com/tw/app/hidden-bar/id1452453066?mt=12" target="_blank" rel="noopener noreferrer" class=""><em>Hidden Bar</em></a></p>
-<ul>
-<li class=""><a href="https://free.com.tw/hidden-bar/" target="_blank" rel="noopener noreferrer" class="">Hidden Bar 讓 Mac 工具列更乾淨，自動隱藏用不到的應用程式圖示</a></li>
-<li class=""><a href="https://applealmond.com/posts/139513" target="_blank" rel="noopener noreferrer" class="">隱藏、整理 Mac 選單列圖示，《Hidden Bar》幫你輕鬆搞定 - 蘋果仁 - 果仁 iPhone/iOS/好物推薦科技媒體</a></li>
-<li class=""><a href="https://applefans.today/macos-app-hidden-bar/" target="_blank" rel="noopener noreferrer" class="">Hidden Bar - 解決 Mac 狀態列圖示太多的小工具 – 蘋果迷 APPLEFANS</a></li>
-</ul>
-<p>See Also:</p>
-<ul>
-<li class=""><a href="https://www.macbartender.com/" target="_blank" rel="noopener noreferrer" class="">BarTender</a>,</li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="topnotch">TopNotch<a href="https://kywk.github.io/news/2024/12/24/mac-app-setup/#topnotch" class="hash-link" aria-label="TopNotch的直接連結" title="TopNotch的直接連結" translate="no">​</a></h3>
-<p><a href="https://topnotch.app/" target="_blank" rel="noopener noreferrer" class=""><strong>TopNotch</strong></a> Makes the notch disappear like a 🥷.</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="menubarx">MenubarX<a href="https://kywk.github.io/news/2024/12/24/mac-app-setup/#menubarx" class="hash-link" aria-label="MenubarX的直接連結" title="MenubarX的直接連結" translate="no">​</a></h3>
-<p><a href="https://menubarx.app/" target="_blank" rel="noopener noreferrer" class=""><em>MenubarX</em></a> <a href="https://apps.apple.com/tw/app/menubarx/id1575588022" target="_blank" rel="noopener noreferrer" class="">AppStore</a> A powerful menu bar browser.
-可在 MenuBar 上放置一個小瀏覽器, 方便查閱資料或當作開發 RWD 網頁時的檢視工具.
-亦可將某些網站放置在 menu bar 上當作 App 來使用.</p>
-<ul>
-<li class=""><a href="https://free.com.tw/menubarx/" target="_blank" rel="noopener noreferrer" class="">MenubarX 在 Mac 選單列加入瀏覽器，固定經常使用的網頁</a></li>
-<li class=""><a href="https://www.kocpc.com.tw/archives/421084" target="_blank" rel="noopener noreferrer" class="">MenubarX 讓你在 Mac 選單列中瀏覽網頁的小工具（內購限免） - 電腦王阿達</a></li>
-<li class=""><a href="https://applealmond.com/posts/129059" target="_blank" rel="noopener noreferrer" class="">讓 Mac 多一個小螢幕的《MenubarX》，打報告、查資料很好用 - 蘋果仁 - 果仁 iPhone/iOS/好物推薦科技媒體</a></li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="pomodorome">Pomodorome<a href="https://kywk.github.io/news/2024/12/24/mac-app-setup/#pomodorome" class="hash-link" aria-label="Pomodorome的直接連結" title="Pomodorome的直接連結" translate="no">​</a></h3>
-<p><a href="https://apps.apple.com/us/app/pomodoro-me-focus-on-tasks/id1484801884?mt=12" target="_blank" rel="noopener noreferrer" class=""><em>Pomodorome</em></a>
-在 menu bar 上的番茄時鐘, 方便調用. 亦有基本統計資訊, 方便追蹤時間使用.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="網路通訊">網路通訊<a href="https://kywk.github.io/news/2024/12/24/mac-app-setup/#%E7%B6%B2%E8%B7%AF%E9%80%9A%E8%A8%8A" class="hash-link" aria-label="網路通訊的直接連結" title="網路通訊的直接連結" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="cloudmounter">CloudMounter<a href="https://kywk.github.io/news/2024/12/24/mac-app-setup/#cloudmounter" class="hash-link" aria-label="CloudMounter的直接連結" title="CloudMounter的直接連結" translate="no">​</a></h3>
-<p><a href="https://cloudmounter.net/" target="_blank" rel="noopener noreferrer" class=""><em>CloudMounter</em></a> 把网络云盘放进你的 Finder 里</p>
-<ul>
-<li class=""><a href="https://apps.apple.com/tw/app/cloudmounter-cloud-encryption/id1130254674?l=en&amp;mt=12" target="_blank" rel="noopener noreferrer" class="">Get From App Store</a></li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="rclone">rclone<a href="https://kywk.github.io/news/2024/12/24/mac-app-setup/#rclone" class="hash-link" aria-label="rclone的直接連結" title="rclone的直接連結" translate="no">​</a></h3>
-<p><a href="https://rclone.org/" target="_blank" rel="noopener noreferrer" class=""><em>rclone</em></a></p>
-<div class="language-shell codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-shell codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">brew install rclone</span><br></div></code></pre></div></div>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="其他">其他<a href="https://kywk.github.io/news/2024/12/24/mac-app-setup/#%E5%85%B6%E4%BB%96" class="hash-link" aria-label="其他的直接連結" title="其他的直接連結" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="iina">IINA<a href="https://kywk.github.io/news/2024/12/24/mac-app-setup/#iina" class="hash-link" aria-label="IINA的直接連結" title="IINA的直接連結" translate="no">​</a></h3>
-<p><a href="https://iina.io/" target="_blank" rel="noopener noreferrer" class=""><em>IINA</em></a> 是 Mac 上最強大的播放器, 幾乎支援所有影音格式. 開源, UI 美觀.</p>
-<div class="language-shell codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-shell codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">brew install iina</span><br></div></code></pre></div></div>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="exifrenamer">ExifRenamer<a href="https://kywk.github.io/news/2024/12/24/mac-app-setup/#exifrenamer" class="hash-link" aria-label="ExifRenamer的直接連結" title="ExifRenamer的直接連結" translate="no">​</a></h3>
-<p><a href="http://goo.gl/lSWZ" target="_blank" rel="noopener noreferrer" class=""><em>ExifRenamer</em></a></p>
-<div class="language-shell codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-shell codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">brew install exifrenamer</span><br></div></code></pre></div></div>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="mcbopomofo-小麥注音輸入法">McBopomofo 小麥注音輸入法<a href="https://kywk.github.io/news/2024/12/24/mac-app-setup/#mcbopomofo-%E5%B0%8F%E9%BA%A5%E6%B3%A8%E9%9F%B3%E8%BC%B8%E5%85%A5%E6%B3%95" class="hash-link" aria-label="McBopomofo 小麥注音輸入法的直接連結" title="McBopomofo 小麥注音輸入法的直接連結" translate="no">​</a></h3>
-<p><a href="http://mcbopomofo.openvanilla.org/" target="_blank" rel="noopener noreferrer" class=""><em>McBopomofo 小麥注音輸入法</em></a>
-反應快速, 輕巧簡單, 為 Mac User 量身打造.
-支援標準, 倚天, 許氏, 倚天26 鍵, IBM 以及漢語拼音鍵盤配置.</p>
-<ul>
-<li class=""><a href="https://osxchat.tumblr.com/post/29205181318/mcbopomofo-hidden-settings" target="_blank" rel="noopener noreferrer" class="">小麥注音的隱藏設定</a></li>
-</ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="see-also">See Also<a href="https://kywk.github.io/news/2024/12/24/mac-app-setup/#see-also" class="hash-link" aria-label="See Also的直接連結" title="See Also的直接連結" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="遺珠">遺珠<a href="https://kywk.github.io/news/2024/12/24/mac-app-setup/#%E9%81%BA%E7%8F%A0" class="hash-link" aria-label="遺珠的直接連結" title="遺珠的直接連結" translate="no">​</a></h3>
-<p>以下是曾為個人熱愛, 但因故越來越少用的軟體. 暫列於此...</p>
-<ul>
-<li class=""><a href="https://typora.io/" target="_blank" rel="noopener noreferrer" class="">Typora</a><br>
-基於 Markdown 開源的 IDE</li>
-<li class=""><a href="https://goo.gl/Jwx6Sx" target="_blank" rel="noopener noreferrer" class="">截圖</a><br>
-截圖除了豐富的標註工具, 支援 QR Code 跨螢幕傳圖, 倒數計時截圖, 標籤與貼紙等功能</li>
-<li class=""><a href="http://meetfranz.com/" target="_blank" rel="noopener noreferrer" class="">Franz</a><br>
-集大成的 IM 通訊軟體, 在同一個視窗內使用 Slack, Messenger, Telegram, ...</li>
-<li class=""><a href="https://headsetapp.co/" target="_blank" rel="noopener noreferrer" class="">Headset</a><br>
-極為好用的 Youtube 免費線上音樂播放工具! 豐富歌單, 電台以及個人收藏功能</li>
-<li class=""><a href="https://github.com/clyang/welly" target="_blank" rel="noopener noreferrer" class="">Welly</a><br>
-一套運行在 Mac 上功能豐富的BBS軟體, 被 PTT 網頁版 term.ptt.cc 取代了.</li>
-<li class=""><a href="http://www.xmind.net/" target="_blank" rel="noopener noreferrer" class="">XMind Zen</a><br>
-XMind Zen 不但跟原本的 XMind 一樣好用, 而且更美觀快速.<br>
-但全面性使用 Obsidian 作為筆記和專案管理以後, 都在 Obsidian 上找相關解決方案了.</li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="reference">Reference<a href="https://kywk.github.io/news/2024/12/24/mac-app-setup/#reference" class="hash-link" aria-label="Reference的直接連結" title="Reference的直接連結" translate="no">​</a></h3>
-<ul>
-<li class=""><a href="https://blog.jason.tools/2023/09/macos-opensource-apps.html?fbclid=IwAR1nRrdYDi3-Wpzia2qDm7gg-6y_F7CCMFCxPGqmJ8SJXfO0oC6co3pla0E" target="_blank" rel="noopener noreferrer" class="">節省工具箱 Jason Tools: [套件分享] 在 macOS 工作所用的自由與開源軟體 (持續更新)</a></li>
-<li class=""><a href="https://www.youtube.com/watch?v=-xXc7qeiC8I" target="_blank" rel="noopener noreferrer" class="">10 BEST Mac Apps for Productivity (in 2022)!</a></li>
-<li class=""><a href="https://www.youtube.com/watch?v=OWdOq7E62Ws" target="_blank" rel="noopener noreferrer" class="">5 款免费又好用的 Mac 菜单栏软件 - Mac云课堂</a></li>
-<li class=""><a href="https://www.youtube.com/watch?v=w3Vue4bdPyM" target="_blank" rel="noopener noreferrer" class="">22 FREE Mac Apps I use to BOOST MY PRODUCTIVITY - YouTube</a></li>
-<li class=""><a href="https://www.youtube.com/watch?v=FxUk8gxzHI8" target="_blank" rel="noopener noreferrer" class="">Amazing FREE Mac Apps You Aren’t Using! - YouTube</a></li>
-</ul>]]></content>
-        <category label="Mac" term="Mac"/>
-        <category label="DevEnv" term="DevEnv"/>
-        <category label="kywk" term="kywk"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Surf 11.16 ~ 11.30]]></title>
-        <id>https://kywk.github.io/news/2024/11/30/surfing/</id>
-        <link href="https://kywk.github.io/news/2024/11/30/surfing/"/>
-        <updated>2024-11-30T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Surfing quick note 11.16 ~ 11.30]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="it-news">IT News<a href="https://kywk.github.io/news/2024/11/30/surfing/#it-news" class="hash-link" aria-label="IT News的直接連結" title="IT News的直接連結" translate="no">​</a></h3>
-<ul>
-<li class=""><a href="https://www.codebuff.com/" target="_blank" rel="noopener noreferrer" class="">Codebuff</a> <a href="https://news.ycombinator.com/item?id=42078536" target="_blank" rel="noopener noreferrer" class="">Launch HN: Codebuff (YC F24) – CLI tool that writes code for you | Hacker News</a></li>
-<li class=""><a href="https://github.com/dandavison/delta" target="_blank" rel="noopener noreferrer" class="">GitHub - dandavison/delta: A syntax-highlighting pager for git, diff, grep, and blame output</a> <a href="https://news.ycombinator.com/item?id=42091365" target="_blank" rel="noopener noreferrer" class="">Delta: A syntax-highlighting pager for Git, diff, grep, and blame output | Hacker News</a>
-<ul class="contains-task-list containsTaskList_mC6p">
-<li class="task-list-item"><input type="checkbox" disabled="" checked=""> 初步看起來資訊更清楚的 pager, 週末花時間研究一下. 📅 2024-11-17 ✅ 2024-12-22
-<ul>
-<li class="">和 <code>diff-so-fancy</code> 各有千秋, 列入裝機工具之一, 但尚未轉移設定.</li>
-<li class="">[[git-delta]]</li>
-<li class="">研究過程發現的 [[ansifilter]] 是好物!</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class=""><a href="https://mergiraf.org/" target="_blank" rel="noopener noreferrer" class="">Introduction - Mergiraf</a> <a href="https://news.ycombinator.com/item?id=42093756" target="_blank" rel="noopener noreferrer" class="">Mergiraf: a syntax-aware merge driver for Git | Hacker News</a></li>
-<li class=""><a href="https://www.ironcalc.com/" target="_blank" rel="noopener noreferrer" class="">IronCalc - Open-Source Spreadsheet Engine</a>
-<ul class="contains-task-list containsTaskList_mC6p">
-<li class="">看起來比 Google Docs 更 lightweight 的 WebApp, 筆記下來. 臨時有 Excel 需求處理時也許有用.</li>
-<li class="task-list-item"><input type="checkbox" disabled="" checked=""> 確認是否支援複雜函式運算 ⏬ 📅 2024-11-17 ✅ 2025-05-31
-<ul>
-<li class="">支援函式運算, 且支援 API 呼叫. 也許產製報表有機會用上.</li>
-</ul>
-</li>
-<li class="task-list-item"><input type="checkbox" disabled="" checked=""> IronCalc Use Case Study 📅 2026-01-16 ✅ 2026-01-16
-<ul>
-<li class="">目前版本最大的敗筆應該是不支援共編, 而這是個人或團隊選用線上 Office 套件最主要的需求.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class=""><a href="https://www.ithome.com.tw/news/166158" target="_blank" rel="noopener noreferrer" class="">AWS與Rust基金會攜手驗證Rust標準函式庫的安全性 | iThome</a></li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="tech">Tech<a href="https://kywk.github.io/news/2024/11/30/surfing/#tech" class="hash-link" aria-label="Tech的直接連結" title="Tech的直接連結" translate="no">​</a></h3>
-<ul>
-<li class=""><a href="https://github.com/drogus/jawsm" target="_blank" rel="noopener noreferrer" class="">GitHub - drogus/jawsm: JavaScript to WASM compiler</a>  <a href="https://news.ycombinator.com/item?id=42095879" target="_blank" rel="noopener noreferrer" class="">Show HN: Jaws – a JavaScript to WASM ahead-of-time compiler | Hacker News</a></li>
-<li class=""><a href="https://self-issued.info/?p=2573" target="_blank" rel="noopener noreferrer" class="">OpenID Connect specifications published as ISO standards – Mike Jones: self-issued</a> <a href="https://news.ycombinator.com/item?id=42101181" target="_blank" rel="noopener noreferrer" class="">OpenID Connect specifications published as ISO standards | Hacker News</a>
-<ul>
-<li class="">一些 OpenID 規格文件資料, 先筆記, 日後用不上就算了.</li>
-</ul>
-</li>
-<li class=""><a href="https://blog.gslin.org/archives/2024/11/25/12100/git-%e7%9a%84-hasconfigremote-url/" target="_blank" rel="noopener noreferrer" class="">Git 的 hasconfig:remote.*.url: – Gea-Suan Lin's BLOG</a>
-<ul class="contains-task-list containsTaskList_mC6p">
-<li class="">關於 gitconfig 的優化?</li>
-<li class="task-list-item"><input type="checkbox" disabled="" checked=""> reorganize gitconfig w/ direnv 🔺 📅 2025-06-04 ✅ 2025-06-05</li>
-</ul>
-</li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="life">Life<a href="https://kywk.github.io/news/2024/11/30/surfing/#life" class="hash-link" aria-label="Life的直接連結" title="Life的直接連結" translate="no">​</a></h3>
-<ul>
-<li class=""><a href="https://www.mobile01.com/topicdetail.php?f=628&amp;t=7045521" target="_blank" rel="noopener noreferrer" class="">【橫沙笛縱走】大雪山五星級森林步道 | 橫嶺山 沙蓮山 笛吹山 - Mobile01</a></li>
-<li class=""><a href="https://www.ithome.com.tw/voice/166157" target="_blank" rel="noopener noreferrer" class="">適者生存 | iThome</a></li>
-<li class=""><a href="https://crossing.cw.com.tw/article/19453" target="_blank" rel="noopener noreferrer" class="">為何到澳洲打工度假、加拿大定居後，我才發現出國並非自己的「夢想」？｜Ｗinnie／在加的故事｜換日線</a></li>
-</ul>]]></content>
-        <author>
-            <name>kywk</name>
-            <uri>https://github.io/kywk</uri>
-        </author>
-        <category label="Surf" term="Surf"/>
-        <category label="2024/11" term="2024/11"/>
     </entry>
 </feed>
