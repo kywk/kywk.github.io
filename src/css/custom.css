@@ -335,13 +335,21 @@ button[class*="collapseSidebarButton"]:hover {
    Blockquote Styling
    ============================================ */
 blockquote {
-  border-left: 4px solid transparent;
-  border-image: linear-gradient(180deg, var(--gradient-start) 0%, var(--gradient-end) 100%) 1;
-  background: linear-gradient(90deg, rgba(230, 126, 34, 0.05) 0%, transparent 100%);
+  border-left: 4px solid var(--ifm-color-primary);
+  background: linear-gradient(90deg, rgba(230, 126, 34, 0.08) 0%, rgba(230, 126, 34, 0.02) 100%);
+  border-radius: 0 var(--ifm-global-radius) var(--ifm-global-radius) 0;
+  padding: 0.75rem 1rem;
+  margin: 1rem 0;
+  box-shadow: 2px 2px 8px rgba(230, 126, 34, 0.08);
+}
+
+blockquote p {
+  margin: 0.5rem 0;
 }
 
 [data-theme='dark'] blockquote {
-  background: linear-gradient(90deg, rgba(245, 176, 65, 0.08) 0%, transparent 100%);
+  background: linear-gradient(90deg, rgba(245, 176, 65, 0.1) 0%, rgba(245, 176, 65, 0.03) 100%);
+  box-shadow: 2px 2px 8px rgba(245, 176, 65, 0.06);
 }
 
 /* ============================================

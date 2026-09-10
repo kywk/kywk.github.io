@@ -173,7 +173,7 @@ npm run content:wikilink
   （slug 不在 remark 階段處理 —— Docusaurus 在 processDocMetadata 就算好 permalink，
   remark 是之後才在 mdx-loader 跑的，改 frontmatter 已經來不及）
 - **效能 flags**: `future.faster` 全開 + `future.v4.removeLegacyPostBuildHeadAttribute`
-  （`ssgWorkerThreads` 的前置條件），詳見 [Docusaurus v3 升級筆記](./moco/Obsidian/docusaurus/Docusaurus%20v3%20Upgrading.md)
+  （`ssgWorkerThreads` 的前置條件），詳見 [Docusaurus v3 升級筆記](Docusaurus%20v3%20Upgrading.md)
 - **部署設定**: 配置 GitHub Pages 部署參數
 
 ### 自訂插件

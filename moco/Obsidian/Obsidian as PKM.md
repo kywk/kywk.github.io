@@ -16,7 +16,7 @@ tags:
 
 - [x] obs-howto_docusaurus-integrate 📅 2023-09-08 ✅ 2023-09-14
 - [Introduction to Bases - Obsidian Help](https://help.obsidian.md/bases)
-	- [ ] Study & Refine my Obsidian Vault 📅 2026-08-31
+	- [ ] Study & Refine my Obsidian Vault 📅 2026-09-05
 
 ### myOutlook
 

@@ -9,8 +9,8 @@
   "tag-wrangler",
   "obsidian-tasks-plugin",
   "dataview",
-  "templater-obsidian",
   "obsidian-outliner",
   "quickadd",
-  "obsidian-tracker"
+  "obsidian-tracker",
+  "templater-obsidian"
 ]
