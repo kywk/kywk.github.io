@@ -54,5 +54,5 @@ hide_table_of_contents: true
 - [南科工程師的「減速」日記：在不斷加速的 AI 年代，我為什麼選擇「慢」下來？｜noise／讀者投書｜換日線](https://crossing.cw.com.tw/article/20425)
 	- [x] read it 📅 2026-01-16 ✅ 2026-01-16
 	- [[slowing-down-in-ai-era-engineer-diary]]
-	- [[01-22-Life-with-AI]]
+	- [[01-22-Life-with-AI|Life with AI]]
 - [冰島奇遇：不只極光、冰川與火山，還有獨特人文、小國幽默、低調超奢度假村⋯⋯等你探秘｜三姐妹看歐洲｜換日線](https://crossing.cw.com.tw/article/20421)

@@ -18,7 +18,7 @@ One Obsidian
 
 過去是利用 Symbolic Link 的方式串連 Docusaurus 和 Obsidian, 
 但這方法不適用同步檔案於手機使用, 
-花了些時間 [整合 Docusaurus / Obsidiaan](/moco/obsidian/docusaurus/integrate-obsidian-and-docusaurus/),
+花了些時間 [[Integrate Obsidian and Docusaurus|整合 Docusaurus / Obsidiaan]],
 初步成果還可接受.
 
 整合上癮, 隨後把個人常態保存的文件檔案, 也從 Documents 搬入 Obsidian.

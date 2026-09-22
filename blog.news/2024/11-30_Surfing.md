@@ -18,7 +18,7 @@ Surfing 11.16 ~ 11.30
 - [GitHub - dandavison/delta: A syntax-highlighting pager for git, diff, grep, and blame output](https://github.com/dandavison/delta) [Delta: A syntax-highlighting pager for Git, diff, grep, and blame output | Hacker News](https://news.ycombinator.com/item?id=42091365)
 	- [x] 初步看起來資訊更清楚的 pager, 週末花時間研究一下. 📅 2024-11-17 ✅ 2024-12-22
 		-  和 `diff-so-fancy` 各有千秋, 列入裝機工具之一, 但尚未轉移設定.
-		- [[git-delta]] 
+		- [[Git Delta]]
 		- 研究過程發現的 [[ansifilter]] 是好物!
 - [Introduction - Mergiraf](https://mergiraf.org/) [Mergiraf: a syntax-aware merge driver for Git | Hacker News](https://news.ycombinator.com/item?id=42093756)
 - [IronCalc - Open-Source Spreadsheet Engine](https://www.ironcalc.com/)

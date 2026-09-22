@@ -41,7 +41,7 @@ image: https://lh3.googleusercontent.com/pw/ACtC-3dctjoKSszhdu7OFFUmtd-eRmtxUAIx
 
 ## Stuff Reorganize
 - [x] 3C ✅ 2025-01-19
-	- [-] [[ACTION_2025#ForSale]] 🔼 📅 2024-12-31
+	- [-] ACTION_2025#ForSale 🔼 📅 2024-12-31
 - [x] Camping ✅ 2025-01-19
 
 ## See Also

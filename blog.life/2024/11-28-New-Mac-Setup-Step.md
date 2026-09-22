@@ -41,4 +41,4 @@ image: https://lh3.googleusercontent.com/pw/ACtC-3dctjoKSszhdu7OFFUmtd-eRmtxUAIx
     - Safari / Dock / Hot corners
 5.  其他軟體安裝與設定
 
-_Ref: [Setup: App 安裝紀錄 | kywk.me](https://kywk.github.io/moco/machintosh/Applications/Mac%20Apps%20Setup/)_
+_Ref: [[Mac Apps Setup|Setup: App 安裝紀錄]]_

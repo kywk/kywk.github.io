@@ -60,7 +60,7 @@ $ brew install sublime-text
 開發工具
 --------
 
-__參考 [macOS 開發環境建構](#)__
+__參考 [[11-30-Mac-DevEnv-Setup|macOS 開發環境建構]]__
 
 
 生產力工具
@@ -69,7 +69,7 @@ __參考 [macOS 開發環境建構](#)__
 ### Obsidian ###
 
 [Zettelkasten](https://zettelkasten.de/)
-[Zettlr](https://www.zettlr.com), [Joplin](#), [Trilium Notes](https://github.com/zadam/trilium)
+[Zettlr](https://www.zettlr.com), [Joplin](https://joplinapp.org/), [Trilium Notes](https://github.com/zadam/trilium)
 
 ``` shell
 $ brew install --cask obsidian

@@ -6,6 +6,7 @@ const { Logger } = require("./scripts/logger.js");
 const { pluginConfig, docsConfig, blogConfig, externalResources } = require("./site.config.js");
 const fs = require("fs");
 const path = require("path");
+const { createContentLinkIndex, createWikiPageResolver } = require("./scripts/content-links.js");
 
 // 插件載入 - 支援多種安裝方式：npm、本地開發、手動 clone
 function loadPlugin(npmPackage, localPath) {
@@ -36,6 +37,14 @@ const remarkLeaflet = loadPlugin("remark-obsidian-leaflet", "./plugins/remark-ob
 const slugNormalizerPlugin = loadPlugin("remark-slug-normalizer", "./plugins/remark-slug-normalizer/src/index.js");
 const normalizeSlug = slugNormalizerPlugin?.normalizeSlug;
 const deriveSlug = slugNormalizerPlugin?.deriveSlug;
+
+// 全站 wikilink 索引：blog 文章可以連到 docs，也可以連到另一個 blog。
+// 路由仍由 remark-slug-normalizer 的 deriveSlug() 統一推導。
+const contentLinkIndex = createContentLinkIndex({
+  root: __dirname,
+  docsConfig,
+  blogConfig,
+});
 
 // 建立檔案映射表 - 統一函數
 function createFileMap(basePath) {
@@ -167,6 +176,25 @@ function createRemarkPlugins(fileMap, routeBase) {
   ]);
 
   return plugins;
+}
+
+// blog 原始檔同樣以 Obsidian wikilink 為內容格式，但 blog 的 URL 包含日期，
+// 不能沿用 docs 的 routeBase + 相對 slug 組合方式；改由全站索引直接回傳完整 route。
+function createBlogRemarkPlugins(blog) {
+  return [
+    [
+      remarkWikiLink,
+      {
+        pageResolver: createWikiPageResolver(contentLinkIndex, {
+          strict: true,
+          context: blog.path,
+        }),
+        permalinks: contentLinkIndex.permalinks,
+        hrefTemplate: (permalink) => permalink,
+        aliasDivider: pluginConfig.wikiLink.aliasDivider,
+      },
+    ],
+  ];
 }
 
 const config: Config = {
@@ -301,6 +329,7 @@ const config: Config = {
         id: blog.id,
         routeBasePath: blog.routeBasePath,
         path: blog.path,
+        remarkPlugins: createBlogRemarkPlugins(blog),
         showReadingTime: true,
         blogSidebarTitle: "All posts",
         blogSidebarCount: "ALL",

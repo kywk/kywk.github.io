@@ -34,7 +34,7 @@ homebrew cask 的支援越來越多, 越來越方便,
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-可以進一步直接用 [[homebrew-bundle]] 來安裝必要的工具與軟體.
+可以進一步直接用 [[Homebrew Bundle]] 來安裝必要的工具與軟體.
 
 ### Dropbox
 
@@ -46,7 +46,7 @@ homebrew cask 的支援越來越多, 越來越方便,
 加上免費仔只能連結三個裝置的限制, 現在改用第三方軟體取代官方桌面工具.
 
 - [[Dotfiles Management]]
-- [[Maestral:Open source Dropbox client, Maestral]]
+- [[Maestral|Open source Dropbox client, Maestral]]
 
 ```shell
 brew install maestral
@@ -77,7 +77,7 @@ brew install sublime-text zed
 
 ## 開發工具
 
-參考: **[[Mac DevEnv Setup:macOS 開發環境建構]]**
+參考: **[[11-30-Mac-DevEnv-Setup|macOS 開發環境建構]]**
 
 ## 生產力工具
 

@@ -9,7 +9,7 @@ image: https://lh3.googleusercontent.com/pw/ACtC-3dctjoKSszhdu7OFFUmtd-eRmtxUAIx
 ---
 
 今天 [通勤學英語 15 Mins Today](https://www.15mins.today/) _幕後教師室Teacher's Lounge Ep.35: 強化好習慣的原子架構 James Clear's framework for forming better habits_
-podcast 節目中聽到 [[Atomic habits]] 的幾個核心精神, 備註一下:
+podcast 節目中聽到 [[atomic-habits|Atomic habits]] 的幾個核心精神, 備註一下:
 
 訂定適合自己的學習框架, 可以簡單地拆解成下面四個步驟：
 
@@ -31,4 +31,3 @@ podcast 節目中聽到 [[Atomic habits]] 的幾個核心精神, 備註一下:
 紀錄一下, 慢慢讓這些事發生...
 
 - [一萬小時定律 - MBA智库百科](https://wiki.mbalib.com/zh-tw/%E4%B8%80%E4%B8%87%E5%B0%8F%E6%97%B6%E5%AE%9A%E5%BE%8B#:~:text=%E4%B8%80%E8%90%AC%E5%B0%8F%E6%99%82%E5%AE%9A%E5%BE%8B%EF%BC%9A%E4%BB%BB%E4%BD%95,%E8%AE%8A%E6%88%90%E8%B6%85%E5%87%A1%E7%9A%84%E5%BF%85%E8%A6%81%E6%A2%9D%E4%BB%B6%E2%80%9D%E3%80%82)
-- 

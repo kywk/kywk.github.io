@@ -22,10 +22,9 @@ Surfing 07.01 ~ 07.16
 
 - [5 Easy Ways to Check for Open Ports on Linux](https://www.makeuseof.com/ways-check-for-open-ports-on-linux/)
 - [使用 MySQL status 查看是否還有 Query 進來 – Tsung's Blog](https://blog.longwin.com.tw/2023/07/mysql-server-status-information-2023/)
-- [[LangChain] LangChain Embedding 中可能發生的問題](https://www.evanlin.com/langchain-embedding-issue/)
+- [LangChain：LangChain Embedding 中可能發生的問題](https://www.evanlin.com/langchain-embedding-issue/)
 - [為什麼有些人都不刪除用不到的程式碼？ | Complete Think](https://rickhw.github.io/2023/07/11/Coding/Why-Keep-Old-Code/)
 
 ### Life
 
 - [2023年7月3日、4日破人類史上最熱溫度紀錄 – Tsung's Blog](https://blog.longwin.com.tw/2023/07/news-weather-temperature-hot-record-2023/)
-

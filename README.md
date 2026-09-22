@@ -168,7 +168,7 @@ npm run content:wikilink
 ### docusaurus.config.ts
 - **多文檔配置**: 每個主題 (backpacker, lifehacker, moco) 都有獨立的文檔實例
 - **preset-classic 的預設 docs/blog 已關閉** (`docs: false, blog: false`)，避免多出 `/docs`、`/blog` 空路由
-- **Wiki Link 解析**: 自動將 `[[]]` 語法轉換為 Docusaurus 連結（⚠️ 目前只掛在 docs 實例，blog 尚未支援，詳見下方待辦）
+- **Wiki Link 解析**: docs 與 blog 共用全站內容索引，自動將 `[[]]` 語法轉換為 Docusaurus 連結；blog 的日期式 permalink 也由同一份 slug 規則推導
 - **Remark 插件鏈**: remarkLeaflet → remarkKanban → remarkWikiLink
   （slug 不在 remark 階段處理 —— Docusaurus 在 processDocMetadata 就算好 permalink，
   remark 是之後才在 mdx-loader 跑的，改 frontmatter 已經來不及）
@@ -192,6 +192,7 @@ npm run content:wikilink
 | `plugins/remark-obsidian-kanban/` | Obsidian Kanban 看板渲染 |
 | `plugins/remark-obsidian-leaflet/` | Obsidian Leaflet 地圖渲染 |
 | `plugins/remark-slug-normalizer/` | URL slug 推導規則（`deriveSlug`，全站唯一實作） |
+| `scripts/content-links.js` | 全站 Obsidian wikilink 索引與 Docusaurus route resolver |
 | `scripts/slug.js` | slug 檢查／清理／寫入 |
 | `scripts/convert-to-wikilinks.js` | Markdown 連結轉 wiki-link |
 | `scripts/content-validator.js` | 內容驗證與檢查 |
@@ -219,11 +220,8 @@ npm run content:wikilink
 
 ## 已知待辦
 
-- **Wiki-link 尚未支援 blog**: `remark-wiki-link` 只掛在 3 個 docs 實例上，
-  `blog.news` / `blog.life` 內的 22 個 `[[...]]` 會以原文顯示。要修需要先建立跨 vault 的
-  全站索引（含 blog 的日期式 permalink 推導），否則 16 個跨 vault 連結會指向錯誤路由
-- **78 條 broken links**: 主要是 wikilink 指向不存在的筆記（40）、舊的 `[[標題:說明]]`
-  冒號別名語法（23）、`[[moco/...]]` 帶 vault 前綴（4）。全部修完後可把
-  `onBrokenLinks` 從 `warn` 改成 `throw`
+- **全站仍有 broken-link warnings**: 目前主要集中在舊的 backpacker／moco wikilink、舊的
+  `[[標題:說明]]` 冒號別名語法與歷史路徑；blog wikilink 已改由全站索引嚴格解析，未解析或同名
+  連結會直接使 blog build 失敗。全站清理完成後可把 `onBrokenLinks` 從 `warn` 改成 `throw`
 - ~~路由大小寫不一致~~：**已解決**。全站 919 個路由現在 0 個含大寫、0 個 `%20`、
   0 個含底線、0 個 doc 路由以 `/index/` 結尾（改造前分別是 98 / 0 / 若干 / 8）
