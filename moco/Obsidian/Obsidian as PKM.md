@@ -1,9 +1,11 @@
 ---
-draft: false
+draft: true
 tags:
   - Obsidian
   - PKM
   - GTD/TODO
+sidebar_position: 95
+sidebar_label: 草稿：Obsidian as PKM
 ---
 
 ## Summary

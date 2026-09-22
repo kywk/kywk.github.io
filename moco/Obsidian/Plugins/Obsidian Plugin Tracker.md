@@ -8,7 +8,7 @@ tags:
   - Plugin
   - Tracker
   - 數據視覺化
-sidebar_position: 30
+sidebar_position: 50
 sidebar_label: Tracker Plugin
 date_created: 2023-01-31T00:00:00.000Z
 date_updated: 2025-12-24T00:00:00.000Z

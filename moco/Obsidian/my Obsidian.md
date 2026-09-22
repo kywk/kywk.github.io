@@ -1,123 +1,115 @@
 ---
-title: Customize my obsidian
-description: Why & How I use Obsidian
+title: My Obsidian Setup
+description: 目前使用中的 Obsidian 個人配置與工作區設定
 tags:
   - Obsidian
   - PKM
   - kywk
-sidebar_position: 1
+sidebar_position: 10
+sidebar_label: 我的實際配置
 hide_table_of_contents: true
 date_created: 2024-04-07T00:00:00.000Z
+date_updated: 2026-09-22T00:00:00.000Z
 image: 'https://i.imgur.com/mErPwqL.png'
 ---
 
-# [Obs] Customize my Obsidian
+# [Obs] 我的 Obsidian 實際配置
 
-這份文件記錄我的 Obsidian 客製化設定，包含主題選擇、介面配置和工作流程優化。
+本頁只記錄目前 vault 中已存在的設定；設定檔變更後，應一併更新本頁。最後核對日：**2026-09-22**。
 
-## Theme & Main Layout
+## Vault 與檔案處理
 
-### 主題選擇
-- **Theme**: [Blue-Topaz](https://github.com/PKM-er/Blue-Topaz_Obsidian-css)
-  - 選擇理由：簡潔美觀，支援深色/淺色模式切換
-  - 特色：豐富的自訂選項，良好的中文字體支援
+- **Vault 入口**：`/Users/kywk/obsidian`，目前是指向 `Dropbox/obsidian` 的 symlink。
+- **新建檔案**：統一放到 `_incoming/`。
+- **附件**：統一放到 `assets/`。
+- **自動更新連結**：啟用 `alwaysUpdateLinks`。
+- **編輯模式**：Live Preview 啟用；不顯示行號；不使用 Obsidian 的 readable line length。
+- **Obsidian 排除清單**：`node_modules/`、`plugins/`、`scripts/`、`src/`、`static/`、`build/`、`.docusaurus/`、`.git/`。
 
-### 介面配置
-- **三欄式佈局**：左側邊欄 + 主編輯區 + 右側邊欄
-- **響應式設計**：根據螢幕大小自動調整
+## 外觀與字體
 
-## Left Sidebar
+| 項目 | 目前設定 |
+| --- | --- |
+| Base theme | Obsidian |
+| CSS theme | Blue Topaz |
+| 基本字級 | 15px |
+| 介面／文章字體 | system-ui、PingFang SC、Hiragino Sans GB、Microsoft YaHei 等系統字體 |
+| 等寬字體 | Hack Nerd Font、SF Mono、Monaco、Cascadia Code 等 |
 
-### Access Vault
-**Toggle HotKey: `⌥ ←`**
+## 工作區配置
 
-#### Files
-- 檔案瀏覽器，支援資料夾結構導覽
-- 常用功能：快速建立新檔案、重新命名、移動檔案
+目前的 `workspace.json` 是左側邊欄、主編輯區、右側邊欄的三區工作區：
 
-#### Search
-- 全域搜尋功能
-- 支援正規表達式和標籤搜尋
-- 搜尋結果即時預覽
+- **左側：Vault**：Vault Feed Reader Sources、Files、Recent Files、Search、Tags、All Properties。
+- **左側：目前筆記**：Outline、Local Graph、Backlinks、Outgoing links。
+- **右側**：Calendar，以及固定開啟的 ACTION、Follow up、HomeLab TODOs、TOGO 等筆記。
+- **主區**：Markdown 筆記與 Vault Feed Reader 閱讀器可以固定成分頁。
 
-#### Tags
-- 標籤管理面板
-- 階層式標籤結構
-- 點擊標籤快速篩選相關筆記
+## 日記與模板
 
-#### All Properties
-- 屬性總覽面板
-- 管理所有筆記的 frontmatter 屬性
-- 支援批次編輯和篩選
+| 項目 | 目前設定 |
+| --- | --- |
+| Daily Notes 資料夾 | `_journaling` |
+| Daily Notes 模板 | `_templates/DAILY_NOTE_TEMPLATE.md` |
+| 檔名格式 | `YYYY/MM-MMM/YYYY-MM-DD-dddd` |
+| Templater 模板資料夾 | `_templates` |
+| Templater 使用者腳本 | `_templates/scripts` |
+| 新建檔案時套用模板 | 依資料夾觸發 |
 
-### Current Note
+詳情見 [[Obsidian Daily Notes]]。
 
-#### Outline
-- 當前筆記的大綱結構
-- 快速跳轉到指定章節
-- 支援標題層級摺疊
+## 核心外掛
 
-#### Local Graph View
-- 當前筆記的關聯圖
-- 視覺化顯示筆記間的連結關係
-- 可調整節點距離和連結強度
+目前啟用的核心功能包含檔案瀏覽、全域搜尋、快速切換、Graph、Backlinks、Outgoing links、Tags、Page Preview、Daily Notes、Note Composer、Command Palette、Outline、Word Count、File Recovery、Canvas、Properties 與 Bases。
 
-#### Backlink
-- 反向連結面板
-- 顯示引用當前筆記的其他筆記
-- 支援未連結提及的偵測
+目前停用的核心功能包含 Templates、Slash command、Starred、Markdown importer、Random note、Slides、Audio recorder、Workspaces、Publish、Sync、Bookmarks 與 Footnotes。
 
-#### Outgoing link
-- 外向連結面板
-- 顯示當前筆記引用的其他筆記
-- 快速檢查連結有效性
+## 已啟用的社群外掛
 
-## Right Sidebar
-**Toggle HotKey: `⌥ →`**
+目前 `.obsidian/community-plugins.json` 列出的外掛如下：
 
-### Calendar
-- 日曆檢視插件
-- 快速導覽到特定日期的筆記
-- 視覺化顯示筆記建立頻率
+- **Auto Link Title**：自動取得外部連結標題
+- **Calendar**：以週一為一週開始日的日曆檢視
+- **Editor Syntax Highlight**：編輯器中的程式碼語法高亮
+- **Kanban**：Markdown 看板，並連結日期到 Daily Notes
+- **Leaflet**：筆記中的互動地圖
+- **Recent Files**：最近開啟檔案
+- **Style Settings**：主題與外掛樣式設定
+- **Tag Wrangler**：標籤管理
+- **Tasks**：任務查詢與完成／取消日期
+- **Dataview**：資料查詢，啟用 DataviewJS
+- **Outliner**：列表與大綱編輯
+- **QuickAdd**：快速新增內容
+- **Tracker**：數值與事件追蹤
+- **Templater**：模板與使用者腳本
+- **Vault Feed Reader**：RSS／Atom 閱讀器與 Markdown 保存
 
-### Quick Access
-快速存取常用筆記和工作區域
+`life-tracker`、`obsidian-excalidraw-plugin`、`obsidian-projects`、`obsidian42-brat`、`symlinks-obsidian` 目前雖仍在 `.obsidian/plugins/`，但沒有列入啟用清單，因此不把它們視為目前使用中的社群外掛。
 
-#### ACTION
-- 當前進行中的任務
-- 需要立即處理的事項
-- 連結到具體的行動計畫
+## 自訂快捷鍵
 
-#### BACKLOG
-- 待辦事項清單
-- 未來計畫的想法收集
-- 定期回顧和整理
+完整清單見 [[Obsidian Hot Key]]。目前只有以下 4 組自訂快捷鍵：
 
-#### IDEA-POOL
-- 靈感收集池
-- 隨機想法和創意記錄
-- 定期整理成具體專案
+| 指令 | macOS 快捷鍵 |
+| --- | --- |
+| Toggle left sidebar | `⌥ ←` |
+| Toggle right sidebar | `⌥ →` |
+| Swap line down | `⌥ ⌘ ↓` |
+| Swap line up | `⌥ ⌘ ↑` |
 
-#### TOGO
-- 旅遊計畫和目標
-- 想去的地方清單
-- 旅遊資源和參考資料
+## 主要資料夾
 
-## 工作流程
+```text
+_incoming/       新建檔案與待整理內容
+_journaling/     Daily Notes
+_templates/      BOOK、DAILY_NOTE、KANBAN 與 Templater scripts
+assets/          附件
+moco/            可發佈的工程與工具文章
+```
 
-### 日常使用
-1. **晨間回顧**：檢查 ACTION 和 BACKLOG
-2. **筆記撰寫**：使用模板快速建立結構化筆記
-3. **連結建立**：透過 `[[]]` 語法建立筆記間的關聯
-4. **標籤管理**：為筆記添加適當的分類標籤
+## 相關文章
 
-### 定期維護
-- **週回顧**：整理 IDEA-POOL，將想法轉化為行動
-- **月整理**：檢查連結完整性，更新過時資訊
-- **季度優化**：調整工作流程，更新插件設定
-
-## See Also
-
-- [[Obsidian Hot Key]] - 快速鍵設定
-- [[Obsidian Properties]] - 屬性系統使用
-- [[Obsidian Task Management]] - 任務管理方法
+- [[Obsidian Daily Notes]]：日記、模板與每日回顧
+- [[Obsidian Properties]]：Properties 與 frontmatter
+- [[Obsidian Task Management]]：Tasks 與任務流程
+- [[Obsidian Plugins Overview]]：外掛啟用狀況總覽

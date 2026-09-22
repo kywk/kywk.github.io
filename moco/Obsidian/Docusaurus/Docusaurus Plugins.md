@@ -6,7 +6,7 @@ image: >-
 tags:
   - Docusaurus
   - kywk
-sidebar_position: 20
+sidebar_position: 60
 sidebar_label: Plugin 使用
 date_created: 2024-05-24T00:00:00.000Z
 date_updated: 2025-09-23T00:00:00.000Z

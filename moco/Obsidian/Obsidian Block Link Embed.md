@@ -7,10 +7,10 @@ tags:
   - Block Link
   - Embed
   - 連結技巧
-sidebar_position: 30
-sidebar_label: Block Link & Embed
+sidebar_position: 50
+sidebar_label: 連結與嵌入
 date_created: 2022-11-02T16:00:00.000Z
-date_updated: 2025-12-24T00:00:00.000Z
+date_updated: 2026-09-22T00:00:00.000Z
 ---
 
 # [Obsidian] Block Link & Embed - 區塊連結與嵌入

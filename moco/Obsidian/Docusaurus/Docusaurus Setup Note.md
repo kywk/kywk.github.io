@@ -7,7 +7,7 @@ tags:
   - Docusaurus
   - 設定
   - 多實例
-sidebar_position: 10
+sidebar_position: 30
 date_created: 2022-05-24T00:00:00.000Z
 date_updated: 2026-08-17T00:00:00.000Z
 history:
@@ -126,7 +126,7 @@ Docusaurus v3 可以使用 MDX plugin 來擴充 Markdown 的格式支援與處�
 [rehype](https://github.com/rehypejs/rehype/blob/main/doc/plugins.md#list-of-plugins)
 生態圈的 plugin 可以找到多數使用者共同需求的功能來擴展 Docusaurus 文件的產出.
 
-目前所使用的 [[Docusaurus Plugins:Plugins 另行整理於此]].
+目前所使用的 [[Docusaurus Plugins|Plugins 另行整理於此]].
 
 ## 技巧與稍門 (Tips & Tricks)
 

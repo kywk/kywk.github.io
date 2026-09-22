@@ -1,348 +1,141 @@
 ---
 title: Task Management
-description: Use Obsidian as task manager
+description: 目前 vault 使用 Tasks、Kanban 與 Daily Notes 管理任務的方式
 tags:
   - Obsidian
   - PKM
-sidebar_position: 1
+  - Tasks
+  - Kanban
+sidebar_position: 60
+sidebar_label: 任務管理
 hide_table_of_contents: true
 date_created: 2023-05-15T00:00:00.000Z
-date_updated: 2023-05-15T00:00:00.000Z
+date_updated: 2026-09-22T00:00:00.000Z
 image: 'https://i.imgur.com/mErPwqL.png'
 ---
 
-# [Obs] Obsidian 任務管理系統
+# [Obs] Obsidian 任務管理
 
-## 概述
+本頁記錄目前 vault 的任務管理方式。重點是 Markdown 任務、Tasks 查詢、Daily Notes 與 Kanban 的組合；Properties 主要用來描述筆記，不取代任務本身的狀態。
 
-使用 Obsidian 作為任務管理工具，結合其強大的連結系統、Properties 功能和豐富的插件生態系統，可以建立一個高效且靈活的個人或團隊任務管理系統。
+## 目前配置
 
-## 核心功能
+- **Tasks** 已啟用，完成與取消時會寫入日期。
+- 內建狀態是「未完成」與「完成」。
+- 自訂狀態是 `/`（In Progress）與 `-`（Cancelled）。
+- **Kanban** 已啟用，並設定日期連結到 Daily Notes、封存時加上日期、隱藏看板標題中的日期與標籤。
+- Daily Notes 會在 `_templates/DAILY_NOTE_TEMPLATE.md` 內執行任務查詢。
+- 新建任務或暫存內容先放在 `_incoming/`，整理後再移到工作、專案或主題資料夾。
 
-### 基本任務語法
+## 基本任務語法
 
-Obsidian 原生支援 Markdown 任務列表語法：
+Obsidian 使用一般 Markdown checklist：
 
 ```markdown
 - [ ] 未完成任務
 - [x] 已完成任務
-- [>] 轉發任務
-- [<] 排程任務
-- [!] 重要任務
-- [-] 取消任務
-- [?] 問題任務
-- [/] 進行中任務
-- [*] 星號任務
 ```
 
-### Properties 整合
+Tasks 額外支援到期日、排程日、優先級、重複規則、路徑與標題篩選。例如：
 
-使用 Properties 為任務添加結構化資訊：
-
-```yaml
----
-title: "專案任務"
-type: "task"
-status: "in-progress"
-priority: "high"
-assignee: "張三"
-due_date: 2024-02-01
-estimated_hours: 4
-actual_hours: 2.5
-tags: ["work", "urgent"]
-project: "網站重構"
-completed: false
----
-```
-
-## 任務管理工作流程
-
-### 1. 任務收集 (Capture)
-
-#### 快速收集
-- 使用 `⌘ N` 快速建立新任務筆記
-- 利用 Daily Notes 記錄當日任務
-- 透過 Quick Capture 插件即時記錄想法
-
-#### 收集模板
 ```markdown
-# 任務：{{title}}
-
-## 基本資訊
-- **負責人**：
-- **優先級**：🔴 高 / 🟡 中 / 🟢 低
-- **預估時間**：
-- **截止日期**：
-- **專案**：[[專案名稱]]
-
-## 任務描述
-
-## 子任務
-- [ ] 
-- [ ] 
-- [ ] 
-
-## 相關資源
-- 
-
-## 進度記錄
-
+- [ ] 完成文件 📅 2026-09-30
+- [ ] 修正部署問題 ⏫ 📅 2026-09-23
 ```
 
-### 2. 任務組織 (Organize)
+任務狀態的顯示與切換由 Tasks 外掛處理；不要把 frontmatter 的 `status` 欄位和 checklist 狀態混為一談。
 
-#### 分類系統
-- **按專案分類**：使用資料夾或標籤
-- **按優先級分類**：🔴 緊急重要、🟡 重要不緊急、🟢 一般任務
-- **按狀態分類**：待辦、進行中、已完成、已取消
-- **按負責人分類**：個人任務、團隊任務、委派任務
+## Daily Notes 中的查詢
 
-#### 標籤系統
-```
-#task/personal     # 個人任務
-#task/work         # 工作任務
-#task/urgent       # 緊急任務
-#task/waiting      # 等待他人
-#task/someday      # 未來可能
-#project/website   # 網站專案
-#context/home      # 在家執行
-#context/office    # 辦公室執行
-```
+目前日記模板的 Task & Reminds 區塊包含三組查詢：
 
-### 3. 任務執行 (Execute)
+### 今天到期
 
-#### 每日工作流程
-1. **晨間回顧**：檢查 Daily Notes 和 ACTION 清單
-2. **優先級排序**：根據重要性和緊急性安排任務
-3. **時間分配**：使用番茄鐘技術執行任務
-4. **進度更新**：即時更新任務狀態和進度
-
-#### 專注模式
-- 使用 Focus Mode 插件隱藏干擾元素
-- 開啟 Zen Mode 進入專注寫作狀態
-- 利用 Pomodoro Timer 管理工作時間
-
-### 4. 任務回顧 (Review)
-
-#### 每日回顧
-- 檢查當日完成的任務
-- 更新未完成任務的狀態
-- 規劃明日重點任務
-
-#### 週回顧
-- 統計週任務完成率
-- 分析時間分配效率
-- 調整下週工作重點
-
-#### 月回顧
-- 回顧月度目標達成情況
-- 分析任務管理系統效果
-- 優化工作流程和模板
-
-## 推薦插件
-
-### 核心插件
-
-#### Tasks Plugin
-- **功能**：強大的任務查詢和管理
-- **特色**：支援複雜的任務篩選和排序
-- **查詢語法**：
-```
 ```tasks
+path does not include _templates
 not done
-due before tomorrow
-path includes Projects
+due on {{date:YYYY-MM-DD}}
 sort by priority
 ```
+
+### 工作區逾期任務
+
+第一組逾期查詢包含 `com.nanshan` 路徑，排除標題含 `Pending` 的任務：
+
+```tasks
+path does not include _templates
+path includes com.nanshan
+heading does not include Pending
+not done
+due before {{date:YYYY-MM-DD}}
+sort by priority
+sort by due
 ```
 
-#### Kanban Plugin
-- **功能**：看板式任務管理
-- **特色**：視覺化任務流程
-- **使用場景**：專案管理、工作流程追蹤
+第二組使用相同條件，但排除 `com.nanshan`，用來查看其他來源的逾期任務。完整模板見 [[Obsidian Daily Notes]]。
 
-#### Calendar Plugin
-- **功能**：日曆檢視和日程管理
-- **特色**：整合 Daily Notes 和任務截止日期
-- **使用場景**：時間規劃、截止日期追蹤
+## 個人使用流程
 
-### 輔助插件
+### Capture：先收集
 
-#### Templater
-- **功能**：動態模板生成
-- **用途**：自動化任務建立流程
+- 臨時想法與新任務先寫入當日日記或 `_incoming/`。
+- 任務句子以動詞開頭，必要時補上期限、優先級與專案 wikilink。
+- 不在收集時過度設計 Properties；先確保任務可找到、可執行。
 
-#### Dataview
-- **功能**：資料查詢和統計
-- **用途**：任務統計報表、進度追蹤
+### Organize：整理來源
 
-#### Quick Capture
-- **功能**：快速記錄想法
-- **用途**：即時任務收集
+- 工作任務依工作資料夾與專案資料夾歸檔。
+- 個人事項留在日記、ACTION 或對應生活資料夾。
+- 看板適合需要視覺化狀態的專案；單純期限追蹤則使用 Tasks 查詢。
+- 已完成的任務保留完成日期，由 Tasks 的設定寫入，不直接手動刪除歷史。
 
-## 實際應用案例
+### Execute：執行
 
-### 個人 GTD 系統
+- 開啟 Daily Note，先看今天到期與逾期區塊。
+- 使用 Tasks 的優先級與到期日排序。
+- 需要調整清單順序時使用自訂快捷鍵 `⌥ ⌘ ↑`／`⌥ ⌘ ↓`。
+- 需要看流程分欄時開啟對應 Kanban。
 
-#### 收集箱設置
-```markdown
-# 📥 INBOX
+### Review：回顧
 
-## 今日收集
-- [ ] 
-- [ ] 
+- Daily Note 的 Done Today 會列出今天完成的任務。
+- 每週整理 `_incoming/` 與未完成任務。
+- 定期檢查已失效的到期日、重複任務與不再使用的標籤。
 
-## 待處理項目
-- [ ] 
-- [ ] 
+## Kanban 使用方式
 
-## 快速筆記
-- 
+目前模板位於 `_templates/KANBAN_TEMPLATE.md`，欄位順序是：
+
+```text
+backlog → ISSUE → TODO → DOING → Done → archived
 ```
 
-#### 專案管理
-```markdown
-# 🎯 專案：網站重構
+看板資料仍是 Markdown，因此可以同時使用 wikilink、Tasks 語法與 Git 版本控制。Kanban 的實際設定包括：
 
-## 專案資訊
-- **開始日期**：2024-01-15
-- **預計完成**：2024-03-01
-- **負責人**：開發團隊
-- **狀態**：進行中
+- `link-date-to-daily-note: true`
+- `prepend-archive-date: true`
+- `hide-tags-in-title: true`
+- `hide-date-in-title: true`
 
-## 主要任務
-- [x] 需求分析
-- [/] UI/UX 設計
-- [ ] 前端開發
-- [ ] 後端開發
-- [ ] 測試部署
+## Properties 與任務的分工
 
-## 相關文件
-- [[需求規格書]]
-- [[設計稿]]
-- [[技術架構]]
-```
+- **Checklist**：記錄任務是否完成。
+- **Tasks metadata**：記錄期限、排程、優先級、重複與完成／取消日期。
+- **Properties**：記錄筆記或專案的 type、status、priority、project 等描述資訊。
+- **Dataview**：彙整筆記與任務資料，產生回顧清單。
 
-### 團隊協作系統
+Properties 的型別與目前欄位請見 [[Obsidian Properties]]；不要為了讓查詢成立而任意改動既有欄位名稱。
 
-#### 任務分配
-```markdown
-# 👥 團隊任務看板
+## 相關外掛
 
-## 待辦 (TODO)
-- [ ] 設計登入頁面 @設計師 #due/2024-01-20
-- [ ] 實作 API 接口 @後端工程師 #due/2024-01-25
+- [[Obsidian Plugin Tasks]]：Tasks 語法、查詢與狀態設定。
+- [[Obsidian Plugin Kanban]]：看板與 Daily Notes 整合。
+- [[Obsidian Plugin Dataview]]：資料彙整與查詢。
+- [[Obsidian Plugin Templater]]：Daily Notes 模板與腳本。
+- [[Obsidian Daily Notes]]：每日任務查詢的實際來源。
 
-## 進行中 (DOING)
-- [/] 前端頁面開發 @前端工程師 #due/2024-01-30
+## 相關文章
 
-## 已完成 (DONE)
-- [x] 資料庫設計 @後端工程師
-- [x] 原型設計 @設計師
-```
-
-#### 會議任務追蹤
-```markdown
-# 📅 會議記錄：週例會
-
-**日期**：2024-01-15
-**參與者**：全體團隊
-
-## 決議事項
-1. 確定專案時程
-2. 分配開發任務
-3. 建立溝通機制
-
-## 行動項目
-- [ ] 更新專案文件 @專案經理 #due/2024-01-17
-- [ ] 準備開發環境 @技術主管 #due/2024-01-18
-- [ ] 設計 UI 原型 @設計師 #due/2024-01-20
-
-## 下次會議
-**時間**：2024-01-22 10:00
-**議程**：進度回報、問題討論
-```
-
-## 查詢和統計
-
-### Dataview 查詢範例
-
-#### 未完成任務統計
-```dataview
-TASK
-FROM "Tasks"
-WHERE !completed
-GROUP BY file.folder
-SORT priority DESC
-```
-
-#### 本週到期任務
-```dataview
-TABLE priority, assignee, due_date
-FROM "Tasks"
-WHERE due_date >= date(today) AND due_date <= date(today) + dur(7 days)
-SORT due_date ASC
-```
-
-#### 專案進度統計
-```dataview
-TABLE 
-  length(filter(file.tasks, (t) => t.completed)) as "已完成",
-  length(filter(file.tasks, (t) => !t.completed)) as "未完成",
-  round((length(filter(file.tasks, (t) => t.completed)) / length(file.tasks)) * 100) + "%" as "完成率"
-FROM "Projects"
-WHERE file.tasks
-SORT file.name
-```
-
-## 最佳實踐
-
-### 系統設計原則
-1. **簡單易用**：避免過度複雜的分類系統
-2. **一致性**：統一的命名規則和標籤系統
-3. **可擴展**：隨著需求變化調整系統結構
-4. **定期維護**：清理過期任務和無效連結
-
-### 工作流程優化
-1. **批次處理**：集中處理相似類型的任務
-2. **時間分配**：為不同類型任務分配固定時間段
-3. **優先級管理**：使用艾森豪威爾矩陣分類任務
-4. **進度追蹤**：定期更新任務狀態和進度
-
-### 常見陷阱避免
-1. **過度分類**：避免建立過多細分類別
-2. **忽略回顧**：定期回顧和調整系統
-3. **工具依賴**：專注於工作流程而非工具本身
-4. **完美主義**：接受系統的不完美，持續改進
-
-## 故障排除
-
-### 常見問題
-1. **任務重複**：建立清晰的任務歸屬規則
-2. **連結失效**：定期檢查和修復連結
-3. **標籤混亂**：統一標籤命名規範
-4. **查詢失效**：檢查 Dataview 語法和資料結構
-
-### 效能優化
-- 避免在單一筆記中建立過多任務
-- 定期歸檔已完成的任務
-- 使用適當的資料夾結構組織檔案
-- 限制同時開啟的筆記數量
-
-## See Also
-
-### 相關文件
-- [[Obsidian Properties]] - 屬性系統使用
-- [[Obsidian Customization Latest]] - 整體客製化設定
-- [[Obsidian Hot Key]] - 快速鍵設定
-
-### 推薦資源
-- [我如何用 Obsidian 管理任務清單](https://jsliang.com/zh/post/task-management-with-obsidian/)
-- [GTD 方法論官方指南](https://gettingthingsdone.com/)
-- [Obsidian Tasks Plugin 文件](https://obsidian-tasks-group.github.io/obsidian-tasks/)
-
-### 相關插件
-- [Tasks Plugin](https://github.com/obsidian-tasks-group/obsidian-tasks)
-- [Kanban Plugin](https://github.com/mgmeyers/obsidian-kanban)
-- [Calendar Plugin](https://github.com/liamcain/obsidian-calendar-plugin)
-- [Templater Plugin](https://github.com/SilentVoid13/Templater)
+- [[my Obsidian]] - 個人 vault 配置
+- [[Obsidian Hot Key]] - 自訂快捷鍵
+- [[Obsidian Plugins Overview]] - 外掛啟用狀況

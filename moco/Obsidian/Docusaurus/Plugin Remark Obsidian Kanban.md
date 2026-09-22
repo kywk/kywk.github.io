@@ -8,7 +8,7 @@ tags:
   - Plugin
   - Kanban
   - 看板
-sidebar_position: 30
+sidebar_position: 70
 sidebar_label: Kanban Plugin
 date_created: 2025-09-23T00:00:00.000Z
 date_updated: 2025-09-23T00:00:00.000Z

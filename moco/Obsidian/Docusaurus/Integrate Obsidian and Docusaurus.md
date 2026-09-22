@@ -9,7 +9,7 @@ tags:
 sidebar_position: 10
 sidebar_label: Obsidian integration
 date_created: 2022-11-01T00:00:00.000Z
-date_updated: 2025-09-23T00:00:00.000Z
+date_updated: 2026-09-22T00:00:00.000Z
 ---
 
 # [Docusaurus] Obsidian 整合指南
@@ -162,17 +162,24 @@ project/
 temporary.md
 ```
 
-## Obsidian 排除設定
+## Obsidian 實際排除設定
 
-上述配置是讓 Docusaurus 工作時不受 Obsidian 影響。相對的，Obsidian 也需要設定來避免 Docusaurus 檔案的影響。
+目前 Obsidian 的排除設定儲存在 `.obsidian/app.json` 的 `userIgnoreFilters`，內容是：
 
-Obsidian 0.14.6+ 以後支援 **Excluded files**。符合 pattern 的檔案將不會被納入 Obsidian 資料庫內。
+```json
+[
+  "node_modules/",
+  "plugins/",
+  "scripts/",
+  "src/",
+  "static/",
+  "build/",
+  ".docusaurus/",
+  ".git/"
+]
+```
 
-在 `Settings > Files & Links > Excluded files` 把 Docusaurus 相關檔案加入即可：
-
-![Docusaurus Excluded files](https://lh3.googleusercontent.com/pw/AL9nZEW9MMhjprzD-lhJs-LqPuIui3xGYg3AJJk5H5HNOjk-EVujiUzyZP7Oa31Ac1F4F84Av_ECyN4y7b3-UHf3k9ccGvYYjpG7MqxsToNuytl9QElvcZqqdkHCTLhpoptnuGAHlCVMJcirsx0-X4CxVO73sw=w800-no?authuser=0)
-
-Ref: [ignore/hide select files and folders](https://forum.obsidian.md/t/config-to-ignore-hide-select-files-and-folders/4186),
+這些路徑不會被 Obsidian 納入一般檔案瀏覽與索引工作。`.obsidian/` 的設定檔則保留給 Obsidian 自己使用。修改排除清單時，應同步檢查 Docusaurus build 是否仍能讀到必要的 `moco/` 文章與 `assets/`。
 
 ## 技巧與稍門 (Tips & Tricks)
 
@@ -180,7 +187,7 @@ Ref: [ignore/hide select files and folders](https://forum.obsidian.md/t/config-t
 
 隨著 Obsidian 的使用，在 Docusaurus 相關目錄下可能會建立讓 Obsidian 管理的檔案，例如把 Obsidian 當 Task Manager 的話，會建立 `Kanban.md`、`TODO.md` 之類的檔案。
 
-這些檔案內容若不想跟著 Docusaurus 一起發佈出去，最簡單的方式就是在 frontmatter 的部分加上 `draft: true`，讓 Docusaurus 把這類檔案視為草稿，發佈時會自動忽略。
+這些檔案內容若不想跟著 Docusaurus 一起發佈出去，可以在 frontmatter 加上 `draft: true`。例如 `moco/Obsidian/Obsidian as PKM.md` 目前就是草稿，因此不應視為已發布的使用指南。
 
 ## 總結與展望
 

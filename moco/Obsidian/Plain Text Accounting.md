@@ -5,7 +5,8 @@ tags:
   - Obsidian
   - PKM
   - Accounting
-sidebar_position: 1
+sidebar_position: 90
+sidebar_label: 使用案例：Plain Text Accounting
 hide_table_of_contents: true
 date_created: 2024-12-29T00:00:00.000Z
 date_updated: 2024-12-29T00:00:00.000Z
@@ -369,7 +370,7 @@ A: 使用特定的稅務分類標籤，年底生成稅務報表。
 ### 相關文件
 - [[Obsidian Properties]] - 屬性系統使用
 - [[Obsidian Task Management]] - 任務管理系統
-- [[Obsidian Customization Latest]] - 整體客製化設定
+- [[my Obsidian]] - 整體客製化設定
 
 ### 官方資源
 - [Plain Text Accounting 官網](https://plaintextaccounting.org/)

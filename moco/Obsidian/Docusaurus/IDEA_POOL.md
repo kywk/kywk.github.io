@@ -6,6 +6,7 @@ tags:
   - TODO
   - 想法池
 sidebar_position: 99
+draft: true
 ---
 
 # Docusaurus 開發想法池
@@ -16,7 +17,7 @@ sidebar_position: 99
 
 - [x] **remark-obsidian-kanban plugin** ✅ 2025-09-23
   - 支援 Obsidian Kanban 格式轉換
-  - [[Remark Obsidian Kanban]]
+  - [[Plugin Remark Obsidian Kanban]]
 
 - [x] **support obsidian wikilink** ✅ 2024-05-15
   - 支援 `[[]]` 語法
@@ -30,7 +31,7 @@ sidebar_position: 99
 
 ## 開發中功能
 
-- [ ] **fix link to markdown file**
+- [x] **fix link to markdown file** ✅ 2026-09-23
   - 修正 Markdown 檔案連結問題
 
 - [ ] **support obsidian dataview queries**
@@ -48,5 +49,5 @@ sidebar_position: 99
 - **MD file generator**
   - 自動生成 Markdown 檔案的工具
 
-### 相關專案
-- [[docusaurus_doc-site]] - 文件站點專案
+### 相關文章
+- [[Integrate Obsidian and Docusaurus]] - 文件站點整合

@@ -2,6 +2,8 @@
 title: Wikilink in Docusaurus
 description: 在 Docusaurus 中實現 Obsidian Wikilink 語法支援的完整指南
 tags: [obsidian, docusaurus, wikilink, markdown]
+sidebar_position: 50
+sidebar_label: Wikilink
 ---
 
 # Wikilink in Docusaurus
@@ -91,5 +93,5 @@ A: 建議使用英文檔名或透過 frontmatter 的 `slug` 欄位自訂 URL。
 
 - [remark-wiki-link 官方文件](https://github.com/landakram/remark-wiki-link)
 - [讓 Obsidian 與 Docusaurus 一起協作 | Flow state.](https://alex-flow-state.netlify.app/pkm/obs-docusau-cowork/)
-- [[Obsidian Plugin Development]]
-- [[Docusaurus Configuration]]
+- [[Docusaurus Plugins]]
+- [[Integrate Obsidian and Docusaurus]]

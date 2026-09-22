@@ -6,10 +6,10 @@ tags:
   - Obsidian
   - PKM
   - 選擇指南
-sidebar_position: 1
-sidebar_label: Why & How
+sidebar_position: 70
+sidebar_label: 介紹與選擇
 date_created: 2022-11-01T00:00:00.000Z
-date_updated: 2025-12-24T00:00:00.000Z
+date_updated: 2026-09-22T00:00:00.000Z
 ---
 
 # [Obsidian] Why & How - 選擇與使用指南
@@ -90,23 +90,35 @@ date_updated: 2025-12-24T00:00:00.000Z
 
 ## 我的 Obsidian 環境
 
-### 🔧 核心配置
-- **主題**: Blue Topaz 主題
-- **快速鍵**: 自訂左右側邊欄切換 (`⌥ ←` / `⌥ →`)
-- **資料夾結構**: 按功能和專案分類組織
+這一節只保留目前 vault 的實際配置；完整欄位見 [[my Obsidian]]。
 
-### 🔌 必備插件
-- **[[Obsidian Plugin Templater]]**: 動態模板系統
-- **[[Obsidian Plugin Dataview]]**: 數據查詢和分析
-- **[[Obsidian Plugin Tasks]]**: 進階任務管理
-- **[[Obsidian Plugin Kanban]]**: 視覺化工作流程
-- **[[Obsidian Plugin Tracker]]**: 數據追蹤和視覺化
+### 核心配置
 
-### 📅 工作流程
-1. **每日開始**: 開啟當日日記，檢查任務和行程
-2. **隨時記錄**: 在日記中記錄想法、會議、學習心得
-3. **定期整理**: 每週整理重要內容，建立主題文章
-4. **數據分析**: 每月分析習慣和目標達成情況
+- **Vault 入口**：`/Users/kywk/obsidian`，目前指向 Dropbox vault。
+- **主題**：Obsidian base theme + Blue Topaz CSS theme。
+- **新檔案**：建立到 `_incoming/`；附件放到 `assets/`。
+- **Daily Notes**：放在 `_journaling/`，格式為 `YYYY/MM-MMM/YYYY-MM-DD-dddd`。
+- **自訂快捷鍵**：`⌥ ←`、`⌥ →`、`⌥ ⌘ ↑`、`⌥ ⌘ ↓`。
+- **Obsidian 排除清單**：`node_modules/`、`plugins/`、`scripts/`、`src/`、`static/`、`build/`、`.docusaurus/`、`.git/`。
+
+### 實際啟用的外掛
+
+目前社群外掛清單包含：
+
+- Templater、Dataview、Tasks、Kanban、Tracker
+- Calendar、QuickAdd、Recent Files、Outliner、Tag Wrangler
+- Auto Link Title、Editor Syntax Highlight、Leaflet、Style Settings
+- Vault Feed Reader
+
+不把只存在於 `.obsidian/plugins/`、但未列入 `community-plugins.json` 的外掛當成啟用中；例如 Excalidraw、Projects、BRAT 與 Life Tracker。
+
+### 目前的工作方式
+
+1. 使用 Daily Notes 與 Templater 記錄當日內容。
+2. 用 Tasks 查詢今日到期與逾期任務。
+3. 用 Properties 與 Dataview 維護可查詢的欄位。
+4. 用 Kanban 管理需要狀態分欄的專案。
+5. 把新內容先放入 `_incoming/`，再整理到 `moco/` 或其他主題資料夾。
 
 ## 實用技巧與稍門
 

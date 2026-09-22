@@ -8,7 +8,7 @@ tags:
   - Plugin
   - Template
   - 自動化
-sidebar_position: 20
+sidebar_position: 40
 sidebar_label: Templater Plugin
 date_created: 2023-01-24T00:00:00.000Z
 date_updated: 2025-12-24T00:00:00.000Z

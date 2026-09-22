@@ -1,6 +1,6 @@
 {
-  "label": "Plugins",
-  "position": 80,
+  "label": "外掛",
+  "position": 110,
   "link": {
     "type": "doc",
     "id": "Obsidian Plugins Overview"

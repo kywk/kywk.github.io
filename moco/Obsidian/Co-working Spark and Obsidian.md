@@ -2,6 +2,8 @@
 created: 2026-08-23 12:30
 type: knowledge-distillation
 source: gemini-spark
+sidebar_position: 100
+sidebar_label: 協作與同步
 tags:
   - inbox/spark
   - obsidian

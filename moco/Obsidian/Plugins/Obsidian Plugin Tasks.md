@@ -8,7 +8,7 @@ tags:
   - Plugin
   - Tasks
   - 任務管理
-sidebar_position: 50
+sidebar_position: 70
 sidebar_label: Tasks Plugin
 date_created: 2025-12-24T00:00:00.000Z
 date_updated: 2025-12-24T00:00:00.000Z

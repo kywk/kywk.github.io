@@ -1,12 +1,14 @@
 ---
 title: 'Core: Properties'
-description: My daily notes
+description: Obsidian Properties、frontmatter 與目前 vault 的欄位設定
 tags:
   - Obsidian
   - PKM
-sidebar_position: 20
+sidebar_position: 40
+sidebar_label: Properties
 hide_table_of_contents: true
 date_created: 2023-12-25T00:00:00.000Z
+date_updated: 2026-09-22T00:00:00.000Z
 image: 'https://i.imgur.com/mErPwqL.png'
 ---
 
@@ -15,6 +17,16 @@ image: 'https://i.imgur.com/mErPwqL.png'
 ## 概述
 
 Obsidian Properties 是基於 YAML front matter 的強化功能，提供視覺化的屬性編輯介面和強大的資料管理能力。自 Obsidian 1.4.5 版本開始，Properties 成為筆記管理和資料組織的核心功能。
+
+## 本 vault 的實際配置
+
+- 核心 Properties 功能已啟用：`.obsidian/core-plugins.json` 的 `properties` 為 `true`。
+- frontmatter 在文件中顯示：`.obsidian/app.json` 的 `showFrontmatter` 為 `true`。
+- 屬性在文件中顯示：`.obsidian/app.json` 的 `propertiesInDocument` 為 `visible`。
+- 已明確設定的欄位型別位於 `.obsidian/types.json`，包含 `tags`、`aliases`、`steps`、`location`、`date_created`、`date_updated`、`andromoney` 與 Tasks 顯示選項等欄位。
+- Daily Notes 會使用 `type`、`reading`、`steps`、`pai_earned`、`pai_caculated`、`10usd`、`sleep_at` 與 `wake_up_at`；欄位來源見 [[Obsidian Daily Notes]]。
+
+這表示本 vault 的 Properties 不只是通用的 YAML 教學，而是與 Daily Notes、Tasks、Dataview 及追蹤欄位一起使用。欄位名稱修改前，應先檢查模板與查詢的引用。
 
 ## YAML Front Matter 基礎
 
@@ -190,7 +202,7 @@ Obsidian 1.5 的更新中，針對 Properties 支援再更進一步：
 ## See Also
 
 ### 相關文件
-- [[Obsidian Customization Latest]] - 整體客製化設定
+- [[my Obsidian]] - 整體客製化設定
 - [[Obsidian Task Management]] - 任務管理應用
 - [[Obsidian Hot Key]] - 快速鍵設定
 
