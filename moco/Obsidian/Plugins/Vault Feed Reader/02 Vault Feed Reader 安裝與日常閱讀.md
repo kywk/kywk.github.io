@@ -11,11 +11,11 @@ tags:
 sidebar_position: 20
 sidebar_label: 安裝與日常閱讀
 date_created: 2026-09-22T00:00:00.000Z
-date_updated: 2026-09-23T05:30:00.000Z
+date_updated: 2026-09-24T00:00:00.000Z
 ---
 # Vault Feed Reader 安裝與日常閱讀
 
-本文依 0.4.0 的本機 Git 與發布紀錄更新。Vault Feed Reader 已通過審查並上架至 Obsidian 社群外掛市場，一般使用者可直接在 Obsidian 內搜尋安裝；若有特殊需求，亦可透過 GitHub Release 下載附件手動安裝或自行建置。外掛僅支援桌面版，宣告最低 Obsidian 版本為 1.8.7。
+Vault Feed Reader 已上架 Obsidian 社群外掛市場，一般使用者可直接在 Obsidian 內搜尋安裝；若有特殊需求，亦可透過 GitHub Release 下載附件手動安裝或自行建置。外掛僅支援桌面版，宣告最低 Obsidian 版本為 1.8.7。
 
 ## 安裝外掛
 
@@ -32,7 +32,7 @@ date_updated: 2026-09-23T05:30:00.000Z
 
 若環境無法直接連線社群外掛市場，可採手動安裝：
 
-1. 到 [0.4.0 GitHub Release](https://github.com/kywk/obsidian-feed-reader/releases/tag/0.4.0)，下載 `main.js`、`manifest.json`、`styles.css` 三個附件；使用現成附件不需要 Node.js。
+1. 到 [0.5.0 GitHub Release](https://github.com/kywk/obsidian-feed-reader/releases/tag/0.5.0)，下載 `main.js`、`manifest.json`、`styles.css` 三個附件；使用現成附件不需要 Node.js。
 2. 將這三個檔案複製到目標 vault 的外掛目錄：
 
 ```text
@@ -64,7 +64,9 @@ npm test
 
 ## 日常閱讀流程
 
-先選擇來源或資料夾，再套用未讀、已讀或今日等條件，也可以搜尋文章標題。列表每頁最多 50 篇，全文在需要時才載入。
+先選擇來源或資料夾，再套用未讀、已讀或今日等條件，也可以搜尋文章標題。列表預設套用「未讀」篩選，可在設定改成全部文章、已讀或今日。列表每頁最多 50 篇，全文在需要時才載入。
+
+瀏覽單一來源時，文章以雜誌卡片呈現縮圖、作者、時間與摘要，並依日期分組；切換到資料夾或全部文章時則使用精簡清單。
 
 開啟文章即標記為已讀。未讀列表會暫時保留剛讀過的文章，直到重新套用篩選或切換來源，方便返回原來的位置。閱讀畫面提供返回列表、上一篇與下一篇；按 `Esc` 返回時保留選取位置。
 

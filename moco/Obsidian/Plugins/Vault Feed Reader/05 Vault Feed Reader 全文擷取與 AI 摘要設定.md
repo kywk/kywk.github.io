@@ -12,11 +12,11 @@ tags:
 sidebar_position: 50
 sidebar_label: 全文與 AI 摘要
 date_created: 2026-09-22T12:16:48.043Z
-date_updated: 2026-09-22T12:16:48.043Z
+date_updated: 2026-09-24T00:00:00.000Z
 ---
 # Vault Feed Reader 全文擷取與 AI 摘要設定
 
-從 0.2.0 起，Vault Feed Reader 可以在 Markdown 筆記上擷取原文、產生 AI 摘要與主題標籤。本文依 0.4.0、Git HEAD `c276bf6` 整理，適用於 Feed 保存筆記，也可配合 Web Clipper 或已有來源網址的筆記。
+Vault Feed Reader 可以在 Markdown 筆記上擷取原文、產生 AI 摘要與主題標籤，適用於 Feed 保存筆記，也可配合 Web Clipper 或已有來源網址的筆記。
 
 最常用的流程是：先保存文章，開啟筆記，再執行「抓取全文並摘要」。若已經剪藏完整正文，可設定全文辨識規則後直接摘要，避免重新抓網頁。
 
@@ -146,13 +146,12 @@ type: clipping
 
 除錯訊息不要混入 stdout。標籤不加 `#`、不含空白，可使用連字號、底線或 `/` 階層；插件會驗證回應後才寫入。一般使用者不需要自行組 JSON，內建流程會要求輸出協定。
 
-## 版本與驗證依據
+## 版本與參考資料
 
-核心功能提交為 `8fee8ff`，於 0.2.0 發布，本文按 0.4.0 核對。既有紀錄包含建置、自動測試與 CLI 模擬協定驗證；四款真實已登入 CLI、真實模型及原生 Obsidian 完整流程仍待驗證，本文沒有宣稱重新完成這些測試。
+本文依 **0.5.0** 的插件行為整理。四款內建 CLI 的設定與非互動輸出協定可能隨版本調整，使用前請以各工具文件為準。
 
-- [0.4.0 版使用說明](https://github.com/kywk/obsidian-feed-reader/blob/0.4.0/README.zh-TW.md)
-- [全文與摘要設定預設](https://github.com/kywk/obsidian-feed-reader/blob/0.4.0/src/enrichment/config.ts)
-- [全文與摘要驗證範圍](https://github.com/kywk/obsidian-feed-reader/blob/0.4.0/docs/history/2026-09-22-article-enrichment/validation.md)
+- [0.5.0 版使用說明](https://github.com/kywk/obsidian-feed-reader/blob/0.5.0/README.zh-TW.md)
+- [全文與摘要設定預設](https://github.com/kywk/obsidian-feed-reader/blob/0.5.0/src/enrichment/config.ts)
 - [[01 Vault Feed Reader 專案介紹]]
 - [[02 Vault Feed Reader 安裝與日常閱讀]]
 - [[03 Vault Feed Reader 訂閱管理與筆記模板]]

@@ -11,7 +11,7 @@ tags:
 sidebar_position: 40
 sidebar_label: RSS 插件比較
 date_created: 2026-09-22T00:00:00.000Z
-date_updated: 2026-09-23T05:30:00.000Z
+date_updated: 2026-09-24T00:00:00.000Z
 ---
 # Obsidian RSS 插件比較：Vault Feed Reader、RSS Dashboard 與 Rho Reader
 
@@ -19,7 +19,7 @@ date_updated: 2026-09-23T05:30:00.000Z
 
 本文整理 Vault Feed Reader、RSS Dashboard 與 Rho Reader 的差異，延續本系列「大量瀏覽、精選保存」的使用情境，協助判斷哪一種方式適合自己的閱讀習慣。
 
-> 比較更新：2026-09-23。Vault Feed Reader 0.4.0 已通過社群審查並上架社群外掛市場；其他兩款保留先前官方文件查核範圍，沒有新增 AI 功能調查。內容依本專案 README／SPEC，以及另外兩款的官方 README、儲存指南與發布紀錄整理；沒有實際安裝評測另外兩款。功能表代表文件所述能力，不代表所有平台與來源都已驗證。
+> 比較更新：2026-09-24。Vault Feed Reader 0.5.0 已上架社群外掛市場。內容依本專案 README／SPEC，以及另外兩款的官方 README、儲存指南與發布紀錄整理；本文沒有實際安裝評測另外兩款，功能表代表文件所述能力，不代表所有平台與來源都已驗證。
 
 ## 三種閱讀方式
 
@@ -33,7 +33,7 @@ date_updated: 2026-09-23T05:30:00.000Z
 
 | 面向 | Vault Feed Reader | RSS Dashboard | Rho Reader |
 | --- | --- | --- | --- |
-| 主要閱讀介面 | 來源側欄、列表、文章正文 | Dashboard、閱讀器、影音播放器 | Bases 與文章連結 |
+| 主要閱讀介面 | 來源側欄、文章列表（單一來源為雜誌卡片）、文章正文 | Dashboard、閱讀器、影音播放器 | Bases 與文章連結 |
 | Feed 格式 | RSS、Atom | RSS、Atom、JSON 等 | RSS、Atom、JSON Feed |
 | 正文取得 | 閱讀器用 feed 內容；筆記命令可擷取公開原文 | 支援原文全文取得 | 主要開啟原文連結 |
 | Markdown 檔案 | 選中後手動保存 | 手動保存，支援模板 | 每篇文章建立檔案 |
@@ -41,7 +41,7 @@ date_updated: 2026-09-23T05:30:00.000Z
 | 訂閱交換 | YAML、TOML、OPML | OPML | OPML |
 | 平台與安裝 | 桌面限定；社群插件（亦可手動安裝） | 桌面與行動裝置；社群插件 | 基於 Bases，需 Obsidian 1.9.0 以上；社群插件 |
 
-0.2.0 起，Vault Feed Reader 可在保存後的筆記或 Web Clipper 筆記上，透過 Codex、Claude Code、OpenCode、pi 或自訂 CLI 產生摘要與主題標籤。這是筆記增補流程，不會改成自動替全部訂閱產生 AI 摘要。另兩款是否有同等 AI 功能未在本次調查，不據此宣稱只有本專案支援。詳見 [[05 Vault Feed Reader 全文擷取與 AI 摘要設定]]。
+Vault Feed Reader 可在保存後的筆記或 Web Clipper 筆記上，透過 Codex、Claude Code、OpenCode、pi 或自訂 CLI 產生摘要與主題標籤。這是筆記增補流程，不會改成自動替全部訂閱產生 AI 摘要。另兩款是否有同等 AI 功能未在本次調查，不據此宣稱只有本專案支援。詳見 [[05 Vault Feed Reader 全文擷取與 AI 摘要設定]]。
 
 功能依據：[Vault Feed Reader](https://github.com/kywk/obsidian-feed-reader)、[RSS Dashboard](https://github.com/amatya-aditya/obsidian-rss-dashboard#features)、[Rho Reader](https://github.com/scriptnull/rho-reader#readme)。Rho 的發布紀錄另有行動端修正，但本文未驗證其操作體驗。[Rho 發布紀錄](https://github.com/scriptnull/rho-reader/releases)
 
@@ -71,17 +71,11 @@ Rho Reader 的 v0.4.0 發布說明指出，文章檔案保存標題、連結、�
 
 ## 依需求選擇
 
-- **主要在桌面瀏覽很多文章，只保留少量精選內容**：Vault Feed Reader 的資料分工符合這個方向，已上架社群外掛市場（亦可使用 GitHub Release 安裝）；仍需考量實機與真實 CLI 驗證範圍有限，以及自行維護的成本。
+- **主要在桌面瀏覽很多文章，只保留少量精選內容**：Vault Feed Reader 的資料分工符合這個方向，已上架社群外掛市場（亦可使用 GitHub Release 安裝）；適合桌面環境，行動裝置請改用其他方案。
 - **希望直接使用現成閱讀器，並需要手機、全文取得與影音**：優先試用 RSS Dashboard，再用自己的來源檢查閱讀與同步效果。
 - **希望每個閱讀項目都能直接參與 Bases、標籤與筆記整理**：Rho Reader 的檔案模式較貼近需求；若重點是保存全文，需另行考慮內容取得流程。
 
-這些建議依工作流程推導。本文沒有同一批來源、同一台裝置的比較測試，因此不做速度、記憶體占用或穩定度排名。本專案既有的 mock 或規模測試，也不足以證明比另外兩款更快。
-
-## 對 Vault Feed Reader 的啟發
-
-原始比較曾將 OPML 列為本專案的缺項；目前已實作匯入／匯出，因此這篇文章已更新該結論。OPML 只交換訂閱與分類，不搬移閱讀狀態、文章快取或筆記，真實跨閱讀器互通仍待驗證。
-
-後續可以評估來源網址自動探索、每來源更新設定，降低新增與維護訂閱的操作成本。這些是比較後的建議，尚非本專案既有功能或已承諾的開發計畫。全文擷取已在 0.2.0 以獨立筆記命令實作，因此不再列為缺項；它限公開 HTML，不能視為支援所有網站。新增來源時取得 feed 標題也已實作，但不等於從任意網站探索 feed URL。
+這些建議依工作流程推導；本文沒有進行同一批來源、同一台裝置的效能比較，因此不做速度、記憶體或穩定度排名。
 
 ## 系列與比較來源
 
