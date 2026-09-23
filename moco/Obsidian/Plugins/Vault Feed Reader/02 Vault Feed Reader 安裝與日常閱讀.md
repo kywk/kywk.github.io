@@ -1,6 +1,6 @@
 ---
 title: Vault Feed Reader 安裝與日常閱讀
-description: Vault Feed Reader 的手動安裝、來源新增、閱讀操作與文章保存指南
+description: Vault Feed Reader 的安裝方式、來源新增、閱讀操作與文章保存指南
 image: >-
   https://lh3.googleusercontent.com/pw/AL9nZEUA9Ifvd5Z8SXDWkeVB6AC4MPGwnXaL6kBXNPoXwOQQ2jOcZ1Jw_0p8TKK8C3ZX0e67_FOY15eDrm7aaXSQJcKtoUzC80SAQEHsaBy6qS2AqNNs5VUFNXBKm439y_1wkvmDl-PnL8ReojnIumNlEvOXBg=w800-no?authuser=0
 tags:
@@ -11,15 +11,35 @@ tags:
 sidebar_position: 20
 sidebar_label: 安裝與日常閱讀
 date_created: 2026-09-22T00:00:00.000Z
-date_updated: 2026-09-22T12:16:48.043Z
+date_updated: 2026-09-23T05:30:00.000Z
 ---
 # Vault Feed Reader 安裝與日常閱讀
 
-本文依 0.4.0 的本機 Git 與發布紀錄更新。一般使用者可直接下載 GitHub Release 附件安裝；開發者也可自行建置。0.4.0 發布紀錄記載已送交社群審查，未記錄本版審查完成，以下採手動安裝流程。
+本文依 0.4.0 的本機 Git 與發布紀錄更新。Vault Feed Reader 已通過審查並上架至 Obsidian 社群外掛市場，一般使用者可直接在 Obsidian 內搜尋安裝；若有特殊需求，亦可透過 GitHub Release 下載附件手動安裝或自行建置。外掛僅支援桌面版，宣告最低 Obsidian 版本為 1.8.7。
 
-## 下載或建置安裝檔
+## 安裝外掛
 
-到 [0.4.0 GitHub Release](https://github.com/kywk/obsidian-feed-reader/releases/tag/0.4.0)，下載 `main.js`、`manifest.json`、`styles.css` 三個附件；使用現成附件不需要 Node.js。
+### 從社群外掛安裝（推薦）
+
+1. 開啟 Obsidian「設定 → 社群外掛」（Settings → Community plugins）。
+2. 若尚未關閉限制模式，請先關閉。
+3. 點擊社群外掛旁的「瀏覽」（Browse），搜尋 **Vault Feed Reader**。
+4. 點擊「安裝」（Install），安裝完成後點擊「啟用」（Enable）。
+
+亦可透過 [Obsidian 社群外掛頁面](https://community.obsidian.md/plugins/vault-feed-reader) 或在瀏覽器中點擊 `obsidian://show-plugin?id=vault-feed-reader` 於 Obsidian 中開啟安裝頁面。
+
+### 手動安裝或自行建置
+
+若環境無法直接連線社群外掛市場，可採手動安裝：
+
+1. 到 [0.4.0 GitHub Release](https://github.com/kywk/obsidian-feed-reader/releases/tag/0.4.0)，下載 `main.js`、`manifest.json`、`styles.css` 三個附件；使用現成附件不需要 Node.js。
+2. 將這三個檔案複製到目標 vault 的外掛目錄：
+
+```text
+.obsidian/plugins/vault-feed-reader/
+```
+
+3. 接著在 Obsidian「設定 → 社群外掛」啟用 **Vault Feed Reader**。日後替換外掛檔案後，需要停用再重新啟用。
 
 若要自行建置，準備 Node.js 22，在專案目錄執行：
 
@@ -29,13 +49,7 @@ npm run build
 npm test
 ```
 
-將下載或建置後的三個檔案 `main.js`、`manifest.json`、`styles.css` 複製到目標 vault 的：
-
-```text
-.obsidian/plugins/vault-feed-reader/
-```
-
-接著在 Obsidian「設定 → 社群插件」啟用 **Vault Feed Reader**。日後替換插件檔案後，需要停用再重新啟用。插件僅支援桌面版，宣告最低 Obsidian 版本為 1.8.7。
+建置完成後的 `main.js`、`manifest.json` 與 `styles.css` 同樣複製至上述 `.obsidian/plugins/vault-feed-reader/` 目錄。
 
 ## 加入第一個來源
 
@@ -81,6 +95,7 @@ npm test
 
 ## 延伸閱讀
 
+- [Obsidian 社群外掛：Vault Feed Reader](https://community.obsidian.md/plugins/vault-feed-reader)
 - [[05 Vault Feed Reader 全文擷取與 AI 摘要設定]]
 - [[01 Vault Feed Reader 專案介紹]]
 - [[03 Vault Feed Reader 訂閱管理與筆記模板]]

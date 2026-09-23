@@ -11,7 +11,7 @@ tags:
 sidebar_position: 40
 sidebar_label: RSS 插件比較
 date_created: 2026-09-22T00:00:00.000Z
-date_updated: 2026-09-22T12:16:48.043Z
+date_updated: 2026-09-23T05:30:00.000Z
 ---
 # Obsidian RSS 插件比較：Vault Feed Reader、RSS Dashboard 與 Rho Reader
 
@@ -19,7 +19,7 @@ date_updated: 2026-09-22T12:16:48.043Z
 
 本文整理 Vault Feed Reader、RSS Dashboard 與 Rho Reader 的差異，延續本系列「大量瀏覽、精選保存」的使用情境，協助判斷哪一種方式適合自己的閱讀習慣。
 
-> 比較日期：2026-09-22。本次依 Git HEAD `c276bf6` 將 Vault Feed Reader 更新至 0.4.0；其他兩款保留先前官方文件查核範圍，沒有新增 AI 功能調查。內容依本專案 README／SPEC，以及另外兩款的官方 README、儲存指南與發布紀錄整理；沒有實際安裝評測另外兩款。功能表代表文件所述能力，不代表所有平台與來源都已驗證。
+> 比較更新：2026-09-23。Vault Feed Reader 0.4.0 已通過社群審查並上架社群外掛市場；其他兩款保留先前官方文件查核範圍，沒有新增 AI 功能調查。內容依本專案 README／SPEC，以及另外兩款的官方 README、儲存指南與發布紀錄整理；沒有實際安裝評測另外兩款。功能表代表文件所述能力，不代表所有平台與來源都已驗證。
 
 ## 三種閱讀方式
 
@@ -39,7 +39,7 @@ date_updated: 2026-09-22T12:16:48.043Z
 | Markdown 檔案 | 選中後手動保存 | 手動保存，支援模板 | 每篇文章建立檔案 |
 | 分類方式 | 訂閱為單層多重歸屬；摘要可加入筆記 tags | 階層資料夾、標籤 | 標籤 |
 | 訂閱交換 | YAML、TOML、OPML | OPML | OPML |
-| 平台與安裝 | 桌面限定；GitHub Release 手動安裝 | 桌面與行動裝置；社群插件 | 基於 Bases，需 Obsidian 1.9.0 以上；社群插件 |
+| 平台與安裝 | 桌面限定；社群插件（亦可手動安裝） | 桌面與行動裝置；社群插件 | 基於 Bases，需 Obsidian 1.9.0 以上；社群插件 |
 
 0.2.0 起，Vault Feed Reader 可在保存後的筆記或 Web Clipper 筆記上，透過 Codex、Claude Code、OpenCode、pi 或自訂 CLI 產生摘要與主題標籤。這是筆記增補流程，不會改成自動替全部訂閱產生 AI 摘要。另兩款是否有同等 AI 功能未在本次調查，不據此宣稱只有本專案支援。詳見 [[05 Vault Feed Reader 全文擷取與 AI 摘要設定]]。
 
@@ -71,7 +71,7 @@ Rho Reader 的 v0.4.0 發布說明指出，文章檔案保存標題、連結、�
 
 ## 依需求選擇
 
-- **主要在桌面瀏覽很多文章，只保留少量精選內容**：Vault Feed Reader 的資料分工符合這個方向，目前可使用 GitHub Release 安裝；仍需考量實機與真實 CLI 驗證範圍有限，以及自行維護的成本。
+- **主要在桌面瀏覽很多文章，只保留少量精選內容**：Vault Feed Reader 的資料分工符合這個方向，已上架社群外掛市場（亦可使用 GitHub Release 安裝）；仍需考量實機與真實 CLI 驗證範圍有限，以及自行維護的成本。
 - **希望直接使用現成閱讀器，並需要手機、全文取得與影音**：優先試用 RSS Dashboard，再用自己的來源檢查閱讀與同步效果。
 - **希望每個閱讀項目都能直接參與 Bases、標籤與筆記整理**：Rho Reader 的檔案模式較貼近需求；若重點是保存全文，需另行考慮內容取得流程。
 
@@ -85,6 +85,7 @@ Rho Reader 的 v0.4.0 發布說明指出，文章檔案保存標題、連結、�
 
 ## 系列與比較來源
 
+- [Obsidian 社群外掛：Vault Feed Reader](https://community.obsidian.md/plugins/vault-feed-reader)
 - [[05 Vault Feed Reader 全文擷取與 AI 摘要設定]]
 - [[01 Vault Feed Reader 專案介紹]]
 - [[02 Vault Feed Reader 安裝與日常閱讀]]

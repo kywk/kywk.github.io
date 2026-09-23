@@ -11,7 +11,7 @@ tags:
 sidebar_position: 10
 sidebar_label: 專案介紹
 date_created: 2026-09-22T00:00:00.000Z
-date_updated: 2026-09-22T12:16:48.043Z
+date_updated: 2026-09-23T05:30:00.000Z
 ---
 # Vault Feed Reader 專案介紹
 
@@ -42,7 +42,7 @@ Vault Feed Reader 是一款 Obsidian 桌面版 RSS／Atom 閱讀插件，目標�
 
 ## 現況與範圍
 
-依 2026-09-22 的 Git 與發布紀錄，專案版本為 **0.4.0**，僅支援桌面版 Obsidian，宣告最低版本為 **1.8.7**。可從 GitHub Releases 下載安裝檔；0.4.0 已提交社群審查，該次紀錄尚未取得此版本審查完成結果，不將送審等同上架。
+專案目前版本為 **0.4.0**，已通過社群審查並正式上架至 [Obsidian 社群外掛市場](https://community.obsidian.md/plugins/vault-feed-reader)。外掛僅支援桌面版 Obsidian，宣告最低版本為 **1.8.7**。使用者可直接在 Obsidian 內搜尋安裝，或從 GitHub Releases 下載安裝檔手動安裝。
 
 MVP 與 OPML 功能已有實作及驗證紀錄，但不代表所有情境都完成實機測試。README 特別指出，OPML 尚未在 Obsidian 實機或其他閱讀器的真實匯出檔上驗證；大量資料的原生介面效能也不能只由測試推定。
 
@@ -73,6 +73,7 @@ AI 摘要沿用本機 CLI 的登入與模型設定，可能將文章送往其設
 
 本文依專案 Git HEAD `c276bf6`、版本 `0.4.0` 的 README、SPEC、manifest 與發布紀錄更新。
 
+- [Obsidian 社群外掛：Vault Feed Reader](https://community.obsidian.md/plugins/vault-feed-reader)
 - [專案原始碼與 README](https://github.com/kywk/obsidian-feed-reader)
 - [繁體中文 README](https://github.com/kywk/obsidian-feed-reader/blob/main/README.zh-TW.md)
 - [行為規格 SPEC](https://github.com/kywk/obsidian-feed-reader/blob/main/SPEC.md)
