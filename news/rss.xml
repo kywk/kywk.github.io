@@ -4,7 +4,7 @@
         <title>kywk.me Blog</title>
         <link>https://kywk.github.io/news/</link>
         <description>kywk.me Blog</description>
-        <lastBuildDate>Wed, 23 Sep 2026 00:42:16 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 24 Sep 2026 09:50:58 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-TW</language>
@@ -12,7 +12,7 @@
             <title><![CDATA[News Feed]]></title>
             <link>https://kywk.github.io/news/news-feed/</link>
             <guid>https://kywk.github.io/news/news-feed/</guid>
-            <pubDate>Wed, 23 Sep 2026 00:42:16 GMT</pubDate>
+            <pubDate>Thu, 24 Sep 2026 09:50:58 GMT</pubDate>
             <description><![CDATA[This is News Clippins]]></description>
             <content:encoded><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="news--discus">news &amp; discus<a href="https://kywk.github.io/news/news-feed/#news--discus" class="hash-link" aria-label="news &amp; discus的直接連結" title="news &amp; discus的直接連結" translate="no">​</a></h2>
 <ul>
@@ -1179,7 +1179,7 @@
 <p>因 Dropbox 配合頻果的新政策更改了檔案位置, 反而讓自己一直習慣的路徑配置不方便使用.
 加上免費仔只能連結三個裝置的限制, 現在改用第三方軟體取代官方桌面工具.</p>
 <ul>
-<li class=""><a class="internal" href="https://kywk.github.io/moco/utilities/dotfiles-management/">Dotfiles Management</a></li>
+<li class=""><a class="internal" href="https://kywk.github.io/moco/utilities/ohmyutils/dotfiles-management/">Dotfiles Management</a></li>
 <li class=""><a class="internal" href="https://kywk.github.io/moco/machintosh/applications/maestral/">Open source Dropbox client, Maestral</a></li>
 </ul>
 <div class="language-shell codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-shell codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">brew install maestral</span><br></div></code></pre></div></div>

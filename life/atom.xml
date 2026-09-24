@@ -2,11 +2,41 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kywk.github.io/life/</id>
     <title>kywk.me Blog</title>
-    <updated>2026-08-13T00:00:00.000Z</updated>
+    <updated>2026-09-22T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kywk.github.io/life/"/>
     <subtitle>kywk.me Blog</subtitle>
     <icon>https://kywk.github.io/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Vault Feed Reader]]></title>
+        <id>https://kywk.github.io/life/2026/09/22/first-obsidian-plugin/</id>
+        <link href="https://kywk.github.io/life/2026/09/22/first-obsidian-plugin/"/>
+        <updated>2026-09-22T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[我的第一個 Obsidian Community Plugin!]]></summary>
+        <content type="html"><![CDATA[<p>我的第一個 Obsidian Community Plugin!</p>
+<p><img decoding="async" loading="lazy" src="https://lh3.googleusercontent.com/pw/AP1GczNcXl1oKjed9hdvlZw6en5yOjdDo0h76sfg-63qPmpEEjnkLyP-BC5XRNxxn_jN5KdvmfTEY31Bj58jeZuxbi73BjSrC2ifqY0gRzBzl0TwXMX63N0nMEMMmM9N37OUNYDrZlBR1as0PKNHaglLGQlEzQ=w800-no-gm?authuser=0" alt="" class="img_ev3q"></p>
+<p><a href="https://community.obsidian.md/plugins/vault-feed-reader" target="_blank" rel="noopener noreferrer" class="">Vault Feed Reader</a> 在 Obsidian 中管理閱讀 RSS, 感興趣的文章可一鍵建立 Obsidian 筆記.</p>
+<p>使用 Obsidian 已久, 在各類插件支援下, Obsidian 不再只是筆記軟體.</p>
+<p>工作中的待辦事項/問題紀錄, 生活中的瑣碎雜感, 旅遊行程安排規劃... Obsidian 已是成為個人工作/生活中心平台, 各類資訊都在 Obsidian 中管理.
+甚者在整合 Docusaurus 後, 還一舉成為個人網站編輯後台.</p>
+<p>而老派如我, 對 RSS Reader 的依賴還是積習難改. 在 Feedly 上閱讀 RSS, 有興趣的文章手動擷取 / Web Clipper 建立筆記.
+不禁總想, 是否能在 Obsidian 中一條龍處理: 閱讀 &gt; 建立筆記 &gt; 進入知識庫 ...</p>
+<p>聽聞 Tibo 將在週二 reset uasge 時, 週日晚間剛 reset 的我, 開啟多工同步模式, 三台電腦分別進行著四個不同專案.
+在 AI 協助下完成了這個 Obsidian RSS Reader 插件.</p>
+<p>復刻了 Feedly 等 RSS Reader 最核心的閱讀與管理功能, 能一鍵保存有興趣的文章到 Obsidian Vault 中, 再利用本地 AI 摘要文章...</p>
+<p>AI 時代下, 有想法/敢天馬行空的人, 真能一飛沖天.</p>
+<ul>
+<li class="">See Also
+<ul>
+<li class=""><a class="internal" href="https://kywk.github.io/moco/obsidian/plugins/vault-feed-reader/01-vault-feed-reader-%E5%B0%88%E6%A1%88%E4%BB%8B%E7%B4%B9/">Vault Feed Reader 專案介紹</a></li>
+</ul>
+</li>
+</ul>]]></content>
+        <author>
+            <name>kywk</name>
+            <uri>https://github.io/kywk</uri>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Happy Birthday]]></title>
         <id>https://kywk.github.io/life/2026/08/13/happy-birthday/</id>
@@ -788,30 +818,5 @@ podcast 節目中聽到 <a class="internal" href="https://kywk.github.io/lifehac
         </author>
         <category label="kywk" term="kywk"/>
         <category label="LifeHack" term="LifeHack"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[The Carry 50]]></title>
-        <id>https://kywk.github.io/life/2023/05/01/curry/</id>
-        <link href="https://kywk.github.io/life/2023/05/01/curry/"/>
-        <updated>2023-05-01T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[2022.05.01 Curry 50 in Game 7]]></summary>
-        <content type="html"><![CDATA[<p>看 NBA 這幾年來, 今年季後賽 (連同季末、附加賽) 大概是近年來最精彩的一年.</p>
-<p>而八年老勇迷, 看著衛冕軍勇士一路掙扎, 直到季末才篤定進季後賽.<br>
-季後賽在評論普遍認為 4:2 勝出下, 開盤先落後兩場勝差.<br>
-所幸主場魔咒下, 即使犯了愚蠢錯誤, 仍是險勝追平勝差.
-而在全員發揮出色下拿下關鍵 Game 5 天王山之戰.<br>
-本以為回到自家主場就穩了, 卻不斷打鐵失誤打入搶七.</p>
-<p>人生如戲, 這樣劇本如此狗血俗套, 卻真實上演著...</p>
-<p>然後, Curry 拿下 50 分, 不僅破了 NBA 紀錄的 Playoff Game 7 最高得分,<br>
-也把球風相近卻年輕一截的國王送回家放假, 把勇士帶到第二輪.</p>
-<p>不可思議的一場比賽, 當壓力大到 KT 只能繳出 2/10 的命中率時,
-Curry 竟用如此石破天驚的表現, 撐起了勇士隊.</p>
-<p>人生如戲, 這樣劇本如此狗血俗套, 卻真實上演著...</p>
-<p>恭喜 Curry, 恭喜勇士!</p>]]></content>
-        <author>
-            <name>kywk</name>
-            <uri>https://github.io/kywk</uri>
-        </author>
-        <category label="NBA" term="NBA"/>
     </entry>
 </feed>
