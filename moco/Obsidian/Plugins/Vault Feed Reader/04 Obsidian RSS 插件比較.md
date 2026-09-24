@@ -11,7 +11,7 @@ tags:
 sidebar_position: 40
 sidebar_label: RSS 插件比較
 date_created: 2026-09-22T00:00:00.000Z
-date_updated: 2026-09-24T00:00:00.000Z
+date_updated: 2026-09-25T00:00:00.000Z
 ---
 # Obsidian RSS 插件比較：Vault Feed Reader、RSS Dashboard 與 Rho Reader
 
@@ -19,11 +19,11 @@ date_updated: 2026-09-24T00:00:00.000Z
 
 本文整理 Vault Feed Reader、RSS Dashboard 與 Rho Reader 的差異，延續本系列「大量瀏覽、精選保存」的使用情境，協助判斷哪一種方式適合自己的閱讀習慣。
 
-> 比較更新：2026-09-24。Vault Feed Reader 0.5.0 已上架社群外掛市場。內容依本專案 README／SPEC，以及另外兩款的官方 README、儲存指南與發布紀錄整理；本文沒有實際安裝評測另外兩款，功能表代表文件所述能力，不代表所有平台與來源都已驗證。
+> 比較更新：2026-09-25。Vault Feed Reader 0.6.0 已上架社群外掛市場。內容依本專案 README／SPEC，以及另外兩款的官方 README、儲存指南與發布紀錄整理；本文沒有實際安裝評測另外兩款，功能表代表文件所述能力，不代表所有平台與來源都已驗證。
 
 ## 三種閱讀方式
 
-**Vault Feed Reader** 的流程是「來源 → 文章列表 → 閱讀 → 精選保存」。大量文章先留在本機快取，只有主動保存的內容才成為 Markdown 筆記，適合每天快速瀏覽、留下少量值得整理的文章。[專案 README](https://github.com/kywk/obsidian-feed-reader)
+**Vault Feed Reader** 的流程是「來源 → 文章列表 → 閱讀 → 精選保存」。大量文章先留在本機快取，只有主動保存的內容才成為 Markdown 筆記，適合每天快速瀏覽、留下少量值得整理的文章。此外也支援「我的最愛」與「稍候閱讀」本地 JSON 清單，兼顧離線全文與輕量標記。[專案 README](https://github.com/kywk/obsidian-feed-reader)
 
 **RSS Dashboard** 將文章與影音集中在閱讀介面，提供全文取得、Markdown 保存、YouTube 與 Podcast 播放、階層資料夾和標籤，並有行動裝置支援。需要多種媒體閱讀功能時，這是值得試用的候選。[官方功能說明](https://github.com/amatya-aditya/obsidian-rss-dashboard#features)
 
@@ -33,11 +33,11 @@ date_updated: 2026-09-24T00:00:00.000Z
 
 | 面向 | Vault Feed Reader | RSS Dashboard | Rho Reader |
 | --- | --- | --- | --- |
-| 主要閱讀介面 | 來源側欄、文章列表（單一來源為雜誌卡片）、文章正文 | Dashboard、閱讀器、影音播放器 | Bases 與文章連結 |
+| 主要閱讀介面 | 4 大導覽捷徑、狀態與範疇分組清單（單一來源為雜誌卡片）、純圖示工具列（即時偵測保存狀態）、文章正文 | Dashboard、閱讀器、影音播放器 | Bases 與文章連結 |
 | Feed 格式 | RSS、Atom | RSS、Atom、JSON 等 | RSS、Atom、JSON Feed |
-| 正文取得 | 閱讀器用 feed 內容；筆記命令可擷取公開原文 | 支援原文全文取得 | 主要開啟原文連結 |
-| Markdown 檔案 | 選中後手動保存 | 手動保存，支援模板 | 每篇文章建立檔案 |
-| 分類方式 | 訂閱為單層多重歸屬；摘要可加入筆記 tags | 階層資料夾、標籤 | 標籤 |
+| 正文取得 | 閱讀器用 feed 內容；筆記命令可擷取公開原文；最愛/稍候閱讀內建離線全文快照 | 支援原文全文取得 | 主要開啟原文連結 |
+| Markdown 檔案 | 選中後手動保存（亦可先加入最愛或稍候閱讀） | 手動保存，支援模板 | 每篇文章建立檔案 |
+| 分類方式 | 訂閱為單層多重歸屬；最愛/稍候閱讀清單；摘要可加入筆記 tags | 階層資料夾、標籤 | 標籤 |
 | 訂閱交換 | YAML、TOML、OPML | OPML | OPML |
 | 平台與安裝 | 桌面限定；社群插件（亦可手動安裝） | 桌面與行動裝置；社群插件 | 基於 Bases，需 Obsidian 1.9.0 以上；社群插件 |
 
@@ -49,11 +49,11 @@ Vault Feed Reader 可在保存後的筆記或 Web Clipper 筆記上，透過 Cod
 
 | 資料層 | Vault Feed Reader | RSS Dashboard | Rho Reader |
 | --- | --- | --- | --- |
-| 訂閱與狀態 | Vault YAML、每來源 JSON | 插件管理的資料；Shards v2 分離使用者狀態 | 來源與文章檔案的 Properties |
-| 文章資料 | 本機 IndexedDB，每來源最多 500 篇 | 可用每來源 JSON shard 保存歷史 | 每篇 Markdown 保存中繼資料 |
+| 訂閱與狀態 | Vault YAML、每來源 JSON、我的最愛與稍候閱讀 JSON | 插件管理的資料；Shards v2 分離使用者狀態 | 來源與文章檔案的 Properties |
+| 文章資料 | 本機 IndexedDB，每來源最多 500 篇；最愛/稍候閱讀持久化於 Vault | 可用每來源 JSON shard 保存歷史 | 每篇 Markdown 保存中繼資料 |
 | 個人筆記 | 主動保存後建立 | 另存 Markdown | 文章檔案內文供筆記使用 |
 
-Vault Feed Reader 的快取可淘汰，清除後只能重抓來源目前仍提供的文章；閱讀狀態與已保存筆記則繼續留在 vault。這讓「閱讀清單」與「長期保存」有明確分工，也表示備份 vault 並不包含本機快取。[資料與快取說明](https://github.com/kywk/obsidian-feed-reader#subscriptions-and-reading-state)
+Vault Feed Reader 的快取可淘汰，清除後只能重抓來源目前仍提供的文章；閱讀狀態、最愛／稍候閱讀清單與已保存筆記則繼續留在 vault。這讓「日常閱讀」、「輕量標記」與「長期知識沉澱」有清晰分工，也表示備份 vault 時收藏與筆記都能完整隨身帶走。[資料與快取說明](https://github.com/kywk/obsidian-feed-reader#subscriptions-and-reading-state)
 
 RSS Dashboard 的 Vault Shards 將文章歷史拆成每來源 JSON；v2 再將已讀、星號、標籤等狀態獨立放入 `user-state.json`。這有助於資料搬移，但官方指南明言尚未解決所有同步問題。儲存模式與設定仍需一起考慮。[Vault Shards 指南](https://github.com/amatya-aditya/obsidian-rss-dashboard/blob/master/docs/storage-vault-shards-guide.md)
 
@@ -63,7 +63,7 @@ Rho Reader 的 v0.4.0 發布說明指出，文章檔案保存標題、連結、�
 
 假設一天收到 100 篇文章，最後只有 3 篇值得留下。以下是依文件描述推導的工作流程，並非效能量測結果。
 
-使用 Vault Feed Reader 時，100 篇文章可以先在閱讀器篩選，最後只把 3 篇保存成筆記。保存後可以加入心得，重複保存會開啟原筆記，保留人工編輯。需要長期留存的內容，應在仍可取得時主動保存。
+使用 Vault Feed Reader 時，100 篇文章可以先在閱讀器快速篩選，感興趣但暫時無法細讀的加入「稍候閱讀」，具備啟發性的加入「我的最愛」，最後只把 3 篇核心內容保存成 Markdown 筆記。保存後可以加入心得，重複保存會開啟原筆記，保留人工編輯。需要長期留存的內容，應在仍可取得時主動保存。
 
 使用 RSS Dashboard 時，可以在同一介面閱讀文章與影音，再把選中的內容另存為筆記。若還希望文章歷史隨裝置搬移，需配合其儲存與同步設定；官方要求新裝置先完成初次同步再啟用，以免空白預設資料覆蓋訂閱。[同步設定說明](https://github.com/amatya-aditya/obsidian-rss-dashboard#syncing-across-devices)
 

@@ -12,7 +12,7 @@ tags:
 sidebar_position: 50
 sidebar_label: 全文與 AI 摘要
 date_created: 2026-09-22T12:16:48.043Z
-date_updated: 2026-09-24T00:00:00.000Z
+date_updated: 2026-09-25T00:00:00.000Z
 ---
 # Vault Feed Reader 全文擷取與 AI 摘要設定
 
@@ -148,10 +148,10 @@ type: clipping
 
 ## 版本與參考資料
 
-本文依 **0.5.0** 的插件行為整理。四款內建 CLI 的設定與非互動輸出協定可能隨版本調整，使用前請以各工具文件為準。
+本文依 **0.6.0** 的插件行為整理。四款內建 CLI 的設定與非互動輸出協定可能隨版本調整，使用前請以各工具文件為準。
 
-- [0.5.0 版使用說明](https://github.com/kywk/obsidian-feed-reader/blob/0.5.0/README.zh-TW.md)
-- [全文與摘要設定預設](https://github.com/kywk/obsidian-feed-reader/blob/0.5.0/src/enrichment/config.ts)
+- [0.6.0 版使用說明](https://github.com/kywk/obsidian-feed-reader/blob/0.6.0/README.zh-TW.md)
+- [全文與摘要設定預設](https://github.com/kywk/obsidian-feed-reader/blob/0.6.0/src/enrichment/config.ts)
 - [[01 Vault Feed Reader 專案介紹]]
 - [[02 Vault Feed Reader 安裝與日常閱讀]]
 - [[03 Vault Feed Reader 訂閱管理與筆記模板]]
