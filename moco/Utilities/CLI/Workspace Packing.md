@@ -9,6 +9,7 @@ tags:
   - ShellScript
   - CLI
 date_created: 2026-09-10
+sidebar_position: 11
 ---
 
 # 用 Git 原生 `.gitignore` 規則打包多專案 Workspace

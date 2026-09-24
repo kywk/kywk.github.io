@@ -4,7 +4,7 @@ description: SSH key & config
 tags:
   - CLI
   - Git
-sidebar_position: 50
+sidebar_position: 42
 hide_table_of_contents: true
 date_created: 2023-01-02T09:31:07.000Z
 image: "https://i.imgur.com/mErPwqL.png"

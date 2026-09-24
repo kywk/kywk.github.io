@@ -3,7 +3,7 @@ title: "Rclone: ignore"
 description: exclude files when rclone syncing
 tags:
   - Utility/Rclone
-sidebar_position: 90
+sidebar_position: 52
 hide_table_of_contents: true
 date_created: 2023-01-02T00:00:00.000Z
 date_updated: 2023-01-02T00:00:00.000Z

@@ -3,7 +3,7 @@ title: SSH 遠端 Zsh 補全與提示異常修復：Terminfo 同步指南
 description: 解決 Ghostty 等現代終端在 SSH 登入遠端 Zsh 時，自動補全、autosuggestions 與 prompt 出現破版、疊字與殘影的根本解法
 image: /img/placeholder.png
 tags: [CLI, SSH, Zsh, Terminal, Ghostty]
-sidebar_position: 55
+sidebar_position: 10
 hide_table_of_contents: false
 date_created: 2026-09-12
 date_updated: 2026-09-12

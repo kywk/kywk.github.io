@@ -6,7 +6,7 @@ image: >-
 tags:
   - Zsh
   - CLI
-sidebar_position: 10
+sidebar_position: 12
 hide_table_of_contents: true
 date_created: 2025-06-01T00:00:00.000Z
 date_updated: 2025-09-20T00:00:00.000Z

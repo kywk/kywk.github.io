@@ -4,7 +4,7 @@ description: Notes of Moo Cow
 tags:
   - Bash
   - CLI
-sidebar_position: 50
+sidebar_position: 40
 date_created: 2023-08-10T00:00:00.000Z
 date_updated: 2023-08-10T00:00:00.000Z
 image: >-

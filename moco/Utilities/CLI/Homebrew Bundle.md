@@ -6,7 +6,7 @@ image: >-
 tags:
   - CLI
   - homebrew
-sidebar_position: 5
+sidebar_position: 25
 date_created: 2024-12-22T00:00:00.000Z
 date_updated: 2024-12-22T00:00:00.000Z
 ---

@@ -5,7 +5,7 @@ image: https://lh3.googleusercontent.com/pw/AL9nZEUA9Ifvd5Z8SXDWkeVB6AC4MPGwnXaL
 tags:
   - CLI
   - DevEnv
-sidebar_position: 10
+sidebar_position: 27
 hide_table_of_contents: true
 date_created: 2026-07-26
 date_updated: 2026-07-26

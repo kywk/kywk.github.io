@@ -8,7 +8,7 @@ tags:
   - Zsh
   - Performance
   - kywk
-sidebar_position: 6
+sidebar_position: 31
 date_created: 2025-09-20
 date_updated: 2026-07-26
 ---

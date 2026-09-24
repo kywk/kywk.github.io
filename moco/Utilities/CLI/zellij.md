@@ -3,7 +3,7 @@ title: Zellij
 description: 以 Rust 編寫的現代終端多工器，具備可探索式快捷鍵與模式化操作
 image: /img/placeholder.png
 tags: [CLI, Terminal, Multiplexer]
-sidebar_position: 10
+sidebar_position: 30
 hide_table_of_contents: true
 date_created: 2026-07-26
 date_updated: 2026-07-26
