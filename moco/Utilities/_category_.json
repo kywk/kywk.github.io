@@ -2,7 +2,7 @@
   "label": "Utilities",
   "position": 70,
   "link": {
-    "type": "generated-index",
-    "description": "Utilities"
+    "type": "doc",
+    "id": "Awesome Utilities"
   }
 }

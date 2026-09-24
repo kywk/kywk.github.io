@@ -1,0 +1,32 @@
+{
+  "noteFilenameTemplate": "{{date}} {{title}}",
+  "noteBodyTemplate": "# {{title}}\n\n{{content}}",
+  "notePropertiesTemplate": "",
+  "language": "auto",
+  "subscriptionsPath": "Feed Reader/feeds.yaml",
+  "savedArticlesFolder": "Feed Reader/Articles",
+  "markReadOnNavigate": true,
+  "enrichment": {
+    "urlFields": [
+      "feed_reader_url",
+      "source",
+      "url"
+    ],
+    "rules": [
+      {
+        "kind": "heading",
+        "heading": "原文"
+      },
+      {
+        "kind": "heading",
+        "heading": "全文"
+      },
+      {
+        "kind": "heading",
+        "heading": "Article"
+      }
+    ],
+    "fullTextHeading": "原文",
+    "summaryPrompt": "請以台灣常用繁體中文摘要文章：先寫一段概述，再列出 3–5 個重點。忠於原文，不捏造事實，僅輸出摘要 Markdown，不加最外層程式碼區塊。"
+  }
+}
