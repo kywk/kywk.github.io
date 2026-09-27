@@ -1,0 +1,20 @@
+/*
+ * Docusaurus / Infima -> StoryMap theme bridge.
+ *
+ * Maps Infima variables onto the generic renderer's semantic --story-map-*
+ * variables so StoryMap panel, text, borders, buttons, and links stay readable
+ * in both light and dark themes. The renderer stays host-agnostic; only this
+ * host stylesheet knows about Infima.
+ */
+.story-map-host {
+  --story-map-bg: var(--ifm-background-surface-color);
+  --story-map-fg: var(--ifm-font-color-base);
+  --story-map-muted: var(--ifm-color-emphasis-700);
+  --story-map-border: var(--ifm-color-emphasis-300);
+  --story-map-accent: var(--ifm-color-primary);
+}
+
+/* The host element wraps the renderer; give it vertical rhythm in MDX flow. */
+.story-map-host {
+  margin: 1.5rem 0;
+}

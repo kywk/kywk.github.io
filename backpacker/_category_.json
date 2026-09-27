@@ -2,7 +2,7 @@
   "label": "Around World",
   "position": 0,
   "link": {
-    "type": "generated-index",
-    "description": "Around World"
+    "type": "doc",
+    "id": "Lonely Planet"
   }
 }

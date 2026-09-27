@@ -6,8 +6,16 @@ tags:
   - China
   - Xinjiang
 sidebar_position: 10
-date_created: 2025-12-31T00:00:00.000Z
-date_updated: 2026-01-05T00:00:00.000Z
+story-map-note: true
+location:
+  - 39.4704
+  - 75.9896
+cover: https://lh3.googleusercontent.com/pw/AP1GczOT0hs2WQH0x-cEL3WrGuy0JOXHDUUPMOPOlLBvmvTANqLqYIpjriYJ5Fap6BsQ30wyrRUht-bSpTzM-lJX5i5Y2Rm9OqCqR5Gr-HBj2MHRIpa56j-Z8RNfOinipNJ0IuouBZcvk30JU5Si8vojPaMC-A=w466-h832-s-no-gm
+description : |
+  淡季的南疆很舒服，旺季的北疆很複製。
+  新張很大很美、值得再訪，能少點網紅複製效應就完美了。
+date_created: 2026-01-24T00:00:00.000Z
+date_updated: 2026-02-05T00:00:00.000Z
 ---
 
 # 2026.01.24 ~ 02.08 心將 新疆

@@ -38,6 +38,10 @@ const slugNormalizerPlugin = loadPlugin("remark-slug-normalizer", "./plugins/rem
 const normalizeSlug = slugNormalizerPlugin?.normalizeSlug;
 const deriveSlug = slugNormalizerPlugin?.deriveSlug;
 
+// StoryMap ESM remark plugin, loaded through Node's native require(esm) so
+// jiti does not mangle zod v4's named exports (see the loader file).
+const remarkStoryMap = require("./plugins/remark-story-map-loader.cjs");
+
 // 全站 wikilink 索引：blog 文章可以連到 docs，也可以連到另一個 blog。
 // 路由仍由 remark-slug-normalizer 的 deriveSlug() 統一推導。
 const contentLinkIndex = createContentLinkIndex({
@@ -45,6 +49,18 @@ const contentLinkIndex = createContentLinkIndex({
   docsConfig,
   blogConfig,
 });
+
+// StoryMap fenced blocks: vaultRoot is this repo (the Obsidian vault).
+// noteDisplay: link routes go through the published-content index above, so the
+// plugin never reimplements Docusaurus slug policy. assetBase is omitted because
+// this vault references media by absolute URL and has no asset-copy pipeline.
+const storyMapOptions = {
+  vaultRoot: __dirname,
+  resolveNoteHref: (vaultRelativePath: string) => {
+    const matches = contentLinkIndex.resolve(vaultRelativePath);
+    return matches.length === 1 ? matches[0].route : undefined;
+  },
+};
 
 // 建立檔案映射表 - 統一函數
 function createFileMap(basePath) {
@@ -174,6 +190,10 @@ function createRemarkPlugins(fileMap, routeBase) {
       aliasDivider: pluginConfig.wikiLink.aliasDivider,
     },
   ]);
+
+  // ```story-map fences become browser hosts; the story-map-client plugin mounts
+  // the shared renderer into them after the page loads.
+  plugins.push([remarkStoryMap, storyMapOptions]);
 
   return plugins;
 }
@@ -306,13 +326,15 @@ const config: Config = {
         docs: false,
         blog: false,
         theme: {
-          customCss: "./src/css/custom.css",
+          customCss: ["./src/css/custom.css", "./src/css/story-map-theme.css"],
         },
       } satisfies Preset.Options,
     ],
   ],
 
   plugins: [
+    // 註冊 StoryMap 的瀏覽器客戶端，於 SPA 導覽後也能掛載每個 host
+    "./plugins/story-map-client",
     ...docsConfig.map(doc => [
       "@docusaurus/plugin-content-docs",
       {

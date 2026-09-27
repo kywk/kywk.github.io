@@ -2,11 +2,28 @@
 title: Lonely Planet Toolkit
 description: 行前 checklist、交通攻略與裝備表，為長程旅行鋪好軌道。
 hide_title: true
+story-map: true
 ---
 
 # Lonely Planet Toolkit
 
 > 「出發前把未知化成 checklist，旅途中就能專心看風景。」
+
+```story-map
+schema: storymap/v1
+title: Lonely Planet
+noteFolder: backpacker
+noteDisplay: link
+order: asc
+dateField: date_created
+
+map:
+  center: [15, 30]
+  zoom: 3
+  minZoom: 2
+  maxZoom: 18
+  showPath: true
+```
 
 ## 🎒 Start Here · 行前準備
 - [[index orz|旅行規劃流程]] — 從靈感到成行的 SOP。
@@ -35,4 +52,3 @@ hide_title: true
 - [Tripmate Paul](/backpacker/category/tripmate-paul/)
 
 隨時把新的旅程筆記加入這裡，讓下一趟遠行能輕鬆接續。
-
