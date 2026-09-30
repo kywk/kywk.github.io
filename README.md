@@ -1,232 +1,163 @@
 # kywk.me - Obsidian + Docusaurus 整合系統
 
-這是一個結合 Obsidian 本地編輯器與 Docusaurus 網站生成器的個人知識管理與發布系統。
+以 Obsidian 作為編輯器、Docusaurus 作為發佈工具的個人知識庫。
+本檔案只記錄**會咬人的**規則；細節請見 [SCRIPTS-GUIDE.md](./SCRIPTS-GUIDE.md)
+與 [PLUGIN-INSTALL-GUIDE.md](./PLUGIN-INSTALL-GUIDE.md)。
 
-## 專案架構
+## 內容組織
 
-### 📁 內容組織
-- **backpacker/**: 旅遊記錄與遊記 (142 檔案)
-- **lifehacker/**: 生活技巧、登山、攝影、閱讀等 (84 檔案)
-- **moco/**: 技術文件 (程式開發、工具使用) (224 檔案)
-- **blog.life/**: 個人生活部落格 (42 檔案)
-- **blog.news/**: 技術新聞與資訊 (52 檔案)
-- **總計**: 1,777 Markdown 檔案（含未發佈的 `_incoming/`、`_journaling/` 等），實際產出 916 頁
+| 目錄 | 內容 | 檔案數 |
+| --- | --- | --- |
+| `backpacker/` | 旅遊記錄與遊記 | 191 |
+| `lifehacker/` | 生活技巧、登山、攝影、閱讀 | 304 |
+| `moco/` | 技術文件 | 272 |
+| `blog.life/` | 個人生活部落格 | 523 |
+| `blog.news/` | 技術新聞與資訊 | 54 |
 
-### 🔧 技術特色
-- **Wiki Link 支援**: 使用 `remark-wiki-link` 插件，支援 Obsidian 的 `[[]]` 連結語法及 `[[target|display]]` 別名語法
-- **多文檔站點**: 透過多個 `@docusaurus/plugin-content-docs` 實例管理不同主題
-- **雙部落格系統**: 分離個人生活 (life) 和技術資訊 (news)
-- **Mermaid 圖表**: 支援流程圖和圖表渲染
-- **中文本地化**: 預設語言設為 `zh-TW`
-- **站內搜尋**: `@easyops-cn/docusaurus-search-local` 純靜態全文搜尋，含中文分詞，索引於 build 時自動產生（無外部服務）
-- **URL 正規化**: slug 由 build 時的 hook 依檔案路徑推導，全站規則一致，原始檔不受汙染
-- **自動化工具**: 內容驗證、圖片優化、slug 檢查、連結轉換
+發佈內容共 1,344 個 Markdown，build 產出約 2,067 頁。
+Vault 內另有未發佈的 `_incoming/`、`_journaling/` 等，全庫約 2,511 個 `.md`。
 
-### 🎯 Obsidian 插件支援
+## 技術特色
 
-#### Kanban 看板
-透過 `remark-obsidian-kanban` 插件，支援 Obsidian Kanban 格式：
-- 自動偵測 `kanban-plugin: board` frontmatter
-- 將 Markdown 任務列表渲染為互動式看板
-- 支援 wiki-link 連結解析
+- **Wiki Link**: `remark-wiki-link` 處理 `[[]]` 與 `[[target|display]]`
+- **多文檔實例**: backpacker／lifehacker／moco 各自一個 `@docusaurus/plugin-content-docs`
+- **雙部落格**: life 與 news 分離
+- **站內搜尋**: `@easyops-cn/docusaurus-search-local`，索引於 build 時產生，無外部服務
+- **URL 正規化**: slug 於 build 時由路徑推導，**不寫回原始檔**（見下）
+- **中文本地化**: `zh-TW`；Mermaid 圖表
 
-#### Leaflet 地圖
-透過 `@story-map/remark-story-map` 渲染互動式地圖（全站唯一的 Leaflet runtime）：
-- 使用 `leaflet` 程式碼區塊定義地圖（獨立於 `story-map` 的另一套 dialect／parser）
-- 支援 `markerFolder` 遞迴自動讀取含 `location` frontmatter 的 Markdown 檔案
-- 標記連結經由既有的 `contentLinkIndex` 產生，不另實作 slug 規則
-- 深色/淺色主題跟隨 Docusaurus 的主題切換（`src/css/story-map-theme.css` 橋接 `map.theme: auto`）
-- 地圖標記支援中文標題和連結
-- **按需載入**: Leaflet 與 `leaflet.css` 只從 client bundle 載入，頁面上沒有地圖時完全不會下載
+## Obsidian 外掛
 
-範例：
+**Kanban** — `remark-obsidian-kanban`，偵測 `kanban-plugin: board` frontmatter 渲染看板。
+
+**Geo Story Map** — `@story-map/remark-story-map`（0.5.0），**全站唯一的 Leaflet runtime**。
+原本自製的 `remark-obsidian-leaflet` 與 `static/js/leaflet-init.js` 已於 2026-09-30 刪除。
+
+| 圍欄區塊 | 形態 | 渲染 |
+| --- | --- | --- |
+| ` ```story-map ` | 故事：投影片 + 版型 + 面板 | `<StoryMap />` |
+| ` ```leaflet ` | 純地圖：只有地圖與標記 | `<GeoMap />` |
+
 ```markdown
-\`\`\`leaflet
+```leaflet
 id: my-map
 lat: 25.0330
 long: 121.5654
 defaultZoom: 12
 markerFolder: backpacker/trip/places
-\`\`\`
 ```
+```
+
+- 舊 ` ```leaflet ` 區塊沿用歷史 key，既有筆記不需改寫；
+  `markerFolder` 遞迴讀取含 `location` 的筆記，`mapzoom: [min, max]` 轉成標記縮放可見範圍
+- 標記連結走既有的 `contentLinkIndex`，不另實作 slug 規則
+- Leaflet 與 `leaflet.css` 只從 client bundle 載入，頁面上沒有地圖時完全不下載；
+  `docusaurus build` 期間不會建立 Leaflet 實例
+- 主題橋接（`src/css/story-map-theme.css`）**light 與 dark 都要宣告**：
+  `map.theme: auto` 預設跟的是 `prefers-color-scheme`（作業系統），不是 Docusaurus 存在
+  localStorage 的主題；只寫 dark 會在「系統深色但站台淺色」時失效
+
+逐項相容度見 [leaflet-compatibility.md](https://github.com/kywk/story-map/blob/main/docs/leaflet-compatibility.md)。
 
 ## 開發指令
 
-### 安裝依賴
 ```bash
-npm install
+npm install          # 安裝依賴（Node >= 20.19，見下）
+npm start            # 本地開發伺服器，熱重載
+npm run build        # 建置至 build/
+npm run serve        # 預覽建置結果
+npm run typecheck    # TypeScript 型別檢查
+npm run clear        # 清快取
+npm run deploy       # 建置並部署到 gh-pages
+
+npm run content:check      # 驗證內容（有 error 才失敗；-- --strict 連 warning 也擋）
+npm run content:optimize   # 圖片優化（-- --dry-run 先預覽）
+npm run content:slug       # slug 檢查（:fix 清理、:write 寫回 frontmatter）
+npm run content:wikilink   # Markdown 連結轉 wiki-link
 ```
 
-### 本地開發
-```bash
-npm start
-```
-啟動本地開發伺服器，支援熱重載
+`content:check` 的 **error** 會讓 build 失敗（frontmatter 用 tab 縮排、控制字元、
+`foo: : bar` 重複冒號）；**warning** 是品質提醒，不擋。
+`content:optimize` 需 ImageMagick 或 sharp，找不到工具會明確回報，不會假裝已完成。
 
-### 建置網站
-```bash
-npm run build
-```
-生成靜態網站檔案至 `build/` 目錄
+## ⚠️ 會咬人的規則
 
-### 部署到 GitHub Pages
-```bash
-npm run deploy
-```
-自動建置並部署到 `gh-pages` 分支
+### Node 必須 >= 20.19
 
-### 內容管理指令
-```bash
-npm run content:check      # 驗證內容（有 error 才失敗，warning 不擋）
-npm run content:optimize   # 優化圖片（加 -- --dry-run 只預覽）
-npm run content:slug       # 檢查 slug（:fix 清理、:write 寫入）
-npm run content:wikilink   # 轉換 Markdown 連結為 wiki-link
-npm run deploy:preview     # 建置並預覽部署結果
-```
+`engines.node` 是 `>=20.19.0`，這是**必要**而非保守：
+`plugins/remark-obsidian-kanban` 以 `require()` 載入 ESM-only 的 `unist-util-visit@5`，
+需要 Node 20.19 起才有的 `require(esm)`，在 Node 18 上直接 `ERR_REQUIRE_ESM`。
 
-> 📖 詳細使用說明請參考 [SCRIPTS-GUIDE.md](./SCRIPTS-GUIDE.md)
+三處 pinning 一致：CI `20.19.0`、`volta` `20.20.2`、`engines`。
+另設 `packageManager: npm@10.9.8`——**不要改用 pnpm**，理由見下。
 
-### 其他指令
-```bash
-npm run serve          # 本地預覽建置結果
-npm run clear          # 清除快取
-npm run typecheck      # TypeScript 類型檢查
-```
+### 依賴必須在站台宣告，不能靠提升
 
-## ⚠️ 重要注意事項
+`loadPlugin()` 依序嘗試 `npm 套件名` → `localPath` → `./plugins/<name>` → `.../src/index.js`。
+以路徑載入的插件**其自己的 `dependencies` 不會被 npm 安裝**。
 
-### 內容管理自動化
+`remark-obsidian-kanban` 宣告了 `unist-util-visit`，但站台也必須宣告一份，否則只是
+碰巧靠 `@story-map/remark-story-map` 等其他套件提升上來而可用。npm 的扁平佈局掩蓋了這點；
+pnpm 的嚴格隔離會讓它直接 `MODULE_NOT_FOUND`。`@docusaurus/theme-common` 與
+`@docusaurus/plugin-content-docs`（被 swizzle 過的 `src/theme` 直接匯入）同理。
 
-**內容驗證**：
-```bash
-npm run content:check            # 有 error 才 exit 1
-npm run content:check -- --strict  # warning 也視為失敗
-```
-- **error**（會讓 build 失敗）：frontmatter 用 tab 縮排、控制字元、`foo: : bar` 這類重複冒號
-- **warning**：既無 `title` frontmatter 又無 H1、tag 開頭是 `#`、舊的 `[[標題:說明]]` 冒號語法、內容過短
+### slug 由路徑推導，不寫回檔案
 
-**圖片優化**：
-```bash
-npm run content:optimize -- --dry-run   # 先看會處理哪些、能省多少
-npm run content:optimize                # 實際壓縮（就地覆寫，無備份）
-```
-需安裝 ImageMagick (`brew install imagemagick`) 或 sharp。找不到工具時會明確回報跳過幾張，
-不會再假裝「沒有圖片需要壓縮」。
+規則只有一份，在 `plugins/remark-slug-normalizer/src/index.js` 的 `deriveSlug()`，
+由 parseFrontMatter hook、`content:slug`、wikilink pageResolver **三處共用**，
+所以路由與 `[[wikilink]]` 產生的網址不可能不一致。
 
-**站內搜尋**：
+每個路徑段：轉小寫 → 空白與底線換 `-` → 收合連續 `-` → 去頭尾 `-` → 移除引號與括號。
+結尾的 `/index` 直接去掉（`1901 Paul/index.md` → `/1901-paul/`）。
 
-不需要任何指令。搜尋由 `@easyops-cn/docusaurus-search-local` 提供，索引在 `npm run build`
-時自動產生（`build/search-index.json`，目前約 9,500 筆），搜尋頁在 `/search`。
+**括號必須移除**：React Router 5 用的 `path-to-regexp` v1 會把 `( )` 當成正規表達式群組，
+帶括號的網址永遠匹配不到 route。
 
-> 舊的 `scripts/build-search-index.js` 已移除：它從未被接進 build 流程，
-> 且會產生與外掛衝突的 `static/search-index.json` 與 `src/pages/search.md`。
+新增檔案不需要做任何事，也不需要在 frontmatter 寫 `slug:`。
 
-### URL slug 的產生方式
+### slug 不在 remark 階段處理
 
-**規則只有一條，寫在一個地方。** `docusaurus.config.ts` 的 `markdown.parseFrontMatter`
-在 build 時由檔案路徑即時推導 slug，**不寫回原始檔**：
+Remark 插件鏈為 remarkKanban → remarkWikiLink → remarkStoryMap。
+slug 必須在 `parseFrontMatter` 解決：Docusaurus 在 `processDocMetadata` 就把 permalink
+算好，remark 是之後才在 mdx-loader 跑的，改 frontmatter 已經來不及。
 
-1. 取 vault 內的相對路徑，去掉 `.md`/`.mdx`
-2. 去掉結尾的 `/index`（`1901 Paul/index.md` → `/1901-paul/`，不會多一段 `/index/`）
-3. 每個路徑段：轉小寫 → 空白與底線換成 `-` → 收合連續 `-` → 去掉頭尾 `-` → 移除引號與括號
-   （引號與 `(` `)` 直接移除而非換成分隔符；括號必須移掉，因為 React Router 5 的
-   path-to-regexp v1 會把 `( )` 當成正規表達式群組，帶括號的網址永遠匹配不到 route）
-4. docs 產生 `/a/b/`；blog 產生 `/YYYY/MM/DD/title`（沿用 Docusaurus 的日期結構）
-
-推導函式在 `plugins/remark-slug-normalizer/src/index.js` 的 `deriveSlug()`，
-**同時被三個地方使用**：parseFrontMatter hook、`npm run content:slug`、wikilink 的 pageResolver。
-三者共用同一份實作，所以「路由」與「`[[wikilink]]` 產生的網址」不可能不一致。
-
-因此：**新增檔案不需要做任何事**，也不需要在 frontmatter 寫 `slug:`。
-檔名和資料夾名可以自由使用空格、大小寫、中文。
-
-```bash
-npm run content:slug          # 檢查：列出每個檔案的 slug、偵測衝突與殘留設定
-npm run content:slug:fix      # 清理：移除檔案裡多餘的 slug frontmatter
-npm run content:slug:write    # 寫入：把推導出的 slug 寫回 frontmatter（想在 Obsidian 裡看到時）
-```
-
-> 歷史：原本是 `prebuild` 自動跑 `inject-slug-frontmatter.js` 把 slug 寫進檔案，
-> 但它只處理「路徑含空格」的檔案，所以 `Utilities/CLI` 這種目錄永遠不會被正規化 ——
-> 這是路由大小寫不一致的根因。加上它用 gray-matter 重新序列化整份 frontmatter，
-> 會把 `date_created: 2026-07-26` 改寫成 ISO 時間戳並和 Obsidian 來回打架。已移除。
-
-### Markdown 連結轉 Wiki-link
-
-為維持 Obsidian 相容性，專案內部連結應使用 wiki-link 格式 `[[file]]` 而非 Markdown 格式 `[text](./file.md)`。
-
-**轉換 Markdown 連結為 wiki-link：**
-```bash
-npm run content:wikilink
-```
-
-此腳本會：
-- 將 `[text](./file.md)` 轉換為 `[[file|text]]`
-- 若連結文字與檔名相同，簡化為 `[[file]]`
-- 僅處理相對路徑 (`./` 或 `../`) 的 `.md` 連結
-
-
-## 重要配置
-
-### docusaurus.config.ts
-- **多文檔配置**: 每個主題 (backpacker, lifehacker, moco) 都有獨立的文檔實例
-- **preset-classic 的預設 docs/blog 已關閉** (`docs: false, blog: false`)，避免多出 `/docs`、`/blog` 空路由
-- **Wiki Link 解析**: docs 與 blog 共用全站內容索引，自動將 `[[]]` 語法轉換為 Docusaurus 連結；blog 的日期式 permalink 也由同一份 slug 規則推導
-- **Remark 插件鏈**: remarkKanban → remarkWikiLink → remarkStoryMap
-  （`story-map` 與 `leaflet` 兩種 dialect 都由最後一個處理；
-  slug 不在 remark 階段處理 —— Docusaurus 在 processDocMetadata 就算好 permalink，
-  remark 是之後才在 mdx-loader 跑的，改 frontmatter 已經來不及）
-- **效能 flags**: `future.faster` 全開 + `future.v4.removeLegacyPostBuildHeadAttribute`
-  （`ssgWorkerThreads` 的前置條件），詳見 [Docusaurus v3 升級筆記](Docusaurus%20v3%20Upgrading.md)
-- **部署設定**: 配置 GitHub Pages 部署參數
-
-### 自訂插件
-
-本專案支援多種插件安裝方式：
-
-**安裝方式**：
-1. **NPM 安裝** (推薦): `npm install remark-obsidian-kanban remark-slug-normalizer`
-2. **手動 Clone**: 直接 clone 到 `plugins/` 目錄
-3. **本地開發**: 在 `plugins/` 目錄下直接開發
-
-系統會自動按優先順序載入可用的插件。詳細說明請參考 [PLUGIN-INSTALL-GUIDE.md](./PLUGIN-INSTALL-GUIDE.md)。
+## 插件
 
 | 檔案 | 說明 |
-|------|------|
-| `plugins/remark-obsidian-kanban/` | Obsidian Kanban 看板渲染 |
-| `plugins/remark-slug-normalizer/` | URL slug 推導規則（`deriveSlug`，全站唯一實作） |
-| `plugins/remark-story-map-loader.cjs` | 以原生 `require(esm)` 載入 `@story-map/remark-story-map`（繞過 jiti 破壞 zod v4 具名匯出） |
-| `plugins/story-map-client/` | 註冊 StoryMap 瀏覽器 client module 與全頁 StoryMap 檢視 |
-| `scripts/content-links.js` | 全站 Obsidian wikilink 索引與 Docusaurus route resolver |
-| `scripts/slug.js` | slug 檢查／清理／寫入 |
-| `scripts/convert-to-wikilinks.js` | Markdown 連結轉 wiki-link |
-| `scripts/content-validator.js` | 內容驗證與檢查 |
-| `scripts/optimize-images.js` | 圖片壓縮與優化 |
+| --- | --- |
+| `plugins/remark-obsidian-kanban/` | Kanban 看板渲染（獨立 npm 套件） |
+| `plugins/remark-slug-normalizer/` | slug 推導規則（全站唯一實作） |
+| `plugins/rehype-obsidian-tasks/` | Obsidian task 標記渲染（僅本站台） |
+| `plugins/remark-story-map-loader.cjs` | 以原生 `require(esm)` 載入 remark-story-map，繞過 jiti 破壞 zod v4 具名匯出 |
+| `plugins/story-map-client/` | 註冊 StoryMap 瀏覽器 client module 與全頁檢視 |
+| `scripts/content-links.js` | wikilink 索引與 route resolver |
+| `scripts/slug.js` / `content-validator.js` / `optimize-images.js` / `convert-to-wikilinks.js` | 見 SCRIPTS-GUIDE.md |
 
-### package.json
-- **版本**: 17.71
-- **核心依賴**: Docusaurus 3.10.2, React 19.2
-- **特殊插件**: remark-wiki-link, gray-matter, @easyops-cn/docusaurus-search-local
-- **內容管理**: 自動化驗證、圖片優化、slug 檢查腳本
+`preset-classic` 的預設 docs/blog 已關閉（`docs: false, blog: false`），避免多出
+`/docs`、`/blog` 空路由。效能 flags 見
+[Docusaurus v3 升級筆記](moco/Obsidian/Docusaurus/Docusaurus%20v3%20Upgrading.md)。
 
 ## Obsidian 整合
-- **.obsidian/**: 完整的 Obsidian 配置，包含多個插件
-- **同步機制**: 透過 Dropbox 同步，實現跨裝置編輯
-- **模板系統**: 使用 Templater 等插件提升編輯效率
 
-## 部署流程
-- **GitHub Pages**: 自動部署到 `kywk.github.io`
-- **CI/CD**: 透過 `.github/workflows/` 自動化部署
-  - `deploy.yml` (push to main) 與 `test-deploy.yml` (PR) 都會依序執行
-    `typecheck` → `content:check` → `build`
-  - `content:check` 會擋下 deploy，但只在「會讓 build 失敗」的問題上（frontmatter 用 tab
-    縮排、控制字元、重複冒號）。品質類提醒是 warning 不擋；要連 warning 一起擋加 `-- --strict`
-- **版本控制**: 使用 Git 管理內容版本
+- **.obsidian/**: 完整 Obsidian 配置；透過 Dropbox 跨裝置同步
+- **模板系統**: Templater（`_templates` 與 `_templates/scripts`）
+- **地圖外掛**: `obsidian-leaflet-plugin` 已於 2026-09-30 **解除安裝**
+  （`community-plugins.json` 已移除、插件目錄已刪除），改用 `geo-story-map` v0.5.0。
+  既有筆記的 `location`、`mapmarker`、`mapzoom` 與 ` ```leaflet ` 區塊都繼續沿用，不需改寫。
+  實際 vault 狀態見 [Obsidian Plugins Overview](moco/Obsidian/Plugins/Obsidian%20Plugins%20Overview.md)
+
+## 部署
+
+- **GitHub Pages**: user site，服務於 `https://kywk.github.io/` 根路徑
+- **CI**: `deploy.yml`（push main）與 `test-deploy.yml`（PR）皆執行
+  `npm ci` → `typecheck` → `content:check` → `build` → deploy
+- **依賴必須來自 registry**：`package-lock.json` 有進版控且 CI 走 `npm ci`，
+  `file:` 指向本機路徑的 tarball 在 runner 上無法解析，會讓整條 deploy 卡住
+- **不做舊網址轉址**：vault 改名或搬動檔案會使已發佈網址失效，個人站點刻意不維護，
+  維持零成本
 
 ## 已知待辦
 
-- **全站仍有 broken-link warnings**: 目前主要集中在舊的 backpacker／moco wikilink、舊的
-  `[[標題:說明]]` 冒號別名語法與歷史路徑；blog wikilink 已改由全站索引嚴格解析，未解析或同名
-  連結會直接使 blog build 失敗。全站清理完成後可把 `onBrokenLinks` 從 `warn` 改成 `throw`
-- ~~路由大小寫不一致~~：**已解決**。全站 919 個路由現在 0 個含大寫、0 個 `%20`、
-  0 個含底線、0 個 doc 路由以 `/index/` 結尾（改造前分別是 98 / 0 / 若干 / 8）
+- `onBrokenLinks` 目前是 `warn`。全站清理完成後可改成 `throw`：
+  待處理的是舊 backpacker／moco wikilink、舊的 `[[標題:說明]]` 冒號別名語法與歷史路徑
+  （blog wikilink 已改由全站索引嚴格解析，未解析會直接使 blog build 失敗）
