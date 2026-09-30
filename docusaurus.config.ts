@@ -3,7 +3,7 @@ import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
 
 const { Logger } = require("./scripts/logger.js");
-const { pluginConfig, docsConfig, blogConfig, externalResources } = require("./site.config.js");
+const { pluginConfig, docsConfig, blogConfig, externalResources, redirects } = require("./site.config.js");
 const fs = require("fs");
 const path = require("path");
 const { createContentLinkIndex, createWikiPageResolver } = require("./scripts/content-links.js");
@@ -335,6 +335,8 @@ const config: Config = {
   ],
 
   plugins: [
+    // GitHub Pages 沒有伺服器端轉址，舊路徑靠這支插件產生實體頁面接手
+    ["@docusaurus/plugin-client-redirects", { redirects }],
     // 註冊 StoryMap 的瀏覽器客戶端，於 SPA 導覽後也能掛載每個 host
     "./plugins/story-map-client",
     ...docsConfig.map(doc => [
