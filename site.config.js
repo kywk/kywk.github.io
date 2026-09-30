@@ -60,7 +60,8 @@ const blogConfig = [
 // 外部資源配置
 const externalResources = {
   fonts: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+TC:wght@400;500;700&display=swap',
-  // Leaflet 的 CSS/JS 只在有地圖的頁面才載入，URL 定義於 static/js/leaflet-init.js
+  // Leaflet 的 CSS/JS 由 @story-map/remark-story-map 的 client 動態載入，
+  // 不再需要 static/js/leaflet-init.js（已於 2026-09-30 刪除）
 };
 
 module.exports = {
