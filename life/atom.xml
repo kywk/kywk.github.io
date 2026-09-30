@@ -266,15 +266,13 @@ Shelite 開發除錯到一定階段需求錯誤已收斂可以邊運行邊觀察
 </ul>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="todo">TODO<a href="https://kywk.github.io/life/2025/02/02/lunar-new-year/#todo" class="hash-link" aria-label="TODO的直接連結" title="TODO的直接連結" translate="no">​</a></h2>
 <ul class="contains-task-list containsTaskList_mC6p">
-<li class="">[-] 01/24,25 白雪村 📅 2025-01-25 ❌ 2025-01-22
-<ul>
-<li class="">[-] backpacking 📅 2025-01-19 ❌ 2025-01-22</li>
+<li class="task-list-item task-list-item--cancelled" data-task="-"><input type="checkbox" disabled="" class="task-list-item-checkbox--cancelled" data-task="-" checked=""> <!-- -->01/24,25 白雪村 📅 2025-01-25 ❌ 2025-01-22<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item task-list-item--cancelled" data-task="-"><input type="checkbox" disabled="" class="task-list-item-checkbox--cancelled" data-task="-" checked=""> <!-- -->backpacking 📅 2025-01-19 ❌ 2025-01-22</li>
 </ul>
 </li>
-<li class="">[-] 01/30 阿里山日出 📅 2025-01-30</li>
+<li class="task-list-item task-list-item--cancelled" data-task="-"><input type="checkbox" disabled="" class="task-list-item-checkbox--cancelled" data-task="-" checked=""> <!-- -->01/30 阿里山日出 📅 2025-01-30</li>
 <li class="task-list-item"><input type="checkbox" disabled=""> 月亮樹拼圖 📅 2026-12-31</li>
-<li class="">[-] 旅遊畫框 📅 2025-06-01 ❌ 2025-06-02
-<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item task-list-item--cancelled" data-task="-"><input type="checkbox" disabled="" class="task-list-item-checkbox--cancelled" data-task="-" checked=""> <!-- -->旅遊畫框 📅 2025-06-01 ❌ 2025-06-02<ul class="contains-task-list containsTaskList_mC6p">
 <li class="task-list-item"><input type="checkbox" disabled="" checked=""> 交通票券 ✅ 2026-01-01</li>
 <li class="task-list-item"><input type="checkbox" disabled="" checked=""> 景點票券 ✅ 2026-01-01</li>
 <li class="task-list-item"><input type="checkbox" disabled="" checked=""> 酒標 ✅ 2026-01-01</li>
@@ -344,8 +342,8 @@ Shelite 開發除錯到一定階段需求錯誤已收斂可以邊運行邊觀察
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="stuff-reorganize">Stuff Reorganize<a href="https://kywk.github.io/life/2025/01/28/life-keeping/#stuff-reorganize" class="hash-link" aria-label="Stuff Reorganize的直接連結" title="Stuff Reorganize的直接連結" translate="no">​</a></h2>
 <ul class="contains-task-list containsTaskList_mC6p">
 <li class="task-list-item"><input type="checkbox" disabled="" checked=""> 3C ✅ 2025-01-19
-<ul>
-<li class="">[-] ACTION_2025#ForSale 🔼 📅 2024-12-31</li>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item task-list-item--cancelled" data-task="-"><input type="checkbox" disabled="" class="task-list-item-checkbox--cancelled" data-task="-" checked=""> <!-- -->ACTION_2025#ForSale 🔼 📅 2024-12-31</li>
 </ul>
 </li>
 <li class="task-list-item"><input type="checkbox" disabled="" checked=""> Camping ✅ 2025-01-19</li>
@@ -727,7 +725,7 @@ JS/HTML/CSS Terminal</li>
         <updated>2024-04-27T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[今天 通勤學英語 15 Mins Today 幕後教師室Teacher's Lounge Ep.35: 強化好習慣的原子架構 James Clear's framework for forming better habits]]></summary>
         <content type="html"><![CDATA[<p>今天 <a href="https://www.15mins.today/" target="_blank" rel="noopener noreferrer" class="">通勤學英語 15 Mins Today</a> <em>幕後教師室Teacher's Lounge Ep.35: 強化好習慣的原子架構 James Clear's framework for forming better habits</em>
-podcast 節目中聽到 <a class="internal" href="https://kywk.github.io/lifehacker/reading/atomic-habits/">Atomic habits</a> 的幾個核心精神, 備註一下:</p>
+podcast 節目中聽到 <a class="internal" href="https://kywk.github.io/lifehacker/reading/personal-growth/atomic-habits/">Atomic habits</a> 的幾個核心精神, 備註一下:</p>
 <p>訂定適合自己的學習框架, 可以簡單地拆解成下面四個步驟：</p>
 <ol>
 <li class="">Make it obvious 讓它顯而易見</li>

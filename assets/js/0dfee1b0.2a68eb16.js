@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkkywk_me=self.webpackChunkkywk_me||[]).push([["3953"],{75806(a){a.exports=JSON.parse('{"tag":{"label":"Mac","permalink":"/news/tags/mac","allTagsPath":"/news/tags","count":2,"unlisted":false},"listMetadata":{"permalink":"/news/tags/mac","page":1,"postsPerPage":10,"totalPages":1,"totalCount":2,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
