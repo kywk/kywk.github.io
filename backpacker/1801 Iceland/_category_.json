@@ -2,7 +2,7 @@
   "label": "Song of Ice",
   "position": 8198,
   "link": {
-    "type": "generated-index",
-    "description": "2018.01 Iceland"
+    "type": "doc",
+    "id": "Index Song of Ice"
   }
 }

@@ -3,7 +3,7 @@ title: Next Figma?
 description: 2022.09.16 Next Figma?
 authors: kywk
 tags: []
-image: https://i.imgur.com/mErPwqL.png
+cover: https://i.imgur.com/mErPwqL.png
 hide_table_of_contents: true
 ---
 

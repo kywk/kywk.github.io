@@ -7,8 +7,7 @@ tags:
   - India
   - Essays
 date_created: 2016-08-16T23:01:59.000Z
-image: >-
-  https://lh3.googleusercontent.com/pw/ACtC-3e26xh2R8LfJ6onxFob28de8GDND1t5Fzelru0lKqNMZV86phGP7c2ub-uT_CK063c_AwdByZlnSu_TSeav7v3e9uCMUaO8LHYoyP5kxyOucKjrAczMETydRAXVlgpn9V2V7HOwGGC71qyElM03H-oIuA=w800-h450-no?authuser=0
+cover: https://lh3.googleusercontent.com/pw/ACtC-3e26xh2R8LfJ6onxFob28de8GDND1t5Fzelru0lKqNMZV86phGP7c2ub-uT_CK063c_AwdByZlnSu_TSeav7v3e9uCMUaO8LHYoyP5kxyOucKjrAczMETydRAXVlgpn9V2V7HOwGGC71qyElM03H-oIuA=w800-h450-no?authuser=0
 categories:
   - backpacker
   - india

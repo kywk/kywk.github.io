@@ -1,7 +1,7 @@
 ---
 title: Docusaurus v3 升級筆記
 description: Docusaurus v2 升級到 v3 的完整指南與問題解決
-image: 'https://i.imgur.com/mErPwqL.png'
+cover: https://i.imgur.com/mErPwqL.png
 tags:
   - Docusaurus
   - 升級

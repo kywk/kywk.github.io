@@ -7,7 +7,7 @@ tags:
   - BAR
   - Ancient
 date_created: 2009-09-28T00:34:22+08:00
-image: http://farm3.static.flickr.com/2597/4142688683_231675ac13.jpg
+cover: http://farm3.static.flickr.com/2597/4142688683_231675ac13.jpg
 categories:
   - lifestyle
   - taipei

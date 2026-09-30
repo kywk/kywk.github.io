@@ -6,7 +6,7 @@ tags:
   - Dropbox
 sidebar_position: 51
 date_created: 2022-09-21T16:00:00.000Z
-image: "https://i.imgur.com/mErPwqL.png"
+cover: https://i.imgur.com/mErPwqL.png
 ---
 
 # Rclone Dropbox 同步配置

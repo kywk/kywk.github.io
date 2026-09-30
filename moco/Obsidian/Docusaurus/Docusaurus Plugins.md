@@ -1,17 +1,17 @@
 ---
 title: Plugins
 description: Docusaurus Plugins 筆記
-image: >-
-  https://lh3.googleusercontent.com/pw/AL9nZEUA9Ifvd5Z8SXDWkeVB6AC4MPGwnXaL6kBXNPoXwOQQ2jOcZ1Jw_0p8TKK8C3ZX0e67_FOY15eDrm7aaXSQJcKtoUzC80SAQEHsaBy6qS2AqNNs5VUFNXBKm439y_1wkvmDl-PnL8ReojnIumNlEvOXBg=w800-no?authuser=0
+cover: https://lh3.googleusercontent.com/pw/AL9nZEUA9Ifvd5Z8SXDWkeVB6AC4MPGwnXaL6kBXNPoXwOQQ2jOcZ1Jw_0p8TKK8C3ZX0e67_FOY15eDrm7aaXSQJcKtoUzC80SAQEHsaBy6qS2AqNNs5VUFNXBKm439y_1wkvmDl-PnL8ReojnIumNlEvOXBg=w800-no?authuser=0
 tags:
   - Docusaurus
   - kywk
 sidebar_position: 60
 sidebar_label: Plugin 使用
 date_created: 2024-05-24T00:00:00.000Z
-date_updated: 2025-09-23T00:00:00.000Z
+date_updated: 2026-09-30T00:00:00.000Z
 history:
   - 2024-05-24 Init
+  - 2026-09-30 remark-obsidian-leaflet 刪除，改用 remark-story-map
 ---
 
 # [Docusaurus] Plugin 使用筆記
@@ -48,17 +48,59 @@ history:
 - 圖片嵌入與響應式設計
 - 與 Docusaurus 主題整合與 TOC 隱藏
 
-### remark-obsidian-leaflet
+### remark-story-map
 
-[[Plugin Remark Obsidian Leaflet]] 是自製的 Docusaurus remark 插件，用於將 Obsidian Leaflet 格式的地圖代碼轉換為互動式地圖顯示。
+[[01 Geo Story Map 專案介紹|Geo Story Map]] 官方發布的 Docusaurus remark 插件，負責把兩種地理圍欄區塊轉成互動式地圖。
 
 **核心功能**：
+- 自動識別 `story-map`（故事地圖）與 `leaflet`（純地圖）兩種程式碼區塊
+- `markerFolder` / `noteFolder` 遞迴掃描 Vault，既有筆記的 `location`、`mapmarker`、`mapzoom` 直接沿用
+- 建置期只輸出空 host 容器，Leaflet 僅在瀏覽器端動態載入（SSR／build 不會建立實例）
+- 單一 client 生命週期依明確的 `story` / `map` 判別式掛載，同一頁不會初始化兩次 Leaflet
+
+**配置範例**：
+
+```javascript
+// plugins/story-map-client/index.js
+module.exports = function storyMapClientPlugin() {
+  return {
+    name: 'story-map-client',
+    getClientModules() {
+      return [require.resolve('@story-map/remark-story-map/client')];
+    },
+  };
+};
+```
+
+```typescript
+// docusaurus.config.ts
+const storyMapOptions = {
+  vaultRoot: __dirname,                        // 掃描標記來源的 Vault 根目錄
+  resolveNoteHref: (vaultRelativePath) =>      // 網址交給站台既有索引決定
+    contentLinkIndex.resolve(vaultRelativePath)[0]?.route,
+  leafletDefaults: { theme: 'auto' },          // 僅供 leaflet 區塊使用
+};
+
+remarkPlugins: [[remarkStoryMap, storyMapOptions]]
+```
+
+`react` 與 `react-dom` 是 peer dependency，兩者都必須是 React 19。完整安裝、主題橋接與移除舊 runtime 的步驟見 [[Plugin Remark Obsidian Leaflet]]。
+
+## 已移除插件
+
+### remark-obsidian-leaflet（已刪除）
+
+自製的 remark 插件，用於將 Obsidian Leaflet 格式的地圖代碼轉換為互動式地圖顯示。**已於 2026-09-30 刪除**。
+
+**移除原因**：功能已被 `remark-story-map` 完整接手，兩者同時載入會讓站上存在兩套 Leaflet runtime。`plugins/remark-obsidian-leaflet/`、`static/js/leaflet-init.js` 與相關的 `.leaflet-*` 樣式都已刪除。
+
+**原本的核心功能（皆已由 Geo Story Map 接手）**：
 - 自動識別 `leaflet` 程式碼區塊
 - 支援明暗主題自動切換
 - 自動從 Markdown 檔案讀取地點標記
 - Wiki-link 連結整合與中文支援
 
-## 已移除插件
+既有 ` ```leaflet ` 圍欄區塊**不需要改寫**，標記照樣從 `markerFolder` 遞迴讀取既有筆記的 `location`。相容程度與保留中的 key 見 [[06 Geo Story Map 純地圖與 Leaflet 相容]]，遷移配置見 [[Plugin Remark Obsidian Leaflet]]。
 
 ### remark-oembed
 

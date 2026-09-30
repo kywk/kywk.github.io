@@ -5,7 +5,7 @@ tags:
   - LifeHack
 authors: kywk
 hide_table_of_contents: true
-image: https://lh3.googleusercontent.com/pw/ACtC-3dctjoKSszhdu7OFFUmtd-eRmtxUAIxStWh7m3eW8Qy4iXLueXBb-3n_AmYxWpfIrQWGc5He2WVeunoRe0ULT5MnjeqBY5aknTj-sCoNU7Rdg4ndP4GDvOk-5Kv7vIP5NIE8TaEJSrB2ip4Qkf8Dbi-Ig=w800-no?authuser=0
+cover: https://lh3.googleusercontent.com/pw/ACtC-3dctjoKSszhdu7OFFUmtd-eRmtxUAIxStWh7m3eW8Qy4iXLueXBb-3n_AmYxWpfIrQWGc5He2WVeunoRe0ULT5MnjeqBY5aknTj-sCoNU7Rdg4ndP4GDvOk-5Kv7vIP5NIE8TaEJSrB2ip4Qkf8Dbi-Ig=w800-no?authuser=0
 ---
 
 嗯, 再一次的 Now or Never...
@@ -69,4 +69,4 @@ image: https://lh3.googleusercontent.com/pw/ACtC-3dctjoKSszhdu7OFFUmtd-eRmtxUAIx
 2025 的另一個目標, 年底來個對得起自己的回顧.
 
 - [\[年終回顧\] 2024 年的回顧與展望](https://www.evanlin.com/summary-2024/)
--  [[blog.life/2025/12-25-Happy-Holiday|12-25-Happy-Holiday]]
+- [[blog.life/2025/12-25-Happy-Holiday|12-25-Happy-Holiday]]

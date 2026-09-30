@@ -1,6 +1,6 @@
 {
   "label": "Docusaurus 整合",
-  "position": 120,
+  "position": 0,
   "link": {
     "type": "doc",
     "id": "Integrate Obsidian and Docusaurus"

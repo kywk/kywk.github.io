@@ -7,7 +7,7 @@ tags:
   - Cuisine
   - BAR
 date_created: 2012-02-28T11:57:30+08:00
-image: http://farm5.staticflickr.com/4140/4916205282_b121c64c4e_z.jpg
+cover: http://farm5.staticflickr.com/4140/4916205282_b121c64c4e_z.jpg
 categories:
   - lifestyle
   - taipei

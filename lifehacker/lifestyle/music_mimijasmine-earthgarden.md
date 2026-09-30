@@ -4,7 +4,7 @@ tags:
   - Essays
   - Music
 date_created: 2012-10-19T21:01:59+08:00
-image: https://lh3.googleusercontent.com/pw/ACtC-3eSYcsVaUijkVbdXZBPr9pnzZADSSNhP38NK_qH2pZQ9zLMj7n02M6R3THpke9y8dlfIf3X6duKhP3E8IGFtSMZHSIKLu_nGHcsthd9ilcJjrKwCF9alVlawrYuY40KwmXo-76tx7ZQKqbUMuD_LBtmSQ=w799-h533-no?authuser=0
+cover: https://lh3.googleusercontent.com/pw/ACtC-3eSYcsVaUijkVbdXZBPr9pnzZADSSNhP38NK_qH2pZQ9zLMj7n02M6R3THpke9y8dlfIf3X6duKhP3E8IGFtSMZHSIKLu_nGHcsthd9ilcJjrKwCF9alVlawrYuY40KwmXo-76tx7ZQKqbUMuD_LBtmSQ=w799-h533-no?authuser=0
 ---
 
 「妳在哪？」電話那頭一聲哈囉也沒，劈頭就直問著。

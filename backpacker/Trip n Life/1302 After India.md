@@ -8,7 +8,7 @@ tags:
   - Annapurna
   - Srilanka
 hide_table_of_contents: true
-image: /images/hero-trip2.jpg
+cover: /images/hero-trip2.jpg
 date_created: 2013-02-27T22:01:59.000Z
 ---
 

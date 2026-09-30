@@ -1,8 +1,11 @@
 ---
 title: lazygit
 description: 最受歡迎的 Git Terminal UI，以 Go 編寫，提供直覺的鍵盤操作和強大的自訂命令功能
-image: https://lh3.googleusercontent.com/pw/AL9nZEUA9Ifvd5Z8SXDWkeVB6AC4MPGwnXaL6kBXNPoXwOQQ2jOcZ1Jw_0p8TKK8C3ZX0e67_FOY15eDrm7aaXSQJcKtoUzC80SAQEHsaBy6qS2AqNNs5VUFNXBKm439y_1wkvmDl-PnL8ReojnIumNlEvOXBg=w800-no?authuser=0
-tags: [CLI, Git, TUI]
+cover: https://lh3.googleusercontent.com/pw/AL9nZEUA9Ifvd5Z8SXDWkeVB6AC4MPGwnXaL6kBXNPoXwOQQ2jOcZ1Jw_0p8TKK8C3ZX0e67_FOY15eDrm7aaXSQJcKtoUzC80SAQEHsaBy6qS2AqNNs5VUFNXBKm439y_1wkvmDl-PnL8ReojnIumNlEvOXBg=w800-no?authuser=0
+tags:
+  - CLI
+  - Git
+  - TUI
 sidebar_position: 10
 hide_table_of_contents: true
 date_created: 2026-07-26

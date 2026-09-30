@@ -2,7 +2,7 @@
 title: Happy Birthday
 authors: kywk
 hide_table_of_contents: true
-image: https://lh3.googleusercontent.com/pw/AP1GczNKbUF1T9D4XtQ_lyHZ2O1zePRajyYVzpq3uGI0ue2F29Y97UCfqOv1fIPKYSnxMPhsu8tmJwwtJ3bMGD7F2TbQHjPndElIGvtnTlmc9hfnCOcMARmwhaYTTFjCOOCO5s6x8EqOIMuYvt0IZGAZoARFHw=w960-h640-s-no-gm?authuser=0
+cover: https://lh3.googleusercontent.com/pw/AP1GczNKbUF1T9D4XtQ_lyHZ2O1zePRajyYVzpq3uGI0ue2F29Y97UCfqOv1fIPKYSnxMPhsu8tmJwwtJ3bMGD7F2TbQHjPndElIGvtnTlmc9hfnCOcMARmwhaYTTFjCOOCO5s6x8EqOIMuYvt0IZGAZoARFHw=w960-h640-s-no-gm?authuser=0
 ---
 
 ![](https://lh3.googleusercontent.com/pw/AP1GczNKbUF1T9D4XtQ_lyHZ2O1zePRajyYVzpq3uGI0ue2F29Y97UCfqOv1fIPKYSnxMPhsu8tmJwwtJ3bMGD7F2TbQHjPndElIGvtnTlmc9hfnCOcMARmwhaYTTFjCOOCO5s6x8EqOIMuYvt0IZGAZoARFHw=w960-h640-s-no-gm?authuser=0)

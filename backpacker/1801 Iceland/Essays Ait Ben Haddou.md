@@ -7,8 +7,7 @@ tags:
   - Morocco
   - Essays
 date_created: 2018-02-14T00:01:59.000Z
-image: >-
-  https://lh3.googleusercontent.com/pw/ACtC-3cTMVpB3Tp1Ol3z6oiwJnOvnIR8TCjh9_P8YLjzzfIuzpvnR1agjJLvOgpZEuXhVEE10eBI98a-ZFIx8zepsnW2vCCQoZTAgGeFW3eD1T-4MQMe8MONIn5htis3r0eX7pWboQdV2IvSahN7Aud4gC4U6g=w800-h534-no?authuser=0
+cover: https://lh3.googleusercontent.com/pw/ACtC-3cTMVpB3Tp1Ol3z6oiwJnOvnIR8TCjh9_P8YLjzzfIuzpvnR1agjJLvOgpZEuXhVEE10eBI98a-ZFIx8zepsnW2vCCQoZTAgGeFW3eD1T-4MQMe8MONIn5htis3r0eX7pWboQdV2IvSahN7Aud4gC4U6g=w800-h534-no?authuser=0
 categories:
   - backpacker
   - morocco

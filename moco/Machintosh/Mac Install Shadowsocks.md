@@ -1,13 +1,12 @@
 ---
-title: 'Note: Shadowsocks Setup'
+title: "Note: Shadowsocks Setup"
 description: macOS 上安裝和配置 Shadowsocks 代理工具
 tags:
   - Mac
   - Network
 sidebar_position: 60
 date_created: 2021-03-15T07:33:18.000Z
-image: >-
-  https://lh3.googleusercontent.com/pw/ACtC-3d0i64fe-5XcNdEIkJXE_ucdKG_74gSGLz5YO2oik795zztBL7450Ff7dEQpMGRBXf7RKVteWTfqKM_efzjXja7JGyS3ZCUoPfkPJN61wfga53Tgo8mcFyWOFi_68TDQUZyNIvhEaUPyKPzgWAWHbwOHA=w1280-h720-no?authuser=0
+cover: https://lh3.googleusercontent.com/pw/ACtC-3d0i64fe-5XcNdEIkJXE_ucdKG_74gSGLz5YO2oik795zztBL7450Ff7dEQpMGRBXf7RKVteWTfqKM_efzjXja7JGyS3ZCUoPfkPJN61wfga53Tgo8mcFyWOFi_68TDQUZyNIvhEaUPyKPzgWAWHbwOHA=w1280-h720-no?authuser=0
 ---
 
 # [Mac] Shadowsocks Setup

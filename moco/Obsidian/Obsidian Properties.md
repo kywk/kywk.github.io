@@ -1,5 +1,5 @@
 ---
-title: 'Core: Properties'
+title: "Core: Properties"
 description: Obsidian Properties、frontmatter 與目前 vault 的欄位設定
 tags:
   - Obsidian
@@ -9,7 +9,7 @@ sidebar_label: Properties
 hide_table_of_contents: true
 date_created: 2023-12-25T00:00:00.000Z
 date_updated: 2026-09-22T00:00:00.000Z
-image: 'https://i.imgur.com/mErPwqL.png'
+cover: https://i.imgur.com/mErPwqL.png
 ---
 
 # [Obs] Properties 屬性系統

@@ -6,7 +6,7 @@ tags:
 sidebar_position: 43
 hide_table_of_contents: true
 date_created: 2020-12-10T00:00:00.000Z
-image: "https://i.imgur.com/mErPwqL.png"
+cover: https://i.imgur.com/mErPwqL.png
 ---
 
 # Tar 加密打包

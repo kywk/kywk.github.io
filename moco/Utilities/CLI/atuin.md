@@ -1,8 +1,11 @@
 ---
 title: Atuin
 description: 現代化 Shell 歷史記錄管理工具，以 SQLite 為後端提供全文模糊搜尋 TUI
-image: /img/placeholder.png
-tags: [CLI, Shell, History]
+cover: /img/placeholder.png
+tags:
+  - CLI
+  - Shell
+  - History
 sidebar_position: 22
 hide_table_of_contents: true
 date_created: 2026-07-26

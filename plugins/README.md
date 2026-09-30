@@ -10,13 +10,6 @@ Renders Obsidian Kanban boards in Docusaurus.
 - Converts Markdown task lists to interactive boards
 - Supports wiki-link resolution
 
-### remark-obsidian-leaflet/
-Renders interactive Leaflet maps in Docusaurus.
-- Processes `leaflet` code blocks
-- Supports `markerFolder` for automatic marker loading
-- Dark/light theme switching
-- Chinese title and link support
-
 ### slug-normalizer.js
 Unified slug normalization module providing:
 - `normalizeSlug()` utility function for file mapping
@@ -29,6 +22,20 @@ These plugins are automatically loaded in `docusaurus.config.ts`:
 
 ```typescript
 const { remarkKanban } = require("./plugins/remark-obsidian-kanban/src/index.js");
-const remarkLeaflet = require("./plugins/remark-obsidian-leaflet/src/index.js");
 const { normalizeSlug, remarkSlugNormalizer } = require("./plugins/remark-slug-normalizer/src/index.js");
 ```
+
+## StoryMap (external package)
+
+`story-map` and `leaflet` fenced blocks are **not** handled by a local plugin.
+`@story-map/remark-story-map` owns both dialects, and the site only supplies glue:
+
+- `remark-story-map-loader.cjs` — loads the ESM package through Node's native
+  `require(esm)`. Docusaurus reads the config through jiti, whose CJS interop
+  drops `story-map-core`'s named `zod` exports.
+- `story-map-client/` — registers the package's browser client (one Leaflet
+  runtime for the whole page) plus this site's full-page StoryMap view.
+
+The site also owns published-route resolution (`scripts/content-links.js`),
+which the package consumes through the `resolveNoteHref` callback rather than
+reimplementing Docusaurus slug policy.

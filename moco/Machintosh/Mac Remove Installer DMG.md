@@ -1,12 +1,11 @@
 ---
-title: 'Note: 刪除 Installer 映像檔'
+title: "Note: 刪除 Installer 映像檔"
 description: 在 macOS Big Sur 上刪除 Mojave/Catalina 安裝映像檔的方法
 tags:
   - Mac
 sidebar_position: 60
 date_created: 2021-05-20T09:43:46.000Z
-image: >-
-  https://lh3.googleusercontent.com/pw/ACtC-3cDul66SHDP7oBSL7YOlMBo-SJl26dxZ8JYRv_9BfehLRz0El7Af6HPSRaBXo50ExW2q4oiF4cHsBmeAxq9Jj3GOJQYd4hjQ_MJIQf16HDYM12QvcbkhLLvFYRVY290eKrzn6rOyfiH-kCCHtdB7efiYg=w800-no?authuser=0
+cover: https://lh3.googleusercontent.com/pw/ACtC-3cDul66SHDP7oBSL7YOlMBo-SJl26dxZ8JYRv_9BfehLRz0El7Af6HPSRaBXo50ExW2q4oiF4cHsBmeAxq9Jj3GOJQYd4hjQ_MJIQf16HDYM12QvcbkhLLvFYRVY290eKrzn6rOyfiH-kCCHtdB7efiYg=w800-no?authuser=0
 ---
 
 # [Mac] macOS Big Sur 刪除 Mojave/Catalina 映像檔

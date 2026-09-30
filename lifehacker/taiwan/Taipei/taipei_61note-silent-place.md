@@ -7,7 +7,7 @@ tags:
   - Cafe
   - Cuisine
 date_created: 2011-04-10T09:52:29+08:00
-image: http://farm7.static.flickr.com/6180/6201408213_b2eb948e72_z.jpg
+cover: http://farm7.static.flickr.com/6180/6201408213_b2eb948e72_z.jpg
 categories:
   - lifestyle
   - taipei

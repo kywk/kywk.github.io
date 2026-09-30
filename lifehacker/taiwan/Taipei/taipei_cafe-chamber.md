@@ -6,7 +6,7 @@ tags:
   - Cafe
   - Essays
 date_created: 2012-09-30T21:01:59+08:00
-image: https://lh3.googleusercontent.com/pw/ACtC-3dxmKXmU4GuPRNEtLmIrdNuIOgLKhjIhLKj97wG7-QWMbnNesAGf2Hozm1eKkcWsihceR4KywyJvy8XUOePKu6qRNadNqmeNshokJZOL3aVMOgLogvGmqlLiL3v_1Apv5k7MKy3KaOxegAvWIVcHOtT0Q=w799-h533-no?authuser=0
+cover: https://lh3.googleusercontent.com/pw/ACtC-3dxmKXmU4GuPRNEtLmIrdNuIOgLKhjIhLKj97wG7-QWMbnNesAGf2Hozm1eKkcWsihceR4KywyJvy8XUOePKu6qRNadNqmeNshokJZOL3aVMOgLogvGmqlLiL3v_1Apv5k7MKy3KaOxegAvWIVcHOtT0Q=w799-h533-no?authuser=0
 categories:
   - lifestyle
   - taipei

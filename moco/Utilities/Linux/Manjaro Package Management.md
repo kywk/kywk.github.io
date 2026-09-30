@@ -1,13 +1,12 @@
 ---
-title: 'Manjaro 套件管理完整指南'
-description: 'Manjaro Linux 套件管理系統詳細說明，包含 Pamac、Pacman、Yay、AUR 等工具使用'
+title: Manjaro 套件管理完整指南
+description: Manjaro Linux 套件管理系統詳細說明，包含 Pamac、Pacman、Yay、AUR 等工具使用
 tags:
   - Linux/Manjaro
   - Linux
   - Package Management
 date_created: 2024-12-19T00:00:00.000Z
-image: >-
-  https://lh3.googleusercontent.com/pw/AM-JKLW7hPZ9Hjx3TMb2mo5O21FMrQ3-GDHI0YfAdwBcjcSr9XIkGswayNGGub1aY2JXnCDn1SWxvX9OKFSW1vpEr4X5qIa7vE7L8u65_RIs1mVcUR8rhzfA6Tw-zU6bdBIpBeItDDGS-RCWEuINuyzUFF0-xA=w800-no?authuser=0
+cover: https://lh3.googleusercontent.com/pw/AM-JKLW7hPZ9Hjx3TMb2mo5O21FMrQ3-GDHI0YfAdwBcjcSr9XIkGswayNGGub1aY2JXnCDn1SWxvX9OKFSW1vpEr4X5qIa7vE7L8u65_RIs1mVcUR8rhzfA6Tw-zU6bdBIpBeItDDGS-RCWEuINuyzUFF0-xA=w800-no?authuser=0
 ---
 
 # Manjaro 套件管理完整指南

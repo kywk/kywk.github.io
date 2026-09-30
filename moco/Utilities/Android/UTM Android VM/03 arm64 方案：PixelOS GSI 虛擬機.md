@@ -10,15 +10,18 @@ tags:
   - PixelOS
   - LineageOS
   - ADB
+  - Play Protect
 sidebar_position: 30
 sidebar_label: arm64：PixelOS GSI 虛擬機
 date_created: 2026-09-24T00:00:00.000Z
-date_updated: 2026-09-24T00:00:00.000Z
+date_updated: 2026-09-30T00:00:00.000Z
 ---
 
 # arm64 方案：PixelOS GSI 虛擬機
 
 **Apple Silicon** 路線：主機與客體同為 aarch64，可用 HVF 原生虛擬化。Intel Mac 請看 [[02 x86_64 方案：BlissOS 硬碟開機與資料碟]]。
+
+這篇記錄 UTM／LineageOS virtio 宿主的操作。另一次將同一份 PixelOS raw GSI 直接指定給官方 Android Emulator 的 Android 16 AVD，停在第一階段掛載；兩者開機鏈與磁碟配置不同，不能把該結果套用到本篇 UTM 流程。見 [[06 Android Emulator 與 PixelOS GSI PoC 失敗記錄]]。
 
 ## 組合
 
@@ -154,6 +157,16 @@ adb devices
 
 限制：此 GSI 是 user build，`adb root`／`adb remount` 不可用。要能 `adb shell`，客體必須先在「開發人員選項 → USB 偵錯」開啟；未開啟時 `adb devices` 仍顯示 `device`，但 shell 會回 `error: closed`。GRUB cmdline 已帶 `androidboot.insecure_adb=1`，不會跳授權對話框。
 
+## Google 服務遭未認證攔截（2026-09-30 更新）
+
+2026-09-29 本 VM 的商店與相簿都被 `UncertifiedDeviceActivity` 攔截。這與 `/data` 損毀造成商店消失的症狀不同：程式仍在、可啟動，但出現「這部裝置未通過 Play 安全防護認證」。
+
+排查發現全域型號與指紋繼承 LineageOS vendor 的 VirtIO 身分，且 GSI 的 `rw-system.sh` 會在開機時再次把 vendor 指紋複製回 system；只改 GSI 的 `build.prop` 指紋會被蓋回去。
+
+2026-09-30 修改 product 屬性、開機腳本與手動 PIF，令系統／Google 服務使用 Samsung Tab S7+ 身分，相簿則保留 PixelOS 內建的第一代 Pixel 模擬。清除商店、GMS、GSF 與相簿資料後，商店載入首頁，相簿出現原始畫質、不計配額的備份說明。**尚未確認商店設定的正式認證狀態，也尚未完成實際上傳與重開機驗證。**
+
+完整排錯順序、破壞性資料重設範圍、SELinux 標籤與還原步驟見 [[07 Play Protect 排錯與裝置身分模擬]]。此實驗未更換 kernel/vendor 驅動，VM 記憶體仍為 2560 MB。
+
 ## 與主機共享檔案
 
 本 VM 網路是 UTM **Emulated VLAN**，客體 `10.0.2.15`、**主機 `10.0.2.2`**（不是 Shared 模式的 `192.168.64.1`）。
@@ -164,7 +177,7 @@ adb devices
 
 - `virtio_*` 沒有 OTA，更新只能換映像。
 - 換 GSI 要挑 Android 版本 >= 宿主。
-- 精簡 GApps：Google 相簿等 App 需自行安裝（資格不受影響，見 [[05 無限空間 Google 相簿]]）。
+- 精簡 GApps：Google 相簿等 App 需自行安裝；能安裝不等於已取得無限備份資格，見 [[05 無限空間 Google 相簿]]。
 
 ## 檔案位置
 

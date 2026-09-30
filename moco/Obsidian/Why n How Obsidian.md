@@ -1,7 +1,7 @@
 ---
 title: Why & How Obsidian
 description: 為什麼選擇 Obsidian 以及如何使用的完整指南
-image: 'https://i.imgur.com/mErPwqL.png'
+cover: https://i.imgur.com/mErPwqL.png
 tags:
   - Obsidian
   - PKM

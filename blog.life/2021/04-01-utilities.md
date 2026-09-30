@@ -4,7 +4,7 @@ tags:
   - kywk
   - Utility
 authors: kywk
-image: https://lh3.googleusercontent.com/pw/ACtC-3d0stwEgcHBdHtHc1wB3a3NglUzsK5X5lvn_QUUxm70ogliFKT3AgvPwOLnEbX2vPS1X8CjE5dp6OdhDRxYYhSIDojzNrOrIJqwhi2udXlusSZ6M5dyLdtSmclFYTO7AUtsjX4yE34l-MW7sO8-FtTu8Q=w600-no?authuser=0
+cover: https://lh3.googleusercontent.com/pw/ACtC-3d0stwEgcHBdHtHc1wB3a3NglUzsK5X5lvn_QUUxm70ogliFKT3AgvPwOLnEbX2vPS1X8CjE5dp6OdhDRxYYhSIDojzNrOrIJqwhi2udXlusSZ6M5dyLdtSmclFYTO7AUtsjX4yE34l-MW7sO8-FtTu8Q=w600-no?authuser=0
 ---
 
 記錄下來手邊使用的工具，慢慢從繁雜中歸納出簡單的使用規則。

@@ -8,7 +8,7 @@ tags:
   - Cuisine
   - Ancient
 date_created: 2013-01-05T13:39:52+08:00
-image: http://farm9.staticflickr.com/8181/8071241088_e479535566_c.jpg
+cover: http://farm9.staticflickr.com/8181/8071241088_e479535566_c.jpg
 categories:
   - lifestyle
   - taipei

@@ -1,0 +1,34 @@
+---
+title: 福爾摩沙．百岳行 mountain climbing at Taiwan
+tags:
+  - Index
+  - Mount
+  - Taiwan
+sidebar_position: 1
+hide_table_of_contents: true
+date_created: 2013-07-05T17:54:42+08:00
+---
+
+# 福爾摩沙．百岳行 mountain climbing at Taiwan
+
+![](https://scontent-a-pao.xx.fbcdn.net/hphotos-xpf1/t31.0-8/10450234_10201412407310553_7079991368792678038_o.jpg)
+
+穿著征服這衣服，走了幾座高山百岳。  
+征服了什麼？  
+一種階段性的自我征服，一個人生目標的陸續完成。
+
+朋友謝我帶他們上山，我倒想說：謝謝你們，帶我重回山上！
+
+- 14.12.21 號稱絕不再訪，畢羊縱走，鋸齒連峰
+- 14.11.22 [[141122_trail-nenggao|野跑．奇萊南華．能高西段]]
+- 14.10.09 巔．奇萊北單攻
+- 14.09.10 [[140910_lake-cjiaming II|野孩子．嘉明一夜情]]
+- 14.08.31 [百岳壯遊．雪主下翠池．山社會](https://kywk.github.io/taiwan/mount/140830_mount-xue.html)
+- 14.08.16 野孩子．百岳首登．合歡山系
+- 14.07.13 百岳壯遊．二訪嘉明
+- 13.12.14 殘念．老么羊頭
+- 13.10.08 再訪．能高西段
+- 13.08.07 [[130807_mt-nanhu|南湖大山．初心者]]
+- 13.06.29 [[130629_lake-cjiaming I|重拾熱血．嘉明湖]]
+- 12.05.27 志佳陽單攻
+- 09.07.03 [[090703_nenggao-peak|十年回憶．能高主]]

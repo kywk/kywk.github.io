@@ -1,5 +1,5 @@
 ---
-title: 'Util: Location Changer'
+title: "Util: Location Changer"
 description: 根據 Wi-Fi 名稱自動切換 macOS 網路位置
 tags:
   - Mac
@@ -8,7 +8,7 @@ tags:
 sidebar_position: 30
 hide_table_of_contents: true
 date_created: 2022-08-24T16:00:00.000Z
-image: 'https://i.imgur.com/mErPwqL.png'
+cover: https://i.imgur.com/mErPwqL.png
 ---
 
 # [Mac] 自動依 Wi-Fi 名稱更改網路位置

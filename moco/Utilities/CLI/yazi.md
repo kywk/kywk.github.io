@@ -1,8 +1,10 @@
 ---
 title: Yazi
 description: 以 Rust 打造的超高速終端檔案管理器，支援非同步 I/O 與完整檔案預覽
-image: /img/placeholder.png
-tags: [CLI, FileManager]
+cover: /img/placeholder.png
+tags:
+  - CLI
+  - FileManager
 sidebar_position: 21
 hide_table_of_contents: true
 date_created: 2026-07-26

@@ -4,7 +4,7 @@ description: 2022.07.01 Time to give up GitHub?
 authors: kywk
 tags:
   - GitHub
-image: https://i.imgur.com/mErPwqL.png
+cover: https://i.imgur.com/mErPwqL.png
 hide_table_of_contents: true
 ---
 

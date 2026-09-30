@@ -1,7 +1,7 @@
 ---
 title: Obsidian Block Link & Embed
 description: Obsidian 區塊連結與嵌入功能的完整使用指南
-image: 'https://i.imgur.com/mErPwqL.png'
+cover: https://i.imgur.com/mErPwqL.png
 tags:
   - Obsidian
   - Block Link

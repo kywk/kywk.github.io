@@ -1,7 +1,7 @@
 ---
 title: remark-obsidian-kanban
 description: Docusaurus plugin for Obsidian Kanban boards
-image: 'https://i.imgur.com/mErPwqL.png'
+cover: https://i.imgur.com/mErPwqL.png
 tags:
   - Docusaurus
   - Obsidian
@@ -247,4 +247,4 @@ color: var(--ifm-color-primary);
 - [[Docusaurus Plugins]] - 其他 Docusaurus 插件
 - [[Integrate Obsidian and Docusaurus]] - Obsidian 整合指南
 - [[Wikilink in Docusaurus]] - Wikilink 支援說明
-- [[Plugin Remark Obsidian Leaflet]] - Leaflet 地圖插件
+- [[Plugin Remark Obsidian Leaflet]] - Leaflet 地圖插件（已停用，改用 [[01 Geo Story Map 專案介紹|Geo Story Map]]）

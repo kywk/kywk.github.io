@@ -5,7 +5,7 @@ tags:
   - Life
 authors: kywk
 hide_table_of_contents: true
-image: https://lh3.googleusercontent.com/pw/ACtC-3dctjoKSszhdu7OFFUmtd-eRmtxUAIxStWh7m3eW8Qy4iXLueXBb-3n_AmYxWpfIrQWGc5He2WVeunoRe0ULT5MnjeqBY5aknTj-sCoNU7Rdg4ndP4GDvOk-5Kv7vIP5NIE8TaEJSrB2ip4Qkf8Dbi-Ig=w800-no?authuser=0
+cover: https://lh3.googleusercontent.com/pw/ACtC-3dctjoKSszhdu7OFFUmtd-eRmtxUAIxStWh7m3eW8Qy4iXLueXBb-3n_AmYxWpfIrQWGc5He2WVeunoRe0ULT5MnjeqBY5aknTj-sCoNU7Rdg4ndP4GDvOk-5Kv7vIP5NIE8TaEJSrB2ip4Qkf8Dbi-Ig=w800-no?authuser=0
 ---
 [Apple Podcast：《☀️ 全球串連早安新聞｜Morning Taiwan Glocal News》〈0527 全球讀報｜川普考慮對俄加強制裁｜美國延後對歐盟課5⋯〉](https://podcasts.apple.com/tw/podcast/id1558410138?i=1000710030148)
 

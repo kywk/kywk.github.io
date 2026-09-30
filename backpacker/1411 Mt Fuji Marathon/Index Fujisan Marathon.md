@@ -6,7 +6,12 @@ tags:
   - Japan
   - Runner
 sidebar_position: 0
-date_created: 2014-12-04T14:48:07.000Z
+date_created: 2014-11-26
+location:
+  - 35.3606
+  - 138.7274
+mapmarker: mountain
+story-map-note: true
 ---
 
 # 2014.11.26 - 12.04 富士山馬拉松

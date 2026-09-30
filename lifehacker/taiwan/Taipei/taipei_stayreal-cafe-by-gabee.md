@@ -6,7 +6,7 @@ tags:
   - Essays
   - Cafe
 date_created: 2011-11-26T13:25:18+08:00
-image: http://farm7.staticflickr.com/6120/6392810251_ee80900621_z.jpg
+cover: http://farm7.staticflickr.com/6120/6392810251_ee80900621_z.jpg
 categories:
   - lifestyle
   - taipei

@@ -22,8 +22,8 @@ date_created: 2013-08-24T14:20:30.000Z
 - 2018 Iceland, [現在是二月喔](#)
 - 2017 Euro, [因為你不是 MooCow](#)
 - 2013 SriLanka, [[Orz Far 2 Srilanka:遙遠的斯里蘭卡轉機]]
-- 2013 India, [[Orz Udaipur Airport:烏代浦爾機場炸彈客事件]]
-- 2013 Singapore, [[Orz Its Travel:也是旅行的一部分]]
+- 2013 India, [[Orz Udaipur Airport|[牛在囧途] 烏代浦爾機場炸彈客事件]]
+- 2013 Singapore, [[Orz Its Travel|[牛在囧途] 也是旅行的一部分]]
 - 2012 Japan, [大雨無法降落，原機折返](#) / [番外篇](#)
 - 2011 France, [行李過重, again...](#)
 - 2011 Sabah, [[Orz Passport Expired:護照過期！]]

@@ -1,12 +1,12 @@
 ---
-title: 'ChromeOS: Dropbox 整合指南'
-description: 'ChromeOS 環境下使用 Dropbox 的完整解決方案與最佳實踐'
+title: "ChromeOS: Dropbox 整合指南"
+description: ChromeOS 環境下使用 Dropbox 的完整解決方案與最佳實踐
 tags:
   - ChromeOS
   - Dropbox
   - Cloud Storage
   - Linux
-image: 'https://i.imgur.com/mErPwqL.png'
+cover: https://i.imgur.com/mErPwqL.png
 date_created: 2022-10-16T16:00:00.000Z
 date_updated: 2024-12-26T00:00:00.000Z
 ---

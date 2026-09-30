@@ -4,7 +4,7 @@ description: 2022.05.20 Why move to Docusaurus
 authors: kywk
 tags:
   - Docusaurus
-image: https://i.imgur.com/mErPwqL.png
+cover: https://i.imgur.com/mErPwqL.png
 hide_table_of_contents: true
 ---
 

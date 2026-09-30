@@ -1,7 +1,7 @@
 ---
 title: Obsidian Hot Keys
 description: 目前 vault 的自訂快捷鍵與使用方式
-image: 'https://i.imgur.com/mErPwqL.png'
+cover: https://i.imgur.com/mErPwqL.png
 tags:
   - Obsidian
   - Hot Keys

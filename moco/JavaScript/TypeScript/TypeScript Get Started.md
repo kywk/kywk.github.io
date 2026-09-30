@@ -1,11 +1,11 @@
 ---
 title: Get Started
-description: 'TypeScript: Get Started'
+description: "TypeScript: Get Started"
 tags:
   - TypeScript
   - Beginner
 date_created: 2022-05-26T16:00:00.000Z
-image: 'https://i.imgur.com/mErPwqL.png'
+cover: https://i.imgur.com/mErPwqL.png
 ---
 
 import Tabs from '@theme/Tabs';

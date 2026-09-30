@@ -1,14 +1,13 @@
 ---
-title: '[ALG101] 先別急著寫 Leetcode'
-description: '[ALG101] 先別急著寫 Leetcode'
+title: "[ALG101] 先別急著寫 Leetcode"
+description: "[ALG101] 先別急著寫 Leetcode"
 tags:
   - Bootcamp
   - Beginner
   - CS
   - LeetCode
 date_created: 2022-05-11T16:00:00.000Z
-image: >-
-  https://lh3.googleusercontent.com/pw/AL9nZEUA9Ifvd5Z8SXDWkeVB6AC4MPGwnXaL6kBXNPoXwOQQ2jOcZ1Jw_0p8TKK8C3ZX0e67_FOY15eDrm7aaXSQJcKtoUzC80SAQEHsaBy6qS2AqNNs5VUFNXBKm439y_1wkvmDl-PnL8ReojnIumNlEvOXBg=w800-no?authuser=0
+cover: https://lh3.googleusercontent.com/pw/AL9nZEUA9Ifvd5Z8SXDWkeVB6AC4MPGwnXaL6kBXNPoXwOQQ2jOcZ1Jw_0p8TKK8C3ZX0e67_FOY15eDrm7aaXSQJcKtoUzC80SAQEHsaBy6qS2AqNNs5VUFNXBKm439y_1wkvmDl-PnL8ReojnIumNlEvOXBg=w800-no?authuser=0
 ---
 
 在準備刷題找資源時, 看到了 [[ALG101] 先別急著寫 leetcode | Lidemy 鋰學院](https://lidemy.com/p/alg101-leetcode). 

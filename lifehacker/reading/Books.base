@@ -1,0 +1,54 @@
+filters:
+  and:
+    - 'file.inFolder("lifehacker/reading")'
+    - 'file.hasTag("Reading")'
+
+properties:
+  file.name:
+    displayName: "書名"
+  author:
+    displayName: "作者"
+  rating:
+    displayName: "評分 (1-5)"
+  category:
+    displayName: "分類"
+  isbn:
+    displayName: "ISBN"
+  date_created:
+    displayName: "建立日期"
+  cover:
+    displayName: "封面圖"
+
+views:
+  - type: table
+    name: "全部書籍 (按分類分組)"
+    groupBy:
+      property: category
+      direction: ASC
+    order:
+      - file.name
+      - author
+      - rating
+      - category
+      - isbn
+      - date_created
+
+  - type: table
+    name: "⭐ 高分推薦 (4星以上)"
+    filters:
+      and:
+        - "rating >= 4"
+    order:
+      - rating
+      - file.name
+      - author
+      - category
+      - isbn
+
+  - type: cards
+    name: "書卡畫廊 (Cards)"
+    order:
+      - file.name
+      - author
+      - rating
+      - category

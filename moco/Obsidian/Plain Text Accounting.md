@@ -10,7 +10,7 @@ sidebar_label: 使用案例：Plain Text Accounting
 hide_table_of_contents: true
 date_created: 2024-12-29T00:00:00.000Z
 date_updated: 2024-12-29T00:00:00.000Z
-image: 'https://i.imgur.com/mErPwqL.png'
+cover: https://i.imgur.com/mErPwqL.png
 ---
 
 # [Plain Text Accounting](https://plaintextaccounting.org/)

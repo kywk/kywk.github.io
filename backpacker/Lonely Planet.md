@@ -1,11 +1,11 @@
 ---
-title: Lonely Planet Toolkit
+title: Lonely Planet
 description: 行前 checklist、交通攻略與裝備表，為長程旅行鋪好軌道。
 hide_title: true
 story-map: true
 ---
 
-# Lonely Planet Toolkit
+# Lonely Planet
 
 > 「出發前把未知化成 checklist，旅途中就能專心看風景。」
 
@@ -16,13 +16,15 @@ noteFolder: backpacker
 noteDisplay: link
 order: asc
 dateField: date_created
+includeTags: [index]
+initialSlide: last
 
 map:
   center: [15, 30]
-  zoom: 3
+  zoom: 4
   minZoom: 2
   maxZoom: 18
-  showPath: true
+  showPath: false
 ```
 
 ## 🎒 Start Here · 行前準備

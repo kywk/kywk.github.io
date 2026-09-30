@@ -20,14 +20,23 @@ noteFolder: lifehacker/runner
 noteDisplay: link
 order: asc
 dateField: date_created
-
+initialSlide: last
 
 map:
+  theme: atlas
   center: [15, 30]
   zoom: 3
   minZoom: 2
   maxZoom: 18
-  showPath: true
+  showPath: false
+
+layout:
+  mode: card
+  card:
+    align: center
+  full:
+    side: right
+    contentRatio: 0.5
 ```
 
 文章列表

@@ -1,6 +1,6 @@
 ---
-title: 'Git: Check Remote Branch'
-description: 'How to check if a remote branch exists on a given remote repository using git ls-remote'
+title: "Git: Check Remote Branch"
+description: How to check if a remote branch exists on a given remote repository using git ls-remote
 tags:
   - Git
   - CLI
@@ -9,8 +9,7 @@ sidebar_position: 62
 hide_table_of_contents: true
 date_created: 2021-04-12T07:13:11.000Z
 date_updated: 2024-01-01T00:00:00.000Z
-image: >-
-  https://lh3.googleusercontent.com/pw/ACtC-3djQkrvy1aqdMWCu9oEoqndQVIiLE9G5ZtlbDehi8_UcJ9pYib4aWForkHYHSu1voqdKMnCowTwGh1MXSnGeNrFwXRaOUCMD8s4rCZ4IuzWXIZ2khQ8KiJyT6SYlbLrnYYqONwaPZxlR8rReuWWMO7SYw=w8000-no?authuser=0
+cover: https://lh3.googleusercontent.com/pw/ACtC-3djQkrvy1aqdMWCu9oEoqndQVIiLE9G5ZtlbDehi8_UcJ9pYib4aWForkHYHSu1voqdKMnCowTwGh1MXSnGeNrFwXRaOUCMD8s4rCZ4IuzWXIZ2khQ8KiJyT6SYlbLrnYYqONwaPZxlR8rReuWWMO7SYw=w8000-no?authuser=0
 ---
 
 # Git: Check Remote Branch

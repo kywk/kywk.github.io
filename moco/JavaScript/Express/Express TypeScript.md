@@ -6,7 +6,7 @@ tags:
   - Nodejs/Express
   - TypeScript
 date_created: 2022-09-30T16:00:00.000Z
-image: 'https://i.imgur.com/mErPwqL.png'
+cover: https://i.imgur.com/mErPwqL.png
 ---
 
 [Express] Using TypeScript

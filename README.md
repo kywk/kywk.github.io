@@ -31,12 +31,13 @@
 - 支援 wiki-link 連結解析
 
 #### Leaflet 地圖
-透過 `remark-obsidian-leaflet` 插件，支援互動式地圖：
-- 使用 `leaflet` 程式碼區塊定義地圖
-- 支援 `markerFolder` 自動讀取含 `location` frontmatter 的 Markdown 檔案
-- 深色/淺色主題自動切換
+透過 `@story-map/remark-story-map` 渲染互動式地圖（全站唯一的 Leaflet runtime）：
+- 使用 `leaflet` 程式碼區塊定義地圖（獨立於 `story-map` 的另一套 dialect／parser）
+- 支援 `markerFolder` 遞迴自動讀取含 `location` frontmatter 的 Markdown 檔案
+- 標記連結經由既有的 `contentLinkIndex` 產生，不另實作 slug 規則
+- 深色/淺色主題跟隨 Docusaurus 的主題切換（`src/css/story-map-theme.css` 橋接 `map.theme: auto`）
 - 地圖標記支援中文標題和連結
-- **按需載入**: Leaflet CSS/JS 不掛全域，由 `static/js/leaflet-init.js` 偵測到頁面上有地圖才注入（全站僅 3 頁需要）
+- **按需載入**: Leaflet 與 `leaflet.css` 只從 client bundle 載入，頁面上沒有地圖時完全不會下載
 
 範例：
 ```markdown
@@ -127,7 +128,9 @@ npm run content:optimize                # 實際壓縮（就地覆寫，無備�
 
 1. 取 vault 內的相對路徑，去掉 `.md`/`.mdx`
 2. 去掉結尾的 `/index`（`1901 Paul/index.md` → `/1901-paul/`，不會多一段 `/index/`）
-3. 每個路徑段：轉小寫 → 空白與底線換成 `-` → 收合連續 `-` → 去掉頭尾 `-` → 移除引號
+3. 每個路徑段：轉小寫 → 空白與底線換成 `-` → 收合連續 `-` → 去掉頭尾 `-` → 移除引號與括號
+   （引號與 `(` `)` 直接移除而非換成分隔符；括號必須移掉，因為 React Router 5 的
+   path-to-regexp v1 會把 `( )` 當成正規表達式群組，帶括號的網址永遠匹配不到 route）
 4. docs 產生 `/a/b/`；blog 產生 `/YYYY/MM/DD/title`（沿用 Docusaurus 的日期結構）
 
 推導函式在 `plugins/remark-slug-normalizer/src/index.js` 的 `deriveSlug()`，
@@ -169,8 +172,9 @@ npm run content:wikilink
 - **多文檔配置**: 每個主題 (backpacker, lifehacker, moco) 都有獨立的文檔實例
 - **preset-classic 的預設 docs/blog 已關閉** (`docs: false, blog: false`)，避免多出 `/docs`、`/blog` 空路由
 - **Wiki Link 解析**: docs 與 blog 共用全站內容索引，自動將 `[[]]` 語法轉換為 Docusaurus 連結；blog 的日期式 permalink 也由同一份 slug 規則推導
-- **Remark 插件鏈**: remarkLeaflet → remarkKanban → remarkWikiLink
-  （slug 不在 remark 階段處理 —— Docusaurus 在 processDocMetadata 就算好 permalink，
+- **Remark 插件鏈**: remarkKanban → remarkWikiLink → remarkStoryMap
+  （`story-map` 與 `leaflet` 兩種 dialect 都由最後一個處理；
+  slug 不在 remark 階段處理 —— Docusaurus 在 processDocMetadata 就算好 permalink，
   remark 是之後才在 mdx-loader 跑的，改 frontmatter 已經來不及）
 - **效能 flags**: `future.faster` 全開 + `future.v4.removeLegacyPostBuildHeadAttribute`
   （`ssgWorkerThreads` 的前置條件），詳見 [Docusaurus v3 升級筆記](Docusaurus%20v3%20Upgrading.md)
@@ -181,7 +185,7 @@ npm run content:wikilink
 本專案支援多種插件安裝方式：
 
 **安裝方式**：
-1. **NPM 安裝** (推薦): `npm install remark-obsidian-kanban remark-obsidian-leaflet remark-slug-normalizer`
+1. **NPM 安裝** (推薦): `npm install remark-obsidian-kanban remark-slug-normalizer`
 2. **手動 Clone**: 直接 clone 到 `plugins/` 目錄
 3. **本地開發**: 在 `plugins/` 目錄下直接開發
 
@@ -190,8 +194,9 @@ npm run content:wikilink
 | 檔案 | 說明 |
 |------|------|
 | `plugins/remark-obsidian-kanban/` | Obsidian Kanban 看板渲染 |
-| `plugins/remark-obsidian-leaflet/` | Obsidian Leaflet 地圖渲染 |
 | `plugins/remark-slug-normalizer/` | URL slug 推導規則（`deriveSlug`，全站唯一實作） |
+| `plugins/remark-story-map-loader.cjs` | 以原生 `require(esm)` 載入 `@story-map/remark-story-map`（繞過 jiti 破壞 zod v4 具名匯出） |
+| `plugins/story-map-client/` | 註冊 StoryMap 瀏覽器 client module 與全頁 StoryMap 檢視 |
 | `scripts/content-links.js` | 全站 Obsidian wikilink 索引與 Docusaurus route resolver |
 | `scripts/slug.js` | slug 檢查／清理／寫入 |
 | `scripts/convert-to-wikilinks.js` | Markdown 連結轉 wiki-link |

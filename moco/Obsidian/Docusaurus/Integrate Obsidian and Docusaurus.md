@@ -1,7 +1,7 @@
 ---
 title: Obsidian integration
 description: Integrate Obsidian & Docusaurus
-image: 'https://i.imgur.com/mErPwqL.png'
+cover: https://i.imgur.com/mErPwqL.png
 tags:
   - Obsidian
   - HowTo
@@ -9,7 +9,7 @@ tags:
 sidebar_position: 10
 sidebar_label: Obsidian integration
 date_created: 2022-11-01T00:00:00.000Z
-date_updated: 2026-09-22T00:00:00.000Z
+date_updated: 2026-09-30T00:00:00.000Z
 ---
 
 # [Docusaurus] Obsidian 整合指南
@@ -197,8 +197,10 @@ temporary.md
 
 - [x] **support obsidian wikilink** [[Wikilink in Docusaurus]] ✅ 2024-05-15
 - [x] **support obsidian kanban** [[Plugin Remark Obsidian Kanban]] ✅ 2025-09-23
-- [x] **docusaurus-plugin-leaflet** [[Plugin Remark Obsidian Leaflet]] ✅ 2025-12-24
 - [x] **support obsidian callouts** ✅ 2025-12-24
+- [x] **地理地圖：StoryMap 與純地圖** [[01 Geo Story Map 專案介紹]] ✅ 2026-09-30
+  - ` ```story-map ` 故事地圖與 ` ```leaflet ` 純地圖，由同一個 remark 外掛處理
+  - 原本自製的 [[Plugin Remark Obsidian Leaflet]] 已於 2026-09-30 停用並刪除，站上不再有第二套 Leaflet runtime
 
 ### 開發中功能
 

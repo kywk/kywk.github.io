@@ -11,7 +11,7 @@ sidebar_label: 任務管理
 hide_table_of_contents: true
 date_created: 2023-05-15T00:00:00.000Z
 date_updated: 2026-09-22T00:00:00.000Z
-image: 'https://i.imgur.com/mErPwqL.png'
+cover: https://i.imgur.com/mErPwqL.png
 ---
 
 # [Obs] Obsidian 任務管理

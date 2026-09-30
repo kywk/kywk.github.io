@@ -13,7 +13,7 @@ date_created: 2014-02-28 08:00:00
 
 ![](https://lh6.googleusercontent.com/-mNrWQ5rgeLo/UxbGtxsFcdI/AAAAAAAADbA/F3Ngp7h9Ju0/w800-h450-no/140228_0828-825.jpg)
 
-第一次接觸三太子跑步，是去年 [remy 帶著三太子跑步環島](http://goo.gl/XC3Voo)時，元旦當天陪同跑了台東鹿野段～  
+第一次接觸三太子跑步，是去年 [remy 帶著三太子跑步環島](https://www.facebook.com/Jhenwushan)時，元旦當天陪同跑了台東鹿野段～  
 中間一度 remy 背著三太子開四分速狂奔，完全跟不上啊！
 
 看到真武山三太子要出發跑東京馬，返台後一路從桃園跑回新店，

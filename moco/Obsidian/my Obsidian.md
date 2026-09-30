@@ -10,7 +10,7 @@ sidebar_label: 我的實際配置
 hide_table_of_contents: true
 date_created: 2024-04-07T00:00:00.000Z
 date_updated: 2026-09-22T00:00:00.000Z
-image: 'https://i.imgur.com/mErPwqL.png'
+cover: https://i.imgur.com/mErPwqL.png
 ---
 
 # [Obs] 我的 Obsidian 實際配置

@@ -7,7 +7,7 @@ tags:
   - Tutorial
 sidebar_position: 1
 date_created: 2022-08-25T06:05:03.000Z
-image: 'https://i.imgur.com/mErPwqL.png'
+cover: https://i.imgur.com/mErPwqL.png
 ---
 
 import Tabs from '@theme/Tabs';

@@ -1,7 +1,7 @@
 ---
 title: Obsidian Daily Notes
 description: 目前 vault 的 Daily Notes、模板與每日回顧流程
-image: "https://i.imgur.com/mErPwqL.png"
+cover: https://i.imgur.com/mErPwqL.png
 tags:
   - Obsidian
   - Daily Notes

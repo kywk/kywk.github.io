@@ -6,7 +6,7 @@ tags:
   - Essays
   - Cuisine
 date_created: 2012-11-05T13:36:36+08:00
-image: http://farm9.staticflickr.com/8299/7949017350_a3ccdaf139_c.jpg
+cover: http://farm9.staticflickr.com/8299/7949017350_a3ccdaf139_c.jpg
 categories:
   - lifestyle
   - taipei

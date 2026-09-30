@@ -28,7 +28,7 @@ date_updated: 2015-05-06 14:10:35
 
 ![登山故事館](https://farm8.staticflickr.com/7696/17388215371_c5143f8b18_c.jpg)
 
-下班後從台北出發，連夜趕下屏東，夜宿登山界老前輩 — [紹定國（山羊）](https://goo.gl/gQ1Ydd) 所開設的[登山故事館](https://goo.gl/7J7qBU)。  
+下班後從台北出發，連夜趕下屏東，夜宿登山界老前輩 — [紹定國（山羊）](https://www.facebook.com/profile.php?id=100000812383182) 所開設的[登山故事館](https://www.facebook.com/DengShanGuShiGuandengShanBoWuGuan)。  
 登山故事館離北大武登山口僅 15 分鐘車程，這天的行程亦相當輕鬆，睡飽、悠閒用了份早餐後才緩緩啟程。
 
 ![](https://farm8.staticflickr.com/7724/17362619986_bc9a61706e_c.jpg)
@@ -87,4 +87,4 @@ date_updated: 2015-05-06 14:10:35
 山壁間綻開了幾朵一葉蘭，沾著露水嬌艷欲滴的模樣，美。
 
 
-[Full photo set at flickr](https://goo.gl/QGxK7x)
+[Full photo set at flickr](https://www.flickr.com/photos/kywk71/sets/72157651976786789/)
