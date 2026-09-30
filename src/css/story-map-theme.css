@@ -20,6 +20,59 @@
 }
 
 /* ---------------------------------------------------------------------------
+   map.theme: auto -> Docusaurus light/dark toggle
+   ---------------------------------------------------------------------------
+
+   The renderer's own `auto` preset follows `prefers-color-scheme`, which tracks
+   the operating system. This site's theme is a Docusaurus toggle stored in
+   localStorage and written to `data-theme` on <html>, so the two disagree as soon
+   as a reader picks a theme explicitly. Bridge it here, the same way the Obsidian
+   host bridges `auto` onto its own theme classes.
+
+   Both directions must be declared. The renderer's own `auto` rule lives in a
+   `prefers-color-scheme: dark` block, so on a dark-OS machine it would keep
+   applying its dark palette even after the reader switches this site to light;
+   only an explicit light rule here outranks it. Each selector carries one more
+   compound than `.story-map[data-map-theme='auto']`, so both win without
+   `!important`. The fixed `light`/`dark`/`vintage`/`cyber`/`atlas` presets and any
+   explicit `--story-map-*` override are untouched.
+
+   `--story-map-tile-filter` is a literal, not an Infima variable: a CSS filter on
+   the tile layer cannot be derived from a palette. It matches the dark preset in
+   @story-map/react-story-map, and the tile source itself stays OpenStreetMap - a
+   theme never swaps the provider. */
+[data-theme='light'] .story-map[data-map-theme='auto'] {
+  --story-map-ink: var(--ifm-font-color-base);
+  --story-map-subtle: var(--ifm-color-emphasis-600);
+  --story-map-line: var(--ifm-color-emphasis-400);
+  --story-map-highlight: var(--ifm-color-primary);
+  --story-map-tile-filter: none;
+  --story-map-marker: var(--ifm-color-primary);
+  --story-map-marker-border: var(--ifm-background-color);
+  --story-map-marker-active: var(--ifm-color-warning-dark);
+  --story-map-path: var(--ifm-color-primary);
+}
+
+[data-theme='dark'] .story-map[data-map-theme='auto'] {
+  --story-map-ink: var(--ifm-font-color-base);
+  --story-map-subtle: var(--ifm-color-emphasis-600);
+  --story-map-line: var(--ifm-color-emphasis-400);
+  --story-map-highlight: var(--ifm-color-primary-light);
+  --story-map-tile-filter: invert(0.95) hue-rotate(195deg) saturate(0.5) brightness(1.0) contrast(0.95);
+  --story-map-marker: var(--ifm-color-primary-light);
+  --story-map-marker-border: var(--ifm-background-color);
+  --story-map-marker-active: var(--ifm-color-warning-dark);
+  --story-map-path: var(--ifm-color-primary-light);
+}
+
+/* Leaflet's own container background is gray. It shows while tiles load and past
+   the tile edges at low zoom, so it has to follow the page instead. */
+[data-theme='light'] .story-map[data-map-theme='auto'] .leaflet-container,
+[data-theme='dark'] .story-map[data-map-theme='auto'] .leaflet-container {
+  background: var(--ifm-background-color);
+}
+
+/* ---------------------------------------------------------------------------
    StoryMap view toggle (Markdown <-> full-page StoryMap)
    --------------------------------------------------------------------------- */
 

@@ -407,111 +407,6 @@ blockquote p {
 }
 
 /* ============================================
-   Leaflet Map Styles
-   ============================================ */
-.leaflet-map-wrapper {
-  position: relative;
-  z-index: 1;
-  border-radius: var(--ifm-global-radius);
-  overflow: hidden;
-}
-
-.leaflet-container {
-  background: #f5f5f5;
-}
-
-[data-theme='dark'] .leaflet-container {
-  background: #2a2a2a;
-}
-
-.leaflet-marker-custom {
-  background: transparent !important;
-  border: none !important;
-}
-
-.leaflet-marker-icon {
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 18px;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
-  border: 3px solid white;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-}
-
-.leaflet-marker-icon:hover {
-  transform: scale(1.15);
-}
-
-.leaflet-popup-content-wrapper {
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  font-family: var(--ifm-font-family-base);
-}
-
-.leaflet-popup-content {
-  margin: 12px 16px;
-}
-
-.leaflet-custom-popup {
-  min-width: 150px;
-}
-
-.leaflet-custom-popup .popup-title {
-  font-size: 15px;
-  font-weight: 600;
-  color: var(--ifm-color-content);
-  display: block;
-  margin-bottom: 6px;
-}
-
-.leaflet-custom-popup .popup-link {
-  color: var(--ifm-color-primary);
-  font-size: 13px;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.leaflet-custom-popup .popup-link:hover {
-  text-decoration: underline;
-}
-
-[data-theme='dark'] .leaflet-popup-content-wrapper,
-[data-theme='dark'] .leaflet-popup-tip {
-  background: var(--ifm-background-color);
-  color: var(--ifm-color-content);
-}
-
-[data-theme='dark'] .leaflet-popup-close-button {
-  color: var(--ifm-color-content) !important;
-}
-
-.leaflet-tile-pane {
-  z-index: 200;
-}
-
-.leaflet-tile-container {
-  opacity: 1 !important;
-}
-
-.leaflet-tile {
-  visibility: visible !important;
-  opacity: 1 !important;
-}
-
-.leaflet-marker-pane {
-  z-index: 400;
-}
-
-.leaflet-popup-pane {
-  z-index: 700;
-}
-
-/* ============================================
    Light Mode Enhancements
    ============================================ */
 
@@ -628,3 +523,106 @@ a[class*="tag_"]:hover {
 .table-of-contents__link--active {
   color: var(--ifm-color-primary-dark);
 }
+
+/* ============================================
+   Task List 縮排與階層顯示優化
+   ============================================ */
+
+/* 頂層 Task List 保持適度縮排，使核取方塊不超出左邊界且內縮對齊 */
+ul.contains-task-list {
+  list-style: none;
+  padding-left: 1.5rem !important;
+}
+
+/* 嵌套子清單（無論包含 task-list 與否）提供清晰鮮明的階層縮排 */
+ul.contains-task-list ul,
+ul.contains-task-list ol,
+li.task-list-item > ul,
+li.task-list-item > ol {
+  padding-left: 1.75rem !important;
+}
+
+/* Checkbox 與文字間距微調 */
+.task-list-item input[type='checkbox'] {
+  margin-right: 0.5rem;
+}
+
+/* ============================================
+   Obsidian Tasks 狀態渲染 (- [-] 取消 / - [/] 進行中)
+   ============================================ */
+
+/* 取消任務 (- [-])：整行淡化並帶刪除線 */
+.task-list-item--cancelled {
+  text-decoration: line-through;
+  color: var(--ifm-color-content-secondary) !important;
+  opacity: 0.7;
+}
+
+.task-list-item--cancelled a {
+  text-decoration: line-through;
+  color: inherit !important;
+}
+
+/* 取消任務核取方塊：顯示橫線 (-) 取消符號 */
+input[type='checkbox'].task-list-item-checkbox--cancelled,
+input[type='checkbox'][data-task='-'] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 1.1em;
+  height: 1.1em;
+  border: 1.5px solid var(--ifm-color-emphasis-500);
+  border-radius: 3px;
+  background-color: var(--ifm-background-color);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: -0.15em;
+  cursor: default;
+  position: relative;
+}
+
+input[type='checkbox'].task-list-item-checkbox--cancelled::after,
+input[type='checkbox'][data-task='-']::after {
+  content: '';
+  position: absolute;
+  width: 0.55em;
+  height: 2px;
+  background-color: var(--ifm-color-emphasis-600);
+  border-radius: 1px;
+}
+
+/* 進行中任務 (- [/])：強調顯示 */
+.task-list-item--in-progress {
+  color: var(--ifm-color-emphasis-900);
+  font-weight: 500;
+}
+
+/* 進行中任務核取方塊：顯示主題色進行中方塊 */
+input[type='checkbox'].task-list-item-checkbox--in-progress,
+input[type='checkbox'][data-task='/'] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 1.1em;
+  height: 1.1em;
+  border: 1.5px solid var(--ifm-color-primary);
+  border-radius: 3px;
+  background-color: var(--ifm-background-color);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: -0.15em;
+  cursor: default;
+  position: relative;
+}
+
+input[type='checkbox'].task-list-item-checkbox--in-progress::after,
+input[type='checkbox'][data-task='/']::after {
+  content: '';
+  position: absolute;
+  width: 0.5em;
+  height: 0.5em;
+  background-color: var(--ifm-color-primary);
+  border-radius: 1.5px;
+}
+
+

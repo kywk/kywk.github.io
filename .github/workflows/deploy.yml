@@ -13,7 +13,10 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          # 與 package.json 的 volta / engines 對齊。20.19 是底線：
+          # plugins/remark-obsidian-kanban 以 require() 載入 ESM-only 的
+          # unist-util-visit@5，需要 Node >= 20.19 的 require(esm)。
+          node-version: 20.19.0
           cache: npm
 
       - name: Install dependencies

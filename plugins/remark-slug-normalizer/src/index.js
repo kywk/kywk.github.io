@@ -15,12 +15,13 @@
 /**
  * 正規化單一路徑段
  *
- *   'Schedule on Egypt' -> 'schedule-on-egypt'
- *   'IDEA_POOL'         -> 'idea-pool'
- *   "Don't DRY"         -> 'dont-dry'
- *   '_Surfing'          -> 'surfing'
- *   'kywk.moco'         -> 'kywk.moco'   （點保留）
- *   '慕士塔格 Muztagh'   -> '慕士塔格-muztagh'（非 ASCII 保留，交給 percent-encoding）
+ *   'Schedule on Egypt'          -> 'schedule-on-egypt'
+ *   'IDEA_POOL'                  -> 'idea-pool'
+ *   "Don't DRY"                  -> 'dont-dry'
+ *   '_Surfing'                   -> 'surfing'
+ *   'kywk.moco'                  -> 'kywk.moco'   （點保留）
+ *   '日安憂鬱 (Bonjour Tristesse)' -> '日安憂鬱-bonjour-tristesse'
+ *   '慕士塔格 Muztagh'            -> '慕士塔格-muztagh'（非 ASCII 保留，交給 percent-encoding）
  *
  * @param {string} segment
  * @returns {string}
@@ -30,6 +31,9 @@ function normalizeSegment(segment) {
   return segment
     .toLowerCase()
     .replace(/['’‘`"“”]/g, '')   // 引號直接移除，不要變成分隔符
+    .replace(/[()]/g, '')        // 括號同理；且 ( ) 在 React Router 5 用的
+                                 // path-to-regexp v1 會被當成 regex 群組，帶括號的
+                                 // 網址永遠匹配不到 route，只能從 slug 移除
     .replace(/[\s_]+/g, '-')     // 空白與底線 -> 分隔符
     .replace(/-{2,}/g, '-')      // 收合連續分隔符
     .replace(/^-+|-+$/g, '');    // 去掉頭尾分隔符

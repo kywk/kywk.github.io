@@ -33,7 +33,6 @@ function loadPlugin(npmPackage, localPath) {
 
 const remarkWikiLink = require("remark-wiki-link");
 const remarkKanban = loadPlugin("remark-obsidian-kanban", "./plugins/remark-obsidian-kanban/src/index.js")?.remarkKanban;
-const remarkLeaflet = loadPlugin("remark-obsidian-leaflet", "./plugins/remark-obsidian-leaflet/src/index.js");
 const slugNormalizerPlugin = loadPlugin("remark-slug-normalizer", "./plugins/remark-slug-normalizer/src/index.js");
 const normalizeSlug = slugNormalizerPlugin?.normalizeSlug;
 const deriveSlug = slugNormalizerPlugin?.deriveSlug;
@@ -41,6 +40,7 @@ const deriveSlug = slugNormalizerPlugin?.deriveSlug;
 // StoryMap ESM remark plugin, loaded through Node's native require(esm) so
 // jiti does not mangle zod v4's named exports (see the loader file).
 const remarkStoryMap = require("./plugins/remark-story-map-loader.cjs");
+const rehypeObsidianTasks = loadPlugin("rehype-obsidian-tasks", "./plugins/rehype-obsidian-tasks/src/index.js")?.rehypeObsidianTasks;
 
 // 全站 wikilink 索引：blog 文章可以連到 docs，也可以連到另一個 blog。
 // 路由仍由 remark-slug-normalizer 的 deriveSlug() 統一推導。
@@ -54,11 +54,21 @@ const contentLinkIndex = createContentLinkIndex({
 // noteDisplay: link routes go through the published-content index above, so the
 // plugin never reimplements Docusaurus slug policy. assetBase is omitted because
 // this vault references media by absolute URL and has no asset-copy pipeline.
+//
+// The same plugin also handles the legacy ```leaflet dialect: it has its own
+// parser, never enters the storymap/v1 schema, and renders through <GeoMap />.
+// `leafletDefaults.theme: auto` makes a storyless map follow this site's
+// light/dark toggle; the package's own `auto` fallback is `prefers-color-scheme`,
+// which would follow the OS instead of the toggle. src/css/story-map-theme.css
+// completes that bridge, the same way the Obsidian host bridges it.
 const storyMapOptions = {
   vaultRoot: __dirname,
   resolveNoteHref: (vaultRelativePath: string) => {
     const matches = contentLinkIndex.resolve(vaultRelativePath);
     return matches.length === 1 ? matches[0].route : undefined;
+  },
+  leafletDefaults: {
+    theme: "auto",
   },
 };
 
@@ -168,10 +178,6 @@ function createRemarkPlugins(fileMap, routeBase) {
   // remark 是之後才在 mdx-loader 跑的，改 frontmatter 已經來不及。
   // slug 統一由下方 markdown.parseFrontMatter 推導。
 
-  if (remarkLeaflet) {
-    plugins.push([remarkLeaflet, { routeBase }]);
-  }
-
   if (remarkKanban) {
     plugins.push([
       remarkKanban,
@@ -255,13 +261,9 @@ const config: Config = {
     },
   ],
 
-  scripts: [
-    // Leaflet 本體不再全站載入，改由 leaflet-init.js 在有地圖的頁面動態注入
-    {
-      src: "/js/leaflet-init.js",
-      async: true,
-    },
-  ],
+  // Leaflet 沒有全站 <script> 了。唯一的 runtime 是
+  // @story-map/remark-story-map/client，它只在頁面上真的存在 story / map host
+  // 時才從 bundle 載入 Leaflet 與 leaflet/dist/leaflet.css。
 
   markdown: {
     format: "detect",
@@ -342,6 +344,7 @@ const config: Config = {
         path: doc.path,
         routeBasePath: doc.routeBasePath,
         remarkPlugins: createRemarkPlugins(fileMaps[doc.id], doc.routeBase),
+        rehypePlugins: rehypeObsidianTasks ? [rehypeObsidianTasks] : [],
         sidebarPath: require.resolve("./sidebars.js"),
       },
     ]),
@@ -352,6 +355,7 @@ const config: Config = {
         routeBasePath: blog.routeBasePath,
         path: blog.path,
         remarkPlugins: createBlogRemarkPlugins(blog),
+        rehypePlugins: rehypeObsidianTasks ? [rehypeObsidianTasks] : [],
         showReadingTime: true,
         blogSidebarTitle: "All posts",
         blogSidebarCount: "ALL",

@@ -1,0 +1,7 @@
+{
+  "name": "rehype-obsidian-tasks",
+  "version": "1.0.0",
+  "description": "Rehype plugin to parse and render Obsidian task statuses like [-] (Cancelled) and [/] (In Progress)",
+  "main": "src/index.js",
+  "license": "MIT"
+}
