@@ -19,10 +19,14 @@
   width: 100%;
 }
 
+.docItemCol {
+  min-width: 0;
+}
+
 @media (min-width: 997px) {
 
   /* 有 TOC 時限制欄位寬度給 TOC 騰出空間 */
-  .docItemContainer .docItemCol {
+  .docItemCol {
     max-width: 75% !important;
     flex: 0 0 75% !important;
   }

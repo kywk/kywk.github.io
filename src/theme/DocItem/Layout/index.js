@@ -37,7 +37,7 @@ export default function DocItemLayout({ children }) {
   const hasNoTOC = docTOC.hidden || !docTOC.desktop;
   return (
     <div className="row">
-      <div className={clsx('col', !docTOC.hidden && styles.docItemCol)}>
+      <div className={clsx('col', !hasNoTOC && styles.docItemCol)}>
         <ContentVisibility metadata={metadata} />
         <DocVersionBanner />
         <div className={clsx(styles.docItemContainer, hasNoTOC && styles.docItemContainerFullWidth)}>
