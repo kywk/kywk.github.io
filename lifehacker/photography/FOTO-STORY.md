@@ -24,9 +24,9 @@ date_updated: 2025-01-06
 | 16.08_India            | 25/01/01 |   v    |        | Expansion | CowM1T-A |                     |
 | 16.07_Sichuan Yachin   | 25/01/01 |   v    |        | Expansion | CowM1T-A |                     |
 | 16.06_Nagoya           | 25/01/01 |   v    |        | Expansion | CowM1T-A |                     |
-| 15.07_Mt. Tsurugi Dake | 25/01/01 |   v    |        | Expansion | CowM1T-A |                     |
-| 14.12_Flashmob HK      | 25/01/01 |   v    |        | Expansion | CowM1T-A |                     |
-| 14.11_Mt-Fuji Marathon | 25/01/01 |   v    |        | Expansion | CowM1T-A |                     |
+| [[07-29-mt-tsurugi-dake|15.07_Mt. Tsurugi Dake]] | 25/01/01 |   v    |        | Expansion | CowM1T-A |                     |
+| [[12-26-flashmob-hk|14.12_Flashmob HK]]      | 25/01/01 |   v    |        | Expansion | CowM1T-A |                     |
+| [[11-26-mt-fuji-marathon-2014|14.11_Mt-Fuji Marathon]] | 25/01/01 |   v    |        | Expansion | CowM1T-A |                     |
 | 14.07_Okinawa          | 25/01/01 |   v    |        | Expansion | CowM1T-A |                     |
 | 13.04_Cebu             | 25/01/01 |   v    |        | Expansion | CowM1T-A |                     |
 | 13.02_Srilanka         | 25/01/01 |   v    |        | Expansion | CowM1T-A |                     |

@@ -191,8 +191,12 @@ function createRemarkPlugins(fileMap, routeBase) {
   plugins.push([
     remarkWikiLink,
     {
-      pageResolver: createPageResolver(fileMap),
-      hrefTemplate: (permalink) => `${routeBase}${permalink}/`,
+      pageResolver: createWikiPageResolver(contentLinkIndex, {
+        strict: false,
+        context: routeBase,
+      }),
+      permalinks: contentLinkIndex.permalinks,
+      hrefTemplate: (permalink) => (permalink.startsWith("/") ? permalink : `${routeBase}${permalink}/`),
       aliasDivider: pluginConfig.wikiLink.aliasDivider,
     },
   ]);

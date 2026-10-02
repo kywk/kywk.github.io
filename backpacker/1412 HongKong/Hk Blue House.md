@@ -71,3 +71,7 @@ Reference 控如我，查了查[蘭屋的由來](http://goo.gl/vEhuKk)：
 
 「烈日底下無新事」他說、她說…  
 努力走了那麼久，我仍，掛念著她。
+
+---
+
+📸 相簿紀實：[[12-26-flashmob-hk|FlashMob HK]]

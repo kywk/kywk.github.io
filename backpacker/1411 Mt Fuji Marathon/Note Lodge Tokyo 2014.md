@@ -47,6 +47,7 @@ categories:
 -   [【日光】東觀莊 @ NONOMAMA‧飲食生活](http://goo.gl/y4hs1H)
 -   [日光東觀莊 @ JustD的人文旅記](http://goo.gl/fkpn5U)
 -   [日光東觀莊 @ 阿偉的秘密基地](http://goo.gl/zbKb8u)
+-   📸 相關相簿：[[11-26-nikko-world-heritage|Nikko 日光 世界遺產]]
 
 
 ### Kouyoudai Camp Village ###
@@ -76,6 +77,8 @@ categories:
 西湖周圍有許多露營區，真的覺得在西湖露營好舒服！  
 若有機會再來富士山走走，白天在河口湖玩耍，傍晚在西湖畔露營，愜意！
 
+- 📸 相關相簿：[[11-29-fuji-kawaguchiko|富士山．河口湖]]、[[11-26-mt-fuji-marathon-2014|Mt.Fuji marathon, 2014]]
+
 
 ### [K's House Mt.Fuji](http://goo.gl/vehRg2) ###
 
@@ -95,7 +98,7 @@ categories:
 
 ### [Factory Roof-Top!](http://goo.gl/bshnUW) ###
 
-「這次打算在 Airbnb 上找住宿…」和朋友在桃源谷散步邊聊著富士山馬拉松行程，突然的靈光閃現。
+「這次打算在 Airbnb 上找住宿…」和朋友在[[11-06-caoling-taoyuangu|桃源谷散步]]邊聊著富士山馬拉松行程，突然的靈光閃現。
 
 ![](https://farm8.staticflickr.com/7580/15855398067_3937565b3a_c.jpg)
 
@@ -116,3 +119,5 @@ categories:
 
 在 Airbnb 上訂房的初體驗，結束後可以給屋主評論，也收到屋給的評價。  
 很不錯的體驗、很棒的服務，為何台灣不積極開放呢？
+
+- 📸 相關相簿：[[12-01-tokyo-ginkgo|Tokyo 銀杏祭]]

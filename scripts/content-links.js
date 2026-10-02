@@ -133,8 +133,10 @@ function createContentLinkIndex({ root, docsConfig, blogConfig }) {
 
 function createWikiPageResolver(index, { strict = false, context = 'content' } = {}) {
   return (name) => {
+    const hashIndex = name.indexOf('#');
+    const anchor = hashIndex !== -1 ? name.slice(hashIndex) : '';
     const matches = index.resolve(name);
-    if (matches.length === 1) return [matches[0].route];
+    if (matches.length === 1) return [anchor ? `${matches[0].route}${anchor}` : matches[0].route];
 
     if (strict) {
       if (!matches.length) {

@@ -225,3 +225,5 @@ Docusaurus 在構建網站（`docusaurus build`）時，會先執行外掛的 `v
 1. **職責分離**：主專案的 `src/components/` 移除所有特定頻道的大型相簿元件，全部歸位至 `plugins/docusaurus-plugin-album/`。
 2. **開箱即用**：相簿的 Pinterest 首頁、Hover 浮層、時間軸導航與照片燈箱，均作為外掛預設行為自動生效。
 3. **無痛升級**：全站經 `npm run typecheck`、`npm run content:check` 及 `npm run build` 檢驗通過，靜態導出產生的 `/album/` 路由與全站功能皆無損銜接。
+
+👉 接續閱讀相簿內容匯入與自動化：[[04 Album Blog Flickr 相簿匯入與自動化整合方案|Album 相簿部落格：Flickr 歷史相簿匯入與 AI 自動化整合方案]]
