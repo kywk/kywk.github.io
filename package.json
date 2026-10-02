@@ -21,6 +21,10 @@
     "content:wikilink": "node scripts/convert-to-wikilinks.js",
     "vault:index": "python3 scripts/build-vault-index.py",
     "flickr:import": "python3 scripts/import-flickr-albums.py",
+    "flickr:daemon:start": "./scripts/run-import-daemon.sh start",
+    "flickr:daemon:stop": "./scripts/run-import-daemon.sh stop",
+    "flickr:daemon:status": "./scripts/run-import-daemon.sh status",
+    "flickr:daemon:logs": "./scripts/run-import-daemon.sh logs",
     "deploy:preview": "npm run build && npm run serve"
   },
   "dependencies": {
