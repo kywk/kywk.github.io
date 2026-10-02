@@ -31,7 +31,10 @@ module.exports = async function pluginAlbum(context, options) {
 
   return {
     ...blogPluginInstance,
-    name: 'docusaurus-plugin-album',
+    // Do not override blogPluginInstance.name ('docusaurus-plugin-content-blog')
+    // because Docusaurus core uses plugin.name to namespace actions.createData(),
+    // and @docusaurus/plugin-content-blog hardcodes 'docusaurus-plugin-content-blog'
+    // in its MDX loader rules when referencing metadata json files.
     getThemePath() {
       return path.resolve(__dirname, './src/theme');
     },

@@ -144,7 +144,7 @@ module.exports = async function pluginAlbum(context, options) {
 
   return {
     ...blogPluginInstance,
-    name: 'docusaurus-plugin-album',
+    // 保留 blogPluginInstance.name ('docusaurus-plugin-content-blog')，切勿覆寫為 'docusaurus-plugin-album'
     getThemePath() {
       return path.resolve(__dirname, './src/theme');
     },
@@ -157,6 +157,14 @@ module.exports.validateOptions = validateOptions;
 #### 技術細節：為什麼必須 export `validateOptions`？
 Docusaurus 在構建網站（`docusaurus build`）時，會先執行外掛的 `validateOptions`。若直接將 options 傳給 `pluginContentBlog(context, options)` 而跳過驗證步驟，`options.authorsMapPath` 等預設欄位將維持 `undefined`，導致底層在執行 `path.join()` 時拋出 `TypeError: The "path" argument must be of type string`。
 透過在外掛導出 `validateOptions` 並鏈結官方驗證器，既能享有自訂相簿預設值，又兼顧 100% 的官方配置相容性。
+
+#### 架構踩坑：為什麼微包裝模式不能覆寫外掛的 `name`？
+在使用 Wrapper Pattern 封裝官方 `@docusaurus/plugin-content-blog` 時，若直覺地在外掛回傳物件中宣告 `name: 'docusaurus-plugin-album'`，會在建置階段引發致命的模組找不到錯誤：
+1. **資料產出路徑（`createData`）**：Docusaurus 核心以 `path.join(generatedFilesDir, plugin.name, pluginId)` 決定輸出目錄，因此相簿中繼資料 JSON 被寫入 `.docusaurus/docusaurus-plugin-album/album/`。
+2. **MDX 解析引入路徑（`metadataPath`）**：底層 `@docusaurus/plugin-content-blog` 內部的 MDX Loader 規則硬編碼了常數 `const PluginName = 'docusaurus-plugin-content-blog'`，向 Webpack / Rspack 要求載入 `@site/.docusaurus/docusaurus-plugin-content-blog/album/...`。
+3. **路徑錯位**：導致 Client bundle 編譯時拋出 `Cannot find module '@site/.docusaurus/docusaurus-plugin-content-blog/album/...'`。
+
+**結論**：包裝官方內容外掛時，必須沿用底層原生 `name`（多實例依賴 `options.id = 'album'` 區分），如此既能確保資料寫入與 MDX Loader 讀取路徑完全對齊，自訂的 `getThemePath()` 也依然能正常生效。
 
 ---
 
