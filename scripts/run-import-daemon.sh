@@ -19,6 +19,13 @@ is_running() {
       return 0
     fi
   fi
+  # 亦檢查背景執行的 import-flickr-albums.py 進程
+  PIDS=$(pgrep -f "import-flickr-albums.py" | grep -v "$$" || true)
+  if [ -n "$PIDS" ]; then
+    PID=$(echo "$PIDS" | head -n 1)
+    echo "$PID" > "$PID_FILE"
+    return 0
+  fi
   return 1
 }
 

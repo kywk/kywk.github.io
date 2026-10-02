@@ -320,16 +320,18 @@ def process_album(album, vault_index, state, engine='agy', dry_run=False, update
     selected_photos.sort(key=lambda p: p.get('datetaken') or p.get('title') or '')
 
     # 4. 判斷拍攝日期
-    dates = [p.get('datetaken', '') for p in photos if p.get('datetaken')]
-    if dates:
-        earliest_date = min(dates)[:10]
+    m = re.search(r'\((\d{2})\.(\d{2})\.(\d{2})\)', title)
+    m4 = re.search(r'\((\d{4})\.(\d{2})\.(\d{2})\)', title)
+    valid_dates = [p.get('datetaken', '') for p in photos if p.get('datetaken') and p.get('datetaken') >= '2004-01-01']
+    if m:
+        earliest_date = f"20{m.group(1)}-{m.group(2)}-{m.group(3)}"
+    elif m4:
+        earliest_date = f"{m4.group(1)}-{m4.group(2)}-{m4.group(3)}"
+    elif valid_dates:
+        earliest_date = min(valid_dates)[:10]
     else:
-        m = re.search(r'\((\d{2})\.(\d{2})\.(\d{2})\)', title)
-        if m:
-            earliest_date = f"20{m.group(1)}-{m.group(2)}-{m.group(3)}"
-        else:
-            ts = int(album.get('date_create') or 1400000000)
-            earliest_date = datetime.fromtimestamp(ts).strftime('%Y-%m-%d')
+        ts = int(album.get('date_create') or 1400000000)
+        earliest_date = datetime.fromtimestamp(ts).strftime('%Y-%m-%d')
 
     year = earliest_date[:4]
     month_day = earliest_date[5:]

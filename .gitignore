@@ -101,3 +101,7 @@ finance/
 .stignore
 
 .amazonq
+
+# Flickr import daemon runtime files
+scripts/data/import.log
+scripts/data/import.pid
