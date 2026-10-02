@@ -1,0 +1,133 @@
+.container {
+  width: 100%;
+}
+
+.groupHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.35rem 0.5rem;
+  background: transparent;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: var(--ifm-font-color-base);
+  text-align: left;
+  transition: all var(--transition-fast, 150ms ease);
+  user-select: none;
+}
+
+.groupHeader:hover {
+  background: rgba(230, 126, 34, 0.08);
+  color: var(--ifm-color-primary);
+}
+
+[data-theme='dark'] .groupHeader:hover {
+  background: rgba(245, 176, 65, 0.1);
+  color: var(--ifm-color-primary);
+}
+
+.yearHeader {
+  margin-top: 0.5rem;
+  margin-bottom: 0.2rem;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.yearTitle {
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.monthHeader {
+  margin-top: 0.25rem;
+  margin-bottom: 0.1rem;
+  margin-left: 0.3rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  padding: 0.25rem 0.45rem;
+}
+
+.monthTitle {
+  font-weight: 600;
+}
+
+.groupHeaderActive .yearTitle,
+.groupHeaderActive .monthTitle {
+  color: var(--ifm-color-primary);
+}
+
+.groupTitleWrap {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.countBadge {
+  font-size: 0.725rem;
+  font-weight: 500;
+  padding: 0.08rem 0.4rem;
+  border-radius: 999px;
+  background: rgba(230, 126, 34, 0.1);
+  color: var(--ifm-color-primary-dark);
+  line-height: 1.2;
+}
+
+[data-theme='dark'] .countBadge {
+  background: rgba(245, 176, 65, 0.15);
+  color: var(--ifm-color-primary-light);
+}
+
+.groupHeaderActive .countBadge {
+  background: var(--ifm-color-primary);
+  color: #ffffff;
+}
+
+[data-theme='dark'] .groupHeaderActive .countBadge {
+  background: var(--ifm-color-primary);
+  color: #1a1512;
+}
+
+.monthCountBadge {
+  font-size: 0.7rem;
+  opacity: 0.9;
+}
+
+.caret {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--ifm-color-emphasis-500);
+  flex-shrink: 0;
+}
+
+.caretOpen {
+  transform: rotate(90deg);
+  color: var(--ifm-color-primary);
+}
+
+.yearContent {
+  margin-bottom: 0.35rem;
+}
+
+.monthGroup {
+  margin-left: 0.2rem;
+}
+
+.monthContent {
+  margin-left: 0.55rem;
+  padding-left: 0.55rem;
+  border-left: 2px solid rgba(230, 126, 34, 0.15);
+}
+
+[data-theme='dark'] .monthContent {
+  border-left-color: rgba(245, 176, 65, 0.18);
+}
+
+/* Active link emphasis in sidebar */
+.container :global([class*="sidebarItemLinkActive"]) {
+  font-weight: 600;
+  color: var(--ifm-color-primary) !important;
+}
