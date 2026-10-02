@@ -19,6 +19,8 @@
     "content:slug:fix": "node scripts/slug.js --fix",
     "content:slug:write": "node scripts/slug.js --write",
     "content:wikilink": "node scripts/convert-to-wikilinks.js",
+    "vault:index": "python3 scripts/build-vault-index.py",
+    "flickr:import": "python3 scripts/import-flickr-albums.py",
     "deploy:preview": "npm run build && npm run serve"
   },
   "dependencies": {
