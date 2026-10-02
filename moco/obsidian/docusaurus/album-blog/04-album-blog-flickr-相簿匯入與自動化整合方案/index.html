@@ -1,0 +1,273 @@
+<!doctype html><html lang=zh-TW dir=ltr class="docs-wrapper plugin-docs plugin-id-moco docs-version-current docs-doc-page docs-doc-id-Obsidian/Docusaurus/Album Blog/04 Album Blog Flickr 相簿匯入與自動化整合方案" data-has-hydrated=false><head><meta charset=UTF-8><meta name=generator content="Docusaurus v3.10.2"><title data-rh=true>Album 相簿部落格：Flickr 歷史相簿匯入與 AI 自動化整合方案 | kywk.me</title><meta data-rh=true name=viewport content="width=device-width, initial-scale=1.0"/><meta data-rh=true property=og:image content=https://kywk.github.io/img/og-social-card.png /><meta data-rh=true name=twitter:image content=https://kywk.github.io/img/og-social-card.png /><meta data-rh=true property=og:url content=https://kywk.github.io/moco/obsidian/docusaurus/album-blog/04-album-blog-flickr-相簿匯入與自動化整合方案/ /><meta data-rh=true property=og:locale content=zh_TW /><meta data-rh=true name=docusaurus_locale content=zh-TW /><meta data-rh=true name=docsearch:language content=zh-TW /><meta data-rh=true name=keywords content="旅行, 背包客, 生活效率, 工程筆記, DevSecOps, Obsidian"/><meta data-rh=true name=author content=kywk /><meta data-rh=true property=og:type content=website /><meta data-rh=true property=og:site_name content=kywk.me /><meta data-rh=true name=twitter:card content=summary_large_image /><meta data-rh=true name=docusaurus_version content=current /><meta data-rh=true name=docusaurus_tag content=docs-moco-current /><meta data-rh=true name=docsearch:version content=current /><meta data-rh=true name=docsearch:docusaurus_tag content=docs-moco-current /><meta data-rh=true property=og:title content="Album 相簿部落格：Flickr 歷史相簿匯入與 AI 自動化整合方案 | kywk.me"/><meta data-rh=true name=description content="記錄將 481 本 Flickr 歷史相簿遷移至 blog.album 的討論摘要、架構決策、離線資料庫保存及調度 AI（agy / opencode / pi）生成圖文的實作方案"/><meta data-rh=true property=og:description content="記錄將 481 本 Flickr 歷史相簿遷移至 blog.album 的討論摘要、架構決策、離線資料庫保存及調度 AI（agy / opencode / pi）生成圖文的實作方案"/><link data-rh=true rel=icon href=/img/favicon.ico /><link data-rh=true rel=canonical href=https://kywk.github.io/moco/obsidian/docusaurus/album-blog/04-album-blog-flickr-相簿匯入與自動化整合方案/ /><link data-rh=true rel=alternate href=https://kywk.github.io/moco/obsidian/docusaurus/album-blog/04-album-blog-flickr-相簿匯入與自動化整合方案/ hreflang=zh-TW /><link data-rh=true rel=alternate href=https://kywk.github.io/moco/obsidian/docusaurus/album-blog/04-album-blog-flickr-相簿匯入與自動化整合方案/ hreflang=x-default /><script data-rh=true type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://kywk.github.io/moco/obsidian/my-obsidian/","name":"Obsidian","position":1},{"@type":"ListItem","item":"https://kywk.github.io/moco/obsidian/docusaurus/integrate-obsidian-and-docusaurus/","name":"Docusaurus 整合","position":2},{"@type":"ListItem","item":"https://kywk.github.io/moco/obsidian/docusaurus/album-blog/01-album-blog-概念發想與決策記錄/","name":"Album 相簿部落格","position":3},{"@type":"ListItem","item":"https://kywk.github.io/moco/obsidian/docusaurus/album-blog/04-album-blog-flickr-相簿匯入與自動化整合方案/","name":"Album 相簿部落格：Flickr 歷史相簿匯入與 AI 自動化整合方案","position":4}]}</script><link rel=alternate type=application/rss+xml href=/news/rss.xml title="kywk.me RSS Feed"><link rel=alternate type=application/atom+xml href=/news/atom.xml title="kywk.me Atom Feed"><link rel=alternate type=application/rss+xml href=/life/rss.xml title="kywk.me RSS Feed"><link rel=alternate type=application/atom+xml href=/life/atom.xml title="kywk.me Atom Feed"><link rel=alternate type=application/rss+xml href=/album/rss.xml title="kywk.me RSS Feed"><link rel=alternate type=application/atom+xml href=/album/atom.xml title="kywk.me Atom Feed"><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin=anonymous><link rel=stylesheet href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+TC:wght@400;500;700&display=swap" type=text/css><link rel=stylesheet href=/assets/css/styles.969ef69e.css /><script src=/assets/js/runtime~main.636070f5.js defer></script><script src=/assets/js/main.a275607f.js defer></script></head><body><svg style="display: none;"><defs>
+<symbol id=theme-svg-external-link viewBox="0 0 24 24"><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{for(var[t,e]of new URLSearchParams(window.location.search).entries())if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id=__docusaurus><link rel=preload as=image href=/img/logo.svg /><div role=region aria-label=跳至主要内容><a class=skipToContent_fXgn href=#__docusaurus_skipToContent_fallback>跳至主要内容</a></div><nav aria-label=主導航 class="theme-layout-navbar navbar navbar--fixed-top"><div class=navbar__inner><div class="theme-layout-navbar-left navbar__items"><button aria-label=切換導覽列 aria-expanded=false class="navbar__toggle clean-btn" type=button><svg width=30 height=30 viewBox="0 0 30 30" aria-hidden=true><path stroke=currentColor stroke-linecap=round stroke-miterlimit=10 stroke-width=2 d="M4 7h22M4 15h22M4 23h22"/></svg></button><a class=navbar__brand href=/><div class=navbar__logo><img src=/img/logo.svg alt="kywk.me Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"/><img src=/img/logo.svg alt="kywk.me Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"/></div><b class="navbar__title text--truncate">kywk.me</b></a><a class="navbar__item navbar__link" href=/backpacker/lonely-planet/>lonely planet</a><a class="navbar__item navbar__link" href=/lifehacker/way-2-kywk/>lifehacker</a><a aria-current=page class="navbar__item navbar__link navbar__link--active" href=/moco/kywk.moco/>moco</a><a class="navbar__item navbar__link" href=/life/>life</a><a class="navbar__item navbar__link" href=/album/>album</a><a class="navbar__item navbar__link" href=/news/>news</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href=https://github.com/kywk/ target=_blank rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type=button disabled title="system mode" aria-label="切換淺色/深色模式（當前為system mode）"><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill=currentColor d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill=currentColor d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill=currentColor d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"/></svg></button></div><div class=navbarSearchContainer_Bca1><div class="navbar__search searchBarContainer_NW3z" dir=ltr><svg aria-hidden=true class=searchIcon_T3tP focusable=false viewBox="0 0 16 16"><path fill=currentColor d="M6.02945 10.20327a4.17382 4.17382 0 1 1 4.17382-4.17382 4.15609 4.15609 0 0 1-4.17382 4.17382Zm9.69195 4.2199-4.8225-4.82338A5.88021 5.88021 0 0 0 12.058 6.02856 6.00467 6.00467 0 1 0 9.59979 10.8989l4.82338 4.82338a.89729.89729 0 0 0 1.29912 0 .89749.89749 0 0 0-.00087-1.29909Z"/></svg><input placeholder=Search aria-label=Search class="navbar__search-input searchInput_YFbd" value="" /><div class="loadingRing_RJI3 searchBarLoadingRing_YnHq"><div></div><div></div><div></div><div></div></div></div></div></div></div><div role=presentation class=navbar-sidebar__backdrop></div></nav><div id=__docusaurus_skipToContent_fallback class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class=docsWrapper_hBAB><button aria-label=回到頂部 class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type=button></button><div class=docRoot_UBD9><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class=sidebarViewport_aRkj><div class=sidebar_njMd><nav aria-label=文件側邊欄 class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/moco/52-projects/52-projects/><span class=categoryLinkLabel_W154>52 Projects</span></a><button aria-label="展開側邊欄分類 '52 Projects'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/moco/bootcamp/awesome-level-up/><span class=categoryLinkLabel_W154>BOOTCAMP</span></a><button aria-label="展開側邊欄分類 'BOOTCAMP'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/moco/techstack/awesome-tech-stack/><span class=categoryLinkLabel_W154>Tech Stack</span></a><button aria-label="展開側邊欄分類 'Tech Stack'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/moco/category/devsecops/><span class=categoryLinkLabel_W154>DevSecOps</span></a><button aria-label="展開側邊欄分類 'DevSecOps'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/moco/golang/awesome-go/><span class=categoryLinkLabel_W154>Go</span></a><button aria-label="展開側邊欄分類 'Go'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/moco/javascript/awesome-javascript/><span class=categoryLinkLabel_W154>JavaScript</span></a><button aria-label="展開側邊欄分類 'JavaScript'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/moco/java/awesome-java/><span class=categoryLinkLabel_W154>Java</span></a><button aria-label="展開側邊欄分類 'Java'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/moco/utilities/awesome-utilities/><span class=categoryLinkLabel_W154>Utilities</span></a><button aria-label="展開側邊欄分類 'Utilities'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/moco/machintosh/awesome-machintosh/><span class=categoryLinkLabel_W154>Machintosh</span></a><button aria-label="展開側邊欄分類 'Machintosh'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href=/moco/obsidian/my-obsidian/><span class=categoryLinkLabel_W154>Obsidian</span></a><button aria-label="收起側邊欄分類 'Obsidian'" aria-expanded=true type=button class="clean-btn menu__caret"></button></div><ul class=menu__list><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/moco/obsidian/awesome-obsidian/><span class=linkLabel_WmDU>資源與介紹</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" tabindex=0 href=/moco/obsidian/docusaurus/integrate-obsidian-and-docusaurus/><span class=categoryLinkLabel_W154>Docusaurus 整合</span></a><button aria-label="收起側邊欄分類 'Docusaurus 整合'" aria-expanded=true type=button class="clean-btn menu__caret"></button></div><ul class=menu__list><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/moco/obsidian/docusaurus/docusaurus-setup-note/><span class=linkLabel_WmDU>Docusaurus 設定筆記</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/moco/obsidian/docusaurus/docusaurus-v3-upgrading/><span class=linkLabel_WmDU>Docusaurus v3 升級筆記</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/moco/obsidian/docusaurus/wikilink-in-docusaurus/><span class=linkLabel_WmDU>Wikilink</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/moco/obsidian/docusaurus/docusaurus-plugins/><span class=linkLabel_WmDU>Plugin 使用</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/moco/obsidian/docusaurus/plugin-remark-obsidian-kanban/><span class=linkLabel_WmDU>Kanban Plugin</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/moco/obsidian/docusaurus/plugin-remark-obsidian-leaflet/><span class=linkLabel_WmDU>Leaflet Plugin</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" tabindex=0 href=/moco/obsidian/docusaurus/album-blog/01-album-blog-概念發想與決策記錄/><span class=categoryLinkLabel_W154>Album 相簿部落格</span></a><button aria-label="收起側邊欄分類 'Album 相簿部落格'" aria-expanded=true type=button class="clean-btn menu__caret"></button></div><ul class=menu__list><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/moco/obsidian/docusaurus/album-blog/02-album-blog-技術架構與實作計畫/><span class=linkLabel_WmDU>Album 相簿部落格：技術架構與實作計畫</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/moco/obsidian/docusaurus/album-blog/03-album-blog-完工成果與架構插件化評估/><span class=linkLabel_WmDU>Album 相簿部落格：完工成果與路徑一插件化實作</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link menu__link--active" aria-current=page tabindex=0 href=/moco/obsidian/docusaurus/album-blog/04-album-blog-flickr-相簿匯入與自動化整合方案/><span class=linkLabel_WmDU>Album 相簿部落格：Flickr 歷史相簿匯入與 AI 自動化整合方案</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/moco/obsidian/docusaurus/album-blog/05-album-blog-全自動化相簿匯入與-rag-提示詞工程/><span class=linkLabel_WmDU>Album 相簿部落格：全自動化相簿匯入與 RAG 提示詞工程</span></a></ul></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex=0 href=/moco/obsidian/plugins/obsidian-plugins-overview/><span class=categoryLinkLabel_W154>外掛</span></a><button aria-label="展開側邊欄分類 '外掛'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/moco/obsidian/obsidian-daily-notes/><span class=linkLabel_WmDU>日記與模板</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/moco/obsidian/obsidian-hot-key/><span class=linkLabel_WmDU>自訂快捷鍵</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/moco/obsidian/obsidian-properties/><span class=linkLabel_WmDU>Properties</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/moco/obsidian/obsidian-block-link-embed/><span class=linkLabel_WmDU>連結與嵌入</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/moco/obsidian/obsidian-task-management/><span class=linkLabel_WmDU>任務管理</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/moco/obsidian/why-n-how-obsidian/><span class=linkLabel_WmDU>介紹與選擇</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/moco/obsidian/plain-text-accounting/><span class=linkLabel_WmDU>使用案例：Plain Text Accounting</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/moco/obsidian/co-working-spark-and-obsidian/><span class=linkLabel_WmDU>協作與同步</span></a></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/moco/category/miscellaneous/><span class=categoryLinkLabel_W154>Miscellaneous</span></a><button aria-label="展開側邊欄分類 'Miscellaneous'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/moco/kywk.moco/><span class=linkLabel_WmDU>kywk.moco</span></a></ul></nav><button type=button title=收起側邊欄 aria-label=收起側邊欄 class="button button--secondary button--outline collapseSidebarButton_PEFL"><svg width=20 height=20 aria-hidden=true class=collapseSidebarButtonIcon_kv0_><g fill=#7a7a7a><path d="M9.992 10.023c0 .2-.062.399-.172.547l-4.996 7.492a.982.982 0 01-.828.454H1c-.55 0-1-.453-1-1 0-.2.059-.403.168-.551l4.629-6.942L.168 3.078A.939.939 0 010 2.528c0-.548.45-.997 1-.997h2.996c.352 0 .649.18.828.45L9.82 9.472c.11.148.172.347.172.55zm0 0"/><path d="M19.98 10.023c0 .2-.058.399-.168.547l-4.996 7.492a.987.987 0 01-.828.454h-3c-.547 0-.996-.453-.996-1 0-.2.059-.403.168-.551l4.625-6.942-4.625-6.945a.939.939 0 01-.168-.55 1 1 0 01.996-.997h3c.348 0 .649.18.828.45l4.996 7.492c.11.148.168.347.168.55zm0 0"/></g></svg></button></div></div></aside><main class=docMainContainer_TBSr><div class="container padding-top--md padding-bottom--lg"><div class=row><div class="col docItemCol_z5aJ"><div class=docItemContainer_c0TR><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label=頁面路徑><ul class=breadcrumbs><li class=breadcrumbs__item><a aria-label=主頁面 class=breadcrumbs__link href=/><svg viewBox="0 0 24 24" class=breadcrumbHomeIcon_YNFT><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill=currentColor /></svg></a><li class=breadcrumbs__item><a class=breadcrumbs__link href=/moco/obsidian/my-obsidian/><span>Obsidian</span></a><li class=breadcrumbs__item><a class=breadcrumbs__link href=/moco/obsidian/docusaurus/integrate-obsidian-and-docusaurus/><span>Docusaurus 整合</span></a><li class=breadcrumbs__item><a class=breadcrumbs__link href=/moco/obsidian/docusaurus/album-blog/01-album-blog-概念發想與決策記錄/><span>Album 相簿部落格</span></a><li class="breadcrumbs__item breadcrumbs__item--active"><span class=breadcrumbs__link>Album 相簿部落格：Flickr 歷史相簿匯入與 AI 自動化整合方案</span></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type=button class="clean-btn tocCollapsibleButton_TO0P">本頁導覽</button></div><div class="theme-doc-markdown markdown"><header><h1>Album 相簿部落格：Flickr 歷史相簿匯入與 AI 自動化整合方案</h1></header>
+<p>在完成 <a class=internal href=/moco/obsidian/docusaurus/album-blog/01-album-blog-概念發想與決策記錄/>概念發想</a>、<a class=internal href=/moco/obsidian/docusaurus/album-blog/02-album-blog-技術架構與實作計畫/>技術架構</a> 與 <a class=internal href=/moco/obsidian/docusaurus/album-blog/03-album-blog-完工成果與架構插件化評估/>獨立插件化落地</a> 後，<strong>Album 相簿部落格</strong> 已具備完整的 Pinterest 瀑布流、Google Photos 時光軸滑桿與全螢幕相片燈箱等強大展示能力。</p>
+<p>緊接著的核心任務，是如何將作者在 Flickr 上封存的多年攝影資產（涵蓋 <strong>481 本相簿</strong>、橫跨 2005 至今的 10 大分類樹 Collections），以最優雅、保真且自動化的方式遷移匯入為 <code>blog.album</code> 文章。</p>
+<p>本文整理了此次遷移整合的需求訪談摘要、核心架構決策、離線資料庫建立方式，以及未來調度外部 AI 生成內文的工程實作方案。</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=-需求背景與現況分析>📌 需求背景與現況分析<a href=#-需求背景與現況分析 class=hash-link aria-label="📌 需求背景與現況分析的直接連結" title="📌 需求背景與現況分析的直接連結" translate=no>​</a></h2>
+<ol>
+<li class=""><strong>封存的歷史攝影資產</strong>：
+<ul>
+<li class="">因 Flickr 近年經歷易主與多輪改版，目前作者帳號已無法登入，未來亦<strong>不會再有新相簿或照片更新</strong>。</li>
+<li class="">這批資料是一組<strong>永久靜態且珍貴的攝影紀錄庫</strong>，非常適合作為部落格的永久相簿內容。</li>
+</ul>
+</li>
+<li class=""><strong>直連外鏈可用性</strong>：
+<ul>
+<li class="">經技術探勘與實測，Flickr 的照片靜態伺服器（<code>live.staticflickr.com</code>）支援外連。透過公開 API Key 可直接取得高清直連網址（如長邊 1024px 的 <code>url_l</code> 或 800px 的 <code>url_c</code>），兼具燈箱展示質感與網頁載入效能。</li>
+</ul>
+</li>
+<li class=""><strong>資料量與組織結構</strong>：
+<ul>
+<li class=""><strong>相簿總量</strong>：共 481 本相簿。</li>
+<li class=""><strong>分類體系</strong>：具有完整的 10 大 Collections 階層樹（如 <code>生活紀錄 / live</code>、<code>樂活台灣 / taiwan</code>、<code>行萬里路 / trip</code> 等）以及兩層子分類（各國旅程、各縣市專題、美食類型等）。經比對，全部 481 本相簿均已精確掛載於該樹狀結構中。</li>
+</ul>
+</li>
+</ol>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=-需求訪談與決策摘要decisions-log>🤝 需求訪談與決策摘要（Decisions Log）<a href=#-需求訪談與決策摘要decisions-log class=hash-link aria-label="🤝 需求訪談與決策摘要（Decisions Log）的直接連結" title="🤝 需求訪談與決策摘要（Decisions Log）的直接連結" translate=no>​</a></h2>
+<p>透過需求討論，我們確立了以下關鍵決策：</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=決策-1分階段驗收先試跑最近-10-本相簿調校滿意再撰寫腳本>決策 1：分階段驗收（先試跑最近 10 本相簿，調校滿意再撰寫腳本）<a href=#決策-1分階段驗收先試跑最近-10-本相簿調校滿意再撰寫腳本 class=hash-link aria-label="決策 1：分階段驗收（先試跑最近 10 本相簿，調校滿意再撰寫腳本）的直接連結" title="決策 1：分階段驗收（先試跑最近 10 本相簿，調校滿意再撰寫腳本）的直接連結" translate=no>​</a></h3>
+<ul>
+<li class=""><strong>考量</strong>：481 本相簿若一次性匯入，除需對 Flickr 連續發出數百次相片查詢請求外，一次性產生近 500 篇頁面也會讓初期視覺調校與版面驗收失去焦點。</li>
+<li class=""><strong>最終決策</strong>：
+<ul>
+<li class=""><strong>Phase 1</strong>：先挑選「最近的 10 本相簿」進行試跑匯入，手動與半自動化調整版面、文字風格與標籤對應。</li>
+<li class=""><strong>Phase 2</strong>：待這 10 篇相簿在相簿首頁（瀑布流/時間軸）與文章內頁的視覺效果完全符合期望後，再將整個流程提煉為自動化腳本。</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=決策-2保留現有-10-篇測試示範文章>決策 2：保留現有 10 篇測試示範文章<a href=#決策-2保留現有-10-篇測試示範文章 class=hash-link aria-label="決策 2：保留現有 10 篇測試示範文章的直接連結" title="決策 2：保留現有 10 篇測試示範文章的直接連結" translate=no>​</a></h3>
+<ul>
+<li class=""><strong>現況</strong>：目前 <code>blog.album/</code> 下有 10 篇開發階段建立的示範文章（涵蓋 2024～2026 年、使用 Unsplash 示意圖）。</li>
+<li class=""><strong>最終決策</strong>：<strong>暫予保留</strong>，不作破壞性刪除，確保現有測試相簿在調整階段依然能提供版面豐富度。</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=決策-3以真實拍攝日期datetaken為時間軸基準>決策 3：以真實拍攝日期（<code>datetaken</code>）為時間軸基準<a href=#決策-3以真實拍攝日期datetaken為時間軸基準 class=hash-link aria-label=決策-3以真實拍攝日期datetaken為時間軸基準的直接連結 title=決策-3以真實拍攝日期datetaken為時間軸基準的直接連結 translate=no>​</a></h3>
+<ul>
+<li class=""><strong>考量</strong>：相簿部落格右側配有 Google Photos 風格的 <code>TimelineScrubber</code>（時光軸滑桿）。如果使用匯入當下的日期或 Flickr 相簿建立日期，會失去真實攝影的時間感。</li>
+<li class=""><strong>最終決策</strong>：
+<ul>
+<li class="">文章日期（<code>date</code>）優先讀取相片 EXIF 的<strong>實際拍攝日期（<code>datetaken</code>）</strong>；</li>
+<li class="">若相片缺少拍攝日期，則解析相簿標題中的日期標記（例如 <code>京都 夢 (17.12.07)</code> 識別為 <code>2017-12-07</code>）；</li>
+<li class="">目錄結構維持依年份分層：<code>blog.album/YYYY/MM-DD-slug.md</code>。</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=決策-4建立本地永久資料庫flickr-snapshot-db>決策 4：建立本地永久資料庫（Flickr Snapshot DB）<a href=#決策-4建立本地永久資料庫flickr-snapshot-db class=hash-link aria-label="決策 4：建立本地永久資料庫（Flickr Snapshot DB）的直接連結" title="決策 4：建立本地永久資料庫（Flickr Snapshot DB）的直接連結" translate=no>​</a></h3>
+<ul>
+<li class=""><strong>考量</strong>：Flickr 不會再更新，每次執行腳本都打 Flickr API 既浪費頻寬又有被限流風險。</li>
+<li class=""><strong>最終決策</strong>：
+<ul>
+<li class="">於本地建立一份 <code>scripts/data/flickr-database.json</code>。</li>
+<li class="">一次性爬梳全量 481 本相簿的 ID、標題、相片數量、Primary 封面 URL 以及其所屬的 Collections 樹狀映射路徑。</li>
+<li class="">後續所有批次匯入腳本直接從該 JSON 資料庫讀取，極速且穩定。</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=決策-5可插拔-ai-引擎調度pluggable-ai-orchestration>決策 5：可插拔 AI 引擎調度（Pluggable AI Orchestration）<a href=#決策-5可插拔-ai-引擎調度pluggable-ai-orchestration class=hash-link aria-label="決策 5：可插拔 AI 引擎調度（Pluggable AI Orchestration）的直接連結" title="決策 5：可插拔 AI 引擎調度（Pluggable AI Orchestration）的直接連結" translate=no>​</a></h3>
+<ul>
+<li class=""><strong>考量</strong>：相簿內文需包含富有質感的情境導言、引言以及適當的照片區塊小標。若全手寫 481 篇耗時費力，需仰賴 AI 批次生成。</li>
+<li class=""><strong>最終決策</strong>：
+<ul>
+<li class="">腳本需具備調度外部 CLI AI 工具的能力，將相簿中繼資料（標題、分類、地點、挑選之相片標題/說明）組合成 Prompt。</li>
+<li class=""><strong>預設引擎</strong>：本機已安裝之 <code>agy</code>（Google Antigravity CLI）。</li>
+<li class=""><strong>相容擴充</strong>：保留可抽換介面，支援切換為 <code>opencode</code> 或 <code>pi</code>。</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=-系統架構與資料流設計>🏛 系統架構與資料流設計<a href=#-系統架構與資料流設計 class=hash-link aria-label="🏛 系統架構與資料流設計的直接連結" title="🏛 系統架構與資料流設計的直接連結" translate=no>​</a></h2>
+<p>整體相簿遷移與生成系統架構如下圖所示：</p>
+<!-- -->
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=-collections-與-frontmatter-智能映射規則>🏷 Collections 與 Frontmatter 智能映射規則<a href=#-collections-與-frontmatter-智能映射規則 class=hash-link aria-label="🏷 Collections 與 Frontmatter 智能映射規則的直接連結" title="🏷 Collections 與 Frontmatter 智能映射規則的直接連結" translate=no>​</a></h2>
+<p>藉由完整解析 Flickr 的 Collections 樹狀層級，我們能精準將階層轉換為部落格標準欄位：</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>欄位<th>來源與對應規則<th>範例<tbody><tr><td><code>title</code><td>原相簿標題（過濾多餘括弧或保留原味）<td><code>京都 夢 (17.12.07)</code>、<code>Mt. Tsurugi Dake</code><tr><td><code>date</code><td>相片拍攝日期（<code>datetaken</code>）或標題日期<td><code>2017-12-07</code>、<code>2015-07-29</code><tr><td><code>cover</code><td>Flickr 相簿設定之 <code>primary</code> 封面直連 URL（<code>url_l</code> 1024px）<td><code>https://live.staticflickr.com/..._b.jpg</code><tr><td><code>cover_caption</code><td>相簿引言、系列標題或照片說明<td><code>京都初冬・和服與古都漫步留影</code><tr><td><code>location</code><td>從二級 Collection（如縣市、地名）或相簿標題推導<td><code>日本・京都</code>、<code>台灣・屏東</code>、<code>日本・富山劍岳</code><tr><td><code>album_series</code><td>對應 Collections 之特定旅程或專題子名稱<td><code>Kensai around</code>、<code>Mt. Tsurugi Dake</code>、<code>山上的孩子</code><tr><td><code>tags</code><td>一級分類中文 + 地點標籤 + 相片 Flickr tags<td><code>[旅行, 日本, 京都, 人像]</code>、<code>[登山, 台灣, 屏東]</code><tr><td><code>authors</code><td>固定預設為站長 ID<td><code>kywk</code></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=內文排版規範>內文排版規範<a href=#內文排版規範 class=hash-link aria-label=內文排版規範的直接連結 title=內文排版規範的直接連結 translate=no>​</a></h3>
+<ol>
+<li class=""><strong>封面一致</strong>：Frontmatter <code>cover</code> 與 Flickr 首頁封面完全一致，並在首頁 Masonry 瀑布流展示。</li>
+<li class=""><strong>截斷標籤</strong>：導言段落後統一放置 <code>&lt;!--truncate--></code>，供日後摘要提取使用。</li>
+<li class=""><strong>相片挑選</strong>：排除封面圖後，隨機或依序挑選 <strong>10 張以內</strong> 高畫質相片（長邊 1024px，<code>url_l</code>），以標準 Markdown 圖片語法 <code>![說明](url)</code> 排版。</li>
+<li class=""><strong>文末來源</strong>：在文末附上原相簿之 Flickr 連結，保留數位足跡的源頭。</li>
+</ol>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=-知識庫-rag-檢索與雙向互連機制vault-rag--bi-directional-links>🧠 知識庫 RAG 檢索與雙向互連機制（Vault RAG & Bi-directional Links）<a href=#-知識庫-rag-檢索與雙向互連機制vault-rag--bi-directional-links class=hash-link aria-label="🧠 知識庫 RAG 檢索與雙向互連機制（Vault RAG & Bi-directional Links）的直接連結" title="🧠 知識庫 RAG 檢索與雙向互連機制（Vault RAG & Bi-directional Links）的直接連結" translate=no>​</a></h2>
+<p>為了讓自動生成的相簿不只是孤立的照片集合，系統設計了 <strong>Vault 文章 RAG 檢索機制</strong>：</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=1-文章-rag-資料庫-scriptsdatavault-articles-indexjson>1. 文章 RAG 資料庫 (<code>scripts/data/vault-articles-index.json</code>)<a href=#1-文章-rag-資料庫-scriptsdatavault-articles-indexjson class=hash-link aria-label=1-文章-rag-資料庫-scriptsdatavault-articles-indexjson的直接連結 title=1-文章-rag-資料庫-scriptsdatavault-articles-indexjson的直接連結 translate=no>​</a></h3>
+<ul>
+<li class="">透過 <code>scripts/build-vault-index.py</code> 掃描公開筆記目錄（<code>backpacker/</code>、<code>lifehacker/</code>、<code>blog.life/</code>），共建立 <strong>1,018 篇公開筆記的索引庫</strong>。</li>
+<li class="">索引內容包含：檔案路徑、Wiki-link 引用基名（<code>base_name</code>）、文章標題、拍攝/發表日期、標籤、Flickr Set/Photo ID，以及清洗後的純文字內容摘要。</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=2-相似度評分與-prompt-上下文注入>2. 相似度評分與 Prompt 上下文注入<a href=#2-相似度評分與-prompt-上下文注入 class=hash-link aria-label="2. 相似度評分與 Prompt 上下文注入的直接連結" title="2. 相似度評分與 Prompt 上下文注入的直接連結" translate=no>​</a></h3>
+<ul>
+<li class="">當處理相簿時（例如 <code>Mt.Fuji marathon, 2014</code>），比對引擎依據 Flickr Set/Photo 命中、Collections 系列名稱（如 <code>Mt.Fuji marathon</code> 對應 <code>backpacker/1411 Mt Fuji Marathon/</code>）與標題關鍵字，自動找出最相關的 1~3 篇筆記（如 <code>Index Fujisan Marathon</code>、<code>141126 Halo Nikko</code>、<code>Note Lodge Tokyo 2014</code>）。</li>
+<li class="">比對到的文章資訊會以 <strong>【作者知識庫關聯文章 (Vault Context)】</strong> 形式直接注入給外部 AI（<code>agy</code> / <code>opencode</code> / <code>pi</code>）的 Prompt 中，讓 AI 能夠理解當時的旅程脈絡與作者口吻，產出更貼近真實記憶的導言。</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=3-全站雙向-wiki-link-解析確認>3. 全站雙向 Wiki-Link 解析確認<a href=#3-全站雙向-wiki-link-解析確認 class=hash-link aria-label="3. 全站雙向 Wiki-Link 解析確認的直接連結" title="3. 全站雙向 Wiki-Link 解析確認的直接連結" translate=no>​</a></h3>
+<ul>
+<li class="">依據 <code>scripts/content-links.js</code> 與 <code>docusaurus.config.ts</code> 中的 <code>createContentLinkIndex</code>，全站所有部落格實例（<code>blog.album</code>、<code>blog.life</code>、<code>blog.news</code>）與文件頻道（<code>backpacker</code>、<code>lifehacker</code>、<code>moco</code>）的路由均由 <code>remark-slug-normalizer</code> 統一推導。</li>
+<li class=""><strong>解析實測完全通暢</strong>：
+<ul>
+<li class="">相簿連至文件：<code>[[Index Fujisan Marathon]]</code> ➜ <code>/backpacker/1411-mt-fuji-marathon/index-fujisan-marathon/</code></li>
+<li class="">相簿連至健行：<code>[[150322_mt-peitawu]]</code> ➜ <code>/lifehacker/mount/150322-mt-peitawu/</code></li>
+<li class="">文件反向回連相簿：<code>[[03-21-beidawu-mountain]]</code> ➜ <code>/album/2015/03/21/beidawu-mountain/</code></li>
+</ul>
+</li>
+<li class="">腳本支援 <code>--update-reciprocal</code> 參數，可在生成相簿的同時，自動於關聯的旅行/生活筆記文末寫入相應的相簿回連，實現真正緊密的 Obsidian 知識圖譜網絡。</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=-先行試跑最近-10-本相簿清單pilot-10>🚀 先行試跑：最近 10 本相簿清單（Pilot 10）<a href=#-先行試跑最近-10-本相簿清單pilot-10 class=hash-link aria-label="🚀 先行試跑：最近 10 本相簿清單（Pilot 10）的直接連結" title="🚀 先行試跑：最近 10 本相簿清單（Pilot 10）的直接連結" translate=no>​</a></h2>
+<p>在撰寫全量自動化腳本前，首批試跑的 10 本相簿包含以下豐富多樣的主題：</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>#<th>拍攝日期<th>相簿名稱<th>照片數<th>所屬 Collections / 系列<tbody><tr><td>1<td><code>2017-12-07</code><td><strong>京都 夢 (17.12.07)</strong><td>180<td>行萬里路 / trip (<code>Kensai around</code>)、南顏織影 (<code>親友留影</code>)<tr><td>2<td><code>2015-07-29</code><td><strong>Mt. Tsurugi Dake</strong><td>4<td>行萬里路 / trip (<code>Mt. Tsurugi Dake</code>)<tr><td>3<td><code>2015-03-21</code><td><strong>聖境．北大武 (15.03.22)</strong><td>24<td>樂活台灣 / taiwan (<code>山上的孩子</code>、<code>屏東</code>)<tr><td>4<td><code>2014-12-26</code><td><strong>FlashMob HK</strong><td>29<td>生活紀錄 / live (<code>2014 馬．飛騰</code>)<tr><td>5<td><code>2014-11-26</code><td><strong>Mt.Fuji marathon, 2014</strong><td>28<td>行萬里路 / trip (<code>Mt.Fuji marathon</code>)<tr><td>6<td><code>2014-12-01</code><td><strong>Tokyo 銀杏祭</strong><td>2<td>行萬里路 / trip (<code>Mt.Fuji marathon</code>)<tr><td>7<td><code>2014-11-29</code><td><strong>富士山．河口湖</strong><td>5<td>行萬里路 / trip (<code>Mt.Fuji marathon</code>)<tr><td>8<td><code>2014-11-26</code><td><strong>Nikko 日光 世界遺產</strong><td>22<td>行萬里路 / trip (<code>Mt.Fuji marathon</code>)<tr><td>9<td><code>2014-11-22</code><td><strong>越野．能高 (14.11.22)</strong><td>24<td>生活紀錄 (<code>樂活運動</code>)、樂活台灣 (<code>南投</code>)<tr><td>10<td><code>2014-11-06</code><td><strong>草嶺古道 桃源谷 (14.11.06)</strong><td>59<td>生活紀錄 (<code>樂活運動</code>)、樂活台灣 (<code>山上的孩子</code>、<code>宜蘭</code>)</table>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=-自動化腳本實作與指令script-implementation--cli>🛠 自動化腳本實作與指令（Script Implementation & CLI）<a href=#-自動化腳本實作與指令script-implementation--cli class=hash-link aria-label="🛠 自動化腳本實作與指令（Script Implementation & CLI）的直接連結" title="🛠 自動化腳本實作與指令（Script Implementation & CLI）的直接連結" translate=no>​</a></h2>
+<p>本整合方案之自動化工具與知識庫檢索系統已正式實作落地：</p>
+<ul>
+<li class=""><strong>RAG 索引建置腳本</strong>：<a href=file:///Users/kywk/obsidian/scripts/build-vault-index.py target=_blank rel="noopener noreferrer" class=""><code>scripts/build-vault-index.py</code></a>（掃描公開筆記庫，產出 <code>scripts/data/vault-articles-index.json</code>）</li>
+<li class=""><strong>相簿匯入與 AI 生成腳本</strong>：<a href=file:///Users/kywk/obsidian/scripts/import-flickr-albums.py target=_blank rel="noopener noreferrer" class=""><code>scripts/import-flickr-albums.py</code></a>（核心匯入、相片挑選、Prompt 上下文注入與雙向連結回寫）</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=常用-cli-執行指令>常用 CLI 執行指令<a href=#常用-cli-執行指令 class=hash-link aria-label="常用 CLI 執行指令的直接連結" title="常用 CLI 執行指令的直接連結" translate=no>​</a></h3>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain"># 1. 重新建置全站知識庫文章 RAG 索引</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">python3 scripts/build-vault-index.py</span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"># 2. 乾跑預覽（測試比對關聯文章與挑選相片，不寫入檔案）</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">python3 scripts/import-flickr-albums.py --limit 5 --dry-run</span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"># 3. 匯入最新 10 本相簿並調度 agy 產生內文與雙向回寫</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">python3 scripts/import-flickr-albums.py --limit 10 --engine agy --update-reciprocal</span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"># 4. 指定 Collections 系列（如富士山馬拉松旅程）匯入</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">python3 scripts/import-flickr-albums.py --series "Mt.Fuji marathon"</span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"># 5. 切換 AI 生成引擎（支援 opencode 或 pi）</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">python3 scripts/import-flickr-albums.py --limit 3 --engine opencode</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">python3 scripts/import-flickr-albums.py --limit 3 --engine pi</span><br/></div></code></pre></div></div>
+<blockquote>
+<p>📖 <strong>深入專題解析</strong>：
+關於 RAG 相似度計分機制、AI 提示詞工程（Prompt Injection）、跨實例 Wiki-link 路由解析修復與雙向回寫細節，請參閱獨立技術專文：
+👉 <strong><a class=internal href=/moco/obsidian/docusaurus/album-blog/05-album-blog-全自動化相簿匯入與-rag-提示詞工程/>05 Album Blog 全自動化相簿匯入與 RAG 提示詞工程</a></strong></p>
+</blockquote>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=-結語>🎯 結語<a href=#-結語 class=hash-link aria-label="🎯 結語的直接連結" title="🎯 結語的直接連結" translate=no>​</a></h2>
+<p>本方案透過「本地離線快照 + 智能 Collections 階層映射 + 先行 10 本調校 + 可插拔 AI 引擎」的多層設計，既妥善保存了作者珍貴且不再變動的 Flickr 歷史攝影資產，又極大化降低手動維護成本。</p>
+<p>首批 10 本相簿已順利建置於 <code>blog.album/</code>，並與 <code>backpacker/</code>、<code>lifehacker/</code> 相關文章無縫雙向互連，歡迎前往相簿首頁體驗極致的視覺流暢感！</div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-tags-row"><div class=col><b>標籤：</b><ul class="tags_jXut padding--none margin-left--sm"><li class=tag_QGVx><a rel=tag class="tag_zVej tagRegular_sFm0" href=/moco/tags/docusaurus/>Docusaurus</a><li class=tag_QGVx><a rel=tag class="tag_zVej tagRegular_sFm0" href=/moco/tags/album/>Album</a><li class=tag_QGVx><a rel=tag class="tag_zVej tagRegular_sFm0" href=/moco/tags/flickr/>Flickr</a><li class=tag_QGVx><a rel=tag class="tag_zVej tagRegular_sFm0" href=/moco/tags/自動化/>自動化</a><li class=tag_QGVx><a rel=tag class="tag_zVej tagRegular_sFm0" href=/moco/tags/ai生成/>AI生成</a><li class=tag_QGVx><a rel=tag class="tag_zVej tagRegular_sFm0" href=/moco/tags/架構設計/>架構設計</a></ul></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label=文件選項卡><a class="pagination-nav__link pagination-nav__link--prev" href=/moco/obsidian/docusaurus/album-blog/03-album-blog-完工成果與架構插件化評估/><div class=pagination-nav__sublabel>上一頁</div><div class=pagination-nav__label>Album 相簿部落格：完工成果與路徑一插件化實作</div></a><a class="pagination-nav__link pagination-nav__link--next" href=/moco/obsidian/docusaurus/album-blog/05-album-blog-全自動化相簿匯入與-rag-提示詞工程/><div class=pagination-nav__sublabel>下一頁</div><div class=pagination-nav__label>Album 相簿部落格：全自動化相簿匯入與 RAG 提示詞工程</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href=#-需求背景與現況分析 class="table-of-contents__link toc-highlight">📌 需求背景與現況分析</a><li><a href=#-需求訪談與決策摘要decisions-log class="table-of-contents__link toc-highlight">🤝 需求訪談與決策摘要（Decisions Log）</a><ul><li><a href=#決策-1分階段驗收先試跑最近-10-本相簿調校滿意再撰寫腳本 class="table-of-contents__link toc-highlight">決策 1：分階段驗收（先試跑最近 10 本相簿，調校滿意再撰寫腳本）</a><li><a href=#決策-2保留現有-10-篇測試示範文章 class="table-of-contents__link toc-highlight">決策 2：保留現有 10 篇測試示範文章</a><li><a href=#決策-3以真實拍攝日期datetaken為時間軸基準 class="table-of-contents__link toc-highlight">決策 3：以真實拍攝日期（<code>datetaken</code>）為時間軸基準</a><li><a href=#決策-4建立本地永久資料庫flickr-snapshot-db class="table-of-contents__link toc-highlight">決策 4：建立本地永久資料庫（Flickr Snapshot DB）</a><li><a href=#決策-5可插拔-ai-引擎調度pluggable-ai-orchestration class="table-of-contents__link toc-highlight">決策 5：可插拔 AI 引擎調度（Pluggable AI Orchestration）</a></ul><li><a href=#-系統架構與資料流設計 class="table-of-contents__link toc-highlight">🏛 系統架構與資料流設計</a><li><a href=#-collections-與-frontmatter-智能映射規則 class="table-of-contents__link toc-highlight">🏷 Collections 與 Frontmatter 智能映射規則</a><ul><li><a href=#內文排版規範 class="table-of-contents__link toc-highlight">內文排版規範</a></ul><li><a href=#-知識庫-rag-檢索與雙向互連機制vault-rag--bi-directional-links class="table-of-contents__link toc-highlight">🧠 知識庫 RAG 檢索與雙向互連機制（Vault RAG & Bi-directional Links）</a><ul><li><a href=#1-文章-rag-資料庫-scriptsdatavault-articles-indexjson class="table-of-contents__link toc-highlight">1. 文章 RAG 資料庫 (<code>scripts/data/vault-articles-index.json</code>)</a><li><a href=#2-相似度評分與-prompt-上下文注入 class="table-of-contents__link toc-highlight">2. 相似度評分與 Prompt 上下文注入</a><li><a href=#3-全站雙向-wiki-link-解析確認 class="table-of-contents__link toc-highlight">3. 全站雙向 Wiki-Link 解析確認</a></ul><li><a href=#-先行試跑最近-10-本相簿清單pilot-10 class="table-of-contents__link toc-highlight">🚀 先行試跑：最近 10 本相簿清單（Pilot 10）</a><li><a href=#-自動化腳本實作與指令script-implementation--cli class="table-of-contents__link toc-highlight">🛠 自動化腳本實作與指令（Script Implementation & CLI）</a><ul><li><a href=#常用-cli-執行指令 class="table-of-contents__link toc-highlight">常用 CLI 執行指令</a></ul><li><a href=#-結語 class="table-of-contents__link toc-highlight">🎯 結語</a></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class=footer__title>主題索引</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/backpacker/lonely-planet/>Backpacker</a><li class=footer__item><a class=footer__link-item href=/lifehacker/way-2-kywk/>Lifehacker</a><li class=footer__item><a class=footer__link-item href=/moco/kywk.moco/>MoCo Lab</a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>筆記頻道</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/news/>News Log</a><li class=footer__item><a class=footer__link-item href=/life/>Life Blog</a><li class=footer__item><a class=footer__link-item href=/album/>Photo Album</a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>連結</div><ul class="footer__items clean-list"><li class=footer__item><a href=https://github.com/kywk target=_blank rel="noopener noreferrer" class=footer__link-item>GitHub<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a></ul></div></div><div class="footer__bottom text--center"><div class=footer__copyright>Copyright © 2026 kywk. Built with Docusaurus.</div></div></div></footer></div></body>

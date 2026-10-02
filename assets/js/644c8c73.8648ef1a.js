@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkkywk_me=self.webpackChunkkywk_me||[]).push([["87868"],{69245(e){e.exports=JSON.parse('{"metadata":{"permalink":"/album","page":1,"postsPerPage":20,"totalPages":1,"totalCount":20,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

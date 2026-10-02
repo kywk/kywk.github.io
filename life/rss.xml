@@ -4,10 +4,38 @@
         <title>kywk.me Blog</title>
         <link>https://kywk.github.io/life/</link>
         <description>kywk.me Blog</description>
-        <lastBuildDate>Tue, 22 Sep 2026 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 02 Oct 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-TW</language>
+        <item>
+            <title><![CDATA[Album Blog：當 481 本 Flickr 歷史相簿遇見 AI 與 RAG]]></title>
+            <link>https://kywk.github.io/life/2026/10/02/album-blog-with-flickr-and-ai/</link>
+            <guid>https://kywk.github.io/life/2026/10/02/album-blog-with-flickr-and-ai/</guid>
+            <pubDate>Fri, 02 Oct 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[封存在 Flickr 多年的 481 本相簿與 10 大 Collections 階層樹，在 AI 與 RAG 協助下，正式踏上向 Docusaurus 相簿部落格的自動化遷移旅程！]]></description>
+            <content:encoded><![CDATA[<p>封存在 Flickr 多年的 481 本相簿與 10 大 Collections 階層樹，在 AI 與 RAG 協助下，正式踏上向 Docusaurus 相簿部落格的自動化遷移旅程！</p>
+<p><img decoding="async" loading="lazy" src="https://live.staticflickr.com/5614/15696144889_a5e305e7e6_b.jpg" alt="" class="img_ev3q"></p>
+<p>因 Flickr 歷經易主與多次改版，帳號已無法登入，也不會再有新更新。這批凝結了 2005 至今的 481 本攝影紀錄，成為一組珍貴的永久歷史切片。</p>
+<p>在為個人網站完成瀑布流、時光軸滑桿與全螢幕燈箱的 <a class="internal" href="https://kywk.github.io/moco/obsidian/docusaurus/album-blog/03-album-blog-%E5%AE%8C%E5%B7%A5%E6%88%90%E6%9E%9C%E8%88%87%E6%9E%B6%E6%A7%8B%E6%8F%92%E4%BB%B6%E5%8C%96%E8%A9%95%E4%BC%B0/">Album 相簿部落格插件</a> 後，最讓人期待的，就是讓這些老照片重見天日。</p>
+<p>但若只是寫個腳本把相片網址機械化排版出來，相簿就只是一堆冰冷的圖檔，少了當時按下快門的呼吸與回憶。</p>
+<p>於是我們打造了一套小巧卻極具威力的整合管線：</p>
+<ol>
+<li class=""><strong>離線快照資料庫</strong>：將 481 本相簿的 ID、封面與 Collections 階層完整留存於本地 JSON。</li>
+<li class=""><strong>全站文章 RAG 檢索</strong>：掃描知識庫中 1,018 篇旅行、登山與生活筆記。在處理如「2014 富士山馬拉松」或「2015 聖境北大武」相簿時，演算法能自動找出當年的隨行手記與賽事紀錄。</li>
+<li class=""><strong>AI 提示詞脈絡注入</strong>：將當年的手札脈絡注入給終端 AI（<code>agy</code> / <code>opencode</code> / <code>pi</code>），讓 AI 以作者視角寫出充滿臨場感與光影溫度的短文導言。</li>
+<li class=""><strong>全站雙向知識網絡</strong>：修復了 Docusaurus Docs 到 Blog 跨頻道的 Wiki-link 解析，在生成相簿時自動於相簿與遊記之間建立雙向 <code>[[obsidian link]]</code>。</li>
+</ol>
+<p>看著 2014 年在河口湖看富士山、在日光二社一寺漫步的照片，與當年的手記在網頁中交織互連，這正是擁有個人數位花園最美好的時刻。</p>
+<ul>
+<li class="">See Also
+<ul>
+<li class=""><a class="internal" href="https://kywk.github.io/moco/obsidian/docusaurus/album-blog/04-album-blog-flickr-%E7%9B%B8%E7%B0%BF%E5%8C%AF%E5%85%A5%E8%88%87%E8%87%AA%E5%8B%95%E5%8C%96%E6%95%B4%E5%90%88%E6%96%B9%E6%A1%88/">Album Blog Flickr 相簿匯入與自動化整合方案</a></li>
+<li class=""><a class="internal" href="https://kywk.github.io/moco/obsidian/docusaurus/album-blog/05-album-blog-%E5%85%A8%E8%87%AA%E5%8B%95%E5%8C%96%E7%9B%B8%E7%B0%BF%E5%8C%AF%E5%85%A5%E8%88%87-rag-%E6%8F%90%E7%A4%BA%E8%A9%9E%E5%B7%A5%E7%A8%8B/">Album Blog 全自動化相簿匯入與 RAG 提示詞工程</a></li>
+</ul>
+</li>
+</ul>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Vault Feed Reader]]></title>
             <link>https://kywk.github.io/life/2026/09/22/first-obsidian-plugin/</link>
@@ -679,67 +707,6 @@ podcast 節目中聽到 <a class="internal" href="https://kywk.github.io/lifehac
 <li class=""><a href="https://wiki.mbalib.com/zh-tw/%E4%B8%80%E4%B8%87%E5%B0%8F%E6%97%B6%E5%AE%9A%E5%BE%8B#:~:text=%E4%B8%80%E8%90%AC%E5%B0%8F%E6%99%82%E5%AE%9A%E5%BE%8B%EF%BC%9A%E4%BB%BB%E4%BD%95,%E8%AE%8A%E6%88%90%E8%B6%85%E5%87%A1%E7%9A%84%E5%BF%85%E8%A6%81%E6%A2%9D%E4%BB%B6%E2%80%9D%E3%80%82" target="_blank" rel="noopener noreferrer" class="">一萬小時定律 - MBA智库百科</a></li>
 </ul>]]></content:encoded>
             <category>Daily</category>
-            <category>LifeHack</category>
-        </item>
-        <item>
-            <title><![CDATA[Now or Never 2024]]></title>
-            <link>https://kywk.github.io/life/2024/01/01/now-or-never/</link>
-            <guid>https://kywk.github.io/life/2024/01/01/now-or-never/</guid>
-            <pubDate>Mon, 01 Jan 2024 00:00:00 GMT</pubDate>
-            <description><![CDATA[嗯, 再一次的 Now or Never...]]></description>
-            <content:encoded><![CDATA[<p>嗯, 再一次的 Now or Never...</p>
-<p>TBD.</p>
-<p>老靈魂還活在那，Patagonia 亦仍在。</p>
-<p>每天三件事：完成工作上的緊急事件與進度、發展專業上的重要成果、投入生活上的慾望清單。
-然後運動、放鬆、重置每一天。</p>
-<p>就繼續吧，
-回馬場、再越野、仍爬山，還工作。
-擬定目標，有所作為，<strong>持之以恆！</strong>，<a href="http://goo.gl/393HY" target="_blank" rel="noopener noreferrer" class="">before i die</a>！</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="daily">Daily<a href="https://kywk.github.io/life/2024/01/01/now-or-never/#daily" class="hash-link" aria-label="Daily的直接連結" title="Daily的直接連結" translate="no">​</a></h3>
-<ul>
-<li class="">Finish today's todo on-schedule, or re-schedule it</li>
-<li class="">Regular training: 7k easy run every morning
-<ul>
-<li class="">Monday: Core, Strength and Conditioning</li>
-<li class="">Tuesday: 10k</li>
-<li class="">Wednesday: Core, Strength and Conditioning</li>
-<li class="">Thursday: 15k or Core</li>
-<li class="">Friday: Trail, Bike to home, Stone</li>
-</ul>
-</li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="weekly">Weekly<a href="https://kywk.github.io/life/2024/01/01/now-or-never/#weekly" class="hash-link" aria-label="Weekly的直接連結" title="Weekly的直接連結" translate="no">​</a></h3>
-<ul>
-<li class="">LeetCode Weekly Contest</li>
-<li class="">A Tokaido/Patagonia a week: A introduction to one trail path of Tokaido/Patagonia</li>
-<li class="">兩本書、兩篇心得</li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="monthly">Monthly<a href="https://kywk.github.io/life/2024/01/01/now-or-never/#monthly" class="hash-link" aria-label="Monthly的直接連結" title="Monthly的直接連結" translate="no">​</a></h3>
-<ul>
-<li class="">(Biweekly) Cook a meal. Include salad, starter, main-dish, dessert... etc</li>
-<li class="">(Biweekly) Photography: finish one set of previous works</li>
-<li class="">Announce a minion prject</li>
-<li class="">Finish a 42k marathon or more than 42k self trainning</li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="yearly">Yearly<a href="https://kywk.github.io/life/2024/01/01/now-or-never/#yearly" class="hash-link" aria-label="Yearly的直接連結" title="Yearly的直接連結" translate="no">​</a></h3>
-<ul>
-<li class="">Mointaineering
-<ul>
-<li class=""><em>找路</em> 沙韻古道再探</li>
-<li class="">八通關古道</li>
-<li class="">能高安東軍</li>
-</ul>
-</li>
-<li class="">LifeHaker
-<ul>
-<li class="">攀岩</li>
-<li class="">複盤潛水</li>
-<li class="">學飛行傘</li>
-</ul>
-</li>
-</ul>
-<p>仍貪心。公開目標，騎虎難下。</p>]]></content:encoded>
-            <category>kywk</category>
             <category>LifeHack</category>
         </item>
     </channel>
