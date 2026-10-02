@@ -55,6 +55,11 @@ const blogConfig = [
     routeBasePath: 'life',
     path: 'blog.life',
   },
+  {
+    id: 'album',
+    routeBasePath: 'album',
+    path: 'blog.album',
+  },
 ];
 
 // 外部資源配置

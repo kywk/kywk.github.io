@@ -357,8 +357,11 @@ const config: Config = {
         remarkPlugins: createBlogRemarkPlugins(blog),
         rehypePlugins: rehypeObsidianTasks ? [rehypeObsidianTasks] : [],
         showReadingTime: true,
-        blogSidebarTitle: "All posts",
+        blogSidebarTitle: blog.id === 'album' ? 'All albums' : 'All posts',
         blogSidebarCount: "ALL",
+        postsPerPage: blog.id === 'album' ? 'ALL' : 10,
+        blogListComponent: blog.id === 'album' ? path.resolve(__dirname, 'src/components/Album/AlbumListPage.tsx') : '@theme/BlogListPage',
+        blogPostComponent: blog.id === 'album' ? path.resolve(__dirname, 'src/components/Album/AlbumPostPage.tsx') : '@theme/BlogPostPage',
         onUntruncatedBlogPosts: "ignore",
       },
     ]),
@@ -433,6 +436,7 @@ const config: Config = {
           activeBaseRegex: "/moco/",
         },
         { to: "/life", label: "life", position: "left" },
+        { to: "/album", label: "album", position: "left" },
         { to: "/news", label: "news", position: "left" },
         {
           href: "https://github.com/kywk/",
@@ -457,6 +461,7 @@ const config: Config = {
           items: [
             { label: "News Log", to: "/news" },
             { label: "Life Blog", to: "/life" },
+            { label: "Photo Album", to: "/album" },
           ],
         },
         {
