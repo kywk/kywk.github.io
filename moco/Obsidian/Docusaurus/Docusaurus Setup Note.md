@@ -8,8 +8,9 @@ tags:
   - 多實例
 sidebar_position: 30
 date_created: 2022-05-24T00:00:00.000Z
-date_updated: 2026-08-17T00:00:00.000Z
+date_updated: 2026-10-02T00:00:00.000Z
 history:
+  - 2026-10-02 新增 Album 相簿部落格外掛實例與插件封裝紀錄
   - 2026-08-17 多實例踩坑：preset docs/blog、search-local、backdrop-filter、TOC
   - 2024-05-24 Remark Plugin Usage
   - 2022-05-24 初始建立
@@ -117,6 +118,25 @@ module.exports = {
   ],
 };
 ```
+
+### 特殊相簿頻道實例（Album Blog）
+
+針對以「影像與照片」為核心的攝影日誌，本站進一步採用了自製的外掛 `plugins/docusaurus-plugin-album/`，在底層包裝 `@docusaurus/plugin-content-blog` 並自動注入 Pinterest 瀑布流、Hover 浮層資訊、Google Photos 時間軸滑桿與全螢幕燈箱：
+
+```typescript
+// docusaurus.config.ts
+[
+  path.resolve(__dirname, 'plugins/docusaurus-plugin-album'),
+  {
+    id: 'album',
+    routeBasePath: 'album',
+    path: 'blog.album',
+    remarkPlugins: createBlogRemarkPlugins({ id: 'album', path: 'blog.album' }),
+  },
+]
+```
+
+透過將客製化版型封裝為獨立外掛，使得 `docusaurus.config.ts` 不必夾雜複雜的條件分支，詳見 [[03 Album Blog 完工成果與架構插件化評估|Album 相簿部落格：完工成果與路徑一插件化實作]]。
 
 ## 插件系統 (Plugins)
 

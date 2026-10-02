@@ -8,10 +8,11 @@ tags:
 sidebar_position: 60
 sidebar_label: Plugin 使用
 date_created: 2024-05-24T00:00:00.000Z
-date_updated: 2026-09-30T00:00:00.000Z
+date_updated: 2026-10-02T00:00:00.000Z
 history:
-  - 2024-05-24 Init
+  - 2026-10-02 新增 docusaurus-plugin-album 相簿外掛紀錄
   - 2026-09-30 remark-obsidian-leaflet 刪除，改用 remark-story-map
+  - 2024-05-24 Init
 ---
 
 # [Docusaurus] Plugin 使用筆記
@@ -85,6 +86,33 @@ remarkPlugins: [[remarkStoryMap, storyMapOptions]]
 ```
 
 `react` 與 `react-dom` 是 peer dependency，兩者都必須是 React 19。完整安裝、主題橋接與移除舊 runtime 的步驟見 [[Plugin Remark Obsidian Leaflet]]。
+
+### docusaurus-plugin-album
+
+自製的 Docusaurus 攝影相簿外掛程式（位於 `plugins/docusaurus-plugin-album/`），以微包裝模式（Wrapper Pattern）封裝 `@docusaurus/plugin-content-blog`，為相簿頻道打造專屬的影像敘事與互動瀏覽體驗。
+
+**核心功能**：
+- **Pinterest 瀑布流**：長寬比自適應卡片錯落分欄，滑鼠懸停（Hover）平滑浮現標題、地點與相簿系列
+- **Google Photos 時光軸**：右側固定膠囊滑桿，即時年份感應與平滑錨點跳轉
+- **沉浸式 Hero Header**：文章內頁滿版封面橫幅與中繼資料徽章
+- **原生全螢幕相片燈箱**：零依賴輕量 Lightbox，支援鍵盤導航並嚴格排除作者大頭貼（Avatar Exclusion）
+- **乾淨解耦**：自帶 `validateOptions` 與 Theme Components，無需在主設定檔撰寫判斷式
+
+**配置範例**：
+```typescript
+// docusaurus.config.ts
+[
+  path.resolve(__dirname, 'plugins/docusaurus-plugin-album'),
+  {
+    id: 'album',
+    routeBasePath: 'album',
+    path: 'blog.album',
+    remarkPlugins: createBlogRemarkPlugins({ id: 'album', path: 'blog.album' }),
+  },
+]
+```
+
+詳細架構設計與演進過程見 [[03 Album Blog 完工成果與架構插件化評估|Album 相簿部落格：完工成果與路徑一插件化實作]]。
 
 ## 已移除插件
 

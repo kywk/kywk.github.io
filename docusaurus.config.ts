@@ -348,7 +348,8 @@ const config: Config = {
         sidebarPath: require.resolve("./sidebars.js"),
       },
     ]),
-    ...blogConfig.map(blog => [
+    // 一般文字部落格實例 (News & Life)
+    ...blogConfig.filter(b => b.id !== 'album').map(blog => [
       "@docusaurus/plugin-content-blog",
       {
         id: blog.id,
@@ -357,14 +358,26 @@ const config: Config = {
         remarkPlugins: createBlogRemarkPlugins(blog),
         rehypePlugins: rehypeObsidianTasks ? [rehypeObsidianTasks] : [],
         showReadingTime: true,
-        blogSidebarTitle: blog.id === 'album' ? 'All albums' : 'All posts',
+        blogSidebarTitle: "All posts",
         blogSidebarCount: "ALL",
-        postsPerPage: blog.id === 'album' ? 'ALL' : 10,
-        blogListComponent: blog.id === 'album' ? path.resolve(__dirname, 'src/components/Album/AlbumListPage.tsx') : '@theme/BlogListPage',
-        blogPostComponent: blog.id === 'album' ? path.resolve(__dirname, 'src/components/Album/AlbumPostPage.tsx') : '@theme/BlogPostPage',
+        postsPerPage: 10,
+        blogListComponent: "@theme/BlogListPage",
+        blogPostComponent: "@theme/BlogPostPage",
         onUntruncatedBlogPosts: "ignore",
       },
     ]),
+
+    // 獨立相簿插件 (Pinterest 瀑布流 + Google Photos 時光軸 + 全螢幕相片燈箱)
+    [
+      path.resolve(__dirname, "plugins/docusaurus-plugin-album"),
+      {
+        id: "album",
+        routeBasePath: "album",
+        path: "blog.album",
+        remarkPlugins: createBlogRemarkPlugins({ id: "album", path: "blog.album" }),
+        rehypePlugins: rehypeObsidianTasks ? [rehypeObsidianTasks] : [],
+      },
+    ],
   ],
 
   themes: [

@@ -1,6 +1,6 @@
 ---
-title: Album 相簿部落格：完工成果與獨立插件化架構評估
-description: 回顧 Docusaurus Album 相簿部落格的完整落地成果、圖文功能解析，並深入評估將其封裝為獨立 Docusaurus Plugin 的技術設計
+title: Album 相簿部落格：完工成果與路徑一插件化實作
+description: 回顧 Docusaurus Album 相簿部落格的完整落地成果、圖文功能解析，並記錄依「路徑一（Wrapper Pattern）」封裝為獨立 Docusaurus Plugin 的架構實作
 tags:
   - Docusaurus
   - Album
@@ -12,9 +12,11 @@ date_created: 2026-10-02T00:00:00.000Z
 date_updated: 2026-10-02T00:00:00.000Z
 ---
 
-# Album 相簿部落格：完工成果與獨立插件化架構評估
+# Album 相簿部落格：完工成果與路徑一插件化實作
 
-接續前文 [[01 Album Blog 概念發想與決策記錄|概念發想與決策記錄]] 與 [[02 Album Blog 技術架構與實作計畫|技術架構與實作計畫]]，**Album 相簿部落格** 已全數落地上線。本文將展示完工後的最終視覺成果與互動機制，並針對**「Album 是否能封裝為獨立的 Docusaurus 插件」**進行深入的系統架構與技術可行性評估。
+接續前文 [[01 Album Blog 概念發想與決策記錄|概念發想與決策記錄]] 與 [[02 Album Blog 技術架構與實作計畫|技術架構與實作計畫]]，**Album 相簿部落格** 不僅已全數落地上線，更進一步依據技術評估之**「路徑一（Wrapper Pattern 微包裝模式）」**，正式將相簿功能抽離並封裝為專案內的獨立外掛 `plugins/docusaurus-plugin-album/`。
+
+本文將展示完工後的最終視覺成果、互動機制，以及外掛封裝落地的完整工程細節。
 
 ---
 
@@ -81,99 +83,137 @@ graph LR
 
 ---
 
-## 🚀 專題探討：Album 是否能寫成獨立的 Docusaurus 插件？
+## 🚀 獨立外掛實作：`docusaurus-plugin-album`
 
-答案是：**完全可以，而且在架構擴充性與社群複用性上，這是一個極佳的重構方向！**
+為了讓本 repository 的設定檔保持整潔，並使相簿邏輯能像 [[Plugin Remark Obsidian Kanban]] 或 [[01 Geo Story Map 專案介紹|Geo Story Map]] 一樣具備高度內聚性，我們採用**路徑一（微包裝模式）**將 Album 完整抽離為獨立外掛。
 
-### 目前實作 vs 獨立插件之對比
+### 1. 外掛目錄結構
 
-| 維度 | 目前專案內實作（In-vault / In-site） | 獨立 Docusaurus 插件（`docusaurus-plugin-album`） |
-| :--- | :--- | :--- |
-| **整合方式** | 依賴 `site.config.js` 與 `docusaurus.config.ts` 手動配置多實例與路徑解析 | 只需在 `docusaurus.config.ts` 的 `plugins` 陣列加入一列套件設定 |
-| **元件位置** | `src/components/Album/`，與站台程式碼混在一起 | 封裝在獨立的 npm 套件或 monorepo 的 `plugins/` 目錄內 |
-| **可複用性** | 僅限於本站使用，其他專案需手動複製貼上所有檔案 | 任何 Docusaurus 網站只要 `npm install` 即可一鍵獲得相簿功能 |
-| **升級維護** | 專案依賴升級時需手動測試與修復 | 插件獨立進行單元測試、型別檢查與版本語意化釋出（SemVer） |
-| **主題客製** | 直接修改原檔 | 支援 Docusaurus 官方的 `swizzle` 機制，允許使用者覆寫特定子元件 |
+所有相簿相關之 React 元件、樣式表與外掛生命週期進入點，均集中於 `plugins/docusaurus-plugin-album/`：
 
----
-
-## 🏗️ 獨立插件架構設計方案（Plugin Architecture Design）
-
-若將 Album 正式抽離為獨立套件 `docusaurus-plugin-album`，推薦採用 **Wrapper 封裝模式**，其整體架構如下：
-
-```mermaid
-graph TD
-    UserConfig[使用者 docusaurus.config.ts] -->|傳入 options| AlbumPlugin[docusaurus-plugin-album]
-    
-    subgraph Plugin Core 外掛核心
-        AlbumPlugin --> LifeCycle[Plugin Lifecycle Hooks]
-        LifeCycle --> Content[loadContent: 掃描 frontmatter 與相簿中繼資料]
-        LifeCycle --> Routes[contentLoaded: 註冊 /album 與各年份路由]
-        LifeCycle --> ClientMod[getClientModules: 注入全域樣式與燈箱 runtime]
-        LifeCycle --> ThemeComp[getThemePath: 提供可被 Swizzle 的 Theme Components]
-    end
-
-    subgraph Theme Components 主題組件庫
-        ThemeComp --> T1[AlbumListPage: Pinterest 瀑布流首頁]
-        ThemeComp --> T2[AlbumPostPage: 具備 Hero Header 的內頁]
-        ThemeComp --> T3[ImageLightbox: 獨立全螢幕燈箱]
-        ThemeComp --> T4[TimelineScrubber: 歷史年份時間軸]
-    end
-
-    subgraph 封裝優勢
-        Routes -.->|基於 plugin-content-blog| SafeBlog[繼承成熟的 Blog 資料處理與 Markdown 編譯]
-    end
+```text
+plugins/docusaurus-plugin-album/
+├── package.json          # 外掛宣告清單
+├── README.md             # 外掛使用說明文件
+├── index.js              # 外掛進入點 (Wrapper Lifecycle & validateOptions)
+├── index.d.ts            # TypeScript 型別宣告
+└── src/
+    └── theme/            # 可被 Swizzle 的主題組件
+        ├── AlbumListPage.tsx      # 相簿首頁控制器
+        ├── AlbumPostPage.tsx      # 相簿內頁控制器
+        ├── AlbumHeroHeader.tsx    # 內頁大圖橫幅
+        ├── AlbumMasonryGrid.tsx   # Pinterest 瀑布流網格
+        ├── TimelineScrubber.tsx   # Google Photos 時間軸
+        ├── ImageLightbox.tsx      # 全螢幕相片燈箱
+        └── styles.module.css      # Scoped CSS Modules
 ```
 
-### 1. 插件介面與宣告設計（`pluginOptions`）
+### 2. 外掛進入點與關鍵設計（`index.js`）
 
-獨立外掛應提供清晰的型別與預設設定：
+在實作 `@docusaurus/plugin-content-blog` 包裹層時，最核心的關鍵是 **`validateOptions` 生命週期鉤子**：
 
-```typescript
-export interface AlbumPluginOptions {
-  /** 相簿文章來源資料夾，預設 'blog.album' */
-  path?: string;
-  /** 網站路由基礎路徑，預設 'album' */
-  routeBasePath?: string;
-  /** 側欄標題，預設 'All albums' */
-  sidebarTitle?: string;
-  /** 每頁相片數或無限滾動配置，預設 'ALL' */
-  postsPerPage?: number | 'ALL';
-  /** 是否啟用內建的 Image Lightbox 燈箱，預設 true */
-  lightbox?: boolean;
-  /** 是否啟用 Google Photos 風格的時間軸滑桿，預設 true */
-  timelineScrubber?: boolean;
-  /** 瀑布流欄數配置（依視窗寬度響應式設定） */
-  columns?: {
-    mobile?: number;   // 預設 1
-    tablet?: number;   // 預設 2
-    desktop?: number;  // 預設 3
-    wide?: number;     // 預設 4
+```javascript
+// plugins/docusaurus-plugin-album/index.js
+const pluginContentBlog = require('@docusaurus/plugin-content-blog').default;
+const { validateOptions: validateBlogOptions } = require('@docusaurus/plugin-content-blog');
+const path = require('path');
+
+/**
+ * 預先注入相簿專屬預設值，並委託官方 blog validator 補全 authorsMapPath 等內部屬性
+ */
+function validateOptions({ validate, options = {} }) {
+  const mergedOptions = {
+    id: 'album',
+    path: 'blog.album',
+    routeBasePath: 'album',
+    blogSidebarTitle: 'All albums',
+    blogSidebarCount: 'ALL',
+    postsPerPage: 'ALL',
+    blogListComponent: path.resolve(__dirname, './src/theme/AlbumListPage'),
+    blogPostComponent: path.resolve(__dirname, './src/theme/AlbumPostPage'),
+    onUntruncatedBlogPosts: 'ignore',
+    showReadingTime: true,
+    ...options,
   };
+
+  return validateBlogOptions({ validate, options: mergedOptions });
 }
+
+module.exports = async function pluginAlbum(context, options) {
+  const blogPluginInstance = await pluginContentBlog(context, options);
+
+  return {
+    ...blogPluginInstance,
+    name: 'docusaurus-plugin-album',
+    getThemePath() {
+      return path.resolve(__dirname, './src/theme');
+    },
+  };
+};
+
+module.exports.validateOptions = validateOptions;
 ```
 
-### 2. 核心生命週期（Plugin Lifecycle Methods）
-
-在插件進入點 `index.ts` 中實作標準的 Docusaurus Plugin API：
-
-1. **`getThemePath()`**：
-   - 指向插件內建的 `theme/` 資料夾。
-   - 包含 `AlbumListPage`、`AlbumPostPage`、`AlbumHeroHeader` 等元件。使用者若想微調卡片外觀，只要執行 `npm run swizzle docusaurus-plugin-album AlbumCard --wrap` 即可輕鬆客製，無需改動插件核心。
-2. **`getClientModules()`**：
-   - 自動載入燈箱互動與核心 CSS（避免使用者手動在 `custom.css` 引入）。
-3. **`configureWebpack()`**：
-   - 設定 CSS Modules 與 Alias，確保各元件的樣式與相依性完全自給自足，絕不污染宿主網站的全域樣式。
-
-### 3. 與 `@docusaurus/plugin-content-blog` 的共存策略
-
-在實作上有兩種可行路徑：
-- **路徑一（微包裝模式，推薦）**：插件本體直接調用 `@docusaurus/plugin-content-blog` 的 factory 函式，自動配置好 `blogListComponent` 與 `blogPostComponent` 並注入預設值。宿主網站完全感覺不到底層是 blog plugin，只當它是全新的相簿功能。
-- **路徑二（純主題外掛模式 Theme Plugin）**：只發布 `docusaurus-theme-album`，使用者依然在 `docusaurus.config.ts` 宣告 `@docusaurus/plugin-content-blog`，但組件直接指定 `require.resolve('docusaurus-theme-album/AlbumListPage')`。這種方式最輕量，但使用者配置步驟稍多一道。
+#### 技術細節：為什麼必須 export `validateOptions`？
+Docusaurus 在構建網站（`docusaurus build`）時，會先執行外掛的 `validateOptions`。若直接將 options 傳給 `pluginContentBlog(context, options)` 而跳過驗證步驟，`options.authorsMapPath` 等預設欄位將維持 `undefined`，導致底層在執行 `path.join()` 時拋出 `TypeError: The "path" argument must be of type string`。
+透過在外掛導出 `validateOptions` 並鏈結官方驗證器，既能享有自訂相簿預設值，又兼顧 100% 的官方配置相容性。
 
 ---
 
-## 🎯 結論與展望
+## 📐 引用方式更新：主設定檔全面解耦
 
-1. **功能驗證完備**：從 Pinterest 瀑布流、Hover 遮罩、Google Photos 時間軸到無污染的相片燈箱，目前在站內已穩定運作且與全站各頻道（Backpacker、Geo Story Map、Lifehacker）和平共存。
-2. **具備高度開源潛力**：相簿部落格的邏輯（以影像為主、長寬自適應、時間軸索引）在現代靜態網站與技術寫作者之間具有高度吸引力。將其打包為 `docusaurus-plugin-album`，不僅能讓本 repository 的配置保持極致精簡，也能作為回饋 Docusaurus 社群的亮點開源專案。
+在外掛獨立封裝前，`docusaurus.config.ts` 充滿了專案級的三元運算子；重構後，主設定檔乾淨利落：
+
+### 重構前（內嵌判斷）
+```typescript
+...blogConfig.map(blog => [
+  "@docusaurus/plugin-content-blog",
+  {
+    id: blog.id,
+    blogSidebarTitle: blog.id === 'album' ? 'All albums' : 'All posts',
+    postsPerPage: blog.id === 'album' ? 'ALL' : 10,
+    blogListComponent: blog.id === 'album' ? path.resolve(__dirname, 'src/components/Album/AlbumListPage.tsx') : '@theme/BlogListPage',
+    blogPostComponent: blog.id === 'album' ? path.resolve(__dirname, 'src/components/Album/AlbumPostPage.tsx') : '@theme/BlogPostPage',
+    // ...
+  },
+])
+```
+
+### 重構後（比照其他 plugins）
+```typescript
+// docusaurus.config.ts
+
+// 1. 一般文字部落格 (News & Life)
+...blogConfig.filter(b => b.id !== 'album').map(blog => [
+  "@docusaurus/plugin-content-blog",
+  {
+    id: blog.id,
+    routeBasePath: blog.routeBasePath,
+    path: blog.path,
+    remarkPlugins: createBlogRemarkPlugins(blog),
+    rehypePlugins: rehypeObsidianTasks ? [rehypeObsidianTasks] : [],
+    blogSidebarTitle: "All posts",
+    postsPerPage: 10,
+  },
+]),
+
+// 2. 獨立相簿外掛 (Album Plugin)
+[
+  path.resolve(__dirname, "plugins/docusaurus-plugin-album"),
+  {
+    id: "album",
+    routeBasePath: "album",
+    path: "blog.album",
+    remarkPlugins: createBlogRemarkPlugins({ id: "album", path: "blog.album" }),
+    rehypePlugins: rehypeObsidianTasks ? [rehypeObsidianTasks] : [],
+  },
+],
+```
+
+---
+
+## 🎯 總結
+
+1. **職責分離**：主專案的 `src/components/` 移除所有特定頻道的大型相簿元件，全部歸位至 `plugins/docusaurus-plugin-album/`。
+2. **開箱即用**：相簿的 Pinterest 首頁、Hover 浮層、時間軸導航與照片燈箱，均作為外掛預設行為自動生效。
+3. **無痛升級**：全站經 `npm run typecheck`、`npm run content:check` 及 `npm run build` 檢驗通過，靜態導出產生的 `/album/` 路由與全站功能皆無損銜接。

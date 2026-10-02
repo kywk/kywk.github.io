@@ -1,0 +1,19 @@
+{
+  "name": "docusaurus-plugin-album",
+  "version": "1.0.0",
+  "description": "Pinterest-style masonry photo album plugin for Docusaurus with Google Photos timeline scrubber and lightbox",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "keywords": [
+    "docusaurus",
+    "docusaurus-plugin",
+    "album",
+    "gallery",
+    "pinterest",
+    "masonry",
+    "photo",
+    "lightbox"
+  ],
+  "author": "kywk",
+  "license": "MIT"
+}

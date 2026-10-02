@@ -16,6 +16,16 @@ Unified slug normalization module providing:
 - `remarkSlugNormalizer` remark plugin for automatic slug injection
 - Converts spaces to hyphens for SEO-friendly URLs
 
+## Feature Plugins
+
+### docusaurus-plugin-album/
+Pinterest-style photo album plugin for Docusaurus with Google Photos timeline scrubber and lightbox.
+- Wraps `@docusaurus/plugin-content-blog` via Wrapper Pattern
+- Pinterest responsive masonry grid layout with mouse hover info overlay
+- Google Photos-style floating timeline scrubber with year navigation
+- Immersive Hero Header with cover image, location, and series badges
+- Lightweight, zero-dependency full-screen photo lightbox with keyboard navigation and avatar exclusion
+
 ## Usage
 
 These plugins are automatically loaded in `docusaurus.config.ts`:
