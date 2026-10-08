@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkkywk_me=self.webpackChunkkywk_me||[]).push([["29954"],{555748(e){e.exports=JSON.parse('{"metadata":{"permalink":"/life/page/19","page":19,"postsPerPage":10,"totalPages":53,"totalCount":525,"previousPage":"/life/page/18","nextPage":"/life/page/20","blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

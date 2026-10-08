@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkkywk_me=self.webpackChunkkywk_me||[]).push([["4217"],{618636(e){e.exports=JSON.parse('{"blogBasePath":"/album","blogTitle":"Blog","authorsListPath":"/album/authors"}')}}]);

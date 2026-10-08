@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkkywk_me=self.webpackChunkkywk_me||[]).push([["30685"],{40350(e){e.exports=JSON.parse('{"name":"docusaurus-plugin-content-docs","id":"lifehacker"}')}}]);

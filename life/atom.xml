@@ -40,6 +40,20 @@
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Geo Story Map]]></title>
+        <id>https://kywk.github.io/life/2026/09/30/geo-story-map/</id>
+        <link href="https://kywk.github.io/life/2026/09/30/geo-story-map/"/>
+        <updated>2026-09-30T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[我的第一個 Obsidian Community Plugin!]]></summary>
+        <content type="html"><![CDATA[<p>我的第一個 Obsidian Community Plugin!</p>
+<p><img decoding="async" loading="lazy" src="https://lh3.googleusercontent.com/pw/AP1GczPNuQrd6vpySMr-hTnEl3SkW62lDoYagZ2HHWe54kgA25OCcIq2BYqedUbdGTVYNvUM_Jb8fiIathrYIl5NuWv-QQy8MpgRndAZvYuMXGpu4BNYuuAC32f2vhvEHYLlnPcnkTFGu7wreVeM_YLND9Wgkg=w800-no-gm?authuser=0" alt="" class="img_ev3q"></p>
+<p><a href="https://community.obsidian.md/plugins/vault-feed-reader" target="_blank" rel="noopener noreferrer" class="">Geo Story Map</a></p>]]></content>
+        <author>
+            <name>kywk</name>
+            <uri>https://github.io/kywk</uri>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Vault Feed Reader]]></title>
         <id>https://kywk.github.io/life/2026/09/22/first-obsidian-plugin/</id>
         <link href="https://kywk.github.io/life/2026/09/22/first-obsidian-plugin/"/>
@@ -748,40 +762,6 @@ JS/HTML/CSS Terminal</li>
             <uri>https://github.io/kywk</uri>
         </author>
         <category label="kywk" term="kywk"/>
-        <category label="LifeHack" term="LifeHack"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Make it happen]]></title>
-        <id>https://kywk.github.io/life/2024/04/27/make-it-happen/</id>
-        <link href="https://kywk.github.io/life/2024/04/27/make-it-happen/"/>
-        <updated>2024-04-27T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[今天 通勤學英語 15 Mins Today 幕後教師室Teacher's Lounge Ep.35: 強化好習慣的原子架構 James Clear's framework for forming better habits]]></summary>
-        <content type="html"><![CDATA[<p>今天 <a href="https://www.15mins.today/" target="_blank" rel="noopener noreferrer" class="">通勤學英語 15 Mins Today</a> <em>幕後教師室Teacher's Lounge Ep.35: 強化好習慣的原子架構 James Clear's framework for forming better habits</em>
-podcast 節目中聽到 <a class="internal" href="https://kywk.github.io/lifehacker/reading/personal-growth/atomic-habits/">Atomic habits</a> 的幾個核心精神, 備註一下:</p>
-<p>訂定適合自己的學習框架, 可以簡單地拆解成下面四個步驟：</p>
-<ol>
-<li class="">Make it obvious 讓它顯而易見</li>
-<li class="">Make it attractive 讓它有吸引力</li>
-<li class="">Make it easy 讓它簡單易行</li>
-<li class="">Make it satisfying 讓它令人滿意</li>
-</ol>
-<p>節目中, 另一句更 impress me 的是一萬小時法則</p>
-<blockquote>
-<p>一萬小時定律：任何人做一件事，只要經過一萬小時的錘煉，都能從普通人變為某一領域的頂級人才。
-國外作家格拉德威爾在《異類》一書中，明確地指出：“人們眼中的天才之所以卓越非凡，並非天資超人一等，而是付出了持續不斷的努力。
-1萬小時的錘煉是任何人從平凡變成超凡的必要條件”。</p>
-</blockquote>
-<p><strong>任何人做一件事，只要經過一萬小時的錘煉，都能從普通人變為某一領域的頂級人才。</strong></p>
-<p>暫不討論後續諸多關於一萬小時是否正確的不同觀點延伸討論, 出發立意 - 持之以恆是值得參考的.</p>
-<p>紀錄一下, 慢慢讓這些事發生...</p>
-<ul>
-<li class=""><a href="https://wiki.mbalib.com/zh-tw/%E4%B8%80%E4%B8%87%E5%B0%8F%E6%97%B6%E5%AE%9A%E5%BE%8B#:~:text=%E4%B8%80%E8%90%AC%E5%B0%8F%E6%99%82%E5%AE%9A%E5%BE%8B%EF%BC%9A%E4%BB%BB%E4%BD%95,%E8%AE%8A%E6%88%90%E8%B6%85%E5%87%A1%E7%9A%84%E5%BF%85%E8%A6%81%E6%A2%9D%E4%BB%B6%E2%80%9D%E3%80%82" target="_blank" rel="noopener noreferrer" class="">一萬小時定律 - MBA智库百科</a></li>
-</ul>]]></content>
-        <author>
-            <name>kywk</name>
-            <uri>https://github.io/kywk</uri>
-        </author>
-        <category label="Daily" term="Daily"/>
         <category label="LifeHack" term="LifeHack"/>
     </entry>
 </feed>

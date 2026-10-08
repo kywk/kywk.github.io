@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkkywk_me=self.webpackChunkkywk_me||[]).push([["35697"],{72866(a){a.exports=JSON.parse('{"tag":{"label":"Arts","permalink":"/life/tags/arts","allTagsPath":"/life/tags","count":3,"unlisted":false},"listMetadata":{"permalink":"/life/tags/arts","page":1,"postsPerPage":10,"totalPages":1,"totalCount":3,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
