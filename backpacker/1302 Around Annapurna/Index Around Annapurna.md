@@ -61,7 +61,7 @@ darkMode: true
 
 ## note / 雜記小文
 
-- [[1302 Around Annapurna]]
+- [[1302 Around Annapurna]] 📸 相簿紀實：[[02-16-around-annapurna|Around Annapurna]]
 - 前置行程：[[Index Nepal|2013 Feb 尼泊爾印象]]
 
 <!-- Lonely Planet

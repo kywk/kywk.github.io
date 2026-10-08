@@ -47,7 +47,6 @@ authors: kywk
 :::info 相簿資訊
 - **拍攝地點**：日本・京都
 - **相簿系列**：Kensai around
-- **相關紀錄**：[[Kyoto|⛩️ 旅人筆記：日本 Kyoto]]
 - **相簿相片數**：共 180 張相片
 - **原始相簿**：[在 Flickr 上瀏覽完整相簿 ↗](https://www.flickr.com/photos/kywk71/albums/72157661715904967)
 :::

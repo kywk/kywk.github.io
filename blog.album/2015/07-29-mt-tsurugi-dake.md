@@ -33,7 +33,7 @@ authors: kywk
 :::info 相簿資訊
 - **拍攝地點**：日本・富山縣立山連峰・劍岳
 - **相簿系列**：Mt. Tsurugi Dake
-- **相關紀錄**：[[Index Tsurugi Dake|🏔️ 攀登行程：2015 Jul 攀登 剱岳 Mt. Tsurugi Dake]]
+- **相關紀錄**：[[Index Tsurugi Dake|2015 Jul 攀登 剱岳 Mt. Tsurugi Dake]]
 - **相簿相片數**：共 4 張相片
 - **原始相簿**：[在 Flickr 上瀏覽完整相簿 ↗](https://www.flickr.com/photos/kywk71/albums/72157695361317485)
 :::

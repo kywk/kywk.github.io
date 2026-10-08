@@ -77,3 +77,8 @@ If you are looking for the love of your life, stop; they will be waitting for yo
 畢竟，這是個懂得生活的人，會愛上的地方
 
 十三咖啡，難找但絕對值得一找的咖啡
+-
+
+### 📸 相簿紀實
+
+- [[03-10-台中-13-咖啡|台中 13 咖啡]]

@@ -31,7 +31,6 @@ authors: kywk
 :::info 相簿資訊
 - **拍攝地點**：日本・東京
 - **相簿系列**：Mt.Fuji marathon
-- **相關紀錄**：[[Note Lodge Tokyo 2014|🏡 住宿經驗：Factory Roof-Top! 露台]]、[[Index Fujisan Marathon|🏃 行程總覽：2014 Nov 富士山馬拉松]]
 - **相簿相片數**：共 2 張相片
 - **原始相簿**：[在 Flickr 上瀏覽完整相簿 ↗](https://www.flickr.com/photos/kywk71/albums/72157649805568345)
 :::

@@ -103,3 +103,8 @@ T:你要來嗎？我們等你。
 這攤人比較多，不過合照還是一定要的  
 
 ![IMG_4631 (by kywk)](http://farm4.static.flickr.com/3528/3715767167_aa15c45d2e.jpg)
+-
+
+### 📸 相簿紀實
+
+- [[07-12-信義-macaroni|信義 macaroni]]

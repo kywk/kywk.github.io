@@ -40,3 +40,8 @@ date_created: 2013-01-20T14:50:52.000Z
 ### note / 雜記小文
 
 - [[note_dark-knight-rises:黑暗騎士．黎明升起]]
+-
+
+### 📸 相簿紀實
+
+- [[01-23-incredible-india|Incredible India]]

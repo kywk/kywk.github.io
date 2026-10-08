@@ -40,4 +40,3 @@ hide_table_of_contents: true
 - 適合初學者和葡萄酒愛好者
 
 See Also
---------

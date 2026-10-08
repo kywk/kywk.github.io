@@ -18,3 +18,7 @@ cover: http://farm3.static.flickr.com/2549/3733334157_b01c88201c.jpg
   
 
 see [freshman](http://kywk.blogspot.com/2009/07/freshman.html) for detail
+
+### 📸 相簿紀實
+
+- [[07-18-freshman-090718|freshman (09.07.18)]]

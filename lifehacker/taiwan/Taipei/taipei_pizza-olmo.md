@@ -71,3 +71,8 @@ let's play
 好個悠閒的午後，是該這般悠閒的享受  
 
 ![IMG_3764 (by kywk)](http://farm3.static.flickr.com/2605/3668386932_373ab2c99f.jpg)
+-
+
+### 📸 相簿紀實
+
+- [[06-27-三芝-pizza-olmo|三芝 pizza olmo]]

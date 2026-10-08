@@ -67,3 +67,7 @@ cover: http://farm5.static.flickr.com/4061/4499975999_d955614ddc.jpg
 [anne, hihi, kywk, russell, jasminejune](http://www.plurk.com/p/4h2dx8) 前四屆都有人代表  
 
 這晚，是屬於幹訓也屬於自己的一晚
+
+### 📸 相簿紀實
+
+- [[04-02-酒鬼club春酒-100402|酒鬼club春酒 (10.04.02)]]

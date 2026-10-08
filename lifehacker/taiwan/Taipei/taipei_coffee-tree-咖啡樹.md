@@ -86,3 +86,10 @@ kido所點的蛋糕
 而，也容我對大姐說聲，別讓關心你的人傷心。  
 
 ![IMG_4798 (by kywk)](http://farm3.static.flickr.com/2663/3722293373_7433138196.jpg)
+-
+-
+
+### 📸 相簿紀實
+
+- [[12-12-coffee-tree-081212|coffee tree (08.12.12)]]
+- [[07-14-東區-coffee-tree|東區 coffee tree]]

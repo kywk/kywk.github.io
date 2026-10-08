@@ -95,3 +95,8 @@ Our 老房子咖啡屋，一個以舊時代生活方式存在的小屋。
 原來，生活不只有一種方式！
 
 ![](https://lh3.googleusercontent.com/pw/ACtC-3flo0Vn_sSMiv4fgmtpBnu5XvM_k4MXCZL-INV1nkdS8WDvglWkNViM-ydJiN0QdXSESw1kNxWvVc98sYDfLCChTBMjVCnYxs0YX7BMc2spJw10VhOsZif5_2RjaxhO834AL2t2Xto3vrmAzvJYFT8SRQ=w799-h533-no?authuser=0)
+-
+
+### 📸 相簿紀實
+
+- [[03-24-玉里老房子-120324|玉里，老房子 (12.03.24)]]

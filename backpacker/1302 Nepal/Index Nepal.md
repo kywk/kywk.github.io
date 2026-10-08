@@ -66,3 +66,8 @@ darkMode: true
 ## note / 雜記小文
 
 - 接續行程：[[Index Around Annapurna|2013 Feb 安娜普納環線]]
+-
+
+### 📸 相簿紀實
+
+- [[02-03-nepal-image|Nepal Image]]

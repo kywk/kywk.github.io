@@ -80,3 +80,8 @@ categories:
 週末有樂團哄吵氣氛、平日有繁星靜靜陪伴！
 
 ![看山小 望海大 by kywk, on Flickr](http://farm9.staticflickr.com/8035/7994375279_00e7d5aa1c_c.jpg)
+-
+
+### 📸 相簿紀實
+
+- [[09-14-三芝-看山小-望海大|三芝 看山小 望海大]]

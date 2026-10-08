@@ -52,7 +52,7 @@ authors: kywk
 :::info 相簿資訊
 - **拍攝地點**：日本・山梨縣河口湖
 - **相簿系列**：Mt.Fuji marathon
-- **相關紀錄**：[[Run around Taiwan 2014|🏃 賽事紀錄：Run around Taiwan 2014]]、[[Index Fujisan Marathon|🗻 行程總覽：2014 Nov 富士山馬拉松]]
+- **相關紀錄**：[[Index Fujisan Marathon|2014 Nov 富士山馬拉松]]
 - **相簿相片數**：共 28 張相片
 - **原始相簿**：[在 Flickr 上瀏覽完整相簿 ↗](https://www.flickr.com/photos/kywk71/albums/72157649805568375)
 :::

@@ -55,4 +55,9 @@ date_created: 2013-07-05 18:03:51
  flickr http://www.flickr.com/photos/kywk71/3719433708/ 
 
 天池山莊 - 能高主峰(來回)
- flickr http://www.flickr.com/photos/kywk71/3719433766/ 
+ flickr http://www.flickr.com/photos/kywk71/3719433766/
+-
+
+### 📸 相簿紀實
+
+- [[07-03-十年回憶-能高主-090703|十年回憶 能高主 (09.07.03)]]

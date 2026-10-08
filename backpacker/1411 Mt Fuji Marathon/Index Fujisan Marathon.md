@@ -45,3 +45,8 @@ story-map-note: true
 - [[note_lodge-tokyo-2014:日光、河口湖、東京．住宿經驗]]
 
 ### note / 雜記小文
+-
+
+### 📸 相簿紀實
+
+- [[11-26-mt-fuji-marathon-2014|Mt.Fuji marathon, 2014]]

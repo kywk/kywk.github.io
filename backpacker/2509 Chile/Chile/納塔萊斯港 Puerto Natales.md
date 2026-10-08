@@ -40,4 +40,3 @@ hide_table_of_contents: true
 - 建議停留1-2天作為百內國家公園的前後站
 
 See Also
---------

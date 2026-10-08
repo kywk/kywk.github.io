@@ -73,3 +73,8 @@ darkMode: true
     78 orz
     80 essaya
 -->
+-
+
+### 📸 相簿紀實
+
+- [[12-11-early-winter-kyoto|early winter, Kyoto]]

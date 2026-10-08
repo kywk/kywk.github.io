@@ -57,7 +57,7 @@ darkMode: true
 
 ## note / 雜記小文
 
-- 📸 攝影相簿：[[07-29-mt-tsurugi-dake|Mt. Tsurugi Dake]]
+- 📸 攝影相簿：[[07-29-mt-tsurugi-dake|Mt. Tsurugi Dake]] 📸 相簿紀實：[[07-29-mt-tsurugi-dake|Mt. Tsurugi Dake]]
 
 <!-- Lonely Planet
 00 Index

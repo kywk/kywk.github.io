@@ -37,7 +37,26 @@ import sys
 import time
 import urllib.request
 
-FLICKR_API_KEY = '68f3142f599223ff4c141fd7023be24a'
+
+def get_flickr_api_key():
+    import urllib.request
+    import re
+    try:
+        req = urllib.request.Request(
+            'https://www.flickr.com/photos/kywk71/albums',
+            headers={'User-Agent': 'Mozilla/5.0'}
+        )
+        with urllib.request.urlopen(req) as response:
+            html = response.read().decode('utf-8')
+        m = re.search(r'site_key\s*=\s*"([^"]+)"', html)
+        if m:
+            return m.group(1)
+    except:
+        pass
+    return '5484e6e22f08cb31b436d29e05f3fe2d'
+
+FLICKR_API_KEY = get_flickr_api_key()
+
 FLICKR_DB_PATH = 'scripts/data/flickr-database.json'
 VAULT_INDEX_PATH = 'scripts/data/vault-articles-index.json'
 STATE_FILE_PATH = 'scripts/data/import-state.json'
@@ -138,66 +157,66 @@ def slugify(text):
     return text or 'album'
 
 
-def find_matching_articles(album, vault_index, album_photos=None):
+def find_matching_articles(album, vault_index, album_photos=None, engine='agy'):
     """
-    RAG 相似度評分：比對相簿與 Vault 筆記庫文章
-    回傳按相似度排序的最高關聯文章列表 [(score, doc, match_reasons)]
+    全量 AI 比對：直接讓 AI 從 Master List 中精確找尋配對文章，捨棄原本容易誤判的 RAG 文字相似度。
     """
     aid = album['id']
     atitle = album.get('title', '')
-    colls = album.get('collections', [])
-
-    coll_tokens = set()
-    for cp in colls:
-        for p in cp:
-            for tok in re.split(r'[/.\s_-]+', p):
-                if len(tok) >= 2 and tok.lower() not in ('live', 'taiwan', 'trip', 'portraits', 'cuisine', 'snap'):
-                    coll_tokens.add(tok.lower())
-
-    title_tokens = set()
-    for tok in re.split(r'[/.\s_()（）-]+', atitle):
-        if len(tok) >= 2:
-            title_tokens.add(tok.lower())
-
-    photo_ids = set([p['id'] for p in (album_photos or [])])
-
-    scored = []
+    
+    # 1. 精確 Flickr Set 匹配 (這一定是對的)
+    exact_matches = []
     for doc in vault_index:
-        score = 0
-        reasons = []
-
-        # 1. 精確 Flickr Set 匹配
         if aid in doc.get('flickr_sets', []):
-            score += 150
-            reasons.append('flickr_set_match')
+            exact_matches.append((150, doc, ['flickr_set_match']))
+    if exact_matches:
+        return exact_matches
 
-        # 2. 照片 ID 重疊匹配
-        matched_photos = photo_ids.intersection(set(doc.get('flickr_photos', [])))
-        if matched_photos:
-            score += len(matched_photos) * 40
-            reasons.append(f'{len(matched_photos)} photo_matches')
+    # 2. 讓 AI 從全域 Master List 判斷
+    try:
+        with open('scripts/data/master-list-for-ai.txt', 'r', encoding='utf-8') as f:
+            master_list = f.read()
+    except Exception as e:
+        log(f"無法讀取 Master List: {e}")
+        return []
 
-        doc_text = (doc['title'] + ' ' + doc['path'] + ' ' + doc['summary']).lower()
+    prompt = f"""判斷以下相簿對應的 Master List 中的筆記，哪些是【精確對應】？
+規則：
+1. 如果相簿是某餐廳/景點，文章必須是該餐廳/景點的專文，不能只是提及它的『總覽/索引(Index)』。
+2. 如果相簿是大型旅遊行程（如年度旅遊），則可以對應到該行程的『總覽/索引(Index)』或專文。
+3. 如果相簿的日期、名稱出現在 Index 檔案的「包含行程」中，請務必將該 Index 檔案也列為對應。
+4. 根據標題、日期、地名進行嚴格邏輯判斷！
 
-        # 3. Collections 系列與路徑關鍵字
-        matched_colls = [t for t in coll_tokens if t in doc_text]
-        if matched_colls:
-            score += len(matched_colls) * 15
-            reasons.append(f'coll_tokens:{matched_colls}')
+回傳格式必須是一個 JSON 物件，Key 是相簿的名稱 '{atitle}'，Value 是精確匹配的 base_name 陣列。若無任何匹配，則為空陣列 []。
+**只回傳 JSON，不要任何其他文字！**
 
-        # 4. 相簿標題關鍵字
-        matched_title = [t for t in title_tokens if t in doc_text]
-        if matched_title:
-            score += len(matched_title) * 20
-            reasons.append(f'title_tokens:{matched_title}')
+Master List:
+{master_list}
 
-        if score >= 35:
-            scored.append((score, doc, reasons))
+待匹配相簿：
+- Album Title: {atitle}
+"""
 
-    scored.sort(key=lambda x: x[0], reverse=True)
-    return scored[:3]
-
-
+    res = call_ai_engine(engine, prompt)
+    if res:
+        import re, json
+        m = re.search(r'{.*}', res, re.DOTALL)
+        if m:
+            try:
+                data = json.loads(m.group(0))
+                matched_bases = list(data.values())[0] if data else []
+                final_matches = []
+                for base in matched_bases:
+                    for doc in vault_index:
+                        if doc['base_name'] == base:
+                            final_matches.append((100, doc, ['ai_approved']))
+                            break
+                return final_matches
+            except Exception as e:
+                log(f"AI JSON 解析失敗: {e}")
+                pass
+                
+    return []
 def fetch_album_photos(album_id):
     """自 Flickr API 抓取相簿照片詳情"""
     url = f'https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key={FLICKR_API_KEY}&photoset_id={album_id}&extras=url_l,url_c,url_m,url_o,description,date_taken,tags,geo&format=json&nojsoncallback=1'
@@ -268,27 +287,73 @@ def generate_lead_text(album, matches, engine='agy'):
 
 
 def update_reciprocal_links(target_doc_path, album_title, album_slug):
-    """回寫雙向連結至關聯筆記"""
+    """回寫雙向連結至關聯筆記 (遵循 Inline 或 Block 的優雅排版)"""
+    import os, re
     if not os.path.exists(target_doc_path):
         return False
 
+    def extract_date(text):
+        m = re.search(r'(?(d{2,4})[./-](d{2})[./-](d{2}))?', text)
+        if m:
+            y, m1, d1 = m.groups()
+            if len(y) == 4: y = y[2:] 
+            return f"{y}.{m1}.{d1}"
+        return None
+
+    def find_best_line(content_lines, atitle):
+        date = extract_date(atitle)
+        if date:
+            y, m, d = date.split('.')
+            date_patterns = [
+                f"{y}.{m}.{d}", f"{y}/{m}/{d}", f"{y}-{m}-{d}",
+                f"20{y}.{m}.{d}", f"20{y}/{m}/{d}", f"20{y}-{m}-{d}",
+                f"{m}.{d}"
+            ]
+            for i, line in enumerate(content_lines):
+                if any(p in line for p in date_patterns) and line.strip().startswith('-'):
+                    return i
+                    
+        title_clean = re.sub(r'(?d{2,4}[./-]d{2}[./-]d{2})?', '', atitle).strip()
+        if len(title_clean) > 3:
+            for i, line in enumerate(content_lines):
+                if title_clean in line and line.strip().startswith('-'):
+                    return i
+        return -1
+
     try:
         with open(target_doc_path, 'r', encoding='utf-8') as f:
-            content = f.read()
+            lines = f.read().split('n')
 
-        link_text = f"[[{album_slug}|📸 相簿紀實：{album_title}]]"
-        if album_slug in content:
+        if any(album_slug in line for line in lines):
             return False
-
-        new_content = content.rstrip() + f"\n\n---\n\n📸 相簿紀實：{link_text}\n"
+            
+        idx = find_best_line(lines, album_title)
+        if idx != -1:
+            link_str = f"📸 相簿紀實：[[{album_slug}|{album_title}]]"
+            if '📸 相簿紀實：' not in lines[idx]:
+                lines[idx] += f" {link_str}"
+            else:
+                lines[idx] += f"、[[{album_slug}|{album_title}]]"
+            
+            with open(target_doc_path, 'w', encoding='utf-8') as f:
+                f.write('n'.join(lines))
+            return True
+            
+        # 若找不到合適段落，則比照 See Also
+        new_content = 'n'.join(lines)
+        if not new_content.endswith('n'): new_content += 'n'
+        
+        if '### 📸 相簿紀實' not in new_content:
+            new_content += "n### 📸 相簿紀實nn"
+            
+        new_content += f"- [[{album_slug}|{album_title}]]n"
+        
         with open(target_doc_path, 'w', encoding='utf-8') as f:
             f.write(new_content)
         return True
     except Exception as e:
         log(f"  ⚠️ 回寫筆記失敗 ({target_doc_path}): {e}")
         return False
-
-
 def process_album(album, vault_index, state, engine='agy', dry_run=False, update_reciprocal=False, force=False):
     aid = album['id']
     title = album.get('title', '')

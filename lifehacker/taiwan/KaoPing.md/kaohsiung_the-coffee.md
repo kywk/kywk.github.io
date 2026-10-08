@@ -73,3 +73,8 @@ cover: http://farm4.static.flickr.com/3041/2963953837_e66b65bf78.jpg
   
 
 ![IMG_9470](http://farm4.static.flickr.com/3216/2963972115_a23616d627.jpg)
+-
+
+### 📸 相簿紀實
+
+- [[10-22-高雄-the-plus-樂加廚房|高雄 The Plus | 樂加廚房]]

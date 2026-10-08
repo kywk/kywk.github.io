@@ -17,3 +17,7 @@ cover: http://farm4.static.flickr.com/3487/4006034070_a41b3e54b5.jpg
 <!--truncate-->
 
 ![](http://farm4.static.flickr.com/3487/4006034070_a41b3e54b5.jpg)
+
+### 📸 相簿紀實
+
+- [[09-22-流放蘭嶼-090922|流放蘭嶼 (09.09.22)]]

@@ -85,6 +85,8 @@ date_updated: 2015-05-06 14:10:35
 
 這趟最大的意外該是一葉蘭吧…  
 山壁間綻開了幾朵一葉蘭，沾著露水嬌艷欲滴的模樣，美。
+-
 
+### 📸 相簿紀實
 
-[Full photo set at flickr](https://www.flickr.com/photos/kywk71/sets/72157651976786789/) ｜ 📸 相簿紀實：[[03-21-beidawu-mountain|聖境．北大武]]
+- [[03-21-beidawu-mountain|聖境．北大武 (15.03.22)]]

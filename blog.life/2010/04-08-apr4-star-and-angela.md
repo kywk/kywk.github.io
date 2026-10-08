@@ -82,3 +82,8 @@ k: 她是我會喜歡的類型，不過現在已不容易心動
 繼[前不久短暫的動心](http://kywk.blogspot.com/2010/03/missing-you.html)後，近來心平靜了許多  
 
 喜歡兩個人在一起的幸福，也愛一個人獨在翱翔的快活
+-
+
+### 📸 相簿紀實
+
+- [[04-04-star-angela-eason|star + angela = eason]]

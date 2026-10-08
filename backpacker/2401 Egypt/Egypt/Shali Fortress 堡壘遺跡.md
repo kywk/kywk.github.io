@@ -15,4 +15,3 @@ Shali Fortress 堡壘遺跡
 =================
 
 See Also
---------

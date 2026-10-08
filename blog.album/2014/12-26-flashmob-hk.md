@@ -47,7 +47,7 @@ authors: kywk
 :::info 相簿資訊
 - **拍攝地點**：香港
 - **相簿系列**：2014 馬．飛騰
-- **相關紀錄**：[[Hk Blue House|🏙️ 旅記小品：香港．藍屋]]
+- **相關紀錄**：[[Index FlashMod HK|2014 Dec 快閃 香港 FlashMod HK]]
 - **相簿相片數**：共 29 張相片
 - **原始相簿**：[在 Flickr 上瀏覽完整相簿 ↗](https://www.flickr.com/photos/kywk71/albums/72157649895059626)
 :::

@@ -75,3 +75,8 @@ cover: http://farm3.static.flickr.com/2432/3650863400_47c02fc386.jpg
 鮮佶茶  
 
 ![P1030974 (by kywk)](http://farm4.static.flickr.com/3663/3650059063_47b2cbe219.jpg)
+-
+
+### 📸 相簿紀實
+
+- [[06-21-中壢-design-fever|中壢 design fever]]

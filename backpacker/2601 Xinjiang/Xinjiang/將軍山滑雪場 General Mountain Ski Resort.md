@@ -40,4 +40,3 @@ hide_table_of_contents: true
 - 纜車票和滑雪票需分別購買
 
 See Also
---------

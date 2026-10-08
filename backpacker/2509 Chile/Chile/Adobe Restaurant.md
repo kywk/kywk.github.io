@@ -47,4 +47,3 @@ Adobe Restaurant
 - 適合品嚐當地特色美食的遊客
 
 See Also
---------

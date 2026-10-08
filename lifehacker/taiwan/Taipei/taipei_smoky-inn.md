@@ -57,3 +57,8 @@ cover: http://farm3.static.flickr.com/2428/3774014184_a03a655e86.jpg
   
 
 ![IMG_5503 (by kywk)](http://farm4.static.flickr.com/3576/3773214737_fee0c792be.jpg)
+-
+
+### 📸 相簿紀實
+
+- [[07-26-三芝-smoky-inn|三芝 smoky inn]]

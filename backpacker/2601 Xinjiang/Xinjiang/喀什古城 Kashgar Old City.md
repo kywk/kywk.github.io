@@ -39,4 +39,3 @@ hide_table_of_contents: true
 - 最佳參觀時間為上午和傍晚
 
 See Also
---------

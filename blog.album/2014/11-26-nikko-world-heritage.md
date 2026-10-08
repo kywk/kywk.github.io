@@ -50,7 +50,7 @@ authors: kywk
 :::info 相簿資訊
 - **拍攝地點**：日本・栃木縣日光
 - **相簿系列**：Mt.Fuji marathon
-- **相關紀錄**：[[141126 Halo Nikko|🍁 旅途紀實：14.11.26 日光，你好！]]、[[Note Lodge Tokyo 2014|🏡 住宿經驗：日光 東觀莊]]
+- **相關紀錄**：[[141126 Halo Nikko|11.26 日光 你好]]
 - **相簿相片數**：共 22 張相片
 - **原始相簿**：[在 Flickr 上瀏覽完整相簿 ↗](https://www.flickr.com/photos/kywk71/albums/72157649805568315)
 :::

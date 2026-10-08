@@ -23,7 +23,7 @@ cover: http://farm9.staticflickr.com/8175/7904029618_249b62ee9b_c.jpg
 
 - 12.10.28 石岡馬拉松：[[taichung_forro-cafe|Forro 呼嚕咖啡]]
 - 12.08.31 普渡，不該出門：豐仁冰、[[taichung_13cafe-cafe-ensemble|十三咖啡]]
-- 12.03.10 台中一日行：[[taichung_miyahara|宮原眼科]]、[[taichung_13cafe-a-sanhoyuan-cafe|十三咖啡]]
+- 12.03.10 台中一日行：[[taichung_miyahara|宮原眼科]]、[[taichung_13cafe-a-sanhoyuan-cafe|十三咖啡]] 📸 相簿紀實：[[03-10-台中小行-120310|台中小行 (12.03.10)]]
 
 ### 彰化 Changhua
 
@@ -44,3 +44,10 @@ cover: http://farm9.staticflickr.com/8175/7904029618_249b62ee9b_c.jpg
 - [許蒼澤、鹿城戀曲攝影回顧展](http://www.wretch.cc/blog/b565656/14377193)  
 - [竹籬笆的春天－新竹眷村博物館](http://www.mobile01.com/waypointdetail.php?id=3665)  
 - [虎尾第一街「慶興食品行」](http://www.dfun.com.tw/?p=11237)
+
+### 📸 相簿紀實
+
+- [[03-10-台中-宮原眼科|台中 宮原眼科]]
+- [[03-10-台中-13-咖啡|台中 13 咖啡]]
+- [[10-10-台中-ash-coffee|台中 Ash coffee]]
+- [[09-06-台中-呼嚕-forro-cafe|台中 呼嚕 Forro Cafe]]

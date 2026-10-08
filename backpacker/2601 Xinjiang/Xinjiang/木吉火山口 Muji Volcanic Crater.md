@@ -39,4 +39,3 @@ hide_table_of_contents: true
 - 最佳參觀時間為夏季7-9月
 
 See Also
---------

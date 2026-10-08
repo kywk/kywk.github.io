@@ -48,7 +48,7 @@ authors: kywk
 :::info 相簿資訊
 - **拍攝地點**：台灣・南投能高越嶺古道
 - **相簿系列**：樂活運動
-- **相關紀錄**：[[141122_trail-nenggao|📝 活動紀實：越野．能高]]
+- **相關紀錄**：[[141122_trail-nenggao|越野．能高]]、[[Index Mount|福爾摩沙．百岳行 mountain climbing at Taiwan]]
 - **相簿相片數**：共 24 張相片
 - **原始相簿**：[在 Flickr 上瀏覽完整相簿 ↗](https://www.flickr.com/photos/kywk71/albums/72157649510139210)
 :::
