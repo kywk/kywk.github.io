@@ -33,6 +33,8 @@ map:
 - [[1102 With Airasia|廉航長程攻略]] — 轉機流程、座位與行李筆記。
 
 ## ✈️ Recent Routes · 遠行記錄
+- [[Index Bangkok Vietnam|2027 曼谷越南雙國行]] — 曼谷水上市集、中越會安燈籠與北越下龍灣 12 日跨國壯遊。
+- [[Index Tokyo Karuizawa|2026 東京輕井澤雙城漫遊]] — 上野阿美橫丁與輕井澤雲場池紅葉 5 日自由行。
 - [[Index Pharaoh Egypt|2024 法老埃及]] — 黑白沙漠與錫瓦綠洲的 12 日行程。
 - [[Schedule on Chile|2025 智利南北縱走]] — 從阿塔卡馬到巴塔哥尼亞的旅程草稿。
 - [Song of Ice · 冰島環島](/backpacker/category/song-of-ice/) — 追極光、冰洞與冰河湖的裝備與行程回顧。
