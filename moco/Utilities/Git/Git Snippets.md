@@ -8,7 +8,7 @@ tags:
 sidebar_position: 60
 hide_table_of_contents: true
 date_created: 2023-01-02T00:00:00.000Z
-date_updated: 2024-01-01T00:00:00.000Z
+date_updated: 2026-10-16T00:00:00.000Z
 cover: https://lh3.googleusercontent.com/pw/AL9nZEUA9Ifvd5Z8SXDWkeVB6AC4MPGwnXaL6kBXNPoXwOQQ2jOcZ1Jw_0p8TKK8C3ZX0e67_FOY15eDrm7aaXSQJcKtoUzC80SAQEHsaBy6qS2AqNNs5VUFNXBKm439y_1wkvmDl-PnL8ReojnIumNlEvOXBg=w800-no?authuser=0
 ---
 
@@ -285,9 +285,14 @@ git reset --hard origin/main
 git reflog
 git reset --hard <commit-hash>
 
-# 修復損壞的倉庫
+# 診斷倉庫完整性（出現 missing / broken 才需修復；dangling 屬正常殘留）
 git fsck --full
-git gc --prune=now
+
+# 物件缺失（跨機同步造成）：跳過 refs 協商、整包重抓（需 git >= 2.36）
+git fetch --refetch origin
+
+# index 缺失（新機／剛同步完成）：重建、不動工作區
+git reset
 ```
 
 ## 📝 最佳實踐
@@ -297,6 +302,12 @@ git gc --prune=now
 3. **備份重要操作**：在執行破壞性操作前先備份
 4. **使用 --dry-run**：在不確定的情況下先測試命令
 5. **閱讀輸出**：仔細閱讀命令輸出，理解操作結果
+
+## 📖 相關文章
+
+- [[Git Doctor]] - 跨機同步造成的損傷診斷與修復
+- [[Git Aliases]] - 個人 gitconfig 別名完整解析
+- [[Awesome Git]] - 精選 Git 工具與學習資源清單
 
 ---
 

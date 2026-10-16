@@ -7,7 +7,7 @@ tags:
   - Utility
   - Awesome
 date_created: 2024-01-01T00:00:00.000Z
-date_updated: 2026-07-26
+date_updated: 2026-10-16
 ---
 
 # Awesome Git
@@ -64,6 +64,7 @@ date_updated: 2026-07-26
 - [[Git Check remote branch]] - 檢查遠端分支是否存在
 - [[Git Snippets]] - 常用 Git 指令片段
 - [[Git Aliases]] - 個人 gitconfig 別名完整解析與工作流指南
+- [[Git Doctor]] - 跨機同步造成的損傷診斷與修復
 
 ## 🌐 社群與資源
 

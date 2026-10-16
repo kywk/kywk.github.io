@@ -9,7 +9,7 @@ tags:
 sidebar_position: 65
 hide_table_of_contents: true
 date_created: 2026-09-14T00:00:00.000Z
-date_updated: 2026-09-14T00:00:00.000Z
+date_updated: 2026-10-16T00:00:00.000Z
 cover: https://lh3.googleusercontent.com/pw/AL9nZEUA9Ifvd5Z8SXDWkeVB6AC4MPGwnXaL6kBXNPoXwOQQ2jOcZ1Jw_0p8TKK8C3ZX0e67_FOY15eDrm7aaXSQJcKtoUzC80SAQEHsaBy6qS2AqNNs5VUFNXBKm439y_1wkvmDl-PnL8ReojnIumNlEvOXBg=w800-no?authuser=0
 ---
 
@@ -181,6 +181,10 @@ git wipe
 > ```
 > 它會**先將所有變更（含未追蹤檔案）靜默提交一個臨時 Commit**，然後才執行 hard reset 退回。這代表如果誤刪了重要程式碼，只要透過 `git reflog` 就能隨時找回該筆 `WIPE SAVEPOINT` 救回資料！
 
+> [!CAUTION]
+> **保留 reflog 救援窗口**  
+> 清空 reflog（`git reflog expire --expire=now --all`）會讓上述復原機制完全失效，且無法還原。dotfiles 將這個危險操作包裝為需二次確認的 `git-purge-reflogs` 函式（執行前須輸入 `yes`）；日常清理不需要、也不應執行。
+
 ---
 
 ## 🌿 分支與遠端管理 (Branch & Remote Workflow)
@@ -246,3 +250,4 @@ git cleanup
 - [[Awesome Git]] - 精選 Git 工具與學習資源清單
 - [[Git Snippets]] - 常用 Git 一行式指令與代碼片段
 - [[Git Delta]] - 語法高亮的 Git Diff 檢視器
+- [[Git Doctor]] - 跨機同步造成的損傷診斷與修復
