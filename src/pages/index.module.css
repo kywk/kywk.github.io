@@ -1,211 +1,870 @@
 /**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
+ * kywk.me - Modernist Cartography & Studio Gazette Homepage Styles
+ * Direction: Modernist Cartography Gazette (Seed: seed:9812b89234e66b59)
+ * Pure CSS Craftsmanship, zero external heavy dependencies, dual-theme first.
  */
 
-.heroBanner {
-  padding: 6rem 0 4rem;
+/* ==========================================================================
+   Root Tokens & Surface Theme
+   ========================================================================== */
+
+.gazetteRoot {
+  --gaz-bg-ground: var(--ifm-background-color);
+  --gaz-bg-surface: var(--ifm-background-surface-color);
+  --gaz-bg-card: rgba(255, 255, 255, 0.7);
+  --gaz-border-hairline: rgba(45, 30, 20, 0.12);
+  --gaz-border-focus: rgba(226, 109, 45, 0.4);
+  --gaz-text-muted: #786c63;
+  --gaz-accent-orange: #e26d2d;
+  --gaz-accent-dark-orange: #c85317;
+  --gaz-accent-teal: #2e6b68;
+  --gaz-accent-amber: #d97706;
+  --gaz-telemetry-bg: rgba(45, 30, 20, 0.04);
+  --gaz-telemetry-text: #54473f;
+  --gaz-shadow-sm: 0 1px 3px rgba(45, 30, 20, 0.04), 0 4px 12px rgba(45, 30, 20, 0.03);
+  --gaz-shadow-md: 0 4px 8px rgba(45, 30, 20, 0.05), 0 16px 36px rgba(45, 30, 20, 0.07);
+  --gaz-shadow-hover: 0 8px 16px rgba(45, 30, 20, 0.06), 0 24px 48px rgba(45, 30, 20, 0.1);
+
   position: relative;
-  overflow: hidden;
-  color: #fff;
-  background: linear-gradient(145deg,
-      rgba(185, 110, 55, 0.95) 0%,
-      rgba(155, 85, 40, 0.96) 30%,
-      rgba(120, 60, 30, 0.97) 60%,
-      rgba(50, 30, 18, 1) 100%);
+  background-color: var(--gaz-bg-ground);
+  color: var(--ifm-color-content);
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
-.heroContent {
-  max-width: 900px;
+[data-theme='dark'] .gazetteRoot {
+  --gaz-bg-card: rgba(35, 28, 23, 0.75);
+  --gaz-border-hairline: rgba(245, 176, 65, 0.14);
+  --gaz-border-focus: rgba(245, 176, 65, 0.45);
+  --gaz-text-muted: #a8988b;
+  --gaz-accent-orange: #f5b041;
+  --gaz-accent-dark-orange: #eb984e;
+  --gaz-accent-teal: #48a9a6;
+  --gaz-accent-amber: #fbbf24;
+  --gaz-telemetry-bg: rgba(0, 0, 0, 0.35);
+  --gaz-telemetry-text: #e2d9d2;
+  --gaz-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.25), 0 4px 12px rgba(0, 0, 0, 0.15);
+  --gaz-shadow-md: 0 4px 8px rgba(0, 0, 0, 0.35), 0 16px 36px rgba(0, 0, 0, 0.25);
+  --gaz-shadow-hover: 0 8px 16px rgba(0, 0, 0, 0.45), 0 24px 48px rgba(0, 0, 0, 0.35);
 }
 
-.heroEyebrow {
+/* ==========================================================================
+   Masthead Telemetry Bar
+   ========================================================================== */
+
+.masthead {
+  border-bottom: 1px solid var(--gaz-border-hairline);
+  background: var(--gaz-bg-surface);
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  padding: 0.65rem 0;
+  color: var(--gaz-text-muted);
+}
+
+.mastheadInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.mastheadCoords {
   display: inline-flex;
-  padding: 0.25rem 0.75rem;
-  margin-bottom: 1rem;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.15);
-  font-size: 0.85rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.mastheadBeacon {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #10b981;
+  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.25);
+  animation: beaconPulse 2.8s infinite cubic-bezier(0.4, 0, 0.6, 1);
+}
+
+@keyframes beaconPulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.45;
+    transform: scale(0.92);
+  }
+}
+
+.mastheadStatus {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.mastheadItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.mastheadDivider {
+  color: var(--gaz-border-hairline);
+}
+
+/* ==========================================================================
+   Hero: Dual-Axis Cartographic Hub
+   ========================================================================== */
+
+.heroSection {
+  padding: 4.5rem 0 3.5rem;
+  position: relative;
+  border-bottom: 1px solid var(--gaz-border-hairline);
+  background: radial-gradient(
+    circle at 85% 15%,
+    rgba(226, 109, 45, 0.06) 0%,
+    transparent 50%
+  );
+}
+
+[data-theme='dark'] .heroSection {
+  background: radial-gradient(
+    circle at 85% 15%,
+    rgba(245, 176, 65, 0.08) 0%,
+    transparent 55%
+  );
+}
+
+.heroGrid {
+  display: grid;
+  grid-template-columns: 7fr 5fr;
+  gap: 3.5rem;
+  align-items: start;
+}
+
+.heroManifesto {
+  display: flex;
+  flex-direction: column;
 }
 
 .heroTitle {
-  font-size: clamp(2.5rem, 6vw, 3.6rem);
-  margin-bottom: 1rem;
-  font-weight: 700;
+  font-size: clamp(2.6rem, 5.2vw, 3.8rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+  color: var(--ifm-color-content);
+  margin: 0 0 1.25rem 0;
 }
 
-.heroSubtitle {
-  font-size: 1.1rem;
-  margin-bottom: 1.5rem;
-  line-height: 1.7;
-  color: rgba(255, 255, 255, 0.85);
-}
-
-.heroHighlights {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  list-style: none;
-  margin: 0 0 2rem;
-  padding: 0;
-}
-
-.heroHighlights li {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  padding: 0.5rem 0.9rem;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.1);
-  font-size: 0.95rem;
+.heroLead {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: var(--gaz-text-muted);
+  max-width: 62ch;
+  margin: 0 0 2rem 0;
 }
 
 .heroActions {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem;
+  gap: 0.85rem;
+  margin-bottom: 2.25rem;
 }
 
-.heroButton,
-.heroButtonSecondary {
-  min-width: 200px;
-  justify-content: center;
-}
-
-.heroButtonSecondary {
-  color: #fff;
-  background: linear-gradient(135deg, var(--ifm-color-primary-dark) 0%, var(--ifm-color-primary) 100%);
-  border: none;
-  box-shadow: 0 4px 15px rgba(230, 126, 34, 0.3);
-}
-
-.heroButtonSecondary:hover,
-.heroButtonSecondary:focus {
-  color: #fff;
-  background: linear-gradient(135deg, var(--ifm-color-primary-darkest) 0%, var(--ifm-color-primary-dark) 100%);
-  border: none;
-  box-shadow: 0 6px 20px rgba(230, 126, 34, 0.4);
-}
-
-.channelsSection {
-  padding: 4rem 0 2rem;
-  background: var(--ifm-background-surface-color);
-}
-
-.sectionHeader {
-  max-width: 640px;
-  margin-bottom: 2.5rem;
-}
-
-.sectionEyebrow {
-  display: inline-block;
-  font-size: 0.8rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--ifm-color-primary);
-  margin-bottom: 0.5rem;
-}
-
-.cardGrid {
-  display: grid;
-  gap: 1.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-}
-
-.channelCard {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-  padding: 1.75rem;
-  border-radius: 20px;
-  background: var(--ifm-color-emphasis-0);
-  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
-  text-decoration: none;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  color: inherit;
-}
-
-.channelCard:hover,
-.channelCard:focus {
-  transform: translateY(-4px);
-  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.14);
-  text-decoration: none;
-}
-
-.channelTone {
-  align-self: flex-start;
-  padding: 0.3rem 0.75rem;
-  border-radius: 999px;
-  font-size: 0.75rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  background: var(--ifm-color-primary-contrast-background);
-  color: var(--ifm-color-primary);
-}
-
-.cardLink {
+.btnPrimary {
   display: inline-flex;
   align-items: center;
-  gap: 0.25rem;
+  gap: 0.55rem;
+  padding: 0.8rem 1.6rem;
+  font-size: 0.96rem;
   font-weight: 600;
-  color: var(--ifm-color-primary);
+  border-radius: 10px;
+  background-color: var(--gaz-accent-orange);
+  color: #ffffff !important;
+  text-decoration: none !important;
+  transition: transform var(--transition-base), box-shadow var(--transition-base), background-color var(--transition-base);
+  box-shadow: 0 4px 14px rgba(226, 109, 45, 0.3);
 }
 
-.quickSection {
-  padding: 4rem 0 5rem;
+.btnPrimary:hover,
+.btnPrimary:focus-visible {
+  background-color: var(--gaz-accent-dark-orange);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(226, 109, 45, 0.4);
 }
 
-.quickList {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.btnSecondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.8rem 1.4rem;
+  font-size: 0.96rem;
+  font-weight: 600;
+  border-radius: 10px;
+  background-color: var(--gaz-bg-card);
+  color: var(--ifm-color-content) !important;
+  border: 1px solid var(--gaz-border-hairline);
+  text-decoration: none !important;
+  transition: transform var(--transition-base), background-color var(--transition-base), border-color var(--transition-base);
+}
+
+.btnSecondary:hover,
+.btnSecondary:focus-visible {
+  border-color: var(--gaz-accent-orange);
+  transform: translateY(-2px);
+  background-color: var(--gaz-bg-surface);
+}
+
+/* Dispatch Ticket Stubs */
+
+.dispatchStubs {
   display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.85rem;
+  padding-top: 1.5rem;
+  border-top: 1px dashed var(--gaz-border-hairline);
+}
+
+.stubItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding: 0.75rem 0.85rem;
+  border-radius: 8px;
+  background: var(--gaz-telemetry-bg);
+  border: 1px solid var(--gaz-border-hairline);
+  font-family: var(--ifm-font-family-monospace);
+  text-decoration: none !important;
+  color: inherit !important;
+  transition: border-color var(--transition-base), transform var(--transition-base);
+}
+
+.stubItem:hover {
+  border-color: var(--gaz-accent-orange);
+  transform: translateY(-1px);
+}
+
+.stubTag {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--gaz-accent-orange);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.stubCount {
+  font-size: 1.12rem;
+  font-weight: 700;
+  color: var(--ifm-color-content);
+  line-height: 1.3;
+}
+
+.stubDesc {
+  font-size: 0.75rem;
+  color: var(--gaz-text-muted);
+  font-family: var(--ifm-font-family-base);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ==========================================================================
+   Right Column: Multi-Dimensional Observation Deck
+   ========================================================================== */
+
+.observationDeck {
+  display: flex;
+  flex-direction: column;
   gap: 1rem;
 }
 
-.quickItem {
-  border-radius: 16px;
-  background: var(--ifm-color-emphasis-0);
-  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.quickItem a {
+.observationCard {
+  border: 1px solid var(--gaz-border-hairline);
+  border-radius: 14px;
+  background: var(--gaz-bg-card);
+  backdrop-filter: blur(8px);
+  padding: 1.35rem 1.45rem;
+  box-shadow: var(--gaz-shadow-sm);
+  text-decoration: none !important;
+  color: inherit !important;
   display: flex;
   flex-direction: column;
-  gap: 0.4rem;
-  padding: 1.5rem;
-  text-decoration: none;
-  color: inherit;
+  gap: 0.65rem;
+  position: relative;
+  overflow: hidden;
+  transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
 }
 
-.quickItem:hover,
-.quickItem:focus-within {
+.observationCard:hover,
+.observationCard:focus-visible {
   transform: translateY(-3px);
-  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.12);
+  box-shadow: var(--gaz-shadow-md);
+  border-color: var(--gaz-border-focus);
 }
 
-.quickTitle {
+.observationCardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.observationBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.78rem;
   font-weight: 600;
-  font-size: 1.1rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gaz-accent-orange);
 }
 
-.quickDescription {
-  color: var(--ifm-color-content-secondary);
+.observationBadgeTeal {
+  color: var(--gaz-accent-teal);
 }
+
+.observationAction {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--gaz-accent-orange);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.observationTitle {
+  font-size: 1.12rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.35;
+  color: var(--ifm-color-content);
+}
+
+.observationContent {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: var(--gaz-text-muted);
+  margin: 0;
+}
+
+.observationMetaRow {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.75rem;
+  color: var(--gaz-telemetry-text);
+  padding-top: 0.4rem;
+  border-top: 1px dashed var(--gaz-border-hairline);
+}
+
+.observationMetaItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+/* ==========================================================================
+   Section: Core Expeditions (Asymmetric Layout)
+   ========================================================================== */
+
+.sectionExpeditions {
+  padding: 4.5rem 0 3.5rem;
+  border-bottom: 1px solid var(--gaz-border-hairline);
+}
+
+.sectionHeader {
+  margin-bottom: 2.75rem;
+  max-width: 720px;
+}
+
+.sectionTitle {
+  font-size: clamp(1.8rem, 3.2vw, 2.3rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin: 0 0 0.65rem 0;
+}
+
+.sectionSubtitle {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--gaz-text-muted);
+  margin: 0;
+}
+
+.expeditionLayout {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1.5rem;
+}
+
+/* Dominant Backpacker Card: 12 cols */
+.cardBackpacker {
+  grid-column: span 12;
+  border: 1px solid var(--gaz-border-hairline);
+  border-radius: 16px;
+  background: var(--gaz-bg-card);
+  backdrop-filter: blur(8px);
+  padding: 2.25rem 2.5rem;
+  box-shadow: var(--gaz-shadow-sm);
+  display: grid;
+  grid-template-columns: 8fr 4fr;
+  gap: 2.5rem;
+  align-items: center;
+  transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
+  position: relative;
+  overflow: hidden;
+}
+
+.cardBackpacker:hover,
+.cardBackpacker:focus-within {
+  transform: translateY(-4px);
+  box-shadow: var(--gaz-shadow-hover);
+  border-color: var(--gaz-border-focus);
+}
+
+.cardTicketTag {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gaz-accent-orange);
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.cardBackpackerTitle {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 0 0 0.85rem 0;
+}
+
+.cardBackpackerTitle a {
+  color: var(--ifm-color-content);
+  text-decoration: none;
+}
+
+.cardBackpackerTitle a:hover {
+  color: var(--gaz-accent-orange);
+}
+
+.cardBackpackerDesc {
+  font-size: 0.98rem;
+  line-height: 1.75;
+  color: var(--gaz-text-muted);
+  margin: 0 0 1.5rem 0;
+}
+
+.cardPillGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.cardPill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.82rem;
+  font-weight: 500;
+  border-radius: 999px;
+  background: var(--gaz-telemetry-bg);
+  border: 1px solid var(--gaz-border-hairline);
+  color: var(--ifm-color-content) !important;
+  text-decoration: none !important;
+  transition: background-color var(--transition-fast), border-color var(--transition-fast), color var(--transition-fast);
+}
+
+.cardPill:hover {
+  background-color: var(--gaz-accent-orange);
+  border-color: var(--gaz-accent-orange);
+  color: #ffffff !important;
+}
+
+.cardBackpackerVisual {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  padding: 1.5rem;
+  background: var(--gaz-telemetry-bg);
+  border: 1px dashed var(--gaz-border-hairline);
+  border-radius: 12px;
+  font-family: var(--ifm-font-family-monospace);
+}
+
+.visualStatRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.82rem;
+  color: var(--gaz-telemetry-text);
+}
+
+.visualStatLabel {
+  color: var(--gaz-text-muted);
+}
+
+.visualStatValue {
+  font-weight: 700;
+  color: var(--ifm-color-content);
+}
+
+/* Secondary Cards: 6 cols each */
+.cardSecondary {
+  grid-column: span 6;
+  border: 1px solid var(--gaz-border-hairline);
+  border-radius: 16px;
+  background: var(--gaz-bg-card);
+  backdrop-filter: blur(8px);
+  padding: 2rem 2.25rem;
+  box-shadow: var(--gaz-shadow-sm);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem;
+  transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
+}
+
+.cardSecondary:hover,
+.cardSecondary:focus-within {
+  transform: translateY(-4px);
+  box-shadow: var(--gaz-shadow-hover);
+  border-color: var(--gaz-border-focus);
+}
+
+.cardSecondaryHeader {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardSecondaryTitle {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin: 0.35rem 0 0.75rem 0;
+}
+
+.cardSecondaryTitle a {
+  color: var(--ifm-color-content);
+  text-decoration: none;
+}
+
+.cardSecondaryTitle a:hover {
+  color: var(--gaz-accent-orange);
+}
+
+.cardSecondaryDesc {
+  font-size: 0.94rem;
+  line-height: 1.7;
+  color: var(--gaz-text-muted);
+  margin: 0;
+}
+
+/* ==========================================================================
+   Section: Gazette Dispatch Streams & Photo Album Showcase
+   ========================================================================== */
+
+.sectionStreams {
+  padding: 4.5rem 0 3.5rem;
+  border-bottom: 1px solid var(--gaz-border-hairline);
+  background: var(--gaz-bg-surface);
+}
+
+/* Photo Album Spotlight Banner */
+.albumBanner {
+  border: 1px solid var(--gaz-border-hairline);
+  border-radius: 16px;
+  background: linear-gradient(
+    135deg,
+    rgba(226, 109, 45, 0.08) 0%,
+    rgba(46, 107, 104, 0.08) 100%
+  );
+  padding: 2.25rem 2.5rem;
+  margin-bottom: 2.5rem;
+  display: grid;
+  grid-template-columns: 8fr 4fr;
+  gap: 2rem;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--gaz-shadow-sm);
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.albumBanner:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--gaz-shadow-md);
+}
+
+.albumBannerTitle {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 0.35rem 0 0.65rem 0;
+}
+
+.albumBannerTitle a {
+  color: var(--ifm-color-content);
+  text-decoration: none;
+}
+
+.albumBannerDesc {
+  font-size: 0.96rem;
+  line-height: 1.7;
+  color: var(--gaz-text-muted);
+  margin: 0 0 1.25rem 0;
+  max-width: 58ch;
+}
+
+.albumBannerAction {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-weight: 600;
+  font-size: 0.96rem;
+  color: var(--gaz-accent-orange);
+  text-decoration: none !important;
+}
+
+.albumBannerAction:hover {
+  text-decoration: underline !important;
+}
+
+.albumPreviewVisual {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1.25rem 1.5rem;
+  border-radius: 12px;
+  background: var(--gaz-bg-card);
+  border: 1px solid var(--gaz-border-hairline);
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.85rem;
+}
+
+.albumVisualRow {
+  display: flex;
+  justify-content: space-between;
+  color: var(--gaz-telemetry-text);
+}
+
+/* Twin Streams (Life & News) */
+.twinStreamGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.streamCard {
+  border: 1px solid var(--gaz-border-hairline);
+  border-radius: 14px;
+  background: var(--gaz-bg-card);
+  padding: 1.75rem 2rem;
+  box-shadow: var(--gaz-shadow-sm);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.25rem;
+  transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+.streamCard:hover,
+.streamCard:focus-visible {
+  transform: translateY(-3px);
+  box-shadow: var(--gaz-shadow-md);
+  border-color: var(--gaz-border-focus);
+}
+
+.streamBadge {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gaz-accent-teal);
+}
+
+.streamBadgeNews {
+  color: var(--gaz-accent-orange);
+}
+
+.streamTitle {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin: 0.35rem 0 0.5rem 0;
+  color: var(--ifm-color-content);
+}
+
+.streamDesc {
+  font-size: 0.96rem;
+  line-height: 1.65;
+  color: var(--gaz-text-muted);
+  margin: 0;
+}
+
+.streamFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+  border-top: 1px dashed var(--gaz-border-hairline);
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: var(--gaz-accent-orange);
+}
+
+/* ==========================================================================
+   Section: Field Notes & Curated Ticket Strips
+   ========================================================================== */
+
+.sectionFieldNotes {
+  padding: 4.5rem 0 5rem;
+}
+
+.ticketStripList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ticketStrip {
+  border: 1px solid var(--gaz-border-hairline);
+  border-radius: 12px;
+  background: var(--gaz-bg-card);
+  box-shadow: var(--gaz-shadow-sm);
+  transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
+}
+
+.ticketStrip:hover,
+.ticketStrip:focus-within {
+  transform: translateX(4px);
+  box-shadow: var(--gaz-shadow-md);
+  border-color: var(--gaz-border-focus);
+}
+
+.ticketStripLink {
+  display: grid;
+  grid-template-columns: 90px 180px 1fr 40px;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.25rem 1.75rem;
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+.ticketIndex {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--gaz-accent-orange);
+}
+
+.ticketCategory {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gaz-text-muted);
+}
+
+.ticketDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.ticketTitle {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--ifm-color-content);
+  margin: 0;
+}
+
+.ticketDesc {
+  font-size: 0.88rem;
+  color: var(--gaz-text-muted);
+  margin: 0;
+}
+
+.ticketArrow {
+  display: flex;
+  justify-content: flex-end;
+  color: var(--gaz-accent-orange);
+  transition: transform var(--transition-fast);
+}
+
+.ticketStrip:hover .ticketArrow {
+  transform: translateX(3px);
+}
+
+/* ==========================================================================
+   Responsive Adaptations
+   ========================================================================== */
 
 @media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 4rem 0 3rem;
+  .heroGrid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
   }
 
-  .heroHighlights {
+  .cardBackpacker {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+    padding: 1.75rem;
+  }
+
+  .cardSecondary {
+    grid-column: span 12;
+    padding: 1.75rem;
+  }
+
+  .albumBanner {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1.75rem;
+  }
+
+  .twinStreamGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .ticketStripLink {
+    grid-template-columns: 70px 1fr 30px;
+    gap: 1rem;
+    padding: 1rem 1.25rem;
+  }
+
+  .ticketCategory {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .dispatchStubs {
+    grid-template-columns: 1fr;
+  }
+
+  .mastheadInner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .heroActions {
     flex-direction: column;
   }
 
-  .cardGrid {
-    grid-template-columns: 1fr;
+  .btnPrimary,
+  .btnSecondary {
+    width: 100%;
+    justify-content: center;
   }
 }
