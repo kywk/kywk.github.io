@@ -1,0 +1,259 @@
+<!doctype html><html lang=zh-TW dir=ltr class="docs-wrapper plugin-docs plugin-id-moco docs-version-current docs-doc-page docs-doc-id-Docusaurus/docusaurus-kit/05 開發測試與新增套件" data-has-hydrated=false><head><meta charset=UTF-8><meta name=generator content="Docusaurus v3.10.2"><title data-rh=true>開發測試與新增套件 | kywk.me</title><meta data-rh=true name=viewport content="width=device-width, initial-scale=1.0"/><meta data-rh=true property=og:image content=https://kywk.github.io/img/og-social-card.png /><meta data-rh=true name=twitter:image content=https://kywk.github.io/img/og-social-card.png /><meta data-rh=true property=og:url content=https://kywk.github.io/moco/docusaurus/docusaurus-kit/05-開發測試與新增套件/ /><meta data-rh=true property=og:locale content=zh_TW /><meta data-rh=true name=docusaurus_locale content=zh-TW /><meta data-rh=true name=docsearch:language content=zh-TW /><meta data-rh=true name=keywords content="旅行, 背包客, 生活效率, 工程筆記, DevSecOps, Obsidian"/><meta data-rh=true name=author content=kywk /><meta data-rh=true property=og:type content=website /><meta data-rh=true property=og:site_name content=kywk.me /><meta data-rh=true name=twitter:card content=summary_large_image /><meta data-rh=true name=docusaurus_version content=current /><meta data-rh=true name=docusaurus_tag content=docs-moco-current /><meta data-rh=true name=docsearch:version content=current /><meta data-rh=true name=docsearch:docusaurus_tag content=docs-moco-current /><meta data-rh=true property=og:title content="開發測試與新增套件 | kywk.me"/><meta data-rh=true name=description content="docusaurus-kit 的本地開發、測試策略、新增套件清單與跨 repository 協作方式"/><meta data-rh=true property=og:description content="docusaurus-kit 的本地開發、測試策略、新增套件清單與跨 repository 協作方式"/><link data-rh=true rel=icon href=/img/favicon.ico /><link data-rh=true rel=canonical href=https://kywk.github.io/moco/docusaurus/docusaurus-kit/05-開發測試與新增套件/ /><link data-rh=true rel=alternate href=https://kywk.github.io/moco/docusaurus/docusaurus-kit/05-開發測試與新增套件/ hreflang=zh-TW /><link data-rh=true rel=alternate href=https://kywk.github.io/moco/docusaurus/docusaurus-kit/05-開發測試與新增套件/ hreflang=x-default /><script data-rh=true type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://kywk.github.io/moco/docusaurus/integrate-obsidian-and-docusaurus/","name":"Docusaurus","position":1},{"@type":"ListItem","item":"https://kywk.github.io/moco/docusaurus/docusaurus-kit/01-docusaurus-kit-專案總覽/","name":"docusaurus-kit","position":2},{"@type":"ListItem","item":"https://kywk.github.io/moco/docusaurus/docusaurus-kit/05-開發測試與新增套件/","name":"開發與測試","position":3}]}</script><link rel=alternate type=application/rss+xml href=/news/rss.xml title="kywk.me RSS Feed"><link rel=alternate type=application/atom+xml href=/news/atom.xml title="kywk.me Atom Feed"><link rel=alternate type=application/rss+xml href=/life/rss.xml title="kywk.me RSS Feed"><link rel=alternate type=application/atom+xml href=/life/atom.xml title="kywk.me Atom Feed"><link rel=alternate type=application/rss+xml href=/album/rss.xml title="kywk.me RSS Feed"><link rel=alternate type=application/atom+xml href=/album/atom.xml title="kywk.me Atom Feed"><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin=anonymous><link rel=stylesheet href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+TC:wght@400;500;700&display=swap" type=text/css><link rel=stylesheet href=/assets/css/styles.5294add5.css /><script src=/assets/js/runtime~main.91db4473.js defer></script><script src=/assets/js/main.eac746f3.js defer></script></head><body><svg style="display: none;"><defs>
+<symbol id=theme-svg-external-link viewBox="0 0 24 24"><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{for(var[t,e]of new URLSearchParams(window.location.search).entries())if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id=__docusaurus><link rel=preload as=image href=/img/logo.svg /><div role=region aria-label=跳至主要内容><a class=skipToContent_fXgn href=#__docusaurus_skipToContent_fallback>跳至主要内容</a></div><nav aria-label=主導航 class="theme-layout-navbar navbar navbar--fixed-top"><div class=navbar__inner><div class="theme-layout-navbar-left navbar__items"><button aria-label=切換導覽列 aria-expanded=false class="navbar__toggle clean-btn" type=button><svg width=30 height=30 viewBox="0 0 30 30" aria-hidden=true><path stroke=currentColor stroke-linecap=round stroke-miterlimit=10 stroke-width=2 d="M4 7h22M4 15h22M4 23h22"/></svg></button><a class=navbar__brand href=/><div class=navbar__logo><img src=/img/logo.svg alt="kywk.me Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"/><img src=/img/logo.svg alt="kywk.me Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"/></div><b class="navbar__title text--truncate">kywk.me</b></a><a class="navbar__item navbar__link" href=/backpacker/lonely-planet/>lonely planet</a><a class="navbar__item navbar__link" href=/lifehacker/way-2-kywk/>lifehacker</a><a aria-current=page class="navbar__item navbar__link navbar__link--active" href=/moco/kywk.moco/>moco</a><a class="navbar__item navbar__link" href=/life/>life</a><a class="navbar__item navbar__link" href=/album/>album</a><a class="navbar__item navbar__link" href=/news/>news</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href=https://github.com/kywk/ target=_blank rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type=button disabled title="system mode" aria-label="切換淺色/深色模式（當前為system mode）"><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill=currentColor d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill=currentColor d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill=currentColor d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"/></svg></button></div><div class=navbarSearchContainer_Bca1><div class="navbar__search searchBarContainer_NW3z" dir=ltr><svg aria-hidden=true class=searchIcon_T3tP focusable=false viewBox="0 0 16 16"><path fill=currentColor d="M6.02945 10.20327a4.17382 4.17382 0 1 1 4.17382-4.17382 4.15609 4.15609 0 0 1-4.17382 4.17382Zm9.69195 4.2199-4.8225-4.82338A5.88021 5.88021 0 0 0 12.058 6.02856 6.00467 6.00467 0 1 0 9.59979 10.8989l4.82338 4.82338a.89729.89729 0 0 0 1.29912 0 .89749.89749 0 0 0-.00087-1.29909Z"/></svg><input placeholder=Search aria-label=Search class="navbar__search-input searchInput_YFbd" value="" /><div class="loadingRing_RJI3 searchBarLoadingRing_YnHq"><div></div><div></div><div></div><div></div></div></div></div></div></div><div role=presentation class=navbar-sidebar__backdrop></div></nav><div id=__docusaurus_skipToContent_fallback class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class=docsWrapper_hBAB><button aria-label=回到頂部 class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type=button></button><div class=docRoot_UBD9><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class=sidebarViewport_aRkj><div class=sidebar_njMd><nav aria-label=文件側邊欄 class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/moco/52-projects/52-projects/><span class=categoryLinkLabel_W154>52 Projects</span></a><button aria-label="展開側邊欄分類 '52 Projects'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/moco/bootcamp/awesome-level-up/><span class=categoryLinkLabel_W154>BOOTCAMP</span></a><button aria-label="展開側邊欄分類 'BOOTCAMP'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/moco/tech-stack/awesome-tech-stack/><span class=categoryLinkLabel_W154>Tech Stack</span></a><button aria-label="展開側邊欄分類 'Tech Stack'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/moco/golang/awesome-go/><span class=categoryLinkLabel_W154>Go</span></a><button aria-label="展開側邊欄分類 'Go'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/moco/javascript/awesome-javascript/><span class=categoryLinkLabel_W154>JavaScript</span></a><button aria-label="展開側邊欄分類 'JavaScript'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/moco/java/awesome-java/><span class=categoryLinkLabel_W154>Java</span></a><button aria-label="展開側邊欄分類 'Java'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/moco/utilities/awesome-utilities/><span class=categoryLinkLabel_W154>Utilities</span></a><button aria-label="展開側邊欄分類 'Utilities'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/moco/machintosh/awesome-machintosh/><span class=categoryLinkLabel_W154>Machintosh</span></a><button aria-label="展開側邊欄分類 'Machintosh'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/moco/obsidian/my-obsidian/><span class=categoryLinkLabel_W154>Obsidian</span></a><button aria-label="展開側邊欄分類 'Obsidian'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href=/moco/docusaurus/integrate-obsidian-and-docusaurus/><span class=categoryLinkLabel_W154>Docusaurus</span></a><button aria-label="收起側邊欄分類 'Docusaurus'" aria-expanded=true type=button class="clean-btn menu__caret"></button></div><ul class=menu__list><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/moco/docusaurus/docusaurus-setup-note/><span class=linkLabel_WmDU>Docusaurus 設定筆記</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/moco/docusaurus/docusaurus-v3-upgrading/><span class=linkLabel_WmDU>Docusaurus v3 升級筆記</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/moco/docusaurus/wikilink-in-docusaurus/><span class=linkLabel_WmDU>Wikilink</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/moco/docusaurus/docusaurus-plugins/><span class=linkLabel_WmDU>Plugin 使用</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" tabindex=0 href=/moco/docusaurus/docusaurus-kit/01-docusaurus-kit-專案總覽/><span class=categoryLinkLabel_W154>docusaurus-kit</span></a><button aria-label="收起側邊欄分類 'docusaurus-kit'" aria-expanded=true type=button class="clean-btn menu__caret"></button></div><ul class=menu__list><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/moco/docusaurus/docusaurus-kit/02-docusaurus-theme-pele-與-mermaid-遷移/><span class=linkLabel_WmDU>Pele 與 Mermaid</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/moco/docusaurus/docusaurus-kit/03-obsidian-外掛-kanban-與-tasks/><span class=linkLabel_WmDU>Kanban 與 Tasks</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/moco/docusaurus/docusaurus-kit/04-github-actions-與-npm-信任發佈/><span class=linkLabel_WmDU>CI/CD 與 npm</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current=page tabindex=0 href=/moco/docusaurus/docusaurus-kit/05-開發測試與新增套件/><span class=linkLabel_WmDU>開發與測試</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/moco/docusaurus/docusaurus-kit/06-docusaurus-kit-版本與變更記錄/><span class=linkLabel_WmDU>版本與變更記錄</span></a></ul><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/moco/docusaurus/plugin-remark-obsidian-kanban/><span class=linkLabel_WmDU>Kanban Plugin</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/moco/docusaurus/plugin-remark-obsidian-leaflet/><span class=linkLabel_WmDU>Leaflet Plugin</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex=0 href=/moco/docusaurus/album-blog/01-album-blog-概念發想與決策記錄/><span class=categoryLinkLabel_W154>Album 相簿部落格</span></a><button aria-label="展開側邊欄分類 'Album 相簿部落格'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div></ul><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/moco/kywk.moco/><span class=linkLabel_WmDU>kywk.moco</span></a></ul></nav><button type=button title=收起側邊欄 aria-label=收起側邊欄 class="button button--secondary button--outline collapseSidebarButton_PEFL"><svg width=20 height=20 aria-hidden=true class=collapseSidebarButtonIcon_kv0_><g fill=#7a7a7a><path d="M9.992 10.023c0 .2-.062.399-.172.547l-4.996 7.492a.982.982 0 01-.828.454H1c-.55 0-1-.453-1-1 0-.2.059-.403.168-.551l4.629-6.942L.168 3.078A.939.939 0 010 2.528c0-.548.45-.997 1-.997h2.996c.352 0 .649.18.828.45L9.82 9.472c.11.148.172.347.172.55zm0 0"/><path d="M19.98 10.023c0 .2-.058.399-.168.547l-4.996 7.492a.987.987 0 01-.828.454h-3c-.547 0-.996-.453-.996-1 0-.2.059-.403.168-.551l4.625-6.942-4.625-6.945a.939.939 0 01-.168-.55 1 1 0 01.996-.997h3c.348 0 .649.18.828.45l4.996 7.492c.11.148.168.347.168.55zm0 0"/></g></svg></button></div></div></aside><main class=docMainContainer_TBSr><div class="container padding-top--md padding-bottom--lg"><div class=row><div class="col docItemCol_z5aJ"><div class=docItemContainer_c0TR><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label=頁面路徑><ul class=breadcrumbs><li class=breadcrumbs__item><a aria-label=主頁面 class=breadcrumbs__link href=/><svg viewBox="0 0 24 24" class=breadcrumbHomeIcon_YNFT><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill=currentColor /></svg></a><li class=breadcrumbs__item><a class=breadcrumbs__link href=/moco/docusaurus/integrate-obsidian-and-docusaurus/><span>Docusaurus</span></a><li class=breadcrumbs__item><a class=breadcrumbs__link href=/moco/docusaurus/docusaurus-kit/01-docusaurus-kit-專案總覽/><span>docusaurus-kit</span></a><li class="breadcrumbs__item breadcrumbs__item--active"><span class=breadcrumbs__link>開發與測試</span></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type=button class="clean-btn tocCollapsibleButton_TO0P">本頁導覽</button></div><div class="theme-doc-markdown markdown"><header><h1>開發測試與新增套件</h1></header>
+<p>這篇是 <code>docusaurus-kit</code> 的維護筆記：本地怎麼跑、測試怎麼分層、新增套件要準備什麼，以及網站與套件之間怎麼協作。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=環境需求>環境需求<a href=#環境需求 class=hash-link aria-label=環境需求的直接連結 title=環境需求的直接連結 translate=no>​</a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>工具<th>版本<tbody><tr><td>Node.js<td>>= 20.19<tr><td>pnpm<td>12.4（透過 corepack）<tr><td>Docusaurus<td>3.8+，測試以 3.10 為主<tr><td>React<td>18 或 19，測試以 19 為主</table>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">corepack enable pnpm</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">pnpm install</span><br/></div></code></pre></div></div>
+<p><code>pnpm-workspace.yaml</code> 有一個供應鏈策略：新發佈的套件預設要等 24 小時才會被解析，Pele 例外。這是為了降低剛發佈的套件被供應鏈攻擊的風險，同時保留立即採用 Pele 修復的能力。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=常用指令>常用指令<a href=#常用指令 class=hash-link aria-label=常用指令的直接連結 title=常用指令的直接連結 translate=no>​</a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>指令<th>用途<tbody><tr><td><code>pnpm build</code><td>建置所有 packages<tr><td><code>pnpm typecheck</code><td>型別檢查<tr><td><code>pnpm test</code><td>單元測試；theme 會先 build<tr><td><code>pnpm check</code><td>Biome format + lint<tr><td><code>pnpm check:fix</code><td>自動修正 Biome 問題<tr><td><code>pnpm playground</code><td>啟動 fixture site（<a href=http://localhost:3100 target=_blank rel="noopener noreferrer" class="">http://localhost:3100</a>）<tr><td><code>pnpm playground:build</code><td>建置 fixture site<tr><td><code>pnpm test:e2e</code><td>對現有 fixture build 跑 Playwright<tr><td><code>pnpm check:ci</code><td>完整本地 gate</table>
+<p><code>test:e2e</code> 不會幫你建置 fixture；要先跑 <code>pnpm playground:build</code>。Playwright 使用系統 Chrome（<code>channel: 'chrome'</code>），不是另外下載的 Chromium。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=測試分層>測試分層<a href=#測試分層 class=hash-link aria-label=測試分層的直接連結 title=測試分層的直接連結 translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=單元測試>單元測試<a href=#單元測試 class=hash-link aria-label=單元測試的直接連結 title=單元測試的直接連結 translate=no>​</a></h3>
+<ul>
+<li class=""><strong>theme-pele</strong>：檢查 plugin name、<code>Mermaid</code> theme component、client stylesheet、供 swizzle 的 source path 是否存在。Theme 的真正渲染交給 fixture site 與 Playwright。</li>
+<li class=""><strong>remark-obsidian-kanban</strong>：用 <code>unified</code> + <code>remark-parse</code> + <code>remark-frontmatter</code> + <code>remark-gfm</code> + <code>remark-wiki-link</code> 組出 pipeline，檢查欄位、卡片、狀態、wikilink、settings 區塊與非看板文件。</li>
+<li class=""><strong>rehype-obsidian-tasks</strong>：用 <code>remark-rehype</code> + <code>rehype-stringify</code> 檢查 <code>[-]</code>、<code>[/]</code>、GFM checkbox、loose list 與一般清單。</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=fixture-site>Fixture site<a href=#fixture-site class=hash-link aria-label="Fixture site的直接連結" title="Fixture site的直接連結" translate=no>​</a></h3>
+<p><code>examples/playground</code> 是三個套件共同的 integration test：</p>
+<ul>
+<li class=""><code>docs/index.md</code>：Pele 圖表，涵蓋本站用到的圖表類型。</li>
+<li class=""><code>docs/kanban.md</code>：Obsidian 看板。</li>
+<li class=""><code>docs/tasks.md</code>：任務狀態。</li>
+<li class=""><code>docusaurus.config.ts</code>：<code>markdown.format: 'detect'</code>、<code>markdown.mermaid: true</code>、theme 與 remark/rehype plugin 設定。</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=playwright>Playwright<a href=#playwright class=hash-link aria-label=Playwright的直接連結 title=Playwright的直接連結 translate=no>​</a></h3>
+<p><code>e2e/playground.spec.ts</code> 檢查：</p>
+<ul>
+<li class="">7 張圖都變成 <code>svg.pele</code>。</li>
+<li class="">寬圖有 2 個 zoom control。</li>
+<li class="">zoom control 不遮住 SVG。</li>
+<li class="">dark mode 切換後 <code>--pele-bg</code> 改變，圖表仍可見。</li>
+<li class="">沒有 page error。</li>
+</ul>
+<p>這一層是必要的：theme 套件就算單元測試全過，也可能在 Docusaurus 的 theme resolution 或 SSR 階段壞掉。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=package-結構>Package 結構<a href=#package-結構 class=hash-link aria-label="Package 結構的直接連結" title="Package 結構的直接連結" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=theme-pele><code>theme-pele</code><a href=#theme-pele class=hash-link aria-label=theme-pele的直接連結 title=theme-pele的直接連結 translate=no>​</a></h3>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-text codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">packages/theme-pele/</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">├── src/</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">│   ├── index.ts                 # Docusaurus plugin entry</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">│   ├── types.ts                 # themeConfig.pele 型別</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">│   ├── theme/Mermaid/index.js   # 覆寫 Docusaurus Mermaid component</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">│   └── client/</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">│       ├── index.ts             # 載入 CSS</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">│       └── pele.css             # --pele-* 對應 --ifm-*</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">├── scripts/copy-assets.mjs</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">├── test/theme.test.mjs</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">└── lib/                         # build 產物，gitignored</span><br/></div></code></pre></div></div>
+<p><code>lib/</code> 由 <code>pnpm build</code> 產生，<code>prepack</code> 會再建一次；不要手動 commit。</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=remark--rehype-plugin>remark / rehype plugin<a href=#remark--rehype-plugin class=hash-link aria-label="remark / rehype plugin的直接連結" title="remark / rehype plugin的直接連結" translate=no>​</a></h3>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-text codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">packages/remark-obsidian-kanban/</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">├── src/index.js</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">├── index.d.ts</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">├── test/kanban.test.mjs</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">└── README.md</span><br/></div></code></pre></div></div>
+<p><code>rehype-obsidian-tasks</code> 結構相同。兩個 plugin 都是 CJS 進入點，透過 <code>exports</code> 提供 <code>types</code> 與 <code>default</code>。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=新增一個套件>新增一個套件<a href=#新增一個套件 class=hash-link aria-label=新增一個套件的直接連結 title=新增一個套件的直接連結 translate=no>​</a></h2>
+<ol>
+<li class=""><strong>建立目錄與 <code>package.json</code></strong>
+<ul>
+<li class=""><code>name</code>、<code>version</code>、<code>description</code>、<code>license</code>、<code>repository.directory</code></li>
+<li class=""><code>files</code> 只放真的要發佈的檔案</li>
+<li class=""><code>publishConfig.access: "public"</code></li>
+<li class=""><code>engines.node</code> 與 repo 一致</li>
+</ul>
+</li>
+<li class=""><strong>寫 README</strong>
+<ul>
+<li class="">相容版本表（Docusaurus / React / Node）</li>
+<li class="">安裝指令</li>
+<li class="">最小可執行範例</li>
+<li class="">已知限制</li>
+</ul>
+</li>
+<li class=""><strong>定義型別</strong>
+<ul>
+<li class="">對外選項要有 <code>.d.ts</code>，不要讓使用者只能讀原始碼。</li>
+</ul>
+</li>
+<li class=""><strong>加測試</strong>
+<ul>
+<li class="">用 <code>unified</code> 測 AST 行為，不要只測字串包含。</li>
+<li class="">Theme 套件要加 fixture 頁面與 Playwright 檢查。</li>
+</ul>
+</li>
+<li class=""><strong>放進 playground</strong>
+<ul>
+<li class="">加 docs 頁面與 <code>docusaurus.config.ts</code> 設定。</li>
+<li class="">確認 <code>pnpm playground:build</code> 與 <code>pnpm test:e2e</code> 都過。</li>
+</ul>
+</li>
+<li class=""><strong>加 changeset</strong>
+<ul>
+<li class=""><code>pnpm changeset</code>，選擇 minor 或 patch。</li>
+</ul>
+</li>
+<li class=""><strong>第一次發佈</strong>
+<ul>
+<li class="">互動式 <code>pnpm --filter &lt;package> publish --access public</code>。</li>
+<li class="">到 npm 設定 trusted publisher。</li>
+</ul>
+</li>
+<li class=""><strong>讓 CI 接手</strong>
+<ul>
+<li class="">之後只透過 version PR 發佈，不再本地 publish。</li>
+</ul>
+</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=跨-repository-協作>跨 repository 協作<a href=#跨-repository-協作 class=hash-link aria-label="跨 repository 協作的直接連結" title="跨 repository 協作的直接連結" translate=no>​</a></h2>
+<p>網站 repository 是 consumer，套件 repository 是 producer。這個邊界要守住：</p>
+<ul>
+<li class="">不要在網站 repository 發佈套件。</li>
+<li class="">不要在套件 repository 放入 kywk.me 的內容、路徑或站台政策。</li>
+<li class="">網站升級套件版本時，單獨開 commit，不要跟內容變更混在一起。</li>
+</ul>
+<p>需要本地同時改兩邊時，可以用：</p>
+<ul>
+<li class=""><code>yalc</code>：把本地 package 連結進網站，適合短期 dogfood。</li>
+<li class="">canary release：發一個 pre-release 版本，讓網站安裝。</li>
+<li class=""><code>npm link</code>：最快，但 peer dependency 與 hoisting 容易出現落差。</li>
+</ul>
+<p>本站目前的情況：</p>
+<ul>
+<li class=""><code>docusaurus-theme-pele</code> 已從 npm 安裝。</li>
+<li class=""><code>remark-obsidian-kanban</code>、<code>rehype-obsidian-tasks</code> 仍載入站內 <code>plugins/</code> 版本，待驗證後再切換。</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=常見地雷>常見地雷<a href=#常見地雷 class=hash-link aria-label=常見地雷的直接連結 title=常見地雷的直接連結 translate=no>​</a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>問題<th>原因<th>解法<tbody><tr><td>Kanban 變成空白或 HTML 被吃掉<td>MDX 不接受 raw HTML<td><code>markdown.format: 'detect'</code><tr><td>看板卡片 wikilink 沒變成連結<td><code>remarkKanban</code> 在 <code>remark-wiki-link</code> 之前<td>把 kanban 放在後面<tr><td>看板頁出現 broken anchors<td><code>##</code> 被替換成 HTML，TOC 仍指向舊 heading<td><code>hide_table_of_contents: true</code><tr><td>圖表沒出現<td>只裝 theme，沒開 <code>markdown.mermaid</code><td>兩個都要設<tr><td>圖表仍是 Mermaid 樣式<td><code>@docusaurus/theme-mermaid</code> 還在 themes 裡且排在後面<td>移除舊 theme，或把 Pele 放最後<tr><td>CI 無法建立 version PR<td>repo 不允許 Actions 建立 PR<td>開啟 Actions 的 PR 權限<tr><td>npm 發佈 404<td>新套件尚未第一次發佈或沒有 trusted publisher<td>先互動式發佈，再設 trust</table>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=發版檢查清單>發版檢查清單<a href=#發版檢查清單 class=hash-link aria-label=發版檢查清單的直接連結 title=發版檢查清單的直接連結 translate=no>​</a></h2>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">pnpm check:ci</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">pnpm changeset</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">git add -A</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">git commit -m "feat: ..."</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">git push</span><br/></div></code></pre></div></div>
+<p>合併 version PR 後確認：</p>
+<ul>
+<li class="">npm <code>latest</code> 是預期版本。</li>
+<li class=""><code>npm view &lt;package>@&lt;version> dist.attestations</code> 有 provenance。</li>
+<li class="">GitHub 有對應的 git tag。</li>
+<li class="">Release workflow 是 success。</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=下一步>下一步<a href=#下一步 class=hash-link aria-label=下一步的直接連結 title=下一步的直接連結 translate=no>​</a></h2>
+<ul>
+<li class="">把 kywk.me 的 kanban/tasks 切到 npm 版本，移除站內重複實作。</li>
+<li class="">評估 album 與 story map 是否能拆出資料中立的 API；在還沒拆開前，不急著搬。</li>
+<li class="">補更多圖表類型的 fixture，降低 Pele 升級時的視覺回歸風險。</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=系列文章>系列文章<a href=#系列文章 class=hash-link aria-label=系列文章的直接連結 title=系列文章的直接連結 translate=no>​</a></h2>
+<ul>
+<li class=""><a class=internal href=/moco/docusaurus/docusaurus-kit/01-docusaurus-kit-專案總覽/>01 docusaurus-kit 專案總覽</a></li>
+<li class=""><a class=internal href=/moco/docusaurus/docusaurus-kit/02-docusaurus-theme-pele-與-mermaid-遷移/>02 docusaurus-theme-pele 與 Mermaid 遷移</a></li>
+<li class=""><a class=internal href=/moco/docusaurus/docusaurus-kit/03-obsidian-外掛-kanban-與-tasks/>03 Obsidian 外掛 Kanban 與 Tasks</a></li>
+<li class=""><a class=internal href=/moco/docusaurus/docusaurus-kit/04-github-actions-與-npm-信任發佈/>04 GitHub Actions 與 npm 信任發佈</a></li>
+<li class=""><a class=internal href=/moco/docusaurus/docusaurus-kit/06-docusaurus-kit-版本與變更記錄/>06 docusaurus-kit 版本與變更記錄</a></li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=參考>參考<a href=#參考 class=hash-link aria-label=參考的直接連結 title=參考的直接連結 translate=no>​</a></h2>
+<ul>
+<li class=""><a href=https://github.com/kywk/docusaurus-kit target=_blank rel="noopener noreferrer" class="">docusaurus-kit README</a></li>
+<li class=""><a href=https://github.com/kywk/docusaurus-kit/blob/main/docs/adr/0001-packages-monorepo.md target=_blank rel="noopener noreferrer" class="">ADR 0001</a></li>
+</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-tags-row"><div class=col><b>標籤：</b><ul class="tags_jXut padding--none margin-left--sm"><li class=tag_QGVx><a rel=tag class="tag_zVej tagRegular_sFm0" href=/moco/tags/docusaurus/>Docusaurus</a><li class=tag_QGVx><a rel=tag class="tag_zVej tagRegular_sFm0" href=/moco/tags/docusaurus-kit/>docusaurus-kit</a><li class=tag_QGVx><a rel=tag class="tag_zVej tagRegular_sFm0" href=/moco/tags/開發/>開發</a><li class=tag_QGVx><a rel=tag class="tag_zVej tagRegular_sFm0" href=/moco/tags/測試/>測試</a><li class=tag_QGVx><a rel=tag class="tag_zVej tagRegular_sFm0" href=/moco/tags/pnpm/>pnpm</a></ul></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label=文件選項卡><a class="pagination-nav__link pagination-nav__link--prev" href=/moco/docusaurus/docusaurus-kit/04-github-actions-與-npm-信任發佈/><div class=pagination-nav__sublabel>上一頁</div><div class=pagination-nav__label>CI/CD 與 npm</div></a><a class="pagination-nav__link pagination-nav__link--next" href=/moco/docusaurus/docusaurus-kit/06-docusaurus-kit-版本與變更記錄/><div class=pagination-nav__sublabel>下一頁</div><div class=pagination-nav__label>版本與變更記錄</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href=#環境需求 class="table-of-contents__link toc-highlight">環境需求</a><li><a href=#常用指令 class="table-of-contents__link toc-highlight">常用指令</a><li><a href=#測試分層 class="table-of-contents__link toc-highlight">測試分層</a><ul><li><a href=#單元測試 class="table-of-contents__link toc-highlight">單元測試</a><li><a href=#fixture-site class="table-of-contents__link toc-highlight">Fixture site</a><li><a href=#playwright class="table-of-contents__link toc-highlight">Playwright</a></ul><li><a href=#package-結構 class="table-of-contents__link toc-highlight">Package 結構</a><ul><li><a href=#theme-pele class="table-of-contents__link toc-highlight"><code>theme-pele</code></a><li><a href=#remark--rehype-plugin class="table-of-contents__link toc-highlight">remark / rehype plugin</a></ul><li><a href=#新增一個套件 class="table-of-contents__link toc-highlight">新增一個套件</a><li><a href=#跨-repository-協作 class="table-of-contents__link toc-highlight">跨 repository 協作</a><li><a href=#常見地雷 class="table-of-contents__link toc-highlight">常見地雷</a><li><a href=#發版檢查清單 class="table-of-contents__link toc-highlight">發版檢查清單</a><li><a href=#下一步 class="table-of-contents__link toc-highlight">下一步</a><li><a href=#系列文章 class="table-of-contents__link toc-highlight">系列文章</a><li><a href=#參考 class="table-of-contents__link toc-highlight">參考</a></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class=footer__title>主題索引</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/backpacker/lonely-planet/>Backpacker</a><li class=footer__item><a class=footer__link-item href=/lifehacker/way-2-kywk/>Lifehacker</a><li class=footer__item><a class=footer__link-item href=/moco/kywk.moco/>MoCo Lab</a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>筆記頻道</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/news/>News Log</a><li class=footer__item><a class=footer__link-item href=/life/>Life Blog</a><li class=footer__item><a class=footer__link-item href=/album/>Photo Album</a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>連結</div><ul class="footer__items clean-list"><li class=footer__item><a href=https://github.com/kywk target=_blank rel="noopener noreferrer" class=footer__link-item>GitHub<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a></ul></div></div><div class="footer__bottom text--center"><div class=footer__copyright>Copyright © 2026 kywk. Built with Docusaurus.</div></div></div></footer></div></body>
