@@ -16,7 +16,7 @@ date_updated: 2026-10-21T00:00:00.000Z
 
 # Obsidian 外掛 Kanban 與 Tasks
 
-`remark-obsidian-kanban` 與 `rehype-obsidian-tasks` 是從 kywk.me 站內 `plugins/` 抽出來的兩個外掛，現在都由 [[01 docusaurus-kit 專案總覽|docusaurus-kit]] 發佈：
+`remark-obsidian-kanban` 與 `rehype-obsidian-tasks` 是由 [[01 docusaurus-kit 專案總覽|docusaurus-kit]] 維護的兩個外掛：
 
 | 套件 | 版本 | 階段 | 功能 |
 | --- | --- | --- | --- |
@@ -144,7 +144,7 @@ export default {
 };
 ```
 
-本站是多 docs 實例，因此要套用到**每一個** content plugin 實例；blog 或自訂 content plugin 也一樣。
+若站台是多 docs 實例，要套用到**每一個** content plugin 實例；blog 或自訂 content plugin 也一樣。
 
 ### 支援的狀態
 
@@ -211,10 +211,6 @@ const remarkPlugins = [
 
 const rehypePlugins = [rehypeObsidianTasks];
 ```
-
-## 站台狀態
-
-kywk.me 目前仍載入站內 `plugins/` 版本；npm 套件已在 fixture site 驗證，後續會單獨切換。舊版遷移與版本紀錄見 [[06 docusaurus-kit 版本與變更記錄]]。
 
 ## 測試與範例
 

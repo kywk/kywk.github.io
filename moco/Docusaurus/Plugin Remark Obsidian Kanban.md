@@ -14,7 +14,7 @@ sidebar_label: Kanban Plugin
 date_created: 2025-09-23T00:00:00.000Z
 date_updated: 2026-10-21T00:00:00.000Z
 history:
-  - 2026-10-21 更新為 npm 0.2.1 現況；歷史見 [[06 docusaurus-kit 版本與變更記錄]]
+  - 2026-10-21 更新為 npm 0.2.1 現況；歷史見 [[Docusaurus 版本與變更記錄]]
 ---
 
 # [Docusaurus] remark-obsidian-kanban Plugin
@@ -199,7 +199,7 @@ hide_table_of_contents: true
 
 ## 站台狀態
 
-kywk.me 目前仍載入站內 `plugins/` 版本；npm 版本已在 fixture site 驗證。版本與舊版遷移紀錄見 [[06 docusaurus-kit 版本與變更記錄]]。
+kywk.me 目前仍載入站內 `plugins/` 版本；npm 版本已在 fixture site 驗證。版本與舊版遷移紀錄見 [[Docusaurus 版本與變更記錄]]。
 
 ## 限制
 

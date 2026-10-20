@@ -68,3 +68,4 @@ draft: true
 
 ### 相關文章
 - [[Integrate Obsidian and Docusaurus]] - 文件站點整合
+- [[Docusaurus 版本與變更記錄]] - 站台變更與外掛沿革

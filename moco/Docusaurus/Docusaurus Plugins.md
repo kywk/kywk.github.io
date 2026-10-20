@@ -12,7 +12,7 @@ sidebar_label: Plugin 使用
 date_created: 2024-05-24T00:00:00.000Z
 date_updated: 2026-10-21T00:00:00.000Z
 history:
-  - 2026-10-21 更新為目前套件與 Pele 狀態；歷史見 [[06 docusaurus-kit 版本與變更記錄]]
+  - 2026-10-21 更新為目前套件與 Pele 狀態；歷史見 [[Docusaurus 版本與變更記錄]]
 ---
 
 # [Docusaurus] Plugin 使用筆記
@@ -151,7 +151,7 @@ remarkPlugins: [[remarkStoryMap, storyMapOptions]]
 
 ## 已移除外掛
 
-`remark-obsidian-leaflet` 與 `remark-oembed` 的移除原因、替代方案與站台外掛沿革，整理在 [[06 docusaurus-kit 版本與變更記錄]]。
+`remark-obsidian-leaflet` 與 `remark-oembed` 的移除原因、替代方案與站台外掛沿革，整理在 [[Docusaurus 版本與變更記錄]]。
 
 ## 延伸閱讀
 
@@ -161,3 +161,4 @@ remarkPlugins: [[remarkStoryMap, storyMapOptions]]
 - [[04 GitHub Actions 與 npm 信任發佈]]
 - [[05 開發測試與新增套件]]
 - [[06 docusaurus-kit 版本與變更記錄]]
+- [[Docusaurus 版本與變更記錄]]

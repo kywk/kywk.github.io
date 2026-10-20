@@ -1,6 +1,6 @@
 ---
 title: docusaurus-kit 專案總覽
-description: 將 kywk.me 的可重用 Docusaurus 外掛拆成獨立 pnpm monorepo，並透過 GitHub Actions 發佈到 npm
+description: 可重用 Docusaurus 套件的 pnpm monorepo，透過 GitHub Actions 發佈到 npm
 tags:
   - Docusaurus
   - docusaurus-kit
@@ -15,7 +15,7 @@ date_updated: 2026-10-21T00:00:00.000Z
 
 # docusaurus-kit 專案總覽
 
-`docusaurus-kit` 是把 kywk.me 站內可重用的 Docusaurus 外掛抽出來後成立的 pnpm monorepo。網站本身留在原本的 Obsidian vault repository，只當這些套件的消費者；套件的版本、CI 與 changelog 則獨立運作。
+`docusaurus-kit` 是一個 pnpm monorepo，用來維護可重用的 Docusaurus 套件。各站台以 npm 版本使用這些套件；套件的版本、CI 與 changelog 獨立運作。
 
 - GitHub：<https://github.com/kywk/docusaurus-kit>
 - npm：`docusaurus-theme-pele`、`remark-obsidian-kanban`、`rehype-obsidian-tasks`
@@ -23,12 +23,12 @@ date_updated: 2026-10-21T00:00:00.000Z
 
 ## 為什麼要拆成獨立專案
 
-原本這些外掛都放在 kywk.me 的 `plugins/` 目錄。這樣做在只有一個站台時很方便，但這個 repository 同時是 Obsidian vault，帶著私人筆記、大量內容資產，而且每次內容 push 都會觸發部署。外掛和內容共用同一條 release 節奏，會產生幾個問題：
+這些套件原本和站台內容放在同一個 repository。站台 repository 通常同時有內容、私人資料與部署流程；外掛和內容共用同一條 release 節奏，會產生幾個問題：
 
 - **發佈耦合**：改一個外掛就要跟內容一起進版，無法單獨發 npm 版本。
-- **外部協作困難**：別人想貢獻外掛，不需要也不應該拿到整個私人 vault。
+- **外部協作困難**：別人想貢獻外掛，不需要也不應該拿到整個私人站台。
 - **建置風險**：外掛重構可能在下一次內容部署時直接弄壞網站，而不是等到刻意升級版本才生效。
-- **憑證與體積**：npm 發佈權限不該放在 vault repository；workspace 工具與 build 產物也會讓 Dropbox 同步的 repo 更重。
+- **憑證與體積**：npm 發佈權限不該放在站台 repository；workspace 工具與 build 產物也會讓站台 repo 更重。
 
 拆開後，網站可以明確選擇「什麼時候」升級某個套件，套件也能有自己的測試、CI、版本與 changelog。
 
@@ -62,13 +62,13 @@ docusaurus-kit/
 
 ## 設計原則
 
-1. 套件必須能在沒有 kywk.me 內容、路徑或設定的情況下使用。
+1. 套件必須能在沒有特定站台內容、路徑或設定的情況下使用。
 2. 每個套件都要有 README、相容版本表與可執行的範例。
 3. theme 套件不能只跑單元測試，必須經過 fixture site 的實際建置。
 4. `peerDependencies` 保持寬鬆；精確的 Docusaurus 版本放在 `devDependencies`。
 5. 不從網站 repository 發佈套件。
 
-第 5 點很重要：網站是 consumer，不是 package source。即使站內還有 `plugins/` 目錄，也不代表那些程式應該從 vault 發佈。
+第 5 點很重要：站台是 consumer，不是 package source。即使站台內還有 `plugins/` 目錄，也不代表那些程式應該從站台 repo 發佈。
 
 ## 快速安裝
 
@@ -113,19 +113,13 @@ export default {
 
 ## 站台與套件的邊界
 
-目前移到 `docusaurus-kit` 的是「離開 kywk.me 也能獨立運作」的部分：
+`docusaurus-kit` 只放離開特定站台也能獨立運作的部分：
 
 - Pele Mermaid theme
 - Obsidian Kanban
 - Obsidian task statuses
 
-仍留在網站 repository 的是帶有站台政策或資料依賴的部分：
-
-- `docusaurus-plugin-album`：相簿路由、Flickr 匯入與站台版型
-- `remark-story-map`：掃描 vault 標記、站台路由解析
-- `remark-slug-normalizer`：本站的 slug 規則
-
-這些不是「不能開源」，而是目前 API 還綁著站台假設。等它們長出資料中立的介面，再考慮搬進 monorepo。
+仍留在各站台 repository 的是帶有站台政策或資料依賴的部分。這些不是「不能開源」，而是目前 API 還綁著站台假設。等它們長出資料中立的介面，再考慮搬進 monorepo。
 
 ## 發佈方式
 
@@ -142,12 +136,10 @@ export default {
 | [[03 Obsidian 外掛 Kanban 與 Tasks]] | 兩個 Obsidian 外掛的安裝與行為 |
 | [[04 GitHub Actions 與 npm 信任發佈]] | Changesets、OIDC、CI/CD |
 | [[05 開發測試與新增套件]] | 本地開發、測試策略與新增套件清單 |
-| [[06 docusaurus-kit 版本與變更記錄]] | 版本、站台整合與歷史變更 |
+| [[06 docusaurus-kit 版本與變更記錄]] | 版本與專案里程碑 |
 
-## 目前狀態
+## 套件狀態
 
 - 三個套件都已發佈：`docusaurus-theme-pele@0.1.1`、`remark-obsidian-kanban@0.2.1`、`rehype-obsidian-tasks@0.2.1`。
-- `0.2.1` 由 GitHub Actions 以 OIDC 發佈並附 provenance。
-- kywk.me 已改用 npm 版的 `docusaurus-theme-pele`。
-- Kanban 與 Tasks 目前仍由站內的本地版本載入；套件已可用，後續再切換，避免把「內容變更」與「套件升級」混在同一次部署。
-- 下一個候選是 album 與 story map，但前提是先把它們的站台政策與資料依賴拆開。
+- 三個版本都由 GitHub Actions 以 OIDC 發佈並附 provenance。
+- 下一個候選是仍留在站台 repository 的外掛，但前提是先把它們的站台政策與資料依賴拆開。

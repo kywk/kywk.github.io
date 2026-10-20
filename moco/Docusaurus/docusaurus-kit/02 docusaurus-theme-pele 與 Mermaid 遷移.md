@@ -26,7 +26,7 @@ date_updated: 2026-10-21T00:00:00.000Z
 | 主題切換 | 通常需要重新渲染 | CSS 變數切換，不重繪 |
 | 錯誤處理 | 解析錯誤可能留下 DOM 痕跡 | 錯誤顯示在容器內，不破壞頁面 |
 
-實際數字以套件 README 為準；重點不是「Pele 一定比較好」，而是本站的圖表數量與主題切換頻率，讓「小、同步、可用 CSS 改色」這三件事很有價值。
+實際數字以套件 README 為準；重點不是「Pele 一定比較好」，而是圖表數量與主題切換頻率，讓「小、同步、可用 CSS 改色」這三件事很有價值。
 
 Pele 的輸出不會和 Mermaid 一模一樣。它支援 Mermaid 12.1 語法，但有自己的 layout 與視覺風格；如果站上有依賴 Mermaid 特定排版或 `%%{init}%%` 主題覆寫的圖，遷移前要先檢查。
 
@@ -135,12 +135,9 @@ Light mode 下，Pele 預設用 `--ifm-color-primary-darker` 當強調色，讓�
 - **錯誤處理**：不合法的 Mermaid 會在圖表容器內顯示錯誤，不會讓整頁壞掉；瀏覽器 console 也會留下 parse error。
 - **client render**：需要 JavaScript 才能看到圖；純靜態 HTML 只有空容器。
 
-## 目前站上狀況
+## 驗證方式
 
-- 22 個頁面、27 張 Mermaid 圖都由 Pele 渲染。
-- build 成功，瀏覽器檢查 `svg.pele` 數量與 page error 都正常。
-
-Fixture site 的 Playwright 測試則固定檢查：
+Fixture site 的 Playwright 測試固定檢查：
 
 - 7 張圖都渲染成 `svg.pele`
 - 寬圖有 2 個 zoom control

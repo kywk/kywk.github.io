@@ -10,7 +10,7 @@ sidebar_position: 30
 date_created: 2022-05-24T00:00:00.000Z
 date_updated: 2026-10-21T00:00:00.000Z
 history:
-  - 2026-10-21 更新 Mermaid 設定；歷史見 [[06 docusaurus-kit 版本與變更記錄]]
+  - 2026-10-21 更新 Mermaid 設定；歷史見 [[Docusaurus 版本與變更記錄]]
 ---
 
 # [Docusaurus] 進階設定筆記
@@ -245,3 +245,4 @@ hide_table_of_contents: true
 - [[Docusaurus Plugins]] - 插件使用筆記
 - [[Integrate Obsidian and Docusaurus]] - Obsidian 整合指南
 - [[Docusaurus v3 Upgrading]] - 版本升級筆記
+- [[Docusaurus 版本與變更記錄]] - 站台變更與外掛沿革

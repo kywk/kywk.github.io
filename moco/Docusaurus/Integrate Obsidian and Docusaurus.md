@@ -11,7 +11,7 @@ sidebar_label: Obsidian integration
 date_created: 2022-11-01T00:00:00.000Z
 date_updated: 2026-10-21T00:00:00.000Z
 history:
-  - 2026-10-21 更新為目前套件狀態；歷史見 [[06 docusaurus-kit 版本與變更記錄]]
+  - 2026-10-21 更新為目前套件狀態；歷史見 [[Docusaurus 版本與變更記錄]]
 ---
 
 # [Docusaurus] Obsidian 整合指南
