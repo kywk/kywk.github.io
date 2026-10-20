@@ -385,7 +385,9 @@ const config: Config = {
   ],
 
   themes: [
-    "@docusaurus/theme-mermaid",
+    // Mermaid fenced blocks 改由 Pele 渲染；渲染器封裝在
+    // ~/Dropbox/project/docusaurus-kit/packages/theme-pele
+    "docusaurus-theme-pele",
     // 全靜態的站內搜尋（無外部服務），語言含中文分詞
     [
       require.resolve("@easyops-cn/docusaurus-search-local"),
