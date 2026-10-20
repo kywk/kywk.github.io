@@ -10,7 +10,10 @@ tags:
   - 版本移轉
 sidebar_position: 40
 date_created: 2024-01-10T00:00:00.000Z
-date_updated: 2026-08-17T00:00:00.000Z
+date_updated: 2026-10-21T00:00:00.000Z
+history:
+  - 2026-10-21 補充 Mermaid 已改由 Pele 渲染
+  - 2024-01-10 初稿
 ---
 
 # [Docusaurus] v3 升級筆記
@@ -21,6 +24,8 @@ date_updated: 2026-08-17T00:00:00.000Z
 > 然後，就炸了。
 
 本文記錄將 Docusaurus 從 v2 升級到 v3 的完整過程與遇到的問題解決方法，並持續補充 v3 各版本升級（目前到 3.10.2）的踩坑紀錄。
+
+> **2026-10 更新**：站上的 Mermaid 已改由 [[02 docusaurus-theme-pele 與 Mermaid 遷移|docusaurus-theme-pele]] 渲染，不再使用 `@docusaurus/theme-mermaid`。本文下方的 `@docusaurus/theme-mermaid` 安裝指令保留為當時升級過程的紀錄，新專案請改裝 Pele theme。
 
 ## 升級步驟
 

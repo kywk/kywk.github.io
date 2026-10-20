@@ -8,12 +8,9 @@ tags:
   - 多實例
 sidebar_position: 30
 date_created: 2022-05-24T00:00:00.000Z
-date_updated: 2026-10-02T00:00:00.000Z
+date_updated: 2026-10-21T00:00:00.000Z
 history:
-  - 2026-10-02 新增 Album 相簿部落格外掛實例與插件封裝紀錄
-  - 2026-08-17 多實例踩坑：preset docs/blog、search-local、backdrop-filter、TOC
-  - 2024-05-24 Remark Plugin Usage
-  - 2022-05-24 初始建立
+  - 2026-10-21 更新 Mermaid 設定；歷史見 [[06 docusaurus-kit 版本與變更記錄]]
 ---
 
 # [Docusaurus] 進階設定筆記
@@ -146,6 +143,29 @@ Docusaurus v3 可以使用 MDX plugin 來擴充 Markdown 的格式支援與處�
 生態圈的 plugin 可以找到多數使用者共同需求的功能來擴展 Docusaurus 文件的產出.
 
 目前所使用的 [[Docusaurus Plugins|Plugins 另行整理於此]].
+
+## Mermaid 渲染改用 Pele
+
+目前站上的 `mermaid` 圍欄由 `docusaurus-theme-pele` 渲染。語法仍是 Mermaid，差別在 renderer 體積、同步渲染與 CSS 變數主題。
+
+```typescript
+// docusaurus.config.ts
+export default {
+  markdown: {
+    mermaid: true,
+  },
+  themes: ['docusaurus-theme-pele'],
+  themeConfig: {
+    pele: {
+      zoom: 'auto',
+    },
+  },
+};
+```
+
+同時從 `package.json` 移除 `@docusaurus/theme-mermaid`、`mermaid` 與 `@mermaid-js/layout-elk`。`themeConfig.mermaid` 不再使用，請改 `themeConfig.pele`。
+
+完整遷移、ELK 限制與錯誤處理見 [[02 docusaurus-theme-pele 與 Mermaid 遷移]]。
 
 ## 技巧與稍門 (Tips & Tricks)
 

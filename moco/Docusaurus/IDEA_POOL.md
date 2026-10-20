@@ -15,19 +15,36 @@ draft: true
 
 ## 已完成功能
 
-- [x] **remark-obsidian-kanban plugin** ✅ 2025-09-23
+- [x] **docusaurus-kit monorepo** ✅ 2026-10-20
+  - 將可重用外掛抽到獨立 pnpm monorepo，發佈 npm
+  - [[01 docusaurus-kit 專案總覽]]
+
+- [x] **remark-obsidian-kanban plugin** ✅ 2025-09-23（npm `0.2.1`，2026-10-21）
   - 支援 Obsidian Kanban 格式轉換
-  - [[Plugin Remark Obsidian Kanban]]
+  - [[Plugin Remark Obsidian Kanban]]、[[03 Obsidian 外掛 Kanban 與 Tasks]]
+
+- [x] **rehype-obsidian-tasks plugin** ✅ 2026-10-20（npm `0.2.1`）
+  - 支援 `[-]`、`[/]` 任務狀態
+  - [[03 Obsidian 外掛 Kanban 與 Tasks]]
+
+- [x] **Mermaid 改用 Pele** ✅ 2026-10-20
+  - 取代 `@docusaurus/theme-mermaid`
+  - [[02 docusaurus-theme-pele 與 Mermaid 遷移]]
+
+- [x] **GitHub Actions + npm trusted publishing** ✅ 2026-10-20
+  - Changesets version PR、OIDC 發佈、provenance
+  - [[04 GitHub Actions 與 npm 信任發佈]]
 
 - [x] **support obsidian wikilink** ✅ 2024-05-15
   - 支援 `[[]]` 語法
   - [[Wikilink in Docusaurus]]
 
-- [ ] **support obsidian callouts**
+- [x] **support obsidian callouts** ✅ 2025-12-24
   - 支援 Obsidian 的 callout 語法
 
-- [x] **docusaurus-plugin-leaflet** ✅ 2025-12-24
-  - 地圖展示功能
+- [x] **地理地圖（StoryMap 與 Leaflet 相容）** ✅ 2026-09-30
+  - 原本的 `docusaurus-plugin-leaflet` 已由 `remark-story-map` 接手
+  - [[Plugin Remark Obsidian Leaflet]]、[[01 Geo Story Map 專案介紹]]
 
 ## 開發中功能
 

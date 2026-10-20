@@ -5,21 +5,33 @@ cover: https://lh3.googleusercontent.com/pw/AL9nZEUA9Ifvd5Z8SXDWkeVB6AC4MPGwnXaL
 tags:
   - Docusaurus
   - kywk
+  - npm
+  - docusaurus-kit
 sidebar_position: 60
 sidebar_label: Plugin 使用
 date_created: 2024-05-24T00:00:00.000Z
-date_updated: 2026-10-02T00:00:00.000Z
+date_updated: 2026-10-21T00:00:00.000Z
 history:
-  - 2026-10-02 新增 docusaurus-plugin-album 相簿外掛紀錄
-  - 2026-09-30 remark-obsidian-leaflet 刪除，改用 remark-story-map
-  - 2024-05-24 Init
+  - 2026-10-21 更新為目前套件與 Pele 狀態；歷史見 [[06 docusaurus-kit 版本與變更記錄]]
 ---
 
 # [Docusaurus] Plugin 使用筆記
 
 本文記錄在 Docusaurus 專案中使用的各種 remark 插件，特別是針對 Obsidian 整合所開發或配置的插件。
 
-## 核心插件
+> 部分外掛由 [[01 docusaurus-kit 專案總覽|docusaurus-kit]] 發佈到 npm；站內 `plugins/` 版本仍在使用，npm 版本已可用。各節標示目前的建議用法與切換狀態。
+
+## docusaurus-kit 套件
+
+| 套件 | 版本 | 類型 | 用途 |
+| --- | --- | --- | --- |
+| `docusaurus-theme-pele` | `0.1.1` | theme | 以 Pele 取代 Mermaid renderer |
+| `remark-obsidian-kanban` | `0.2.1` | remark | Obsidian Kanban 轉靜態看板 |
+| `rehype-obsidian-tasks` | `0.2.1` | rehype | `[-]` / `[/]` 任務狀態 |
+
+來源與發佈流程見 [[01 docusaurus-kit 專案總覽]]、[[04 GitHub Actions 與 npm 信任發佈]]。
+
+## 核心外掛與主題
 
 ### remark-wiki-link
 
@@ -39,15 +51,38 @@ history:
 }]
 ```
 
+### docusaurus-theme-pele
+
+以 [Pele](https://pele.run) 取代 `@docusaurus/theme-mermaid` 的 Docusaurus theme。仍使用 `mermaid` 圍欄語法，但 renderer 換成體積較小、同步渲染、可用 CSS 變數切換主題的 Pele。
+
+設定只有兩件事：`markdown.mermaid: true` 與 `themes: ['docusaurus-theme-pele']`；舊的 `@docusaurus/theme-mermaid`、`mermaid`、`@mermaid-js/layout-elk` 可以移除。詳細遷移與相容性見 [[02 docusaurus-theme-pele 與 Mermaid 遷移]]。
+
 ### remark-obsidian-kanban
 
-[[Plugin Remark Obsidian Kanban]] 是自製的 Docusaurus remark 插件，用於將 Obsidian Kanban 格式的 markdown 文件轉換為網頁看板顯示。
+已從站內 `plugins/` 抽到 [[01 docusaurus-kit 專案總覽|docusaurus-kit]]，npm 版本 `0.2.1`。[[Plugin Remark Obsidian Kanban]] 保留為詳細使用與實作筆記。
 
 **核心功能**：
 - 自動識別 `kanban-plugin: board` frontmatter
-- 支援 wikilink 連結解析與錯誤處理
-- 圖片嵌入與響應式設計
-- 與 Docusaurus 主題整合與 TOC 隱藏
+- `##` 轉欄位、清單項目轉卡片，欄位標題顯示卡片數
+- 可選 `pageResolver` / `hrefTemplate` 解析卡片內的 wikilink；不提供時仍可渲染
+- 卡片狀態 `[ ]`、`[x]`、`[-]`、`[/]` 會轉成對應 class 與 `data-task`
+- 圖片、Markdown 連結與縮排內容保留
+- 自動移除 Obsidian 的 `kanban:settings` 區塊
+
+**注意**：外掛輸出 raw HTML，Docusaurus 需設 `markdown.format: 'detect'`；看板頁請用 frontmatter `hide_table_of_contents: true`，不要用 CSS 隱藏 TOC。
+
+### rehype-obsidian-tasks
+
+將 Obsidian 的 `[-]`（取消）與 `[/]`（進行中）轉成 GFM task item 的 rehype 外掛，npm 版本 `0.2.1`。
+
+**核心功能**：
+- 保留標準 GFM `[ ]` / `[x]` 行為
+- 加上 `task-list-item--cancelled`、`task-list-item--in-progress` 與 `data-task`
+- 父層清單加 `contains-task-list`
+- 支援 tight list 與 loose list
+- 只處理 task item 的 class/attribute 與 checkbox，視覺由站台 CSS 決定
+
+安裝、設定與兩個外掛一起用的範例見 [[03 Obsidian 外掛 Kanban 與 Tasks]]。
 
 ### remark-story-map
 
@@ -114,26 +149,15 @@ remarkPlugins: [[remarkStoryMap, storyMapOptions]]
 
 詳細架構設計與演進過程見 [[03 Album Blog 完工成果與架構插件化評估|Album 相簿部落格：完工成果與路徑一插件化實作]]。
 
-## 已移除插件
+## 已移除外掛
 
-### remark-obsidian-leaflet（已刪除）
+`remark-obsidian-leaflet` 與 `remark-oembed` 的移除原因、替代方案與站台外掛沿革，整理在 [[06 docusaurus-kit 版本與變更記錄]]。
 
-自製的 remark 插件，用於將 Obsidian Leaflet 格式的地圖代碼轉換為互動式地圖顯示。**已於 2026-09-30 刪除**。
+## 延伸閱讀
 
-**移除原因**：功能已被 `remark-story-map` 完整接手，兩者同時載入會讓站上存在兩套 Leaflet runtime。`plugins/remark-obsidian-leaflet/`、`static/js/leaflet-init.js` 與相關的 `.leaflet-*` 樣式都已刪除。
-
-**原本的核心功能（皆已由 Geo Story Map 接手）**：
-- 自動識別 `leaflet` 程式碼區塊
-- 支援明暗主題自動切換
-- 自動從 Markdown 檔案讀取地點標記
-- Wiki-link 連結整合與中文支援
-
-既有 ` ```leaflet ` 圍欄區塊**不需要改寫**，標記照樣從 `markerFolder` 遞迴讀取既有筆記的 `location`。相容程度與保留中的 key 見 [[06 Geo Story Map 純地圖與 Leaflet 相容]]，遷移配置見 [[Plugin Remark Obsidian Leaflet]]。
-
-### remark-oembed
-
-[remark-oembed](https://github.com/sergioramos/remark-oembed) 可將獨立一行的影片/圖片 URL 轉換成嵌入式格式。
-
-**移除原因**：與 remark-wiki-link 產生衝突，影響 wikilink 解析功能。
-
-**替代方案**：直接使用 Markdown 的圖片和連結語法。
+- [[01 docusaurus-kit 專案總覽]]
+- [[02 docusaurus-theme-pele 與 Mermaid 遷移]]
+- [[03 Obsidian 外掛 Kanban 與 Tasks]]
+- [[04 GitHub Actions 與 npm 信任發佈]]
+- [[05 開發測試與新增套件]]
+- [[06 docusaurus-kit 版本與變更記錄]]

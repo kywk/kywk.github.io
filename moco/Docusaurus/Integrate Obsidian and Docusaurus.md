@@ -9,7 +9,9 @@ tags:
 sidebar_position: 10
 sidebar_label: Obsidian integration
 date_created: 2022-11-01T00:00:00.000Z
-date_updated: 2026-09-30T00:00:00.000Z
+date_updated: 2026-10-21T00:00:00.000Z
+history:
+  - 2026-10-21 更新為目前套件狀態；歷史見 [[06 docusaurus-kit 版本與變更記錄]]
 ---
 
 # [Docusaurus] Obsidian 整合指南
@@ -136,6 +138,8 @@ plugins: [
 ],
 ````
 
+Kanban、Tasks 與 Mermaid theme 目前以 npm 套件提供（[[03 Obsidian 外掛 Kanban 與 Tasks]]、[[02 docusaurus-theme-pele 與 Mermaid 遷移]]）；新專案直接安裝套件即可，不需要複製站內 `plugins/`。
+
 ## Git 版本控制 (.gitignore)
 
 常見 Docusaurus 發佈到 GitHub 有兩種方式：
@@ -195,12 +199,13 @@ temporary.md
 
 ### 已完成功能
 
-- [x] **support obsidian wikilink** [[Wikilink in Docusaurus]] ✅ 2024-05-15
-- [x] **support obsidian kanban** [[Plugin Remark Obsidian Kanban]] ✅ 2025-09-23
-- [x] **support obsidian callouts** ✅ 2025-12-24
-- [x] **地理地圖：StoryMap 與純地圖** [[01 Geo Story Map 專案介紹]] ✅ 2026-09-30
+- [x] **support obsidian wikilink** — [[Wikilink in Docusaurus]]
+- [x] **support obsidian kanban** — [[Plugin Remark Obsidian Kanban]]
+- [x] **support obsidian task statuses** — `[-]` / `[/]`
+- [x] **Mermaid renderer via Pele** — [[02 docusaurus-theme-pele 與 Mermaid 遷移]]
+- [x] **support obsidian callouts**
+- [x] **地理地圖：StoryMap 與純地圖** — [[01 Geo Story Map 專案介紹]]
   - ` ```story-map ` 故事地圖與 ` ```leaflet ` 純地圖，由同一個 remark 外掛處理
-  - 原本自製的 [[Plugin Remark Obsidian Leaflet]] 已於 2026-09-30 停用並刪除，站上不再有第二套 Leaflet runtime
 
 ### 開發中功能
 
