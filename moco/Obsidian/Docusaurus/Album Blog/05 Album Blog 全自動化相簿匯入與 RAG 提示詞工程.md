@@ -33,7 +33,7 @@ date_updated: 2026-10-02T00:00:00.000Z
 
 ```mermaid
 flowchart TD
-    subgraph Phase 1: 離線資產與知識庫索引
+    subgraph phase1["Phase 1: 離線資產與知識庫索引"]
         DB[(Flickr 快照資料庫<br/>481 Albums & 10 Collections)]
         VAULT[公開知識庫筆記<br/>backpacker, lifehacker, blog.life]
         BUILD_IDX[build-vault-index.py]
@@ -42,14 +42,14 @@ flowchart TD
         VAULT --> BUILD_IDX --> RAG_IDX
     end
 
-    subgraph Phase 2: 相似度比對與 RAG 檢索 (import-flickr-albums.py)
+    subgraph phase2["Phase 2: 相似度比對與 RAG 檢索 (import-flickr-albums.py)"]
         DB --> MATCHER[關聯文章比對引擎]
         RAG_IDX --> MATCHER
         
         MATCHER -->|計分維度: ID/系列/日期/關鍵字| RANK[Top 1~3 篇關聯手記]
     end
 
-    subgraph Phase 3: Prompt 上下文工程與 AI 生成
+    subgraph phase3["Phase 3: Prompt 上下文工程與 AI 生成"]
         RANK --> PROMPT[Prompt 脈絡注入器]
         F_META[相簿中繼資訊: 地點/系列/挑選相片] --> PROMPT
         
@@ -61,7 +61,7 @@ flowchart TD
         CLI_AGY --> GEN_TXT[感性導言 + 故事短文 + 相關紀錄區塊]
     end
 
-    subgraph Phase 4: 排版寫入與雙向回寫
+    subgraph phase4["Phase 4: 排版寫入與雙向回寫"]
         GEN_TXT --> ALBUM_MD[blog.album/YYYY/MM-DD-slug.md]
         RANK -->|--update-reciprocal| RECIPROCAL[更新原文章文末<br/>回寫相簿 Wiki-link]
         ALBUM_MD --> DOCU[Docusaurus Plugin Album]

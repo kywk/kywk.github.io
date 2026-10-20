@@ -90,7 +90,7 @@ date_updated: 2026-10-02T00:00:00.000Z
 
 ```mermaid
 flowchart TD
-    subgraph 瀏覽與發現 [/album/ 首頁]
+    subgraph browse["瀏覽與發現 [/album/ 首頁]"]
         A[進入相簿首頁] --> B[全寬 Pinterest 瀑布流]
         B --> C[滾動向下瀏覽]
         C --> D[IntersectionObserver 無限載入新卡片]
@@ -98,7 +98,7 @@ flowchart TD
         E -->|點擊年份/月份| F[平滑捲動跳轉至該年份區塊]
     end
 
-    subgraph 深度閱讀 [/album/... 內頁]
+    subgraph reading["深度閱讀 [/album/... 內頁]"]
         B -->|點擊卡片| G[進入相簿文章內頁]
         G --> H[頂部 Hero: 封面大圖 + 地點/系列/題詞]
         G --> I[左側欄: 保留雙層收合目錄與自動定位]
