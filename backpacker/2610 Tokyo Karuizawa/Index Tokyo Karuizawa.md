@@ -38,8 +38,8 @@ date_updated: 2026-11-01T00:00:00.000Z
   - 去程 10/28 (三)：MM626 台北(TPE) T1 10:40 → 東京成田(NRT) T1 14:55 / 15:20
   - 回程 11/01 (日)：MM623 東京成田(NRT) T1 16:40 → 台北(TPE) T1 20:00
 - **住宿規劃**：
-  - 第 1、3、4 晚（10/28, 10/30, 10/31）：[[上野站前APA飯店 APA Hotel Keisei Ueno Ekimae]]
-  - 第 2 晚（10/29）：[[APA飯店 輕井澤站前輕井澤莊 APA Hotel Karuizawa Ekimae]]
+  - 第 1、2、4 晚（10/28, 10/29, 10/31）：[[上野站前APA飯店 APA Hotel Keisei Ueno Ekimae]]
+  - 第 3 晚（10/30）：[[APA飯店 輕井澤站前輕井澤莊 APA Hotel Karuizawa Ekimae]]
 
 ## Schedule / 行程記錄
 
@@ -79,5 +79,3 @@ markerFolder: backpacker/2610 Tokyo Karuizawa/Tokyo Karuizawa
 - [[上野站前APA飯店 APA Hotel Keisei Ueno Ekimae]] - 交通超樞紐，直達機場與新幹線，第1、3、4晚指定住宿
 
 ## note / 雜記小文
-
-- [[2 Tokyo Karuizawa]]
