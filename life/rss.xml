@@ -17,7 +17,7 @@
             <content:encoded><![CDATA[<p>封存在 Flickr 多年的 481 本相簿與 10 大 Collections 階層樹，在 AI 與 RAG 協助下，正式踏上向 Docusaurus 相簿部落格的自動化遷移旅程！</p>
 <p><img decoding="async" loading="lazy" src="https://live.staticflickr.com/5614/15696144889_a5e305e7e6_b.jpg" alt="" class="img_ev3q"></p>
 <p>因 Flickr 歷經易主與多次改版，帳號已無法登入，也不會再有新更新。這批凝結了 2005 至今的 481 本攝影紀錄，成為一組珍貴的永久歷史切片。</p>
-<p>在為個人網站完成瀑布流、時光軸滑桿與全螢幕燈箱的 <a class="internal" href="https://kywk.github.io/moco/obsidian/docusaurus/album-blog/03-album-blog-%E5%AE%8C%E5%B7%A5%E6%88%90%E6%9E%9C%E8%88%87%E6%9E%B6%E6%A7%8B%E6%8F%92%E4%BB%B6%E5%8C%96%E8%A9%95%E4%BC%B0/">Album 相簿部落格插件</a> 後，最讓人期待的，就是讓這些老照片重見天日。</p>
+<p>在為個人網站完成瀑布流、時光軸滑桿與全螢幕燈箱的 <a class="internal" href="https://kywk.github.io/moco/docusaurus/album-blog/03-album-blog-%E5%AE%8C%E5%B7%A5%E6%88%90%E6%9E%9C%E8%88%87%E6%9E%B6%E6%A7%8B%E6%8F%92%E4%BB%B6%E5%8C%96%E8%A9%95%E4%BC%B0/">Album 相簿部落格插件</a> 後，最讓人期待的，就是讓這些老照片重見天日。</p>
 <p>但若只是寫個腳本把相片網址機械化排版出來，相簿就只是一堆冰冷的圖檔，少了當時按下快門的呼吸與回憶。</p>
 <p>於是我們打造了一套小巧卻極具威力的整合管線：</p>
 <ol>
@@ -30,8 +30,8 @@
 <ul>
 <li class="">See Also
 <ul>
-<li class=""><a class="internal" href="https://kywk.github.io/moco/obsidian/docusaurus/album-blog/04-album-blog-flickr-%E7%9B%B8%E7%B0%BF%E5%8C%AF%E5%85%A5%E8%88%87%E8%87%AA%E5%8B%95%E5%8C%96%E6%95%B4%E5%90%88%E6%96%B9%E6%A1%88/">Album Blog Flickr 相簿匯入與自動化整合方案</a></li>
-<li class=""><a class="internal" href="https://kywk.github.io/moco/obsidian/docusaurus/album-blog/05-album-blog-%E5%85%A8%E8%87%AA%E5%8B%95%E5%8C%96%E7%9B%B8%E7%B0%BF%E5%8C%AF%E5%85%A5%E8%88%87-rag-%E6%8F%90%E7%A4%BA%E8%A9%9E%E5%B7%A5%E7%A8%8B/">Album Blog 全自動化相簿匯入與 RAG 提示詞工程</a></li>
+<li class=""><a class="internal" href="https://kywk.github.io/moco/docusaurus/album-blog/04-album-blog-flickr-%E7%9B%B8%E7%B0%BF%E5%8C%AF%E5%85%A5%E8%88%87%E8%87%AA%E5%8B%95%E5%8C%96%E6%95%B4%E5%90%88%E6%96%B9%E6%A1%88/">Album Blog Flickr 相簿匯入與自動化整合方案</a></li>
+<li class=""><a class="internal" href="https://kywk.github.io/moco/docusaurus/album-blog/05-album-blog-%E5%85%A8%E8%87%AA%E5%8B%95%E5%8C%96%E7%9B%B8%E7%B0%BF%E5%8C%AF%E5%85%A5%E8%88%87-rag-%E6%8F%90%E7%A4%BA%E8%A9%9E%E5%B7%A5%E7%A8%8B/">Album Blog 全自動化相簿匯入與 RAG 提示詞工程</a></li>
 </ul>
 </li>
 </ul>]]></content:encoded>
@@ -580,7 +580,7 @@ Shelite 開發除錯到一定階段需求錯誤已收斂可以邊運行邊觀察
 <p><strong><a href="https://www.usebruno.com/" target="_blank" rel="noopener noreferrer" class="">Bruno</a></strong></p>
 <p>The Collaboration Platform for API Development.</p>
 <div class="language-shell codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-shell codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">brew install bruno</span><br></div></code></pre></div></div>
-<p><em>See Also: <a class="internal" href="https://kywk.github.io/moco/techstack/openapi/postman-alternative/">Postman Alternative</a></em></p>
+<p><em>See Also: <a class="internal" href="https://kywk.github.io/moco/tech-stack/apim/openapi/postman-alternative/">Postman Alternative</a></em></p>
 <p><strong><a href="http://www.sequelpro.com/" target="_blank" rel="noopener noreferrer" class="">Sequel Pro</a></strong></p>
 <p>Sequel Pro is a fast, easy-to-use Mac database management application for working with MySQL databases.</p>
 <div class="language-shell codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-shell codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">brew install sequel-pro</span><br></div></code></pre></div></div>
