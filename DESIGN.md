@@ -129,9 +129,10 @@ kywk.me 的首頁視覺體系「現代主義探險公報（Modernist Cartography
 
 ## Layout
 
-- **雙軸中樞（Dual-Axis Cartographic Hub）**：首屏採用 7:5 的黃金比例雙欄網格。左欄為主張宣言與探索羅盤；右欄為集成式觀測站（相簿精選、故事地圖、工程遙測）。
-- **非對稱拓撲（Asymmetric Expeditions Grid）**：徹底摒棄「三張一模一樣的卡片」模板慣性。Backpacker 作為全寬支配性卡片（Dominant Lead Card），右側配以量測數據區塊；Lifehacker 與 MoCo Lab 則以對稱半寬承接，層次鮮明。
-- **票券切角條（Ticket Strips）**：橫向展開的精選文章條列，包含 `[01]`、`[02]` 等寬索引、分類膠囊與懸停平移動畫。
+- **全寬等高線與數位光網舞台（Full-Bleed Contour & Digital Mesh Hero Stage）**：首屏借鏡 Neo-Mirai 的層疊構圖張力，底層為暖金日落山稜插畫與橫跨畫面的多層次 SVG 等高線及數位光網星座節點，左側以柔和漸層融接紙面，承載西方現代測繪徽章（Survey Crest）、三行大尺度宣言標題與 Backpacker / Album 雙核心行動入口；右側浮現真實航線與相簿觀景座標錨點。
+- **四大不重複資訊舞台（Zero-Redundancy Four-Stage Architecture）**：全頁嚴格收斂為四個職責單一的舞台——（1）Hero 旅途與光影主視覺、（2）三大知識庫主線（Backpacker / Lifehacker / MoCo Lab）、（3）Side Projects 開源外掛與工具造物矩陣、（4）光影畫廊與雙軌日誌（Photo Album / Life Blog / News Log），相同頻道絕不跨區重複。
+- **非對稱拓撲（Asymmetric Grid Topology）**：徹底摒棄「三張一模一樣的卡片」模板慣性。Backpacker 作為 12 欄全寬支配性卡片（Dominant Lead Card），右側配以量測數據面板；Lifehacker 與重整後的 MoCo Lab 則以對稱 6 欄承接；動態頻道採用左 7 欄相簿主卡、右 5 欄雙部落格上下堆疊的 7:5 黃金比例。
+- **工程規格矩陣（Side Projects Spec Matrix）**：雙欄展示個人開源維護的 Obsidian 與 Docusaurus 外掛（`geo-story-map`、`vault-feed-reader`、`docusaurus-kit` 看板與任務套件、`docusaurus-plugin-album`），未來可彈性擴充其他實驗專案。
 
 ## Elevation & Depth
 
@@ -149,10 +150,10 @@ kywk.me 的首頁視覺體系「現代主義探險公報（Modernist Cartography
 
 ## Components
 
-1. **Gazette Masthead**：頂部航行數據條，整合經緯度、海拔高度、呼吸指示燈（Beacon Pulse）與全站筆記同步計數器。
-2. **Observation Deck**：右側觀測站模組，承載相簿觀測窗、StoryMap 航線紀錄與 DevSecOps SOP 捷徑。
-3. **Dispatch Stubs**：票券聯式計數條，提供三個主題的量化統計與快速跳轉。
-4. **Authored SVG System**：所有圖標均以手刻 2px stroke 的幾何 SVG 組成（羅盤、手帳、終端機、相機、地圖指針），嚴禁 Emoji 濫充圖標。
+1. **Gazette Masthead**：頂部航行數據條，整合經緯度、海拔高度、呼吸指示燈（Beacon Pulse）與全站 1,846 篇筆記同步計數器。
+2. **Cartographic Survey Crest & Contour Mesh**：左側西方現代測繪山稜羅盤徽章與垂直高程刻度，搭配橫貫 Hero 畫面的 SVG 等高線、旅途山徑虛線與數位光網節點。
+3. **Side Projects Spec Card**：呈現外掛名稱、npm/plugin 套件識別碼、架構筆記連結與 GitHub 原始碼入口的雙層規格面板。
+4. **Authored SVG System**：所有圖標均以手刻 2px stroke 的幾何 SVG 組成（羅盤、手帳、終端機、相機、地圖指針、RSS 訊號、看板），嚴禁 Emoji 濫充圖標。
 
 ## Do's and Don'ts
 

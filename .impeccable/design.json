@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-21T12:09:30+08:00",
+  "title": "Design System: Modernist Cartography Gazette",
+  "extensions": {
+    "colorMeta": {
+      "primary": {
+        "role": "primary",
+        "displayName": "Sunset Expedition Orange",
+        "canonical": "#e26d2d",
+        "tonalRamp": ["#3b1606", "#5c240a", "#82330f", "#a84314", "#c85317", "#e26d2d", "#f09a67", "#fbe3d4"]
+      },
+      "accent-teal": {
+        "role": "secondary",
+        "displayName": "Alpine Fir Teal",
+        "canonical": "#2e6b68",
+        "tonalRamp": ["#0d2423", "#163836", "#21524f", "#2e6b68", "#3d8a86", "#58aba7", "#8cc9c6", "#d5eeec"]
+      },
+      "accent-amber": {
+        "role": "tertiary",
+        "displayName": "Horizon Amber",
+        "canonical": "#d97706",
+        "tonalRamp": ["#3b1d02", "#5e3003", "#8a4804", "#b35f05", "#d97706", "#f59e0b", "#fbbf24", "#fef3c7"]
+      },
+      "neutral-bg": {
+        "role": "neutral",
+        "displayName": "Warm Ivory Parchment",
+        "canonical": "#fffdfb",
+        "tonalRamp": ["#1a1512", "#231c17", "#2d1e14", "#54473f", "#786c63", "#a8988b", "#fef9f3", "#fffdfb"]
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Three-line Hero manifesto headline." },
+      "headline": { "displayName": "Headline", "purpose": "Primary section headings (Pillars, Side Projects, Streams)." },
+      "title-lg": { "displayName": "Title Large", "purpose": "Lead feature card titles and Hero slogan." },
+      "title": { "displayName": "Title", "purpose": "Secondary pillar and Side Project titles." },
+      "body": { "displayName": "Body", "purpose": "Section subtitles and editorial prose." },
+      "monospace": { "displayName": "Monospace Telemetry", "purpose": "Coordinates, elevation, package identifiers, and metrics." }
+    },
+    "shadows": [
+      {
+        "name": "hover-elevation",
+        "value": "0 12px 32px rgba(45, 30, 20, 0.09)",
+        "purpose": "Soft state-driven elevation on card hover without resting shadow clutter."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out-expo",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Smooth responsive card and button transitions."
+      }
+    ],
+    "breakpoints": [
+      { "name": "md", "value": "768px" },
+      { "name": "lg", "value": "1100px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Expedition CTA",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Primary action button in Sunset Expedition Orange for main trail entry.",
+      "html": "<a class=\"ds-btn-primary\" href=\"#\">探索 Backpacker 航跡</a>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.8rem 1.6rem; font-size: 0.96rem; font-weight: 600; border-radius: 8px; background: #e26d2d; color: #ffffff; text-decoration: none; box-shadow: 0 6px 20px rgba(226, 109, 45, 0.28); transition: transform 220ms cubic-bezier(0.16, 1, 0.3, 1), background-color 220ms ease; } .ds-btn-primary:hover, .ds-btn-primary:focus-visible { background: #c85317; transform: translateY(-2px); }"
+    },
+    {
+      "name": "Side Project Spec Card",
+      "kind": "card",
+      "refersTo": "project-spec-card",
+      "description": "Blueprint spec card for open-source Obsidian and Docusaurus plugins.",
+      "html": "<article class=\"ds-spec-card\"><h3>Geo Story Map</h3><code>geo-story-map · @story-map/remark-story-map</code><p>雙端互動故事地圖與旅遊航跡引擎。</p></article>",
+      "css": ".ds-spec-card { border: 1px solid rgba(45, 30, 20, 0.12); border-radius: 14px; background: #fffdfb; padding: 1.5rem; transition: transform 220ms cubic-bezier(0.16, 1, 0.3, 1), border-color 220ms ease, box-shadow 220ms ease; } .ds-spec-card:hover { transform: translateY(-3px); border-color: rgba(226, 109, 45, 0.45); box-shadow: 0 12px 32px rgba(45, 30, 20, 0.09); } .ds-spec-card h3 { margin: 0 0 0.5rem; font-size: 1.35rem; color: #2d1e14; } .ds-spec-card code { display: inline-block; font-size: 0.78rem; color: #2e6b68; background: rgba(45, 30, 20, 0.04); padding: 0.2rem 0.55rem; border-radius: 8px; } .ds-spec-card p { margin: 0.65rem 0 0; font-size: 0.96rem; color: #786c63; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Modernist Cartography Gazette",
+    "overview": "kywk.me 的首頁視覺體系「現代主義探險公報（Modernist Cartography Gazette）」將個人數位花園從傳統模板昇華為兼具「探險家等高線航圖」與「工匠發佈終端」的工作室門戶。",
+    "keyCharacteristics": [
+      "Full-bleed Hero stage connected by topographic contour lines and a digital light mesh",
+      "Zero-redundancy four-stage architecture (Hero, Three Pillars, Side Projects Matrix, Editorial Streams)",
+      "Dual-theme native comfort (Warm Ivory Parchment #fffdfb & Deep Basalt #1a1512)",
+      "Single-dimension elevation with flat-at-rest hairline borders and hover-only lift"
+    ],
+    "rules": [
+      {
+        "name": "The Single-Dimension Elevation Rule",
+        "body": "Surfaces at rest commit to a 1px hairline border without diffuse shadows; soft elevation shadows appear only on hover or focus.",
+        "section": "elevation"
+      },
+      {
+        "name": "The No-Eyebrow Rule",
+        "body": "Headings carry their own weight. Never place a small uppercase kicker or eyebrow label directly above a heading.",
+        "section": "typography"
+      }
+    ],
+    "dos": [
+      "保持雙主題色彩的舒適對比度（常規文字 ≥ 4.5:1，標題 ≥ 3:1）。",
+      "讓標題自帶份量，開門見山傳遞資訊。",
+      "所有連結與導向使用全站已驗證之正規化路徑。",
+      "確保微互動具備平滑回饋。"
+    ],
+    "donts": [
+      "禁止使用任何 Eyebrow / Kicker 標籤架在主標題上方。",
+      "禁止使用文字漸層色（Gradient text）。",
+      "禁止使用三欄均分、內容貧乏的模板卡片。",
+      "禁止在沒有實際地圖或繪圖需求時引入高開銷第三方重量級依賴。"
+    ]
+  }
+}

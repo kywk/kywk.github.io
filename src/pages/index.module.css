@@ -1,7 +1,11 @@
 /**
  * kywk.me - Modernist Cartography & Studio Gazette Homepage Styles
  * Direction: Modernist Cartography Gazette (Seed: seed:9812b89234e66b59)
- * Pure CSS Craftsmanship, zero external heavy dependencies, dual-theme first.
+ * 4 Non-Redundant Stages:
+ *   1. Hero Contour & Digital Mesh Stage (Neo-Mirai structural inspiration, Western cartography)
+ *   2. Three Core Knowledge Pillars (Backpacker, Lifehacker, Reorganized MoCo Lab)
+ *   3. Side Projects Matrix (Personal Obsidian & Docusaurus Open-Source Plugins)
+ *   4. Visual & Editorial Streams (Photo Album, Life Blog, News Log)
  */
 
 /* ==========================================================================
@@ -9,43 +13,58 @@
    ========================================================================== */
 
 .gazetteRoot {
-  --gaz-bg-ground: var(--ifm-background-color);
-  --gaz-bg-surface: var(--ifm-background-surface-color);
-  --gaz-bg-card: rgba(255, 255, 255, 0.7);
+  --gaz-bg-ground: #fffdfb;
+  --gaz-bg-surface: #fef9f3;
+  --gaz-bg-card: rgba(255, 253, 251, 0.88);
+  --gaz-bg-card-solid: #fffdfb;
   --gaz-border-hairline: rgba(45, 30, 20, 0.12);
-  --gaz-border-focus: rgba(226, 109, 45, 0.4);
+  --gaz-border-focus: rgba(226, 109, 45, 0.45);
+  --gaz-text-main: #2d1e14;
   --gaz-text-muted: #786c63;
   --gaz-accent-orange: #e26d2d;
   --gaz-accent-dark-orange: #c85317;
   --gaz-accent-teal: #2e6b68;
   --gaz-accent-amber: #d97706;
+  --gaz-status-live: #10b981;
   --gaz-telemetry-bg: rgba(45, 30, 20, 0.04);
   --gaz-telemetry-text: #54473f;
-  --gaz-shadow-sm: 0 1px 3px rgba(45, 30, 20, 0.04), 0 4px 12px rgba(45, 30, 20, 0.03);
-  --gaz-shadow-md: 0 4px 8px rgba(45, 30, 20, 0.05), 0 16px 36px rgba(45, 30, 20, 0.07);
-  --gaz-shadow-hover: 0 8px 16px rgba(45, 30, 20, 0.06), 0 24px 48px rgba(45, 30, 20, 0.1);
+  --gaz-shadow-hover: 0 12px 32px rgba(45, 30, 20, 0.09);
 
   position: relative;
   background-color: var(--gaz-bg-ground);
-  color: var(--ifm-color-content);
+  color: var(--gaz-text-main);
   min-height: 100vh;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 [data-theme='dark'] .gazetteRoot {
-  --gaz-bg-card: rgba(35, 28, 23, 0.75);
+  --gaz-bg-ground: #1a1512;
+  --gaz-bg-surface: #231c17;
+  --gaz-bg-card: rgba(35, 28, 23, 0.86);
+  --gaz-bg-card-solid: #231c17;
   --gaz-border-hairline: rgba(245, 176, 65, 0.14);
-  --gaz-border-focus: rgba(245, 176, 65, 0.45);
+  --gaz-border-focus: rgba(245, 176, 65, 0.48);
+  --gaz-text-main: #f5efe9;
   --gaz-text-muted: #a8988b;
   --gaz-accent-orange: #f5b041;
-  --gaz-accent-dark-orange: #eb984e;
-  --gaz-accent-teal: #48a9a6;
-  --gaz-accent-amber: #fbbf24;
+  --gaz-accent-dark-orange: #e26d2d;
+  --gaz-accent-teal: #2e6b68;
+  --gaz-accent-amber: #d97706;
   --gaz-telemetry-bg: rgba(0, 0, 0, 0.35);
-  --gaz-telemetry-text: #e2d9d2;
-  --gaz-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.25), 0 4px 12px rgba(0, 0, 0, 0.15);
-  --gaz-shadow-md: 0 4px 8px rgba(0, 0, 0, 0.35), 0 16px 36px rgba(0, 0, 0, 0.25);
-  --gaz-shadow-hover: 0 8px 16px rgba(0, 0, 0, 0.45), 0 24px 48px rgba(0, 0, 0, 0.35);
+  --gaz-telemetry-text: #f5efe9;
+  --gaz-shadow-hover: 0 14px 36px rgba(0, 0, 0, 0.42);
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 /* ==========================================================================
@@ -80,8 +99,8 @@
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: #10b981;
-  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.25);
+  background-color: var(--gaz-status-live);
+  box-shadow: 0 2px 6px rgba(16, 185, 129, 0.35);
   animation: beaconPulse 2.8s infinite cubic-bezier(0.4, 0, 0.6, 1);
 }
 
@@ -113,99 +132,284 @@
 }
 
 /* ==========================================================================
-   Hero: Dual-Axis Cartographic Hub
+   Stage 1: Hero Contour & Digital Light-Mesh Stage (Neo-Mirai Inspired)
    ========================================================================== */
 
-.heroSection {
-  padding: 4.5rem 0 3.5rem;
+.heroStage {
   position: relative;
+  min-height: clamp(34rem, 56vw, 46rem);
+  display: flex;
+  align-items: stretch;
+  overflow: clip;
   border-bottom: 1px solid var(--gaz-border-hairline);
-  background: radial-gradient(
-    circle at 85% 15%,
-    rgba(226, 109, 45, 0.06) 0%,
-    transparent 50%
+  background-color: var(--gaz-bg-ground);
+}
+
+/* Full-bleed background illustration + SVG contour mesh */
+.heroBackdrop {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.heroBackdrop::after {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  content: "";
+  background: linear-gradient(
+    90deg,
+    #fffdfb 0%,
+    rgba(255, 253, 251, 0.97) 34%,
+    rgba(255, 253, 251, 0.82) 50%,
+    rgba(255, 253, 251, 0.18) 70%,
+    transparent 100%
   );
 }
 
-[data-theme='dark'] .heroSection {
-  background: radial-gradient(
-    circle at 85% 15%,
-    rgba(245, 176, 65, 0.08) 0%,
-    transparent 55%
+[data-theme='dark'] .heroBackdrop::after {
+  background: linear-gradient(
+    90deg,
+    #1a1512 0%,
+    rgba(26, 21, 18, 0.95) 30%,
+    rgba(26, 21, 18, 0.78) 48%,
+    rgba(26, 21, 18, 0.42) 74%,
+    rgba(26, 21, 18, 0.25) 100%
   );
 }
 
-.heroGrid {
+.heroBackdropImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right center;
+  mix-blend-mode: multiply;
+  filter: saturate(1.04) contrast(1.03);
+}
+
+[data-theme='dark'] .heroBackdropImg {
+  mix-blend-mode: normal;
+  opacity: 0.72;
+  filter: brightness(0.82) contrast(1.08) saturate(1.05);
+}
+
+/* Dynamic SVG Topographic Contours & Digital Mesh */
+.contourSvg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.contourLineMuted {
+  stroke: rgba(45, 30, 20, 0.14);
+  stroke-width: 1.25;
+}
+
+[data-theme='dark'] .contourLineMuted {
+  stroke: rgba(245, 176, 65, 0.16);
+}
+
+.contourLinePrimary {
+  stroke: var(--gaz-accent-orange);
+  stroke-width: 1.75;
+  stroke-opacity: 0.45;
+}
+
+.contourLineTeal {
+  stroke: var(--gaz-accent-teal);
+  stroke-width: 1.5;
+  stroke-opacity: 0.42;
+}
+
+.contourRing {
+  stroke: var(--gaz-accent-amber);
+  stroke-width: 1.2;
+  stroke-dasharray: 6 4;
+  stroke-opacity: 0.5;
+}
+
+.contourRingInner {
+  stroke: var(--gaz-accent-orange);
+  stroke-width: 1.2;
+  stroke-opacity: 0.55;
+}
+
+.meshNetwork line {
+  stroke: var(--gaz-accent-amber);
+  stroke-width: 1;
+  stroke-opacity: 0.38;
+  stroke-dasharray: 3 3;
+}
+
+.expeditionTrailPath {
+  stroke: var(--gaz-accent-orange);
+  stroke-width: 2.5;
+  stroke-dasharray: 8 6;
+  stroke-linecap: round;
+  filter: drop-shadow(0 2px 6px rgba(226, 109, 45, 0.35));
+}
+
+.nodePulse {
+  fill: var(--gaz-accent-orange);
+}
+
+.nodeRing {
+  stroke: var(--gaz-accent-orange);
+  stroke-width: 1.5;
+  stroke-opacity: 0.45;
+}
+
+.nodeTeal {
+  fill: var(--gaz-accent-teal);
+}
+
+.nodeRingTeal {
+  stroke: var(--gaz-accent-teal);
+  stroke-width: 1.5;
+  stroke-opacity: 0.45;
+}
+
+.nodeMuted {
+  fill: var(--gaz-accent-amber);
+  fill-opacity: 0.7;
+}
+
+/* Foreground Hero Grid Layout */
+.heroStageInner {
+  position: relative;
+  z-index: 4;
   display: grid;
-  grid-template-columns: 7fr 5fr;
-  gap: 3.5rem;
-  align-items: start;
+  grid-template-columns: auto 1fr;
+  gap: 3rem;
+  align-items: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
-.heroManifesto {
+/* Western Cartographic Survey Crest Rail (Left Axis) */
+.surveyRail {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 0.85rem;
+  color: var(--gaz-accent-orange);
+  align-self: stretch;
+  padding-top: 0.5rem;
 }
 
-.heroTitle {
+.surveyEmblem {
+  color: var(--gaz-accent-orange);
+  flex-shrink: 0;
+}
+
+.surveyScaleLine {
+  width: 1px;
+  flex: 1;
+  min-height: 5rem;
+  max-height: 10rem;
+  background: linear-gradient(
+    180deg,
+    var(--gaz-accent-orange) 0%,
+    var(--gaz-border-hairline) 100%
+  );
+}
+
+.surveyScaleText {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--gaz-text-muted);
+}
+
+/* Center-Left Hero Copy */
+.heroCopy {
+  display: flex;
+  flex-direction: column;
+  max-width: 38rem;
+  min-width: 0;
+}
+
+.heroDisplayTitle {
   font-size: clamp(2.6rem, 5.2vw, 3.8rem);
   font-weight: 800;
   line-height: 1.1;
   letter-spacing: -0.025em;
-  color: var(--ifm-color-content);
-  margin: 0 0 1.25rem 0;
+  color: var(--gaz-text-main);
+  margin: 0;
 }
 
-.heroLead {
+.heroDisplayTitle span {
+  display: block;
+}
+
+.heroSlogan {
+  margin: 0.85rem 0 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.015em;
+  color: var(--gaz-accent-orange);
+}
+
+.heroSummary {
+  margin: 1rem 0 2rem;
   font-size: 1.15rem;
   line-height: 1.8;
   color: var(--gaz-text-muted);
-  max-width: 62ch;
-  margin: 0 0 2rem 0;
+  max-width: 54ch;
 }
 
 .heroActions {
   display: flex;
   flex-wrap: wrap;
   gap: 0.85rem;
-  margin-bottom: 2.25rem;
+  margin-bottom: 2.5rem;
 }
 
 .btnPrimary {
   display: inline-flex;
   align-items: center;
-  gap: 0.55rem;
+  gap: 0.5rem;
   padding: 0.8rem 1.6rem;
   font-size: 0.96rem;
   font-weight: 600;
-  border-radius: 10px;
+  border-radius: 8px;
   background-color: var(--gaz-accent-orange);
   color: #ffffff !important;
   text-decoration: none !important;
-  transition: transform var(--transition-base), box-shadow var(--transition-base), background-color var(--transition-base);
-  box-shadow: 0 4px 14px rgba(226, 109, 45, 0.3);
+  transition: transform 220ms cubic-bezier(0.16, 1, 0.3, 1), background-color 220ms ease, box-shadow 220ms ease;
+  box-shadow: 0 6px 20px rgba(226, 109, 45, 0.28);
 }
 
 .btnPrimary:hover,
 .btnPrimary:focus-visible {
   background-color: var(--gaz-accent-dark-orange);
   transform: translateY(-2px);
-  box-shadow: 0 8px 22px rgba(226, 109, 45, 0.4);
+  box-shadow: 0 10px 26px rgba(226, 109, 45, 0.38);
 }
 
 .btnSecondary {
   display: inline-flex;
   align-items: center;
-  gap: 0.55rem;
+  gap: 0.5rem;
   padding: 0.8rem 1.4rem;
   font-size: 0.96rem;
   font-weight: 600;
-  border-radius: 10px;
+  border-radius: 8px;
   background-color: var(--gaz-bg-card);
-  color: var(--ifm-color-content) !important;
+  color: var(--gaz-text-main) !important;
   border: 1px solid var(--gaz-border-hairline);
   text-decoration: none !important;
-  transition: transform var(--transition-base), background-color var(--transition-base), border-color var(--transition-base);
+  backdrop-filter: blur(8px);
+  transition: transform 220ms cubic-bezier(0.16, 1, 0.3, 1), border-color 220ms ease, background-color 220ms ease;
 }
 
 .btnSecondary:hover,
@@ -215,656 +419,953 @@
   background-color: var(--gaz-bg-surface);
 }
 
-/* Dispatch Ticket Stubs */
-
-.dispatchStubs {
+.heroTelemetry {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0.85rem;
-  padding-top: 1.5rem;
-  border-top: 1px dashed var(--gaz-border-hairline);
-}
-
-.stubItem {
-  display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
-  padding: 0.75rem 0.85rem;
-  border-radius: 8px;
-  background: var(--gaz-telemetry-bg);
-  border: 1px solid var(--gaz-border-hairline);
-  font-family: var(--ifm-font-family-monospace);
-  text-decoration: none !important;
-  color: inherit !important;
-  transition: border-color var(--transition-base), transform var(--transition-base);
-}
-
-.stubItem:hover {
-  border-color: var(--gaz-accent-orange);
-  transform: translateY(-1px);
-}
-
-.stubTag {
-  font-size: 0.78rem;
-  font-weight: 700;
-  color: var(--gaz-accent-orange);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.stubCount {
-  font-size: 1.12rem;
-  font-weight: 700;
-  color: var(--ifm-color-content);
-  line-height: 1.3;
-}
-
-.stubDesc {
-  font-size: 0.75rem;
-  color: var(--gaz-text-muted);
-  font-family: var(--ifm-font-family-base);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-/* ==========================================================================
-   Right Column: Multi-Dimensional Observation Deck
-   ========================================================================== */
-
-.observationDeck {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.observationCard {
-  border: 1px solid var(--gaz-border-hairline);
-  border-radius: 14px;
-  background: var(--gaz-bg-card);
-  backdrop-filter: blur(8px);
-  padding: 1.35rem 1.45rem;
-  box-shadow: var(--gaz-shadow-sm);
-  text-decoration: none !important;
-  color: inherit !important;
-  display: flex;
-  flex-direction: column;
-  gap: 0.65rem;
-  position: relative;
-  overflow: hidden;
-  transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
-}
-
-.observationCard:hover,
-.observationCard:focus-visible {
-  transform: translateY(-3px);
-  box-shadow: var(--gaz-shadow-md);
-  border-color: var(--gaz-border-focus);
-}
-
-.observationCardHeader {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.5rem;
-}
-
-.observationBadge {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
+  gap: 0.35rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--gaz-border-hairline);
   font-family: var(--ifm-font-family-monospace);
   font-size: 0.78rem;
   font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--gaz-accent-orange);
-}
-
-.observationBadgeTeal {
-  color: var(--gaz-accent-teal);
-}
-
-.observationAction {
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--gaz-accent-orange);
-  display: inline-flex;
-  align-items: center;
-  gap: 0.25rem;
-}
-
-.observationTitle {
-  font-size: 1.12rem;
-  font-weight: 700;
-  margin: 0;
-  line-height: 1.35;
-  color: var(--ifm-color-content);
-}
-
-.observationContent {
-  font-size: 0.88rem;
-  line-height: 1.6;
+  letter-spacing: 0.06em;
   color: var(--gaz-text-muted);
-  margin: 0;
-}
-
-.observationMetaRow {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  flex-wrap: wrap;
-  font-family: var(--ifm-font-family-monospace);
-  font-size: 0.75rem;
-  color: var(--gaz-telemetry-text);
-  padding-top: 0.4rem;
-  border-top: 1px dashed var(--gaz-border-hairline);
-}
-
-.observationMetaItem {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.3rem;
 }
 
 /* ==========================================================================
-   Section: Core Expeditions (Asymmetric Layout)
+   Desktop-only Interactive Trail Waypoint Pins & Hover Cards
+   (Hidden on mobile and touch devices; only active on wide desktop with hover)
    ========================================================================== */
 
-.sectionExpeditions {
-  padding: 4.5rem 0 3.5rem;
-  border-bottom: 1px solid var(--gaz-border-hairline);
+.trailWaypointsLayer {
+  display: none;
 }
+
+@media (min-width: 1025px) and (hover: hover) {
+  .trailWaypointsLayer {
+    display: block;
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 6;
+  }
+
+  .waypointPinAnchor {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: auto;
+    z-index: 5;
+  }
+
+  .waypointPinAnchor:hover,
+  .waypointPinAnchor:focus-within {
+    z-index: 60;
+  }
+
+  .waypointPinButton {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.35rem;
+    text-decoration: none !important;
+    color: inherit !important;
+    cursor: pointer;
+    position: relative;
+    border-radius: 999px;
+  }
+
+  .pinBeacon {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+  }
+
+  .pinDot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--gaz-accent-orange);
+    box-shadow: 0 0 0 2px var(--gaz-bg-ground);
+    transition: transform 220ms cubic-bezier(0.16, 1, 0.3, 1), background-color 220ms ease;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 2;
+  }
+
+  .pinRadarPing {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 1.5px solid var(--gaz-accent-orange);
+    opacity: 0.75;
+    animation: radarPulse 2.6s infinite cubic-bezier(0.4, 0, 0.6, 1);
+    pointer-events: none;
+    z-index: 1;
+    transform-origin: center center;
+  }
+
+  @keyframes radarPulse {
+    0% {
+      transform: translate(-50%, -50%) scale(0.6);
+      opacity: 0.85;
+    }
+    70% {
+      transform: translate(-50%, -50%) scale(2.4);
+      opacity: 0;
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(2.4);
+      opacity: 0;
+    }
+  }
+
+  .pinElevationTag {
+    font-family: var(--ifm-font-family-monospace);
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--gaz-text-muted);
+    background: var(--gaz-bg-card);
+    backdrop-filter: blur(8px);
+    border: 1px solid var(--gaz-border-hairline);
+    padding: 0.15rem 0.45rem;
+    border-radius: 8px;
+    letter-spacing: 0.04em;
+    transition: color 220ms ease, border-color 220ms ease;
+  }
+
+  .waypointPinAnchor:hover .pinDot,
+  .waypointPinAnchor:focus-within .pinDot {
+    transform: scale(1.35);
+    background-color: var(--gaz-accent-dark-orange);
+  }
+
+  .waypointPinAnchor:hover .pinElevationTag,
+  .waypointPinAnchor:focus-within .pinElevationTag {
+    color: var(--gaz-accent-orange);
+    border-color: var(--gaz-border-focus);
+  }
+
+  /* Hover Card Flyout */
+  .waypointHoverCard {
+    position: absolute;
+    width: 300px;
+    padding: 1.15rem 1.35rem;
+    border-radius: 12px;
+    background: var(--gaz-bg-card);
+    backdrop-filter: blur(14px);
+    border: 1px solid var(--gaz-border-hairline);
+    box-shadow: var(--gaz-shadow-hover);
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 220ms cubic-bezier(0.16, 1, 0.3, 1), transform 220ms cubic-bezier(0.16, 1, 0.3, 1), visibility 220ms;
+    z-index: 60;
+  }
+
+  /* Invisible hover bridge between pin button and card */
+  .waypointHoverCard::before {
+    content: '';
+    position: absolute;
+    inset: -14px;
+    z-index: -1;
+  }
+
+  /* Popover Alignment Rules */
+  .align_top-left .waypointHoverCard {
+    bottom: calc(100% + 12px);
+    right: -10px;
+    transform: translateY(6px);
+  }
+
+  .align_top-right .waypointHoverCard {
+    bottom: calc(100% + 12px);
+    left: -10px;
+    transform: translateY(6px);
+  }
+
+  .align_bottom-left .waypointHoverCard {
+    top: calc(100% + 12px);
+    right: -10px;
+    transform: translateY(-6px);
+  }
+
+  .align_bottom-right .waypointHoverCard {
+    top: calc(100% + 12px);
+    left: -10px;
+    transform: translateY(-6px);
+  }
+
+  .waypointPinAnchor:hover .waypointHoverCard,
+  .waypointPinAnchor:focus-within .waypointHoverCard {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+
+  .hoverCardTitleRow {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+
+  .hoverCardTitle {
+    font-size: 1.05rem;
+    font-weight: 700;
+    line-height: 1.35;
+    margin: 0;
+    color: var(--gaz-text-main);
+  }
+
+  .hoverCardTitle a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 180ms ease;
+  }
+
+  .hoverCardTitle a:hover {
+    color: var(--gaz-accent-orange);
+  }
+
+  .hoverCardYear {
+    font-family: var(--ifm-font-family-monospace);
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--gaz-accent-orange);
+    letter-spacing: 0.04em;
+    flex-shrink: 0;
+  }
+
+  .hoverCardMeta {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    font-family: var(--ifm-font-family-monospace);
+    font-size: 0.75rem;
+    color: var(--gaz-text-muted);
+  }
+
+  .hoverCardDivider {
+    color: var(--gaz-border-hairline);
+  }
+
+  .hoverCardDesc {
+    font-size: 0.88rem;
+    line-height: 1.6;
+    color: var(--gaz-text-muted);
+    margin: 0.2rem 0 0;
+  }
+
+  .hoverCardFooter {
+    padding-top: 0.65rem;
+    margin-top: 0.35rem;
+    border-top: 1px dashed var(--gaz-border-hairline);
+  }
+
+  .hoverCardAction {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--gaz-accent-orange) !important;
+    text-decoration: none !important;
+  }
+
+  .hoverCardAction:hover {
+    text-decoration: underline !important;
+  }
+}
+
+/* ==========================================================================
+   Shared Section Headers (No Eyebrow/Kicker Above Heading)
+   ========================================================================== */
 
 .sectionHeader {
-  margin-bottom: 2.75rem;
-  max-width: 720px;
+  margin-bottom: 2.5rem;
+  max-width: 68ch;
+}
+
+.sectionHeaderCompact {
+  max-width: 62ch;
 }
 
 .sectionTitle {
   font-size: clamp(1.8rem, 3.2vw, 2.3rem);
   font-weight: 800;
+  line-height: 1.2;
   letter-spacing: -0.02em;
+  color: var(--gaz-text-main);
   margin: 0 0 0.65rem 0;
 }
 
 .sectionSubtitle {
   font-size: 1.05rem;
-  line-height: 1.7;
+  line-height: 1.75;
+  letter-spacing: 0.02em;
   color: var(--gaz-text-muted);
   margin: 0;
 }
 
-.expeditionLayout {
+/* ==========================================================================
+   Stage 2: Three Core Knowledge Pillars (Asymmetric 12-Col Layout)
+   ========================================================================== */
+
+.sectionPillars {
+  padding: 4.5rem 0;
+  border-bottom: 1px solid var(--gaz-border-hairline);
+}
+
+.pillarsGrid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 1.5rem;
 }
 
-/* Dominant Backpacker Card: 12 cols */
-.cardBackpacker {
+/* Dominant Backpacker Card (12 cols) */
+.pillarBackpacker {
   grid-column: span 12;
+  min-width: 0;
   border: 1px solid var(--gaz-border-hairline);
   border-radius: 16px;
-  background: var(--gaz-bg-card);
-  backdrop-filter: blur(8px);
-  padding: 2.25rem 2.5rem;
-  box-shadow: var(--gaz-shadow-sm);
+  background: var(--gaz-bg-surface);
+  padding: 2.5rem;
   display: grid;
-  grid-template-columns: 8fr 4fr;
+  grid-template-columns: 7fr 5fr;
   gap: 2.5rem;
   align-items: center;
-  transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
-  position: relative;
-  overflow: hidden;
+  transition: transform 220ms cubic-bezier(0.16, 1, 0.3, 1), border-color 220ms ease, box-shadow 220ms ease;
 }
 
-.cardBackpacker:hover,
-.cardBackpacker:focus-within {
-  transform: translateY(-4px);
-  box-shadow: var(--gaz-shadow-hover);
+.pillarBackpacker:hover,
+.pillarBackpacker:focus-within {
+  transform: translateY(-3px);
   border-color: var(--gaz-border-focus);
+  box-shadow: var(--gaz-shadow-hover);
 }
 
-.cardTicketTag {
-  font-family: var(--ifm-font-family-monospace);
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--gaz-accent-orange);
-  margin-bottom: 0.5rem;
-  display: inline-block;
+.pillarMainContent {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
 }
 
-.cardBackpackerTitle {
+.pillarTitleLg {
   font-size: 1.6rem;
   font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.015em;
   margin: 0 0 0.85rem 0;
 }
 
-.cardBackpackerTitle a {
-  color: var(--ifm-color-content);
+.pillarTitleLg a,
+.pillarTitle a,
+.projectTitle a,
+.albumFeatureTitle a {
+  color: var(--gaz-text-main);
   text-decoration: none;
+  transition: color 180ms ease;
 }
 
-.cardBackpackerTitle a:hover {
+.pillarTitleLg a:hover,
+.pillarTitle a:hover,
+.projectTitle a:hover,
+.albumFeatureTitle a:hover {
   color: var(--gaz-accent-orange);
 }
 
-.cardBackpackerDesc {
-  font-size: 0.98rem;
-  line-height: 1.75;
+.pillarDesc {
+  font-size: 0.96rem;
+  line-height: 1.7;
   color: var(--gaz-text-muted);
   margin: 0 0 1.5rem 0;
+  max-width: 65ch;
 }
 
-.cardPillGroup {
+.pillarLinks {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.55rem;
+  gap: 0.5rem;
 }
 
-.cardPill {
+.pillarPill {
   display: inline-flex;
   align-items: center;
-  gap: 0.35rem;
-  padding: 0.35rem 0.75rem;
-  font-size: 0.82rem;
-  font-weight: 500;
+  gap: 0.4rem;
+  padding: 0.4rem 0.85rem;
+  font-size: 0.88rem;
+  font-weight: 600;
   border-radius: 999px;
-  background: var(--gaz-telemetry-bg);
+  background: var(--gaz-bg-card-solid);
   border: 1px solid var(--gaz-border-hairline);
-  color: var(--ifm-color-content) !important;
+  color: var(--gaz-text-main) !important;
   text-decoration: none !important;
-  transition: background-color var(--transition-fast), border-color var(--transition-fast), color var(--transition-fast);
+  transition: background-color 180ms ease, border-color 180ms ease, color 180ms ease;
 }
 
-.cardPill:hover {
+.pillarPill:hover,
+.pillarPill:focus-visible {
   background-color: var(--gaz-accent-orange);
   border-color: var(--gaz-accent-orange);
   color: #ffffff !important;
 }
 
-.cardBackpackerVisual {
+.pillarMetricsBox {
   display: flex;
   flex-direction: column;
+  min-width: 0;
   gap: 0.85rem;
   padding: 1.5rem;
-  background: var(--gaz-telemetry-bg);
-  border: 1px dashed var(--gaz-border-hairline);
   border-radius: 12px;
+  background: var(--gaz-bg-card-solid);
+  border: 1px dashed var(--gaz-border-hairline);
   font-family: var(--ifm-font-family-monospace);
 }
 
-.visualStatRow {
+.metricRow {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 0.82rem;
-  color: var(--gaz-telemetry-text);
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  font-size: 0.85rem;
 }
 
-.visualStatLabel {
+.metricLabel {
   color: var(--gaz-text-muted);
 }
 
-.visualStatValue {
-  font-weight: 700;
-  color: var(--ifm-color-content);
+.metricValue {
+  font-weight: 600;
+  color: var(--gaz-text-main);
 }
 
-/* Secondary Cards: 6 cols each */
-.cardSecondary {
+/* Secondary Pillar Cards (6 cols each: Lifehacker & MoCo Lab) */
+.pillarCard {
   grid-column: span 6;
+  min-width: 0;
   border: 1px solid var(--gaz-border-hairline);
   border-radius: 16px;
-  background: var(--gaz-bg-card);
-  backdrop-filter: blur(8px);
-  padding: 2rem 2.25rem;
-  box-shadow: var(--gaz-shadow-sm);
+  background: var(--gaz-bg-surface);
+  padding: 2.25rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 1.5rem;
-  transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
+  transition: transform 220ms cubic-bezier(0.16, 1, 0.3, 1), border-color 220ms ease, box-shadow 220ms ease;
 }
 
-.cardSecondary:hover,
-.cardSecondary:focus-within {
-  transform: translateY(-4px);
-  box-shadow: var(--gaz-shadow-hover);
+.pillarCard:hover,
+.pillarCard:focus-within {
+  transform: translateY(-3px);
   border-color: var(--gaz-border-focus);
+  box-shadow: var(--gaz-shadow-hover);
 }
 
-.cardSecondaryHeader {
+.pillarCardBody {
   display: flex;
   flex-direction: column;
 }
 
-.cardSecondaryTitle {
+.pillarTitle {
   font-size: 1.35rem;
   font-weight: 700;
-  margin: 0.35rem 0 0.75rem 0;
+  line-height: 1.35;
+  margin: 0 0 0.75rem 0;
 }
 
-.cardSecondaryTitle a {
-  color: var(--ifm-color-content);
-  text-decoration: none;
+.pillarCardFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  padding-top: 1.25rem;
+  border-top: 1px dashed var(--gaz-border-hairline);
 }
 
-.cardSecondaryTitle a:hover {
+.pillarCountBadge {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.85rem;
+  font-weight: 500;
   color: var(--gaz-accent-orange);
 }
 
-.cardSecondaryDesc {
-  font-size: 0.94rem;
-  line-height: 1.7;
-  color: var(--gaz-text-muted);
-  margin: 0;
-}
-
 /* ==========================================================================
-   Section: Gazette Dispatch Streams & Photo Album Showcase
+   Stage 3: Side Projects Matrix (Obsidian & Docusaurus Plugins)
    ========================================================================== */
 
-.sectionStreams {
-  padding: 4.5rem 0 3.5rem;
+.sectionProjects {
+  padding: 4.5rem 0;
   border-bottom: 1px solid var(--gaz-border-hairline);
   background: var(--gaz-bg-surface);
 }
 
-/* Photo Album Spotlight Banner */
-.albumBanner {
+.projectsHeaderRow {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.projectsQuickNav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+}
+
+.quickNavLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--gaz-border-hairline);
+  background: var(--gaz-bg-card-solid);
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--gaz-text-main) !important;
+  text-decoration: none !important;
+  transition: border-color 180ms ease, color 180ms ease, transform 180ms ease;
+}
+
+.quickNavLink:hover,
+.quickNavLink:focus-visible {
+  border-color: var(--gaz-accent-orange);
+  color: var(--gaz-accent-orange) !important;
+  transform: translateY(-2px);
+}
+
+.projectsMatrix {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.projectSpecCard {
+  min-width: 0;
+  border: 1px solid var(--gaz-border-hairline);
+  border-radius: 14px;
+  background: var(--gaz-bg-card-solid);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem;
+  transition: transform 220ms cubic-bezier(0.16, 1, 0.3, 1), border-color 220ms ease, box-shadow 220ms ease;
+}
+
+.projectSpecCard:hover,
+.projectSpecCard:focus-within {
+  transform: translateY(-3px);
+  border-color: var(--gaz-border-focus);
+  box-shadow: var(--gaz-shadow-hover);
+}
+
+.projectSpecTop {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  gap: 0.65rem;
+}
+
+.projectTitleRow {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.projectIconWrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  background: var(--gaz-telemetry-bg);
+  color: var(--gaz-accent-orange);
+  flex-shrink: 0;
+}
+
+.projectTitle {
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.35;
+  margin: 0;
+}
+
+.projectPkgCode {
+  align-self: flex-start;
+  max-width: 100%;
+  white-space: normal;
+  word-break: break-word;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--gaz-accent-teal);
+  background: var(--gaz-telemetry-bg);
+  padding: 0.2rem 0.55rem;
+  border-radius: 8px;
+  border: 1px solid var(--gaz-border-hairline);
+}
+
+.projectDesc {
+  font-size: 0.96rem;
+  line-height: 1.7;
+  color: var(--gaz-text-muted);
+  margin: 0.25rem 0 0;
+}
+
+.projectSpecBottom {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 1.15rem;
+  border-top: 1px dashed var(--gaz-border-hairline);
+}
+
+.projectTagList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.projectTag {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--gaz-text-muted);
+  background: var(--gaz-telemetry-bg);
+  padding: 0.18rem 0.6rem;
+  border-radius: 999px;
+}
+
+.projectActions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+}
+
+.projectDocLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--gaz-accent-orange) !important;
+  text-decoration: none !important;
+}
+
+.projectDocLink:hover {
+  text-decoration: underline !important;
+}
+
+.projectRepoLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--gaz-text-muted) !important;
+  text-decoration: none !important;
+  transition: color 180ms ease;
+}
+
+.projectRepoLink:hover {
+  color: var(--gaz-text-main) !important;
+}
+
+/* ==========================================================================
+   Stage 4: Visual & Editorial Streams (Asymmetric 7:5 Grid)
+   ========================================================================== */
+
+.sectionStreams {
+  padding: 4.5rem 0;
+}
+
+.streamsAsymmetricGrid {
+  display: grid;
+  grid-template-columns: 7fr 5fr;
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+/* Left 7 cols: Photo Album Gallery Feature */
+.albumFeatureCard {
+  min-width: 0;
   border: 1px solid var(--gaz-border-hairline);
   border-radius: 16px;
   background: linear-gradient(
     135deg,
-    rgba(226, 109, 45, 0.08) 0%,
-    rgba(46, 107, 104, 0.08) 100%
+    rgba(226, 109, 45, 0.07) 0%,
+    rgba(46, 107, 104, 0.07) 100%
   );
-  padding: 2.25rem 2.5rem;
-  margin-bottom: 2.5rem;
-  display: grid;
-  grid-template-columns: 8fr 4fr;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   gap: 2rem;
-  align-items: center;
-  position: relative;
-  overflow: hidden;
-  box-shadow: var(--gaz-shadow-sm);
-  transition: transform var(--transition-base), box-shadow var(--transition-base);
+  transition: transform 220ms cubic-bezier(0.16, 1, 0.3, 1), border-color 220ms ease, box-shadow 220ms ease;
 }
 
-.albumBanner:hover {
+.albumFeatureCard:hover,
+.albumFeatureCard:focus-within {
   transform: translateY(-3px);
-  box-shadow: var(--gaz-shadow-md);
+  border-color: var(--gaz-border-focus);
+  box-shadow: var(--gaz-shadow-hover);
 }
 
-.albumBannerTitle {
+.albumFeatureBody {
+  display: flex;
+  flex-direction: column;
+}
+
+.albumFeatureTitle {
   font-size: 1.6rem;
   font-weight: 700;
-  margin: 0.35rem 0 0.65rem 0;
+  line-height: 1.3;
+  letter-spacing: -0.015em;
+  margin: 0 0 0.85rem 0;
 }
 
-.albumBannerTitle a {
-  color: var(--ifm-color-content);
-  text-decoration: none;
-}
-
-.albumBannerDesc {
+.albumFeatureDesc {
   font-size: 0.96rem;
   line-height: 1.7;
   color: var(--gaz-text-muted);
-  margin: 0 0 1.25rem 0;
+  margin: 0 0 1.5rem 0;
   max-width: 58ch;
 }
 
-.albumBannerAction {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-  font-weight: 600;
-  font-size: 0.96rem;
-  color: var(--gaz-accent-orange);
-  text-decoration: none !important;
-}
-
-.albumBannerAction:hover {
-  text-decoration: underline !important;
-}
-
-.albumPreviewVisual {
+.albumSpecPills {
   display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-  padding: 1.25rem 1.5rem;
-  border-radius: 12px;
-  background: var(--gaz-bg-card);
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.albumSpecPills span {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  padding: 0.3rem 0.7rem;
+  border-radius: 8px;
+  background: var(--gaz-bg-card-solid);
   border: 1px solid var(--gaz-border-hairline);
+  color: var(--gaz-text-muted);
+}
+
+.albumFeatureFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-top: 1.5rem;
+  border-top: 1px dashed var(--gaz-border-hairline);
+}
+
+.streamMetaCode {
   font-family: var(--ifm-font-family-monospace);
   font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--gaz-text-muted);
 }
 
-.albumVisualRow {
+/* Right 5 cols: Stacked Life Blog & News Log */
+.blogChannelsStack {
   display: flex;
-  justify-content: space-between;
-  color: var(--gaz-telemetry-text);
-}
-
-/* Twin Streams (Life & News) */
-.twinStreamGrid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  flex-direction: column;
+  min-width: 0;
   gap: 1.5rem;
 }
 
-.streamCard {
+.streamChannelCard {
+  flex: 1;
   border: 1px solid var(--gaz-border-hairline);
   border-radius: 14px;
-  background: var(--gaz-bg-card);
+  background: var(--gaz-bg-surface);
   padding: 1.75rem 2rem;
-  box-shadow: var(--gaz-shadow-sm);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 1.25rem;
-  transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
   text-decoration: none !important;
   color: inherit !important;
+  transition: transform 220ms cubic-bezier(0.16, 1, 0.3, 1), border-color 220ms ease, box-shadow 220ms ease;
 }
 
-.streamCard:hover,
-.streamCard:focus-visible {
+.streamChannelCard:hover,
+.streamChannelCard:focus-visible {
   transform: translateY(-3px);
-  box-shadow: var(--gaz-shadow-md);
   border-color: var(--gaz-border-focus);
+  box-shadow: var(--gaz-shadow-hover);
 }
 
-.streamBadge {
-  font-family: var(--ifm-font-family-monospace);
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--gaz-accent-teal);
+.streamChannelBody {
+  display: flex;
+  flex-direction: column;
 }
 
-.streamBadgeNews {
-  color: var(--gaz-accent-orange);
-}
-
-.streamTitle {
+.streamChannelTitle {
   font-size: 1.35rem;
   font-weight: 700;
-  margin: 0.35rem 0 0.5rem 0;
-  color: var(--ifm-color-content);
+  line-height: 1.35;
+  margin: 0 0 0.5rem 0;
+  color: var(--gaz-text-main);
 }
 
-.streamDesc {
+.streamChannelDesc {
   font-size: 0.96rem;
-  line-height: 1.65;
+  line-height: 1.7;
   color: var(--gaz-text-muted);
   margin: 0;
 }
 
-.streamFooter {
+.streamChannelFooter {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 1rem;
+  padding-top: 0.85rem;
   border-top: 1px dashed var(--gaz-border-hairline);
-  font-size: 0.86rem;
-  font-weight: 600;
-  color: var(--gaz-accent-orange);
-}
-
-/* ==========================================================================
-   Section: Field Notes & Curated Ticket Strips
-   ========================================================================== */
-
-.sectionFieldNotes {
-  padding: 4.5rem 0 5rem;
-}
-
-.ticketStripList {
-  display: flex;
-  flex-direction: column;
-  gap: 0.85rem;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.ticketStrip {
-  border: 1px solid var(--gaz-border-hairline);
-  border-radius: 12px;
-  background: var(--gaz-bg-card);
-  box-shadow: var(--gaz-shadow-sm);
-  transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
-}
-
-.ticketStrip:hover,
-.ticketStrip:focus-within {
-  transform: translateX(4px);
-  box-shadow: var(--gaz-shadow-md);
-  border-color: var(--gaz-border-focus);
-}
-
-.ticketStripLink {
-  display: grid;
-  grid-template-columns: 90px 180px 1fr 40px;
-  align-items: center;
-  gap: 1.5rem;
-  padding: 1.25rem 1.75rem;
-  text-decoration: none !important;
-  color: inherit !important;
-}
-
-.ticketIndex {
-  font-family: var(--ifm-font-family-monospace);
-  font-size: 0.82rem;
-  font-weight: 700;
-  color: var(--gaz-accent-orange);
-}
-
-.ticketCategory {
-  font-family: var(--ifm-font-family-monospace);
-  font-size: 0.78rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--gaz-text-muted);
-}
-
-.ticketDetails {
-  display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
-}
-
-.ticketTitle {
-  font-size: 1.05rem;
-  font-weight: 600;
-  color: var(--ifm-color-content);
-  margin: 0;
-}
-
-.ticketDesc {
   font-size: 0.88rem;
-  color: var(--gaz-text-muted);
-  margin: 0;
-}
-
-.ticketArrow {
-  display: flex;
-  justify-content: flex-end;
+  font-weight: 600;
   color: var(--gaz-accent-orange);
-  transition: transform var(--transition-fast);
 }
 
-.ticketStrip:hover .ticketArrow {
-  transform: translateX(3px);
+.streamChannelCount {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.85rem;
+  font-weight: 500;
 }
 
 /* ==========================================================================
-   Responsive Adaptations
+   Responsive Breakpoints
    ========================================================================== */
 
-@media screen and (max-width: 996px) {
-  .heroGrid {
+@media (max-width: 1100px) {
+  .heroStageInner {
     grid-template-columns: 1fr;
-    gap: 2.5rem;
+    gap: 2rem;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
   }
 
-  .cardBackpacker {
-    grid-template-columns: 1fr;
-    gap: 1.75rem;
-    padding: 1.75rem;
-  }
-
-  .cardSecondary {
-    grid-column: span 12;
-    padding: 1.75rem;
-  }
-
-  .albumBanner {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-    padding: 1.75rem;
-  }
-
-  .twinStreamGrid {
-    grid-template-columns: 1fr;
-  }
-
-  .ticketStripLink {
-    grid-template-columns: 70px 1fr 30px;
-    gap: 1rem;
-    padding: 1rem 1.25rem;
-  }
-
-  .ticketCategory {
+  .surveyRail {
     display: none;
   }
-}
 
-@media screen and (max-width: 640px) {
-  .dispatchStubs {
+  .pillarBackpacker {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 
+  .streamsAsymmetricGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
   .mastheadInner {
     flex-direction: column;
     align-items: flex-start;
-    gap: 0.5rem;
+    gap: 0.45rem;
   }
 
-  .heroActions {
-    flex-direction: column;
+  .mastheadCoords {
+    flex-wrap: wrap;
+  }
+
+  .mastheadStatus {
+    display: none;
+  }
+
+  .heroStageInner {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .heroDisplayTitle {
+    font-size: clamp(1.8rem, 3.2vw, 2.3rem);
+  }
+
+  .heroBackdrop::after {
+    background: linear-gradient(
+      180deg,
+      rgba(255, 253, 251, 0.92) 0%,
+      rgba(255, 253, 251, 0.86) 65%,
+      rgba(255, 253, 251, 0.95) 100%
+    );
+  }
+
+  [data-theme='dark'] .heroBackdrop::after {
+    background: linear-gradient(
+      180deg,
+      rgba(26, 21, 18, 0.9) 0%,
+      rgba(26, 21, 18, 0.85) 65%,
+      rgba(26, 21, 18, 0.95) 100%
+    );
+  }
+
+  .sectionPillars,
+  .sectionProjects,
+  .sectionStreams {
+    padding: 3rem 0;
+  }
+
+  .pillarsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .pillarBackpacker,
+  .pillarCard {
+    grid-column: 1 / -1;
+  }
+
+  .pillarBackpacker,
+  .pillarCard,
+  .projectSpecCard,
+  .albumFeatureCard,
+  .streamChannelCard {
+    padding: 1.5rem;
+  }
+
+  .projectsMatrix {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mastheadBeacon {
+    animation: none;
   }
 
   .btnPrimary,
-  .btnSecondary {
-    width: 100%;
-    justify-content: center;
+  .btnSecondary,
+  .waypointCard,
+  .pillarBackpacker,
+  .pillarCard,
+  .projectSpecCard,
+  .albumFeatureCard,
+  .streamChannelCard,
+  .quickNavLink {
+    transition: none !important;
+    transform: none !important;
   }
 }

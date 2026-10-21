@@ -17,7 +17,7 @@ kywk.me 是 kywk 的個人數位花園與公開創作工作室（Digital Garden 
 
 ## Positioning
 
-不同於單純的工程技術部落格或旅行流水帳，kywk.me 融合了「嚴謹的工程工匠精神（MoCo Lab）」、「Lonely Planet 式的系統化旅行規劃（Backpacker）」、「生活習慣與自動化實驗（Lifehacker）」以及「視覺化光影紀錄（Album）」。以真實的 Obsidian Vault 為單一事實來源（Single Source of Truth），呈現跨領域的思考與實踐。
+不同於單純的工程技術部落格或旅行流水帳，kywk.me 融合了「嚴謹的工程工匠精神（MoCo Lab）」、「Lonely Planet 式的系統化旅行規劃（Backpacker）」、「生活習慣與自動化實驗（Lifehacker）」、「視覺化光影紀錄（Album）」以及「自製開源工具與外掛（Side Projects）」。以真實的 Obsidian Vault 為單一事實來源（Single Source of Truth），呈現跨領域的思考與實踐。
 
 ## Operating Context
 
@@ -28,13 +28,18 @@ kywk.me 是 kywk 的個人數位花園與公開創作工作室（Digital Garden 
 ## Capabilities and Constraints
 
 - 內容集合體系：
-  - Docs 實例：`backpacker/`（旅遊攻略、Checklist）、`lifehacker/`（生活習慣、工具）、`moco/`（DevSecOps、工程手冊）。
+  - Docs 實例：`backpacker/`（旅遊攻略、Checklist）、`lifehacker/`（生活習慣、工具）、`moco/`（重整為 Tech Stack、Docusaurus、Obsidian 等核心工程手冊）。
   - Blogs 實例：`blog.life/`（生活隨筆）、`blog.news/`（開發者日誌）。
   - 獨立相簿：`plugins/docusaurus-plugin-album`（Pinterest 瀑布流、時間軸、相片燈箱）。
+  - Side Projects（個人開源專案與外掛，未來持續擴充）：
+    - `geo-story-map`：Obsidian 互動地圖外掛與 `@story-map/remark-story-map` Docusaurus 雙端故事地圖引擎。
+    - `vault-feed-reader`：Obsidian RSS/Atom 閱讀、全文擷取與 AI 摘要外掛。
+    - `remark-obsidian-kanban`（`docusaurus-kit`）：將 Obsidian Kanban 看板與任務狀態轉為 Docusaurus 靜態看板的 npm 套件。
+    - `docusaurus-plugin-album`：自製 Docusaurus 瀑布流與時光軸攝影相簿外掛。
 - 技術約束：
   - 保留 Obsidian 原生相容性與現有 URL slug 推導規則（不任意更動路由命名慣例）。
   - 深淺色雙主題（Sunset Warm 色調與 Dark Mode）流暢切換支援。
-  - 首頁作為獨立入口頁面（`src/pages/index.js`），必須具備極佳的視覺美感與首屏載入效能，避免龐大第三方重型依賴。
+  - 首頁作為獨立入口頁面（`src/pages/index.js`），資訊區塊不重複，主視覺以 Backpacker / Album 旅途山徑、等高線與數位光網串連，風格貼合全站現代西方探險與數位工匠語彙（不使用東方復古印章或垂直漢字風格）。
 
 ## Brand Commitments
 
