@@ -23,8 +23,8 @@ date_updated: 2026-10-21T00:00:00.000Z
 | --- | --- |
 | Docusaurus | `3.10.2` |
 | Mermaid renderer | `docusaurus-theme-pele@0.1.1` |
-| Obsidian Kanban | 站內 `plugins/remark-obsidian-kanban`（npm `0.2.1` 待切換） |
-| Obsidian Tasks | 站內 `plugins/rehype-obsidian-tasks`（npm `0.2.1` 待切換） |
+| Obsidian Kanban | `remark-obsidian-kanban@0.3.0`（npm，docusaurus-kit 發佈） |
+| Obsidian Tasks | `rehype-obsidian-tasks@0.2.1`（npm，docusaurus-kit 發佈） |
 | 相簿 | 站內 `plugins/docusaurus-plugin-album` |
 | 故事地圖 | `remark-story-map` |
 | 站內搜尋 | `@easyops-cn/docusaurus-search-local` |
@@ -47,7 +47,7 @@ date_updated: 2026-10-21T00:00:00.000Z
 | 2026-10-20 | 修正 Album Blog 兩張圖的 `subgraph` 語法；22 頁 / 27 張圖正常渲染 |
 | 2026-10-20 | `remark-obsidian-kanban@0.2.0`、`rehype-obsidian-tasks@0.2.0` 發佈到 npm |
 | 2026-10-20 | `docusaurus-theme-pele@0.1.1`、兩個 Obsidian 外掛 `0.2.1` 由 OIDC 發佈 |
-| 2026-10-21 | 補上 docusaurus-kit 系列文章；kanban/tasks 仍由站內版本載入 |
+| 2026-10-21 | 補上 docusaurus-kit 系列文章；kanban/tasks 切換為 npm 版本並移除站內 `plugins/` 複本 |
 
 ## 站台外掛沿革
 
@@ -68,7 +68,7 @@ date_updated: 2026-10-21T00:00:00.000Z
 - 舊版透過 `configureMarkdownProcessor()` 把 remark plugin 塞進處理器。
 - 新版 `remark-obsidian-kanban` 直接匯出 `remarkKanban`，設定回到 `remarkPlugins`。
 - `rehype-obsidian-tasks` 直接匯出 `rehypeObsidianTasks`，設定回到 `rehypePlugins`。
-- 站台目前仍載入舊版；npm 套件已在 fixture site 驗證，切換時要確認 `markdown.format: 'detect'` 與 `remark-wiki-link` 的先後順序。
+- 站台已切換為 npm 版本（`remark-obsidian-kanban@0.3.0`、`rehype-obsidian-tasks@0.2.1`），`docusaurus.config.ts` 直接 `require` 套件名；`markdown.format: 'detect'` 與 `remark-wiki-link` 的順序維持不變。
 
 ### Album 與 StoryMap 留在站台
 

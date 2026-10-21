@@ -15,11 +15,12 @@ date_created: 2025-09-23T00:00:00.000Z
 date_updated: 2026-10-21T00:00:00.000Z
 history:
   - 2026-10-21 更新為 npm 0.2.1 現況；歷史見 [[Docusaurus 版本與變更記錄]]
+  - 2026-10-21 站台切換為 npm 版本（kanban `0.3.0`、tasks `0.2.1`），移除站內 `plugins/` 複本
 ---
 
 # [Docusaurus] remark-obsidian-kanban Plugin
 
-`remark-obsidian-kanban` 把 Obsidian Kanban 格式的 Markdown 看板轉成靜態 HTML，讓 Docusaurus 文章可以直接呈現欄位與卡片。套件由 [[01 docusaurus-kit 專案總覽|docusaurus-kit]] 維護，目前 npm 版本是 `0.2.1`。
+`remark-obsidian-kanban` 把 Obsidian Kanban 格式的 Markdown 看板轉成靜態 HTML，讓 Docusaurus 文章可以直接呈現欄位與卡片。套件由 [[01 docusaurus-kit 專案總覽|docusaurus-kit]] 維護，目前 npm 版本是 `0.3.0`。
 
 - npm：<https://www.npmjs.com/package/remark-obsidian-kanban>
 - 原始碼：<https://github.com/kywk/docusaurus-kit/tree/main/packages/remark-obsidian-kanban>
@@ -31,6 +32,7 @@ history:
 - **欄位與卡片**：`##` 標題是欄位，清單項目是卡片；欄位標題顯示卡片數。
 - **卡片內容**：第一段是標題，縮排的清單、段落、圖片與連結是內文。
 - **狀態**：`[ ]`、`[x]`、`[-]`、`[/]` 會轉成對應 class 與 `data-task`，標題中的標記會移除。
+- **標籤**：卡片標題與內文的 `#tag` 會轉成藥丸標籤，顏色由名稱雜湊決定，同一標籤永遠同色。
 - **Wikilink**：可選 `pageResolver` / `hrefTemplate`；沒有提供時仍可渲染，連結會變成純文字。
 - **Settings 區塊**：自動移除 Obsidian 的 `%% kanban:settings %%`。
 - **主題**：使用 Docusaurus 的 `--ifm-*` CSS 變數，跟隨站台配色與明暗模式。
@@ -199,7 +201,7 @@ hide_table_of_contents: true
 
 ## 站台狀態
 
-kywk.me 目前仍載入站內 `plugins/` 版本；npm 版本已在 fixture site 驗證。版本與舊版遷移紀錄見 [[Docusaurus 版本與變更記錄]]。
+kywk.me 已改用 npm 版本（`remark-obsidian-kanban@0.3.0`），`docusaurus.config.ts` 直接 `require('remark-obsidian-kanban')`，站內 `plugins/` 複本已移除。版本與舊版遷移紀錄見 [[Docusaurus 版本與變更記錄]]。
 
 ## 限制
 
@@ -211,7 +213,7 @@ kywk.me 目前仍載入站內 `plugins/` 版本；npm 版本已在 fixture site 
 
 ## 測試
 
-- 5 個單元測試：欄位/卡片、無 resolver、wikilink、非看板文件、settings 區塊。
+- 6 個單元測試：欄位/卡片、無 resolver、wikilink、非看板文件、settings 區塊、`#tag` 藥丸標籤。
 - Playground：`examples/playground/docs/kanban.md`。
 - CI 會建置 fixture site 並跑 Playwright。
 

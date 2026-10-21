@@ -20,7 +20,7 @@ date_updated: 2026-10-21T00:00:00.000Z
 
 | 套件 | 版本 | 階段 | 功能 |
 | --- | --- | --- | --- |
-| `remark-obsidian-kanban` | `0.2.1` | remark | 將 Obsidian Kanban 看板轉成靜態 HTML |
+| `remark-obsidian-kanban` | `0.3.0` | remark | 將 Obsidian Kanban 看板轉成靜態 HTML |
 | `rehype-obsidian-tasks` | `0.2.1` | rehype | 將 `[-]`、`[/]` 轉成 GFM task item |
 
 兩者可以獨立使用。若站上同時有看板與任務清單，通常會一起裝。
@@ -98,6 +98,7 @@ title: 專案看板
 - 卡片第一段是標題，縮排內容是卡片內文。
 - 移除卡片標題前的 `[ ]`、`[x]`、`[-]`、`[/]` 標記。
 - 依狀態加上 `kanban-card--open`、`kanban-card--done`、`kanban-card--cancelled`、`kanban-card--in-progress`，並在卡片上留下 `data-task`。
+- 卡片標題與內文的 `#tag` 會轉成藥丸標籤，顏色由名稱雜湊決定，同一標籤永遠同色。
 - 欄位標題會顯示卡片數量。
 - 刪除 Obsidian 的 `%% kanban:settings %%` 區塊。
 - 保留卡片內的圖片、Markdown 連結與 wikilink。
@@ -214,7 +215,7 @@ const rehypePlugins = [rehypeObsidianTasks];
 
 ## 測試與範例
 
-- `remark-obsidian-kanban`：5 個單元測試，涵蓋欄位/卡片、無 link resolver、wikilink、非看板文件、settings 區塊。
+- `remark-obsidian-kanban`：6 個單元測試，涵蓋欄位/卡片、無 link resolver、wikilink、非看板文件、settings 區塊、`#tag` 標籤。
 - `rehype-obsidian-tasks`：4 個單元測試，涵蓋兩種狀態、GFM 相容、loose list、一般清單。
 - Playground 有 `docs/kanban.md` 與 `docs/tasks.md`，CI 會建置 fixture site 並跑 Playwright。
 

@@ -85,7 +85,7 @@ npm run content:wikilink   # Markdown 連結轉 wiki-link
 ### Node 必須 >= 20.19
 
 `engines.node` 是 `>=20.19.0`，這是**必要**而非保守：
-`plugins/remark-obsidian-kanban` 以 `require()` 載入 ESM-only 的 `unist-util-visit@5`，
+`remark-obsidian-kanban`（npm）以 `require()` 載入 ESM-only 的 `unist-util-visit@5`，
 需要 Node 20.19 起才有的 `require(esm)`，在 Node 18 上直接 `ERR_REQUIRE_ESM`。
 
 三處 pinning 一致：CI `20.19.0`、`volta` `20.20.2`、`engines`。
@@ -93,13 +93,16 @@ npm run content:wikilink   # Markdown 連結轉 wiki-link
 
 ### 依賴必須在站台宣告，不能靠提升
 
-`loadPlugin()` 依序嘗試 `npm 套件名` → `localPath` → `./plugins/<name>` → `.../src/index.js`。
+`loadPlugin()`（僅剩 `remark-slug-normalizer` 使用）依序嘗試 `npm 套件名` →
+`localPath` → `./plugins/<name>` → `.../src/index.js`。
 以路徑載入的插件**其自己的 `dependencies` 不會被 npm 安裝**。
 
-`remark-obsidian-kanban` 宣告了 `unist-util-visit`，但站台也必須宣告一份，否則只是
-碰巧靠 `@story-map/remark-story-map` 等其他套件提升上來而可用。npm 的扁平佈局掩蓋了這點；
-pnpm 的嚴格隔離會讓它直接 `MODULE_NOT_FOUND`。`@docusaurus/theme-common` 與
-`@docusaurus/plugin-content-docs`（被 swizzle 過的 `src/theme` 直接匯入）同理。
+`remark-slug-normalizer` 是本地路徑載入，宣告了 `unist-util-visit`，但站台也必須
+宣告一份，否則只是碰巧靠 `@story-map/remark-story-map` 等其他套件提升上來而可用。
+npm 的扁平佈局掩蓋了這點；pnpm 的嚴格隔離會讓它直接 `MODULE_NOT_FOUND`。
+`@docusaurus/theme-common` 與 `@docusaurus/plugin-content-docs`（被 swizzle 過的
+`src/theme` 直接匯入）同理。`remark-obsidian-kanban` 與 `rehype-obsidian-tasks`
+已改為 npm 依賴，其自身 `dependencies` 由 npm 安裝，不適用本條。
 
 ### slug 由路徑推導，不寫回檔案
 
@@ -125,9 +128,9 @@ slug 必須在 `parseFrontMatter` 解決：Docusaurus 在 `processDocMetadata` �
 
 | 檔案 | 說明 |
 | --- | --- |
-| `plugins/remark-obsidian-kanban/` | Kanban 看板渲染（獨立 npm 套件） |
+| `remark-obsidian-kanban` | Kanban 看板渲染（npm：docusaurus-kit 發佈） |
 | `plugins/remark-slug-normalizer/` | slug 推導規則（全站唯一實作） |
-| `plugins/rehype-obsidian-tasks/` | Obsidian task 標記渲染（僅本站台） |
+| `rehype-obsidian-tasks` | Obsidian task 標記渲染（npm：docusaurus-kit 發佈） |
 | `plugins/remark-story-map-loader.cjs` | 以原生 `require(esm)` 載入 remark-story-map，繞過 jiti 破壞 zod v4 具名匯出 |
 | `plugins/story-map-client/` | 註冊 StoryMap 瀏覽器 client module 與全頁檢視 |
 | `scripts/content-links.js` | wikilink 索引與 route resolver |

@@ -32,7 +32,9 @@ function loadPlugin(npmPackage, localPath) {
 }
 
 const remarkWikiLink = require("remark-wiki-link");
-const remarkKanban = loadPlugin("remark-obsidian-kanban", "./plugins/remark-obsidian-kanban/src/index.js")?.remarkKanban;
+// 外部 npm 套件（docusaurus-kit 發佈）：看板與任務狀態渲染。
+// slug-normalizer 是本站 slug 政策，維持本地插件。
+const { remarkKanban } = require("remark-obsidian-kanban");
 const slugNormalizerPlugin = loadPlugin("remark-slug-normalizer", "./plugins/remark-slug-normalizer/src/index.js");
 const normalizeSlug = slugNormalizerPlugin?.normalizeSlug;
 const deriveSlug = slugNormalizerPlugin?.deriveSlug;
@@ -40,7 +42,7 @@ const deriveSlug = slugNormalizerPlugin?.deriveSlug;
 // StoryMap ESM remark plugin, loaded through Node's native require(esm) so
 // jiti does not mangle zod v4's named exports (see the loader file).
 const remarkStoryMap = require("./plugins/remark-story-map-loader.cjs");
-const rehypeObsidianTasks = loadPlugin("rehype-obsidian-tasks", "./plugins/rehype-obsidian-tasks/src/index.js")?.rehypeObsidianTasks;
+const { rehypeObsidianTasks } = require("rehype-obsidian-tasks");
 
 // 全站 wikilink 索引：blog 文章可以連到 docs，也可以連到另一個 blog。
 // 路由仍由 remark-slug-normalizer 的 deriveSlug() 統一推導。

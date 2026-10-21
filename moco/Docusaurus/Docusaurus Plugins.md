@@ -26,7 +26,7 @@ history:
 | 套件 | 版本 | 類型 | 用途 |
 | --- | --- | --- | --- |
 | `docusaurus-theme-pele` | `0.1.1` | theme | 以 Pele 取代 Mermaid renderer |
-| `remark-obsidian-kanban` | `0.2.1` | remark | Obsidian Kanban 轉靜態看板 |
+| `remark-obsidian-kanban` | `0.3.0` | remark | Obsidian Kanban 轉靜態看板 |
 | `rehype-obsidian-tasks` | `0.2.1` | rehype | `[-]` / `[/]` 任務狀態 |
 
 來源與發佈流程見 [[01 docusaurus-kit 專案總覽]]、[[04 GitHub Actions 與 npm 信任發佈]]。
@@ -59,7 +59,7 @@ history:
 
 ### remark-obsidian-kanban
 
-已從站內 `plugins/` 抽到 [[01 docusaurus-kit 專案總覽|docusaurus-kit]]，npm 版本 `0.2.1`。[[Plugin Remark Obsidian Kanban]] 保留為詳細使用與實作筆記。
+已從站內 `plugins/` 抽到 [[01 docusaurus-kit 專案總覽|docusaurus-kit]]，站台直接使用 npm 版本 `0.3.0`。[[Plugin Remark Obsidian Kanban]] 保留為詳細使用與實作筆記。
 
 **核心功能**：
 - 自動識別 `kanban-plugin: board` frontmatter

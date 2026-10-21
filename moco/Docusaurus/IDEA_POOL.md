@@ -19,7 +19,7 @@ draft: true
   - 將可重用外掛抽到獨立 pnpm monorepo，發佈 npm
   - [[01 docusaurus-kit 專案總覽]]
 
-- [x] **remark-obsidian-kanban plugin** ✅ 2025-09-23（npm `0.2.1`，2026-10-21）
+- [x] **remark-obsidian-kanban plugin** ✅ 2025-09-23（npm `0.3.0`，站台已切換）
   - 支援 Obsidian Kanban 格式轉換
   - [[Plugin Remark Obsidian Kanban]]、[[03 Obsidian 外掛 Kanban 與 Tasks]]
 

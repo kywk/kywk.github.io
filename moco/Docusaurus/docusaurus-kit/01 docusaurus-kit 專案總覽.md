@@ -37,7 +37,7 @@ date_updated: 2026-10-21T00:00:00.000Z
 | 套件 | 版本 | 用途 |
 | --- | --- | --- |
 | [`docusaurus-theme-pele`](https://www.npmjs.com/package/docusaurus-theme-pele) | `0.1.1` | 用 [Pele](https://pele.run) 取代 Mermaid 渲染 `mermaid` 圍欄區塊 |
-| [`remark-obsidian-kanban`](https://www.npmjs.com/package/remark-obsidian-kanban) | `0.2.1` | 將 Obsidian Kanban 看板轉成靜態 HTML |
+| [`remark-obsidian-kanban`](https://www.npmjs.com/package/remark-obsidian-kanban) | `0.3.0` | 將 Obsidian Kanban 看板轉成靜態 HTML |
 | [`rehype-obsidian-tasks`](https://www.npmjs.com/package/rehype-obsidian-tasks) | `0.2.1` | 將 Obsidian 的 `[-]`、`[/]` 任務狀態轉成 GFM task item |
 
 三個套件都是 MIT，版本以 2026-10-21 的 npm `latest` 為準。

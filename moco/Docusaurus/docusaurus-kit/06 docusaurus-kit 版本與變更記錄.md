@@ -21,7 +21,7 @@ date_updated: 2026-10-21T00:00:00.000Z
 | 套件 | npm `latest` | 說明 |
 | --- | --- | --- |
 | `docusaurus-theme-pele` | `0.1.1` | Pele Mermaid renderer |
-| `remark-obsidian-kanban` | `0.2.1` | Obsidian Kanban → 靜態看板 |
+| `remark-obsidian-kanban` | `0.3.0` | Obsidian Kanban → 靜態看板 |
 | `rehype-obsidian-tasks` | `0.2.1` | `[-]` / `[/]` 任務狀態 |
 
 ## 版本紀錄
@@ -39,6 +39,7 @@ date_updated: 2026-10-21T00:00:00.000Z
 | --- | --- | --- |
 | `0.2.0` | 2026-10-20 | 首次以 npm 套件發佈。可選 `pageResolver` / `hrefTemplate`、狀態 class、settings 區塊移除、5 個單元測試 |
 | `0.2.1` | 2026-10-20 | 補充相容版本說明 |
+| `0.3.0` | 2026-10-21 | 卡片標題與內文的 `#tag` 轉成藥丸標籤（顏色由名稱雜湊決定），站台隨即切換為 npm 版本 |
 
 ### rehype-obsidian-tasks
 
@@ -59,6 +60,7 @@ date_updated: 2026-10-21T00:00:00.000Z
 | 2026-10-20 | `docusaurus-theme-pele@0.1.0`、`remark-obsidian-kanban@0.2.0`、`rehype-obsidian-tasks@0.2.0` 首發 |
 | 2026-10-20 | `docusaurus-theme-pele@0.1.1`、`remark-obsidian-kanban@0.2.1`、`rehype-obsidian-tasks@0.2.1` 發佈 |
 | 2026-10-21 | 補齊套件 README 相容版本表，建立系列文章 |
+| 2026-10-21 | 站台 kanban/tasks 切換為 npm 版本（kanban `0.3.0`、tasks `0.2.1`），移除站內 `plugins/` 複本 |
 
 ## 發佈方式
 

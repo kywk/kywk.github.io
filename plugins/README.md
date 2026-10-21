@@ -4,13 +4,7 @@ This directory contains custom plugins for the Obsidian + Docusaurus integration
 
 ## Remark Plugins
 
-### remark-obsidian-kanban/
-Renders Obsidian Kanban boards in Docusaurus.
-- Detects `kanban-plugin: board` frontmatter
-- Converts Markdown task lists to interactive boards
-- Supports wiki-link resolution
-
-### slug-normalizer.js
+### remark-slug-normalizer/
 Unified slug normalization module providing:
 - `normalizeSlug()` utility function for file mapping
 - `remarkSlugNormalizer` remark plugin for automatic slug injection
@@ -31,9 +25,16 @@ Pinterest-style photo album plugin for Docusaurus with Google Photos timeline sc
 These plugins are automatically loaded in `docusaurus.config.ts`:
 
 ```typescript
-const { remarkKanban } = require("./plugins/remark-obsidian-kanban/src/index.js");
+const { remarkKanban } = require("remark-obsidian-kanban");
+const { rehypeObsidianTasks } = require("rehype-obsidian-tasks");
 const { normalizeSlug, remarkSlugNormalizer } = require("./plugins/remark-slug-normalizer/src/index.js");
 ```
+
+## External packages (docusaurus-kit)
+
+Kanban (`remark-obsidian-kanban`) 與 Tasks (`rehype-obsidian-tasks`) 由
+[docusaurus-kit](https://github.com/kywk/docusaurus-kit) 發佈，站台只消費 npm
+版本，不在 `plugins/` 維護本地複本。StoryMap 同理，見下節。
 
 ## StoryMap (external package)
 
