@@ -375,7 +375,7 @@ const config: Config = {
 
     // 獨立相簿插件 (Pinterest 瀑布流 + Google Photos 時光軸 + 全螢幕相片燈箱)
     [
-      path.resolve(__dirname, "plugins/docusaurus-plugin-album"),
+      "docusaurus-plugin-album",
       {
         id: "album",
         routeBasePath: "album",

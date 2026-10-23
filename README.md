@@ -128,6 +128,7 @@ slug 必須在 `parseFrontMatter` 解決：Docusaurus 在 `processDocMetadata` �
 
 | 檔案 | 說明 |
 | --- | --- |
+| `docusaurus-plugin-album` | Pinterest 瀑布流相簿、時光軸與燈箱（npm：docusaurus-kit 發佈） |
 | `remark-obsidian-kanban` | Kanban 看板渲染（npm：docusaurus-kit 發佈） |
 | `plugins/remark-slug-normalizer/` | slug 推導規則（全站唯一實作） |
 | `rehype-obsidian-tasks` | Obsidian task 標記渲染（npm：docusaurus-kit 發佈） |

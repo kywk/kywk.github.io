@@ -10,16 +10,6 @@ Unified slug normalization module providing:
 - `remarkSlugNormalizer` remark plugin for automatic slug injection
 - Converts spaces to hyphens for SEO-friendly URLs
 
-## Feature Plugins
-
-### docusaurus-plugin-album/
-Pinterest-style photo album plugin for Docusaurus with Google Photos timeline scrubber and lightbox.
-- Wraps `@docusaurus/plugin-content-blog` via Wrapper Pattern
-- Pinterest responsive masonry grid layout with mouse hover info overlay
-- Google Photos-style floating timeline scrubber with year navigation
-- Immersive Hero Header with cover image, location, and series badges
-- Lightweight, zero-dependency full-screen photo lightbox with keyboard navigation and avatar exclusion
-
 ## Usage
 
 These plugins are automatically loaded in `docusaurus.config.ts`:
@@ -32,7 +22,7 @@ const { normalizeSlug, remarkSlugNormalizer } = require("./plugins/remark-slug-n
 
 ## External packages (docusaurus-kit)
 
-Kanban (`remark-obsidian-kanban`) 與 Tasks (`rehype-obsidian-tasks`) 由
+Kanban (`remark-obsidian-kanban`)、Tasks (`rehype-obsidian-tasks`) 與 Album (`docusaurus-plugin-album`) 由
 [docusaurus-kit](https://github.com/kywk/docusaurus-kit) 發佈，站台只消費 npm
 版本，不在 `plugins/` 維護本地複本。StoryMap 同理，見下節。
 

@@ -37,6 +37,7 @@
     "@mdx-js/react": "^3.0.0",
     "@story-map/remark-story-map": "^0.5.0",
     "clsx": "^2.0.0",
+    "docusaurus-plugin-album": "^0.1.1",
     "docusaurus-theme-pele": "^0.1.0",
     "gray-matter": "^4.0.3",
     "prism-react-renderer": "^2.3.0",
