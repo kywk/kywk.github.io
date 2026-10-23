@@ -19,15 +19,19 @@ draft: true
   - 將可重用外掛抽到獨立 pnpm monorepo，發佈 npm
   - [[01 docusaurus-kit 專案總覽]]
 
-- [x] **remark-obsidian-kanban plugin** ✅ 2025-09-23（npm `0.3.0`，站台已切換）
+- [x] **remark-obsidian-kanban plugin** ✅ 2025-09-23（npm `0.3.1`，站台已切換）
   - 支援 Obsidian Kanban 格式轉換
   - [[Plugin Remark Obsidian Kanban]]、[[03 Obsidian 外掛 Kanban 與 Tasks]]
 
-- [x] **rehype-obsidian-tasks plugin** ✅ 2026-10-20（npm `0.2.1`）
+- [x] **rehype-obsidian-tasks plugin** ✅ 2026-10-20（npm `0.2.2`）
   - 支援 `[-]`、`[/]` 任務狀態
   - [[03 Obsidian 外掛 Kanban 與 Tasks]]
 
-- [x] **Mermaid 改用 Pele** ✅ 2026-10-20
+- [x] **docusaurus-plugin-album plugin** ✅ 2026-10-23（npm `0.1.1`，站台已切換）
+  - Pinterest 瀑布流相簿、Google Photos 時間軸與全螢幕燈箱
+  - [[03 Album Blog 完工成果與架構插件化評估]]、[[01 docusaurus-kit 專案總覽]]
+
+- [x] **Mermaid 改用 Pele** ✅ 2026-10-20（npm `0.1.2`）
   - 取代 `@docusaurus/theme-mermaid`
   - [[02 docusaurus-theme-pele 與 Mermaid 遷移]]
 

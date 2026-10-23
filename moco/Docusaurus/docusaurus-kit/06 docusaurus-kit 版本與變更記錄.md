@@ -9,7 +9,7 @@ tags:
 sidebar_position: 60
 sidebar_label: 版本與變更記錄
 date_created: 2026-10-21T00:00:00.000Z
-date_updated: 2026-10-21T00:00:00.000Z
+date_updated: 2026-10-23T00:00:00.000Z
 ---
 
 # docusaurus-kit 版本與變更記錄
@@ -20,9 +20,10 @@ date_updated: 2026-10-21T00:00:00.000Z
 
 | 套件 | npm `latest` | 說明 |
 | --- | --- | --- |
-| `docusaurus-theme-pele` | `0.1.1` | Pele Mermaid renderer |
-| `remark-obsidian-kanban` | `0.3.0` | Obsidian Kanban → 靜態看板 |
-| `rehype-obsidian-tasks` | `0.2.1` | `[-]` / `[/]` 任務狀態 |
+| `docusaurus-theme-pele` | `0.1.2` | Pele Mermaid renderer |
+| `docusaurus-plugin-album` | `0.1.1` | Pinterest 瀑布流相簿、Google Photos 時間軸與全螢幕燈箱 |
+| `remark-obsidian-kanban` | `0.3.1` | Obsidian Kanban → 靜態看板 |
+| `rehype-obsidian-tasks` | `0.2.2` | `[-]` / `[/]` 任務狀態 |
 
 ## 版本紀錄
 
@@ -32,6 +33,14 @@ date_updated: 2026-10-21T00:00:00.000Z
 | --- | --- | --- |
 | `0.1.0` | 2026-10-20 | 首發。Pele renderer、CSS 變數主題、`themeConfig.pele.zoom`、fixture/Playwright 測試 |
 | `0.1.1` | 2026-10-20 | 補充 Docusaurus / React / Node.js / Pele 相容版本說明 |
+| `0.1.2` | 2026-10-23 | 當瀏覽器暫時性網路錯誤導致 Pele chunk 載入失敗時，允許後續重試載入 |
+
+### docusaurus-plugin-album
+
+| 版本 | 日期 | 變更 |
+| --- | --- | --- |
+| `0.1.0` | 2026-10-23 | 首次以 npm 套件發佈。包裝 `@docusaurus/plugin-content-blog`，提供 Pinterest 瀑布流、Google Photos 時間軸滑桿、沉浸式 Hero Header、零依賴燈箱與首頁輕量 `albumItems` JSON 分塊 |
+| `0.1.1` | 2026-10-23 | 新增 `tsconfig.theme.json` 將 `lib/theme/` 元件預先編譯為 ESM JavaScript，解決消費端站台從 `node_modules` 載入時的 bundler 轉譯問題（同時保留 `src/theme/*.tsx` 供 swizzle 使用） |
 
 ### remark-obsidian-kanban
 
@@ -40,6 +49,7 @@ date_updated: 2026-10-21T00:00:00.000Z
 | `0.2.0` | 2026-10-20 | 首次以 npm 套件發佈。可選 `pageResolver` / `hrefTemplate`、狀態 class、settings 區塊移除、5 個單元測試 |
 | `0.2.1` | 2026-10-20 | 補充相容版本說明 |
 | `0.3.0` | 2026-10-21 | 卡片標題與內文的 `#tag` 轉成藥丸標籤（顏色由名稱雜湊決定），站台隨即切換為 npm 版本 |
+| `0.3.1` | 2026-10-23 | 優化 AST 走訪效能，並將重複的看板卡片 inline style 移至看板共用樣式表 |
 
 ### rehype-obsidian-tasks
 
@@ -47,6 +57,7 @@ date_updated: 2026-10-21T00:00:00.000Z
 | --- | --- | --- |
 | `0.2.0` | 2026-10-20 | 首次以 npm 套件發佈。`[-]` / `[/]`、GFM 相容、loose list 處理、4 個單元測試 |
 | `0.2.1` | 2026-10-20 | 補充相容版本說明 |
+| `0.2.2` | 2026-10-23 | 優化 AST 走訪效能 |
 
 > npm 首次發佈時可能出現短暫的 `0.0.0-stage` 版本，那是 staged publish 的佔位版本；在瀏覽器完成同意後會 promote 成正式版本。
 
@@ -61,6 +72,8 @@ date_updated: 2026-10-21T00:00:00.000Z
 | 2026-10-20 | `docusaurus-theme-pele@0.1.1`、`remark-obsidian-kanban@0.2.1`、`rehype-obsidian-tasks@0.2.1` 發佈 |
 | 2026-10-21 | 補齊套件 README 相容版本表，建立系列文章 |
 | 2026-10-21 | 站台 kanban/tasks 切換為 npm 版本（kanban `0.3.0`、tasks `0.2.1`），移除站內 `plugins/` 複本 |
+| 2026-10-23 | 發佈 `docusaurus-theme-pele@0.1.2`、`remark-obsidian-kanban@0.3.1`、`rehype-obsidian-tasks@0.2.2` 效能與穩定度更新 |
+| 2026-10-23 | 新增 `packages/plugin-album`（`docusaurus-plugin-album@0.1.0` → `0.1.1`），設定 OIDC trusted publishing，站台切換為 npm 版本並移除站內 `plugins/docusaurus-plugin-album/` |
 
 ## 發佈方式
 
@@ -78,5 +91,6 @@ date_updated: 2026-10-21T00:00:00.000Z
 
 - [docusaurus-kit repository](https://github.com/kywk/docusaurus-kit)
 - [docusaurus-theme-pele](https://www.npmjs.com/package/docusaurus-theme-pele)
+- [docusaurus-plugin-album](https://www.npmjs.com/package/docusaurus-plugin-album)
 - [remark-obsidian-kanban](https://www.npmjs.com/package/remark-obsidian-kanban)
 - [rehype-obsidian-tasks](https://www.npmjs.com/package/rehype-obsidian-tasks)

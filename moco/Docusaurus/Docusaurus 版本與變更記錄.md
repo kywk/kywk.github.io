@@ -10,7 +10,7 @@ tags:
 sidebar_position: 90
 sidebar_label: 站台變更記錄
 date_created: 2026-10-21T00:00:00.000Z
-date_updated: 2026-10-21T00:00:00.000Z
+date_updated: 2026-10-23T00:00:00.000Z
 ---
 
 # Docusaurus 站台版本與變更記錄
@@ -22,11 +22,11 @@ date_updated: 2026-10-21T00:00:00.000Z
 | 項目 | 目前狀態 |
 | --- | --- |
 | Docusaurus | `3.10.2` |
-| Mermaid renderer | `docusaurus-theme-pele@0.1.1` |
-| Obsidian Kanban | `remark-obsidian-kanban@0.3.0`（npm，docusaurus-kit 發佈） |
-| Obsidian Tasks | `rehype-obsidian-tasks@0.2.1`（npm，docusaurus-kit 發佈） |
-| 相簿 | 站內 `plugins/docusaurus-plugin-album` |
-| 故事地圖 | `remark-story-map` |
+| Mermaid renderer | `docusaurus-theme-pele@0.1.2`（npm，docusaurus-kit 發佈） |
+| Obsidian Kanban | `remark-obsidian-kanban@0.3.1`（npm，docusaurus-kit 發佈） |
+| Obsidian Tasks | `rehype-obsidian-tasks@0.2.2`（npm，docusaurus-kit 發佈） |
+| 相簿 | `docusaurus-plugin-album@0.1.1`（npm，docusaurus-kit 發佈） |
+| 故事地圖 | `@story-map/remark-story-map@0.5.1` |
 | 站內搜尋 | `@easyops-cn/docusaurus-search-local` |
 | Slug | `plugins/remark-slug-normalizer` |
 
@@ -48,6 +48,7 @@ date_updated: 2026-10-21T00:00:00.000Z
 | 2026-10-20 | `remark-obsidian-kanban@0.2.0`、`rehype-obsidian-tasks@0.2.0` 發佈到 npm |
 | 2026-10-20 | `docusaurus-theme-pele@0.1.1`、兩個 Obsidian 外掛 `0.2.1` 由 OIDC 發佈 |
 | 2026-10-21 | 補上 docusaurus-kit 系列文章；kanban/tasks 切換為 npm 版本並移除站內 `plugins/` 複本 |
+| 2026-10-23 | `docusaurus-plugin-album` 完成效能優化並抽入 `docusaurus-kit` 發佈 `0.1.1`；站台切換為 npm 版本並移除 `plugins/docusaurus-plugin-album/`，同步更新 `pele@0.1.2`、`kanban@0.3.1`、`tasks@0.2.2`、`@story-map/remark-story-map@0.5.1` |
 
 ## 站台外掛沿革
 
@@ -68,11 +69,13 @@ date_updated: 2026-10-21T00:00:00.000Z
 - 舊版透過 `configureMarkdownProcessor()` 把 remark plugin 塞進處理器。
 - 新版 `remark-obsidian-kanban` 直接匯出 `remarkKanban`，設定回到 `remarkPlugins`。
 - `rehype-obsidian-tasks` 直接匯出 `rehypeObsidianTasks`，設定回到 `rehypePlugins`。
-- 站台已切換為 npm 版本（`remark-obsidian-kanban@0.3.0`、`rehype-obsidian-tasks@0.2.1`），`docusaurus.config.ts` 直接 `require` 套件名；`markdown.format: 'detect'` 與 `remark-wiki-link` 的順序維持不變。
+- 站台已切換為 npm 版本（`remark-obsidian-kanban@0.3.1`、`rehype-obsidian-tasks@0.2.2`），`docusaurus.config.ts` 直接 `require` 套件名；`markdown.format: 'detect'` 與 `remark-wiki-link` 的順序維持不變。
 
-### Album 與 StoryMap 留在站台
+### Album 外掛移入 docusaurus-kit 與留在站台的模組
 
-`docusaurus-plugin-album`、`remark-story-map` 與 `remark-slug-normalizer` 仍留在站台 repository，因為它們包含站台路由、內容結構或版型政策。等 API 變成資料中立後，再評估是否移進 `docusaurus-kit`。
+`docusaurus-plugin-album` 於 2026-10-23 完成獨立輕量索引（route data chunking）、圖片載入與捲動效能優化後，正式抽入 `docusaurus-kit` 發佈為 npm 套件（`0.1.1`），站台已移除 `plugins/docusaurus-plugin-album/` 並改由 npm 載入。
+
+目前仍留在站台 `plugins/` 的僅剩 `remark-slug-normalizer`（站台路由與 wikilink 共用推導規則）以及 `story-map-client` / `remark-story-map-loader.cjs`（`@story-map/remark-story-map` 的原生 ESM 載入器與 client 掛載橋接）。
 
 ## 站台修復紀錄
 

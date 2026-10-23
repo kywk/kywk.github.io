@@ -118,12 +118,12 @@ module.exports = {
 
 ### 特殊相簿頻道實例（Album Blog）
 
-針對以「影像與照片」為核心的攝影日誌，本站進一步採用了自製的外掛 `plugins/docusaurus-plugin-album/`，在底層包裝 `@docusaurus/plugin-content-blog` 並自動注入 Pinterest 瀑布流、Hover 浮層資訊、Google Photos 時間軸滑桿與全螢幕燈箱：
+針對以「影像與照片」為核心的攝影日誌，本站進一步採用了獨立外掛 `docusaurus-plugin-album`（由 [[01 docusaurus-kit 專案總覽|docusaurus-kit]] 發佈至 npm），在底層包裝 `@docusaurus/plugin-content-blog` 並自動注入 Pinterest 瀑布流、Hover 浮層資訊、Google Photos 時間軸滑桿與全螢幕燈箱：
 
 ```typescript
 // docusaurus.config.ts
 [
-  path.resolve(__dirname, 'plugins/docusaurus-plugin-album'),
+  'docusaurus-plugin-album',
   {
     id: 'album',
     routeBasePath: 'album',

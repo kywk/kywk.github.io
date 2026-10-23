@@ -10,7 +10,7 @@ tags:
 sidebar_position: 10
 sidebar_label: 專案總覽
 date_created: 2026-10-21T00:00:00.000Z
-date_updated: 2026-10-21T00:00:00.000Z
+date_updated: 2026-10-23T00:00:00.000Z
 ---
 
 # docusaurus-kit 專案總覽
@@ -18,7 +18,7 @@ date_updated: 2026-10-21T00:00:00.000Z
 `docusaurus-kit` 是一個 pnpm monorepo，用來維護可重用的 Docusaurus 套件。各站台以 npm 版本使用這些套件；套件的版本、CI 與 changelog 獨立運作。
 
 - GitHub：<https://github.com/kywk/docusaurus-kit>
-- npm：`docusaurus-theme-pele`、`remark-obsidian-kanban`、`rehype-obsidian-tasks`
+- npm：`docusaurus-theme-pele`、`docusaurus-plugin-album`、`remark-obsidian-kanban`、`rehype-obsidian-tasks`
 - 決策紀錄：[ADR 0001: Publish packages from a standalone monorepo](https://github.com/kywk/docusaurus-kit/blob/main/docs/adr/0001-packages-monorepo.md)
 
 ## 為什麼要拆成獨立專案
@@ -36,11 +36,12 @@ date_updated: 2026-10-21T00:00:00.000Z
 
 | 套件 | 版本 | 用途 |
 | --- | --- | --- |
-| [`docusaurus-theme-pele`](https://www.npmjs.com/package/docusaurus-theme-pele) | `0.1.1` | 用 [Pele](https://pele.run) 取代 Mermaid 渲染 `mermaid` 圍欄區塊 |
-| [`remark-obsidian-kanban`](https://www.npmjs.com/package/remark-obsidian-kanban) | `0.3.0` | 將 Obsidian Kanban 看板轉成靜態 HTML |
-| [`rehype-obsidian-tasks`](https://www.npmjs.com/package/rehype-obsidian-tasks) | `0.2.1` | 將 Obsidian 的 `[-]`、`[/]` 任務狀態轉成 GFM task item |
+| [`docusaurus-theme-pele`](https://www.npmjs.com/package/docusaurus-theme-pele) | `0.1.2` | 用 [Pele](https://pele.run) 取代 Mermaid 渲染 `mermaid` 圍欄區塊 |
+| [`docusaurus-plugin-album`](https://www.npmjs.com/package/docusaurus-plugin-album) | `0.1.1` | Pinterest 瀑布流相簿、Google Photos 時間軸與零依賴相片燈箱 |
+| [`remark-obsidian-kanban`](https://www.npmjs.com/package/remark-obsidian-kanban) | `0.3.1` | 將 Obsidian Kanban 看板轉成靜態 HTML |
+| [`rehype-obsidian-tasks`](https://www.npmjs.com/package/rehype-obsidian-tasks) | `0.2.2` | 將 Obsidian 的 `[-]`、`[/]` 任務狀態轉成 GFM task item |
 
-三個套件都是 MIT，版本以 2026-10-21 的 npm `latest` 為準。
+四個套件都是 MIT，版本以 2026-10-23 的 npm `latest` 為準。
 
 ## 專案結構
 
@@ -48,6 +49,7 @@ date_updated: 2026-10-21T00:00:00.000Z
 docusaurus-kit/
 ├── packages/
 │   ├── theme-pele/                 # Docusaurus theme
+│   ├── plugin-album/               # Docusaurus album plugin
 │   ├── remark-obsidian-kanban/     # remark plugin
 │   └── rehype-obsidian-tasks/      # rehype plugin
 ├── examples/playground/            # 最小 Docusaurus 測試站
@@ -58,7 +60,7 @@ docusaurus-kit/
     └── release.yml
 ```
 
-`examples/playground` 不是展示用的樣品站，而是 CI 的 fixture：三個套件都會掛進去，建置後用 Playwright 檢查圖表、看板與任務狀態是否真的出現在瀏覽器裡。
+`examples/playground` 不是展示用的樣品站，而是 CI 的 fixture：四個套件都會掛進去，建置後用 Playwright 檢查圖表、相簿、看板與任務狀態是否真的出現在瀏覽器裡。
 
 ## 設計原則
 
@@ -115,11 +117,12 @@ export default {
 
 `docusaurus-kit` 只放離開特定站台也能獨立運作的部分：
 
-- Pele Mermaid theme
-- Obsidian Kanban
-- Obsidian task statuses
+- Pele Mermaid theme（`docusaurus-theme-pele`）
+- Pinterest 瀑布流相簿外掛（`docusaurus-plugin-album`）
+- Obsidian Kanban（`remark-obsidian-kanban`）
+- Obsidian task statuses（`rehype-obsidian-tasks`）
 
-仍留在各站台 repository 的是帶有站台政策或資料依賴的部分。這些不是「不能開源」，而是目前 API 還綁著站台假設。等它們長出資料中立的介面，再考慮搬進 monorepo。
+仍留在各站台 repository 的是帶有站台政策或資料依賴的部分（如 `remark-slug-normalizer`）。這些不是「不能開源」，而是目前 API 還綁著站台假設。等它們長出資料中立的介面，再考慮搬進 monorepo。
 
 ## 發佈方式
 
@@ -140,6 +143,6 @@ export default {
 
 ## 套件狀態
 
-- 三個套件都已發佈：`docusaurus-theme-pele@0.1.1`、`remark-obsidian-kanban@0.2.1`、`rehype-obsidian-tasks@0.2.1`。
-- 三個版本都由 GitHub Actions 以 OIDC 發佈並附 provenance。
+- 四個套件都已發佈：`docusaurus-theme-pele@0.1.2`、`docusaurus-plugin-album@0.1.1`、`remark-obsidian-kanban@0.3.1`、`rehype-obsidian-tasks@0.2.2`。
+- 套件皆由 GitHub Actions 以 OIDC 發佈並附 provenance。
 - 下一個候選是仍留在站台 repository 的外掛，但前提是先把它們的站台政策與資料依賴拆開。

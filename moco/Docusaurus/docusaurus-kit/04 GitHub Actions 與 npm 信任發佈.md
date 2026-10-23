@@ -11,7 +11,7 @@ tags:
 sidebar_position: 40
 sidebar_label: CI/CD 與 npm
 date_created: 2026-10-21T00:00:00.000Z
-date_updated: 2026-10-21T00:00:00.000Z
+date_updated: 2026-10-23T00:00:00.000Z
 ---
 
 # GitHub Actions 與 npm 信任發佈
@@ -177,9 +177,10 @@ npx npm@12 trust github <package> \
 
 `--allow-publish` 允許正式發佈，`--allow-stage-publish` 允許 npm 的 staged publish。這兩個權限要和 workflow 的實際行為一致。
 
-目前三個套件都已設定：
+目前四個套件都已設定：
 
 - `docusaurus-theme-pele`
+- `docusaurus-plugin-album`
 - `remark-obsidian-kanban`
 - `rehype-obsidian-tasks`
 

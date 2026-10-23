@@ -10,24 +10,26 @@ tags:
 sidebar_position: 60
 sidebar_label: Plugin 使用
 date_created: 2024-05-24T00:00:00.000Z
-date_updated: 2026-10-21T00:00:00.000Z
+date_updated: 2026-10-23T00:00:00.000Z
 history:
   - 2026-10-21 更新為目前套件與 Pele 狀態；歷史見 [[Docusaurus 版本與變更記錄]]
+  - 2026-10-23 docusaurus-plugin-album 移入 docusaurus-kit 並切換為 npm 版本 0.1.1；同步更新 pele 0.1.2、kanban 0.3.1、tasks 0.2.2
 ---
 
 # [Docusaurus] Plugin 使用筆記
 
 本文記錄在 Docusaurus 專案中使用的各種 remark 插件，特別是針對 Obsidian 整合所開發或配置的插件。
 
-> 部分外掛由 [[01 docusaurus-kit 專案總覽|docusaurus-kit]] 發佈到 npm；站內 `plugins/` 版本仍在使用，npm 版本已可用。各節標示目前的建議用法與切換狀態。
+> 多數外掛已由 [[01 docusaurus-kit 專案總覽|docusaurus-kit]] 發佈到 npm；站台直接使用 npm 版本，僅剩 slug normalizer 與 story-map loader 留在站內 `plugins/`。
 
 ## docusaurus-kit 套件
 
 | 套件 | 版本 | 類型 | 用途 |
 | --- | --- | --- | --- |
-| `docusaurus-theme-pele` | `0.1.1` | theme | 以 Pele 取代 Mermaid renderer |
-| `remark-obsidian-kanban` | `0.3.0` | remark | Obsidian Kanban 轉靜態看板 |
-| `rehype-obsidian-tasks` | `0.2.1` | rehype | `[-]` / `[/]` 任務狀態 |
+| `docusaurus-theme-pele` | `0.1.2` | theme | 以 Pele 取代 Mermaid renderer |
+| `docusaurus-plugin-album` | `0.1.1` | plugin | Pinterest 瀑布流相簿、時光軸與燈箱 |
+| `remark-obsidian-kanban` | `0.3.1` | remark | Obsidian Kanban 轉靜態看板 |
+| `rehype-obsidian-tasks` | `0.2.2` | rehype | `[-]` / `[/]` 任務狀態 |
 
 來源與發佈流程見 [[01 docusaurus-kit 專案總覽]]、[[04 GitHub Actions 與 npm 信任發佈]]。
 
@@ -59,7 +61,7 @@ history:
 
 ### remark-obsidian-kanban
 
-已從站內 `plugins/` 抽到 [[01 docusaurus-kit 專案總覽|docusaurus-kit]]，站台直接使用 npm 版本 `0.3.0`。[[Plugin Remark Obsidian Kanban]] 保留為詳細使用與實作筆記。
+已從站內 `plugins/` 抽到 [[01 docusaurus-kit 專案總覽|docusaurus-kit]]，站台直接使用 npm 版本 `0.3.1`。[[Plugin Remark Obsidian Kanban]] 保留為詳細使用與實作筆記。
 
 **核心功能**：
 - 自動識別 `kanban-plugin: board` frontmatter
@@ -73,7 +75,7 @@ history:
 
 ### rehype-obsidian-tasks
 
-將 Obsidian 的 `[-]`（取消）與 `[/]`（進行中）轉成 GFM task item 的 rehype 外掛，npm 版本 `0.2.1`。
+將 Obsidian 的 `[-]`（取消）與 `[/]`（進行中）轉成 GFM task item 的 rehype 外掛，npm 版本 `0.2.2`。
 
 **核心功能**：
 - 保留標準 GFM `[ ]` / `[x]` 行為
@@ -124,20 +126,20 @@ remarkPlugins: [[remarkStoryMap, storyMapOptions]]
 
 ### docusaurus-plugin-album
 
-自製的 Docusaurus 攝影相簿外掛程式（位於 `plugins/docusaurus-plugin-album/`），以微包裝模式（Wrapper Pattern）封裝 `@docusaurus/plugin-content-blog`，為相簿頻道打造專屬的影像敘事與互動瀏覽體驗。
+已從站內 `plugins/` 抽到 [[01 docusaurus-kit 專案總覽|docusaurus-kit]] 發佈，站台直接使用 npm 版本 `0.1.1`。以微包裝模式（Wrapper Pattern）封裝 `@docusaurus/plugin-content-blog`，為相簿頻道打造專屬的影像敘事與互動瀏覽體驗。
 
 **核心功能**：
-- **Pinterest 瀑布流**：長寬比自適應卡片錯落分欄，滑鼠懸停（Hover）平滑浮現標題、地點與相簿系列
-- **Google Photos 時光軸**：右側固定膠囊滑桿，即時年份感應與平滑錨點跳轉
+- **Pinterest 瀑布流**：長寬比自適應卡片錯落分欄，滑鼠懸停（Hover）平滑浮現標題、地點與相簿系列；首屏前 4 張高優先權載入，其餘非同步解碼與延遲渲染
+- **Google Photos 時光軸**：右側固定膠囊滑桿，即時年份感應與平滑錨點跳轉（僅在捲動跨越月份區段時觸發 React 狀態更新）
 - **沉浸式 Hero Header**：文章內頁滿版封面橫幅與中繼資料徽章
-- **原生全螢幕相片燈箱**：零依賴輕量 Lightbox，支援鍵盤導航並嚴格排除作者大頭貼（Avatar Exclusion）
-- **乾淨解耦**：自帶 `validateOptions` 與 Theme Components，無需在主設定檔撰寫判斷式
+- **原生全螢幕相片燈箱**：零依賴輕量 Lightbox，支援鍵盤導航、前後張預載並嚴格排除作者大頭貼（Avatar Exclusion）
+- **獨立輕量索引**：透過 `contentLoaded` 將相簿首頁精簡卡片索引拆為獨立 JSON chunk，避免把全文 MDX bundle 帶進列表頁
 
 **配置範例**：
 ```typescript
 // docusaurus.config.ts
 [
-  path.resolve(__dirname, 'plugins/docusaurus-plugin-album'),
+  'docusaurus-plugin-album',
   {
     id: 'album',
     routeBasePath: 'album',

@@ -12,15 +12,16 @@ tags:
 sidebar_position: 70
 sidebar_label: Kanban Plugin
 date_created: 2025-09-23T00:00:00.000Z
-date_updated: 2026-10-21T00:00:00.000Z
+date_updated: 2026-10-23T00:00:00.000Z
 history:
   - 2026-10-21 更新為 npm 0.2.1 現況；歷史見 [[Docusaurus 版本與變更記錄]]
   - 2026-10-21 站台切換為 npm 版本（kanban `0.3.0`、tasks `0.2.1`），移除站內 `plugins/` 複本
+  - 2026-10-23 更新為 `0.3.1`（優化 AST 走訪效能並將卡片重複 inline style 移入共用樣式表）
 ---
 
 # [Docusaurus] remark-obsidian-kanban Plugin
 
-`remark-obsidian-kanban` 把 Obsidian Kanban 格式的 Markdown 看板轉成靜態 HTML，讓 Docusaurus 文章可以直接呈現欄位與卡片。套件由 [[01 docusaurus-kit 專案總覽|docusaurus-kit]] 維護，目前 npm 版本是 `0.3.0`。
+`remark-obsidian-kanban` 把 Obsidian Kanban 格式的 Markdown 看板轉成靜態 HTML，讓 Docusaurus 文章可以直接呈現欄位與卡片。套件由 [[01 docusaurus-kit 專案總覽|docusaurus-kit]] 維護，目前 npm 版本是 `0.3.1`。
 
 - npm：<https://www.npmjs.com/package/remark-obsidian-kanban>
 - 原始碼：<https://github.com/kywk/docusaurus-kit/tree/main/packages/remark-obsidian-kanban>
@@ -201,7 +202,7 @@ hide_table_of_contents: true
 
 ## 站台狀態
 
-kywk.me 已改用 npm 版本（`remark-obsidian-kanban@0.3.0`），`docusaurus.config.ts` 直接 `require('remark-obsidian-kanban')`，站內 `plugins/` 複本已移除。版本與舊版遷移紀錄見 [[Docusaurus 版本與變更記錄]]。
+kywk.me 已改用 npm 版本（`remark-obsidian-kanban@0.3.1`），`docusaurus.config.ts` 直接 `require('remark-obsidian-kanban')`，站內 `plugins/` 複本已移除。版本與舊版遷移紀錄見 [[Docusaurus 版本與變更記錄]]。
 
 ## 限制
 

@@ -30,7 +30,7 @@ Vault 內另有未發佈的 `_incoming/`、`_journaling/` 等，全庫約 2,511 
 
 **Kanban** — `remark-obsidian-kanban`，偵測 `kanban-plugin: board` frontmatter 渲染看板。
 
-**Geo Story Map** — `@story-map/remark-story-map`（0.5.0），**全站唯一的 Leaflet runtime**。
+**Geo Story Map** — `@story-map/remark-story-map`（0.5.1），**全站唯一的 Leaflet runtime**。
 原本自製的 `remark-obsidian-leaflet` 與 `static/js/leaflet-init.js` 已於 2026-09-30 刪除。
 
 | 圍欄區塊 | 形態 | 渲染 |

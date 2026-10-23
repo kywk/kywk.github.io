@@ -9,10 +9,12 @@ tags:
   - 完工成果
 sidebar_position: 30
 date_created: 2026-10-02T00:00:00.000Z
-date_updated: 2026-10-02T00:00:00.000Z
+date_updated: 2026-10-23T00:00:00.000Z
 ---
 
 # Album 相簿部落格：完工成果與路徑一插件化實作
+
+> **2026-10-23 更新**：`docusaurus-plugin-album` 在完成相簿首頁輕量資料分塊（Route Data Chunking）、捲動監聽與圖片載入優化後，已正式從站內 `plugins/` 抽離至 [[01 docusaurus-kit 專案總覽|docusaurus-kit]] 發佈為 npm 套件（`docusaurus-plugin-album@0.1.1`），本站已改為直接安裝 npm 套件使用。以下保留插件化演進與關鍵架構記錄。
 
 接續前文 [[01 Album Blog 概念發想與決策記錄|概念發想與決策記錄]] 與 [[02 Album Blog 技術架構與實作計畫|技術架構與實作計畫]]，**Album 相簿部落格** 不僅已全數落地上線，更進一步依據技術評估之**「路徑一（Wrapper Pattern 微包裝模式）」**，正式將相簿功能抽離並封裝為專案內的獨立外掛 `plugins/docusaurus-plugin-album/`。
 
@@ -205,9 +207,9 @@ Docusaurus 在構建網站（`docusaurus build`）時，會先執行外掛的 `v
   },
 ]),
 
-// 2. 獨立相簿外掛 (Album Plugin)
+// 2. 獨立相簿外掛 (Album Plugin，2026-10-23 起改用 npm 套件)
 [
-  path.resolve(__dirname, "plugins/docusaurus-plugin-album"),
+  "docusaurus-plugin-album",
   {
     id: "album",
     routeBasePath: "album",
@@ -217,6 +219,18 @@ Docusaurus 在構建網站（`docusaurus build`）時，會先執行外掛的 `v
   },
 ],
 ```
+
+---
+
+## ⚡ 2026-10-23 效能優化與 npm 套件化（`docusaurus-kit`）
+
+隨著相簿文章數量成長，我們在將 `docusaurus-plugin-album` 移入 [[01 docusaurus-kit 專案總覽|docusaurus-kit]] 前完成了五項關鍵優化：
+
+1. **相簿首頁輕量索引（Route Data Chunking）**：覆寫 `contentLoaded` 的 `actions.addRoute`，將原本列表頁會載入整包 MDX 正文與完整中繼資料的 `items` 替換為精簡的 `albumItems` JSON 檔案（僅保留 `id`、`title`、`permalink`、`date`、`formattedDate`、`image`、`location`、`album`、`aspectRatio`），大幅降低 `/album` 首頁的 JS bundle 體積與 Hydration 負擔。
+2. **首屏優先與非同步圖片解碼**：瀑布流前 4 張圖片設為 `loading="eager"` + `fetchPriority="high"` 加速 LCP；其餘卡片維持 `loading="lazy"` + `decoding="async"`，並對卡片容器加上 `content-visibility: auto`，減少大量照片時的排版開銷。
+3. **時間軸低頻狀態更新**：`TimelineScrubber` 的 `scroll` 監聽器改以 `useRef` 追蹤當前月份，僅在跨越月份區段時才觸發 React `setState`，並快取年份錨點座標避免在捲動期間強制同步重排（Forced Reflow）。
+4. **燈箱正規化與前後張預載**：移除 `MutationObserver` 重複執行 `querySelectorAll` 的迴圈，改用 `data-album-lightbox-bound` 標記避免重複綁定，並在開啟燈箱時自動預載前後相鄰照片。
+5. **發佈至 npm（`docusaurus-plugin-album@0.1.1`）**：由於 Docusaurus 打包工具預設排除 `node_modules` 的 TypeScript 語法轉譯，套件透過雙 `tsconfig` 將 `lib/theme/*.js` 預先編譯為 ESM JavaScript 供 `getThemePath()` 使用，同時保留 `src/theme/*.tsx` 供 `getTypeScriptThemePath()` swizzle 使用。
 
 ---
 

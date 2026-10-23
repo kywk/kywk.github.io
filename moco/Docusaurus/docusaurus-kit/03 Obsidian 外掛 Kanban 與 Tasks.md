@@ -11,7 +11,7 @@ tags:
 sidebar_position: 30
 sidebar_label: Kanban 與 Tasks
 date_created: 2026-10-21T00:00:00.000Z
-date_updated: 2026-10-21T00:00:00.000Z
+date_updated: 2026-10-23T00:00:00.000Z
 ---
 
 # Obsidian 外掛 Kanban 與 Tasks
@@ -20,8 +20,8 @@ date_updated: 2026-10-21T00:00:00.000Z
 
 | 套件 | 版本 | 階段 | 功能 |
 | --- | --- | --- | --- |
-| `remark-obsidian-kanban` | `0.3.0` | remark | 將 Obsidian Kanban 看板轉成靜態 HTML |
-| `rehype-obsidian-tasks` | `0.2.1` | rehype | 將 `[-]`、`[/]` 轉成 GFM task item |
+| `remark-obsidian-kanban` | `0.3.1` | remark | 將 Obsidian Kanban 看板轉成靜態 HTML |
+| `rehype-obsidian-tasks` | `0.2.2` | rehype | 將 `[-]`、`[/]` 轉成 GFM task item |
 
 兩者可以獨立使用。若站上同時有看板與任務清單，通常會一起裝。
 
@@ -216,7 +216,7 @@ const rehypePlugins = [rehypeObsidianTasks];
 ## 測試與範例
 
 - `remark-obsidian-kanban`：6 個單元測試，涵蓋欄位/卡片、無 link resolver、wikilink、非看板文件、settings 區塊、`#tag` 標籤。
-- `rehype-obsidian-tasks`：4 個單元測試，涵蓋兩種狀態、GFM 相容、loose list、一般清單。
+- `rehype-obsidian-tasks`：5 個單元測試，涵蓋兩種狀態、GFM 相容、loose list、一般清單與任務內容保留。
 - Playground 有 `docs/kanban.md` 與 `docs/tasks.md`，CI 會建置 fixture site 並跑 Playwright。
 
 ## 系列文章
