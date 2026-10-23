@@ -1,4 +1,4 @@
-import React, { useEffect, useCallback } from 'react';
+import React, { memo, useEffect, useCallback } from 'react';
 import styles from './styles.module.css';
 
 export type LightboxImage = {
@@ -15,7 +15,7 @@ type Props = {
   onIndexChange: (index: number) => void;
 };
 
-export default function ImageLightbox({
+function ImageLightbox({
   images,
   currentIndex,
   isOpen,
@@ -42,6 +42,24 @@ export default function ImageLightbox({
     },
     [currentIndex, total, onIndexChange]
   );
+
+  // Preload adjacent images while lightbox is open for instant prev/next switching
+  useEffect(() => {
+    if (!isOpen || total <= 1) return;
+
+    const nextIdx = (currentIndex + 1) % total;
+    const prevIdx = (currentIndex - 1 + total) % total;
+    const preloadIndices = nextIdx === prevIdx ? [nextIdx] : [nextIdx, prevIdx];
+
+    preloadIndices.forEach((idx) => {
+      const targetSrc = images[idx]?.src;
+      if (targetSrc) {
+        const img = new Image();
+        img.decoding = 'async';
+        img.src = targetSrc;
+      }
+    });
+  }, [isOpen, currentIndex, total, images]);
 
   // Keyboard navigation
   useEffect(() => {
@@ -129,6 +147,7 @@ export default function ImageLightbox({
           src={currentImage.src}
           alt={currentImage.alt || '相簿圖片'}
           className={styles.lightboxImage}
+          decoding="async"
         />
         {(currentImage.caption || currentImage.alt) && (
           <div className={styles.lightboxCaption}>
@@ -139,3 +158,5 @@ export default function ImageLightbox({
     </div>
   );
 }
+
+export default memo(ImageLightbox);

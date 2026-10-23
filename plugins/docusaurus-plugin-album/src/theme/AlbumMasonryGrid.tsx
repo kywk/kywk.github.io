@@ -6,6 +6,9 @@ export type AlbumPostMeta = {
   permalink: string;
   title: string;
   date: string;
+  year?: string;
+  month?: string;
+  displayDate?: string;
   frontMatter: {
     cover?: string;
     cover_caption?: string;
@@ -19,11 +22,21 @@ export type AlbumPostMeta = {
 type Props = {
   posts: AlbumPostMeta[];
   onCurrentDateChange?: (year: string, month: string) => void;
+  onScrubberVisibleChange?: (visible: boolean) => void;
+  scrollToYearRef?: React.MutableRefObject<((year: string) => void) | null>;
 };
 
 const BATCH_SIZE = 12;
 
-function parseDate(post: AlbumPostMeta): { year: string; month: string; displayDate: string } {
+export function parseDate(post: AlbumPostMeta): { year: string; month: string; displayDate: string } {
+  if (post.year && post.month) {
+    return {
+      year: post.year,
+      month: post.month,
+      displayDate: post.displayDate ?? `${post.year}年 ${post.month}月`,
+    };
+  }
+
   const permalinkMatch = post.permalink.match(/\/(\d{4})\/(\d{2})\//);
   if (permalinkMatch) {
     const year = permalinkMatch[1];
@@ -34,8 +47,8 @@ function parseDate(post: AlbumPostMeta): { year: string; month: string; displayD
   if (post.date) {
     const d = new Date(post.date);
     if (!isNaN(d.getTime())) {
-      const year = `${d.getFullYear()}`;
-      const month = `${d.getMonth() + 1}`;
+      const year = `${d.getUTCFullYear()}`;
+      const month = `${d.getUTCMonth() + 1}`;
       return { year, month, displayDate: `${year}年 ${month}月` };
     }
   }
@@ -43,17 +56,35 @@ function parseDate(post: AlbumPostMeta): { year: string; month: string; displayD
   return { year: '2026', month: '1', displayDate: '' };
 }
 
-function AlbumMasonryGrid({ posts, onCurrentDateChange }: Props) {
-  // 1. Filter out posts without cover (Requirement: 沒有 cover 時不顯示)
+function AlbumMasonryGrid({
+  posts,
+  onCurrentDateChange,
+  onScrubberVisibleChange,
+  scrollToYearRef,
+}: Props) {
+  // 1. Filter out posts without cover and pre-normalize date metadata once
   const validPosts = useMemo(() => {
-    return posts.filter((p) => Boolean(p.frontMatter?.cover));
+    return posts
+      .filter((p) => Boolean(p.frontMatter?.cover))
+      .map((p) => {
+        if (p.year && p.month && p.displayDate !== undefined) {
+          return p;
+        }
+        const { year, month, displayDate } = parseDate(p);
+        return { ...p, year, month, displayDate };
+      });
   }, [posts]);
 
   // 2. Infinite scroll state
   const [visibleCount, setVisibleCount] = useState(BATCH_SIZE);
   const sentinelRef = useRef<HTMLDivElement>(null);
+  const gridRef = useRef<HTMLDivElement>(null);
+  const pendingScrollYearRef = useRef<string | null>(null);
 
   useEffect(() => {
+    const sentinel = sentinelRef.current;
+    if (!sentinel || visibleCount >= validPosts.length) return;
+
     const observer = new IntersectionObserver(
       (entries) => {
         if (entries[0].isIntersecting) {
@@ -63,27 +94,74 @@ function AlbumMasonryGrid({ posts, onCurrentDateChange }: Props) {
       { rootMargin: '350px' }
     );
 
-    if (sentinelRef.current) {
-      observer.observe(sentinelRef.current);
-    }
-
+    observer.observe(sentinel);
     return () => observer.disconnect();
-  }, [validPosts.length]);
+  }, [validPosts.length, visibleCount]);
 
-  // 3. Responsive column count calculation
+  // Handle year jump from TimelineScrubber (auto-expands visibleCount if target year is not yet rendered)
+  useEffect(() => {
+    if (!scrollToYearRef) return;
+
+    scrollToYearRef.current = (year: string) => {
+      const targetIdx = validPosts.findIndex((p) => p.year === year);
+      if (targetIdx === -1) return;
+
+      const targetPost = validPosts[targetIdx];
+      onCurrentDateChange?.(targetPost.year || year, targetPost.month || '');
+
+      if (targetIdx < visibleCount) {
+        const targetCard = gridRef.current?.querySelector<HTMLElement>(`[data-year="${year}"]`);
+        targetCard?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      } else {
+        pendingScrollYearRef.current = year;
+        setVisibleCount((prev) =>
+          Math.min(validPosts.length, Math.max(prev, targetIdx + BATCH_SIZE))
+        );
+      }
+    };
+
+    return () => {
+      scrollToYearRef.current = null;
+    };
+  }, [validPosts, visibleCount, onCurrentDateChange, scrollToYearRef]);
+
+  useEffect(() => {
+    const pendingYear = pendingScrollYearRef.current;
+    if (!pendingYear) return;
+
+    const targetCard = gridRef.current?.querySelector<HTMLElement>(`[data-year="${pendingYear}"]`);
+    if (targetCard) {
+      pendingScrollYearRef.current = null;
+      requestAnimationFrame(() => {
+        targetCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      });
+    }
+  }, [visibleCount]);
+
+  // 3. Responsive column count calculation via matchMedia breakpoints (avoids per-pixel resize handler)
   const [columnCount, setColumnCount] = useState(4);
   useEffect(() => {
+    const mq1200 = window.matchMedia('(min-width: 1200px)');
+    const mq850 = window.matchMedia('(min-width: 850px)');
+    const mq560 = window.matchMedia('(min-width: 560px)');
+
     const updateCols = () => {
-      const w = window.innerWidth;
-      if (w >= 1200) setColumnCount(4);
-      else if (w >= 850) setColumnCount(3);
-      else if (w >= 560) setColumnCount(2);
+      if (mq1200.matches) setColumnCount(4);
+      else if (mq850.matches) setColumnCount(3);
+      else if (mq560.matches) setColumnCount(2);
       else setColumnCount(1);
     };
 
     updateCols();
-    window.addEventListener('resize', updateCols);
-    return () => window.removeEventListener('resize', updateCols);
+    mq1200.addEventListener('change', updateCols);
+    mq850.addEventListener('change', updateCols);
+    mq560.addEventListener('change', updateCols);
+
+    return () => {
+      mq1200.removeEventListener('change', updateCols);
+      mq850.removeEventListener('change', updateCols);
+      mq560.removeEventListener('change', updateCols);
+    };
   }, []);
 
   // 4. Distribute visible items into columns round-robin
@@ -99,48 +177,85 @@ function AlbumMasonryGrid({ posts, onCurrentDateChange }: Props) {
     return cols;
   }, [currentPosts, columnCount]);
 
-  // 5. Scroll listener to detect active year & month for TimelineScrubber
+  // 5. Unified scroll listener using per-column O(log N) binary search instead of O(N) querySelectorAll + getBoundingClientRect
+  const lastReportedRef = useRef<{ year: string; month: string; visible: boolean }>({
+    year: '',
+    month: '',
+    visible: false,
+  });
+
   useEffect(() => {
-    if (!onCurrentDateChange) return;
+    if (!onCurrentDateChange && !onScrubberVisibleChange) return;
 
     let ticking = false;
-    const handleScroll = () => {
-      if (!ticking) {
-        window.requestAnimationFrame(() => {
-          const cards = document.querySelectorAll<HTMLElement>('[data-album-card]');
-          let bestCard: HTMLElement | null = null;
-          let minDistance = Infinity;
+    const evaluateScroll = () => {
+      const isVisible = window.scrollY > 120;
+      if (onScrubberVisibleChange && isVisible !== lastReportedRef.current.visible) {
+        lastReportedRef.current.visible = isVisible;
+        onScrubberVisibleChange(isVisible);
+      }
 
-          const viewportCenter = window.innerHeight * 0.35;
+      if (onCurrentDateChange && gridRef.current) {
+        const colElements = gridRef.current.children;
+        const viewportCenter = window.innerHeight * 0.35;
+        let bestCard: HTMLElement | null = null;
+        let minDistance = Infinity;
 
-          cards.forEach((card) => {
-            const rect = card.getBoundingClientRect();
-            // We want cards that are around the top third of viewport
-            const distance = Math.abs(rect.top - viewportCenter);
+        // Within each column, cards are ordered top-to-bottom monotonically, enabling binary search
+        for (let c = 0; c < colElements.length; c += 1) {
+          const cards = colElements[c].children;
+          let low = 0;
+          let high = cards.length - 1;
+
+          while (low <= high) {
+            const mid = (low + high) >> 1;
+            const card = cards[mid] as HTMLElement;
+            const top = card.getBoundingClientRect().top;
+            const distance = Math.abs(top - viewportCenter);
+
             if (distance < minDistance) {
               minDistance = distance;
               bestCard = card;
             }
-          });
 
-          if (bestCard) {
-            const year = (bestCard as HTMLElement).dataset.year || '';
-            const month = (bestCard as HTMLElement).dataset.month || '';
-            if (year) {
-              onCurrentDateChange(year, month);
+            if (top < viewportCenter) {
+              low = mid + 1;
+            } else {
+              high = mid - 1;
             }
           }
-          ticking = false;
-        });
+        }
+
+        if (bestCard) {
+          const year = bestCard.dataset.year || '';
+          const month = bestCard.dataset.month || '';
+          if (
+            year &&
+            (year !== lastReportedRef.current.year ||
+              month !== lastReportedRef.current.month)
+          ) {
+            lastReportedRef.current.year = year;
+            lastReportedRef.current.month = month;
+            onCurrentDateChange(year, month);
+          }
+        }
+      }
+
+      ticking = false;
+    };
+
+    const handleScroll = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(evaluateScroll);
         ticking = true;
       }
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
-    handleScroll(); // Initial check
+    evaluateScroll();
 
     return () => window.removeEventListener('scroll', handleScroll);
-  }, [currentPosts, onCurrentDateChange]);
+  }, [currentPosts, columnCount, onCurrentDateChange, onScrubberVisibleChange]);
 
   if (validPosts.length === 0) {
     return (
@@ -152,27 +267,27 @@ function AlbumMasonryGrid({ posts, onCurrentDateChange }: Props) {
 
   return (
     <div className={styles.masonryWrapper}>
-      <div className={styles.masonryGrid}>
+      <div ref={gridRef} className={styles.masonryGrid}>
         {columns.map((colPosts, colIdx) => (
           <div key={colIdx} className={styles.masonryColumn}>
-            {colPosts.map((post) => {
-              const { year, month, displayDate } = parseDate(post);
+            {colPosts.map((post, rowIdx) => {
+              const isAboveFold = rowIdx === 0;
               return (
                 <Link
                   key={post.permalink}
                   to={post.permalink}
                   className={styles.albumCard}
                   data-album-card="true"
-                  data-year={year}
-                  data-month={month}
-                  id={`album-post-${year}-${month}`}
+                  data-year={post.year}
+                  data-month={post.month}
                 >
                   <div className={styles.cardImageWrapper}>
                     <img
                       src={post.frontMatter.cover}
                       alt={post.title}
                       className={styles.cardImage}
-                      loading="lazy"
+                      loading={isAboveFold ? 'eager' : 'lazy'}
+                      fetchPriority={isAboveFold && colIdx === 0 ? 'high' : undefined}
                       decoding="async"
                     />
 
@@ -192,7 +307,7 @@ function AlbumMasonryGrid({ posts, onCurrentDateChange }: Props) {
                               📁 {post.frontMatter.album_series}
                             </span>
                           )}
-                          <span className={styles.cardDate}>{displayDate}</span>
+                          <span className={styles.cardDate}>{post.displayDate}</span>
                         </div>
                       </div>
                     </div>

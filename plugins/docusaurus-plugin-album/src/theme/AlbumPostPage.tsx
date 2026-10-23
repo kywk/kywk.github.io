@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, type ReactNode } from 'react';
+import React, { useState, useEffect, useRef, useCallback, type ReactNode } from 'react';
 import clsx from 'clsx';
 import { HtmlClassNameProvider, ThemeClassNames } from '@docusaurus/theme-common';
 import { BlogPostProvider, useBlogPost } from '@docusaurus/plugin-content-blog/client';
@@ -14,6 +14,7 @@ import type { BlogSidebar } from '@docusaurus/plugin-content-blog';
 
 import AlbumHeroHeader from './AlbumHeroHeader';
 import ImageLightbox, { type LightboxImage } from './ImageLightbox';
+import styles from './styles.module.css';
 
 function AlbumPostPageContent({
   sidebar,
@@ -23,7 +24,7 @@ function AlbumPostPageContent({
   children: ReactNode;
 }): ReactNode {
   const { metadata, toc } = useBlogPost();
-  const { nextItem, prevItem, frontMatter, title, date } = metadata;
+  const { nextItem, prevItem, frontMatter, title, date, permalink } = metadata;
   const {
     hide_table_of_contents: hideTableOfContents,
     toc_min_heading_level: tocMinHeadingLevel,
@@ -79,10 +80,13 @@ function AlbumPostPageContent({
         return;
       }
 
-      // Auto inject lazy loading and async decoding
-      img.loading = 'lazy';
-      img.decoding = 'async';
-      img.style.cursor = 'zoom-in';
+      // Ensure lazy loading and async decoding if not already set at build time
+      if (!img.getAttribute('loading')) {
+        img.loading = 'lazy';
+      }
+      if (!img.getAttribute('decoding')) {
+        img.decoding = 'async';
+      }
 
       // Avoid duplicate if cover image is in the body
       if (img.src !== cover) {
@@ -92,28 +96,39 @@ function AlbumPostPageContent({
           alt: img.alt,
           caption: img.title || img.alt,
         });
-
-        img.onclick = () => {
-          setLightboxIndex(imageIndex);
-          setLightboxOpen(true);
-        };
+        img.dataset.lightboxIndex = String(imageIndex);
       } else {
-        img.onclick = () => {
-          setLightboxIndex(0);
-          setLightboxOpen(true);
-        };
+        img.dataset.lightboxIndex = '0';
       }
     });
 
     setLightboxImages(collectedImages);
-  }, [cover, coverCaption, title]);
+  }, [cover, coverCaption, title, permalink]);
 
-  const handleOpenCoverLightbox = () => {
+  // Event delegation on article container instead of per-image onclick closures
+  const handleArticleClick = useCallback((e: React.MouseEvent<HTMLDivElement>) => {
+    const target = (e.target as HTMLElement | null)?.closest?.(
+      'img[data-lightbox-index]'
+    ) as HTMLImageElement | null;
+    if (!target) return;
+
+    const idx = Number(target.dataset.lightboxIndex);
+    if (!Number.isNaN(idx)) {
+      setLightboxIndex(idx);
+      setLightboxOpen(true);
+    }
+  }, []);
+
+  const handleOpenCoverLightbox = useCallback(() => {
     if (cover) {
       setLightboxIndex(0);
       setLightboxOpen(true);
     }
-  };
+  }, [cover]);
+
+  const handleCloseLightbox = useCallback(() => {
+    setLightboxOpen(false);
+  }, []);
 
   return (
     <BlogLayout
@@ -142,7 +157,11 @@ function AlbumPostPageContent({
       />
 
       {/* Main article content with lazy-loading and zoomable images */}
-      <div ref={articleRef} className="album-post-article">
+      <div
+        ref={articleRef}
+        className={clsx('album-post-article', styles.albumPostArticle)}
+        onClick={handleArticleClick}
+      >
         <BlogPostItem>{children}</BlogPostItem>
       </div>
 
@@ -156,7 +175,7 @@ function AlbumPostPageContent({
         images={lightboxImages}
         currentIndex={lightboxIndex}
         isOpen={lightboxOpen}
-        onClose={() => setLightboxOpen(false)}
+        onClose={handleCloseLightbox}
         onIndexChange={setLightboxIndex}
       />
     </BlogLayout>

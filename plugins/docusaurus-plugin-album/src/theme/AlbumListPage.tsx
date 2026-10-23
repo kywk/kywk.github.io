@@ -1,8 +1,8 @@
-import React, { useState, useEffect, useMemo, useCallback } from 'react';
+import React, { useState, useMemo, useCallback, useRef } from 'react';
 import Layout from '@theme/Layout';
 import { PageMetadata } from '@docusaurus/theme-common';
 import SearchMetadata from '@theme/SearchMetadata';
-import AlbumMasonryGrid, { type AlbumPostMeta } from './AlbumMasonryGrid';
+import AlbumMasonryGrid, { parseDate, type AlbumPostMeta } from './AlbumMasonryGrid';
 import TimelineScrubber from './TimelineScrubber';
 import styles from './styles.module.css';
 
@@ -13,32 +13,33 @@ type Props = {
     permalink: string;
     [key: string]: any;
   };
-  items: readonly {
+  posts?: readonly AlbumPostMeta[];
+  items?: readonly {
     content: {
       metadata: AlbumPostMeta;
     };
   }[];
-  sidebar: any;
+  sidebar?: any;
 };
 
 export default function AlbumListPage(props: Props) {
-  const { metadata, items } = props;
+  const { metadata, posts: directPosts, items } = props;
 
   const posts: AlbumPostMeta[] = useMemo(() => {
-    return items.map(({ content }) => content.metadata);
-  }, [items]);
+    if (directPosts) {
+      return directPosts as AlbumPostMeta[];
+    }
+    return (items ?? []).map(({ content }) => content.metadata);
+  }, [directPosts, items]);
 
   // Extract unique years for TimelineScrubber in descending order
   const years = useMemo(() => {
     const yearSet = new Set<string>();
     posts.forEach((p) => {
       if (p.frontMatter?.cover) {
-        const match = p.permalink.match(/\/(\d{4})\//);
-        if (match) {
-          yearSet.add(match[1]);
-        } else if (p.date) {
-          const d = new Date(p.date);
-          if (!isNaN(d.getTime())) yearSet.add(`${d.getFullYear()}`);
+        const year = p.year || parseDate(p).year;
+        if (year) {
+          yearSet.add(year);
         }
       }
     });
@@ -48,30 +49,22 @@ export default function AlbumListPage(props: Props) {
   const [activeYear, setActiveYear] = useState<string>(() => years[0] || '2026');
   const [activeMonth, setActiveMonth] = useState<string>('');
   const [scrubberVisible, setScrubberVisible] = useState(false);
-
-  // Monitor scroll position to show/hide TimelineScrubber
-  useEffect(() => {
-    let ticking = false;
-    const handleScroll = () => {
-      if (!ticking) {
-        window.requestAnimationFrame(() => {
-          setScrubberVisible(window.scrollY > 120);
-          ticking = false;
-        });
-        ticking = true;
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  const scrollToYearRef = useRef<((year: string) => void) | null>(null);
 
   const handleCurrentDateChange = useCallback((year: string, month: string) => {
     setActiveYear(year);
     setActiveMonth(month);
   }, []);
 
+  const handleScrubberVisibleChange = useCallback((visible: boolean) => {
+    setScrubberVisible(visible);
+  }, []);
+
   const handleSelectYear = useCallback((year: string) => {
+    if (scrollToYearRef.current) {
+      scrollToYearRef.current(year);
+      return;
+    }
     const targetCard = document.querySelector<HTMLElement>(`[data-year="${year}"]`);
     if (targetCard) {
       targetCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
@@ -97,6 +90,8 @@ export default function AlbumListPage(props: Props) {
         <AlbumMasonryGrid
           posts={posts}
           onCurrentDateChange={handleCurrentDateChange}
+          onScrubberVisibleChange={handleScrubberVisibleChange}
+          scrollToYearRef={scrollToYearRef}
         />
 
         <TimelineScrubber

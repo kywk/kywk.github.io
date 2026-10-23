@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo, useMemo, useCallback } from 'react';
 import styles from './styles.module.css';
 
 type Props = {
@@ -11,7 +11,7 @@ type Props = {
   onCoverClick?: () => void;
 };
 
-export default function AlbumHeroHeader({
+function AlbumHeroHeader({
   title,
   date,
   cover,
@@ -20,13 +20,25 @@ export default function AlbumHeroHeader({
   albumSeries,
   onCoverClick,
 }: Props) {
-  let displayDate = date;
-  if (date) {
+  const displayDate = useMemo(() => {
+    if (!date) return '';
     const d = new Date(date);
     if (!isNaN(d.getTime())) {
-      displayDate = `${d.getFullYear()}年 ${d.getMonth() + 1}月 ${d.getDate()}日`;
+      return `${d.getUTCFullYear()}年 ${d.getUTCMonth() + 1}月 ${d.getUTCDate()}日`;
     }
-  }
+    return date;
+  }, [date]);
+
+  const handleKeyDown = useCallback(
+    (e: React.KeyboardEvent<HTMLDivElement>) => {
+      if (!onCoverClick) return;
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        onCoverClick();
+      }
+    },
+    [onCoverClick]
+  );
 
   return (
     <header className={styles.postHero}>
@@ -34,6 +46,7 @@ export default function AlbumHeroHeader({
         <div
           className={styles.heroImageContainer}
           onClick={onCoverClick}
+          onKeyDown={handleKeyDown}
           title="點擊檢視封面大圖"
           role="button"
           tabIndex={0}
@@ -43,6 +56,7 @@ export default function AlbumHeroHeader({
             alt={title}
             className={styles.heroCoverImage}
             loading="eager"
+            fetchPriority="high"
             decoding="async"
           />
           {coverCaption && (
@@ -77,3 +91,5 @@ export default function AlbumHeroHeader({
     </header>
   );
 }
+
+export default memo(AlbumHeroHeader);
