@@ -81,3 +81,11 @@ flowchart TD
 - [ ] 於 Spark 專案或工作流程中設定檢索範圍，確認排除 `.obsidian` 與 `.trash` 資料夾 #todo
 - [ ] 在 Obsidian 中配置 Dataview 查詢區塊，監控收件匣最新動態 #todo
 - [ ] 測試 Spark 產出之 Markdown 檔案在 Obsidian 中的 Mermaid 圖表渲染與雙向連結相容性 #todo
+
+## 5. 與 myObsidian 瀏覽器版的關係
+
+本篇處理的是「AI 經由雲端讀寫 vault」；[[01 myObsidian 專案介紹]] 處理的是「人經由瀏覽器直接開 vault」。兩條路徑互補：
+
+- Spark 走雲端直連＋Inbox 落地＋人工審核（讀寫分離，避免就地覆寫）。
+- myObsidian 第一版走瀏覽器＋自架服務，單一寫入者＋conflict copy（見 [[02 myObsidian 第一版現況與驗收]]）。
+- 下一階段 myObsidian 優先做多人共編（見 [[03 myObsidian 下一階段與多人共編]]），屆時 AI 產出與人工共筆會共用同一套衝突與審核語意。在共編與授權（需 Obsidian 明示同意）解決前，不要把瀏覽器版直接當成團隊共筆工具。

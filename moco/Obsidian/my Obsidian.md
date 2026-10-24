@@ -9,7 +9,7 @@ sidebar_position: 10
 sidebar_label: 我的實際配置
 hide_table_of_contents: true
 date_created: 2024-04-07T00:00:00.000Z
-date_updated: 2026-09-22T00:00:00.000Z
+date_updated: 2026-10-24T00:00:00.000Z
 cover: https://i.imgur.com/mErPwqL.png
 ---
 
@@ -72,7 +72,7 @@ cover: https://i.imgur.com/mErPwqL.png
 - **Calendar**：以週一為一週開始日的日曆檢視
 - **Editor Syntax Highlight**：編輯器中的程式碼語法高亮
 - **Kanban**：Markdown 看板，並連結日期到 Daily Notes
-- **Leaflet**：筆記中的互動地圖
+- **Geo Story Map**：筆記中的互動地圖與地理故事（2026-09-30 起取代舊 Leaflet 外掛）
 - **Recent Files**：最近開啟檔案
 - **Style Settings**：主題與外掛樣式設定
 - **Tag Wrangler**：標籤管理
@@ -113,3 +113,4 @@ moco/            可發佈的工程與工具文章
 - [[Obsidian Properties]]：Properties 與 frontmatter
 - [[Obsidian Task Management]]：Tasks 與任務流程
 - [[Obsidian Plugins Overview]]：外掛啟用狀況總覽
+- [[01 myObsidian 專案介紹]]：自架瀏覽器版（用 `workspace-server.json` 隔離，不動本頁的桌面版 `workspace.json`）

@@ -101,6 +101,7 @@ date_updated: 2026-09-22T00:00:00.000Z
 - [Obsidian Git Plugin](https://github.com/denolehov/obsidian-git)
 - [Obsidian Sync](https://obsidian.md/sync) - 官方同步服務
 - [Self-hosted LiveSync](https://github.com/vrtmrz/obsidian-livesync)
+- 自架瀏覽器存取（非同步方案）：[[01 myObsidian 專案介紹]]——在瀏覽器執行未修改的官方 renderer，由自架 Node 服務提供 vault 檔案 API；第一版為個人自用，多人共編見 [[03 myObsidian 下一階段與多人共編]]
 
 ## 📊 數據分析與視覺化
 
@@ -134,3 +135,6 @@ date_updated: 2026-09-22T00:00:00.000Z
 - [[Obsidian Plugins Overview]] - 插件使用總覽
 - [[Obsidian Daily Notes]] - 日記系統指南
 - [[Obsidian Task Management]] - 任務管理實踐
+- [[01 myObsidian 專案介紹]] - 自架瀏覽器版：架構、安裝與安全性
+- [[02 myObsidian 第一版現況與驗收]] - 第一版能力、驗收數字與限制
+- [[03 myObsidian 下一階段與多人共編]] - 下一階段路線：dogfooding 與團隊共筆

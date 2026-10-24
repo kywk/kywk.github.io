@@ -109,6 +109,8 @@ date_updated: 2026-09-30T00:00:00.000Z
 - Vault Feed Reader：[[01 Vault Feed Reader 專案介紹]]
 - Geo Story Map：[[01 Geo Story Map 專案介紹]]（含安裝、語法、主題版型、本機 AI 坐標查找、Docusaurus 整合與 [[06 Geo Story Map 純地圖與 Leaflet 相容]]）
 
+> 瀏覽器版（myObsidian）提供 L2 宿主：上述外掛的初始化與部分功能已在未修改的官方 renderer 下驗收（15/15 初始化成功；Kanban／Dataview／Tasks／QuickAdd／Templater／Geo／Feed 有功能情境驗收），`child_process` 程序執行維持拒絕。詳見 [[02 myObsidian 第一版現況與驗收]]。
+
 ## 相關文章
 
 - [[my Obsidian]] - 個人 vault 配置
@@ -117,3 +119,5 @@ date_updated: 2026-09-30T00:00:00.000Z
 - [[Obsidian Task Management]] - 任務管理流程
 - [[01 Geo Story Map 專案介紹]] - 地圖與地理故事外掛
 - [[06 Geo Story Map 純地圖與 Leaflet 相容]] - 舊 ` ```leaflet ` 區塊的相容程度
+- [[01 myObsidian 專案介紹]] - 自架瀏覽器版介紹
+- [[03 myObsidian 下一階段與多人共編]] - 多人共編路線圖

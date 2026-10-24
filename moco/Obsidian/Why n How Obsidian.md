@@ -9,7 +9,7 @@ tags:
 sidebar_position: 70
 sidebar_label: 介紹與選擇
 date_created: 2022-11-01T00:00:00.000Z
-date_updated: 2026-09-22T00:00:00.000Z
+date_updated: 2026-10-24T00:00:00.000Z
 ---
 
 # [Obsidian] Why & How - 選擇與使用指南
@@ -107,8 +107,8 @@ date_updated: 2026-09-22T00:00:00.000Z
 
 - Templater、Dataview、Tasks、Kanban、Tracker
 - Calendar、QuickAdd、Recent Files、Outliner、Tag Wrangler
-- Auto Link Title、Editor Syntax Highlight、Leaflet、Style Settings
-- Vault Feed Reader
+- Auto Link Title、Editor Syntax Highlight、Style Settings
+- Vault Feed Reader、Geo Story Map（2026-09-30 起取代舊 Leaflet 外掛，見 [[01 Geo Story Map 專案介紹]]）
 
 不把只存在於 `.obsidian/plugins/`、但未列入 `community-plugins.json` 的外掛當成啟用中；例如 Excalidraw、Projects、BRAT 與 Life Tracker。
 
@@ -130,7 +130,9 @@ date_updated: 2026-09-22T00:00:00.000Z
 
 ### 🔌 進階整合
 - **[[Integrate Obsidian and Docusaurus]]**: 與 Docusaurus 的整合
-- **同步方案**: 跨裝置同步策略
+- **[[01 myObsidian 專案介紹]]**: 自架瀏覽器版——沒帶自己機器時，用瀏覽器開同一個 vault（第一版為個人自用）
+- **多人共編的現況與下一步**: Obsidian Sync／Publish 不是即時共編；第一版 myObsidian 是單一寫入者＋conflict copy。下一階段優先做多人共編、目標是公司內部團隊共筆，詳見 [[03 myObsidian 下一階段與多人共編]]
+- **同步方案**: 跨裝置同步策略（Dropbox／Git／LiveSync，見 [[Awesome Obsidian]]）
 - **備份策略**: 數據安全和版本控制
 
 ## 相關資源
@@ -148,3 +150,6 @@ date_updated: 2026-09-22T00:00:00.000Z
 - [[Awesome Obsidian]] - 資源整理和推薦
 - [[Obsidian Plugins Overview]] - 插件使用總覽
 - [[Obsidian Daily Notes]] - 日記系統指南
+- [[01 myObsidian 專案介紹]] - 自架瀏覽器版介紹
+- [[02 myObsidian 第一版現況與驗收]] - 第一版能力與限制
+- [[03 myObsidian 下一階段與多人共編]] - 多人共編路線圖
