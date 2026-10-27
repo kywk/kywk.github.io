@@ -79,3 +79,5 @@ markerFolder: backpacker/2610 Tokyo Karuizawa/Tokyo Karuizawa
 - [[上野站前APA飯店 APA Hotel Keisei Ueno Ekimae]] - 交通超樞紐，直達機場與新幹線，第1、3、4晚指定住宿
 
 ## note / 雜記小文
+
+- [[2 Tokyo Karuizawa]]
