@@ -9,6 +9,16 @@ import { heroWaypoints } from '../data/heroWaypoints';
    Authored SVG Icons & Cartographic Crest (2px stroke, geometric precision)
    ========================================================================== */
 
+function IslandIcon({ className }) {
+  return (
+    <svg className={className} width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <polygon points="12 2 2 7 12 12 22 7 12 2" />
+      <polyline points="2 17 12 22 22 17" />
+      <polyline points="2 12 12 17 22 12" />
+    </svg>
+  );
+}
+
 function CompassIcon({ className }) {
   return (
     <svg className={className} width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -336,11 +346,11 @@ function HeroContourStage() {
           </p>
 
           <div className={styles.heroActions}>
-            <Link className={styles.btnPrimary} to="/backpacker/lonely-planet/">
-              <CompassIcon /> 探索 Backpacker 航跡
+            <Link className={styles.btnPrimary} to="/inside-kywk/">
+              <IslandIcon /> 進入 inside kywk 技能島
             </Link>
-            <Link className={styles.btnSecondary} to="/album/">
-              <CameraIcon /> 進入 Album 光影畫廊
+            <Link className={styles.btnSecondary} to="/backpacker/lonely-planet/">
+              <CompassIcon /> 探索 Backpacker 航跡
             </Link>
           </div>
 

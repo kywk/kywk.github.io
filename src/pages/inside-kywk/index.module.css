@@ -1,0 +1,158 @@
+/* ==========================================================================
+   Inside kywk 3D Stage & Floating Quick Navigation
+   Modernist Cartography Gazette / Sunset Warm Design System
+   ========================================================================== */
+
+.pageWrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100dvh;
+  background: #fbf8f3;
+  overflow: hidden;
+}
+
+/* Hide standard navbar on this immersive 3D page to provide 100% full-bleed view */
+.pageWrapper :global(.navbar) {
+  display: none !important;
+}
+
+.stageContainer {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  overflow: hidden;
+  background: radial-gradient(ellipse at 44% 35%, #fffdfb 0%, #fdf6ec 44%, #eadecf 100%);
+}
+
+.islandFrame {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+/* Floating Quick Navigation Dock — positioned bottom-right of the 3D stage (left of 318px sidebar) */
+.quickDock {
+  position: absolute;
+  bottom: 20px;
+  right: 338px;
+  z-index: 100;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+  gap: 8px;
+  font-family: var(--font-carto-mono, "JetBrains Mono", ui-monospace, monospace);
+  pointer-events: none;
+}
+
+.dockToggle {
+  pointer-events: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(255, 253, 251, 0.92);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(45, 30, 20, 0.16);
+  color: #2d1e14;
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(45, 30, 20, 0.08);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.dockToggle:hover {
+  background: #fffdfb;
+  border-color: #e26d2d;
+  color: #e26d2d;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(226, 109, 45, 0.18);
+}
+
+.dockToggleIcon {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.dockToggleLabel {
+  letter-spacing: 0.04em;
+}
+
+.dockLinks {
+  pointer-events: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 10px;
+  border-radius: 14px;
+  background: rgba(255, 253, 251, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(45, 30, 20, 0.14);
+  box-shadow: 0 10px 30px rgba(45, 30, 20, 0.12);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px) scale(0.96);
+  transform-origin: bottom right;
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+  min-width: 190px;
+}
+
+.quickDockOpen .dockLinks {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) scale(1);
+}
+
+.dockLink {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  text-decoration: none !important;
+  color: #2d1e14;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  transition: all 0.15s ease;
+}
+
+.dockLink:hover {
+  background: rgba(226, 109, 45, 0.08);
+  color: var(--link-accent, #e26d2d);
+  transform: translateX(-2px);
+}
+
+.dockIcon {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.dockLabel {
+  flex: 1;
+}
+
+@media (max-width: 800px) {
+  .quickDock {
+    bottom: auto;
+    top: 20px;
+    right: 68px;
+    flex-direction: column;
+  }
+  .dockLinks {
+    transform: translateY(-8px) scale(0.96);
+    transform-origin: top right;
+  }
+  .dockToggleLabel {
+    display: none;
+  }
+  .dockToggle {
+    padding: 8px 10px;
+  }
+}
