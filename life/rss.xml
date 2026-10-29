@@ -4,10 +4,39 @@
         <title>kywk.me Blog</title>
         <link>https://kywk.github.io/life/</link>
         <description>kywk.me Blog</description>
-        <lastBuildDate>Fri, 02 Oct 2026 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 29 Oct 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-TW</language>
+        <item>
+            <title><![CDATA[Relive：把 GPX 與照片放回同一段旅程]]></title>
+            <link>https://kywk.github.io/life/2026/10/29/relive/</link>
+            <guid>https://kywk.github.io/life/2026/10/29/relive/</guid>
+            <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[從景點故事走向旅程回放，在 Obsidian 與 Docusaurus 用 Markdown 串起路線、照片與時間]]></description>
+            <content:encoded><![CDATA[<p>一張照片記得風景，一條 GPX 記得走過的路，但兩者分開存放時，很容易忘記它們之間的關係：這座橋是在折返前還是折返後經過？那張照片拍下來時，離終點還有多遠？</p>
+<p>Relive 想把這些線索重新接在一起。在 Markdown 筆記放入 GPX、照片與幾個事件，就能讓位置沿路線移動，在對應時刻停下來看照片。遊記因此多了一種讀法：除了往下讀，也能沿著旅程走一遍。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="從地點故事到一段走過的路">從地點故事，到一段走過的路<a href="https://kywk.github.io/life/2026/10/29/relive/#%E5%BE%9E%E5%9C%B0%E9%BB%9E%E6%95%85%E4%BA%8B%E5%88%B0%E4%B8%80%E6%AE%B5%E8%B5%B0%E9%81%8E%E7%9A%84%E8%B7%AF" class="hash-link" aria-label="從地點故事，到一段走過的路的直接連結" title="從地點故事，到一段走過的路的直接連結" translate="no">​</a></h2>
+<p><a class="internal" href="https://kywk.github.io/moco/obsidian/plugins/geo-story-map/01-geo-story-map-%E5%B0%88%E6%A1%88%E4%BB%8B%E7%B4%B9/">Geo Story Map</a> 很適合整理「去了哪些地方」。每個景點都有一篇筆記，讀者跟著卡片切換，在城市與城市之間理解故事。</p>
+<p>Relive 則適合回答「這一天怎麼走」。路線由 GPX 決定，照片和事件提供沿途停留點。它不會把幾張照片的位置直接連起來冒充實際路線，也不要求把每張照片都寫成獨立景點筆記。</p>
+<p>兩者可以放在同一套旅行紀錄裡：用 Story Map 作全程導覽，再用 Relive 回放某天的步行、騎乘或健行。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="從一條-gpx-開始">從一條 GPX 開始<a href="https://kywk.github.io/life/2026/10/29/relive/#%E5%BE%9E%E4%B8%80%E6%A2%9D-gpx-%E9%96%8B%E5%A7%8B" class="hash-link" aria-label="從一條 GPX 開始的直接連結" title="從一條 GPX 開始的直接連結" translate="no">​</a></h2>
+<p>使用方式是先安裝 Relive 外掛，在筆記的 <code>relive</code> 區塊填入 GPX 路徑，再按需要加上照片。軌跡有完整時間時按時間回放，否則按累積距離播放；照片可以透過拍攝時間或 GPS 配對，也能手動補充時間。</p>
+<p>讀者可以播放、暫停、拖曳進度，或直接點照片跳到對應位置。沿途事件會讓播放暫停片刻，讀完後繼續；若想慢慢看，點選縮圖就會維持暫停。</p>
+<p>初次使用可以跟著 <a class="internal" href="https://kywk.github.io/moco/obsidian/plugins/relive/02-relive-%E5%AE%89%E8%A3%9D%E8%88%87%E6%97%85%E7%A8%8B%E7%AD%86%E8%A8%98%E8%AA%9E%E6%B3%95/">02 Relive 安裝與旅程筆記語法</a>，先貼入不需要附件的合成 GPX 範例，再換成自己的紀錄。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="平面地圖之外也能看地形">平面地圖之外，也能看地形<a href="https://kywk.github.io/life/2026/10/29/relive/#%E5%B9%B3%E9%9D%A2%E5%9C%B0%E5%9C%96%E4%B9%8B%E5%A4%96%E4%B9%9F%E8%83%BD%E7%9C%8B%E5%9C%B0%E5%BD%A2" class="hash-link" aria-label="平面地圖之外，也能看地形的直接連結" title="平面地圖之外，也能看地形的直接連結" translate="no">​</a></h2>
+<p>預設 2D 地圖容易辨識路線與地名。需要空間感時，可以切換 MapLibre 3D，查看地形與建築輪廓；這個模式不需要 API key，但需要網路與 WebGL。Google 寫實 3D 是另一個選項，需自行準備 key 與帳務設定，目前專案文件仍列為尚未以真實 key 完整驗證的功能。</p>
+<p>可以從 <a href="https://kywk.github.io/relive/" target="_blank" rel="noopener noreferrer" class="">官方 Demo</a> 認識操作方式。Demo 的路線與時間是示範編排，不是真實旅行紀錄。照片定位、事件設定和模式限制整理在 <a class="internal" href="https://kywk.github.io/moco/obsidian/plugins/relive/03-relive-%E7%85%A7%E7%89%87%E5%AE%9A%E4%BD%8D%E8%88%87-3d-%E6%97%85%E7%A8%8B%E5%9B%9E%E6%94%BE/">03 Relive 照片定位與 3D 旅程回放</a>。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="留在筆記也能放上網站">留在筆記，也能放上網站<a href="https://kywk.github.io/life/2026/10/29/relive/#%E7%95%99%E5%9C%A8%E7%AD%86%E8%A8%98%E4%B9%9F%E8%83%BD%E6%94%BE%E4%B8%8A%E7%B6%B2%E7%AB%99" class="hash-link" aria-label="留在筆記，也能放上網站的直接連結" title="留在筆記，也能放上網站的直接連結" translate="no">​</a></h2>
+<p>Relive 的來源資料仍是 Markdown、GPX 和照片；搭配 Docusaurus 整合，可以把同一段旅程發布成可操作的網頁。發布時要另外指定哪些附件可公開，本機筆記能讀到的檔案，不應直接等同網站能發布的檔案。</p>
+<p>較大的 GPX 也可以先用 GPX Slim 分析，製作適合分享的版本。不過精簡會影響細節與照片配對，原始紀錄值得保留。兩個步驟分別見 <a class="internal" href="https://kywk.github.io/moco/obsidian/plugins/relive/04-relive-docusaurus-%E6%95%B4%E5%90%88%E8%88%87%E5%85%AC%E9%96%8B%E9%99%84%E4%BB%B6/">04 Relive Docusaurus 整合與公開附件</a> 與 <a class="internal" href="https://kywk.github.io/moco/obsidian/plugins/relive/05-relive-gpx-%E7%98%A6%E8%BA%AB%E8%88%87%E5%88%86%E4%BA%AB%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B/">05 Relive GPX 瘦身與分享工作流程</a>。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="現在的範圍與閱讀入口">現在的範圍與閱讀入口<a href="https://kywk.github.io/life/2026/10/29/relive/#%E7%8F%BE%E5%9C%A8%E7%9A%84%E7%AF%84%E5%9C%8D%E8%88%87%E9%96%B1%E8%AE%80%E5%85%A5%E5%8F%A3" class="hash-link" aria-label="現在的範圍與閱讀入口的直接連結" title="現在的範圍與閱讀入口的直接連結" translate="no">​</a></h2>
+<p>Relive 目前著重互動回放，尚未提供影片匯出、音樂或離線地圖。本篇依 2026-10-29 本機 0.1.0 文件與原始碼整理；GitHub 安裝附件、npm 套件與 Obsidian 社群市集是不同發布管道，請依各管道實際狀態安裝。</p>
+<p>完整介紹從 <a class="internal" href="https://kywk.github.io/moco/obsidian/plugins/relive/01-relive-%E5%B0%88%E6%A1%88%E4%BB%8B%E7%B4%B9/">01 Relive 專案介紹</a> 開始，也可查看 <a href="https://github.com/kywk/relive" target="_blank" rel="noopener noreferrer" class="">Relive 原始碼</a>。對已有 GPX 與照片的人來說，第一步很單純：選一段短路線，把記得的風景放回走過的地方。</p>]]></content:encoded>
+            <category>Obsidian</category>
+            <category>Relive</category>
+            <category>GPX</category>
+        </item>
         <item>
             <title><![CDATA[Album Blog：當 481 本 Flickr 歷史相簿遇見 AI 與 RAG]]></title>
             <link>https://kywk.github.io/life/2026/10/02/album-blog-with-flickr-and-ai/</link>
@@ -675,19 +704,6 @@ JS/HTML/CSS Terminal</li>
 </ol>
 <p><em>Ref: <a class="internal" href="https://kywk.github.io/moco/machintosh/applications/mac-apps-setup/">Setup: App 安裝紀錄</a></em></p>]]></content:encoded>
             <category>Machintosh</category>
-        </item>
-        <item>
-            <title><![CDATA[Those Lazy, Hazy, Crazy Days Of Summer]]></title>
-            <link>https://kywk.github.io/life/2024/07/31/lazy-hazy-crazy-days-of-summer/</link>
-            <guid>https://kywk.github.io/life/2024/07/31/lazy-hazy-crazy-days-of-summer/</guid>
-            <pubDate>Wed, 31 Jul 2024 00:00:00 GMT</pubDate>
-            <description><![CDATA[- 15Mins英語咖啡館 Ep.228: 爵士學英語-「國王」的夏天洗腦金曲 Nat King Cole's s...]]></description>
-            <content:encoded><![CDATA[<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Roll out those lazy, hazy, crazy days of summer  </span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Those days of soda and pretzels and beer  </span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Roll out those lazy, hazy, crazy days of summer  </span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Dust off the sun and moon and sing a song of cheer</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Just fill your basket full of sandwiches and weenies  </span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Then lock the house up, now you're set  </span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">And on the beach you'll see the girls in their bikinis  </span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">As cute as ever but they never get 'em wet</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Roll out those lazy, hazy, crazy days of summer  </span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Those days of soda and pretzels and beer  </span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Roll out those lazy, hazy, crazy days of summer  </span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">You'll wish that summer could always be here</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Roll out those lazy, hazy, crazy days of summer  </span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Those days of soda and pretzels and beer  </span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Roll out those lazy, hazy, crazy days of summer  </span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Dust off the sun and moon and sing a song of cheer</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Don't have to tell a girl and fella about a drive-in  </span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Are some romantic movie scene  </span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Right from the moment that those lovers start arrivin'  </span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">You'll see more kissin' in the car than on the screen</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Roll out those lazy, hazy, crazy days of summer  </span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Those days of soda and pretzels and beer  </span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Roll out those lazy, hazy, crazy days of summer  </span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">You'll wish that summer could always be here</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">You'll wish that summer could always be here  </span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">You'll wish that summer could always be here</span><br></div></code></pre></div></div>
-<ul>
-<li class=""><a href="https://www.15mins.today/blog/15mins-ep-228-nat-king-cole-s-summer-jam-those-lazy" target="_blank" rel="noopener noreferrer" class="">15Mins英語咖啡館 Ep.228: 爵士學英語-「國王」的夏天洗腦金曲 Nat King Cole's s...</a></li>
-</ul>]]></content:encoded>
-            <category>kywk</category>
-            <category>LifeHack</category>
         </item>
     </channel>
 </rss>
