@@ -9,7 +9,7 @@ sidebar_position: 10
 sidebar_label: 我的實際配置
 hide_table_of_contents: true
 date_created: 2024-04-07T00:00:00.000Z
-date_updated: 2026-10-24T00:00:00.000Z
+date_updated: 2026-10-29T00:00:00.000Z
 cover: https://i.imgur.com/mErPwqL.png
 ---
 
@@ -106,6 +106,12 @@ _templates/      BOOK、DAILY_NOTE、KANBAN 與 Templater scripts
 assets/          附件
 moco/            可發佈的工程與工具文章
 ```
+
+## 延伸閱讀：旅程回放
+
+[[01 Relive 專案介紹|Relive]] 可將 GPX、照片與事件放在同一條回放時間軸，與目前 Geo Story Map 的地點故事分工。2026-10-29 核對啟用清單尚無 `relive`，因此這裡只提供介紹，不列為已啟用配置。
+
+若之後接入網站，需另行指定可公開的附件目錄；目前慣用的 `assets/` 不代表會隨網站發布，詳見 [[04 Relive Docusaurus 整合與公開附件]]。
 
 ## 相關文章
 

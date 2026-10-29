@@ -8,7 +8,7 @@ sidebar_position: 40
 sidebar_label: Properties
 hide_table_of_contents: true
 date_created: 2023-12-25T00:00:00.000Z
-date_updated: 2026-09-22T00:00:00.000Z
+date_updated: 2026-10-29T00:00:00.000Z
 cover: https://i.imgur.com/mErPwqL.png
 ---
 
@@ -53,6 +53,12 @@ YAML front matter 可以用來對文章添加屬性資訊，許多插件會利�
 - **Tasks**: 利用屬性來管理任務狀態
 
 可以說每份文件中 front matter 裡的資料就像是 NoSQL 的一份 document。
+
+## Relive 的設定位置
+
+[[01 Relive 專案介紹|Relive]] 的 `gpx`、`photos`、`events`、`duration` 等設定放在內文的 `relive` 程式碼區塊，不是筆記 frontmatter，也不需要 `relive: true` 屬性。筆記的 `title`、`tags` 與日期仍可照原有 Properties 慣例維護。
+
+這與 Geo Story Map 用 `story-map: true` 標記故事文件的方式不同。完整範例見 [[02 Relive 安裝與旅程筆記語法]]；不要把播放器設定移到 Properties 後，期待區塊自動讀取。
 
 ## Properties 新功能
 

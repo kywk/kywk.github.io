@@ -11,7 +11,7 @@ tags:
 sidebar_position: 60
 sidebar_label: 純地圖與 Leaflet 相容
 date_created: 2026-09-30T00:00:00.000Z
-date_updated: 2026-09-30T00:00:00.000Z
+date_updated: 2026-10-29T00:00:00.000Z
 ---
 # Geo Story Map 純地圖與 Leaflet 相容
 
@@ -143,6 +143,12 @@ const map: GeoMapConfig = {
 `<GeoMap />` 與 `<StoryMap />` 使用**同一個**主題根元素，所以六種地圖主題與 `--story-map-*` CSS 變數**不需要額外設定**就能套用到純地圖上。
 
 未註冊的 `mapmarker` 類型**仍然會產生標記**，只是畫成虛線圓環，並保留你原本寫下的名稱——所以資料不會因為名稱拼錯就整批消失。
+
+## 若需要 GPX 動態回放
+
+本篇的 `leaflet` 相容性著重地圖與筆記標記；若需求是播放 GPX、依拍攝時間顯示照片與事件停留，可另用 [[01 Relive 專案介紹|Relive]]。它使用獨立的 `relive` 區塊，不能只把既有 `leaflet` 區塊改名就完成轉換。
+
+網站端須另加 Relive 的整合入口，並留意與 StoryMap 的載入順序，見 [[04 Relive Docusaurus 整合與公開附件]]。
 
 ## 系列導覽
 

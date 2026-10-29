@@ -10,7 +10,7 @@ tags:
 sidebar_position: 10
 sidebar_label: 專案介紹
 date_created: 2026-09-29T00:00:00.000Z
-date_updated: 2026-09-30T00:00:00.000Z
+date_updated: 2026-10-29T00:00:00.000Z
 ---
 # Geo Story Map 專案介紹
 
@@ -74,6 +74,12 @@ Geo Story Map 將關注點嚴格分離，由四個模組組成：
 - 外掛僅支援 **Obsidian 桌面版**（宣告最低版本為 **1.8.7**），目前未支援手機版。
 - 本外掛獨立運作，**不需要**預先安裝或依賴 Obsidian Leaflet 外掛。相容的不只是既有 Leaflet 筆記的 `location` 等 frontmatter 欄位，**連 ` ```leaflet ` 圍欄區塊本身都能直接沿用**，不需要轉換語法。
 - 發佈到 Docusaurus 網站時，所呈現的故事頁面具備完整的響應式設計，能在手機與平板瀏覽器上順暢瀏覽。
+
+## 與 Relive 搭配：景點導覽與軌跡回放
+
+Geo Story Map 適合用地點筆記組織故事；若要回放一條 GPX，讓照片隨拍攝時間出現在沿途位置，可搭配 [[01 Relive 專案介紹|Relive]]。
+
+兩者使用不同的 Markdown 區塊：`story-map` 負責景點故事，`relive` 負責軌跡與時間軸。Story Map 的站點連線不等於實際 GPS 行走路線，也不會自動轉成 GPX 回放。可在旅程總覽使用本系列，再於單日遊記加入 [[02 Relive 安裝與旅程筆記語法|Relive 區塊]]。
 
 ## 系列導覽
 

@@ -10,7 +10,7 @@ tags:
 sidebar_position: 10
 sidebar_label: 外掛總覽
 date_created: 2025-12-24T00:00:00.000Z
-date_updated: 2026-09-30T00:00:00.000Z
+date_updated: 2026-10-29T00:00:00.000Z
 ---
 
 # [Obsidian] 外掛使用狀況總覽
@@ -110,6 +110,17 @@ date_updated: 2026-09-30T00:00:00.000Z
 - Geo Story Map：[[01 Geo Story Map 專案介紹]]（含安裝、語法、主題版型、本機 AI 坐標查找、Docusaurus 整合與 [[06 Geo Story Map 純地圖與 Leaflet 相容]]）
 
 > 瀏覽器版（myObsidian）提供 L2 宿主：上述外掛的初始化與部分功能已在未修改的官方 renderer 下驗收（15/15 初始化成功；Kanban／Dataview／Tasks／QuickAdd／Templater／Geo／Feed 有功能情境驗收），`child_process` 程序執行維持拒絕。詳見 [[02 myObsidian 第一版現況與驗收]]。
+
+## Relive 旅程回放系列
+
+新增 [[01 Relive 專案介紹|Relive]] 系列：以 GPX 時間軸播放路線，搭配照片與沿途事件；與 Geo Story Map 的景點筆記導覽互補。
+
+2026-10-29 另行核對 `community-plugins.json`，目前未列入 `relive`，因此本節是文章入口，不加入上方已啟用清單；上方其他配置仍保留原核對日期。
+
+- [[02 Relive 安裝與旅程筆記語法]]：手動安裝與第一段回放。
+- [[03 Relive 照片定位與 3D 旅程回放]]：照片時間、GPS、事件停留與地圖視角。
+- [[04 Relive Docusaurus 整合與公開附件]]：同一份筆記的網站發布。
+- [[05 Relive GPX 瘦身與分享工作流程]]：軌跡精簡與原始紀錄保存。
 
 ## 相關文章
 
