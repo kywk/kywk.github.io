@@ -26,7 +26,7 @@ date_updated: 2026-10-30T00:00:00.000Z
 | Docusaurus 發布筆記 | `@kywk/relive/integration` | remark 在建置時解析附件 |
 | React 應用程式 | `@kywk/react-relive` | 應用程式傳入解析完成的旅程 |
 
-React 套件支援 React 18／19，應用程式提供 React。此處說的跨框架是能使用 React 元件的 host；純 Vue 或 Svelte 不會因安裝此套件就直接得到原生元件。
+React 套件支援 React 19.x，應用程式提供 React。此處說的跨框架是能使用 React 元件的 host；純 Vue 或 Svelte 不會因安裝此套件就直接得到原生元件。
 
 ## 安裝來源與範例
 
