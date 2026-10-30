@@ -1,59 +1,112 @@
-import { extraModel } from "./models-extra.js?v=20261023-1";
+import { extraModel } from "./models-extra.js?v=20261030-2";
 // Symbolic policy miniatures. These are not proposed building designs or locations.
 // Explicit IDs prevent array ordering from silently changing a policy's visual meaning.
 export const sceneSpecs = {
-  "civil-office": ["cityhall", "雙翼市政辦公樓、玻璃帷幕與屋頂花園"],
-  "civil-flex": ["clocktower", "彈性上下班鐘塔"],
+  // 🏔️ Island 03: trails (極境高山與冰原島)
+  "trails-north": ["snowpeak", "喜馬拉雅安娜普納雪峰 5,416M、冰川山脊、五色經幡與登山山屋"],
+  "trails-history": ["volcano", "冰島極圈火山口、熔岩地熱、瀑布與極光觀測穹頂"],
+  "trails-industry": ["glacier", "西伯利亞貝加爾湖藍冰洞、透明冰晶拱門與氣墊船"],
+  "trails-east": ["alpineTorii", "日本劍岳岩稜鎖場、富士山雪頂與山頂朱紅鳥居"],
+  "trails-south": ["highlandMonastery", "四川川西高原紅房子群、雪山草甸與沙巴神山花崗岩峰"],
+
+  // 🏜️ Island 04: diplomacy (荒漠古文明與世界旅圖島)
+  "diplomacy-forum": ["pyramids", "埃及吉薩三大金字塔、人面獅身像、尼羅河綠洲與棕櫚樹"],
+  "diplomacy-hoboken": ["moai", "智利復活節島摩艾石像群、百內雙角峰與阿塔卡馬星空"],
+  "diplomacy-exchange": ["silkroad", "新疆天山雪嶺、賽里木湖藍水、喀什伊斯蘭圓頂古城與絲路駝隊"],
+  "diplomacy-talent": ["euroTrain", "歐亞跨國高鐵列車、拱橋與世界旅圖航站"],
+
+  // 🌲 Island 05: forest (台灣山林與寶島走讀島)
+  "forest-law": ["baiyuePeak", "台灣百岳奇萊主北陡峭翠綠山峰、壯闊雲海與三角點標柱"],
+  "forest-parks": ["alishanTrain", "阿里山神木群、紅色森林小火車與花東山海鐵道"],
+  "forest-consult": ["islandCoast", "澎湖柱狀玄武岩海崖、雙心石滬與白色漁翁島燈塔"],
+  "forest-wood": ["mountainCamp", "高山森林野營基地、雙峰帳篷、營火與輕量化裝備架"],
+
+  // 🏃 Island 06: sport (跑者耐力與馬拉松島)
+  "sport-bus": ["fujiMarathon", "日本富士山河口湖馬拉松賽道、紅葉楓林與完賽跑者"],
+  "sport-hub": ["marathonTrack", "42.195K 國際馬拉松終點拱門、紅土跑道與計時鐘"],
+  "sport-river": ["riverTrail", "河濱長距離配速綠道、跨河單車橋與山徑越野坡"],
+  "sport-spots": ["runnerGear", "跑者能量補給站、碳板跑鞋展示台與運動恢復中心"],
+
+  // 📚 Island 07: card (書房與深夜電影院島)
+  "card-reading": ["grandLibrary", "巨型攤開精裝書冊雕塑、多層原木書牆與溫暖閱讀燈"],
+  "card-learning": ["historyRotunda", "社科歷史圓頂圖書廳、地球儀與知識卡片索引櫃"],
+  "card-sport": ["natureBooks", "山岳與自然探險木造書閣、松樹庭園與戶外閱讀席"],
+  "card-elders": ["midnightCinema", "深夜星空露天電影院、發光巨型銀幕、35mm 放映機與紅絲絨座席"],
+
+  // ☕ Island 08: family (生活駭客與日常系統島)
+  "family-station": ["zenGarden", "Way 2 kywk 枯山水庭園、日式木造茶室與指南針日晷"],
+  "family-hotline": ["habitMatrix", "Habit Tracking 3D 綠格打卡矩陣牆與量化儀表板"],
+  "family-manager": ["makerLab", "Weekend Project 週末造物工坊、3D 印表機與極客工作台"],
+  "family-respite": ["coffeeStudio", "手沖咖啡玻璃屋、巨型 V60 濾杯雕塑與極簡書桌"],
+
+  // 🏛️ Island 01: civil (核心中樞島 · Obsidian Vault)
+  "civil-office": ["obsidianCitadel", "Obsidian 雙向連結紫水晶聖殿、發光知識圖譜節點與中樞大樓"],
+  "civil-flex": ["clocktower", "Slug 自動推導與中英路由鐘塔"],
+  "civil-award": ["cicdPipeline", "GitHub Actions 自動化部署火箭發射台與綠燈管線"],
+  "civil-health": ["qualityGate", "內容品質巡檢雷達與受保護筆記盾牌守衛站"],
+  "civil-ai": ["aipod", "Multi-Agent AI 協作圓頂艙"],
+
+  // 🧪 Island 02: institute (開源造物島 · Side Projects 實驗室)
+  "institute-research": ["geoMapDome", "Geo Story Map 3D 立體等高線地形圓頂館與 GPX 航跡光帶"],
+  "institute-access": ["tuiTerminal", "Vault Feed Reader 復古綠光終端機巨石與 RSS 訊號塔"],
+  "institute-dementia": ["kanbanWall", "Obsidian Kanban 3D 彩色看板牆與任務卡片流"],
+  "institute-child": ["albumPrism", "Album Blog 光影稜鏡展館與瀑布流相框矩陣"],
+
+  // ⚙️ Island 09: youth (雲原生與全端架構島)
+  "youth-fund": ["dockerStack", "Docker 藍鯨貨櫃叢集與微服務甲板"],
+  "youth-ai": ["apiGateway", "Kong API Gateway 流量閘道拱門與多語言引擎"],
+  "youth-dream": ["serverCluster", "高可用資料庫圓柱叢集與資安防線機房"],
+
+  // ⚙️ Island 10: education (演算法與專案工坊島)
+  "education-class": ["projectWorkshop", "52 Projects 敏捷開發工坊與程式碼看板"],
+  "education-teachers": ["algoTree", "BootCamp 3D 發光二元樹與圖論演算法雕塑"],
+  "education-ai": ["ragCube", "LLM 提示詞工程與 RAG 向量神經魔方"],
+  "education-usr": ["codeForge", "Clean Code 重構熔爐與開源套件封裝站"],
+
+  // ⚙️ Island 11: transport (極客工具與 HomeLab 島)
+  "transport-hub": ["homelabRig", "HomeLab 自託管伺服器機櫃、NAS 陣列與三螢幕工作站"],
+  "transport-school": ["mechKeyboard", "OhMyUtils 巨型客製化機械鍵盤雕塑與 CLI 終端機"],
+  "transport-bus": ["gitSwitchyard", "Git 分支合併鐵道調度場與 Linux 企鵝塔"],
+  "transport-scooter": ["macStudio", "Macintosh 鋁合金極簡工作站與黑蘋果硬體核心"],
+
+  // 🎞️ Island 12: hakka (光影畫廊島 · Photo Album)
+  "hakka-elders": ["cameraPavilion", "巨型復古單眼／雙眼相機典藏館、大光圈鏡頭與快門鈕"],
+  "hakka-schools": ["photoWall", "Pinterest 響應式瀑布流戶外畫廊與燈箱展牆"],
+  "hakka-points": ["filmArch", "35mm 底片膠卷拱門與 2004–2026 年份時光軸"],
+  "hakka-forum": ["lightStudio", "Golden Hour 黃金時刻追光燈塔與暗房沖印室"],
+
+  // 🎞️ Island 13: welfare (歲月長河島 · Life Blog)
+  "welfare-elder": ["hourglassStele", "2008–2026 十八載巨型時光沙漏與年度回顧紀念碑"],
+  "welfare-respite": ["timeRiver", "Now or Never 歲月長河、朱紅拱橋與垂柳岸"],
+  "welfare-home": ["woodsCabin", "山里山裡：松林靜思原木小屋與溫暖壁爐煙囪"],
+  "welfare-care": ["journalMonument", "五十萬字鋼筆手稿紀念碑與異國夜車咖啡座"],
+
+  // 🎞️ Island 14: lunch (技術情報與衝浪島 · News Log)
+  "lunch-farm": ["radarTower", "Surfing 新知碟型雷達塔與即時情報中心"],
+  "lunch-literacy": ["surfWave", "技術衝浪巨浪雕塑、衝浪板與網站改版里程碑"],
+  "lunch-price": ["calcPavilion", "Calculators 互動計算機與數位算盤涼亭"],
+  "lunch-subsidy": ["cloudUplink", "雲端 IDE 衛星發射站與行動部署天線"],
+
+  // --- Legacy fallback definitions ---
   "civil-eap": ["kiosk", "EAP 點數自選亭"],
-  "civil-award": ["podium", "廣場專案獎勵頒獎台"],
-  "civil-health": ["clinicpod", "健檢小診間"],
-  "civil-ai": ["aipod", "AI 支援小隊工作艙"],
-  "institute-child": ["childcenter", "盾牌標誌的中心：教育、社政、警政三條資料管線匯入中控螢幕，門口有牽手過馬路的孩子"],
-  "institute-access": ["rampcenter", "無障礙坡道、輪椅使用者與城市設計藍圖"],
-  "institute-dementia": ["loopgarden", "暖光小屋、環狀花園步道、長者與陪伴者、彩色定向柱"],
-  "institute-research": ["researchdome", "玻璃圓頂研究館、城市沙盤與圍桌研究員"],
   "renewal-scaffold": ["renewal", "施工鷹架與塔吊"],
-  "transport-school": ["crossing", "校門、行穿線與交通緩衝"],
-  "transport-bus": ["busstop", "公車與駕駛休息候車亭"],
   "transport-bridge": ["bridge", "河道、自行車橋與護欄"],
   "transport-maintain": ["rideboard", "河濱車道與每季評分看板"],
   "transport-bike": ["bike", "自行車與充電停靠柱"],
-  "transport-scooter": ["scooter", "共享機車與停車格"],
-  "transport-hub": ["hub", "單車架、飲水與休憩站"],
-  "education-class": ["classroom", "小班座位與教學黑板"],
-  "education-teachers": ["teachers", "雙教師講桌與學生座位"],
   "education-admin": ["admin", "精簡行政：文件櫃與減量文件"],
   "education-mediation": ["meeting", "親師第三方圓桌"],
   "education-eap": ["counsel", "教師諮商雙座空間"],
   "education-preschool": ["nursery", "幼兒活動室與園長辦公桌"],
   "education-special": ["access", "無障礙學習坡道"],
   "education-prevention": ["safe", "校園安全守護站"],
-  "education-ai": ["computer", "AI 教學螢幕"],
-  "education-usr": ["campus", "大學與社區合作廣場"],
   "lunch-law": ["lawbook", "攤開的專法書冊與餐盤"],
-  "lunch-farm": ["farm", "在地蔬菜田畦"],
-  "lunch-literacy": ["foodclass", "菜圃與食農教學桌"],
-  "lunch-price": ["meal", "餐盤與餐費調節刻度"],
-  "lunch-subsidy": ["subsidy", "餐盤與補助支持符號"],
-  "family-station": ["service", "一站式家庭服務櫃台"],
-  "family-hotline": ["phone", "育兒專線電話亭"],
-  "family-manager": ["meeting", "個管師與家庭諮詢桌"],
   "family-courses": ["classroom", "親子課程教室"],
-  "family-respite": ["nursery", "臨托嬰兒床與遊戲積木"],
   "family-counsel": ["counsel", "家庭心理諮商雙座空間"],
   "family-home": ["homecare", "住宅與到宅服務提箱"],
   "family-night": ["nightcare", "夜間托育床與月亮標誌"],
-  "card-culture": ["culturecoin", "印著戲劇面具的金色文化幣，四周是它能使用的地方：小劇場、畫展畫架、獨立書店書攤、兒童電影銀幕"],
-  "card-sport": ["court", "運動球場與點數標誌"],
-  "card-reading": ["books", "分齡書冊與閱讀禮袋"],
-  "card-learning": ["classroom", "家庭共同學習桌"],
+  "card-culture": ["culturecoin", "文化幣與多功能展演空間"],
   "card-shops": ["shop", "認證小店的條紋雨棚"],
-  "card-elders": ["generations", "高低座椅與祖孫閱讀桌"],
-  "welfare-elder": ["card", "敬老交通卡與服務閘口"],
-  "welfare-respite": ["care", "臨時托老照護床與座椅"],
-  "welfare-home": ["homecare", "到宅醫療提箱與住宅"],
   "welfare-hourly": ["clockcare", "時鐘與照護服務站"],
-  "welfare-care": ["care", "住宿長照床與扶手"],
   "welfare-shingles": ["vaccine", "疫苗瓶與接種工作台"],
   "welfare-counsel": ["counsel", "心理諮商座椅"],
   "welfare-work": ["workplace", "友善工作空間"],
@@ -63,44 +116,20 @@ export const sceneSpecs = {
   "welfare-stairlift": ["stairlift", "樓梯爬梯機與輪椅"],
   "welfare-safety": ["lighting", "安全步道與照明檢視站"],
   "welfare-single": ["phone", "支持專線電話亭"],
-  "sport-bus": ["bus", "社區運動接駁小巴"],
-  "sport-spots": ["fitness", "社區健身器材"],
-  "sport-river": ["river", "河濱步道與休憩植栽"],
-  "sport-hub": ["hub", "運動飲水休憩站"],
   "sport-football": ["football", "足球草坪、球門與看台"],
   "sport-huabo": ["arena", "運動中心與弧形屋頂"],
-  "sport-access": ["accessgym", "無障礙坡道與性別友善更衣室的運動館"],
-  "sport-intern": ["exchange", "海外交流行李與航線地球"],
-  "trails-north": ["hikeNorth", "A 字形木屋登山站、松林、步道入口拱門、燈籠串、登山杖架與置物櫃"],
-  "trails-east": ["hikeEast", "巨石群、木棧階梯、山頂觀景平台、玻璃立面遊客中心、置物櫃與洗鞋台"],
-  "trails-south": ["hikeSouth", "茶園梯田、翹簷茶屋服務站、纜車塔與車廂、登山杖架"],
-  "trails-history": ["heritage", "歷史街屋與解說牌"],
+  "sport-access": ["accessgym", "無障礙運動館"],
+  "sport-intern": ["exchange", "海外交流行李與地球"],
   "trails-modern": ["tower", "現代建築與文化路標"],
-  "trails-industry": ["factory", "工業遺構、煙囪與步道"],
   "trails-diverse": ["culture", "多元文化交流舞台"],
   "trails-shuttle": ["bus", "捷運接駁小巴"],
   "trails-rights": ["garden", "紀念廣場與步道"],
   "trails-card": ["card", "親子同行卡服務亭"],
-  "forest-law": ["law", "樹木與法規冊"],
   "forest-committee": ["forestmeeting", "樹下治理圓桌"],
   "forest-fund": ["forestfund", "樹木維運與基金堆疊"],
-  "forest-parks": ["garden", "口袋公園與環狀步道"],
   "forest-twin": ["twin", "實體路樹與數位螢幕"],
   "forest-cool": ["cool", "樹蔭與涼感地圖"],
-  "forest-consult": ["forestmeeting", "樹木移除前協作圓桌"],
-  "forest-wood": ["wood", "回收原木與再利用木料架"],
-  "youth-fund": ["jars", "自存與市府配合的兩個存錢罐（不示金額）"],
-  "youth-ai": ["containers", "貨櫃共享工作空間與 AI 筆電吧台"],
-  "youth-dream": ["stage", "露天圓夢舞台與紙飛機發射坡"],
-  "diplomacy-forum": ["infinityforum", "∞ 形步道交會處的論壇圓桌"],
-  "diplomacy-exchange": ["terminal", "出發／抵達雙向閘門與行李"],
-  "diplomacy-hoboken": ["democrossing", "抬升斑馬線與行人庇護島示範路口"],
-  "diplomacy-talent": ["arrivals", "抵達大廳圖示看板與行李"],
-  "hakka-elders": ["bogongcare", "伙房式照護站：禾埕、藍布門簾，長輩與孩子同桌"],
-  "hakka-schools": ["sisterschools", "城市學校與客庄學校，中間是互訪小巴"],
-  "hakka-points": ["hakkapoints", "藍布遮陽的友善店家、集點螢幕與代幣"],
-  "hakka-hiring": ["hiringdesk", "市府服務櫃台、耳機櫃員與加分星章"],
-  "hakka-forum": ["hakkaforum", "油桐花棚下的圓桌論壇與小地球"],
+  "hakka-hiring": ["hiringdesk", "市府服務櫃台"],
 };
 
 export function createPolicyModel({ part, top, colors, tree, house, scaffold }) {
@@ -275,7 +304,7 @@ export function createPolicyModel({ part, top, colors, tree, house, scaffold }) 
       if (dual) person(0.2, -0.12);
     };
     if (opts.plot) p("box", [0, 0.022, 0], [opts.plotW || 0.98, 0.03, opts.plotD || 0.84], opts.plot);
-    if (extraModel(kind, { b, hb, cy, sphere, ring, p, glow, bulb, seat, person, plant, C, glass, wood, green })) return spec;
+    if (extraModel(kind, { b, hb, cy, sphere, ring, p, glow, bulb, seat, person, plant, desk, screen, C, glass, wood, green })) return spec;
     switch (kind) {
       case "renewal":
         for (const xx of [-0.3, 0.3]) for (const zz of [-0.25, 0.25]) b([xx, 0.5, zz], [0.03, 1, 0.03], C.ink);

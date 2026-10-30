@@ -1,8 +1,8 @@
-import { sceneSpecs, createPolicyModel } from "./scene-models.js?v=20261023-1";
+import { sceneSpecs, createPolicyModel } from "./scene-models.js?v=20261030-2";
 import { createKit } from "./kit.js?v=20261026-1";
 import { createEnvironment } from "./environment.js?v=20261026-1";
-import { buildIslands, buildGraph, resolveIslandPlacements, hexVertex, GROUND, R, TOP } from "./world.js?v=20261026-1";
-import { buildDecor, bez } from "./decor.js?v=20261026-1";
+import { buildIslands, buildGraph, resolveIslandPlacements, hexVertex, GROUND, R, TOP } from "./world.js?v=20261030-2";
+import { buildDecor, bez } from "./decor.js?v=20261030-2";
 import { createPeople, ROLE_LABEL, CARRY_LABEL } from "./people.js?v=20261026-4";
 import { icon, HEART_COLORS } from "./icons.js?v=20261023-1";
 import { track } from "./analytics.js?v=20261022-4";
@@ -41,7 +41,7 @@ try {
     import("../vendor/three/build/three.module.js"),
     import("../vendor/three/examples/jsm/controls/OrbitControls.js"),
     import("../vendor/three/examples/jsm/renderers/CSS2DRenderer.js"),
-    fetch("./policies.json?v=20261029-1").then((r) => {
+    fetch("./policies.json?v=20261030-2").then((r) => {
       if (!r.ok) throw Error(`policies.json: ${r.status}`);
       return r.json();
     }),
@@ -133,17 +133,41 @@ try {
   }
   function scaffold() {}
   const buildPolicyModel = createPolicyModel({ part: kit.part, top, colors, tree, house, scaffold });
-  const COMPOSE = {
-    civil: { "civil-office": [0, -0.62, 1.45, 0.56, 0.36], "civil-flex": [0, 0.3, 0.62], "civil-eap": [-0.92, 0.12, 0.48], "civil-award": [0.92, 0.12, 0.48], "civil-health": [-0.5, 0.82, 0.46], "civil-ai": [0.5, 0.82, 0.46] },
-    institute: { "institute-research": [0.0, -0.62, 1.05], "institute-child": [-0.74, 0.3, 0.82], "institute-access": [0.74, 0.3, 0.82], "institute-dementia": [0, 0.98, 0.74] },
-    youth: { "youth-ai": [-0.3, -0.42, 1.25, 0.56], "youth-fund": [0.88, -0.2, 0.5], "youth-dream": [0.2, 0.62, 0.9] },
-    diplomacy: { "diplomacy-forum": [0, -0.02, 1.1, 0.62], "diplomacy-exchange": [-0.68, -0.64, 0.6], "diplomacy-hoboken": [0.72, -0.66, 0.54], "diplomacy-talent": [0.75, 0.72, 0.5] },
-    renewal: { "renewal-scaffold": [0, -0.45, 1.15] },
-    // three hiking-service centres at equal size (distinct designs), the four trail themes and shuttle around them
-    trails: { "trails-north": [-0.6, -0.5, 0.8], "trails-east": [0.6, -0.5, 0.8], "trails-south": [0, 0.5, 0.8], "trails-history": [-0.95, 0.2, 0.42], "trails-industry": [0.95, 0.2, 0.42], "trails-diverse": [-0.5, 0.95, 0.4], "trails-shuttle": [0.5, 0.95, 0.4], "trails-rights": [0.98, 0.66, 0.32], "trails-card": [-0.98, 0.66, 0.32] },
+  const COMPOSE = {};
+  const PLOT = {
+    schoolyard: 0xe6d8c8,
+    farmland: 0xd3c4aa,
+    softpad: 0xf4ece4,
+    granite: 0xcdbb9f,
+    lawn: 0xd3c4aa,
+    gravel: 0xb8a07e,
+    street: 0xbfb2a0,
+    meadow: 0xd3c4aa,
+    terracotta: 0xcfa88a,
+    garden: 0xd3c4aa,
+    forest: 0xc9b99f,
+    rubber: 0xd99560,
+    boardwalk: 0xa9b8b6,
+    alpine: 0xdceaf2,
+    desert: 0xe6ca9e,
+    courtyard: 0xd9cbb8,
   };
-  const PLOT = { schoolyard: 0xe6d8c8, farmland: 0xd3c4aa, softpad: 0xf4ece4, granite: 0xcdbb9f, lawn: 0xd3c4aa, gravel: 0xb8a07e, street: 0xbfb2a0, meadow: 0xd3c4aa, terracotta: 0xcfa88a, garden: 0xd3c4aa, forest: 0xc9b99f, rubber: 0xd99560, boardwalk: 0xa9b8b6 };
-  const districtHeroes = { hakka: "hakka-elders", civil: "civil-office", institute: "institute-research", renewal: "renewal-scaffold", transport: "transport-bus", education: "education-class", lunch: "lunch-farm", family: "family-station", card: "card-culture", welfare: "welfare-care", sport: "sport-football", trails: "trails-north", forest: "forest-parks", youth: "youth-ai", diplomacy: "diplomacy-forum" };
+  const districtHeroes = {
+    civil: "civil-office",
+    institute: "institute-research",
+    trails: "trails-north",
+    diplomacy: "diplomacy-forum",
+    forest: "forest-law",
+    sport: "sport-hub",
+    card: "card-reading",
+    family: "family-hotline",
+    youth: "youth-fund",
+    education: "education-teachers",
+    transport: "transport-school",
+    hakka: "hakka-elders",
+    welfare: "welfare-elder",
+    lunch: "lunch-farm",
+  };
   const silhouetteMode = debug === "silhouette";
   for (const i of D.islands) {
     const c = centers.get(i.id);
@@ -161,40 +185,62 @@ try {
   }
   // Landmark signs on the skill island models
   const SIGNS = {
-    'civil-office': ['Obsidian Vault 中樞', 0x4d8b55],
+    'civil-office': ['Obsidian Vault 中樞', 0x7a5ea8],
     'civil-flex': ['自動 Slug 鐘塔', 0x2e6b68],
-    'civil-ai': ['AI Agent 協作站', 0xe26d2d],
-    'institute-child': ['Geo Story Map', 0x2e6b68],
+    'civil-award': ['CI/CD 火箭發射台', 0x44a340],
+    'civil-ai': ['Multi-Agent 協作艙', 0xe26d2d],
+    'institute-research': ['Geo Story Map 地形館', 0x2e6b68],
     'institute-access': ['Vault Feed Reader', 0x4d8b55],
-    'institute-dementia': ['Kanban & Tasks Kit', 0xd97706],
-    'institute-research': ['Album 相簿引擎', 0xd97706],
-    'trails-north': ['安娜普納 5416M', 0xe26d2d],
-    'trails-east': ['日本劍岳與表銀座', 0xe26d2d],
-    'trails-south': ['智利百內與復活節島', 0xe26d2d],
-    'trails-history': ['冰島極圈環線', 0x2e6b68],
-    'trails-industry': ['貝加爾湖藍冰', 0x2e6b68],
-    'diplomacy-forum': ['埃及尼羅河 38 篇', 0xd97706],
-    'diplomacy-exchange': ['新疆天山 23 篇', 0xe26d2d],
-    'forest-law': ['奇萊主北百岳', 0x4d8b55],
-    'forest-parks': ['宜花東山海走廊', 0x4d8b55],
-    'sport-bus': ['富士山馬拉松', 0xe26d2d],
-    'sport-hub': ['台灣城市馬拉松', 0xe26d2d],
-    'card-reading': ['百年閱讀書房', 0x7a5ea8],
-    'card-elders': ['深夜電影院', 0x7a5ea8],
-    'family-station': ['Way 2 kywk 系統', 0x4d8b55],
-    'family-manager': ['Weekend Project', 0x2e6b68],
-    'youth-fund': ['Docker & Kong 堡壘', 0x2e6b68],
-    'youth-ai': ['Go · Java · TS 引擎', 0x2e6b68],
-    'education-class': ['52 Projects 工坊', 0xd97706],
-    'education-teachers': ['BootCamp 演算法', 0x2e6b68],
-    'transport-hub': ['HomeLab 伺服器', 0x2e6b68],
-    'transport-school': ['OhMyUtils 終端機', 0x4d8b55],
-    'welfare-elder': ['2008–2026 年度回顧', 0x7a5ea8],
-    'welfare-respite': ['Now or Never', 0xe26d2d],
-    'hakka-elders': ['491 輯光影典藏', 0xd97706],
-    'hakka-schools': ['Pinterest 瀑布流', 0xd97706],
-    'lunch-farm': ['Surfing 技術衝浪', 0x2e6b68],
-    'lunch-literacy': ['kywk.me 改版日誌', 0x7a5ea8],
+    'institute-dementia': ['Kanban & Tasks 看板', 0xd97706],
+    'institute-child': ['Album Blog 光影稜鏡', 0x7a5ea8],
+    'trails-north': ['安娜普納 5,416M 雪峰', 0x38bdf8],
+    'trails-history': ['冰島極圈火山口', 0xe26d2d],
+    'trails-industry': ['貝加爾湖藍冰洞', 0x0db7ed],
+    'trails-east': ['日本劍岳與富士山', 0xd93829],
+    'trails-south': ['川西高原紅房子群', 0xb8322a],
+    'diplomacy-forum': ['吉薩三大金字塔', 0xd97706],
+    'diplomacy-hoboken': ['復活節島摩艾石像', 0xe26d2d],
+    'diplomacy-exchange': ['喀什古城與絲路', 0x2e6b68],
+    'diplomacy-talent': ['歐亞跨國高鐵列車', 0xe26d2d],
+    'forest-law': ['奇萊主北壯闊雲海', 0x4d8b55],
+    'forest-parks': ['阿里山神木與小火車', 0xc9362b],
+    'forest-consult': ['澎湖玄武岩與石滬', 0x2e6b68],
+    'forest-wood': ['高山雙峰野營營地', 0xe26d2d],
+    'sport-hub': ['42.195K 馬拉松終點', 0xe26d2d],
+    'sport-bus': ['富士山河口湖馬拉松', 0xd93829],
+    'sport-river': ['河濱長距離配速綠道', 0x2e6b68],
+    'sport-spots': ['碳板跑鞋能量補給站', 0x4d8b55],
+    'card-reading': ['巨型精裝書冊圖書館', 0x7a5ea8],
+    'card-learning': ['社科歷史圓頂圖書廳', 0x2e6b68],
+    'card-sport': ['山岳探險木造書閣', 0xd97706],
+    'card-elders': ['深夜露天星空電影院', 0x7a5ea8],
+    'family-hotline': ['Habit 3D 打卡矩陣牆', 0x44a340],
+    'family-station': ['Way 2 kywk 枯山水', 0x4d8b55],
+    'family-manager': ['Weekend Project 工坊', 0x2e6b68],
+    'family-respite': ['V60 手沖咖啡玻璃屋', 0xd97706],
+    'youth-fund': ['Docker 藍鯨貨櫃叢集', 0x2496ed],
+    'youth-ai': ['Kong API 流量閘道', 0x00e5ff],
+    'youth-dream': ['高可用資料庫機房', 0x2e6b68],
+    'education-teachers': ['3D 發光二元樹雕塑', 0x2e6b68],
+    'education-class': ['52 Projects 敏捷工坊', 0xd97706],
+    'education-ai': ['RAG 向量神經魔方', 0x7a5ea8],
+    'education-usr': ['Clean Code 重構熔爐', 0xe26d2d],
+    'transport-school': ['OhMyUtils 機械鍵盤', 0xe26d2d],
+    'transport-hub': ['HomeLab 42U 機櫃', 0x2e6b68],
+    'transport-bus': ['Git 鐵道調度場', 0x44a340],
+    'transport-scooter': ['Mac Studio 工作站', 0xd8dad9],
+    'hakka-elders': ['復古相機光影典藏館', 0xd97706],
+    'hakka-schools': ['Pinterest 瀑布流畫廊', 0xd97706],
+    'hakka-points': ['35mm 底片膠卷時光軸', 0x7a5ea8],
+    'hakka-forum': ['黃金時刻追光燈塔', 0xe8c547],
+    'welfare-elder': ['2008–2026 時光沙漏', 0x7a5ea8],
+    'welfare-respite': ['Now or Never 歲月長河', 0xe26d2d],
+    'welfare-home': ['山里山裡松林原木屋', 0x4d8b55],
+    'welfare-care': ['五十萬字鋼筆手稿碑', 0xd97706],
+    'lunch-farm': ['Surfing 新知碟型雷達塔', 0x2e6b68],
+    'lunch-literacy': ['技術衝浪巨浪雕塑', 0x0db7ed],
+    'lunch-price': ['互動計算機算盤涼亭', 0xd97706],
+    'lunch-subsidy': ['雲端 IDE 衛星發射站', 0x38bdf8],
   };
   const signGroup = new THREE.Group();
   const postMats = [];
@@ -396,7 +442,7 @@ try {
   // island sides use the sea's own material, so the edge below the rim reads as water from every angle and time
   if (!debug) for (const v of islandBodies.values()) v.cliff.material = env.waterMat;
   // island labels hang on the front cliff
-  const shortNames = { civil: "Vault 中樞", institute: "開源造物", trails: "極境山徑", diplomacy: "跨國航跡", forest: "台灣山林", sport: "跑者耐力", card: "閱讀與光影", family: "生活駭客", youth: "全端與雲原生", education: "演算法工坊", transport: "極客工具", welfare: "歲月長河", hakka: "光影畫廊", lunch: "開發情報" };
+  const shortNames = { civil: "Vault 中樞", institute: "開源造物", trails: "極境高山", diplomacy: "荒漠古文明", forest: "台灣山林", sport: "跑者馬拉松", card: "書房電影院", family: "生活駭客", youth: "雲原生全端", education: "演算法工坊", transport: "極客工具", hakka: "光影畫廊", welfare: "歲月長河", lunch: "技術情報" };
   const islandViews = new Map();
   for (const i of D.islands) {
     const c = centers.get(i.id),
@@ -899,7 +945,7 @@ try {
       st.dataset.k = statusKey;
       st.innerHTML = [
         [D.islands.length, tr("座技能島", "skill islands"), "#db6a41"],
-        [buildings.size, tr("個模組", "modules"), "#b8920f"],
+        [buildings.size, tr("座地標", "landmarks"), "#b8920f"],
         [D.flows.length, tr("條知識流", "flows"), "#3e7c8c"],
         [on, selectedFlows.size ? tr("位在此協作線上", "on this connection") : tr("位探索者在路上", "explorers walking"), "#5e9a6f"],
       ]
@@ -1066,7 +1112,7 @@ try {
     $("#overview-panel").innerHTML = `<div class="stat-row four">${[
       [1858, tr("篇已發布筆記", "published notes"), "#e26d2d"],
       [D.islands.length, tr("座技能島", "skill islands"), "#2e6b68"],
-      [buildings.size, tr("個核心模組", "core modules"), "#d97706"],
+      [buildings.size, tr("座主題地標", "landmarks"), "#d97706"],
       [D.flows.length, tr("條知識網絡", "knowledge flows"), "#4d8b55"],
     ]
       .map(([n, l, c]) => `<div class="stat" style="--accent:${c}"><b>${n}</b><span class="lbl">${l}</span></div>`)

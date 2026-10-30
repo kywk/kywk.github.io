@@ -38,72 +38,90 @@ export const GROUND = {
   institute: "lawn",
   renewal: "gravel",
   transport: "street",
-  education: "schoolyard",
-  lunch: "farmland",
-  family: "softpad",
+  education: "gravel",
+  lunch: "boardwalk",
+  family: "courtyard",
   card: "terracotta",
   welfare: "garden",
-  sport: "meadow",
-  trails: "meadow",
+  sport: "schoolyard",
+  trails: "alpine",
   forest: "forest",
-  youth: "rubber",
-  diplomacy: "boardwalk",
-  hakka: "courtyard",
+  youth: "softpad",
+  diplomacy: "desert",
+  hakka: "rubber",
 };
 const GROUND_TONE = {
   granite: 0xd9cbb4,
   lawn: 0xb9cd98,
   gravel: 0xc7b08f,
-  street: 0xcfc3b2,
+  street: 0x9aa4ad,
   meadow: 0xbccf9c,
   terracotta: 0xdcb79a,
-  garden: 0xb4c993,
-  forest: 0x9fb683,
-  rubber: 0xe2a46f,
-  boardwalk: 0xc9a27c,
+  garden: 0xb8cfa8,
+  forest: 0x88b074,
+  rubber: 0xe8b86d,
+  boardwalk: 0x8fc2cc,
   ringtile: 0xf4f1ec,
-  schoolyard: 0xc9785a,
+  schoolyard: 0xd96b4e,
   farmland: 0xa9b878,
-  softpad: 0xb9d6e6,
-  courtyard: 0xd9b08c,
+  softpad: 0x6fb8c4,
+  courtyard: 0xd9cbb8,
+  alpine: 0xe8f1f5,
+  desert: 0xe8c896,
 };
 
-const SHALLOW_TONE = { hakka: 0xb9c6d6, civil: 0xb9d9d6, institute: 0xa9d6e0, renewal: 0xc9c4a8, transport: 0x9fc7cf, education: 0xd8d4a4, lunch: 0xb6caa0, family: 0xd9cfc6, card: 0xd9c3a8, welfare: 0xa9cfa8, sport: 0x9fcfbf, trails: 0xb4b8a8, forest: 0x8fb89a, youth: 0xbfd0e6, diplomacy: 0x8fc0d6 };
+const SHALLOW_TONE = {
+  hakka: 0xe8c896,
+  civil: 0xc8bfe0,
+  institute: 0xa9d6e0,
+  renewal: 0xc9c4a8,
+  transport: 0x9fc7cf,
+  education: 0xd8d4a4,
+  lunch: 0x8fc2cc,
+  family: 0xd9cfc6,
+  card: 0xd9c3a8,
+  welfare: 0xb8cfa8,
+  sport: 0xd9a494,
+  trails: 0xdceaf2,
+  forest: 0x8fb89a,
+  youth: 0x8fc6c4,
+  diplomacy: 0xded0b4,
+};
 // Walking-ring paving and cliff strata per island (decorative identity only)
 export const RING_TINT = {
-  civil: 0xe3d3b8,
-  institute: 0xbfd6df,
+  civil: 0xc8bfe0,
+  institute: 0x9fd0d6,
   renewal: 0xc9b89a,
-  transport: 0xb9b3ab,
-  education: 0xf1dc9a,
-  lunch: 0xcdb08a,
-  family: 0xf2d2d6,
-  card: 0xe6b796,
-  welfare: 0xdfe6cf,
-  sport: 0xd9866a,
-  trails: 0xc8bba4,
-  forest: 0xa98e6c,
-  youth: 0x8fc6c4,
-  diplomacy: 0xc9a27c,
-  hakka: 0xe6cfb0,
+  transport: 0x9aa4ad,
+  education: 0xdcb888,
+  lunch: 0x8fc2cc,
+  family: 0xd9cbb8,
+  card: 0xc99672,
+  welfare: 0xb8cfa8,
+  sport: 0xd96b4e,
+  trails: 0xdceaf2,
+  forest: 0x9ab882,
+  youth: 0x6fb8c4,
+  diplomacy: 0xe6ca9e,
+  hakka: 0xe8b86d,
 };
 const CLIFF = {
   default: [0xb98c68, 0xa77b59, 0x977059, 0x8f8172],
   civil: [0xcbbfae, 0xb9ab97, 0xa89a86, 0x928676],
   institute: [0xbfc8c2, 0xaab5ae, 0x98a39d, 0x86908a],
-  trails: [0xa59a8a, 0x8f8576, 0x7d7466, 0x6c6458],
-  forest: [0x7d8a5a, 0x8a6e52, 0x775f48, 0x6a5747],
-  youth: [0xe0a77c, 0xd59670, 0xc98a66, 0xb37a5c],
-  diplomacy: [0x9a7a5a, 0x8a6b4e, 0x7a5d44, 0x6a5040],
-  sport: [0xb79572, 0xa9845f, 0x9a7655, 0x8a6a4e],
+  trails: [0xd8e8f0, 0xb0c8d8, 0x8aa4b8, 0x6c8294],
+  forest: [0x6d8c54, 0x7a684e, 0x665640, 0x544738],
+  youth: [0x5a9fa8, 0x4a8b94, 0x3d767e, 0x2f5f66],
+  diplomacy: [0xd9b078, 0xc49a62, 0xad844f, 0x946f40],
+  sport: [0xc96b4e, 0xb05a40, 0x984933, 0x7d3b29],
   education: [0xc77b5c, 0xb86e52, 0xa86449, 0x8f7564],
-  lunch: [0x7a5a42, 0x6c4f3a, 0x5f4533, 0x7d7064],
-  family: [0xe7c9b8, 0xdcb8a6, 0xcfa996, 0xa89484],
+  lunch: [0x7aa5b0, 0x68929c, 0x567e87, 0x456b73],
+  family: [0xd8cbb8, 0xc5b7a3, 0xb1a38f, 0x9d907d],
   card: [0xd08a64, 0xc27c58, 0xb26f4f, 0x9a7a66],
   welfare: [0x8d9b6a, 0x9a7e5e, 0x8a6f52, 0x7d7468],
-  transport: [0xa7a29b, 0x96918a, 0x86817a, 0x77736d],
+  transport: [0x8a9299, 0x777f86, 0x656c73, 0x545a60],
   renewal: [0xb8a07e, 0xa58d6c, 0x93805f, 0x857766],
-  hakka: [0xc77b5c, 0xb46c50, 0xa05f47, 0x8c7466],
+  hakka: [0xd9aa58, 0xc49748, 0xad833a, 0x95702e],
 };
 export function axialToWorld(THREE, q, r) {
   return new THREE.Vector3(SQ3 * SPACING * (q + r / 2) - 2, TOP, 1.5 * SPACING * r - 10.26);
@@ -226,6 +244,41 @@ function makeTexture(THREE, type) {
     case "gravel":
       speck(2600, ["#b29a78", "#d8c4a3", "#a68c6c", "#c9b392"], 0.5, 1.6, 0.8);
       break;
+    case "alpine": {
+      // Snowy alpine rock with icy blue drift bands, frosty white pebbles and snow tufts
+      g.fillStyle = "#e8f1f5";
+      g.fillRect(0, 0, 256, 256);
+      g.fillStyle = "rgba(180, 205, 222, 0.35)";
+      for (let y = 0; y < 256; y += 48) {
+        g.beginPath();
+        g.moveTo(0, y);
+        g.bezierCurveTo(80, y + 20, 160, y - 20, 256, y + 10);
+        g.lineTo(256, y + 28);
+        g.bezierCurveTo(160, y - 2, 80, y + 38, 0, y + 28);
+        g.closePath();
+        g.fill();
+      }
+      speck(900, ["#ffffff", "#f5faff", "#dceaf2"], 1.0, 3.2, 0.85);
+      speck(600, ["#8fa3b0", "#a8bcc7", "#c2d4de"], 0.4, 1.2, 0.65);
+      break;
+    }
+    case "desert": {
+      // Golden Sahara/Atacama desert sand with wind-rippled dune curves
+      g.fillStyle = "#e8c896";
+      g.fillRect(0, 0, 256, 256);
+      g.strokeStyle = "#d4ad74";
+      g.lineWidth = 2;
+      for (let y = 8; y < 256; y += 20) {
+        g.beginPath();
+        g.moveTo(0, y);
+        for (let x = 0; x < 256; x += 32) {
+          g.quadraticCurveTo(x + 16, y + Math.sin((x + y) * 0.05) * 6, x + 32, y);
+        }
+        g.stroke();
+      }
+      speck(1400, ["#d4ad74", "#f2d8a8", "#c89b5c"], 0.4, 1.3, 0.7);
+      break;
+    }
     default: {
       // grasses
       const deep = type === "forest" ? ["#8ea873", "#a9bf8e", "#7e9866"] : ["#a9bf8e", "#c7d7a8", "#9fb684", "#b5c995"];
@@ -248,16 +301,10 @@ function cliffGeometry(THREE, cx, cz, r, yTop, yBot, grassTone, seed, id) {
     colA = [],
     idx = [];
   const rnd = mulberry(seed);
-  const grass = new THREE.Color(grassTone).offsetHSL(0, -0.05, -0.1);
-  // plinth tones derived from the island's own ground colour, fading into the water at the bottom,
-  // so the island side never reads as a brown soil wall (from any angle)
-  const g0 = new THREE.Color(grassTone);
+  const strata = CLIFF[id] || CLIFF.default;
+  const strataColors = strata.map((hex) => new THREE.Color(hex));
   const shallowTone = new THREE.Color(SHALLOW_TONE[id] || 0xb9d9d6);
   const waterTone = new THREE.Color(0x9fcfd6);
-  const soilA = g0.clone().lerp(new THREE.Color(0xf4efe6), 0.35),
-    soilB = g0.clone().lerp(new THREE.Color(0xf4efe6), 0.2),
-    soilC = g0.clone().lerp(waterTone, 0.45),
-    rock = waterTone.clone().offsetHSL(0, -0.05, -0.04);
   const jit = (x, z, y) => Math.sin(x * 7.1 + z * 3.3 + y * 5.7) * 0.5 + Math.sin(x * 2.3 - z * 6.1 + y * 9.1) * 0.5;
   for (let e = 0; e < 6; e++) {
     const [ax, az] = hexVertex(cx, cz, r, e),
@@ -278,9 +325,13 @@ function cliffGeometry(THREE, cx, cz, r, yTop, yBot, grassTone, seed, id) {
         x += (nx / nl) * out;
         z += (nz / nl) * out;
         posA.push(x, y, z);
-        // the island's side reads as clear shallow water, not as a wall: tint from the island's shallow-water
-        // colour at the top to the open-water colour below the surface
-        const c = shallowTone.clone().lerp(waterTone, Math.min(1, t * 1.4));
+        // Strata layering per island, fading into shallow/water at bottom
+        const sIdx = t * (strataColors.length - 1);
+        const i0 = Math.floor(sIdx);
+        const i1 = Math.min(strataColors.length - 1, i0 + 1);
+        const f = sIdx - i0;
+        const baseRock = strataColors[i0].clone().lerp(strataColors[i1], f);
+        const c = t > 0.6 ? baseRock.clone().lerp(shallowTone.clone().lerp(waterTone, (t - 0.6) / 0.4), (t - 0.6) / 0.4) : baseRock;
         colA.push(c.r, c.g, c.b);
       }
     }
@@ -320,20 +371,20 @@ function hexRingGeometry(THREE, rOut, rIn) {
 
 // Cliff-top band pattern per island: the island's "edge identity" seen in every close-up.
 const BAND = {
-  civil: ["blocks", "#d8ccb8", "#bfae95"],
+  civil: ["blocks", "#c8bfe0", "#bfae95"],
   institute: ["glass", "#9fc4c6", "#e6f0ef"],
   renewal: ["hoarding", "#db6a41", "#f2efe8"],
   transport: ["hazard", "#e8c547", "#3b3a42"],
   education: ["mural", "#e8c547", "#58a6a6"],
-  lunch: ["soil", "#6c4f3a", "#8fb37a"],
+  lunch: ["tiles", "#68929c", "#8fc2cc"],
   family: ["pastel", "#f2b5c6", "#9fc4e6"],
   card: ["tiles", "#d08a64", "#f2d0b4"],
   welfare: ["ivy", "#8db86f", "#b4c993"],
   sport: ["stripe", "#c8775a", "#ffffff"],
-  trails: ["rubble", "#a59a8a", "#c8bba4"],
+  trails: ["rubble", "#7c8e9b", "#dceaf2"],
   forest: ["moss", "#6f8a62", "#9cc27a"],
   youth: ["graffiti", "#e7a383", "#58a6a6"],
-  diplomacy: ["timber", "#9a7a5a", "#c9a27c"],
+  diplomacy: ["timber", "#c49a62", "#e8c896"],
   hakka: ["blocks", "#c77b5c", "#e9d8c0"],
 };
 function bandTexture(THREE, id) {
