@@ -23,7 +23,7 @@ export default function InsideKywkPage() {
     <Layout
       noFooter
       title="inside kywk 技能島 | 腦筋急轉彎 3D 數位花園"
-      description="14 座技能島、94 個核心模組，以 3D 互動等高線島嶼串連 Backpacker 航跡、Lifehacker 系統、MoCo 工程造物與 491 輯光影記憶。"
+      description="14 座主題技能島、五大群島聚落、57 座立體山岳與建築地標，串連 Backpacker 航跡、Lifehacker 系統、MoCo 工程造物與 491 輯光影記憶。"
       wrapperClassName={styles.pageWrapper}
     >
       <Head>

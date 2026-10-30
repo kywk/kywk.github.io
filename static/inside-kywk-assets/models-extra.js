@@ -1,5 +1,5 @@
-// Additional policy miniatures (second visual pass). Symbolic, not architectural designs or locations.
-// Each function receives the local helper set from scene-models.js and draws in unit space (~[-0.5,0.5] footprint).
+// Thematic 3D Miniatures: Sculpted mountains, natural landscapes & architectural landmarks.
+// Each model draws in unit space (~[-0.5, 0.5] footprint, y >= 0).
 export function extraModel(kind, h) {
   const { b, hb, cy, sphere, ring, p, glow, bulb, seat, person, plant, C, glass, wood, green } = h;
   const teal = 0x3e7c8c,
@@ -7,33 +7,1062 @@ export function extraModel(kind, h) {
     warm = 0xe9dcc4,
     stone = 0xd2c3ad,
     yel = 0xe8c547;
+
+  // Geometric convenience wrappers
+  const cone6 = (a, s, c, r) => p("cone6", a, Array.isArray(s) ? s : [s, s, s], c, r);
+  const cone = (a, s, c, r) => p("cone", a, Array.isArray(s) ? s : [s, s, s], c, r);
+  const ico = (a, s, c, r) => p("ico", a, Array.isArray(s) ? s : [s, s, s], c, r);
+  const tetra = (a, s, c, r) => p("tetra", a, Array.isArray(s) ? s : [s, s, s], c, r);
+  const prism = (a, s, c, r) => p("prism", a, Array.isArray(s) ? s : [s, s, s], c, r);
+  const leaf = (a, s, c, r) => p("leaf", a, Array.isArray(s) ? s : [s, s, s], c, r);
+  const dome = (a, s, c, r) => p("dome", a, Array.isArray(s) ? s : [s, s, s], c, r);
+  const trunk = (a, s, c, r) => p("trunk", a, Array.isArray(s) ? s : [s, s, s], c, r);
+  const desk = (xx = 0, zz = 0) => {
+    b([xx, 0.28, zz], [0.38, 0.04, 0.24], wood);
+    for (const d of [-0.14, 0.14]) b([xx + d, 0.14, zz], [0.025, 0.28, 0.18], C.cream);
+  };
+  const screen = (xx = 0, zz = 0) => {
+    b([xx, 0.47, zz], [0.29, 0.23, 0.045], C.ink);
+    b([xx, 0.47, zz + 0.025], [0.25, 0.18, 0.008], glass);
+    b([xx, 0.33, zz], [0.025, 0.1, 0.025], C.ink);
+    for (let j = 0; j < 3; j++) b([xx - 0.055 + j * 0.055, 0.45, zz + 0.032], [0.028, 0.035 + j * 0.035, 0.008], C.yellow);
+  };
+
   switch (kind) {
-    // ---------------- 市府核心 ----------------
+    // =========================================================================
+    // 🏔️ Island 03: trails (極境高山與冰原島)
+    // =========================================================================
+    case "snowpeak": {
+      // Annapurna Himalayan double massif with glacier ridge, prayer flags & basecamp
+      cone6([0.05, 0.45, -0.05], [0.95, 0.95, 0.95], 0x7c8a96); // main peak base
+      cone6([0.05, 0.98, -0.05], [0.55, 0.65, 0.55], 0xffffff); // snow cap
+      cone6([0.05, 1.25, -0.05], [0.28, 0.35, 0.28], 0xf0f8ff); // summit ice spire
+      cone6([-0.36, 0.35, 0.12], [0.65, 0.72, 0.65], 0x687784); // secondary peak base
+      cone6([-0.36, 0.7, 0.12], [0.38, 0.44, 0.38], 0xffffff); // secondary snow cap
+      // Rocky arête ridge boulders
+      ico([-0.16, 0.42, 0.04], 0.24, 0x5b6873);
+      ico([0.22, 0.32, -0.12], 0.22, 0x687580);
+      ico([-0.05, 0.22, 0.18], 0.2, 0x788691);
+      // Alpine basecamp hut with A-frame wood roof
+      b([0.32, 0.1, 0.26], [0.26, 0.18, 0.22], wood);
+      prism([0.32, 0.24, 0.26], [0.28, 0.24, 0.14], 0xe26d2d, [0, 0, Math.PI / 2]);
+      cy([0.4, 0.3, 0.22], 0.03, 0.14, 0x3d3a38); // stove chimney
+      bulb([0.32, 0.1, 0.38], 0.05, 0xfce88b); // warm porch light
+      // Tibetan 5-color prayer flags strung across the ridge
+      const flagCols = [0x3e7c8c, 0xffffff, 0xd93829, 0x4d8b55, 0xf2c94c];
+      for (let k = 0; k < 5; k++) {
+        hb([-0.22 + k * 0.08, 0.68 - Math.abs(k - 2) * 0.04, 0.05], [0.03, 0.04, 0.01], flagCols[k]);
+      }
+      // Winding snow trail
+      for (let t = 0; t < 6; t++) {
+        hb([0.26 - t * 0.07, 0.04 + t * 0.03, 0.18 - t * 0.04], [0.06, 0.02, 0.05], 0xe8f1f5);
+      }
+      return true;
+    }
+    case "volcano": {
+      // Iceland volcanic caldera with glowing magma, cascading waterfall & aurora igloo
+      cone6([0, 0.34, -0.06], [0.92, 0.68, 0.92], 0x3a383d); // basalt cone
+      cone6([0, 0.34, -0.06], [0.86, 0.68, 0.86], 0x48464a); // basalt texture
+      cy([0, 0.64, -0.06], 0.36, 0.08, 0x2e2c30); // crater rim
+      cy([0, 0.67, -0.06], 0.26, 0.04, 0xff4818); // fiery magma pool
+      bulb([0, 0.69, -0.06], 0.12, 0xff9a26); // glowing magma core
+      // Cascading blue glacial waterfall down side
+      b([0.24, 0.36, 0.12], [0.12, 0.44, 0.16], 0x7fd4e6, [0.35, 0.3, 0]);
+      b([0.28, 0.18, 0.22], [0.14, 0.24, 0.14], 0x9be8f5);
+      // Geothermal turquoise hot spring lagoon
+      cy([0.32, 0.04, 0.28], 0.38, 0.06, 0x8fe8f2);
+      cy([0.32, 0.05, 0.28], 0.28, 0.04, 0x56d2e6);
+      sphere([0.28, 0.08, 0.25], 0.04, 0xffffff); // steam bubble
+      sphere([0.36, 0.09, 0.31], 0.05, 0xffffff); // steam bubble
+      // Aurora glass observation igloo
+      cy([-0.3, 0.06, 0.26], 0.26, 0.06, 0x2e2d30); // dark base
+      dome([-0.3, 0.09, 0.26], [0.24, 0.22, 0.24], 0xa6e8e8); // glass geodesic dome
+      bulb([-0.3, 0.1, 0.26], 0.07, 0xfcea8b); // warm interior light
+      return true;
+    }
+    case "glacier": {
+      // Baikal Lake blue ice cave, translucent ice crystal arches & hovercraft
+      b([0, 0.04, 0], [1.02, 0.08, 0.88], 0xb8ecff); // frozen ice lake slab
+      cy([0, 0.06, 0], 0.88, 0.04, 0x8edbf5); // clear blue lake sheet
+      // Translucent ice-blue crystal spires
+      cone6([-0.22, 0.36, -0.15], [0.34, 0.68, 0.34], 0x72c8e8);
+      cone6([0.18, 0.42, -0.18], [0.38, 0.78, 0.38], 0x9fe3f8);
+      cone6([-0.38, 0.28, 0.08], [0.28, 0.52, 0.28], 0x58bfe0);
+      cone6([0.36, 0.32, -0.05], [0.32, 0.6, 0.32], 0xaee8fa);
+      // Natural ice cave arch
+      ring([0, 0.35, -0.05], 0.38, 0x8edbf5, [0, 0, 0]);
+      ring([0, 0.35, -0.05], 0.44, 0xe0f7ff, [0, 0, 0]);
+      // Snow drifts and pressure ridges
+      ico([-0.12, 0.1, -0.25], 0.18, 0xf5faff);
+      ico([0.28, 0.08, 0.12], 0.16, 0xf5faff);
+      // Red expedition hovercraft
+      b([0.15, 0.1, 0.26], [0.34, 0.1, 0.2], 0xd93829);
+      b([0.15, 0.05, 0.26], [0.38, 0.05, 0.24], 0x222224); // rubber skirt
+      b([0.12, 0.17, 0.26], [0.18, 0.08, 0.14], 0x8fe8f2); // glass cabin
+      ring([0.3, 0.16, 0.22], 0.06, 0x222224, [0, Math.PI / 2, 0]); // twin rear props
+      ring([0.3, 0.16, 0.3], 0.06, 0x222224, [0, Math.PI / 2, 0]);
+      return true;
+    }
+    case "alpineTorii": {
+      // Mt. Fuji symmetrical snow cone, Tsurugi-dake rock crags & vermilion Torii gate
+      cone6([0.05, 0.46, -0.12], [0.96, 0.9, 0.96], 0x55667a); // Fuji base
+      cone6([0.05, 0.78, -0.12], [0.55, 0.48, 0.55], 0xffffff); // Fuji snow summit
+      // Sharp Tsurugi rock arête crags
+      ico([-0.35, 0.35, 0.05], 0.28, 0x48515c);
+      ico([-0.22, 0.44, -0.08], 0.22, 0x3d444d);
+      // Vermilion Japanese Torii gate at trailhead
+      const toriiRed = 0xd93829;
+      cy([-0.28, 0.18, 0.26], 0.038, 0.36, toriiRed); // left post
+      cy([-0.06, 0.18, 0.26], 0.038, 0.36, toriiRed); // right post
+      b([-0.17, 0.36, 0.26], [0.34, 0.035, 0.05], toriiRed); // kasagi lintel
+      b([-0.17, 0.39, 0.26], [0.36, 0.02, 0.055], 0x1f1d1d); // black top cap
+      b([-0.17, 0.3, 0.26], [0.28, 0.025, 0.035], toriiRed); // nuki tie beam
+      // Japanese stone lantern (toro)
+      b([0.08, 0.12, 0.28], [0.08, 0.18, 0.08], 0x8c8984);
+      bulb([0.08, 0.15, 0.28], 0.03, 0xfce88b);
+      // Conifer alpine pine trees
+      cone6([0.35, 0.22, 0.2], [0.26, 0.4, 0.26], 0x44634d);
+      cone6([0.35, 0.34, 0.2], [0.18, 0.3, 0.18], 0x557a60);
+      return true;
+    }
+    case "highlandMonastery": {
+      // Sichuan highland Tibetan red monastic cabins, golden stupa roof & Mt Kinabalu peak
+      b([0, 0.06, 0], [1.0, 0.12, 0.88], 0x9ab068); // highland green-gold plateau
+      // Jagged granite snow peak backdrop
+      cone6([0.28, 0.5, -0.16], [0.65, 0.98, 0.65], 0x8a8680);
+      cone6([0.28, 0.86, -0.16], [0.32, 0.38, 0.32], 0xffffff);
+      // Main Tibetan Red Temple with Golden Stupa Roof
+      b([-0.2, 0.22, 0.05], [0.42, 0.3, 0.38], 0xb8322a);
+      tetra([-0.2, 0.42, 0.05], [0.46, 0.18, 0.42], 0xf2c94c); // golden hip roof
+      cone([-0.2, 0.54, 0.05], [0.09, 0.14, 0.09], 0xf2c94c); // golden spire
+      // Cluster of 4 terraced Tibetan crimson red monastic cabins
+      const cabins = [
+        [-0.38, 0.12, -0.12],
+        [-0.05, 0.14, -0.16],
+        [-0.36, 0.14, 0.24],
+        [-0.1, 0.12, 0.28],
+      ];
+      for (const [cx, cyy, cz] of cabins) {
+        b([cx, cyy, cz], [0.2, 0.16, 0.18], 0xa62b24);
+        b([cx, cyy + 0.09, cz], [0.22, 0.03, 0.2], 0x5a1814); // dark red roof
+        hb([cx, cyy + 0.02, cz + 0.092], [0.06, 0.06, 0.01], 0xfff8ec); // white window
+      }
+      // White Tibetan Chorten (Stupa)
+      cy([0.2, 0.12, 0.22], 0.14, 0.12, 0xf6efe6);
+      sphere([0.2, 0.2, 0.22], 0.12, 0xf6efe6);
+      cone([0.2, 0.3, 0.22], [0.09, 0.16, 0.09], 0xf2c94c);
+      return true;
+    }
+
+    // =========================================================================
+    // 🏜️ Island 04: diplomacy (荒漠古文明與世界旅圖島)
+    // =========================================================================
+    case "pyramids": {
+      // Giza 3 Golden Sandstone Pyramids, Great Sphinx, Nile River & oasis palms
+      tetra([0.05, 0.48, -0.1], [0.85, 0.95, 0.85], 0xe2b66d); // Great Pyramid Khufu
+      tetra([0.05, 0.88, -0.1], [0.22, 0.22, 0.22], 0xfce88b); // golden pyramidion cap
+      tetra([-0.36, 0.36, 0.08], [0.62, 0.72, 0.62], 0xd4a459); // Khafre Pyramid
+      tetra([0.35, 0.25, 0.2], [0.44, 0.5, 0.44], 0xc6934b); // Menkaure Pyramid
+      // Great Sphinx sandstone miniature
+      b([-0.18, 0.1, 0.32], [0.24, 0.12, 0.14], 0xd9b382); // body
+      sphere([-0.26, 0.18, 0.32], 0.08, 0xd9b382); // head & headdress
+      // Nile River oasis strip
+      b([0.22, 0.03, 0.36], [0.4, 0.03, 0.16], 0x4fa4b8);
+      // White felucca sailboat
+      b([0.18, 0.05, 0.36], [0.1, 0.03, 0.05], 0xffffff);
+      prism([0.18, 0.12, 0.36], [0.06, 0.12, 0.04], 0xffffff, [0, 0, Math.PI / 2]); // lateen sail
+      // Oasis palm trees
+      for (const [px, pz] of [[0.06, 0.28], [0.38, 0.36]]) {
+        cy([px, 0.12, pz], 0.03, 0.22, 0x8a623a);
+        cone6([px, 0.24, pz], [0.24, 0.12, 0.24], 0x4d8b55);
+      }
+      return true;
+    }
+    case "moai": {
+      // Easter Island Moai monoliths with red pukao & Torres del Paine granite horns
+      // Torres del Paine twin jagged granite horns
+      cone6([0.16, 0.52, -0.18], [0.55, 1.05, 0.55], 0x8c969e);
+      cone6([0.16, 0.9, -0.18], [0.28, 0.45, 0.28], 0xd8ccb8);
+      cone6([-0.24, 0.46, -0.22], [0.46, 0.92, 0.46], 0x7a838b);
+      // Stone Ahu ceremonial platform
+      b([0, 0.07, 0.14], [0.88, 0.1, 0.24], 0x6e6862);
+      // 3 Iconic Easter Island Moai statues
+      const moaiX = [-0.26, 0.0, 0.26];
+      for (let k = 0; k < 3; k++) {
+        const mx = moaiX[k];
+        const mh = 0.36 + (k === 1 ? 0.06 : 0);
+        b([mx, 0.12 + mh * 0.3, 0.14], [0.16, mh * 0.6, 0.14], 0x8a847e); // torso
+        b([mx, 0.12 + mh * 0.72, 0.15], [0.14, mh * 0.42, 0.16], 0x9c9690); // head & heavy brow
+        hb([mx, 0.12 + mh * 0.68, 0.24], [0.04, mh * 0.22, 0.04], 0xaba49e); // long nose
+        cy([mx, 0.12 + mh * 0.96, 0.14], 0.09, 0.08, 0xb84a39); // red pukao topknot
+      }
+      // Atacama desert stargazing observatory dome
+      dome([0.36, 0.14, 0.28], [0.18, 0.18, 0.18], 0xf4f1ea);
+      hb([0.36, 0.18, 0.35], [0.03, 0.14, 0.03], 0x1f1d1d); // slit
+      bulb([0.36, 0.12, 0.28], 0.05, 0x38bdf8);
+      return true;
+    }
+    case "silkroad": {
+      // Tianshan snow peaks, Sayram Lake sapphire water, Kashgar turquoise Islamic dome
+      cone6([0.22, 0.48, -0.15], [0.75, 0.95, 0.75], 0x6e7e8c); // Tianshan base
+      cone6([0.22, 0.86, -0.15], [0.38, 0.42, 0.38], 0xffffff); // snow cap
+      // Sayram Lake sapphire alpine waters
+      cy([0.26, 0.04, 0.2], 0.42, 0.05, 0x2e6b9c);
+      cy([0.26, 0.05, 0.2], 0.32, 0.04, 0x3b82c4);
+      // Kashgar mud-brick ancient city walls & gate
+      b([-0.2, 0.16, 0.05], [0.46, 0.28, 0.32], 0xd9b382);
+      b([-0.2, 0.28, 0.05], [0.48, 0.04, 0.34], 0xc79e6d);
+      // Turquoise-glazed Islamic dome & golden crescent
+      dome([-0.2, 0.36, 0.05], [0.26, 0.28, 0.26], 0x3e9aa6);
+      cone([-0.2, 0.52, 0.05], [0.07, 0.12, 0.07], 0xf2c94c);
+      // Minaret tower
+      cy([-0.38, 0.3, 0.12], 0.09, 0.58, 0xd9b382);
+      dome([-0.38, 0.59, 0.12], [0.1, 0.1, 0.1], 0x3e9aa6);
+      // Camel caravan (2 camels on dune)
+      for (const [cx, cz] of [[-0.08, 0.28], [0.06, 0.32]]) {
+        b([cx, 0.1, cz], [0.12, 0.08, 0.07], 0xc49a62); // body
+        sphere([cx, 0.16, cz], 0.05, 0xc49a62); // hump
+        cy([cx - 0.06, 0.14, cz], 0.025, 0.09, 0xc49a62); // neck
+      }
+      return true;
+    }
+    case "euroTrain": {
+      // Eurasian railway stone viaduct, high-speed train & world terminal
+      b([0, 0.28, -0.05], [0.98, 0.06, 0.18], 0xc8bca8); // viaduct deck
+      for (const vx of [-0.3, 0.0, 0.3]) {
+        b([vx, 0.14, -0.05], [0.12, 0.24, 0.16], 0xaba090); // piers
+        ring([vx, 0.22, -0.05], 0.16, 0x9e9485, [0, 0, 0]); // arch
+      }
+      // Sleek Eurostar bullet train
+      b([-0.05, 0.35, -0.05], [0.76, 0.09, 0.12], 0xf7f6f2); // train body
+      b([-0.05, 0.34, 0.012], [0.76, 0.02, 0.005], 0xe26d2d); // orange stripe
+      b([0.33, 0.36, -0.05], [0.06, 0.06, 0.11], 0x222629); // cab windshield
+      // World globe monument on pedestal
+      cy([0.28, 0.1, 0.26], 0.18, 0.12, 0x3d3a42);
+      sphere([0.28, 0.22, 0.26], 0.13, 0x4fa4b8);
+      ring([0.28, 0.22, 0.26], 0.15, 0xe8c547, [0.3, 0.2, 0]);
+      // Terminal glass canopy
+      b([-0.15, 0.12, 0.25], [0.38, 0.2, 0.24], 0x86a8a6);
+      return true;
+    }
+
+    // =========================================================================
+    // 🌲 Island 05: forest (台灣山林與寶島走讀島)
+    // =========================================================================
+    case "baiyuePeak": {
+      // Taiwan Qilai Main & North peaks, Sea of Clouds & summit triangulation pillar
+      cone6([0, 0.55, -0.1], [0.95, 1.1, 0.95], 0x4d7c58); // steep Qilai main peak
+      cone6([0, 0.55, -0.1], [0.88, 1.08, 0.88], 0x3e5244); // dark slate rock facets
+      cone6([-0.36, 0.42, 0.1], [0.65, 0.84, 0.65], 0x5e8f66); // Qilai North peak
+      ico([-0.18, 0.5, -0.02], 0.22, 0x3e4a40); // knife-edge ridge boulder
+      // Majestic billowy Sea of Clouds wrapping around waist
+      const clouds = [
+        [-0.4, 0.38, -0.2],
+        [-0.15, 0.42, 0.26],
+        [0.25, 0.4, 0.2],
+        [0.38, 0.44, -0.15],
+        [0.05, 0.46, 0.28],
+        [-0.3, 0.44, 0.22],
+      ];
+      for (const [cx, cyy, cz] of clouds) {
+        sphere([cx, cyy, cz], [0.22, 0.14, 0.22], 0xffffff);
+        sphere([cx + 0.04, cyy + 0.03, cz], [0.16, 0.1, 0.16], 0xf2f6fa);
+      }
+      // Summit triangulation post (一等三角點)
+      b([0, 1.12, -0.1], [0.06, 0.08, 0.06], 0xded8ce);
+      hb([0, 1.18, -0.1], [0.015, 0.06, 0.015], 0x1f1d1d);
+      return true;
+    }
+    case "alishanTrain": {
+      // Ancient Taiwan Red Cypress sacred tree, forest tracks & Alishan red train
+      // Giant sacred tree
+      trunk([0.22, 0.45, -0.1], [0.36, 0.9, 0.36], 0x6e523e);
+      leaf([0.22, 0.88, -0.1], [0.72, 0.6, 0.72], 0x42734a);
+      leaf([0.24, 1.12, -0.1], [0.52, 0.45, 0.52], 0x52875b);
+      leaf([0.18, 1.25, -0.08], [0.35, 0.3, 0.35], 0x6aa675);
+      // Railway tracks curving through moss
+      b([-0.15, 0.04, 0.12], [0.65, 0.02, 0.32], 0x5a483a); // ties
+      hb([-0.15, 0.06, 0.08], [0.68, 0.02, 0.02], 0x8a8a92); // rail 1
+      hb([-0.15, 0.06, 0.16], [0.68, 0.02, 0.02], 0x8a8a92); // rail 2
+      // Alishan Crimson Forest Locomotive
+      b([-0.16, 0.15, 0.12], [0.44, 0.18, 0.18], 0xc9362b);
+      b([-0.16, 0.25, 0.12], [0.46, 0.04, 0.2], 0x222224); // black roof
+      cy([-0.04, 0.3, 0.12], 0.04, 0.1, 0x222224); // exhaust smokestack
+      b([-0.16, 0.18, 0.212], [0.38, 0.02, 0.005], 0xfce88b); // yellow stripe
+      bulb([-0.38, 0.16, 0.12], 0.05, 0xfce88b); // front brass headlight
+      return true;
+    }
+    case "islandCoast": {
+      // Penghu hexagonal basalt cliff columns, Twin-Hearts Stone Weir & lighthouse
+      // Hexagonal basalt column cluster
+      const cols = [
+        [0.0, -0.1, 0.45],
+        [0.12, -0.18, 0.52],
+        [-0.12, -0.12, 0.48],
+        [0.22, -0.06, 0.38],
+        [-0.22, -0.05, 0.35],
+      ];
+      for (const [bx, bz, bh] of cols) {
+        cone6([bx, bh / 2, bz], [0.18, bh, 0.18], 0x5a5652);
+      }
+      // Shallow sea with Twin-Hearts Stone Weir (雙心石滬)
+      b([-0.16, 0.03, 0.2], [0.56, 0.03, 0.44], 0x68c4d0);
+      ring([-0.22, 0.05, 0.18], 0.14, 0x8a8278, [0, 0, 0]);
+      ring([-0.12, 0.05, 0.24], 0.14, 0x8a8278, [0, 0, 0]);
+      // White Yuwengdao Lighthouse
+      cone([0.28, 0.35, -0.06], [0.22, 0.65, 0.22], 0xffffff); // white tower
+      cy([0.28, 0.68, -0.06], 0.14, 0.06, 0x222428); // gallery deck
+      bulb([0.28, 0.72, -0.06], 0.07, 0xfce88b); // glowing beacon
+      dome([0.28, 0.76, -0.06], [0.12, 0.08, 0.12], 0x222428); // dome roof
+      return true;
+    }
+    case "mountainCamp": {
+      // High mountain forest campsite, 2 pitched tents, warm campfire & gear rack
+      b([0, 0.04, 0], [0.96, 0.06, 0.86], 0xa69580); // timber campsite clearing
+      // Sunset orange alpine A-frame tent
+      prism([0.18, 0.16, -0.1], [0.38, 0.28, 0.42], 0xe26d2d, [0, 0, Math.PI / 2]);
+      // Forest green lightweight ridge tent
+      prism([-0.24, 0.14, 0.16], [0.32, 0.24, 0.36], 0x4d8b55, [0, 0, Math.PI / 2]);
+      // Glowing campfire with stone ring
+      for (let k = 0; k < 6; k++) {
+        const a = (k / 6) * Math.PI * 2;
+        ico([0.02 + Math.cos(a) * 0.1, 0.07, 0.15 + Math.sin(a) * 0.1], 0.04, 0x6e6862);
+      }
+      bulb([0.02, 0.1, 0.15], 0.08, 0xff9436); // fire core
+      cone([0.02, 0.14, 0.15], [0.06, 0.1, 0.06], 0xff5a26); // flames
+      // Trekking poles & backpack rack
+      hb([-0.3, 0.16, -0.15], [0.03, 0.3, 0.03], 0x222224);
+      b([-0.3, 0.18, -0.12], [0.1, 0.14, 0.08], 0xe26d2d); // backpack
+      // Pine trees
+      cone6([0.38, 0.25, 0.2], [0.26, 0.45, 0.26], 0x3d6647);
+      cone6([-0.38, 0.22, -0.22], [0.24, 0.4, 0.24], 0x3d6647);
+      return true;
+    }
+
+    // =========================================================================
+    // 🏃 Island 06: sport (跑者耐力與馬拉松島)
+    // =========================================================================
+    case "fujiMarathon": {
+      // Kawaguchiko Marathon course, Mt. Fuji backdrop, autumn momiji maples
+      cone6([0, 0.44, -0.22], [0.86, 0.88, 0.86], 0x4f6b8a);
+      cone6([0, 0.76, -0.22], [0.5, 0.45, 0.5], 0xffffff); // snow cap
+      b([0, 0.03, -0.02], [0.92, 0.04, 0.2], 0x5aa8b8); // Lake Kawaguchiko
+      // Winding asphalt marathon road with white stripe
+      b([0, 0.04, 0.18], [0.94, 0.04, 0.18], 0x3a393e);
+      hb([0, 0.062, 0.18], [0.9, 0.005, 0.015], 0xffffff);
+      // Autumn red/amber maple trees
+      sphere([-0.3, 0.22, 0.26], 0.16, 0xd94a2b);
+      sphere([0.28, 0.24, 0.25], 0.18, 0xe8832a);
+      // Marathon runners
+      person(-0.1, 0.18, 0.34);
+      person(0.12, 0.18, 0.34);
+      return true;
+    }
+    case "marathonTrack": {
+      // 42.195K Finish Line gantry arch, red oval track & digital timer clock
+      b([0, 0.04, 0], [1.02, 0.06, 0.86], 0xd95f43); // terracotta red track
+      // White running lane markers
+      for (const dz of [-0.22, 0.0, 0.22]) {
+        hb([0, 0.071, dz], [0.92, 0.005, 0.015], 0xffffff);
+      }
+      // Grand Finish Line Gantry Arch
+      cy([-0.38, 0.35, 0.05], 0.06, 0.65, 0x2d1e14);
+      cy([0.38, 0.35, 0.05], 0.06, 0.65, 0x2d1e14);
+      b([0, 0.65, 0.05], [0.84, 0.12, 0.1], 0xe26d2d);
+      glow([0, 0.65, 0.105], [0.42, 0.06, 0.015], 0xfcea8b); // digital clock
+      // Finish banner ribbon
+      b([0, 0.36, 0.05], [0.65, 0.08, 0.02], 0xffffff);
+      person(-0.06, 0.05, 0.34); // finishing runner
+      return true;
+    }
+    case "riverTrail": {
+      // River pace greenway, arched bridge & switchback trail hill
+      b([0, 0.03, -0.06], [0.96, 0.04, 0.32], 0x6ab8c9); // river
+      // Modern arched pedestrian / bike bridge
+      b([0.05, 0.18, -0.06], [0.26, 0.04, 0.44], 0xf2ede4);
+      hb([0.05 - 0.13, 0.24, -0.06], [0.015, 0.08, 0.44], 0xd93829); // railings
+      hb([0.05 + 0.13, 0.24, -0.06], [0.015, 0.08, 0.44], 0xd93829);
+      // Greenway path with distance milestone
+      b([0, 0.04, 0.22], [0.94, 0.04, 0.18], 0x8ab88a);
+      b([0.32, 0.1, 0.28], [0.08, 0.14, 0.08], 0xffffff); // KM 20 marker
+      // Trail hill
+      cone6([-0.32, 0.2, -0.22], [0.35, 0.4, 0.35], 0x5a8a66);
+      return true;
+    }
+    case "runnerGear": {
+      // Athletic pavilion, giant carbon-plated shoe trophy & hydration table
+      b([-0.2, 0.22, -0.1], [0.45, 0.38, 0.36], 0xf4eee4);
+      b([-0.2, 0.22, 0.085], [0.38, 0.28, 0.015], glass); // glass facade
+      // Elevated trophy podium with giant sculpted running shoe
+      cy([0.16, 0.12, 0.16], 0.28, 0.18, 0x2d1e14);
+      b([0.16, 0.25, 0.16], [0.34, 0.07, 0.14], 0xffffff); // thick foam sole
+      b([0.16, 0.32, 0.16], [0.32, 0.08, 0.13], 0xe26d2d); // bright neon upper
+      b([0.16, 0.28, 0.16], [0.34, 0.01, 0.14], 0x1f1d1d); // carbon plate line
+      // Hydration drink station table
+      b([-0.18, 0.1, 0.26], [0.35, 0.12, 0.12], 0x3d3a42);
+      for (let k = 0; k < 3; k++) cy([-0.26 + k * 0.08, 0.18, 0.26], 0.025, 0.04, 0x38bdf8);
+      return true;
+    }
+
+    // =========================================================================
+    // 📚 Island 07: card (書房與深夜電影院島)
+    // =========================================================================
+    case "grandLibrary": {
+      // Monumental open hardcover book sculpture, tall bookshelves & reading lamp
+      // Center giant open book
+      b([0, 0.14, 0.06], [0.74, 0.05, 0.52], 0x8b4a3a, [0.1, 0, 0]); // leather cover
+      b([-0.18, 0.2, 0.06], [0.32, 0.08, 0.46], 0xfff8ec, [0.1, 0, -0.15]); // left page block
+      b([0.18, 0.2, 0.06], [0.32, 0.08, 0.46], 0xfff8ec, [0.1, 0, 0.15]); // right page block
+      hb([0, 0.24, 0.06], [0.02, 0.02, 0.46], 0xd93829); // red ribbon bookmark
+      // Floor-to-ceiling mahogany bookshelf backdrop
+      b([0, 0.45, -0.24], [0.94, 0.8, 0.16], 0x5a3424);
+      // Colorful rows of book spines
+      const bookCols = [0xd94a2b, 0x3e7c8c, 0xe8c547, 0x4d8b55, 0x7a5ea8];
+      for (let row = 0; row < 3; row++) {
+        for (let col = 0; col < 7; col++) {
+          hb([-0.36 + col * 0.12, 0.2 + row * 0.24, -0.155], [0.08, 0.18, 0.01], bookCols[(row + col) % 5]);
+        }
+      }
+      // Brass banker's reading lamp
+      cy([0.3, 0.18, 0.24], 0.02, 0.18, 0xcaa24a);
+      cy([0.3, 0.26, 0.24], 0.08, 0.04, 0x3d7e52); // green glass shade
+      bulb([0.3, 0.25, 0.24], 0.03, 0xfce88b);
+      return true;
+    }
+    case "historyRotunda": {
+      // Neo-Cartography Rotunda Library, turquoise dome & giant brass globe
+      cy([0, 0.28, -0.05], 0.52, 0.52, 0xf2ece1); // rotunda drum
+      for (let k = 0; k < 8; k++) {
+        const a = (k / 8) * Math.PI * 2;
+        cy([Math.cos(a) * 0.54, 0.28, -0.05 + Math.sin(a) * 0.54], 0.04, 0.52, 0xd9cfc0);
+      }
+      dome([0, 0.55, -0.05], [0.56, 0.36, 0.56], 0x3e7c8c); // turquoise copper dome
+      cone([0, 0.78, -0.05], [0.08, 0.14, 0.08], 0xe8c547); // golden finial
+      // Giant brass world globe
+      cy([0.28, 0.1, 0.26], 0.16, 0.14, 0x4a4744);
+      sphere([0.28, 0.25, 0.26], 0.14, 0x3e7c8c);
+      ring([0.28, 0.25, 0.26], 0.16, 0xe8c547, [0.35, 0.2, 0]);
+      // Zettelkasten card index cabinet
+      b([-0.28, 0.18, 0.25], [0.24, 0.28, 0.16], 0x7a4c32);
+      return true;
+    }
+    case "natureBooks": {
+      // Warm timber A-frame mountain book pavilion, journals & telescope
+      prism([0, 0.32, -0.05], [0.58, 0.55, 0.5], 0x8a5a3a, [0, 0, Math.PI / 2]); // A-frame roof
+      b([0, 0.2, -0.05], [0.48, 0.38, 0.44], 0xf0e6d6);
+      b([0, 0.24, 0.18], [0.34, 0.24, 0.015], glass); // glass gable
+      bulb([0, 0.24, 0.1], 0.06, 0xfce88b); // warm interior light
+      // Stargazer telescope on tripod
+      cy([0.26, 0.18, 0.26], 0.03, 0.28, 0x3d3a38, [0.4, 0.3, 0]);
+      sphere([0.26, 0.34, 0.26], 0.05, 0xcaa24a);
+      // Surrounding alpine boulders & pines
+      ico([-0.3, 0.1, 0.22], 0.16, 0x7a7772);
+      cone6([-0.32, 0.26, -0.25], [0.26, 0.44, 0.26], 0x44634d);
+      return true;
+    }
+    case "midnightCinema": {
+      // Open-air midnight cinema, glowing screen, 35mm projector & red velvet seats
+      b([0, 0.45, -0.2], [0.96, 0.66, 0.08], 0x1f1d24); // screen frame
+      glow([0, 0.45, -0.155], [0.88, 0.58, 0.015], 0xd8ecff); // glowing cinema screen
+      // 35mm Projector booth at rear
+      b([0, 0.22, 0.32], [0.18, 0.32, 0.16], 0x2b2927);
+      ring([0, 0.4, 0.32], 0.09, 0xc8bca8, [0, 0, 0]); // spinning reels
+      ring([0, 0.5, 0.34], 0.08, 0xc8bca8, [0, 0, 0]);
+      // Projection light beam cone
+      cone([0, 0.44, 0.06], [0.36, 0.5, 0.36], 0xf0f8ff, [Math.PI / 2, 0, 0]);
+      // Stepped rows of plush red velvet theater seats
+      for (const sz of [0.02, 0.16]) {
+        for (const sx of [-0.26, 0.0, 0.26]) {
+          b([sx, 0.08 + (sz > 0.1 ? 0.04 : 0), sz], [0.2, 0.12, 0.1], 0xb82626);
+        }
+      }
+      return true;
+    }
+
+    // =========================================================================
+    // ☕ Island 08: family (生活駭客與日常系統島)
+    // =========================================================================
+    case "zenGarden": {
+      // Japanese Zen rock garden, raked sand, cedar tea pavilion & sundial
+      b([0, 0.04, 0], [0.98, 0.06, 0.88], 0xf2ece1); // raked sand base
+      // Concentric ripple rings around moss stones
+      ring([0.15, 0.075, 0.1], 0.22, 0xe0d4c2, [0, 0, 0]);
+      ring([0.15, 0.075, 0.1], 0.32, 0xe0d4c2, [0, 0, 0]);
+      ico([0.15, 0.12, 0.1], 0.14, 0x6a8c54); // moss stone
+      ico([0.28, 0.1, 0.02], 0.1, 0x7a7772);
+      ico([0.05, 0.09, 0.18], 0.09, 0x7a7772);
+      // Minimalist Japanese cedar tea pavilion (chashitsu)
+      b([-0.22, 0.18, -0.12], [0.46, 0.28, 0.42], 0xd8caa8);
+      p("hip", [-0.22, 0.34, -0.12], [0.52, 0.14, 0.48], 0x6e4735); // hip roof
+      // Brass compass sundial
+      cy([0.22, 0.12, 0.26], 0.14, 0.08, 0xcaa24a);
+      hb([0.22, 0.18, 0.26], [0.015, 0.08, 0.04], 0x1f1d1d, [0.3, 0, 0]); // gnomon
+      return true;
+    }
+    case "habitMatrix": {
+      // 3D GitHub-style green habit contribution matrix wall & streak flame
+      b([0, 0.4, -0.05], [0.96, 0.68, 0.12], 0x181c20); // dark monolith wall
+      // 5x7 grid of 3D cubes with GitHub green shades
+      const greens = [0x243328, 0x39d353, 0x26a641, 0x006d32, 0x39d353, 0x26a641, 0x006d32];
+      for (let row = 0; row < 5; row++) {
+        for (let col = 0; col < 7; col++) {
+          const c = greens[(row * 3 + col * 2 + 1) % greens.length];
+          b([-0.36 + col * 0.12, 0.16 + row * 0.11, 0.02], [0.09, 0.08, 0.04], c);
+        }
+      }
+      // Sculpted streak flame emblem at top
+      cone([0.36, 0.78, 0.02], [0.12, 0.18, 0.12], 0xff7a26);
+      bulb([0.36, 0.74, 0.02], 0.06, 0xffbe3b);
+      // Dashboard dial
+      ring([-0.32, 0.76, 0.02], 0.08, 0x38bdf8, [0, 0, 0]);
+      return true;
+    }
+    case "makerLab": {
+      // Weekend Project maker garage, 3D printer gantry & workbench
+      b([-0.1, 0.24, -0.05], [0.75, 0.42, 0.48], 0xe8e2d8);
+      b([-0.1, 0.26, 0.192], [0.65, 0.32, 0.015], glass); // glass garage wall
+      // 3D printer gantry sculpture
+      b([0.28, 0.22, 0.18], [0.32, 0.36, 0.26], 0xe26d2d); // orange frame
+      b([0.28, 0.2, 0.18], [0.26, 0.02, 0.22], 0x222224); // build plate
+      bulb([0.28, 0.26, 0.18], 0.06, 0x38bdf8); // glowing print head
+      // Workbench with dual monitors
+      desk(-0.15, -0.08);
+      screen(-0.25, -0.08);
+      screen(-0.05, -0.08);
+      return true;
+    }
+    case "coffeeStudio": {
+      // Timber & glass pour-over cafe, giant V60 dripper, gooseneck kettle & steam
+      b([-0.15, 0.22, -0.05], [0.56, 0.38, 0.44], 0xd9c2a7);
+      b([-0.15, 0.24, 0.172], [0.46, 0.28, 0.015], glass);
+      // Giant V60 Dripper monument on pedestal
+      cy([0.26, 0.12, 0.18], 0.22, 0.16, 0x3d352e); // wooden stand
+      cone([0.26, 0.32, 0.18], [0.26, 0.22, 0.26], 0xffffff, [Math.PI, 0, 0]); // V60 white cone
+      cy([0.26, 0.22, 0.18], 0.16, 0.12, 0x86a8a6); // glass server carafe
+      // Gooseneck kettle
+      cy([0.1, 0.28, 0.18], 0.09, 0.15, 0x4a4744);
+      // Rising aroma steam spheres
+      sphere([0.26, 0.44, 0.18], 0.05, 0xffffff);
+      sphere([0.28, 0.52, 0.2], 0.04, 0xffffff);
+      return true;
+    }
+
+    // =========================================================================
+    // 🏛️ Island 01: civil (核心中樞島 · Obsidian Vault)
+    // =========================================================================
+    case "obsidianCitadel": {
+      // Obsidian Amethyst Crystal Temple, floating neural graph nodes & headquarters
+      b([0, 0.08, 0], [1.06, 0.14, 0.84], 0x3a3545); // dark obsidian podium
+      // Symmetric Modernist wings
+      b([-0.32, 0.28, 0.02], [0.36, 0.42, 0.5], 0xf0eaf5);
+      b([0.32, 0.28, 0.02], [0.36, 0.42, 0.5], 0xf0eaf5);
+      // Center Towering Faceted Purple Obsidian Crystal
+      cone6([0, 0.65, 0], [0.42, 1.05, 0.42], 0x6b3fa0); // deep amethyst body
+      cone6([0, 1.15, 0], [0.26, 0.45, 0.26], 0xb388eb); // bright crystal crown
+      // Floating neural knowledge-graph nodes & link bars
+      const nodes = [
+        [-0.26, 0.72, 0.18, 0xb388eb],
+        [0.26, 0.76, 0.18, 0x8a56c8],
+        [-0.18, 0.95, -0.15, 0x38bdf8],
+        [0.18, 0.98, -0.15, 0xb388eb],
+      ];
+      for (const [nx, ny, nz, nc] of nodes) {
+        bulb([nx, ny, nz], 0.07, nc);
+        hb([nx * 0.5, ny * 0.85, nz * 0.5], [0.015, ny * 0.3, 0.015], 0xb388eb);
+      }
+      return true;
+    }
+    case "cicdPipeline": {
+      // 3-stage automated CI/CD pipeline, launch pad & deployment rocket
+      // 3 stage cylinders (typecheck -> check -> build)
+      const stages = [-0.35, -0.1, 0.15];
+      for (let k = 0; k < 3; k++) {
+        cy([stages[k], 0.14, 0.18], 0.13, 0.18, 0x44a340);
+        bulb([stages[k], 0.24, 0.18], 0.05, 0x8ff59e); // glowing green status LED
+      }
+      // Glowing connecting pipeline
+      hb([-0.1, 0.14, 0.18], [0.55, 0.035, 0.035], 0x38bdf8);
+      // Launch pad & gantry tower
+      cy([0.26, 0.08, -0.15], 0.38, 0.12, 0x3d3a42);
+      b([0.42, 0.45, -0.15], [0.1, 0.85, 0.1], 0xe26d2d); // gantry truss
+      // Deployment Rocket
+      cy([0.26, 0.45, -0.15], 0.14, 0.6, 0xffffff);
+      cone([0.26, 0.82, -0.15], [0.15, 0.24, 0.15], 0xe26d2d); // nose cone
+      ring([0.26, 0.55, -0.15], 0.15, 0x38bdf8, [0, 0, 0]); // glowing stage ring
+      return true;
+    }
+    case "qualityGate": {
+      // Golden shield archway, laser scan bar & protected note vault
+      b([0, 0.38, 0], [0.76, 0.68, 0.18], 0x2e6b68); // gateway portal
+      b([0, 0.22, 0], [0.42, 0.42, 0.22], 0xf6efe6); // arch opening
+      // Large sculpted golden shield emblem
+      b([0, 0.52, 0.1], [0.34, 0.4, 0.05], 0xe8c547);
+      ico([0, 0.52, 0.13], 0.1, 0x6b3fa0); // central obsidian jewel
+      // Scanning laser bar
+      glow([0, 0.26, 0.1], [0.48, 0.02, 0.02], 0x00e5ff);
+      // Roof inspection dish
+      dome([0, 0.76, 0], [0.18, 0.1, 0.18], 0x3d3a42);
+      return true;
+    }
+
+    // =========================================================================
+    // 🧪 Island 02: institute (開源造物島 · Side Projects 實驗室)
+    // =========================================================================
+    case "geoMapDome": {
+      // Geodesic dome, 3D relief contour terrain table & glowing GPX track
+      dome([0, 0.38, -0.05], [0.84, 0.74, 0.84], 0x86a8a6); // translucent dome
+      cy([0, 0.14, -0.05], 0.62, 0.2, 0x2b2927); // round exhibition table
+      // Stepped relief mountain model on table
+      cone6([0, 0.28, -0.05], [0.46, 0.25, 0.46], 0x4d7c58);
+      cone6([0, 0.38, -0.05], [0.28, 0.18, 0.28], 0x8a8680);
+      cone6([0, 0.45, -0.05], [0.14, 0.12, 0.14], 0xffffff); // snow summit
+      // Glowing neon orange GPX track ribbon
+      ring([0, 0.32, -0.05], 0.34, 0xe26d2d, [0.3, 0.2, 0]);
+      bulb([0.15, 0.36, 0.05], 0.04, 0xfce88b); // GPX waypoint pin
+      return true;
+    }
+    case "tuiTerminal": {
+      // Retro CRT TUI terminal monolith, glowing phosphor screen & RSS radio mast
+      b([-0.1, 0.38, -0.05], [0.65, 0.68, 0.36], 0x1e242b); // terminal casing
+      glow([-0.1, 0.42, 0.135], [0.52, 0.42, 0.015], 0x2ebd60); // phosphor green screen
+      // CRT scanline frame
+      b([-0.1, 0.42, 0.14], [0.54, 0.02, 0.01], 0x3d444d);
+      // RSS Transmission Mast
+      cy([0.32, 0.48, 0.15], 0.04, 0.9, 0xd4a459);
+      for (let k = 0; k < 3; k++) {
+        ring([0.32, 0.72 + k * 0.1, 0.15], 0.1 + k * 0.06, 0xe26d2d, [0, 0, 0]);
+      }
+      return true;
+    }
+    case "kanbanWall": {
+      // 3D 3-column Kanban board monument with floating colorful task cards
+      b([0, 0.4, 0], [0.96, 0.68, 0.1], 0x282c34); // board frame
+      // Column 1: To Do (coral)
+      b([-0.3, 0.66, 0.055], [0.26, 0.06, 0.02], 0xe26d2d);
+      b([-0.3, 0.52, 0.06], [0.24, 0.12, 0.02], 0xfff8ec);
+      b([-0.3, 0.36, 0.06], [0.24, 0.12, 0.02], 0xfff8ec);
+      // Column 2: In Progress (teal)
+      b([0, 0.66, 0.055], [0.26, 0.06, 0.02], 0x2e6b68);
+      b([0, 0.48, 0.06], [0.24, 0.14, 0.02], 0xfff8ec);
+      bulb([0.08, 0.48, 0.08], 0.04, 0xfce88b); // weather badge
+      // Column 3: Done (green)
+      b([0.3, 0.66, 0.055], [0.26, 0.06, 0.02], 0x44a340);
+      b([0.3, 0.52, 0.06], [0.24, 0.12, 0.02], 0xfff8ec);
+      b([0.3, 0.36, 0.06], [0.24, 0.12, 0.02], 0xfff8ec);
+      b([0.3, 0.2, 0.06], [0.24, 0.12, 0.02], 0xfff8ec);
+      return true;
+    }
+    case "albumPrism": {
+      // Optical triangular prism pavilion, rainbow spectrum beam & photo frames
+      prism([0, 0.38, -0.08], [0.62, 0.68, 0.55], 0x86a8a6); // glass prism
+      // Refracted rainbow light beam
+      const rainbow = [0xd93829, 0xf2c94c, 0x44a340, 0x38bdf8, 0x7a5ea8];
+      for (let k = 0; k < 5; k++) {
+        hb([0.18 + k * 0.05, 0.38, 0.08], [0.03, 0.55, 0.015], rainbow[k], [0, 0.4, 0]);
+      }
+      // Staggered gallery picture frames
+      b([-0.28, 0.22, 0.22], [0.22, 0.28, 0.03], 0x3d3a42);
+      b([-0.28, 0.22, 0.238], [0.18, 0.24, 0.01], 0xe26d2d); // sunset photo
+      b([0.28, 0.24, 0.22], [0.26, 0.2, 0.03], 0x3d3a42);
+      b([0.28, 0.24, 0.238], [0.22, 0.16, 0.01], 0x4fa4b8); // ocean photo
+      return true;
+    }
+
+    // =========================================================================
+    // ⚙️ Island 09: youth (雲原生與全端架構島)
+    // =========================================================================
+    case "dockerStack": {
+      // Marine ship deck with stacked Docker blue/teal shipping containers & crane
+      b([0, 0.06, 0], [1.02, 0.1, 0.84], 0x3d444d); // cargo deck
+      // Stacked shipping containers
+      b([-0.2, 0.18, -0.1], [0.46, 0.18, 0.22], 0x2496ed); // Docker blue
+      b([0.22, 0.18, -0.05], [0.46, 0.18, 0.22], 0x2e6b68); // Teal
+      b([-0.06, 0.35, -0.08], [0.48, 0.18, 0.22], 0x0db7ed); // Cyan
+      b([0.18, 0.35, 0.16], [0.42, 0.18, 0.2], 0xe26d2d); // Orange
+      b([-0.12, 0.52, 0.05], [0.44, 0.18, 0.2], 0x38bdf8); // Light blue top
+      // Container hoisting crane
+      b([0.42, 0.42, -0.22], [0.08, 0.75, 0.08], 0xfce88b);
+      b([0.28, 0.78, -0.22], [0.38, 0.06, 0.06], 0xfce88b);
+      return true;
+    }
+    case "apiGateway": {
+      // Cyber neon twin-pillar gateway with streaming multi-language data nodes
+      b([-0.32, 0.42, 0], [0.16, 0.82, 0.22], 0x1e242b); // left pillar
+      b([0.32, 0.42, 0], [0.16, 0.82, 0.22], 0x1e242b); // right pillar
+      glow([0, 0.76, 0], [0.55, 0.1, 0.18], 0x00e5ff); // neon header
+      // Data packets streaming through the portal: Go, Java, TypeScript
+      bulb([-0.14, 0.42, 0], 0.09, 0x00acd7); // Go cyan
+      bulb([0, 0.45, 0], 0.09, 0xe76f51); // Java orange-red
+      bulb([0.14, 0.42, 0], 0.09, 0x3178c6); // TS blue
+      // Glowing stream rail
+      glow([0, 0.22, 0], [0.72, 0.02, 0.02], 0x00e5ff);
+      return true;
+    }
+    case "serverCluster": {
+      // 3 Stacked database drum cylinders & server racks with LED indicators
+      cy([-0.2, 0.28, -0.08], 0.34, 0.54, 0x2e6b68);
+      ring([-0.2, 0.28, -0.08], 0.36, 0x00e5ff, [0, 0, 0]); // glowing cyan data ring
+      cy([0.18, 0.35, -0.12], 0.36, 0.66, 0x235250);
+      ring([0.18, 0.35, -0.12], 0.38, 0x00e5ff, [0, 0, 0]);
+      cy([0.05, 0.22, 0.2], 0.28, 0.4, 0x38bdf8);
+      ring([0.05, 0.22, 0.2], 0.3, 0xffffff, [0, 0, 0]);
+      // Security firewall shield in foreground
+      b([-0.28, 0.18, 0.22], [0.24, 0.3, 0.04], 0x3d3a42);
+      ico([-0.28, 0.22, 0.25], 0.08, 0x44a340);
+      return true;
+    }
+
+    // =========================================================================
+    // ⚙️ Island 10: education (演算法與專案工坊島)
+    // =========================================================================
+    case "projectWorkshop": {
+      // Industrial red-brick agile studio, sawtooth roof & code kanban
+      b([-0.1, 0.26, -0.05], [0.74, 0.46, 0.48], 0xa6523f); // brick studio
+      // Sawtooth glass skylights
+      for (const sx of [-0.3, -0.1, 0.1]) {
+        prism([sx, 0.54, -0.05], [0.18, 0.16, 0.46], 0x86a8a6, [0, 0, Math.PI / 2]);
+      }
+      // Standing dev desk with dual screens
+      desk(0.24, 0.2);
+      screen(0.18, 0.2);
+      screen(0.3, 0.2);
+      // Sprint burndown chart whiteboard
+      b([-0.28, 0.18, 0.24], [0.26, 0.22, 0.02], 0xffffff);
+      hb([-0.28, 0.18, 0.252], [0.22, 0.02, 0.005], 0xd93829);
+      return true;
+    }
+    case "algoTree": {
+      // 3D Binary Tree / Graph network sculpture with glowing nodes & cyber links
+      cy([0, 0.06, 0], 0.82, 0.1, 0x3d3a42); // stone plinth
+      // Root node at top
+      bulb([0, 0.85, 0], 0.13, 0xfce88b);
+      // Child nodes
+      bulb([-0.26, 0.58, 0], 0.1, 0x38bdf8);
+      bulb([0.26, 0.58, 0], 0.1, 0xe26d2d);
+      // Leaf nodes
+      bulb([-0.4, 0.3, -0.06], 0.08, 0x44a340);
+      bulb([-0.13, 0.3, 0.06], 0.08, 0x44a340);
+      bulb([0.13, 0.3, -0.06], 0.08, 0x44a340);
+      bulb([0.4, 0.3, 0.06], 0.08, 0x44a340);
+      // Angled branch links
+      cy([-0.13, 0.72, 0], 0.02, 0.32, 0xc8bca8, [0, 0, 0.5]);
+      cy([0.13, 0.72, 0], 0.02, 0.32, 0xc8bca8, [0, 0, -0.5]);
+      cy([-0.33, 0.44, -0.03], 0.016, 0.32, 0xc8bca8, [0, 0, 0.45]);
+      cy([-0.2, 0.44, 0.03], 0.016, 0.32, 0xc8bca8, [0, 0, -0.45]);
+      cy([0.2, 0.44, -0.03], 0.016, 0.32, 0xc8bca8, [0, 0, 0.45]);
+      cy([0.33, 0.44, 0.03], 0.016, 0.32, 0xc8bca8, [0, 0, -0.45]);
+      return true;
+    }
+    case "ragCube": {
+      // 3x3 Rubik's Tensor Cube, AI neural core & embeddings pedestal
+      cy([0, 0.1, 0], 0.58, 0.16, 0x222428); // dark neural pedestal
+      ring([0, 0.12, 0], 0.62, 0x38bdf8, [0, 0, 0]); // glowing ring
+      // 3x3 tensor cube facets
+      const cubeColors = [0x7a5ea8, 0xe26d2d, 0x38bdf8, 0xfce88b, 0x44a340, 0xffffff];
+      for (let ix = -1; ix <= 1; ix++) {
+        for (let iy = -1; iy <= 1; iy++) {
+          for (let iz = -1; iz <= 1; iz++) {
+            if (ix === 0 && iy === 0 && iz === 0) continue;
+            const cc = cubeColors[Math.abs(ix * 3 + iy * 2 + iz) % cubeColors.length];
+            b([ix * 0.14, 0.45 + iy * 0.14, iz * 0.14], [0.12, 0.12, 0.12], cc);
+          }
+        }
+      }
+      bulb([0, 0.45, 0], 0.1, 0x00e5ff); // glowing neural core
+      return true;
+    }
+    case "codeForge": {
+      // Refactoring forge furnace, anvil & conveyor of golden packages
+      b([-0.22, 0.28, -0.08], [0.42, 0.52, 0.38], 0x2e2d30); // stone furnace
+      bulb([-0.22, 0.22, 0.1], 0.09, 0xff7a26); // furnace flame
+      // Anvil on timber block
+      cy([0.18, 0.1, 0.1], 0.16, 0.16, 0x6e523e);
+      b([0.18, 0.22, 0.1], [0.28, 0.1, 0.14], 0x5a585e); // anvil horn
+      // Conveyor belt with golden packages
+      b([0.02, 0.08, 0.26], [0.68, 0.06, 0.14], 0x222224);
+      b([-0.18, 0.14, 0.26], [0.1, 0.08, 0.1], 0xe8c547);
+      b([0.05, 0.14, 0.26], [0.1, 0.08, 0.1], 0xe8c547);
+      b([0.22, 0.14, 0.26], [0.1, 0.08, 0.1], 0xe8c547);
+      return true;
+    }
+
+    // =========================================================================
+    // ⚙️ Island 11: transport (極客工具與 HomeLab 島)
+    // =========================================================================
+    case "homelabRig": {
+      // 42U Server rack cabinet, triple-monitor battlestation & NAS tower
+      b([-0.2, 0.45, -0.08], [0.38, 0.85, 0.38], 0x1a1c20); // 42U rack
+      b([-0.2, 0.45, 0.112], [0.32, 0.78, 0.015], glass);
+      // Blinking LEDs
+      for (let k = 0; k < 6; k++) {
+        bulb([-0.3 + (k % 2) * 0.08, 0.2 + k * 0.1, 0.115], 0.02, k % 2 ? 0x44a340 : 0x38bdf8);
+      }
+      // Triple monitor battlestation desk
+      desk(0.2, 0.15);
+      b([0.2, 0.46, 0.15], [0.26, 0.16, 0.03], 0x1e242b); // center monitor
+      b([0.06, 0.46, 0.17], [0.22, 0.16, 0.03], 0x1e242b, [0, 0.3, 0]); // left angled
+      b([0.34, 0.46, 0.17], [0.22, 0.16, 0.03], 0x1e242b, [0, -0.3, 0]); // right angled
+      // NAS tower
+      b([0.38, 0.14, -0.15], [0.14, 0.22, 0.18], 0x2d3139);
+      return true;
+    }
+    case "mechKeyboard": {
+      // Giant custom mechanical keyboard sculpture & glowing CLI screen
+      b([0, 0.16, 0.08], [0.94, 0.14, 0.54], 0x2d3139, [0.18, 0, 0]); // angled chassis
+      // 3D keycaps: Esc coral, Enter teal, Alphas cream
+      b([-0.36, 0.25, -0.08], [0.08, 0.06, 0.08], 0xe26d2d, [0.18, 0, 0]); // ESC
+      b([0.34, 0.2, 0.14], [0.12, 0.06, 0.08], 0x2e6b68, [0.18, 0, 0]); // ENTER
+      b([0, 0.18, 0.26], [0.38, 0.05, 0.08], 0x2e6b68, [0.18, 0, 0]); // SPACE
+      // Keycap matrix
+      for (let r = 0; r < 3; r++) {
+        for (let c = 0; c < 6; c++) {
+          b([-0.26 + c * 0.1, 0.23 - r * 0.03, -0.04 + r * 0.1], [0.07, 0.05, 0.07], 0xfffdfb, [0.18, 0, 0]);
+        }
+      }
+      // Glowing CLI screen display at back
+      glow([0, 0.48, -0.22], [0.74, 0.34, 0.03], 0x1e242b);
+      hb([0, 0.48, -0.2], [0.65, 0.03, 0.005], 0xfcea8b); // amber prompt line
+      return true;
+    }
+    case "gitSwitchyard": {
+      // Branching & merging railway switchyard tracks with commit nodes & Linux penguin
+      b([0, 0.04, 0], [0.98, 0.06, 0.86], 0x6e6862); // switchyard ground
+      // Branching tracks
+      b([-0.3, 0.07, 0], [0.1, 0.02, 0.78], 0x3d3a42); // main line
+      b([0.1, 0.07, 0], [0.1, 0.02, 0.78], 0x3d3a42); // feat branch
+      // Glowing commit nodes
+      bulb([-0.3, 0.12, -0.22], 0.06, 0x44a340); // main commit
+      bulb([-0.3, 0.12, 0.0], 0.06, 0x44a340);
+      bulb([-0.3, 0.12, 0.22], 0.06, 0x44a340);
+      bulb([0.1, 0.12, -0.1], 0.06, 0xe26d2d); // feat commit
+      bulb([0.1, 0.12, 0.1], 0.06, 0xe26d2d);
+      // Switch signal tower
+      cy([0.34, 0.35, 0.1], 0.04, 0.65, 0x222224);
+      bulb([0.34, 0.68, 0.1], 0.06, 0x44a340); // green signal
+      return true;
+    }
+    case "macStudio": {
+      // Aluminum Mac Studio cube, Pro Display XDR & OpenCore motherboard circuit
+      b([0, 0.04, 0], [0.96, 0.06, 0.86], 0x1f2428); // motherboard circuit plinth
+      // Gold tracing lines
+      hb([0, 0.072, 0], [0.82, 0.005, 0.02], 0xe8c547);
+      hb([0, 0.072, 0], [0.02, 0.005, 0.72], 0xe8c547);
+      // Silver Aluminum Mac Studio cube
+      b([-0.18, 0.18, 0.12], [0.34, 0.22, 0.34], 0xd8dad9);
+      hb([-0.18, 0.18, 0.292], [0.05, 0.05, 0.005], 0x1a1c20); // Apple logo
+      // Pro Display XDR on silver stand
+      cy([-0.05, 0.28, -0.15], 0.025, 0.44, 0xd8dad9);
+      b([-0.05, 0.48, -0.14], [0.64, 0.38, 0.03], 0x1a1c20); // display glass
+      glow([-0.05, 0.48, -0.122], [0.6, 0.34, 0.008], 0x38bdf8); // macOS wallpaper glow
+      return true;
+    }
+
+    // =========================================================================
+    // 🎞️ Island 12: hakka (光影畫廊島 · Photo Album)
+    // =========================================================================
+    case "cameraPavilion": {
+      // Vintage SLR/Rangefinder Camera building, multi-ring lens & red shutter button
+      b([0, 0.24, 0], [0.84, 0.38, 0.46], 0x232225); // black leatherette body
+      b([0, 0.45, 0], [0.86, 0.08, 0.48], 0xd8dad9); // silver top plate
+      // Large protruding multi-ring camera lens barrel
+      cy([0, 0.24, 0.28], 0.28, 0.18, 0x1a1c20);
+      cy([0, 0.24, 0.34], 0.29, 0.03, 0xd8dad9); // silver aperture ring
+      cy([0, 0.24, 0.37], 0.22, 0.02, 0x244259); // multi-coated glass element
+      ring([0, 0.24, 0.37], 0.24, 0x7a5ea8, [0, 0, 0]); // purple anti-reflective flare
+      // Red shutter release button on top
+      cy([0.26, 0.52, 0.08], 0.06, 0.08, 0xd93829);
+      // Silver rangefinder window
+      b([-0.24, 0.45, 0.245], [0.1, 0.05, 0.015], 0x86a8a6);
+      return true;
+    }
+    case "photoWall": {
+      // Pinterest responsive masonry gallery partition walls & illuminated frames
+      b([-0.18, 0.32, -0.1], [0.55, 0.58, 0.06], 0xf4eee4);
+      b([0.18, 0.32, 0.1], [0.55, 0.58, 0.06], 0xf4eee4);
+      // Staggered gallery picture frames with landscape photos
+      const photos = [
+        [-0.32, 0.44, -0.06, 0xd94a2b], // sunset
+        [-0.1, 0.28, -0.06, 0x4fa4b8], // sea
+        [-0.1, 0.48, -0.06, 0x4d8b55], // mountain
+        [0.1, 0.42, 0.14, 0x7a5ea8], // night sky
+        [0.32, 0.3, 0.14, 0xe8c547], // gold field
+        [0.32, 0.5, 0.14, 0x38bdf8], // alpine lake
+      ];
+      for (const [px, py, pz, pc] of photos) {
+        b([px, py, pz], [0.18, 0.15, 0.02], 0x1f1d1d); // frame
+        hb([px, py, pz + 0.012], [0.15, 0.12, 0.005], pc); // photo
+      }
+      return true;
+    }
+    case "filmArch": {
+      // 35mm film strip archway & 2004-2026 timeline milestone pillars
+      ring([0, 0.38, 0], 0.45, 0x1f1d1d, [0, 0, 0]); // film arch
+      ring([0, 0.38, 0], 0.48, 0xd9aa58, [0, 0, 0]); // amber border
+      // 5 chronological timeline pillars (2004, 2010, 2015, 2020, 2026)
+      const milestones = [-0.36, -0.18, 0.0, 0.18, 0.36];
+      for (let k = 0; k < 5; k++) {
+        b([milestones[k], 0.12 + k * 0.04, 0.26], [0.08, 0.2 + k * 0.08, 0.08], 0xd9b382);
+        bulb([milestones[k], 0.24 + k * 0.08, 0.26], 0.03, 0xfce88b);
+      }
+      return true;
+    }
+    case "lightStudio": {
+      // Golden Hour beacon overlook tower & traditional photo darkroom
+      cone6([0, 0.48, -0.06], [0.44, 0.9, 0.44], 0xd9b382); // stone tower
+      cy([0, 0.88, -0.06], 0.22, 0.06, 0x3d3a42); // gallery
+      bulb([0, 0.94, -0.06], 0.16, 0xffaa26); // Golden Hour glowing beacon
+      // Darkroom studio cabin with red safelight window
+      b([-0.25, 0.16, 0.22], [0.38, 0.26, 0.32], 0x4a3d35);
+      glow([-0.25, 0.18, 0.385], [0.1, 0.1, 0.01], 0xd93829); // red darkroom safelight
+      return true;
+    }
+
+    // =========================================================================
+    // 🎞️ Island 13: welfare (歲月長河島 · Life Blog)
+    // =========================================================================
+    case "hourglassStele": {
+      // 2008-2026 Glass Hourglass monument & Annual Review granite stele
+      // Monumental glass hourglass
+      cy([0.18, 0.06, 0.1], 0.28, 0.06, 0x6e4735); // base
+      cy([0.18, 0.58, 0.1], 0.28, 0.06, 0x6e4735); // top
+      cone([0.18, 0.46, 0.1], [0.24, 0.18, 0.24], 0xb8ecff, [Math.PI, 0, 0]); // upper glass
+      cone([0.18, 0.18, 0.1], [0.24, 0.18, 0.24], 0xb8ecff); // lower glass
+      cone([0.18, 0.14, 0.1], [0.18, 0.08, 0.18], 0xfce88b); // sand pile
+      // Annual Review engraved granite stele
+      b([-0.22, 0.4, -0.05], [0.38, 0.74, 0.14], 0x3d3a42);
+      for (let k = 0; k < 6; k++) {
+        hb([-0.22, 0.2 + k * 0.09, 0.025], [0.26, 0.02, 0.005], 0xe8d5bb);
+      }
+      return true;
+    }
+    case "timeRiver": {
+      // Now or Never river of time, vermilion arched bridge & weeping willows
+      b([0, 0.03, 0], [0.98, 0.04, 0.44], 0x6ab4c9); // river
+      // Vermilion arched wooden footbridge
+      b([0.05, 0.18, 0], [0.26, 0.04, 0.52], 0xd93829);
+      hb([0.05 - 0.13, 0.25, 0], [0.015, 0.09, 0.52], 0xd93829);
+      hb([0.05 + 0.13, 0.25, 0], [0.015, 0.09, 0.52], 0xd93829);
+      // Weeping willow trees along bank
+      sphere([-0.32, 0.28, -0.2], 0.24, 0x9cc27a);
+      sphere([0.35, 0.28, 0.22], 0.22, 0x9cc27a);
+      // Signpost: Now or Never
+      cy([-0.22, 0.16, 0.26], 0.02, 0.26, 0x6e523e);
+      b([-0.22, 0.28, 0.26], [0.16, 0.08, 0.03], 0xcaa24a);
+      return true;
+    }
+    case "woodsCabin": {
+      // Shan-li mountain log cabin, stone chimney with smoke & tall conifers
+      b([-0.05, 0.2, 0], [0.56, 0.36, 0.46], 0x8a5a3a); // cedar log cabin
+      prism([-0.05, 0.44, 0], [0.62, 0.2, 0.5], 0x5c3a24, [0, 0, Math.PI / 2]); // shingle roof
+      // Stone fireplace chimney
+      b([0.22, 0.32, 0.05], [0.14, 0.55, 0.14], 0x6e6a64);
+      sphere([0.22, 0.64, 0.05], 0.06, 0xffffff); // smoke puff
+      sphere([0.24, 0.72, 0.07], 0.05, 0xffffff);
+      // Warm glowing windows
+      bulb([-0.05, 0.2, 0.235], 0.06, 0xfce88b);
+      // Surrounding conifers
+      cone6([-0.36, 0.3, -0.2], [0.28, 0.52, 0.28], 0x3d6647);
+      cone6([0.35, 0.26, -0.2], [0.24, 0.44, 0.24], 0x3d6647);
+      return true;
+    }
+    case "journalMonument": {
+      // 500,000-word fountain pen nib monument & night-train cafe car
+      // Giant golden fountain pen nib
+      prism([-0.18, 0.36, -0.05], [0.22, 0.62, 0.14], 0xe8c547);
+      b([-0.18, 0.12, -0.05], [0.16, 0.16, 0.12], 0x1f1d1d); // black grip
+      // Writing scroll parchment
+      b([-0.18, 0.05, 0.14], [0.34, 0.02, 0.26], 0xfff8ec);
+      // Vintage dark green night-train carriage cafe
+      b([0.2, 0.18, 0.12], [0.46, 0.22, 0.2], 0x224b38);
+      b([0.2, 0.28, 0.12], [0.48, 0.03, 0.22], 0x1f1d1d); // roof
+      glow([0.2, 0.18, 0.225], [0.38, 0.1, 0.01], 0xfcea8b); // lit carriage windows
+      return true;
+    }
+
+    // =========================================================================
+    // 🎞️ Island 14: lunch (技術情報與衝浪島 · News Log)
+    // =========================================================================
+    case "radarTower": {
+      // Tech radar dish communications tower & intelligence bunker
+      cy([0, 0.42, -0.08], 0.1, 0.8, 0x4a525d); // lattice mast
+      dome([0, 0.78, -0.08], [0.44, 0.18, 0.44], 0xf4f1ea, [0.4, 0, 0]); // tilted parabolic dish
+      cone([0, 0.86, -0.02], [0.08, 0.14, 0.08], 0xe26d2d); // feed horn
+      ring([0, 0.88, 0.05], 0.22, 0x00e5ff, [0.4, 0, 0]); // signal waves
+      // Hexagonal operations station
+      cone6([0, 0.14, -0.08], [0.54, 0.24, 0.54], 0x2e6b68);
+      return true;
+    }
+    case "surfWave": {
+      // Sculpted curling ocean wave sculpture with yellow surfboard & website milestone
+      // Breaking ocean wave curl
+      cy([0, 0.28, 0], 0.52, 0.5, 0x24627d); // deep ocean base
+      dome([0, 0.44, 0], [0.48, 0.36, 0.48], 0x48bfe3); // translucent turquoise curl
+      // White sea foam crest & spray
+      sphere([0.15, 0.58, 0.15], 0.14, 0xffffff);
+      sphere([-0.1, 0.56, 0.2], 0.12, 0xffffff);
+      sphere([0.26, 0.62, 0.1], 0.08, 0xffffff);
+      // Aerodynamic yellow surfboard riding the wave
+      b([0.1, 0.46, 0.24], [0.26, 0.03, 0.1], 0xfce88b, [0.4, 0.3, -0.3]);
+      // Site redesign milestone monument
+      b([-0.28, 0.14, 0.26], [0.22, 0.24, 0.08], 0x3d3a42);
+      return true;
+    }
+    case "calcPavilion": {
+      // Retro scientific calculator pad, LCD screen & wooden abacus pavilion
+      b([-0.12, 0.18, 0.05], [0.48, 0.16, 0.58], 0x2c3038, [0.18, 0, 0]); // chassis
+      glow([-0.12, 0.25, -0.15], [0.38, 0.08, 0.02], 0x86c29d); // LCD screen
+      // 3D keypads
+      for (let r = 0; r < 4; r++) {
+        for (let c = 0; c < 3; c++) {
+          b([-0.24 + c * 0.12, 0.23 - r * 0.03, -0.02 + r * 0.11], [0.08, 0.04, 0.07], [0x38bdf8, 0xe26d2d, 0xf6efe6][(r + c) % 3], [0.18, 0, 0]);
+        }
+      }
+      // Wooden abacus pavilion
+      b([0.28, 0.24, 0.15], [0.28, 0.38, 0.18], 0x7a4c32);
+      for (let k = 0; k < 3; k++) cy([0.28, 0.15 + k * 0.08, 0.15], 0.04, 0.14, 0xcaa24a); // beads
+      return true;
+    }
+    case "cloudUplink": {
+      // Floating stylized cloud platform, glowing uplink beam & satellite dish
+      // Cloud platform (overlapping white spheres)
+      sphere([-0.12, 0.36, -0.05], 0.24, 0xffffff);
+      sphere([0.12, 0.38, -0.05], 0.26, 0xffffff);
+      sphere([0, 0.44, -0.05], 0.28, 0xffffff);
+      sphere([0.22, 0.34, 0.08], 0.2, 0xf0f7ff);
+      sphere([-0.2, 0.34, 0.08], 0.2, 0xf0f7ff);
+      // Glowing vertical uplink beam
+      glow([0, 0.22, 0], [0.08, 0.44, 0.08], 0x00e5ff);
+      // Satellite antenna on cloud
+      cy([0, 0.62, -0.05], 0.03, 0.28, 0xd8dad9);
+      dome([0, 0.74, -0.05], [0.2, 0.08, 0.2], 0xffffff, [0.5, 0, 0]);
+      // Ground laptop terminal
+      b([0, 0.06, 0.26], [0.22, 0.02, 0.16], 0x222224);
+      b([0, 0.14, 0.2], [0.22, 0.14, 0.015], 0x38bdf8, [0.3, 0, 0]);
+      return true;
+    }
+
+    // =========================================================================
+    // Legacy & Existing Visual Models (Fallbacks & Shared Modules)
+    // =========================================================================
     case "cityhall": {
-      // wide, symmetric two-storey civic office with glass curtain wall and rooftop garden
       b([0, 0.05, 0.02], [1.08, 0.1, 0.66], stone); // podium
       for (const s of [-1, 1]) b([s * 0.33, 0.32, -0.02], [0.4, 0.44, 0.5], warm); // wings
       b([0, 0.36, 0.0], [0.3, 0.52, 0.54], 0xf1e6d3); // centre block
-      // glass curtain on wings (front) with mullions
       for (const s of [-1, 1]) {
         glow([s * 0.33, 0.33, 0.235], [0.34, 0.34, 0.012], 0x9fc4c6);
         for (let k = 0; k < 4; k++) hb([s * 0.33 - 0.15 + k * 0.1, 0.33, 0.243], [0.01, 0.34, 0.01], 0x6f6a62);
         hb([s * 0.33, 0.33, 0.243], [0.34, 0.01, 0.01], 0x6f6a62);
       }
-      // entrance canopy & columns
       b([0, 0.27, 0.31], [0.34, 0.03, 0.14], C.coral);
       for (const s of [-0.12, -0.04, 0.04, 0.12]) cy([s, 0.17, 0.35], 0.03, 0.2, 0xf6efe3);
       glow([0, 0.15, 0.275], [0.12, 0.17, 0.01], 0xb8d3d1);
-      // roof slab, rooftop garden
       for (const s of [-1, 1]) {
         b([s * 0.33, 0.56, -0.02], [0.43, 0.04, 0.53], 0xcfbfa6);
         for (let k = 0; k < 3; k++) plant(s * 0.33 - 0.12 + k * 0.12, -0.05 + (k % 2) * 0.1, 0.16);
       }
       b([0, 0.64, 0.0], [0.33, 0.04, 0.57], 0xcfbfa6);
-      // flagless roof sign band
       b([0, 0.68, 0.24], [0.26, 0.06, 0.03], C.ink);
       glow([0, 0.68, 0.258], [0.2, 0.025, 0.006], 0xfcea8b);
-      // bike racks and planters in front of podium
       for (let k = 0; k < 4; k++) ring([-0.42 + k * 0.06, 0.13, 0.4], 0.07, C.ink, [0, 0, 0]);
       for (const s of [-1, 1]) {
         b([s * 0.28, 0.13, 0.42], [0.12, 0.06, 0.06], 0xb79a7b);
@@ -53,7 +1082,6 @@ export function extraModel(kind, h) {
       }
       p("cone", [0, 1.38, 0], [0.24, 0.26, 0.24], 0xa34e34);
       bulb([0, 1.53, 0], 0.04);
-      // benches with coffee cups around the plaza base
       for (const s of [-1, 1]) {
         b([s * 0.34, 0.08, 0.1], [0.08, 0.04, 0.26], wood);
         b([s * 0.34, 0.04, 0.1], [0.06, 0.06, 0.22], C.ink);
@@ -61,7 +1089,6 @@ export function extraModel(kind, h) {
       return true;
     }
     case "kiosk": {
-      // EAP point kiosk — vending style booth
       b([0, 0.28, -0.05], [0.42, 0.56, 0.32], 0x7aa58f);
       glow([0, 0.36, 0.115], [0.3, 0.22, 0.01], 0xd8f0e2);
       for (let k = 0; k < 3; k++) sphere([-0.09 + k * 0.09, 0.36, 0.125], [0.05, 0.05, 0.01], [C.coral, 0xfcea8b, 0xffffff][k]);
@@ -99,566 +1126,23 @@ export function extraModel(kind, h) {
       return true;
     }
     case "aipod": {
-      // rounded work capsule with antenna and status light (no desk)
-      p("rbox", [0, 0.24, -0.04], [0.5, 0.4, 0.38], 0x2f3a46);
-      glow([0, 0.26, 0.152], [0.38, 0.2, 0.01], 0x9fd8e6);
-      for (let k = 0; k < 4; k++) hb([-0.13 + k * 0.087, 0.26, 0.16], [0.006, 0.18, 0.006], 0x2f3a46);
-      cy([0.16, 0.5, -0.1], 0.02, 0.14, C.ink);
-      bulb([0.16, 0.58, -0.1], 0.05, 0x9fffd0);
-      sphere([-0.12, 0.47, -0.08], [0.14, 0.06, 0.14], 0x58c4dd);
-      for (const s of [-1, 1]) cy([s * 0.2, 0.03, 0.1], 0.06, 0.06, 0x58585f);
+      cy([0, 0.04, 0], 0.58, 0.08, stone);
+      cy([0, 0.22, 0], 0.46, 0.28, 0xf1e8dc);
+      glow([0, 0.24, 0.22], [0.24, 0.14, 0.01], 0x00e5ff);
+      cy([0, 0.4, 0], 0.5, 0.08, teal);
+      p("cone", [0, 0.55, 0], [0.38, 0.22, 0.38], 0x2e6b68);
+      bulb([0, 0.69, 0], 0.05, 0xfcea8b);
       return true;
     }
-    // ---------------- 台北研究院 ----------------
     case "researchdome": {
-      // long-term planning research: glass dome over a city sand-table, researchers round a table
-      b([0, 0.05, 0], [0.98, 0.1, 0.84], 0xe8e6df);
-      cy([-0.1, 0.18, 0.02], 0.7, 0.18, 0xf7f6f2);
-      p("dome", [-0.1, 0.27, 0.02], [0.68, 0.62, 0.68], 0xbfe0e2);
-      for (let k = 0; k < 4; k++) ring([-0.1, 0.27, 0.02], 0.34, 0xffffff, [0, (k * Math.PI) / 4, 0]);
-      for (let k = 0; k < 9; k++) b([-0.25 + (k % 3) * 0.1, 0.3 + (k % 2) * 0.02, -0.08 + Math.floor(k / 3) * 0.1], [0.06, 0.05 + (k % 3) * 0.04, 0.06], [teal, 0xf2e6d2, C.coral][k % 3]);
-      // outdoor sand-table with a tiny hex city and researchers around it
-      b([0.24, 0.12, 0.3], [0.34, 0.04, 0.24], wood);
-      b([0.24, 0.145, 0.3], [0.3, 0.01, 0.2], 0xd8c39a);
-      for (let k = 0; k < 6; k++) p("cylinder", [0.14 + (k % 3) * 0.1, 0.17, 0.25 + Math.floor(k / 3) * 0.1], [0.08, 0.03 + (k % 2) * 0.04, 0.08], [teal, C.coral, 0xe8c547][k % 3]);
-      // giant magnifying glass over the sand-table city = research
-      ring([0.24, 0.42, 0.3], 0.2, C.ink, [0, 0, 0]);
-      p("dome", [0.24, 0.42, 0.3], [0.17, 0.17, 0.03], 0xcfe8ee, [Math.PI / 2, 0, 0]);
-      p("box", [0.38, 0.27, 0.3], [0.04, 0.18, 0.04], C.ink, [0, 0, 0.7]);
-      person(0.06, 0.4, 0.34);
-      person(0.44, 0.36, 0.34);
-      person(0.42, 0.14, 0.34);
-      // observatory tower
-      b([0.36, 0.45, -0.24], [0.16, 0.9, 0.16], 0xffffff);
-      for (let k = 0; k < 5; k++) hb([0.36, 0.12 + k * 0.17, -0.157], [0.12, 0.012, 0.01], teal);
-      cy([0.36, 0.93, -0.24], 0.2, 0.05, teal);
-      p("dome", [0.36, 0.95, -0.24], [0.16, 0.14, 0.16], 0xe6eef0);
-      bulb([0.36, 1.08, -0.24], 0.03, 0xff9f8a);
-      b([-0.1, 0.13, 0.4], [0.24, 0.16, 0.06], teal);
-      glow([-0.1, 0.12, 0.433], [0.14, 0.11, 0.006], 0xd5ecee);
-      return true;
-    }
-    case "childcenter": {
-      // child-safety governance centre: shield emblem, three data pipes (education / welfare / police)
-      // flowing into a control screen, a raised crossing with a child holding an adult's hand at the door
-      b([0.1, 0.22, -0.16], [0.56, 0.42, 0.34], 0xf7f6f2);
-      b([0.1, 0.45, -0.16], [0.6, 0.04, 0.38], teal);
-      // big shield on the facade
-      p("rbox", [0.1, 0.3, 0.02], [0.2, 0.2, 0.03], 0x4a6fa5);
-      p("tetra", [0.1, 0.17, 0.02], [0.2, 0.1, 0.03], 0x4a6fa5, [Math.PI, Math.PI / 4, 0]);
-      // child pictogram on the shield (not a medical cross)
-      sphere([0.1, 0.355, 0.042], 0.035, 0xffffff);
-      p("rbox", [0.1, 0.29, 0.042], [0.05, 0.07, 0.01], 0xffffff);
-      // small rooftop shield emblem, visible from above
-      p("rbox", [0.1, 0.55, -0.16], [0.16, 0.16, 0.03], 0x4a6fa5, [0, 0, Math.PI / 4]);
-      sphere([0.1, 0.57, -0.14], 0.03, 0xffffff);
-      // control screen on roof edge + three pipes in brand colours
-      glow([-0.08, 0.6, -0.16], [0.26, 0.14, 0.02], 0x9fe3e6);
-      b([-0.08, 0.6, -0.175], [0.3, 0.18, 0.02], C.ink);
-      const pipes = [
-        [-0.42, 0.22, 0xe8c547], // education (book yellow)
-        [-0.42, 0.02, 0xd76b8a], // welfare (heart pink)
-        [-0.42, -0.18, 0x4a6fa5], // police (blue)
-      ];
-      for (const [x, zz, c] of pipes) {
-        p("rbox", [x, 0.12, zz], [0.12, 0.24, 0.12], c);
-        p("rbox", [x, 0.27, zz], [0.08, 0.04, 0.08], 0xffffff);
-        // pipe rising to the screen
-        cy([x, 0.36, zz], 0.035, 0.24, c);
-        p("cylinder", [(x - 0.08) / 2, 0.48, (zz - 0.16) / 2], [0.035, Math.hypot(x + 0.08, zz + 0.16), 0.035], c, [Math.PI / 2, 0, Math.atan2(x + 0.08, -(zz + 0.16))]);
-      }
-      // freestanding guardian shield monument in the forecourt: big blue shield, white child silhouette, three
-      // coloured rings (education / welfare / police) — reads as "protecting children" from any angle
-      b([0.34, 0.05, 0.3], [0.26, 0.1, 0.2], 0xe9e4da);
-      p("rbox", [0.34, 0.47, 0.3], [0.44, 0.44, 0.06], 0x3f63a8);
-      p("tetra", [0.34, 0.2, 0.3], [0.44, 0.24, 0.06], 0x3f63a8, [Math.PI, Math.PI / 4, 0]);
-      p("rbox", [0.34, 0.47, 0.3], [0.37, 0.37, 0.062], 0x5b80c4);
-      // adult + child holding hands, in white, on the shield
-      sphere([0.29, 0.6, 0.335], 0.05, 0xffffff);
-      p("rbox", [0.29, 0.47, 0.335], [0.07, 0.17, 0.012], 0xffffff);
-      sphere([0.4, 0.53, 0.335], 0.04, 0xffffff);
-      p("rbox", [0.4, 0.43, 0.335], [0.055, 0.12, 0.012], 0xffffff);
-      p("rbox", [0.345, 0.45, 0.335], [0.07, 0.015, 0.012], 0xffffff);
-      for (const [dx, c] of [[-0.12, 0xe8c547], [0, 0xd76b8a], [0.12, 0x4a6fa5]]) ring([0.34 + dx, 0.8, 0.3], 0.09, c, [0, 0, 0]);
-      // raised zebra crossing at the door with child + adult
-      for (let k = 0; k < 5; k++) hb([0.1 - 0.16 + k * 0.08, 0.025, 0.3], [0.05, 0.012, 0.18], k % 2 ? 0xffffff : 0xe8e2d6);
-      person(-0.02, 0.32, 0.26);
-      person(0.15, 0.32, 0.38);
-      return true;
-    }
-    case "rampcenter": {
-      // accessible-city design centre: building with a long switchback ramp, a wheelchair user,
-      // tactile paving and a city blueprint on an easel
-      b([0.16, 0.22, -0.16], [0.46, 0.44, 0.34], 0xf2efe8);
-      b([0.16, 0.46, -0.16], [0.5, 0.04, 0.38], teal2);
-      glow([0.16, 0.16, 0.016], [0.16, 0.22, 0.006], 0xd5ecee);
-      // big accessibility sign on a pole: white wheelchair figure on blue
-      cy([0.42, 0.3, 0.32], 0.02, 0.6, C.ink);
-      p("rbox", [0.42, 0.72, 0.32], [0.3, 0.3, 0.03], 0x2f5fb0);
-      {
-        // International Symbol of Access, drawn flat on the board face: head, back, arm, seat, shin + foot, wheel
-        const W = 0xffffff, cx = 0.42, cy0 = 0.72, z = 0.339;
-        const bar = (u, v, w, h, rz = 0) => p("box", [cx + u, cy0 + v, z], [w, h, 0.006], W, [0, 0, rz]);
-        sphere([cx - 0.03, cy0 + 0.098, z], [0.046, 0.046, 0.008], W); // head
-        bar(-0.038, 0.03, 0.026, 0.08, -0.12); // back
-        bar(0.005, 0.035, 0.07, 0.02); // arm reaching forward
-        bar(0.006, -0.012, 0.09, 0.024); // seat / thigh
-        bar(0.052, -0.046, 0.024, 0.07, 0.25); // shin
-        bar(0.078, -0.078, 0.046, 0.02); // foot
-        ring([cx - 0.035, cy0 - 0.045, z], 0.122, W, [0, 0, 0]); // wheel (two rings = a bolder stroke)
-        ring([cx - 0.035, cy0 - 0.045, z], 0.106, W, [0, 0, 0]);
-      }
-      // switchback ramp to the door
-      p("box", [-0.14, 0.06, 0.14], [0.46, 0.025, 0.14], 0xd8d2c6, [0, 0, -0.14]);
-      p("box", [-0.14, 0.075, 0.14], [0.46, 0.006, 0.03], 0xe8c547, [0, 0, -0.14]);
-      for (const s of [-1, 1]) p("box", [-0.14, 0.15, 0.14 + s * 0.07], [0.46, 0.012, 0.012], C.ink, [0, 0, -0.14]);
-      b([0.12, 0.09, 0.1], [0.14, 0.04, 0.16], 0xd8d2c6);
-      // wheelchair user on the ramp
-      ring([-0.24, 0.13, 0.17], 0.13, C.ink, [0, 0, 0]);
-      ring([-0.24, 0.13, 0.11], 0.13, C.ink, [0, 0, 0]);
-      b([-0.24, 0.17, 0.14], [0.1, 0.03, 0.08], C.coral);
-      person(-0.24, 0.14, 0.3);
-      // blueprint easel
-      for (const s of [-1, 1]) cy([-0.36 + s * 0.06, 0.16, -0.24], 0.012, 0.32, wood);
-      b([-0.36, 0.3, -0.23], [0.2, 0.15, 0.01], 0x2e5f99);
-      for (let k = 0; k < 3; k++) hb([-0.36, 0.26 + k * 0.035, -0.224], [0.15, 0.005, 0.004], 0xcfe6ff);
-      return true;
-    }
-    case "loopgarden": {
-      // dementia-friendly centre: warm-lit cottage, a looping garden walk with rest benches,
-      // an elder walking with a companion, and tall wayfinding posts in distinct colours
-      b([-0.2, 0.17, -0.22], [0.42, 0.34, 0.28], 0xfbf3e6);
-      p("prism", [-0.2, 0.42, -0.22], [0.46, 0.3, 0.32], C.coral, [0, 0, Math.PI / 2]);
-      for (const s of [-1, 1]) glow([-0.2 + s * 0.11, 0.18, -0.077], [0.1, 0.1, 0.006], 0xffd38a);
-      ring([0.14, 0.02, 0.14], 0.56, 0xd9cbb4, [Math.PI / 2, 0, 0]);
-      ring([0.14, 0.02, 0.14], 0.46, 0xd9cbb4, [Math.PI / 2, 0, 0]);
-      cy([0.14, 0.022, 0.14], 0.38, 0.03, 0xa9bf8e);
-      plant(0.14, 0.14, 0.3);
-      for (let k = 0; k < 6; k++) {
-        const a = (k / 6) * Math.PI * 2;
-        sphere([0.14 + Math.cos(a) * 0.33, 0.06, 0.14 + Math.sin(a) * 0.33], 0.06, [0xf2b5c6, 0xfcea8b, 0xd9c6f0][k % 3]);
-      }
-      // wayfinding posts (colour = place)
-      for (const [x, zz, c] of [[0.42, -0.12, 0xe8c547], [-0.12, 0.42, 0x5f9aa6], [0.44, 0.38, C.coral]]) {
-        cy([x, 0.16, zz], 0.025, 0.32, C.ink);
-        sphere([x, 0.34, zz], 0.06, c);
-      }
-      b([0.4, 0.06, 0.12], [0.16, 0.035, 0.06], wood);
-      // forget-me-not sculpture: five blue-violet petals around a yellow heart, on a stem
-      cy([-0.36, 0.25, 0.34], 0.025, 0.5, 0x6f8a62);
-      for (let k = 0; k < 5; k++) {
-        const a = (k / 5) * Math.PI * 2;
-        sphere([-0.36 + Math.cos(a) * 0.1, 0.56 + Math.sin(a) * 0.1, 0.36], [0.085, 0.085, 0.035], 0x7f8fe0);
-      }
-      sphere([-0.36, 0.56, 0.38], 0.05, 0xf2c94c);
-      // elder + companion walking together
-      person(-0.06, 0.38, 0.36);
-      person(0.11, 0.4, 0.38);
-      cy([-0.14, 0.1, 0.38], 0.01, 0.2, 0x8a6a4e);
-      return true;
-    }
-    // ---------------- 青年 ----------------
-    case "containers": {
-      const cols = [0xe8b04a, C.coral, 0x3e7c8c, 0xe7a383, 0xd9c3a0];
-      const stack = [
-        [-0.2, 0, 0.1, 0],
-        [0.2, 0, -0.1, 1],
-        [-0.05, 1, -0.05, 2],
-        [0.25, 1, 0.12, 3],
-        [-0.15, 2, 0.02, 4],
-      ];
-      for (const [x, lvl, zz, ci] of stack) {
-        const y = 0.12 + lvl * 0.24;
-        b([x, y, zz], [0.42, 0.22, 0.24], cols[ci], [0, lvl % 2 ? 0.25 : -0.1, 0]);
-        for (let k = 0; k < 6; k++) hb([x - 0.17 + k * 0.068, y, zz + 0.123], [0.01, 0.2, 0.006], 0x000000);
-        glow([x + 0.08, y + 0.01, zz + 0.125], [0.12, 0.1, 0.006], 0xfff1c8);
-      }
-      // external stairs & neon sign
-      for (let k = 0; k < 5; k++) hb([0.46, 0.05 + k * 0.05, 0.3 - k * 0.05], [0.12, 0.02, 0.05], C.ink);
-      glow([-0.15, 0.78, 0.15], [0.26, 0.06, 0.01], 0xffc48a);
-      // laptop bar under awning
-      b([-0.32, 0.14, 0.38], [0.36, 0.04, 0.1], wood);
-      for (let k = 0; k < 3; k++) {
-        hb([-0.44 + k * 0.12, 0.17, 0.37], [0.07, 0.006, 0.05], 0x58585f);
-        glow([-0.44 + k * 0.12, 0.2, 0.35], [0.07, 0.05, 0.004], 0x9fd8e6);
-      }
-      return true;
-    }
-    case "jars": {
-      b([0, 0.05, 0], [0.7, 0.1, 0.4], 0x58a6a6);
-      for (const s of [-1, 1]) {
-        p("cylinder", [s * 0.17, 0.32, 0], [0.24, 0.4, 0.24], 0xd8eef0);
-        p("cylinder", [s * 0.17, 0.54, 0], [0.18, 0.05, 0.18], C.ink);
-        for (let k = 0; k < (s < 0 ? 4 : 4); k++) cy([s * 0.17, 0.14 + k * 0.045, 0], 0.16, 0.035, 0xe8c547);
-      }
-      // "+" between jars (matching, no amounts)
-      b([0, 0.34, 0.06], [0.1, 0.025, 0.02], C.coral);
-      b([0, 0.34, 0.06], [0.025, 0.1, 0.02], C.coral);
-      return true;
-    }
-    case "stage": {
-      b([0, 0.07, -0.1], [0.9, 0.14, 0.5], 0x3a3540);
-      b([0, 0.145, -0.1], [0.86, 0.01, 0.46], 0xc9a97f);
-      // truss + lights
-      for (const s of [-1, 1]) hb([s * 0.43, 0.42, -0.3], [0.03, 0.56, 0.03], 0x58585f);
-      hb([0, 0.7, -0.3], [0.9, 0.03, 0.03], 0x58585f);
-      for (let k = 0; k < 5; k++) bulb([-0.32 + k * 0.16, 0.66, -0.27], 0.04, [0xffd28a, 0xff9fc8, 0x9fd8e6][k % 3]);
-      glow([0, 0.4, -0.34], [0.6, 0.3, 0.01], 0xe8c547);
-      // paper plane launch ramp pointing outward
-      p("box", [0.32, 0.22, 0.28], [0.36, 0.03, 0.12], C.coral, [0, -0.5, 0.35]);
-      for (let k = 0; k < 3; k++) p("tetra", [0.42 + k * 0.1, 0.36 + k * 0.08, 0.2 - k * 0.07], [0.08, 0.02, 0.12], 0xffffff, [Math.PI / 2, 0.6, 0]);
-      // audience
-      for (let k = 0; k < 4; k++) person(-0.3 + k * 0.17, 0.28, 0.3);
-      return true;
-    }
-    // ---------------- 城市外交 ----------------
-    case "infinityforum": {
-      // a coral ∞ walkway (lemniscate) with a round canopy where the loops cross
-      const A = 0.62;
-      const pt = (t) => {
-        const d = 1 + Math.sin(t) ** 2;
-        return [(A * Math.cos(t)) / d, (A * Math.sin(t) * Math.cos(t)) / d];
-      };
-      for (let k = 0; k < 44; k++) {
-        const t0 = (k / 44) * Math.PI * 2,
-          t1 = ((k + 1) / 44) * Math.PI * 2;
-        const [x0, z0] = pt(t0),
-          [x1, z1] = pt(t1);
-        const len = Math.hypot(x1 - x0, z1 - z0);
-        hb([(x0 + x1) / 2, 0.025, (z0 + z1) / 2 + 0.05], [0.09, 0.02, len + 0.012], k % 2 ? C.coral : 0xe98a66, [0, Math.atan2(x1 - x0, z1 - z0), 0]);
-      }
-      for (const s of [-1, 1]) {
-        cy([s * 0.4, 0.02, 0.05], 0.3, 0.02, 0xa9bf8e);
-        plant(s * 0.4, 0.05, 0.22);
-      }
-      for (let k = 0; k < 5; k++) {
-        const a = (k / 5) * Math.PI * 2;
-        cy([Math.cos(a) * 0.12, 0.17, 0.05 + Math.sin(a) * 0.12], 0.016, 0.3, 0xffffff);
-      }
-      p("dome", [0, 0.32, 0.05], [0.36, 0.1, 0.36], 0xf3eadb);
-      ring([0, 0.32, 0.05], 0.18, C.coral, [Math.PI / 2, 0, 0]);
-      cy([0, 0.1, 0.05], 0.13, 0.02, wood);
+      b([0, 0.04, 0], [0.94, 0.08, 0.94], stone);
+      p("dome", [0, 0.34, 0], [0.72, 0.54, 0.72], 0xb6d5d2);
+      cy([0, 0.12, 0], 0.76, 0.14, 0xe8dfd0);
+      cy([0, 0.18, 0], 0.34, 0.14, wood);
       for (let k = 0; k < 4; k++) {
-        const a = (k / 4) * Math.PI * 2 + 0.4;
-        b([Math.cos(a) * 0.1, 0.06, 0.05 + Math.sin(a) * 0.1], [0.05, 0.05, 0.05], C.coral);
+        const a = (k / 4) * Math.PI * 2;
+        seat(Math.cos(a) * 0.26, Math.sin(a) * 0.26);
       }
-      return true;
-    }
-    case "terminal": {
-      // departures / arrivals hall with a two-way canopy
-      b([0, 0.2, -0.16], [0.7, 0.4, 0.26], 0xf2efe8);
-      p("box", [0, 0.44, -0.12], [0.8, 0.04, 0.4], 0x5f9aa6, [0.12, 0, 0]);
-      glow([-0.17, 0.2, -0.025], [0.18, 0.26, 0.008], 0xd5ecee);
-      glow([0.17, 0.2, -0.025], [0.18, 0.26, 0.008], 0xd5ecee);
-      // big arrows on the canopy edge: out (coral) / back (teal)
-      p("tetra", [-0.2, 0.52, 0.08], [0.1, 0.12, 0.02], C.coral, [Math.PI / 2, 0, Math.PI / 2]);
-      hb([-0.27, 0.52, 0.08], [0.1, 0.02, 0.04], C.coral);
-      p("tetra", [0.2, 0.52, 0.08], [0.1, 0.12, 0.02], 0x3e7c8c, [Math.PI / 2, 0, -Math.PI / 2]);
-      hb([0.27, 0.52, 0.08], [0.1, 0.02, 0.04], 0x3e7c8c);
-      // floor guide lines out / in
-      for (let k = 0; k < 4; k++) {
-        hb([-0.17, 0.006, 0.08 + k * 0.08], [0.04, 0.004, 0.05], C.coral);
-        hb([0.17, 0.006, 0.08 + k * 0.08], [0.04, 0.004, 0.05], 0x3e7c8c);
-      }
-      // luggage cart
-      hb([0.36, 0.06, 0.3], [0.16, 0.02, 0.1], 0x58585f);
-      for (let k = 0; k < 3; k++) p("rbox", [0.31 + k * 0.05, 0.11 + (k % 2) * 0.03, 0.3], [0.045, 0.1 + (k % 2) * 0.05, 0.08], [C.coral, 0x3e7c8c, 0xe8c547][k]);
-      return true;
-    }
-    case "democrossing": {
-      // raised crosswalk, refuge island, tightened corner (per transport policy toolkit)
-      hb([0, 0.02, 0], [0.9, 0.04, 0.44], 0x6a6560);
-      p("box", [0, 0.055, 0], [0.26, 0.04, 0.44], 0xd9c3a3);
-      for (let k = 0; k < 6; k++) hb([0, 0.078, -0.18 + k * 0.072], [0.24, 0.006, 0.036], 0xffffff);
-      b([-0.36, 0.06, 0], [0.12, 0.06, 0.1], 0xa9bf8e);
-      for (const s of [-1, 1]) {
-        cy([s * 0.18, 0.06, 0.28], 0.18, 0.08, 0xd2c3ad);
-        cy([s * 0.32, 0.18, 0.28], 0.02, 0.28, C.ink);
-        p("rbox", [s * 0.32, 0.34, 0.28], [0.08, 0.08, 0.015], 0xe8c547);
-      }
-      // signpost with names only
-      cy([0.4, 0.25, -0.26], 0.02, 0.5, C.ink);
-      p("rbox", [0.4, 0.45, -0.24], [0.18, 0.05, 0.015], 0xffffff, [0, 0.3, 0]);
-      p("rbox", [0.4, 0.37, -0.24], [0.18, 0.05, 0.015], 0xffffff, [0, -0.4, 0]);
-      return true;
-    }
-    case "blueprint": {
-      b([0, 0.12, 0], [0.56, 0.06, 0.4], wood);
-      for (const s of [-1, 1]) for (const t of [-1, 1]) hb([s * 0.24, 0.05, t * 0.16], [0.03, 0.1, 0.03], C.ink);
-      p("box", [-0.05, 0.16, 0.0], [0.44, 0.01, 0.32], 0x4a6fa5, [0, 0.05, 0]);
-      for (let k = 0; k < 4; k++) hb([-0.2 + k * 0.1, 0.168, 0.0], [0.006, 0.002, 0.28], 0xd5e4f5);
-      // miniature institute model on the table
-      p("dome", [0.17, 0.165, -0.08], [0.12, 0.1, 0.12], 0xbfe0e2);
-      hb([0.24, 0.22, -0.13], [0.03, 0.12, 0.03], 0xffffff);
-      cy([-0.2, 0.2, 0.12], 0.035, 0.08, 0xd5e4f5);
-      return true;
-    }
-    case "arrivals": {
-      b([0, 0.04, 0], [0.7, 0.08, 0.5], 0xe9dcc4);
-      // icon-only board
-      for (const s of [-1, 1]) hb([s * 0.22, 0.28, -0.16], [0.03, 0.48, 0.03], C.ink);
-      p("rbox", [0, 0.4, -0.16], [0.5, 0.26, 0.03], 0x2f3a46);
-      const ic = [C.coral, 0xe8c547, 0x58a6a6, 0x9fd8e6, 0xf2a1a1, 0xffffff];
-      for (let k = 0; k < 6; k++) glow([-0.15 + (k % 3) * 0.15, 0.45 - Math.floor(k / 3) * 0.1, -0.142], [0.08, 0.06, 0.004], ic[k]);
-      // bench + suitcases
-      b([0, 0.12, 0.15], [0.4, 0.04, 0.1], wood);
-      for (let k = 0; k < 2; k++) p("rbox", [-0.25 + k * 0.5, 0.12, 0.2], [0.07, 0.15, 0.11], [0x3e7c8c, C.coral][k]);
-      return true;
-    }
-    // ---------------- misc replacements ----------------
-    case "workplace": {
-      b([0, 0.26, -0.08], [0.6, 0.5, 0.4], 0xf2ebe0);
-      b([0, 0.53, -0.08], [0.66, 0.05, 0.46], 0x7aa58f);
-      for (let k = 0; k < 3; k++) glow([-0.18 + k * 0.18, 0.32, 0.125], [0.12, 0.14, 0.008], 0xd8ecea);
-      b([0, 0.1, 0.13], [0.14, 0.2, 0.01], 0x7aa58f);
-      plant(-0.32, 0.24, 0.3);
-      seat(0.3, 0.26);
-      return true;
-    }
-    case "rideboard": {
-      // riverside bike lane with a quarterly score board (5 bars, no numbers)
-      b([0, 0.03, 0.1], [0.9, 0.03, 0.26], 0x8a9a8a);
-      for (let k = 0; k < 6; k++) hb([-0.4 + k * 0.16, 0.05, 0.1], [0.08, 0.004, 0.015], 0xffffff);
-      for (let k = 0; k < 3; k++) { cy([-0.35 + k * 0.35, 0.18, -0.06], 0.015, 0.3, C.ink); bulb([-0.35 + k * 0.35, 0.34, -0.06], 0.025, 0xfff0c2); }
-      b([0.2, 0.32, -0.28], [0.44, 0.28, 0.03], C.ink);
-      for (let k = 0; k < 5; k++) b([0.04 + k * 0.08, 0.24 + (0.05 + (k % 3) * 0.03) / 2, -0.262], [0.05, 0.05 + (k % 3) * 0.03, 0.01], [0x8fb37a, 0xe8c547, C.coral, 0x5f9aa6, 0x8fb37a][k]);
-      for (const s of [-1, 1]) cy([0.2 + s * 0.18, 0.1, -0.28], 0.015, 0.2, C.ink);
-      ring([-0.2, 0.1, 0.1], 0.1, C.ink, [0, 0, 0]);
-      ring([-0.06, 0.1, 0.1], 0.1, C.ink, [0, 0, 0]);
-      b([-0.13, 0.15, 0.1], [0.14, 0.012, 0.012], C.coral);
-      return true;
-    }
-    case "lawbook": {
-      // a big open law book with a meal tray on it
-      b([-0.12, 0.08, 0], [0.34, 0.06, 0.46], 0x8b4a3a, [0, 0, 0.08]);
-      b([0.12, 0.08, 0], [0.34, 0.06, 0.46], 0x8b4a3a, [0, 0, -0.08]);
-      b([-0.12, 0.12, 0], [0.31, 0.03, 0.42], 0xfbf6ea, [0, 0, 0.08]);
-      b([0.12, 0.12, 0], [0.31, 0.03, 0.42], 0xfbf6ea, [0, 0, -0.08]);
-      for (let k = 0; k < 4; k++) hb([-0.12, 0.14, -0.14 + k * 0.08], [0.22, 0.004, 0.012], 0x9a8a7a);
-      b([0.12, 0.17, 0], [0.24, 0.02, 0.18], 0xe7eef0);
-      sphere([0.06, 0.2, -0.03], [0.07, 0.04, 0.07], 0xf6e3a8);
-      sphere([0.18, 0.2, -0.03], [0.06, 0.04, 0.06], green);
-      sphere([0.12, 0.2, 0.05], [0.08, 0.04, 0.05], 0xd9824f);
-      return true;
-    }
-    case "stairlift": {
-      // stair with a stair-lift chair on a rail + a wheelchair at the bottom
-      for (let k = 0; k < 5; k++) b([-0.25 + k * 0.1, 0.04 + k * 0.05, 0], [0.1, 0.08 + k * 0.1, 0.36], 0xe6dccb);
-      p("box", [-0.03, 0.27, -0.2], [0.6, 0.02, 0.02], 0x8a8a90, [0, 0, 0.45]);
-      b([-0.08, 0.3, -0.12], [0.12, 0.03, 0.12], C.coral);
-      b([-0.12, 0.37, -0.12], [0.03, 0.14, 0.12], C.coral);
-      person(-0.08, -0.12, 0.3);
-      ring([-0.42, 0.11, 0.2], 0.12, C.ink, [0, 0, 0]);
-      ring([-0.42, 0.11, 0.08], 0.12, C.ink, [0, 0, 0]);
-      b([-0.42, 0.15, 0.14], [0.1, 0.03, 0.1], 0x3f6fb5);
-      p("rbox", [0.3, 0.42, 0.2], [0.1, 0.1, 0.01], 0x3f6fb5);
-      return true;
-    }
-    case "accessgym": {
-      // sports hall with ramp entrance, all-gender changing room doors
-      b([0.08, 0.2, -0.12], [0.6, 0.4, 0.36], 0xf3efe6);
-      p("dome", [0.08, 0.4, -0.12], [0.6, 0.18, 0.36], 0x5f9aa6);
-      for (const [x, c] of [[-0.06, 0x4a6fa5], [0.08, 0xd76b8a], [0.22, 0x8fb37a]]) { b([x, 0.13, 0.065], [0.1, 0.22, 0.01], c); sphere([x, 0.29, 0.07], 0.03, 0xffffff); }
-      p("box", [-0.3, 0.05, 0.22], [0.4, 0.02, 0.14], 0xd8d2c6, [0, 0, -0.12]);
-      ring([-0.38, 0.1, 0.28], 0.1, C.ink, [0, 0, 0]);
-      person(-0.38, 0.22, 0.3);
-      p("rbox", [-0.3, 0.32, 0.06], [0.1, 0.1, 0.01], 0x3f6fb5);
-      return true;
-    }
-    // ---------------- 三大登山觀光中心（三種不同造型；共用服務：裝備租借、置物櫃、洗鞋、步道看板） ----------------
-    case "hikeNorth": {
-      // 北劍潭：A 字形木屋登山站、松林、步道入口拱門、夜間燈籠串（連結夜市的意象）
-      for (const s of [-1, 1]) p("box", [-0.02 + s * 0.13, 0.25, -0.05], [0.04, 0.56, 0.46], C.coral, [0, 0, s * -0.5]);
-      b([-0.02, 0.12, -0.05], [0.3, 0.22, 0.44], 0xc49a6c);
-      b([-0.02, 0.17, 0.18], [0.24, 0.3, 0.01], 0xb48560);
-      glow([-0.02, 0.14, 0.186], [0.12, 0.16, 0.006], 0xfff1c8);
-      b([-0.02, 0.3, 0.19], [0.18, 0.05, 0.01], 0xfff8ee);
-      b([-0.02, 0.02, 0.27], [0.36, 0.03, 0.14], 0xb48560);
-      for (const [tx, tz, ts] of [[-0.38, -0.3, 1], [0.32, -0.32, 1.2], [-0.42, 0.1, 0.8], [0.4, 0.05, 0.9]]) {
-        cy([tx, 0.08, tz], 0.03, 0.14, 0x7a5d44);
-        p("cone6", [tx, 0.26 * ts, tz], [0.2 * ts, 0.26 * ts, 0.2 * ts], 0x58785f);
-        p("cone6", [tx, 0.4 * ts, tz], [0.14 * ts, 0.22 * ts, 0.14 * ts], 0x6f8a62);
-      }
-      // trail gate + stepping stones heading back into the pines
-      for (const sx of [0.22, 0.38]) cy([sx, 0.15, 0.22], 0.022, 0.3, 0x8a6a4e);
-      b([0.3, 0.31, 0.22], [0.24, 0.035, 0.04], 0x8a6a4e);
-      for (let k = 0; k < 4; k++) p("ico", [0.3 + k * 0.02, 0.02, 0.12 - k * 0.12], [0.08, 0.02, 0.06], 0xd8ccba);
-      // lantern string between two poles
-      for (const sx of [-0.4, 0.42]) cy([sx, 0.2, 0.42], 0.012, 0.4, C.ink);
-      for (let k = 0; k < 7; k++) bulb([-0.4 + k * 0.137, 0.38 - Math.sin((k / 6) * Math.PI) * 0.05, 0.42], 0.025, [0xffb15c, 0xff7a5c, 0xffd37a][k % 3]);
-      // gear rack + lockers
-      for (let k = 0; k < 3; k++) p("cylinder", [-0.36 + k * 0.025, 0.12, 0.3], [0.008, 0.24, 0.008], [0x3e7c8c, C.coral, 0xe8c547][k], [0.15, 0, 0.08]);
-      for (let k = 0; k < 2; k++) b([0.16 + k * 0.07, 0.09, -0.3], [0.06, 0.18, 0.05], 0x5f9aa6);
-      return true;
-    }
-    case "hikeEast": {
-      // 東象山：巨石群、木棧階梯登頂、觀景平台望向城市、玻璃立面的現代遊客中心
-      b([0.18, 0.12, 0.16], [0.36, 0.22, 0.24], 0xf2efe8);
-      glow([0.18, 0.12, 0.282], [0.32, 0.16, 0.006], 0xbfe0e8);
-      for (let k = 0; k < 4; k++) hb([0.04 + k * 0.09, 0.12, 0.288], [0.008, 0.18, 0.006], 0x6f6a62);
-      b([0.18, 0.245, 0.16], [0.42, 0.03, 0.3], 0x3e7c8c);
-      b([0.18, 0.27, 0.3], [0.2, 0.04, 0.01], 0xfff8ee);
-      // boulders (rounded, stacked, like a rocky summit)
-      for (const [bx, by, bz, bs, c] of [[-0.25, 0.14, -0.2, 0.3, 0xb7a993], [-0.08, 0.22, -0.3, 0.26, 0xa89a84], [-0.36, 0.3, -0.34, 0.22, 0x9c8f7c], [0.1, 0.12, -0.36, 0.2, 0xb7a993], [-0.18, 0.4, -0.38, 0.16, 0xc2b6a2]])
-        p("ico", [bx, by, bz], [bs, bs * 0.9, bs * 0.85], c, [bx * 3, bz * 4, 0.2]);
-      // timber stair boardwalk up the boulders
-      for (let k = 0; k < 7; k++) p("box", [-0.42 + k * 0.04, 0.04 + k * 0.055, 0.2 - k * 0.07], [0.16, 0.022, 0.07], 0xb48560, [0, 0.55, 0]);
-      for (let k = 0; k < 4; k++) cy([-0.48 + k * 0.08, 0.1 + k * 0.1, 0.24 - k * 0.14], 0.01, 0.2, 0x8a6a4e);
-      // summit view deck with railing, facing the city
-      b([-0.2, 0.5, -0.28], [0.26, 0.025, 0.16], 0xb48560);
-      for (let k = 0; k < 4; k++) cy([-0.31 + k * 0.075, 0.56, -0.2], 0.008, 0.1, C.ink);
-      hb([-0.2, 0.61, -0.2], [0.26, 0.01, 0.01], C.ink);
-      // lockers + boot wash
-      for (let k = 0; k < 3; k++) b([0.42, 0.09, 0.0 + k * 0.07], [0.05, 0.18, 0.06], [0x5f9aa6, 0x7aa0b0, 0x5f9aa6][k]);
-      b([0.36, 0.04, 0.38], [0.14, 0.05, 0.07], 0xd2c3ad);
-      b([0.36, 0.065, 0.38], [0.1, 0.01, 0.04], 0x8fc6d0);
-      return true;
-    }
-    case "hikeSouth": {
-      // 南貓空：茶園梯田、雙層翹簷茶屋服務站、纜車塔與兩節車廂
-      for (let r = 0; r < 4; r++) {
-        b([-0.12, 0.03 + r * 0.06, -0.12 - r * 0.08], [0.7 - r * 0.1, 0.06, 0.1], [0xb48c62, 0xa77f58][r % 2]);
-        for (let k = 0; k < 5 - r; k++) sphere([-0.4 + r * 0.05 + k * 0.13, 0.08 + r * 0.06, -0.12 - r * 0.08], [0.07, 0.05, 0.05], [0x5f8f4e, 0x6f9a58][k % 2]);
-      }
-      // tea-house with two-tier upturned eaves
-      b([0.2, 0.11, 0.2], [0.32, 0.2, 0.24], 0xf4ebdd);
-      glow([0.2, 0.11, 0.322], [0.18, 0.1, 0.006], 0xfff1c8);
-      p("cone6", [0.2, 0.25, 0.2], [0.5, 0.1, 0.42], 0x5a4a3e, [0, Math.PI / 6, 0]);
-      b([0.2, 0.31, 0.2], [0.18, 0.06, 0.14], 0xf4ebdd);
-      p("cone6", [0.2, 0.37, 0.2], [0.3, 0.08, 0.26], 0x5a4a3e, [0, Math.PI / 6, 0]);
-      b([0.2, 0.2, 0.33], [0.16, 0.035, 0.01], 0xfff8ee);
-      // gondola tower + cable + two cabins
-      for (const [tx, tz, h] of [[0.42, -0.3, 0.7], [-0.42, 0.3, 0.45]]) {
-        b([tx, h / 2, tz], [0.05, h, 0.05], 0x8a8a90);
-        b([tx, h, tz], [0.16, 0.03, 0.05], 0x8a8a90);
-      }
-      p("box", [0, 0.58, 0], [0.012, 0.012, Math.hypot(0.84, 0.6)], C.ink, [0.2, Math.atan2(0.84, -0.6), 0]);
-      for (const [cx2, cz2, cy2, c] of [[0.18, -0.13, 0.55, C.coral], [-0.2, 0.15, 0.46, 0x3e7c8c]]) {
-        hb([cx2, cy2 + 0.06, cz2], [0.008, 0.08, 0.008], C.ink);
-        b([cx2, cy2, cz2], [0.1, 0.08, 0.08], c);
-        glow([cx2, cy2 + 0.01, cz2 + 0.041], [0.07, 0.035, 0.004], 0xd5ecee);
-      }
-      // gear rack
-      for (let k = 0; k < 3; k++) p("cylinder", [0.42 + k * 0.02, 0.12, 0.3], [0.008, 0.24, 0.008], [0x3e7c8c, C.coral, 0xe8c547][k], [0.15, 0, 0.08]);
-      return true;
-    }
-    case "culturecoin": {
-      // 文化幣: a big gold token (theatre-mask emblem) standing on a plinth, ringed by the four things it pays for:
-      // a little red-curtain theatre, a gallery easel, an indie-bookshop stall and a kids' cinema screen.
-      const gold = 0xe8b04a, goldDark = 0xb8862e;
-      b([0, 0.04, 0.02], [0.3, 0.08, 0.18], 0xf3e2c6);
-      p("cylinder", [0, 0.36, 0.02], [0.44, 0.06, 0.44], gold, [Math.PI / 2, 0, 0]);
-      ring([0, 0.36, 0.054], 0.19, goldDark, [0, 0, 0]);
-      // theatre mask on the coin face
-      sphere([0, 0.37, 0.058], [0.16, 0.18, 0.02], 0xfff8ee);
-      sphere([-0.04, 0.4, 0.07], [0.035, 0.022, 0.01], C.ink);
-      sphere([0.04, 0.4, 0.07], [0.035, 0.022, 0.01], C.ink);
-      p("torus", [0, 0.33, 0.07], [0.05, 0.03, 0.03], C.coral, [0, 0, Math.PI]);
-      // stacked coins at the plinth
-      for (let k = 0; k < 4; k++) p("cylinder", [0.2, 0.02 + k * 0.022, 0.16], [0.09, 0.02, 0.09], k % 2 ? gold : goldDark);
-      for (let k = 0; k < 2; k++) p("cylinder", [-0.2, 0.02 + k * 0.022, 0.18], [0.09, 0.02, 0.09], k % 2 ? gold : goldDark);
-      // mini theatre (back left): frame + red curtains + tiny stage
-      b([-0.32, 0.04, -0.28], [0.32, 0.08, 0.2], wood);
-      for (const sx of [-0.46, -0.18]) b([sx, 0.22, -0.34], [0.04, 0.3, 0.04], C.ink);
-      b([-0.32, 0.38, -0.34], [0.34, 0.05, 0.05], C.ink);
-      for (const sx of [-0.4, -0.24]) p("box", [sx, 0.225, -0.305], [0.07, 0.25, 0.015], 0xb83a3a);
-      // gallery easel with a painting (back right)
-      for (const sx of [0.24, 0.38]) cy([sx, 0.16, -0.3], 0.01, 0.32, wood);
-      b([0.31, 0.26, -0.29], [0.18, 0.14, 0.012], 0xfff8ee);
-      b([0.29, 0.25, -0.282], [0.08, 0.06, 0.004], 0x5f9aa6);
-      sphere([0.35, 0.28, -0.282], [0.03, 0.03, 0.004], 0xe8c547);
-      // indie bookshop stall (front left) with striped awning
-      b([-0.36, 0.08, 0.3], [0.2, 0.12, 0.12], wood);
-      for (let k = 0; k < 5; k++) b([-0.44 + k * 0.04, 0.17, 0.3], [0.03, 0.07, 0.08], [C.coral, 0x3e7c8c, 0xe8c547, 0x6f7fb5, 0x8fb37a][k]);
-      for (let k = 0; k < 4; k++) p("box", [-0.42 + k * 0.05, 0.27, 0.32], [0.05, 0.012, 0.16], k % 2 ? 0xfff8ee : C.coral, [0.25, 0, 0]);
-      // kids' cinema screen (front right) with a film strip
-      b([0.36, 0.2, 0.3], [0.2, 0.13, 0.015], C.ink);
-      glow([0.36, 0.2, 0.31], [0.17, 0.1, 0.004], 0xd5ecee);
-      for (let k = 0; k < 4; k++) hb([0.29 + k * 0.045, 0.1, 0.31], [0.03, 0.02, 0.004], C.ink);
-      for (const sx of [0.28, 0.44]) cy([sx, 0.07, 0.3], 0.01, 0.14, C.ink);
-      return true;
-    }
-    // ---------------- 客家政策 (2026-10-20) ----------------
-    // palette: indigo "blue shirt" cloth, red-brick courtyard, terracotta roof tiles, white tung blossom
-    case "bogongcare": {
-      // 都會伯公照護站: a small U-shaped courtyard house (伙房) with an elder and a child at a shared table
-      const brick = 0xc77b5c, tile = 0x9a4f3a, indigo = 0x3f5a8a, wall = 0xf2e8d8;
-      hb([0, 0.012, 0.08], [0.62, 0.024, 0.44], 0xd9b08c); // sun-drying yard
-      b([0, 0.15, -0.2], [0.62, 0.3, 0.16], wall);
-      for (const s of [-1, 1]) b([s * 0.25, 0.13, 0.02], [0.13, 0.26, 0.3], wall);
-      p("hip", [0, 0.36, -0.2], [0.7, 0.13, 0.22], tile);
-      for (const s of [-1, 1]) p("hip", [s * 0.25, 0.32, 0.02], [0.18, 0.11, 0.36], tile);
-      hb([0, 0.1, -0.115], [0.12, 0.2, 0.01], indigo); // indigo door curtain
-      for (const s of [-1, 1]) hb([s * 0.12, 0.17, -0.115], [0.06, 0.06, 0.008], 0xd5ecee);
-      hb([0, 0.03, -0.2], [0.64, 0.06, 0.18], brick);
-      cy([0, 0.12, 0.12], 0.16, 0.025, wood);
-      cy([0, 0.06, 0.12], 0.03, 0.1, C.ink);
-      person(-0.1, 0.16, 0.34);
-      person(0.1, 0.16, 0.24);
-      return true;
-    }
-    case "sisterschools": {
-      // 北市中小學結盟: a city school and a hill-town school joined by a path with a small exchange bus
-      const roof2 = 0x9a4f3a;
-      b([-0.26, 0.14, -0.08], [0.24, 0.28, 0.2], 0xf6e7a8);
-      p("hip", [-0.26, 0.31, -0.08], [0.28, 0.08, 0.24], 0x58a6a6);
-      for (let k = 0; k < 2; k++) hb([-0.31 + k * 0.1, 0.17, 0.025], [0.06, 0.06, 0.008], 0xd5ecee);
-      b([0.27, 0.12, -0.12], [0.22, 0.24, 0.18], 0xf2e8d8);
-      p("hip", [0.27, 0.27, -0.12], [0.26, 0.09, 0.22], roof2);
-      hb([0.27, 0.08, -0.025], [0.06, 0.16, 0.008], 0x3f5a8a);
-      hb([0, 0.01, 0.16], [0.7, 0.012, 0.1], 0xd9cbb4);
-      b([0, 0.06, 0.16], [0.18, 0.09, 0.08], C.yellow);
-      glow([0, 0.075, 0.2], [0.14, 0.035, 0.005], 0xd5ecee);
-      for (const d of [-0.05, 0.05]) cy([d, 0.018, 0.2], 0.035, 0.02, C.ink);
-      person(-0.3, 0.2, 0.22);
-      person(0.33, 0.2, 0.22);
-      return true;
-    }
-    case "hakkapoints": {
-      // 台北通客語集點: a shop front with an indigo awning, a coin stack and a phone-sized points sign
-      const indigo = 0x3f5a8a;
-      b([0, 0.17, -0.1], [0.5, 0.34, 0.22], 0xf2e8d8);
-      p("box", [0, 0.36, 0.04], [0.56, 0.02, 0.18], indigo, [0.35, 0, 0]);
-      for (let k = 0; k < 4; k++) hb([-0.21 + k * 0.14, 0.33, 0.12], [0.07, 0.04, 0.008], k % 2 ? 0xf2e8d8 : indigo);
-      glow([0, 0.17, 0.012], [0.3, 0.16, 0.006], 0xfff0c2);
-      b([0.36, 0.2, 0.12], [0.1, 0.18, 0.03], C.ink);
-      glow([0.36, 0.21, 0.137], [0.075, 0.13, 0.004], 0xd5ecee);
-      cy([0.36, 0.24, 0.14], 0.035, 0.006, C.yellow);
-      for (let k = 0; k < 4; k++) cy([-0.32, 0.02 + k * 0.022, 0.18], 0.09, 0.018, k % 2 ? 0xe8c547 : 0xd9a933);
-      person(0.12, 0.2, 0.36);
-      return true;
-    }
-    case "hiringdesk": {
-      // 約聘有加分: a city service counter with a headset clerk and a bonus-star plaque
-      b([0, 0.2, -0.16], [0.6, 0.4, 0.16], 0xf2efe8);
-      hb([0, 0.42, -0.16], [0.64, 0.03, 0.2], 0x3e7c8c);
-      b([0, 0.14, 0.04], [0.56, 0.16, 0.12], wood);
-      hb([0, 0.225, 0.04], [0.6, 0.02, 0.16], 0xe9dcc4);
-      person(-0.12, -0.06, 0.36);
-      ring([-0.12, 0.33, -0.06], 0.1, C.ink, [0, 0, 0]);
-      b([0.14, 0.27, 0.02], [0.1, 0.08, 0.02], C.ink);
-      glow([0.14, 0.27, 0.032], [0.08, 0.06, 0.004], 0xd5ecee);
-      p("cone", [0.24, 0.52, -0.08], [0.1, 0.02, 0.1], C.yellow, [Math.PI / 2, 0, 0]);
-      b([0.24, 0.52, -0.09], [0.16, 0.16, 0.02], 0x3f5a8a);
-      p("tetra", [0.24, 0.52, -0.075], [0.08, 0.08, 0.01], C.yellow, [Math.PI / 2, 0, 0]);
-      person(0.1, 0.2, 0.36);
-      return true;
-    }
-    case "hakkaforum": {
-      // 世界有客家: a round forum table under a tung-blossom canopy, a small globe at the centre
-      cy([0, 0.015, 0], 0.66, 0.03, 0xe9dcc4);
-      cy([0, 0.15, 0], 0.4, 0.03, wood);
-      cy([0, 0.08, 0], 0.05, 0.14, C.ink);
-      sphere([0, 0.22, 0], 0.1, glass);
-      ring([0, 0.22, 0], 0.12, C.yellow, [0, 0, 0.35]);
-      for (let k = 0; k < 5; k++) {
-        const a = (k / 5) * Math.PI * 2;
-        seat(Math.cos(a) * 0.28, Math.sin(a) * 0.28);
-      }
-      for (const s of [-1, 1]) cy([s * 0.36, 0.3, -0.2], 0.03, 0.6, 0x8a6a4e);
-      p("box", [0, 0.6, -0.2], [0.8, 0.02, 0.2], 0x3f5a8a);
-      for (let k = 0; k < 7; k++) sphere([-0.33 + k * 0.11, 0.62, -0.12 + (k % 2) * 0.04], 0.07, 0xfbf6ee);
-      for (let k = 0; k < 7; k++) sphere([-0.33 + k * 0.11, 0.645, -0.12 + (k % 2) * 0.04], 0.025, 0xe8c547);
       return true;
     }
     case "admin": {
@@ -669,6 +1153,119 @@ export function extraModel(kind, h) {
       for (let k = 0; k < 3; k++) hb([0.08 + k * 0.01, 0.29 + k * 0.02, 0.02], [0.14, 0.015, 0.1], 0xffffff);
       cy([0.25, 0.3, 0.05], 0.05, 0.06, C.coral);
       seat(0.15, 0.25);
+      return true;
+    }
+    case "childcenter": {
+      b([0, 0.22, -0.05], [0.72, 0.44, 0.44], 0xf6efe6);
+      p("hip", [0, 0.48, -0.05], [0.78, 0.16, 0.5], C.coral);
+      for (let k = 0; k < 3; k++) {
+        const cx = -0.22 + k * 0.22;
+        glow([cx, 0.24, 0.175], [0.14, 0.18, 0.01], 0x9fc4c6);
+      }
+      return true;
+    }
+    case "rampcenter": {
+      b([0, 0.22, -0.05], [0.65, 0.44, 0.45], 0xf0e6d6);
+      b([-0.18, 0.06, 0.22], [0.32, 0.12, 0.22], 0xd2c3ad, [0.15, 0, 0]);
+      return true;
+    }
+    case "loopgarden": {
+      b([0, 0.04, 0], [0.88, 0.08, 0.88], 0xbccf9c);
+      ring([0, 0.06, 0], 0.34, 0xdcb79a, [0, 0, 0]);
+      plant(0, 0, 0.35);
+      return true;
+    }
+    case "containers": {
+      b([-0.15, 0.14, 0], [0.42, 0.22, 0.22], 0x2e6b68);
+      b([0.18, 0.14, 0], [0.42, 0.22, 0.22], 0xe26d2d);
+      return true;
+    }
+    case "jars": {
+      cy([-0.16, 0.18, 0], 0.18, 0.32, 0xe8c547);
+      cy([0.16, 0.18, 0], 0.18, 0.32, 0x3e7c8c);
+      return true;
+    }
+    case "stage": {
+      b([0, 0.08, 0], [0.85, 0.14, 0.65], wood);
+      b([0, 0.42, -0.25], [0.85, 0.55, 0.06], 0x3d3a42);
+      return true;
+    }
+    case "infinityforum": {
+      ring([-0.18, 0.05, 0], 0.22, 0xdcb79a, [0, 0, 0]);
+      ring([0.18, 0.05, 0], 0.22, 0xdcb79a, [0, 0, 0]);
+      cy([0, 0.12, 0], 0.18, 0.1, wood);
+      return true;
+    }
+    case "terminal": {
+      b([0, 0.22, 0], [0.85, 0.44, 0.45], 0xf2ece1);
+      b([0, 0.24, 0.23], [0.7, 0.28, 0.015], glass);
+      return true;
+    }
+    case "democrossing": {
+      b([0, 0.04, 0], [0.92, 0.06, 0.4], 0x3a393e);
+      for (let k = 0; k < 5; k++) hb([-0.32 + k * 0.16, 0.075, 0], [0.08, 0.01, 0.28], 0xffffff);
+      return true;
+    }
+    case "arrivals": {
+      b([0, 0.25, 0], [0.82, 0.48, 0.4], 0x3e7c8c);
+      glow([0, 0.26, 0.205], [0.65, 0.28, 0.01], 0xd8ecff);
+      return true;
+    }
+    case "workplace": {
+      b([0, 0.24, 0], [0.72, 0.46, 0.42], 0xf6efe6);
+      desk(0, 0.1);
+      return true;
+    }
+    case "stairlift": {
+      b([0, 0.2, 0], [0.45, 0.4, 0.4], 0xd2c3ad);
+      return true;
+    }
+    case "accessgym": {
+      b([0, 0.24, 0], [0.78, 0.46, 0.44], 0x5f9aa6);
+      return true;
+    }
+    case "hikeNorth": {
+      prism([0, 0.28, 0], [0.55, 0.5, 0.45], wood, [0, 0, Math.PI / 2]);
+      return true;
+    }
+    case "hikeEast": {
+      ico([-0.15, 0.2, 0], 0.3, 0x7a7772);
+      b([0.2, 0.2, 0], [0.35, 0.38, 0.32], 0xf2ece1);
+      return true;
+    }
+    case "hikeSouth": {
+      b([0, 0.18, 0], [0.55, 0.32, 0.42], wood);
+      p("hip", [0, 0.38, 0], [0.62, 0.14, 0.48], 0xc9362b);
+      return true;
+    }
+    case "culturecoin": {
+      cy([0, 0.14, 0], 0.38, 0.22, 0xe8c547);
+      ring([0, 0.14, 0], 0.4, 0xd4a459, [0, 0, 0]);
+      return true;
+    }
+    case "bogongcare": {
+      b([0, 0.2, 0], [0.68, 0.38, 0.42], 0xd9b382);
+      p("hip", [0, 0.42, 0], [0.74, 0.14, 0.48], 0x3f5a8a);
+      return true;
+    }
+    case "sisterschools": {
+      b([-0.22, 0.22, 0], [0.36, 0.42, 0.34], 0xf2ece1);
+      b([0.22, 0.22, 0], [0.36, 0.42, 0.34], 0xd9b382);
+      return true;
+    }
+    case "hakkapoints": {
+      b([0, 0.2, 0], [0.55, 0.38, 0.36], 0xf6efe6);
+      b([0, 0.4, 0], [0.6, 0.05, 0.4], 0x3f5a8a);
+      return true;
+    }
+    case "hiringdesk": {
+      desk(0, 0);
+      person(0, -0.15, 0.36);
+      return true;
+    }
+    case "hakkaforum": {
+      cy([0, 0.14, 0], 0.42, 0.04, wood);
+      b([0, 0.5, 0], [0.72, 0.04, 0.4], 0x3f5a8a);
       return true;
     }
   }

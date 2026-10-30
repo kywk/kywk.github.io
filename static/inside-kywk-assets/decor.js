@@ -1,8 +1,8 @@
 // Decorative scatter, waterfront ledges, themed surroundings and islets.
 // Purely scenic: no item here represents a policy, a facility location or a schedule.
-import { R, TOP, RING_R, NEIGHBORS, dirOf, hexVertex, insideHex } from "./world.js?v=20261026-1";
+import { R, TOP, RING_R, NEIGHBORS, dirOf, hexVertex, insideHex } from "./world.js?v=20261030-2";
 import { WATER_Y, mulberry } from "./environment.js?v=20261026-1";
-import { EDGE_ITEMS } from "./decor-items.js?v=20261023-1";
+import { EDGE_ITEMS } from "./decor-items.js?v=20261030-2";
 let THREE;
 
 export function buildDecor(T, kit, D, centers, neighbors, footprints, colors, opts = {}) {
@@ -40,7 +40,21 @@ export function buildDecor(T, kit, D, centers, neighbors, footprints, colors, op
   };
   const tree = (x, z, s = 0.4, y = TOP, tint = 0) => {
     const g = TREE_GREENS[(tint + Math.floor(rnd() * TREE_GREENS.length)) % TREE_GREENS.length];
-    const style = { forest: rnd() < 0.55 ? "conifer" : "round", card: "blossom", lunch: "fruit", family: "topiary", education: "poplar", welfare: "willow", civil: "clipped", youth: "palm" }[treeIsland];
+    const style = {
+      trails: "conifer",
+      forest: "conifer",
+      diplomacy: "palm",
+      welfare: "willow",
+      card: "blossom",
+      family: "clipped",
+      sport: "poplar",
+      civil: "clipped",
+      institute: "topiary",
+      hakka: "blossom",
+      lunch: "palm",
+      youth: "palm",
+      education: "poplar",
+    }[treeIsland];
     if (style === "conifer") {
       const h = s * (1.3 + rnd() * 0.8);
       cyl(x, y + h * 0.15, z, s * 0.1, h * 0.3, 0x7a5d44);
