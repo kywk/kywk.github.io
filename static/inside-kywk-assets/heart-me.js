@@ -257,8 +257,8 @@ import { track } from "./analytics.js?v=20261022-4";
   async function loadData() {
     let d = window.__HEART_POLICIES__; // 單檔分享頁：政策資料已內嵌在頁面裡
     if (!d) {
-      const appSrc = [...document.scripts].map((s) => s.src).find((s) => s.includes('heart-island-assets'));
-      const base = appSrc.split('?')[0].replace(/[^/]*$/, '');
+      const appSrc = [...document.scripts].map((s) => s.src).find((s) => s.includes('inside-kywk-assets') || s.includes('heart-island-assets') || s.includes('app.js'));
+      const base = appSrc ? appSrc.split('?')[0].replace(/[^/]*$/, '') : './';
       d = await (await fetch(base + 'policies.json')).json();
     }
     const fp = new Map(window.heartCity.footprints.map((f) => [f.owner, f]));

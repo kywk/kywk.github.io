@@ -408,15 +408,26 @@ export function createPeople(THREE, scene, opts) {
     }
     return best;
   }
-  function sample(route, s) {
-    if (route.total < 0.001) return { p: route.pts[0].clone(), dir: new THREE.Vector3(0, 0, 1) };
+  function sampleInto(route, s, outP, outDir) {
+    if (route.total < 0.001) {
+      outP.copy(route.pts[0]);
+      outDir.set(0, 0, 1);
+      return;
+    }
     let k = 1;
     while (k < route.lens.length - 1 && route.lens[k] < s) k++;
     const a = route.pts[k - 1],
       b = route.pts[k],
       seg = route.lens[k] - route.lens[k - 1] || 1;
     const t = Math.min(1, Math.max(0, (s - route.lens[k - 1]) / seg));
-    return { p: a.clone().lerp(b, t), dir: new THREE.Vector3().subVectors(b, a).setY(0).normalize() };
+    outP.copy(a).lerp(b, t);
+    outDir.subVectors(b, a).setY(0).normalize();
+  }
+  function sample(route, s) {
+    const p = new THREE.Vector3(),
+      dir = new THREE.Vector3();
+    sampleInto(route, s, p, dir);
+    return { p, dir };
   }
 
   // ---------- flow walkers ----------
@@ -591,13 +602,17 @@ export function createPeople(THREE, scene, opts) {
     showBadges = true,
     badgeFocus = null;
   const state = { positions: [] };
-  for (const w of people) if (w.kind === "flow") w.s = w.phase * w.route.total;
+  const _dir = new THREE.Vector3();
+  for (const w of people) {
+    w.world = new THREE.Vector3();
+    if (w.kind === "flow") w.s = w.phase * w.route.total;
+  }
 
   function update(dt, time, motion, zoom = 1) {
     for (const [pi, w] of people.entries()) {
-      let p,
-        dir,
-        moving = 0,
+      const p = w.world,
+        dir = _dir;
+      let moving = 0,
         visible = true;
       if (w.kind === "flow") {
         visible = !filter || filter.has(w.flow);
@@ -616,9 +631,17 @@ export function createPeople(THREE, scene, opts) {
             }
           }
         }
-        const smp = sample(w.route, w.s);
-        p = smp.p;
-        dir = smp.dir.multiplyScalar(w.dirSign);
+        if (!visible) {
+          if (w.sprite) w.sprite.visible = false;
+          if (w._wasVis === false) continue;
+          w._wasVis = false;
+          for (const pt of w.plan.parts) meshes[pt.g].mesh.setMatrixAt(pt.idx, hide);
+          shadowMesh.setMatrixAt(pi, hide);
+          continue;
+        }
+        w._wasVis = true;
+        sampleInto(w.route, w.s, p, dir);
+        dir.multiplyScalar(w.dirSign);
         moving = motion && w.wait <= 0 ? 1 : 0;
       } else if (w.kind === "puma" || w.kind === "lord") {
         if (motion) {
@@ -636,33 +659,45 @@ export function createPeople(THREE, scene, opts) {
         w.waiting = w.wait > 0;
         w.pose = w.waiting ? "wave" : null;
         w.atIsland = w.order[w.leg];
-        const smp = sample(w.legs[w.leg], w.s);
-        p = smp.p;
+        sampleInto(w.legs[w.leg], w.s, p, dir);
         // while stopped, face the camera-side (south) so the wave reads
-        dir = w.waiting ? new THREE.Vector3(0, 0, 1) : smp.dir;
+        if (w.waiting) dir.set(0, 0, 1);
         moving = motion && !w.waiting ? 1 : 0;
       } else {
         const sk = w.pose === "skate";
         const tt = (motion ? time : 0) * (sk ? 0.85 : 0.4) + w.phase * 6;
         const wob = w.wander ? Math.sin(tt) * w.wander : 0;
-        p = new THREE.Vector3(w.pos[0] + wob, w.pos[1] ? w.pos[1] : top + 0.03, w.pos[2]);
+        p.set(w.pos[0] + wob, w.pos[1] ? w.pos[1] : top + 0.03, w.pos[2]);
         // a skater rolls back and forth along x and turns at each end
-        dir = sk ? new THREE.Vector3(Math.cos(tt) >= 0 ? 1 : -1, 0, 0.0001) : new THREE.Vector3(Math.sin(w.yaw), 0, Math.cos(w.yaw));
+        if (sk) dir.set(Math.cos(tt) >= 0 ? 1 : -1, 0, 0.0001);
+        else dir.set(Math.sin(w.yaw), 0, Math.cos(w.yaw));
         moving = !sk && w.wander && motion ? 0.5 : 0;
       }
+      const isStaticAmbient = w.kind === "ambient" && !w.wander && w.pose !== "skate";
+      const skipStaticParts = isStaticAmbient && w._staticBuilt && w._lastZoom === zoom;
       const yaw = Math.atan2(dir.x, dir.z);
       const ph = (time * 9 + w.phase * 20) * moving;
       const bob = moving ? Math.abs(Math.sin(ph)) * 0.012 : 0;
       const sc = w.plan.scale * 0.8 * zoom;
       w.drawScale = sc;
       const lift = w.kind === "puma" && w.waiting ? 0.07 * sc : 0;
-      dummy.position.set(p.x, p.y + bob + lift - (w.pose === "sit" ? 0.105 * sc : 0), p.z);
-      dummy.rotation.set(0, yaw, 0);
-      dummy.scale.setScalar(visible ? sc : 0);
-      dummy.updateMatrix();
-      base.copy(dummy.matrix);
-      w.world = p;
+      if (skipStaticParts) {
+        base.copy(w._base);
+      } else {
+        dummy.position.set(p.x, p.y + bob + lift - (w.pose === "sit" ? 0.105 * sc : 0), p.z);
+        dummy.rotation.set(0, yaw, 0);
+        dummy.scale.setScalar(visible ? sc : 0);
+        dummy.updateMatrix();
+        base.copy(dummy.matrix);
+        if (isStaticAmbient) {
+          if (!w._base) w._base = new THREE.Matrix4();
+          w._base.copy(base);
+          w._lastZoom = zoom;
+          w._staticBuilt = true;
+        }
+      }
       for (const pt of w.plan.parts) {
+        if (skipStaticParts && pt.ch !== "head" && !(w.pose === "wave" && pt.ch === "armR")) continue;
         let ang = 0,
           axis = "x";
         if (moving) {
@@ -719,11 +754,13 @@ export function createPeople(THREE, scene, opts) {
         tmp.multiplyMatrices(base, local);
         meshes[pt.g].mesh.setMatrixAt(pt.idx, tmp);
       }
-      dummy.position.set(p.x, p.y + 0.02, p.z);
-      dummy.rotation.set(0, 0, 0);
-      dummy.scale.setScalar(visible ? 0.2 * sc : 0);
-      dummy.updateMatrix();
-      shadowMesh.setMatrixAt(pi, dummy.matrix);
+      if (!skipStaticParts) {
+        dummy.position.set(p.x, p.y + 0.02, p.z);
+        dummy.rotation.set(0, 0, 0);
+        dummy.scale.setScalar(visible ? 0.2 * sc : 0);
+        dummy.updateMatrix();
+        shadowMesh.setMatrixAt(pi, dummy.matrix);
+      }
       if (w.sprite) {
         w.sprite.visible = visible && showBadges && (!badgeFocus || w.from === badgeFocus || w.to === badgeFocus || !!filter);
         w.sprite.position.set(p.x, p.y + 0.6 * sc + 0.03 + bob, p.z);
