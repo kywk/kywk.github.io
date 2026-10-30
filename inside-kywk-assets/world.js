@@ -494,13 +494,20 @@ export function buildIslands(THREE, scene, D, kit, colors) {
   const curbMat = new THREE.MeshStandardMaterial({ color: 0xe4d6c3, roughness: 0.8, polygonOffset: true, polygonOffsetFactor: -2, polygonOffsetUnits: -4 });
   const foamMat = new THREE.MeshBasicMaterial({ color: 0xf6fbfa, transparent: true, opacity: 0.55, depthWrite: false });
   const neighbors = new Map();
+  const baseTopGeo = new THREE.CircleGeometry(R - 0.05, 6);
+  baseTopGeo.rotateZ(Math.PI / 6);
+  baseTopGeo.rotateX(-Math.PI / 2);
+  const ringGeo = hexRingGeometry(THREE, RING_R + 0.14, RING_R - 0.14);
+  const curbGeo = hexRingGeometry(THREE, R, R - 0.07);
+  const innerCurbGeo = hexRingGeometry(THREE, RING_R - 0.14, RING_R - 0.18);
+  const bandGeo = new THREE.CylinderGeometry(R + 0.012, R - 0.002, 0.16, 6, 1, true);
+  const shallowGeo = hexRingGeometry(THREE, R + 0.7, R - 0.02);
+  const foamGeo = hexRingGeometry(THREE, R + 0.16, R - 0.02);
   for (const i of D.islands) {
     const c = centers.get(i.id);
     const type = GROUND[i.id] || "meadow";
     // top surface with world-space UV
-    const topGeo = new THREE.CircleGeometry(R - 0.05, 6);
-    topGeo.rotateZ(Math.PI / 6);
-    topGeo.rotateX(-Math.PI / 2);
+    const topGeo = baseTopGeo.clone();
     const uv = topGeo.attributes.uv,
       p = topGeo.attributes.position;
     for (let n = 0; n < p.count; n++) uv.setXY(n, (p.getX(n) + c.x) / 2.2, (p.getZ(n) + c.z) / 2.2);
@@ -512,14 +519,14 @@ export function buildIslands(THREE, scene, D, kit, colors) {
     // pedestrian ring paving + curb
     const rm = ringMat.clone();
     rm.color.setHex(RING_TINT[i.id] || 0xf1e7da);
-    const ring = new THREE.Mesh(hexRingGeometry(THREE, RING_R + 0.14, RING_R - 0.14), rm);
+    const ring = new THREE.Mesh(ringGeo, rm);
     ring.position.set(c.x, TOP + 0.012, c.z);
     ring.receiveShadow = true;
     scene.add(ring);
-    const curb = new THREE.Mesh(hexRingGeometry(THREE, R, R - 0.07), curbMat);
+    const curb = new THREE.Mesh(curbGeo, curbMat);
     curb.position.set(c.x, TOP + 0.04, c.z);
     scene.add(curb);
-    const inner = new THREE.Mesh(hexRingGeometry(THREE, RING_R - 0.14, RING_R - 0.18), curbMat);
+    const inner = new THREE.Mesh(innerCurbGeo, curbMat);
     inner.position.set(c.x, TOP + 0.02, c.z);
     scene.add(inner);
     // cliffs
@@ -528,15 +535,15 @@ export function buildIslands(THREE, scene, D, kit, colors) {
     cliff.receiveShadow = true;
     cliff.userData = { type: "island", id: i.id };
     scene.add(cliff);
-    const band = new THREE.Mesh(new THREE.CylinderGeometry(R + 0.012, R - 0.002, 0.16, 6, 1, true), new THREE.MeshStandardMaterial({ map: bandTexture(THREE, i.id), roughness: 0.85 }));
+    const band = new THREE.Mesh(bandGeo, new THREE.MeshStandardMaterial({ map: bandTexture(THREE, i.id), roughness: 0.85 }));
     band.position.set(c.x, TOP - 0.04, c.z);
     band.receiveShadow = true;
     scene.add(band);
     const SHALLOW = SHALLOW_TONE;
-    const shallow = new THREE.Mesh(hexRingGeometry(THREE, R + 0.7, R - 0.02), new THREE.MeshBasicMaterial({ color: SHALLOW[i.id] || 0xb9d9d6, transparent: true, opacity: 0.55, depthWrite: false }));
+    const shallow = new THREE.Mesh(shallowGeo, new THREE.MeshBasicMaterial({ color: SHALLOW[i.id] || 0xb9d9d6, transparent: true, opacity: 0.55, depthWrite: false }));
     shallow.position.set(c.x, WATER_Y + 0.008, c.z);
     scene.add(shallow);
-    const foam = new THREE.Mesh(hexRingGeometry(THREE, R + 0.16, R - 0.02), foamMat);
+    const foam = new THREE.Mesh(foamGeo, foamMat);
     foam.position.set(c.x, WATER_Y + 0.012, c.z);
     scene.add(foam);
     // outline (selection)

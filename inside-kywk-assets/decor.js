@@ -1,6 +1,6 @@
 // Decorative scatter, waterfront ledges, themed surroundings and islets.
 // Purely scenic: no item here represents a policy, a facility location or a schedule.
-import { R, TOP, RING_R, NEIGHBORS, dirOf, hexVertex, insideHex } from "./world.js?v=20261030-2";
+import { R, TOP, RING_R, NEIGHBORS, dirOf, hexVertex, insideHex } from "./world.js?v=20261030-3";
 import { WATER_Y, mulberry } from "./environment.js?v=20261026-1";
 import { EDGE_ITEMS } from "./decor-items.js?v=20261030-2";
 let THREE;

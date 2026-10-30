@@ -1,9 +1,9 @@
 import { sceneSpecs, createPolicyModel } from "./scene-models.js?v=20261030-2";
 import { createKit } from "./kit.js?v=20261026-1";
 import { createEnvironment } from "./environment.js?v=20261026-1";
-import { buildIslands, buildGraph, resolveIslandPlacements, hexVertex, GROUND, R, TOP } from "./world.js?v=20261030-2";
-import { buildDecor, bez } from "./decor.js?v=20261030-2";
-import { createPeople, ROLE_LABEL, CARRY_LABEL } from "./people.js?v=20261026-4";
+import { buildIslands, buildGraph, resolveIslandPlacements, hexVertex, GROUND, R, TOP } from "./world.js?v=20261030-3";
+import { buildDecor, bez } from "./decor.js?v=20261030-3";
+import { createPeople, ROLE_LABEL, CARRY_LABEL } from "./people.js?v=20261030-3";
 import { icon, HEART_COLORS } from "./icons.js?v=20261023-1";
 import { track } from "./analytics.js?v=20261022-4";
 import { createResolutionGovernor } from "./resolution.js?v=20261025-2";
@@ -46,6 +46,7 @@ try {
       return r.json();
     }),
   ]);
+  window.__HEART_POLICIES__ = D;
   const colors = { coral: 0xe26d2d, ink: 0x2d1e14, cream: 0xfffdfb, yellow: 0xfdedd6, stone: 0xc5b5a7, green: 0x4d8b55, teal: 0x2e6b68 };
   const islands = new Map(D.islands.map((i) => [i.id, i])),
     buildings = new Map(D.islands.flatMap((i) => i.buildings.map((b) => [b.id, { ...b, island: i.id }]))),
@@ -243,6 +244,7 @@ try {
     'lunch-subsidy': ['雲端 IDE 衛星發射站', 0x38bdf8],
   };
   const signGroup = new THREE.Group();
+  const signPlaneGeo = new THREE.PlaneGeometry(1, 1);
   const postMats = [];
   for (const [id, [label, col]] of Object.entries(SIGNS)) {
     const v = visual.get(id);
@@ -266,11 +268,13 @@ try {
     tex.anisotropy = 4;
     const w = Math.min(0.9, 0.085 * label.length + 0.12) * Math.max(0.8, v.size || 0.6),
       h = (w * cv.height) / cv.width;
-    const m = new THREE.Mesh(new THREE.PlaneGeometry(w, h), new THREE.MeshStandardMaterial({ map: tex, emissive: 0xffffff, emissiveMap: tex, emissiveIntensity: 0.3, roughness: 0.7, side: THREE.DoubleSide }));
+    const m = new THREE.Mesh(signPlaneGeo, new THREE.MeshStandardMaterial({ map: tex, emissive: 0xffffff, emissiveMap: tex, emissiveIntensity: 0.3, roughness: 0.7, side: THREE.DoubleSide }));
+    m.scale.set(w, h, 1);
     const sz = v.size || 0.6;
     m.position.set(v.center.x, top + sz * 0.62 + h / 2, v.center.z + sz * 0.42);
     m.rotation.y = 0.42;
     m.userData.item = id;
+    m.userData.island = buildings.get(id)?.island || null;
     signGroup.add(m);
     for (const d of [-w * 0.42, w * 0.42]) postMats.push(new THREE.Matrix4().compose(new THREE.Vector3(v.center.x + d * Math.cos(0.42), top + (sz * 0.62) / 2, v.center.z + sz * 0.42 - d * Math.sin(0.42)), new THREE.Quaternion(), new THREE.Vector3(1, sz * 0.62 + 0.02, 1)));
   }
@@ -613,20 +617,34 @@ try {
   }
   const setStyle = (el, k, v) => { if (el.style[k] !== v) el.style[k] = v; };
   const setClass = (el, c, on) => { if (el.classList.contains(c) !== on) el.classList.toggle(c, on); };
+  let cachedUiRects = null,
+    cachedStageRect = null,
+    cachedUiSig = "",
+    uiRectsTime = -1e9;
   function clipLabels() {
     // ---- 1. read: UI rects, then every label's current box (one layout for everything)
-    const ui = safeSel.flatMap((s) => [...document.querySelectorAll(s)]).map((e) => e.getBoundingClientRect()).filter((r) => r.width && r.height);
-    for (const b of document.querySelectorAll(".toolbar button, .hud button, .toggles button")) {
-      const r = b.getBoundingClientRect();
-      if (r.width && r.height) ui.push(r);
+    const now = performance.now();
+    const uiSig = `${selectedIsland}|${selectedBuilding}|${document.body.className}|${innerWidth}x${innerHeight}`;
+    if (!cachedUiRects || uiSig !== cachedUiSig || now - uiRectsTime > 200) {
+      cachedUiSig = uiSig;
+      uiRectsTime = now;
+      cachedUiRects = safeSel.flatMap((s) => [...document.querySelectorAll(s)]).map((e) => e.getBoundingClientRect()).filter((r) => r.width && r.height);
+      for (const b of document.querySelectorAll(".toolbar button, .hud button, .toggles button")) {
+        const r = b.getBoundingClientRect();
+        if (r.width && r.height) cachedUiRects.push(r);
+      }
+      cachedStageRect = stage.getBoundingClientRect();
     }
-    const sr = stage.getBoundingClientRect();
+    const ui = cachedUiRects;
+    const sr = cachedStageRect;
     const over = (a, q, m = 2) => a.right > q.left - m && a.left < q.right + m && a.bottom > q.top - m && a.top < q.bottom + m;
-    const root = labelRenderer.domElement;
-    const isl = [...root.querySelectorAll(".island-label")].filter((el) => el.style.display !== "none");
-    const pins = [...root.querySelectorAll(".item-pin")].filter((el) => el.style.display !== "none");
-    const extras = [...root.querySelectorAll(".puma-extra")].filter((el) => el.style.display !== "none");
-    const tags = [...root.querySelectorAll(".name-tag,.ghost-label,.route-tag")].filter((el) => el.style.display !== "none");
+    const isl = [];
+    for (const v of islandViews.values()) if (v.el.style.display !== "none") isl.push(v.el);
+    const pins = [];
+    for (const v of pinViews.values()) if (v.el.style.display !== "none") pins.push(v.el);
+    const extras = pumaExtra && pumaExtra.el.style.display !== "none" ? [pumaExtra.el] : [];
+    const tags = [];
+    for (const o of nameTags) if (o.visible && o.element.style.display !== "none") tags.push(o.element);
     const cur = new Map();
     for (const el of [...isl, ...pins, ...tags]) cur.set(el, el.getBoundingClientRect());
     for (const el of extras) cur.set(el, el.firstElementChild.getBoundingClientRect());
@@ -1012,7 +1030,9 @@ try {
     $("#dock").appendChild(b);
   }
   // name tags (CSS2D, only near the camera)
+  const pumaLordIndices = [];
   for (const [pi, w] of peopleSys.people.entries()) {
+    if (w.kind === "puma" || w.kind === "lord") pumaLordIndices.push(pi);
     const el = document.createElement("button");
     el.className = "name-tag" + (w.kind === "flow" ? " bubble" : w.kind === "puma" ? " puma-tag" : w.kind === "lord" ? " puma-tag lord-tag" : " ambient");
     el.innerHTML = w.kind === "puma"
@@ -1196,6 +1216,11 @@ try {
     }
     return tiles.length ? `<div class="stat-row">${tiles.join("")}</div>` : "";
   }
+  const _cCoral = new THREE.Color(colors.coral),
+    _cYellow = new THREE.Color(colors.yellow),
+    _cUnknown = new THREE.Color(0xb8b0ac),
+    _cDim = new THREE.Color(0xcfc5bf),
+    _cWork = new THREE.Color();
   function highlight() {
     for (const [id, v] of islandViews) {
       const i = islands.get(id),
@@ -1230,17 +1255,15 @@ try {
       const i = islands.get(b.island),
         dim = selectedHeart.size && i.heart.length && !i.heart.some((h) => selectedHeart.has(h));
       for (const p of visual.get(b.id).parts) {
-        const c = selected
-          ? p.color.clone().lerp(new THREE.Color(colors.coral), 0.22)
-          : unknown
-            ? new THREE.Color(0xb8b0ac)
-            : p.color.clone();
-        if (active && !selected) c.lerp(new THREE.Color(colors.yellow), 0.22);
-        if (dim) c.lerp(new THREE.Color(0xcfc5bf), 0.8);
-        p.mesh.setColorAt(p.index, c);
-        p.mesh.instanceColor.needsUpdate = true;
+        if (selected) _cWork.copy(p.color).lerp(_cCoral, 0.22);
+        else if (unknown) _cWork.copy(_cUnknown);
+        else _cWork.copy(p.color);
+        if (active && !selected) _cWork.lerp(_cYellow, 0.22);
+        if (dim) _cWork.lerp(_cDim, 0.8);
+        p.mesh.setColorAt(p.index, _cWork);
       }
     }
+    for (const m of staticMeshes) if (m.instanceColor) m.instanceColor.needsUpdate = true;
     dirty = true;
   }
   function showFlows(ids) {
@@ -2288,16 +2311,23 @@ try {
   // 2026-10-25: adaptive resolution (busy laptop GPU, big retina window); the rules live in resolution.js.
   const prMax = renderer.getPixelRatio();
   const resolution = createResolutionGovernor({ max: prMax, min: Math.min(prMax, 1) });
-  function adaptResolution(now, frameMs) {
-    const next = resolution.sample(now, frameMs, document.hidden);
+  function adaptResolution(now, frameMs, idle) {
+    const next = resolution.sample(now, frameMs, idle);
     if (next === null) return;
     renderer.setPixelRatio(next);
     resize();
     dirty = true;
   }
+  const _followDelta = new THREE.Vector3(),
+    _tagProj = new THREE.Vector3();
+  let wasNamesNow = false,
+    lastSunX = NaN,
+    lastSunY = NaN,
+    lastSunZ = NaN,
+    lastLodOn = null;
   function animate(now) {
     requestAnimationFrame(animate);
-    if (!debug) adaptResolution(now, now - lastTime);
+    if (!debug) adaptResolution(now, now - lastTime, document.hidden || frozen || !dirty);
     for (const f of frameHooks) {
       try {
         if (f(now)) dirty = true;
@@ -2350,7 +2380,7 @@ try {
     document.body.classList.toggle("zoomed", camDist < 22);
     const lodOn = camDist < 26;
     signGroup.visible = camDist > 5.5 && camDist < 22 && !tourActive;
-    if (signGroup.visible) for (const m of signGroup.children) if (m.userData.item) m.visible = !pinViews.has(m.userData.item) && m.position.distanceTo(camera.position) > (m.visible ? 4.0 : 4.4) && (!selectedIsland || buildings.get(m.userData.item)?.island === selectedIsland);
+    if (signGroup.visible) for (const m of signGroup.children) if (m.userData.item) m.visible = !pinViews.has(m.userData.item) && m.position.distanceToSquared(camera.position) > (m.visible ? 16.0 : 19.36) && (!selectedIsland || m.userData.island === selectedIsland);
     for (const m of staticMeshes) if (m.userData.lod && m.visible !== lodOn) m.visible = lodOn;
     for (const o of routeTags) o.visible = selectedIsland === "diplomacy" || selectedFlows.has("F5") || selectedFlows.has("F15");
     for (const [n, b] of beams.entries()) b.rotation.y = motionTime * 0.6 + n * 1.3;
@@ -2372,24 +2402,36 @@ try {
     peopleSys.setBadges(badgesOn && (showBadgesForce || camDist < 16), selectedIsland);
     if (selectedWalker !== null && peopleSys.people[selectedWalker]?.world) {
       const w = peopleSys.people[selectedWalker];
-      if (!fly && !reduced.matches && !frozen) {
+      if (!fly && !reduced.matches && !frozen && followAnchor) {
         // gently follow the selected resident
-        const delta = w.world.clone().sub(followAnchor || w.world);
-        controls.target.add(delta);
-        camera.position.add(delta);
+        _followDelta.subVectors(w.world, followAnchor);
+        controls.target.add(_followDelta);
+        camera.position.add(_followDelta);
       }
-      followAnchor = w.world.clone();
+      if (!followAnchor) followAnchor = new THREE.Vector3();
+      followAnchor.copy(w.world);
       selRing.position.set(w.world.x, w.world.y + 0.012, w.world.z);
       selRing.scale.setScalar((w.drawScale || 0.8) / 0.8);
     }
     updatePumaExtra(now);
     const namesNow = (showNames || showBadgesForce) && camDist < 14;
+    if (!namesNow && wasNamesNow) {
+      for (const o of nameTags) {
+        o.visible = false;
+        o.userData.wasShown = false;
+      }
+    }
+    wasNamesNow = namesNow;
     {
       const cand = [];
-      for (const [pi, o] of nameTags.entries()) {
+      const indices = namesNow ? null : pumaLordIndices;
+      const len = indices ? indices.length : nameTags.length;
+      for (let idx = 0; idx < len; idx++) {
+        const pi = indices ? indices[idx] : idx;
+        const o = nameTags[pi];
         const w = peopleSys.people[pi];
         const isPuma = w.kind === "puma" || w.kind === "lord";
-        const vis = isPuma ? !!w.world && camDist < 26 && !tourActive : namesNow && w.world && (w.kind !== "flow" || !selectedFlows.size || selectedFlows.has(w.flow)) && w.world.distanceTo(controls.target) < 4.5;
+        const vis = isPuma ? !!w.world && camDist < 26 && !tourActive : namesNow && w.world && (w.kind !== "flow" || !selectedFlows.size || selectedFlows.has(w.flow)) && w.world.distanceToSquared(controls.target) < 20.25;
         o.visible = false;
         if (!vis) continue;
         if (w.kind === "puma") {
@@ -2401,7 +2443,7 @@ try {
           }
         }
         o.position.set(w.world.x, w.world.y + 0.5 * (w.drawScale || 0.8), w.world.z);
-        const sp = o.position.clone().project(camera);
+        const sp = _tagProj.copy(o.position).project(camera);
         const pri = (isPuma ? -200 : 0) + (pi === selectedWalker ? -100 : 0) + (w.kind === "flow" ? 0 : 10) + sp.z - (o.userData.wasShown ? 5 : 0);
         cand.push({ o, x: ((sp.x + 1) / 2) * innerWidth, y: ((1 - sp.y) / 2) * innerHeight, pri, wd: w.kind === "flow" ? 170 : isPuma ? 130 : 90 });
       }
@@ -2419,9 +2461,14 @@ try {
     env.cullClouds?.(camera);
     if (dirty) {
       const sp = env.sun.position;
-      const shSig = `${sp.x.toFixed(2)},${sp.y.toFixed(2)},${sp.z.toFixed(2)}|${lodOn}`;
-      if (shSig !== shadowSig) {
-        shadowSig = shSig;
+      const sx = Math.round(sp.x * 100),
+        sy = Math.round(sp.y * 100),
+        sz = Math.round(sp.z * 100);
+      if (sx !== lastSunX || sy !== lastSunY || sz !== lastSunZ || lodOn !== lastLodOn) {
+        lastSunX = sx;
+        lastSunY = sy;
+        lastSunZ = sz;
+        lastLodOn = lodOn;
         renderer.shadowMap.needsUpdate = true;
       }
       renderer.render(scene, debugCam || camera);
