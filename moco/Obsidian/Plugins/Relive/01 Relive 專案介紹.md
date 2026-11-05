@@ -18,7 +18,7 @@ date_updated: 2026-11-05T00:00:00.000Z
 
 Relive 把這些資料放進同一篇 Markdown 筆記：以 GPX 決定路線與播放進度，沿途顯示照片和事件。讀者可以播放、拖曳時間軸，或直接點選照片，從地圖重新理解旅程。
 
-本文介紹的是 [kywk/relive](https://github.com/kywk/relive) 開源專案。截至 2026-11-05，Obsidian 安裝附件已發布至 [GitHub Releases](https://github.com/kywk/relive/releases/latest)，共用播放器、React 元件與 GPX Slim CLI 也已發布至 npm。[Obsidian Community](https://community.obsidian.md/plugins/relive) 已提交，仍待自動審核完成。
+本文介紹的是 [kywk/relive](https://github.com/kywk/relive) 開源專案。截至 2026-11-05，Obsidian 安裝附件已發布至 [GitHub Releases](https://github.com/kywk/relive/releases/latest)，共用播放器、React 元件與 GPX Slim CLI 也已發布至 npm。[Obsidian Community](https://community.obsidian.md/plugins/relive) 已收錄，可由目錄頁面的 Add to Obsidian 安裝。
 
 ## 從筆記到 React 網站
 

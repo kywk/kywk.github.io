@@ -38,7 +38,7 @@ npm ci
 npm run build
 ```
 
-再將 `dist/obsidian/` 的三個檔案複製到上述目錄。外掛建置已包含所需程式與樣式，使用者不需要在 Vault 內執行 npm。[Obsidian Community](https://community.obsidian.md/plugins/relive) 已提交，仍待自動審核完成；目前可先手動安裝 GitHub 附件。
+再將 `dist/obsidian/` 的三個檔案複製到上述目錄。外掛建置已包含所需程式與樣式，使用者不需要在 Vault 內執行 npm。[Obsidian Community](https://community.obsidian.md/plugins/relive) 已收錄，可從目錄頁面安裝，也可手動安裝最新 GitHub 附件。
 
 若要嵌入自己的 React 網站，使用獨立的 `@kywk/react-relive` npm 套件；它與上述 Obsidian 三檔安裝包是不同入口，見 [[06 Relive React 套件與跨框架整合]]。
 
