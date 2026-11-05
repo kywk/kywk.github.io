@@ -9,7 +9,7 @@ tags:
 sidebar_position: 30
 sidebar_label: 照片、事件與 3D
 date_created: 2026-10-29T00:00:00.000Z
-date_updated: 2026-10-30T00:00:00.000Z
+date_updated: 2026-11-05T00:00:00.000Z
 ---
 
 # Relive 照片定位與 3D 旅程回放
@@ -69,13 +69,13 @@ events:
 | --- | --- | --- |
 | Leaflet 2D | `renderer: leaflet` | 預設視角，容易看清路線與地名，底圖仍需網路 |
 | MapLibre 3D | `renderer: maplibre-3d` | 查看地形與建築輪廓，不需 API key，需要網路與 WebGL |
-| Google 寫實 3D | `renderer: google-3d` | 查看供應區域的寫實影像，需 Google API key 與相應帳務設定 |
+| Google 寫實 3D | `renderer: google-3d` | 僅供網站與 React 查看供應區域的寫實影像，需 Google API key 與相應帳務設定 |
 
 MapLibre 使用 OpenFreeMap 向量底圖及 Mapterhorn 地形，並非寫實攝影城市。切換地圖會保留進度並暫停；3D 初始化失敗時可回到 2D。公共圖資的覆蓋與可用性仍取決於供應商。
 
-Google key 在 Obsidian 的 Relive 設定或網站整合設定中提供，不寫入 Markdown。瀏覽器端 key 會出現在客戶端，需設定適當的 API 與來源限制。桌面環境的 `app://` 來源不能直接假設與網站相同。
+Obsidian 版自 0.2.1 起排除 Google 遠端程式與設定入口；筆記指定 `google-3d` 時會提示並回到 2D。Google key 僅在網站整合或 React 元件設定中提供，不寫入 Markdown。瀏覽器端 key 會出現在客戶端，需設定適當的 API 與網站來源限制。
 
-依目前專案文件，MapLibre 已有 Chromium 不同視窗尺寸與失敗回退驗證；實際 Obsidian Electron／手機硬體仍待驗證。Google 模式尚未以真實 key 驗證實景載入及桌面授權。選用前應在自己的環境確認。
+依目前專案文件，MapLibre 已有 Chromium 不同視窗尺寸與失敗回退驗證；實際 Obsidian Electron／手機硬體仍待驗證。網站 Google 模式尚未以真實 key 驗證實景載入。選用前應在自己的環境確認。
 
 ## 系列導覽
 

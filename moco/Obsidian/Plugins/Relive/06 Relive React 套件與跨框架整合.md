@@ -9,7 +9,7 @@ tags:
 sidebar_position: 60
 sidebar_label: React 與跨框架整合
 date_created: 2026-10-30T00:00:00.000Z
-date_updated: 2026-10-30T00:00:00.000Z
+date_updated: 2026-11-05T00:00:00.000Z
 ---
 
 # Relive React 套件與跨框架整合
@@ -30,15 +30,15 @@ React 套件支援 React 19.x，應用程式提供 React。此處說的跨框架
 
 ## 安裝來源與範例
 
-套件正式發布後，可在 React 專案執行：
+[@kywk/react-relive](https://www.npmjs.com/package/@kywk/react-relive) 已發布至 npm，可在 React 專案執行：
 
 ```sh
 npm install @kywk/react-relive
 ```
 
-本機打包與 npm 發布是不同階段。尚未發布時，在 Relive repository 執行 `npm run release:pack` 與 `npm run react:release:pack`，取得 `.release/docusaurus/` 和 `.release/react/` 的 tarball，於應用程式同時安裝兩者。React 套件依賴共用 `@kywk/relive`，CI 也要能取得它。
+需要驗證原始碼變更時，在 Relive repository 執行 `npm run release:pack` 與 `npm run react:release:pack`，取得 `.release/docusaurus/` 和 `.release/react/` 的 tarball，於應用程式同時安裝兩者。React 套件依賴共用 `@kywk/relive`；一般 npm 安裝會一併安裝它，使用本機 tarball 時則須讓 CI 也能取得兩個套件。
 
-原始碼中的 `examples/react` 是獨立 Vite 範例；根目錄執行 `npm run react:demo` 啟動、`npm run react:build` 建置。[官方 Demo](https://kywk.github.io/relive/) 的原始碼也改以 React 元件掛載播放器；遠端內容仍取決於網站部署是否完成。
+原始碼中的 `examples/react` 是獨立 Vite 範例；根目錄執行 `npm run react:demo` 啟動、`npm run react:build` 建置。[官方 Demo](https://kywk.github.io/relive/) 的原始碼也改以 React 元件掛載播放器。
 
 ## 最小旅程元件
 

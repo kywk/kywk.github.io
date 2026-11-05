@@ -9,7 +9,7 @@ tags:
 sidebar_position: 20
 sidebar_label: 安裝與筆記語法
 date_created: 2026-10-29T00:00:00.000Z
-date_updated: 2026-10-30T00:00:00.000Z
+date_updated: 2026-11-05T00:00:00.000Z
 ---
 
 # Relive 安裝與旅程筆記語法
@@ -18,9 +18,9 @@ date_updated: 2026-10-30T00:00:00.000Z
 
 ## 安裝 Obsidian 外掛
 
-本機 manifest 宣告版本 0.1.0、最低 Obsidian 1.5.0，且 `isDesktopOnly: false`。這代表未限制為桌面專用，不代表已在每種手機或 Electron 環境完成驗證。
+目前外掛最低需要 Obsidian 1.5.0，manifest 宣告 `isDesktopOnly: false`。這代表未限制為桌面專用，不代表已在每種手機或 Electron 環境完成驗證。
 
-先查看 [GitHub Releases](https://github.com/kywk/relive/releases)。若目標版本已有發布附件，下載同一版本的 `main.js`、`manifest.json`、`styles.css`，放到下列位置：
+從 [最新 GitHub Release](https://github.com/kywk/relive/releases/latest) 下載同一版本的 `main.js`、`manifest.json`、`styles.css`，放到下列位置：
 
 ```text
 <Vault>/.obsidian/plugins/relive/
@@ -31,14 +31,14 @@ date_updated: 2026-10-30T00:00:00.000Z
 
 重新載入 Obsidian，在「設定 → 社群外掛」啟用 Relive。不要只複製 `main.js`，也不要把 npm 套件當成 Obsidian 安裝包。
 
-若 Release 尚無可下載附件，可從原始碼建置。開發環境需要 Node.js 20.19 以上；在 Relive 專案根目錄執行：
+開發或驗證未發行變更時，也可從原始碼建置。開發環境需要 Node.js 20.19 以上；在 Relive 專案根目錄執行：
 
 ```sh
 npm ci
 npm run build
 ```
 
-再將 `dist/obsidian/` 的三個檔案複製到上述目錄。外掛建置已包含所需程式與樣式，使用者不需要在 Vault 內執行 npm。社群市集是否已收錄需另行確認，本篇不以市集搜尋作為安裝前提。
+再將 `dist/obsidian/` 的三個檔案複製到上述目錄。外掛建置已包含所需程式與樣式，使用者不需要在 Vault 內執行 npm。[Obsidian Community](https://community.obsidian.md/plugins/relive) 已提交，仍待自動審核完成；目前可先手動安裝 GitHub 附件。
 
 若要嵌入自己的 React 網站，使用獨立的 `@kywk/react-relive` npm 套件；它與上述 Obsidian 三檔安裝包是不同入口，見 [[06 Relive React 套件與跨框架整合]]。
 
@@ -93,7 +93,7 @@ timezoneOffset: '+08:00'
 | `duration` | 沿完整軌跡移動的回放秒數，1–3600，預設 60；不含事件停留 |
 | `stopDuration` | 每組事件停留秒數，0–60，預設 3；0 表示不停留 |
 | `timezoneOffset` | 解讀缺少時區的照片時間及顯示時刻，預設 `+08:00` |
-| `renderer` | `leaflet`（預設）、`maplibre-3d`、`google-3d` |
+| `renderer` | `leaflet`（預設）、`maplibre-3d`；`google-3d` 僅供網站與 React 使用 |
 
 多個 GPX 依清單順序載入；若同時提供 `raw`，它會先載入。不同軌跡分段不會強行連成一條直線。請自行按旅程順序排列來源。
 

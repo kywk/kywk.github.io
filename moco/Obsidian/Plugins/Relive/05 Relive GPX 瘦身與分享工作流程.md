@@ -9,7 +9,7 @@ tags:
 sidebar_position: 50
 sidebar_label: GPX 瘦身與分享
 date_created: 2026-10-29T00:00:00.000Z
-date_updated: 2026-10-30T00:00:00.000Z
+date_updated: 2026-11-05T00:00:00.000Z
 ---
 
 # Relive GPX 瘦身與分享工作流程
@@ -20,11 +20,10 @@ date_updated: 2026-10-30T00:00:00.000Z
 
 ## 先分析，不寫入檔案
 
-目前本機文件仍標示 CLI 尚未發布到 npm，因此先以原始碼方式示範。取得 Relive 專案後，進入 `packages/gpx-slim`：
+[@kywk/gpx-slim](https://www.npmjs.com/package/@kywk/gpx-slim) 已發布至 npm，可直接使用 npx 執行：
 
 ```sh
-npm ci
-node bin/gpx-slim.js /path/to/ride.gpx --analyze
+npx @kywk/gpx-slim /path/to/ride.gpx --analyze
 ```
 
 `--analyze` 比較三種強度，顯示軌跡點數、檔案位元組、路線距離等差異，不寫入檔案。需要機器可讀結果時可加 `--json`。
@@ -40,8 +39,8 @@ node bin/gpx-slim.js /path/to/ride.gpx --analyze
 ## 預覽指定參數，再產生副本
 
 ```sh
-node bin/gpx-slim.js /path/to/ride.gpx --preset gentle --dry-run
-node bin/gpx-slim.js /path/to/ride.gpx --preset gentle -o /path/to/ride.share.gpx
+npx @kywk/gpx-slim /path/to/ride.gpx --preset gentle --dry-run
+npx @kywk/gpx-slim /path/to/ride.gpx --preset gentle -o /path/to/ride.share.gpx
 ```
 
 第一行只預覽；第二行輸出分享副本。未指定 `-o` 時，預設寫到原檔旁的 `ride.slim.gpx`。原始檔不會被覆寫，輸出位置已有檔案或符號連結時也會拒絕寫入。
@@ -49,7 +48,7 @@ node bin/gpx-slim.js /path/to/ride.gpx --preset gentle -o /path/to/ride.share.gp
 要試目標刪點比例，使用：
 
 ```sh
-node bin/gpx-slim.js /path/to/ride.gpx --preset balanced --reduction 70 --dry-run
+npx @kywk/gpx-slim /path/to/ride.gpx --preset balanced --reduction 70 --dry-run
 ```
 
 `--reduction 70` 是目標刪除 70% 軌跡點，不是保留 70%，也不是檔案縮小 70%。必要點、誤差限制與離散點數可能讓實際刪點率低於目標。`--analyze` 不接受 `--preset`、`--reduction` 或輸出路徑；指定參數的預覽應使用 `--dry-run`。

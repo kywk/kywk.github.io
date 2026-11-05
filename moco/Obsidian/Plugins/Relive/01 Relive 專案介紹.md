@@ -9,7 +9,7 @@ tags:
 sidebar_position: 10
 sidebar_label: 專案介紹
 date_created: 2026-10-29T00:00:00.000Z
-date_updated: 2026-10-30T00:00:00.000Z
+date_updated: 2026-11-05T00:00:00.000Z
 ---
 
 # Relive 專案介紹
@@ -18,7 +18,7 @@ date_updated: 2026-10-30T00:00:00.000Z
 
 Relive 把這些資料放進同一篇 Markdown 筆記：以 GPX 決定路線與播放進度，沿途顯示照片和事件。讀者可以播放、拖曳時間軸，或直接點選照片，從地圖重新理解旅程。
 
-本文介紹的是 [kywk/relive](https://github.com/kywk/relive) 開源專案。以下功能依 2026-10-30 本機 0.1.0 原始碼與文件整理；安裝附件、npm 與社群外掛市集的發布狀態須分別確認，不能以版本號推定已上架。
+本文介紹的是 [kywk/relive](https://github.com/kywk/relive) 開源專案。截至 2026-11-05，Obsidian 安裝附件已發布至 [GitHub Releases](https://github.com/kywk/relive/releases/latest)，共用播放器、React 元件與 GPX Slim CLI 也已發布至 npm。[Obsidian Community](https://community.obsidian.md/plugins/relive) 已提交，仍待自動審核完成。
 
 ## 從筆記到 React 網站
 
@@ -36,7 +36,7 @@ Relive 把這些資料放進同一篇 Markdown 筆記：以 GPX 決定路線與�
 - **把照片放回旅程**：優先按拍攝時間定位，也能依 GPS 找最近軌跡點；資料不足時保留照片並提示未定位。
 - **留下沿途事件**：用經過時間、絕對時間或進度標記補給、休息與觀景點，播放到達時停留展示。
 - **自由閱讀**：播放、暫停、倍速、跟隨鏡頭、時間軸跳轉，以及可收合、調整縮圖大小的相片集錦。
-- **切換地圖視角**：預設 Leaflet 2D，可選免 API key 的 MapLibre 3D，或需自行設定 key 的 Google 寫實 3D。
+- **切換地圖視角**：預設 Leaflet 2D，可選免 API key 的 MapLibre 3D；網站與 React 另可選需自行設定 key 的 Google 寫實 3D。
 
 播放器目前沒有影片與音樂匯出、海拔圖、離線地圖或發布精靈。它適合讓讀者操作網頁上的旅程，不宜直接當成影片產生工具。
 
@@ -52,7 +52,7 @@ Relive 把這些資料放進同一篇 Markdown 筆記：以 GPX 決定路線與�
 
 ## 本機資料與網路服務的界線
 
-本機 GPX 與照片可由外掛讀取，不必先上傳到旅程平台；但底圖仍會向圖磚服務連線。MapLibre 3D 需要網路與 WebGL，Google 3D 另有 API 與帳務設定。
+本機 GPX 與照片可由外掛讀取，不必先上傳到旅程平台；但底圖仍會向圖磚服務連線。MapLibre 3D 需要網路與 WebGL。Obsidian 版自 0.2.1 起不載入 Google 遠端程式，也不提供 Google 3D；網站與 React 的 Google 3D 另有 API 與帳務設定。
 
 發表到網站則是另一個步驟：軌跡會成為頁面資料，照片也會隨網站發布。公開前應檢查住家起訖點與照片 EXIF，並只把要分享的附件納入網站。具體設定見 [[04 Relive Docusaurus 整合與公開附件]]。
 

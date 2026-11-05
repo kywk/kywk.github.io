@@ -9,7 +9,7 @@ tags:
 sidebar_position: 40
 sidebar_label: Docusaurus 整合
 date_created: 2026-10-29T00:00:00.000Z
-date_updated: 2026-10-30T00:00:00.000Z
+date_updated: 2026-11-05T00:00:00.000Z
 ---
 
 # Relive Docusaurus 整合與公開附件
@@ -20,9 +20,13 @@ date_updated: 2026-10-30T00:00:00.000Z
 
 ## 安裝來源先確認
 
-網站套件名稱為 `@kywk/relive`。本機文件目前仍標示 npm 尚未發布，本文未取得 registry 的成功發布證據，因此不能保證直接執行 `npm install @kywk/relive` 已可安裝。
+網站套件 [@kywk/relive](https://www.npmjs.com/package/@kywk/relive) 已發布至 npm。在網站專案執行：
 
-在正式發布前，可於 Relive 專案根目錄執行 `npm run release:pack`，取得經專案檢查的 `.release/docusaurus/` tarball，再在網站專案用 `npm install /實際路徑/套件.tgz` 安裝。CI 也必須取得同一份安裝來源，不能只依賴開發電腦的絕對路徑。套件正式上架後，才改用 registry 版本並提交 lockfile。
+```sh
+npm install @kywk/relive
+```
+
+安裝後提交 package.json 與 lockfile，讓 CI 使用相同版本。若需驗證原始碼變更，可於 Relive 專案根目錄執行 `npm run release:pack`，取得經檢查的 `.release/docusaurus/` tarball，再用 `npm install /實際路徑/套件.tgz` 安裝；CI 也必須取得該 tarball，不能只依賴開發電腦的絕對路徑。
 
 ## 加入整合入口
 
