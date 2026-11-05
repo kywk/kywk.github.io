@@ -26,6 +26,8 @@ date_updated: 2026-11-05T00:00:00.000Z
 npm install @kywk/relive
 ```
 
+目前共用套件版本為 0.2.2，已包含 MapLibre Worker。一般 bundler 不需另設 Worker URL；網站有 CSP 時需允許 `worker-src blob:`。
+
 安裝後提交 package.json 與 lockfile，讓 CI 使用相同版本。若需驗證原始碼變更，可於 Relive 專案根目錄執行 `npm run release:pack`，取得經檢查的 `.release/docusaurus/` tarball，再用 `npm install /實際路徑/套件.tgz` 安裝；CI 也必須取得該 tarball，不能只依賴開發電腦的絕對路徑。
 
 ## 加入整合入口

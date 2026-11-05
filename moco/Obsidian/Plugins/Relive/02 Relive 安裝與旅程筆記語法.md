@@ -18,9 +18,11 @@ date_updated: 2026-11-05T00:00:00.000Z
 
 ## 安裝 Obsidian 外掛
 
+建議開啟 [Community 頁面](https://community.obsidian.md/plugins/relive)，點選 **Add to Obsidian**，再於 Obsidian 安裝並啟用 Relive。0.2.2 已完成審核；已安裝舊版的使用者可在社群外掛設定檢查更新。
+
 目前外掛最低需要 Obsidian 1.5.0，manifest 宣告 `isDesktopOnly: false`。這代表未限制為桌面專用，不代表已在每種手機或 Electron 環境完成驗證。
 
-從 [最新 GitHub Release](https://github.com/kywk/relive/releases/latest) 下載同一版本的 `main.js`、`manifest.json`、`styles.css`，放到下列位置：
+若需手動安裝，從 [最新 GitHub Release](https://github.com/kywk/relive/releases/latest) 下載同一版本的 `main.js`、`manifest.json`、`styles.css`，放到下列位置：
 
 ```text
 <Vault>/.obsidian/plugins/relive/

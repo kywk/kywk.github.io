@@ -30,7 +30,7 @@ React 套件支援 React 19.x，應用程式提供 React。此處說的跨框架
 
 ## 安裝來源與範例
 
-[@kywk/react-relive](https://www.npmjs.com/package/@kywk/react-relive) 已發布至 npm，可在 React 專案執行：
+[@kywk/react-relive](https://www.npmjs.com/package/@kywk/react-relive) 0.1.2 已發布至 npm，依賴共用播放器 0.2.2，可在 React 19 專案執行：
 
 ```sh
 npm install @kywk/react-relive
@@ -96,3 +96,7 @@ Google key 是瀏覽器端設定，會交付給訪客，需設定 API 與網站�
 - [React 整合指南](https://github.com/kywk/relive/blob/main/docs/react.md)
 - [React 套件](https://github.com/kywk/relive/tree/main/packages/react-relive)
 - [獨立 React 範例](https://github.com/kywk/relive/tree/main/examples/react)
+
+## MapLibre Worker 與部署
+
+0.1.2 使用已封裝 Worker 的共用播放器，無需為 Vite、Webpack 等框架另設 Worker URL。Worker 由套件內建程式透過本機 Blob URL 啟動；有 CSP 的網站需允許 `worker-src blob:`。地圖資料仍需網路及 WebGL，載入失敗會保留 2D。

@@ -20,7 +20,7 @@ date_updated: 2026-11-05T00:00:00.000Z
 
 ## 先分析，不寫入檔案
 
-[@kywk/gpx-slim](https://www.npmjs.com/package/@kywk/gpx-slim) 已發布至 npm，可直接使用 npx 執行：
+[@kywk/gpx-slim](https://www.npmjs.com/package/@kywk/gpx-slim) 0.1.0 已發布至 npm，可直接使用 npx 執行；其版本獨立於 Obsidian／共用播放器 0.2.2：
 
 ```sh
 npx @kywk/gpx-slim /path/to/ride.gpx --analyze

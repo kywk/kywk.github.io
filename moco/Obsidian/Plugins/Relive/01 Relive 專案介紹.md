@@ -20,6 +20,10 @@ Relive 把這些資料放進同一篇 Markdown 筆記：以 GPX 決定路線與�
 
 本文介紹的是 [kywk/relive](https://github.com/kywk/relive) 開源專案。截至 2026-11-05，Obsidian 安裝附件已發布至 [GitHub Releases](https://github.com/kywk/relive/releases/latest)，共用播放器、React 元件與 GPX Slim CLI 也已發布至 npm。[Obsidian Community](https://community.obsidian.md/plugins/relive) 已收錄，可由目錄頁面的 Add to Obsidian 安裝。
 
+## 已發布版本
+
+2026-11-05 已確認 Obsidian 0.2.2 完成 Community 自動審核，附件簽章與原始碼重建比對通過。npm 版本分別為 `@kywk/relive@0.2.2`、`@kywk/react-relive@0.1.2`、`@kywk/gpx-slim@0.1.0`。
+
 ## 從筆記到 React 網站
 
 在 Obsidian 裡，Relive 是處理 `relive` 程式碼區塊的外掛；切到閱讀模式，或讓 Live Preview 顯示區塊，就能操作地圖。在 Docusaurus 裡，對應的整合套件會於建置時讀取 GPX 與照片資料，讓公開網頁呈現同一段旅程。

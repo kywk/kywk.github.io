@@ -90,3 +90,9 @@ Obsidian 版自 0.2.1 起排除 Google 遠端程式與設定入口；筆記指�
 
 - [照片配對、時間軸與 3D 說明](https://github.com/kywk/relive/blob/main/README.md)
 - [配對與軌跡原始碼](https://github.com/kywk/relive/blob/main/src/track.js)
+
+## 0.2.2 的 3D 修正
+
+0.2.2 使用 MapLibre 6.4.1，修補依賴安全問題，並將 Worker 與其依賴一併封裝，修正 3D 一直載入後逾時的問題。Obsidian 不需另外安裝 Worker，也不從 CDN 載入執行程式；底圖與地形仍需網路及 WebGL。網站若設定 CSP，需允許 `worker-src blob:`。
+
+此版本已通過瀏覽器 3D 實測及 Community 原始碼重建比對；實際 Obsidian Electron／手機硬體的相容性仍依使用環境確認。
