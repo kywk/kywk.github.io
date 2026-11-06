@@ -81,3 +81,9 @@ markerFolder: backpacker/2610 Tokyo Karuizawa/Tokyo Karuizawa
 ## note / 雜記小文
 
 - [[2 Tokyo Karuizawa]]
+
+### 晨跑紀錄
+
+- [[Run 2026-10-29 Tokyo|2026-10-29 東京晨跑]]
+- [[Run 2026-10-31 Karuizawa|2026-10-31 輕井澤晨跑]]
+- [[Run 2026-11-01 Tokyo|2026-11-01 東京晨跑]]
