@@ -89,7 +89,7 @@ npm run content:wikilink   # Markdown 連結轉 wiki-link
 ### Node 必須 >= 22.12
 
 `engines.node` 為 `>=22.12.0`，CI 與 Volta 都固定使用 `22.23.3`。
-`@kywk/relive@0.2.2` 的 MapLibre 間接依賴 `@mapbox/jsonlint-lines-primitives@2.0.3` 要求 Node `>=22`；Node 20 的 `npm ci` 會出現 `EBADENGINE` 警告。Node 22.12 起預設啟用 `require(esm)`，供網站既有的 ESM 插件載入使用。
+`@kywk/relive@0.2.3` 的 MapLibre 間接依賴 `@mapbox/jsonlint-lines-primitives@2.0.3` 要求 Node `>=22`；Node 20 的 `npm ci` 會出現 `EBADENGINE` 警告。Node 22.12 起預設啟用 `require(esm)`，供網站既有的 ESM 插件載入使用。
 另設 `packageManager: npm@10.9.8`——**不要改用 pnpm**，理由見下。
 
 ### 依賴必須在站台宣告，不能靠提升
