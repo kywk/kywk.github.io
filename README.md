@@ -30,7 +30,7 @@ Vault 內另有未發佈的 `_incoming/`、`_journaling/` 等，全庫約 2,511 
 
 **Kanban** — `remark-obsidian-kanban`，偵測 `kanban-plugin: board` frontmatter 渲染看板。
 
-**Geo Story Map** — `@story-map/remark-story-map`（0.5.1），**全站唯一的 Leaflet runtime**。
+**Geo Story Map** — `@story-map/remark-story-map`（0.5.1）處理故事地圖與一般地圖。
 原本自製的 `remark-obsidian-leaflet` 與 `static/js/leaflet-init.js` 已於 2026-09-30 刪除。
 
 | 圍欄區塊 | 形態 | 渲染 |
@@ -51,18 +51,22 @@ markerFolder: backpacker/trip/places
 - 舊 ` ```leaflet ` 區塊沿用歷史 key，既有筆記不需改寫；
   `markerFolder` 遞迴讀取含 `location` 的筆記，`mapzoom: [min, max]` 轉成標記縮放可見範圍
 - 標記連結走既有的 `contentLinkIndex`，不另實作 slug 規則
-- Leaflet 與 `leaflet.css` 只從 client bundle 載入，頁面上沒有地圖時完全不下載；
-  `docusaurus build` 期間不會建立 Leaflet 實例
+- StoryMap 與 Relive 各自掛載地圖，網站整合將 Leaflet 解析至同一套依賴；
+  地圖資源由 client 按需載入，`docusaurus build` 期間不會建立 Leaflet 實例
 - 主題橋接（`src/css/story-map-theme.css`）**light 與 dark 都要宣告**：
   `map.theme: auto` 預設跟的是 `prefers-color-scheme`（作業系統），不是 Docusaurus 存在
   localStorage 的主題；只寫 dark 會在「系統深色但站台淺色」時失效
 
 逐項相容度見 [leaflet-compatibility.md](https://github.com/kywk/story-map/blob/main/docs/leaflet-compatibility.md)。
 
+**Relive** — `@kywk/relive` 處理 `relive` fenced block，將 GPX 軌跡與照片編入網站回放。筆記中的 `gpx`、`photos` 可使用相對路徑或加引號的 Obsidian wikilink；日本行程應設定 `timezoneOffset: '+09:00'`。格式詳見 [Relive 使用說明](https://github.com/kywk/relive#markdown-格式)。
+
+網站目前只允許 Relive 讀取 `backpacker/2610 Tokyo Karuizawa/relive-media/` 下的附件；GPX 放在 `gpx/`、公開照片放在 `photos/`。新增其他旅程時，須在 `docusaurus.config.ts` 的 `assetRoots` 明確加入該旅程的公開附件目錄，勿加入整個 Vault 或被忽略的私人目錄。網站會發布引用的圖片及軌跡資料；圖片原有 EXIF 也可能公開，加入前應先檢查。
+
 ## 開發指令
 
 ```bash
-npm install          # 安裝依賴（Node >= 20.19，見下）
+npm install          # 安裝依賴（Node >= 22.12，見下）
 npm start            # 本地開發伺服器，熱重載
 npm run build        # 建置至 build/
 npm run serve        # 預覽建置結果
@@ -82,13 +86,10 @@ npm run content:wikilink   # Markdown 連結轉 wiki-link
 
 ## ⚠️ 會咬人的規則
 
-### Node 必須 >= 20.19
+### Node 必須 >= 22.12
 
-`engines.node` 是 `>=20.19.0`，這是**必要**而非保守：
-`remark-obsidian-kanban`（npm）以 `require()` 載入 ESM-only 的 `unist-util-visit@5`，
-需要 Node 20.19 起才有的 `require(esm)`，在 Node 18 上直接 `ERR_REQUIRE_ESM`。
-
-三處 pinning 一致：CI `20.19.0`、`volta` `20.20.2`、`engines`。
+`engines.node` 為 `>=22.12.0`，CI 與 Volta 都固定使用 `22.23.3`。
+`@kywk/relive@0.2.2` 的 MapLibre 間接依賴 `@mapbox/jsonlint-lines-primitives@2.0.3` 要求 Node `>=22`；Node 20 的 `npm ci` 會出現 `EBADENGINE` 警告。Node 22.12 起預設啟用 `require(esm)`，供網站既有的 ESM 插件載入使用。
 另設 `packageManager: npm@10.9.8`——**不要改用 pnpm**，理由見下。
 
 ### 依賴必須在站台宣告，不能靠提升
@@ -120,7 +121,7 @@ npm 的扁平佈局掩蓋了這點；pnpm 的嚴格隔離會讓它直接 `MODULE
 
 ### slug 不在 remark 階段處理
 
-Remark 插件鏈為 remarkKanban → remarkWikiLink → remarkStoryMap。
+docs 的 Remark 插件鏈為 remarkKanban → remarkWikiLink → remarkStoryMap → Relive；blog／album 接入 remarkWikiLink → Relive。
 slug 必須在 `parseFrontMatter` 解決：Docusaurus 在 `processDocMetadata` 就把 permalink
 算好，remark 是之後才在 mdx-loader 跑的，改 frontmatter 已經來不及。
 
@@ -134,6 +135,7 @@ slug 必須在 `parseFrontMatter` 解決：Docusaurus 在 `processDocMetadata` �
 | `rehype-obsidian-tasks` | Obsidian task 標記渲染（npm：docusaurus-kit 發佈） |
 | `plugins/remark-story-map-loader.cjs` | 以原生 `require(esm)` 載入 remark-story-map，繞過 jiti 破壞 zod v4 具名匯出 |
 | `plugins/story-map-client/` | 註冊 StoryMap 瀏覽器 client module 與全頁檢視 |
+| `@kywk/relive` | GPX 與照片回放，透過公開附件白名單整合網站 |
 | `scripts/content-links.js` | wikilink 索引與 route resolver |
 | `scripts/slug.js` / `content-validator.js` / `optimize-images.js` / `convert-to-wikilinks.js` | 見 SCRIPTS-GUIDE.md |
 
@@ -154,7 +156,8 @@ slug 必須在 `parseFrontMatter` 解決：Docusaurus 在 `processDocMetadata` �
 
 - **GitHub Pages**: user site，服務於 `https://kywk.github.io/` 根路徑
 - **CI**: `deploy.yml`（push main）與 `test-deploy.yml`（PR）皆執行
-  `npm ci` → `typecheck` → `content:check` → `build` → deploy
+  `npm ci` → `typecheck` → `content:check` → `build`；只有 push main 的流程會部署。
+  部署工作要求 `contents: write`，PR 驗證使用 `contents: read`；實際部署仍須儲存庫及組織允許該權限。
 - **依賴必須來自 registry**：`package-lock.json` 有進版控且 CI 走 `npm ci`，
   `file:` 指向本機路徑的 tarball 在 runner 上無法解析，會讓整條 deploy 卡住
 - **不做舊網址轉址**：vault 改名或搬動檔案會使已發佈網址失效，個人站點刻意不維護，

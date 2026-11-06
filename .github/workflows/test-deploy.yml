@@ -9,14 +9,14 @@ jobs:
   test-deploy:
     name: Test deployment
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          # 與 package.json 的 volta / engines 對齊。20.19 是底線：
-          # plugins/remark-obsidian-kanban 以 require() 載入 ESM-only 的
-          # unist-util-visit@5，需要 Node >= 20.19 的 require(esm)。
-          node-version: 20.19.0
+          # 與 package.json 的 volta 對齊；Relive 的間接依賴要求 Node 22。
+          node-version: 22.23.3
           cache: npm
 
       - name: Install dependencies

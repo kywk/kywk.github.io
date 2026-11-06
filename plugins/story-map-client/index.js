@@ -16,7 +16,7 @@ module.exports = function storyMapClientPlugin() {
     name: 'story-map-client',
     getClientModules() {
       return [
-        require.resolve('@story-map/remark-story-map/client'),
+        require.resolve('./story-map-mount.js'),
         require.resolve('./story-map-view.js'),
       ];
     },

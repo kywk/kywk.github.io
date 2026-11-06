@@ -43,6 +43,11 @@ const deriveSlug = slugNormalizerPlugin?.deriveSlug;
 // jiti does not mangle zod v4's named exports (see the loader file).
 const remarkStoryMap = require("./plugins/remark-story-map-loader.cjs");
 const { rehypeObsidianTasks } = require("rehype-obsidian-tasks");
+const createReliveIntegration = require("@kywk/relive/integration");
+const relive = createReliveIntegration({
+  vaultRoot: __dirname,
+  assetRoots: ["backpacker/2610 Tokyo Karuizawa/relive-media"],
+});
 
 // 全站 wikilink 索引：blog 文章可以連到 docs，也可以連到另一個 blog。
 // 路由仍由 remark-slug-normalizer 的 deriveSlug() 統一推導。
@@ -206,6 +211,7 @@ function createRemarkPlugins(fileMap, routeBase) {
   // ```story-map fences become browser hosts; the story-map-client plugin mounts
   // the shared renderer into them after the page loads.
   plugins.push([remarkStoryMap, storyMapOptions]);
+  plugins.push(relive.remark);
 
   return plugins;
 }
@@ -226,6 +232,7 @@ function createBlogRemarkPlugins(blog) {
         aliasDivider: pluginConfig.wikiLink.aliasDivider,
       },
     ],
+    relive.remark,
   ];
 }
 
@@ -343,6 +350,7 @@ const config: Config = {
   plugins: [
     // 註冊 StoryMap 的瀏覽器客戶端，於 SPA 導覽後也能掛載每個 host
     "./plugins/story-map-client",
+    relive.plugin,
     ...docsConfig.map(doc => [
       "@docusaurus/plugin-content-docs",
       {
