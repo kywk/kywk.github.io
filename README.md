@@ -105,6 +105,10 @@ npm 的扁平佈局掩蓋了這點；pnpm 的嚴格隔離會讓它直接 `MODULE
 `src/theme` 直接匯入）同理。`remark-obsidian-kanban` 與 `rehype-obsidian-tasks`
 已改為 npm 依賴，其自身 `dependencies` 由 npm 安裝，不適用本條。
 
+### npm 安全修補與覆寫
+
+`package.json` 中的 `overrides` 將 Tinypool、序列化工具及 SockJS 的 UUID 限定於已修補版本；其中部分超出上游宣告的主要版本範圍。更新上游套件時，先檢查是否可移除覆寫，並重跑乾淨安裝、雙 worker 建置與瀏覽器／開發伺服器檢查。剩餘 `deepmerge` 低風險通報、實際影響與驗證範圍見 [npm 稽核紀錄](docs/npm-audit-2026-11-06.md)。
+
 ### slug 由路徑推導，不寫回檔案
 
 規則只有一份，在 `plugins/remark-slug-normalizer/src/index.js` 的 `deriveSlug()`，
