@@ -1,0 +1,69 @@
+/* 可收合 TOC：展開時沿用原本 sticky 定位，只多一列收合按鈕 */
+
+.tocWrapper {
+  position: sticky;
+  top: calc(var(--ifm-navbar-height) + 1rem);
+  max-height: calc(100vh - (var(--ifm-navbar-height) + 2rem));
+  overflow-y: auto;
+}
+
+.collapseButton {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.25rem;
+  width: 100%;
+  margin: 0 0 0.25rem;
+  padding: 0.25rem 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--ifm-color-content-secondary);
+  transition: color 150ms ease;
+}
+
+.collapseButton:hover {
+  color: var(--ifm-color-primary-dark);
+}
+
+/* 收合後浮動在文章右上角的展開按鈕（portal 到 body，不受右側欄隱藏影響） */
+.expandButton {
+  position: fixed;
+  top: calc(var(--ifm-navbar-height) + 0.75rem);
+  right: max(1rem, calc((100vw - var(--ifm-container-width, 1400px)) / 2 + 1rem));
+  z-index: var(--ifm-z-index-fixed, 200);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 0.9rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 999px;
+  background: var(--ifm-background-surface-color);
+  color: var(--ifm-color-primary-dark);
+  font-size: 0.85rem;
+  font-weight: 600;
+  line-height: 1.2;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(230, 126, 34, 0.22);
+  transition: border-color 150ms ease, box-shadow 150ms ease, transform 150ms ease;
+}
+
+.expandButton:hover {
+  border-color: var(--ifm-color-primary);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(230, 126, 34, 0.32);
+}
+
+[data-theme='dark'] .expandButton {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.45);
+}
+
+/* 手機版維持 Docusaurus 原生折疊目錄 */
+@media (max-width: 996px) {
+  .collapseButton,
+  .expandButton {
+    display: none;
+  }
+}

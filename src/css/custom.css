@@ -625,4 +625,35 @@ input[type='checkbox'][data-task='/']::after {
   border-radius: 1.5px;
 }
 
+/* ============================================
+   TOC 可收合：收合時隱藏右側欄、文章取回寬度
+   狀態由 src/theme/TOC/index.js 切換，
+   收合時 TOC 根節點帶 .kywk-toc-collapsed。
+   ============================================ */
+@media (min-width: 997px) {
+
+  /* 只隱藏真正包住收合 TOC 的那一欄
+    （blog 左側 sidebar 同為 col--3，不可誤藏） */
+  .row>.col--3:has(.kywk-toc-collapsed),
+  .row>.col--2:has(.kywk-toc-collapsed) {
+    display: none;
+  }
+
+  /* docs：覆寫 docItemCol 的 75% 上限，文章滿寬 */
+  .row:has(.kywk-toc-collapsed)>div.col:first-child {
+    --ifm-col-width: 100%;
+    flex: 1 1 0 !important;
+    max-width: 100% !important;
+  }
+
+  /* blog：main 欄填滿 sidebar 以外的寬度 */
+  .row:has(.kywk-toc-collapsed)>main.col {
+    --ifm-col-width: 100%;
+    flex: 1 1 0 !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+  }
+}
+
+
 
